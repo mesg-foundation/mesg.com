@@ -1750,7 +1750,7 @@
 		padding: 0.75em 1em;
 	}
 
-	input[type="checkbox"],
+	/* input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -1812,15 +1812,15 @@
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
 			box-shadow: 0 0 0 2px #21b2a6;
-		}
+		} */
 
-	input[type="checkbox"] + label:before {
+	/* input[type="checkbox"] + label:before {
 		border-radius: 3px;
 	}
 
 	input[type="radio"] + label:before {
 		border-radius: 100%;
-	}
+	} */
 
 	::-webkit-input-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
@@ -1922,7 +1922,7 @@
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #000000;
 		}
 
 		.icon.style2 {
@@ -2308,7 +2308,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #ed4933;
+			background-color: #FF6666;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2641,24 +2641,24 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c7ebe8;
+			background-color: #f2f2f2;
+			color: #333333;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
+				color: #333333;
 			}
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #ffffff;
+				color: #333333;
 			}
 
 			.wrapper.style1 hr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
 			.wrapper.style1 blockquote {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
 			.wrapper.style1 code {
@@ -2666,19 +2666,19 @@
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: #333333;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: rgba(255, 255, 255, 0.125);
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c7ebe8;
+				color: #333333;
 			}
 
 			.wrapper.style1 label {
-				color: #ffffff;
+				color: #333333;
 			}
 
 			.wrapper.style1 input[type="text"],
@@ -3812,3 +3812,94 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+.services img, .application img {
+	padding: 0;
+}
+
+.switch {
+  position: relative;
+  margin: 20px auto;
+  height: 34px;
+  width: 222px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 110px;
+  line-height: 34px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.switch-label:active {
+  /* font-weight: bold; */
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+/*
+  Note: using adjacent or general sibling selectors 
+  combined with pseudo classes doesn't work in Safari 
+  5.0 and Chrome 12.
+  See this article for more info and a potential fix: 
+  https://css-tricks.com/webkit-sibling-bug/
+*/
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch-label {
+  /* font-weight: bold; */
+  color: rgba(0, 0, 0, 0.65);
+  /* text-shadow: 0 1px rgba(255, 255, 255, 0.25); */
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  /* Note: left: 50% doesn't transition in WebKit */
+  left: 110px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 110px;
+  height: 30px;
+  background: #65bd63;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
+  background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
+  background-image: -o-linear-gradient(top, #9dd993, #65bd63);
+  background-image: linear-gradient(to bottom, #9dd993, #65bd63);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+

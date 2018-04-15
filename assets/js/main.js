@@ -22,6 +22,7 @@
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
 			$header = $('#header');
+			$services = $(".services")
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -94,6 +95,12 @@
 				});
 
 			}
+
+			$(".switch-input").change(function (x) {
+				$(".why-content").fadeOut(400, function() {
+					$(".why-content." + x.target.value).fadeIn();
+				});
+			});
 
 	});
 
