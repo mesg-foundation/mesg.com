@@ -3917,11 +3917,11 @@
 	transform: scale(0.6);
 }
 
-.blocks text {
-	transform: rotate(-17deg) skewX(-25deg) translateX(200px) translateY(10px);
+.blocks text, .blocks image {
+	transform: rotate(-17deg) skewX(-15deg);
 }
 
-#blocks-application, #blocks-core, #blocks-service1, #blocks-service2, #blocks-service3, #blocks-service4 {
+#blocks-application, #blocks-core, #blocks-ethereum, #blocks-mail, #blocks-lambda, #blocks-custom {
 	transition: all 300ms;
 }
 
@@ -3929,22 +3929,49 @@
 	transform: translateY(75px);
 }
 
-.active #blocks-service1 {
+.active #blocks-ethereum {
 	transform: translate(0, 317px);
 	transition: all 300ms;
 }
 
-.active #blocks-service2 {
+.active #blocks-mail {
 	transform: translate(177px, 265px);
 	transition: all 500ms;
 }
 
-.active #blocks-service3 {
+.active #blocks-lambda {
 	transform: translate(352px, 212px);
 	transition: all 700ms;
 }
 
-.active #blocks-service4 {
+.active #blocks-custom {
 	transform: translate(529px, 158px);
 	transition: all 900ms;
 }
+
+path.no-stroke { stroke: none!important; }
+
+#blocks-application path, #blocks-application ellipse { stroke: #CCB790; }
+#blocks-application .primary { fill: #ffeac3;}
+#blocks-application .secondary { fill: #CCB790; }
+
+#blocks-core path, #blocks-core ellipse { stroke: #CCB790; }
+#blocks-core .primary { fill: #ffeac3; }
+#blocks-core .secondary { fill: #CCB790;}
+
+#blocks-ethereum path, #blocks-ethereum ellipse { stroke: #CCB790;}
+#blocks-ethereum .primary { fill: #ffeac3;}
+#blocks-ethereum .secondary { fill: #CCB790;}
+
+#blocks-mail path, #blocks-mail ellipse { stroke: #CCB790;}
+#blocks-mail .primary { fill: #ffeac3;}
+#blocks-mail .secondary { fill: #CCB790;}
+
+#blocks-lambda path, #blocks-lambda ellipse { stroke: #CCB790;}
+#blocks-lambda .primary { fill: #ffeac3;}
+#blocks-lambda .secondary { fill: #CCB790;}
+
+#blocks-custom path, #blocks-custom ellipse { stroke: #CCB790;}
+#blocks-custom .primary { fill: #ffeac3;}
+#blocks-custom .secondary { fill: #CCB790;}
+
