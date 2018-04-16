@@ -3396,6 +3396,19 @@
 		text-align: center;
 	}
 
+		#banner .logo {
+			width: 350px;
+			margin-bottom: 2em;
+		}
+
+		#banner .st0 {
+			fill: #FFCC1B;
+		}
+
+		#banner .st1 {
+			fill: #FFFFFF;
+		}
+
 		#banner h2 {
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
