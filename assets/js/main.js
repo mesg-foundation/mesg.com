@@ -23,6 +23,7 @@
 			$banner = $('#banner'),
 			$header = $('#header');
 			$services = $(".services")
+			$blocks = $(".blocks")
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -82,10 +83,8 @@
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');
 
-			if ($banner.length > 0
-			&&	$header.hasClass('alt')) {
-
-				$window.on('resize', function() { $window.trigger('scroll'); });
+			$window.on('resize', function() { $window.trigger('scroll'); });
+			if ($banner.length > 0 &&	$header.hasClass('alt')) {
 
 				$banner.scrollex({
 					bottom:		$header.outerHeight() + 1,
@@ -93,8 +92,17 @@
 					enter:		function() { $header.addClass('alt'); },
 					leave:		function() { $header.removeClass('alt'); }
 				});
-
 			}
+
+			$window.on('resize', function() { $window.trigger('scroll'); });
+			$blocks.scrollex({
+				terminate:	function() { $blocks.removeClass('active'); },
+				enter:		function() { $blocks.addClass('active'); },
+				leave:		function() { $blocks.removeClass('active'); }
+			});
+
+			$blocks.mouseover(function() { $blocks.removeClass('active') })
+			$blocks.mouseout(function() { $blocks.addClass('active') })
 
 			$(".switch-input").change(function (x) {
 				$(".why-content").fadeOut(400, function() {
