@@ -3454,10 +3454,10 @@
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
 			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 3.5s;
-			-webkit-transition-delay: 3.5s;
-			-ms-transition-delay: 3.5s;
-			transition-delay: 3.5s;
+			-moz-transition-delay: 1.5s;
+			-webkit-transition-delay: 1.5s;
+			-ms-transition-delay: 1.5s;
+			transition-delay: 1.5s;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3504,10 +3504,6 @@
 			-webkit-transition: opacity 3s ease-in-out;
 			-ms-transition: opacity 3s ease-in-out;
 			transition: opacity 3s ease-in-out;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
 			content: '';
 			background: #2e3842;
 			display: block;
