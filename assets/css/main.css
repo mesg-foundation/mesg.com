@@ -2693,7 +2693,7 @@
 				color: rgba(0, 0, 0, 0.125);
 			}
 
-			.wrapper.style1 input[type="checkbox"] + label,
+			/* .wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
 				color: #c7ebe8;
 			}
@@ -2707,7 +2707,7 @@
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
 				color: #21b2a6;
-			}
+			} */
 
 			.wrapper.style1 ::-webkit-input-placeholder {
 				color: #a6e0db !important;
@@ -2851,7 +2851,7 @@
 				color: rgba(0, 0, 0, 0.125);
 			}
 
-			.wrapper.style3 input[type="checkbox"] + label,
+			/* .wrapper.style3 input[type="checkbox"] + label,
 			.wrapper.style3 input[type="radio"] + label {
 				color: #d3d4e4;
 			}
@@ -2865,7 +2865,7 @@
 			.wrapper.style3 input[type="radio"]:checked + label:before {
 				background: #ffffff;
 				color: #505393;
-			}
+			} */
 
 			.wrapper.style3 ::-webkit-input-placeholder {
 				color: #b9bad3 !important;
@@ -3009,7 +3009,7 @@
 				color: #dfdfdf;
 			}
 
-			.wrapper.style5 input[type="checkbox"] + label,
+			/* .wrapper.style5 input[type="checkbox"] + label,
 			.wrapper.style5 input[type="radio"] + label {
 				color: #4E4852;
 			}
@@ -3023,7 +3023,7 @@
 			.wrapper.style5 input[type="radio"]:checked + label:before {
 				background: #2E3842;
 				color: #ffffff;
-			}
+			} */
 
 			.wrapper.style5 ::-webkit-input-placeholder {
 				color: #8E8892 !important;
@@ -3863,8 +3863,8 @@
 }
 
 .switch-input:checked + .switch-label {
-  /* font-weight: bold; */
-  color: rgba(0, 0, 0, 0.65);
+  font-weight: bold;
+  /* color: rgba(0, 0, 0, 0.65); */
   /* text-shadow: 0 1px rgba(255, 255, 255, 0.25); */
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
@@ -3885,14 +3885,12 @@
   left: 2px;
   width: 50%;
   height: 50px;
-  background: #65bd63;
+  background: #FF6666;
   border-radius: 3px;
-  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
-  background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
-  background-image: -o-linear-gradient(top, #9dd993, #65bd63);
-  background-image: linear-gradient(to bottom, #9dd993, #65bd63);
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, #ef5e4a, #FF6666);
+  background-image: -moz-linear-gradient(top, #ef5e4a, #FF6666);
+  background-image: -o-linear-gradient(top, #ef5e4a, #FF6666);
+  background-image: linear-gradient(to bottom, #ef5e4a, #FF6666);
   -webkit-transition: left 0.15s ease-out;
   -moz-transition: left 0.15s ease-out;
   -o-transition: left 0.15s ease-out;
