@@ -3906,10 +3906,16 @@
 .blocks {
 	margin: auto;
 	margin-top: -5em;
+	-moz-transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	-ms-transform: scale(0.6);
 	transform: scale(0.6);
 }
 
 .blocks text, .blocks image {
+	-moz-transform: rotate(-17deg) skewX(-15deg);
+	-webkit-transform: rotate(-17deg) skewX(-15deg);
+	-ms-transform: rotate(-17deg) skewX(-15deg);
 	transform: rotate(-17deg) skewX(-15deg);
 }
 
@@ -3918,25 +3924,68 @@
 }
 
 .active #blocks-core {
+	-moz-transform: translateY(75px);
+	-webkit-transform: translateY(75px);
+	-ms-transform: translateY(75px);
 	transform: translateY(75px);
 }
 
+#blocks-ethereum {
+	-moz-transform: translate(0, 162px);
+	-webkit-transform: translate(0, 162px);
+	-ms-transform: translate(0, 162px);
+	transform: translate(0, 162px);
+	transition: all 300ms;
+}
 .active #blocks-ethereum {
+	-moz-transform: translate(0, 317px);
+	-webkit-transform: translate(0, 317px);
+	-ms-transform: translate(0, 317px);
 	transform: translate(0, 317px);
 	transition: all 300ms;
 }
 
+#blocks-mail {
+	-moz-transform: translate(177px, 108px);
+	-webkit-transform: translate(177px, 108px);
+	-ms-transform: translate(177px, 108px);
+	transform: translate(177px, 108px);
+	transition: all 500ms;
+}
 .active #blocks-mail {
+	-moz-transform: translate(177px, 265px);
+	-webkit-transform: translate(177px, 265px);
+	-ms-transform: translate(177px, 265px);
 	transform: translate(177px, 265px);
 	transition: all 500ms;
 }
 
+#blocks-lambda {
+	-moz-transform: translate(352px, 54px);
+	-webkit-transform: translate(352px, 54px);
+	-ms-transform: translate(352px, 54px);
+	transform: translate(352px, 54px);
+	transition: all 700ms;
+}
 .active #blocks-lambda {
+	-moz-transform: translate(352px, 212px);
+	-webkit-transform: translate(352px, 212px);
+	-ms-transform: translate(352px, 212px);
 	transform: translate(352px, 212px);
 	transition: all 700ms;
 }
 
+#blocks-custom {
+	-moz-transform: translate(529px, 0px);
+	-webkit-transform: translate(529px, 0px);
+	-ms-transform: translate(529px, 0px);
+	transform: translate(529px, 0px);
+	transition: all 900ms;
+}
 .active #blocks-custom {
+	-moz-transform: translate(529px, 158px);
+	-webkit-transform: translate(529px, 158px);
+	-ms-transform: translate(529px, 158px);
 	transform: translate(529px, 158px);
 	transition: all 900ms;
 }
