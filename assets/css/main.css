@@ -3992,27 +3992,27 @@
 
 path.no-stroke { stroke: none!important; }
 
-#blocks-application path, #blocks-application ellipse { stroke: #CCB790; }
-#blocks-application .primary { fill: #ffeac3;}
-#blocks-application .secondary { fill: #CCB790; }
+#blocks-application path, #blocks-application ellipse { stroke: #8D8D8D; }
+#blocks-application .primary { fill: #c0c0c0;}
+#blocks-application .secondary { fill: #8D8D8D; }
 
-#blocks-core path, #blocks-core ellipse { stroke: #CCB790; }
-#blocks-core .primary { fill: #ffeac3; }
-#blocks-core .secondary { fill: #CCB790;}
+#blocks-core path, #blocks-core ellipse { stroke: #C8635F; }
+#blocks-core .primary { fill: #fb9692; }
+#blocks-core .secondary { fill: #C8635F;}
 
 #blocks-ethereum path, #blocks-ethereum ellipse { stroke: #CCB790;}
 #blocks-ethereum .primary { fill: #ffeac3;}
 #blocks-ethereum .secondary { fill: #CCB790;}
 
-#blocks-mail path, #blocks-mail ellipse { stroke: #CCB790;}
-#blocks-mail .primary { fill: #ffeac3;}
-#blocks-mail .secondary { fill: #CCB790;}
+#blocks-mail path, #blocks-mail ellipse { stroke: #8DA3B1;}
+#blocks-mail .primary { fill: #c0d6e4;}
+#blocks-mail .secondary { fill: #8DA3B1;}
 
-#blocks-lambda path, #blocks-lambda ellipse { stroke: #CCB790;}
-#blocks-lambda .primary { fill: #ffeac3;}
-#blocks-lambda .secondary { fill: #CCB790;}
+#blocks-lambda path, #blocks-lambda ellipse { stroke: #C77F64;}
+#blocks-lambda .primary { fill: #fab297;}
+#blocks-lambda .secondary { fill: #C77F64;}
 
-#blocks-custom path, #blocks-custom ellipse { stroke: #CCB790;}
-#blocks-custom .primary { fill: #ffeac3;}
-#blocks-custom .secondary { fill: #CCB790;}
+#blocks-custom path, #blocks-custom ellipse { stroke: #7CA481;}
+#blocks-custom .primary { fill: #afd7b4;}
+#blocks-custom .secondary { fill: #7CA481;}
 
