@@ -63,7 +63,7 @@ export default {
     box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.15);
   }
   .docs {
-    background: rgba(39,174,96,1);
+    background: rgba(12,168,108,1);
     color: white;
   }
   svg {
