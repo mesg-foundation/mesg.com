@@ -98,7 +98,7 @@ export default {
 .terminal-window {
   text-align: left;
   width: 640px;
-  height: 440px;
+  height: 460px;
   border-radius: 10px;
   margin: auto;
   position: relative;
