@@ -33,7 +33,7 @@ export default {
         class: 'green',
         output: 'Service "Webhook" deployed with the ID: 331rjkq3qi3ugr31iurib13',
       }, { 
-        input: 'mesg-core service deploy mesg-examples/sendgrid',
+        input: 'mesg-core service deploy mesg-examples/slack-invitation',
         class: 'green',
         output: 'Service "Sendgrid" deployed with the ID: 3rbi318y4feqt9hou24t24t',
       }, {
