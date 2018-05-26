@@ -19,47 +19,20 @@
 
 <script>
 export default {
-  data () {
-    return {
-      delay: 20,
-      play: false,
-      history: []
+  props: {
+    commands: {
+      type: Array,
+      required: true
+    },
+    delay: {
+      type: Number,
+      default: 20
     }
   },
-  computed: {
-    commands () {
-      return [{ 
-        input: 'mesg-core service deploy mesg-examples/webhook',
-        class: 'green',
-        output: 'Service "Webhook" deployed with the ID: 331rjkq3qi3ugr31iurib13',
-      }, { 
-        input: 'mesg-core service deploy mesg-examples/slack-invitation',
-        class: 'green',
-        output: 'Service "Sendgrid" deployed with the ID: 3rbi318y4feqt9hou24t24t',
-      }, {
-        input: 'cat application.yml',
-        type: 'file',
-        output: `<strong>source:
-<br/>&nbsp;&nbsp;service: '331rjkq3qi3ugr31iurib13'
-<br/>&nbsp;&nbsp;event: onRequest
-<br/>tasks:
-<br/>&nbsp;&nbsp;sendInvitationEmail:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;service: '3rbi318y4feqt9hou24t24t'
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;task: send
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;data:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: $source.data.email</strong>`
-      }, {
-        input: 'mesg-core application start application.yml',
-        class: 'green',
-        output: 'Your application is up and running'
-      }, {
-        prompt: {
-          email: 'What is your email'
-        },
-        input: `curl https://address-of-my-server.com -d email="{{email}}"`,
-        class: 'green',
-        output: 'Request executed and invitation email sent'
-      }]
+  data () {
+    return {
+      play: false,
+      history: []
     }
   },
   watch: {

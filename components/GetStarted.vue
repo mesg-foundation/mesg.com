@@ -2,8 +2,8 @@
   <section>
     <div class="container">
       <h1>Get Started</h1>
-      <p>This is a step by step tutorial how to get started and to create your first service</p>
-      <Terminal></Terminal>
+      <p>This is a step by step tutorial how to get started and to create your first application</p>
+      <Terminal :commands="basicApp"></Terminal>
     </div>
   </section>
 </template>
@@ -13,6 +13,11 @@ import Terminal from '~/components/Terminal'
 export default {
   components: {
     Terminal
+  },
+  computed: {
+    basicApp () {
+      return require('~/assets/terminal/basic.json')
+    }
   }
 }
 </script>
