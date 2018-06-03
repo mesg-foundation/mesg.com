@@ -1,6 +1,9 @@
 <template>
   <nav class="container">
-    <a href="/" class="title">MESG <small>- Connect technologies</small></a>
+    <a href="/" class="title">
+      <img src="~/assets/logo.svg" alt="">
+      <small>- Connect technologies</small>
+    </a>
     <div class="nav-items">
       <a
         v-for="menu in menus" :key="menu.href"
@@ -27,11 +30,16 @@ export default {
 
 <style scoped>
 nav {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+img {
+  height: 2.5em;
+  vertical-align: middle;
+  margin-right: .5em;
 }
 .nav-items {
   display: flex;
@@ -47,7 +55,6 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.75);
 }
 .title {
   font-family: 'Jura', sans-serif;

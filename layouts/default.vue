@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Menu></Menu>
+    <Menu class="dark"></Menu>
     <nuxt/>
   </div>
 </template>
@@ -39,8 +39,20 @@ h1 {
   margin-bottom: 40px;
 }
 
+p {
+  line-height: 1.75;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
 }
+
+.dark h1 { color: white; }
+.dark p { color: rgba(255, 255, 255, 0.8); }
+.dark a { color: rgba(255, 255, 255, 0.75); }
+
+.light { background: white; }
+
+.gray { background: #f2f2f2 }
 </style>

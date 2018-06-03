@@ -37,12 +37,9 @@ export default {
   }
   h1 {
     font-size: 40px;
-    color: white;
   }
   p {
-    color: rgba(255, 255, 255, 0.8);
     max-width: 800px;
-    line-height: 1.75;
     margin: auto;
     margin-bottom: 80px;
   }
@@ -60,10 +57,10 @@ export default {
     color: black;
     background: white;
     text-decoration: none;
-    box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15);
   }
   .docs {
-    background: rgba(12,168,108,1);
+    background: rgba(12, 168, 108, 1);
     color: white;
   }
   svg {

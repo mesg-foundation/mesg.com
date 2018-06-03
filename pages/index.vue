@@ -1,23 +1,28 @@
 <template>
   <div>
-    <Header></Header>
-    <GetStarted class="white"></GetStarted>
+    <Header class="dark"></Header>
+    <GetStarted class="light"></GetStarted>
+    <Features class="gray"></Features>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
 import GetStarted from '~/components/GetStarted'
+import Features from '~/components/Features'
 export default {
   components: {
     Header,
-    GetStarted
+    GetStarted,
+    Features
   }
 }
 </script>
 
 <style scoped>
-  .white {
-    background: white;
+  section {
+    padding: 60px 0;
+    text-align: center;
   }
 </style>
+
