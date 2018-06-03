@@ -48,6 +48,10 @@ p {
   margin: auto;
 }
 
+.shadow {
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
 .dark h1 { color: white; }
 .dark p { color: rgba(255, 255, 255, 0.8); }
 .dark a { color: rgba(255, 255, 255, 0.75); }

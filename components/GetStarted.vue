@@ -3,7 +3,7 @@
     <div class="container">
       <h1>Get Started</h1>
       <p>This is a step by step tutorial how to get started and to create your first application</p>
-      <Terminal :commands="basicApp"></Terminal>
+      <Terminal class="shadow" :commands="basicApp"></Terminal>
     </div>
   </section>
 </template>
