@@ -1,11 +1,11 @@
 [{ 
-  "input": "mesg-core service publish mesg-examples/webhook",
+  "input": "mesg-core service deploy mesg-examples/webhook",
   "class": "green",
-  "output": "Service \"Webhook\" published with the ID: 331rjkq3qi3ugr31iurib13"
+  "output": "Service \"Webhook\" deployed with the ID: 331rjkq3qi3ugr31iurib13"
 }, { 
-  "input": "mesg-core service publish mesg-examples/discord-invitation",
+  "input": "mesg-core service deploy mesg-examples/discord-invitation",
   "class": "green",
-  "output": "Service \"Discord invitation\" published with the ID: 3rbi318y4feqt9hou24t24t"
+  "output": "Service \"Discord invitation\" deployed with the ID: 3rbi318y4feqt9hou24t24t"
 }, {
   "input": "cat application.yml",
   "type": "file",
