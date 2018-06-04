@@ -2,7 +2,6 @@
   <nav class="container">
     <a href="/" class="title">
       <img src="~/assets/logo.svg" alt="">
-      <small>- Connect technologies</small>
     </a>
     <div class="nav-items">
       <a
