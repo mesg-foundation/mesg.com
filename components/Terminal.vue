@@ -121,7 +121,8 @@ a {
   top: 0; left: 0; right: 0; bottom: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.15);
+  color: white;
   text-align: center;
   font-size: 10em;
   padding-top: .5em;

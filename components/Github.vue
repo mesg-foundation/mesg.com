@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="container">
-      <h1>Community driven</h1>
+      <h2>Community driven</h2>
       <p>
-        Come to join us to create this amazing tool that will help you and others to build applications with ease.
+        Come join us in creating this amazing tool that will help you and others build applications with ease
       </p>
 
 
@@ -19,7 +19,7 @@
         </div>
 
         <main class="activity light shadow bordered">
-          <h2>
+          <h3>
             Activity
             <a
               class="github-button"
@@ -30,7 +30,7 @@
               aria-label="Star mesg-foundation/core on GitHub">
               Star
             </a>
-          </h2>
+          </h3>
           <nav>
             <Event v-for="event in events" :key="event.id" :event="event"></Event>
           </nav>
@@ -84,14 +84,6 @@ export default {
     max-width: 100%;
     width: 480px;
     margin: 1em;
-  }
-
-  h2 {
-    padding: .75em;
-    border-bottom: solid 1px #f2f2f2;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
   }
 
   iframe {

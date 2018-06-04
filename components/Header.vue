@@ -1,7 +1,12 @@
 <template>
   <header class="container">
-    <h1>Technology-Interoperable dApps</h1>
-    <p>MESG is an open-source decentralized infrastructure which makes all technologies on or off the blockchain interoperable. It’s a building platform for developers.</p>
+    <h1>Technology-Interoperable DApps</h1>
+    <p>
+      MESG is an open-source decentralized infrastructure that makes all technologies, including blockchains, interoperable.
+      <br>
+      <br>
+      <strong>It’s a building platform for developers.</strong>
+    </p>
     <nav>
       <a href="https://docs.mesg.tech" target="_blank" class="button button--success">Documentation</a>
       <a href="https://github.com/mesg-foundation/core" target="_blank" class="button">
@@ -40,6 +45,7 @@ export default {
   }
   p {
     max-width: 800px;
+    font-size: 1.25em;
     margin: auto;
     margin-bottom: 80px;
   }

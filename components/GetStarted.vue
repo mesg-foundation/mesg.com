@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="container">
-      <h1>Get Started</h1>
-      <p>This is a step by step tutorial how to get started and to create your first application</p>
+      <h2>Get Started</h2>
+      <p>Here is a step-by-step tutorial on how to get started creating your first application</p>
       <Terminal class="shadow" :commands="basicApp"></Terminal>
     </div>
   </section>

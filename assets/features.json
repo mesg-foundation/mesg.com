@@ -1,21 +1,22 @@
 [
   {
     "title": "Technology Agnostic",
-    "description": "Connect any technology. As long as the technology you want to connect can send and/or receive data it means that it is possible to connect to MESG.<br/>It can be any traditional web service, any blockchain technologies, IoT or any private event system that your company might have...<br/></br/>You get it, <strong>anything with data can be connected to MESG</strong>." },
+    "description": "Connect any technology. If a technology can send and/or receive data, that means it can be connected to MESG.<br/><br/>Connections can come from any traditional web service, any blockchain technology, IoT or any private event system that your company might have.<br/><br/>You get it, <strong>anything with data can be connected to MESG</strong>."
+  },
   {
     "title": "Service Oriented",
-    "description": "Organize, use and re-use parts of your application into services. Every service will be its own application with its own <strong>tasks</strong> and <strong>events</strong> that your application will be able to connect to.<br/><br/>This kind of architecture is really interesting because it helps you create flexible applications and easily maintainable."
+    "description": "Organize, use and re-use parts of your application into services. Every service will be its own application with its own <strong>tasks</strong> and <strong>events</strong> that your application will be able to connect to.<br/><br/>This kind of architecture is interesting because it helps you create flexible applications that are easily maintainable."
   },
   {
     "title": "Event Driven",
-    "description": "Imperative programming is so old-school now we want real time and event driven applications are really reactive.<br/>Now the only business logic that you have to write is just to describe when you want to execute a specific task.<br/><br/>Your application is just a simple list of <strong>when</strong> ... <strong>then</strong> ..."
+    "description": "Imperative programming is so old-school. We want real-time and event-driven applications that are really reactive.<br/><br/>Now, the only business logic you have to write is the description of how you want to execute a specific task.<br/><br/>Your Application is a simple list of <strong>when</strong> ... and <strong>then</strong> ..."
   },
   {
     "title": "Almost no coding",
-    "description": "With an event driven and service oriented application, now building features on your application is really simple and you don't even need any coding skills to create an application.<br/><br/>You want a specific workflow, then just describe it in a <strong>workflow file</strong> and your application is all set and ready to run."
+    "description": "Building features onto your application is really simple when it’s event-driven and service-oriented. You don't even need any coding skills to create an application.<br/><br/>Imagine a specific workflow, then just describe it in a <strong>workflow file</strong> and your application is all set and ready to run."
   },
   {
     "title": "Decentralized",
-    "description": "Decentralization is really more than just a hot topic, it's the new way to create applications where you don't need servers anymore and make sure they are up 100% of the time.<br/><br/>With MESG, services of your application <strong>runs everywhere</strong> and every part of your application is executed by different actors of the newtork."
+    "description": "Decentralization is more than just a hot topic, it's a new way to create applications where users don't need to use servers any longer, or make sure those servers are running 100% of the time.<br/><br/>With MESG, your application’s services <strong>run everywhere</strong>, and every part of your application is <strong>executed by different actors</strong> on the network."
   }
 ]

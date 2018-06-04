@@ -43,7 +43,21 @@ h2 {
   font-family: 'Jura', sans-serif;
   font-weight: 600;
   font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   margin-bottom: 20px;
+
+  padding: .75em;
+  border-bottom: solid 1px #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 p {
@@ -101,10 +115,11 @@ p {
 .dark a { color: rgba(255, 255, 255, 0.75); }
 
 .light { background: white; }
-.light p { color: #666; }
+.light p { color: #444; }
+.light a { color: #444; }
 
 .gray { background: #f2f2f2 }
-.gray p { color: #666; }
+.gray p { color: #444; }
 
 h4 {
   margin-bottom: 1em;

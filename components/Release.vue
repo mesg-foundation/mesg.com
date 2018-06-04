@@ -1,11 +1,11 @@
 <template>
   <main>
-    <h2>
+    <h3>
       Lastest version:
       <a :href="release.html_url" target="_blank">
         {{ release.name }}
       </a>
-    </h2>
+    </h3>
     <div class="content" v-html="html"></div>
   </main>
 </template>
@@ -44,13 +44,5 @@ export default {
   .content {
     padding: 1em;
     text-align: left;
-  }
-
-  h2 {
-    padding: .75em;
-    border-bottom: solid 1px #f2f2f2;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
   }
 </style>
