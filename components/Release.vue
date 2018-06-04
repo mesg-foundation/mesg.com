@@ -7,6 +7,7 @@
       </a>
     </h3>
     <div class="content" v-html="html"></div>
+    <slot></slot>
   </main>
 </template>
 

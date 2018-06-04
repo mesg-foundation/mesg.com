@@ -61,6 +61,7 @@ export default {
     display: flex;
     justify-content: center;
     text-align: left;
+    flex-wrap: wrap;
   }
 
   aside {

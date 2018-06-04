@@ -8,15 +8,13 @@
 
 
       <div class="stats">
-        <div>
-          <Release v-if="release" :release="release"></Release>
+        <Release v-if="release" :release="release">
           <trend
             :data="commits"
             :gradient="['rgba(20, 9, 48, 1)', '#28a745', '#28a745']"
             smooth>
           </trend>
-
-        </div>
+        </Release>
 
         <main class="activity light shadow bordered">
           <h3>
@@ -81,6 +79,7 @@ export default {
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
+    flex-wrap: wrap;
   }
 
   main {

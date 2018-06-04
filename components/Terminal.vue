@@ -75,6 +75,7 @@ export default {
   border-radius: 10px;
   margin: auto;
   position: relative;
+  max-width: 100%;
 }
 
 nav {
