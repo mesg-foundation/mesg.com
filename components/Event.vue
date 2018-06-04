@@ -78,6 +78,7 @@ export default {
     max-width: 65%;
     overflow: hidden;
     text-overflow: ellipsis; 
+    margin: 0;
   }
 
   strong {

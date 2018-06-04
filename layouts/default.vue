@@ -92,6 +92,10 @@ p {
   box-shadow: 0 3px 7px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.07);
 }
 
+.bordered {
+  border: solid 1px #f2f2f2;
+}
+
 .dark h1 { color: white; }
 .dark p { color: rgba(255, 255, 255, 0.8); }
 .dark a { color: rgba(255, 255, 255, 0.75); }
@@ -101,4 +105,13 @@ p {
 
 .gray { background: #f2f2f2 }
 .gray p { color: #666; }
+
+h4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+ul {
+  line-height: 1.5em;
+}
 </style>

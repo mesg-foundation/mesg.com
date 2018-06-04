@@ -8,31 +8,17 @@
 
 
       <div class="stats">
-        <main class="statistics">
-          {{ commits.length }}
+        <div>
+          <Release v-if="release" :release="release"></Release>
           <trend
             :data="commits"
             :gradient="['rgba(20, 9, 48, 1)', '#28a745', '#28a745']"
-            :height="50"
-            :width="100"
             smooth>
           </trend>
 
-          <div>
-            <a :href="release.html_url" target="_blank">
-              {{ release.name }}
-            </a>
-            <time>{{ release.created_at }}</time>
-            <div v-html="release.html"></div>
-            <ul>
-              <li v-for="asset in release.assets" :key="asset.id">
-                {{ asset.label }} -- {{ asset.name }} - {{ asset.size }} -- <a>download</a>
-              </li>
-            </ul>
-          </div>
-        </main>
+        </div>
 
-        <main class="activity light shadow">
+        <main class="activity light shadow bordered">
           <h2>
             Activity
             <a
@@ -58,12 +44,14 @@
 import axios from 'axios'
 import Trend from 'vuetrend'
 import Event from '~/components/Event'
+import Release from '~/components/Release'
 
 const ENDPOINT = 'https://api.github.com/repos/mesg-foundation/core'
 
 export default {
   components: {
     Event,
+    Release,
     Trend
   },
   data () {
@@ -81,12 +69,6 @@ export default {
     this.events = await events.then(({ data }) => data)
     this.commits = await commits.then(({ data }) => data.all)
     this.release = await release.then(({ data }) => data[0])
-    this.release = {
-      ...this.release,
-      html: await axios.post(`https://api.github.com/markdown?access_token=${process.env.GITHUB_TOKEN}`, {
-        text: this.release.body,
-      }).then(({ data }) => data)
-    }
   }
 }
 </script>
@@ -95,16 +77,13 @@ export default {
   .stats {
     display: flex;
     justify-content: space-around;
+    margin-top: 2em;
   }
 
   main {
     max-width: 100%;
-    margin: auto;
-    margin-top: 2em;
-  }
-
-  main.light {
-    border: solid 1px #f2f2f2;
+    width: 480px;
+    margin: 1em;
   }
 
   h2 {
