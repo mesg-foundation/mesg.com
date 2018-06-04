@@ -48,7 +48,7 @@ export default {
 <style scoped>
   a {
     display: block;
-    padding: 1em;
+    padding: .75em 1em;
     text-align: left;
     text-decoration: none;
     color: #333;

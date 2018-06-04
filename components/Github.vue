@@ -7,7 +7,18 @@
       </p>
 
       <main class="light shadow">
-        <h2>Activity</h2>
+        <h2>
+          Activity
+          <a
+            class="github-button"
+            href="https://github.com/mesg-foundation/core"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star mesg-foundation/core on GitHub">
+            Star
+          </a>
+        </h2>
         <nav>
           <Event v-for="event in events" :key="event.id" :event="event"></Event>
         </nav>
@@ -46,5 +57,12 @@ export default {
   h2 {
     padding: .75em;
     border-bottom: solid 1px #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  iframe {
+    vertical-align: middle;
   }
 </style>
