@@ -49,5 +49,7 @@ export default {
   .content {
     padding: 1em;
     text-align: left;
+    max-height: 600px;
+    overflow: scroll;
   }
 </style>
