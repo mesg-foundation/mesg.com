@@ -2,14 +2,17 @@
   <div>
     <Menu class="dark"></Menu>
     <nuxt/>
+    <Discord id="448501704388902912"></Discord>
   </div>
 </template>
 
 <script>
 import Menu from '~/components/Menu'
+import Discord from '~/components/Discord'
 export default {
   components: {
-    Menu
+    Menu,
+    Discord
   }
 }
 </script>
