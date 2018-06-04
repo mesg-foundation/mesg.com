@@ -3,8 +3,8 @@
     <h1>Technology-Interoperable dApps</h1>
     <p>MESG is an open-source decentralized infrastructure which makes all technologies on or off the blockchain interoperable. It’s a building platform for developers.</p>
     <nav>
-      <a href="https://docs.mesg.tech" target="_blank" class="docs">Documentation</a>
-      <a href="https://github.com/mesg-foundation/core" target="_blank" class="github">
+      <a href="https://docs.mesg.tech" target="_blank" class="button button--success">Documentation</a>
+      <a href="https://github.com/mesg-foundation/core" target="_blank" class="button">
       <svg stroke="none" fill="#000" style="width: 26px; height: 26px;" width="30px" height="29px" viewBox="2 -2 30 29">
         <path d="M2.5,12.9c0,6.4,4.2,11.8,9.9,13.7c0.7,0.1,1-0.3,1-0.7c0-0.3,0-1.3,0-2.5c-4,0.9-4.9-1.9-4.9-1.9
           c-0.7-1.7-1.6-2.1-1.6-2.1C5.6,18.5,7,18.5,7,18.5C8.4,18.6,9.2,20,9.2,20c1.3,2.2,3.4,1.6,4.2,1.2c0.1-0.9,0.5-1.6,0.9-1.9
@@ -47,21 +47,11 @@ export default {
     height: 40px;
   }
   a {
-    font-family: 'Jura', sans-serif;
     font-weight: bold;
     letter-spacing: 2.5px;
-    margin: 0 15px;
-    padding: 15px 20px;
-    border-radius: 3px;
-    text-transform: uppercase;
     color: black;
     background: white;
-    text-decoration: none;
-    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.15);
-  }
-  .docs {
-    background: rgba(12, 168, 108, 1);
-    color: white;
+    margin: 0 15px;
   }
   svg {
     vertical-align: middle;

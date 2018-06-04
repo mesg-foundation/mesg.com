@@ -2,7 +2,7 @@
   <div>
     <Header class="dark"></Header>
     <GetStarted class="light"></GetStarted>
-    <Features class="gray"></Features>
+    <Features class="gray border"></Features>
   </div>
 </template>
 
@@ -23,6 +23,10 @@ export default {
   section {
     padding: 60px 0;
     text-align: center;
+  }
+
+  .border {
+    border-top: solid 1px #DDD;
   }
 </style>
 
