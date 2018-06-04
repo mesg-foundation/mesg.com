@@ -91,4 +91,8 @@ export default {
   iframe {
     vertical-align: middle;
   }
+
+  svg {
+    min-height: 100px;
+  }
 </style>
