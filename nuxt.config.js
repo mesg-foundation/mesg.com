@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'mesg',
+    title: 'MESG - Technology-Interoperable DApps',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,10 +20,16 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: 'rgba(20, 9, 48, 1)' },
   env: {
     GITHUB_TOKEN: process.env.GITHUB_TOKEN
   },
+  manifest: {
+    theme_color: 'rgba(20, 9, 48, 1)'
+  },
+  modules: [
+    '@nuxtjs/pwa'
+  ],
   /*
   ** Build configuration
   */

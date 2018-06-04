@@ -26,6 +26,7 @@ export default {
   },
   methods: {
     async refreshHtml () {
+      if (!this.release.body) { return }
       const token = process.env.GITHUB_TOKEN
         ? `access_token=${process.env.GITHUB_TOKEN}`
         : ''
