@@ -38,7 +38,6 @@ nav {
 img {
   height: 2.5em;
   vertical-align: middle;
-  margin-right: .5em;
 }
 .nav-items {
   display: flex;
@@ -62,5 +61,20 @@ a {
 }
 .title small {
   text-transform: none;
+}
+@media only screen and (max-width: 480px) {
+  img {
+    height: 3em;
+    margin: 1.5em;
+  }
+  nav {
+    justify-content: center;
+  }
+  .nav-items {
+    display: none;
+  }
+  a {
+    margin: 0;
+  }
 }
 </style>

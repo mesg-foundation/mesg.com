@@ -8,6 +8,13 @@
       </p>
 
       <div class="features">
+        <select v-model="currentFeature">
+          <option
+            v-for="(feature, i) in features" :key="i"
+            :value="feature">
+            {{ feature.title }}
+          </option>
+        </select>
         <aside>
           <nav>
             <a
@@ -70,6 +77,14 @@ export default {
     max-width: 100%;
   }
 
+  select {
+    display: none;
+    width: 600px;
+    max-width: 100%;
+    margin: .5em;
+    margin-bottom: 1em;
+  }
+
   aside a {
     display: block;
     margin-bottom: 1em;
@@ -94,5 +109,14 @@ export default {
     justify-content: flex-end;
     padding: 1.5em;
     margin-top: 1.25em;
+  }
+  
+  @media only screen and (max-width: 944px) {
+    aside {
+      display: none;
+    }
+    select {
+      display: block;
+    }
   }
 </style>
