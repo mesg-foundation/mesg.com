@@ -81,4 +81,8 @@ export default {
     right: 1em; 
     opacity: 1;
   }
+
+  iframe {
+    max-width: 100%;
+  }
 </style>
