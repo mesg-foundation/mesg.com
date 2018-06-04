@@ -26,7 +26,10 @@ export default {
   },
   methods: {
     async refreshHtml () {
-      this.html = await axios.post(`https://api.github.com/markdown?access_token=${process.env.GITHUB_TOKEN}`, {
+      const token = process.env.GITHUB_TOKEN
+        ? `access_token=${process.env.GITHUB_TOKEN}`
+        : ''
+      this.html = await axios.post(`https://api.github.com/markdown?${token}`, {
         text: this.release.body,
       }).then(({ data }) => data)
     }
