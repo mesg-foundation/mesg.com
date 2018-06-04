@@ -21,6 +21,9 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  env: {
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN
+  },
   /*
   ** Build configuration
   */

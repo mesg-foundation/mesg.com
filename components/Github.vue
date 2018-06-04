@@ -23,7 +23,7 @@
               {{ release.name }}
             </a>
             <time>{{ release.created_at }}</time>
-            <p>{{ release.body }}</p>
+            <div v-html="release.html"></div>
             <ul>
               <li v-for="asset in release.assets" :key="asset.id">
                 {{ asset.label }} -- {{ asset.name }} - {{ asset.size }} -- <a>download</a>
@@ -55,8 +55,11 @@
 </template>
 
 <script>
+import axios from 'axios'
 import Trend from 'vuetrend'
 import Event from '~/components/Event'
+
+const ENDPOINT = 'https://api.github.com/repos/mesg-foundation/core'
 
 export default {
   components: {
@@ -70,21 +73,20 @@ export default {
       release: {}
     }
   },
-  mounted() {
-    const endpoint = 'https://api.github.com/repos/mesg-foundation/core'
-    const issuesEndpoint = `${endpoint}/issues/events?per_page=10`
-    const commitEndpoint = `${endpoint}/stats/participation`
-    const releaseEndpoint = `${endpoint}/releases?per_page=1`
+  async mounted() {
+    const events = axios.get(`${ENDPOINT}/issues/events?per_page=10&access_token=${process.env.GITHUB_TOKEN}`)
+    const commits = axios.get(`${ENDPOINT}/stats/participation?access_token=${process.env.GITHUB_TOKEN}`)
+    const release = axios.get(`${ENDPOINT}/releases?per_page=1&access_token=${process.env.GITHUB_TOKEN}`)
 
-    const githubData = url => fetch(url)
-      .then(x => {
-        if (x.status !== 200) { throw new Error("Error while fetching data") }
-        return x.json()
-      })
-
-    githubData(issuesEndpoint).then(x => this.events = x)
-    githubData(commitEndpoint).then(({ all }) => this.commits = all)
-    githubData(releaseEndpoint).then(x => this.release = x[0])
+    this.events = await events.then(({ data }) => data)
+    this.commits = await commits.then(({ data }) => data.all)
+    this.release = await release.then(({ data }) => data[0])
+    this.release = {
+      ...this.release,
+      html: await axios.post(`https://api.github.com/markdown?access_token=${process.env.GITHUB_TOKEN}`, {
+        text: this.release.body,
+      }).then(({ data }) => data)
+    }
   }
 }
 </script>
