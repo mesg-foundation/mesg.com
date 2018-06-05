@@ -2,17 +2,17 @@
   <div>
     <Menu class="dark"></Menu>
     <nuxt/>
-    <Discord id="448501704388902912"></Discord>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Menu from '~/components/Menu'
-import Discord from '~/components/Discord'
+import Footer from '~/components/Footer'
 export default {
   components: {
     Menu,
-    Discord
+    Footer
   }
 }
 </script>
@@ -125,16 +125,13 @@ select {
   border: solid 1px #f2f2f2;
 }
 
+.dark { color: rgba(255, 255, 255, 0.8); }
 .dark h1 { color: white; }
-.dark p { color: rgba(255, 255, 255, 0.8); }
 .dark a { color: rgba(255, 255, 255, 0.75); }
 
-.light { background: white; }
-.light p { color: #444; }
-.light a { color: #444; }
+.light { background: white; color: #444; }
 
-.gray { background: #f2f2f2 }
-.gray p { color: #444; }
+.gray { background: #f2f2f2; color: #444; }
 
 h4 {
   margin-bottom: 1em;
