@@ -27,7 +27,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: rgba(20, 9, 48, 1);
+  background-color: #201351;
+  background-image: url("~/assets/bg.svg");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
 }
 
 *, *:before, *:after {
