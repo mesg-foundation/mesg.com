@@ -130,6 +130,7 @@ select {
 .dark a { color: rgba(255, 255, 255, 0.75); }
 
 .light { background: white; color: #444; }
+.light a { color: #444; }
 
 .gray { background: #f2f2f2; color: #444; }
 
