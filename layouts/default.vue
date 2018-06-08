@@ -30,7 +30,6 @@ html {
   background-color: #201351;
   background-image: url("~/assets/bg.svg");
   background-blend-mode: overlay;
-  background-repeat: no-repeat;
 }
 
 *, *:before, *:after {

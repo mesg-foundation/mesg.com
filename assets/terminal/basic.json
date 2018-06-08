@@ -15,7 +15,7 @@
   "class": "green",
   "output": "Your application is up and running"
 }, {
-  "prompt": {
+  "prompts": {
     "email": "What is your email"
   },
   "input": "curl https://address-of-my-server.com -d email=\"{{email}}\"",

@@ -8,11 +8,20 @@
     <section>
       <div class="history">
         <div v-for="(cmd, i) in history" :key="i">
-          <div>$&nbsp;<span class="prompt">{{ cmd.input }}</span></div>
+          <div>
+            $&nbsp;<span class="prompt">{{ cmd.input }}</span>
+            <input
+              v-if="cmd.wait"
+              @keyup.enter="handleKey()"
+              @click="next()"
+              value="█"
+              class="wait"
+              type="submit"/>
+          </div>
           <div :class="cmd.class" v-html="cmd.output"></div>
         </div>
       </div>
-      <a v-if="!play" @click="play = !play">▶</a>
+      <a class="start" v-if="!play" @click="start()">▶</a>
     </section>
   </div>
 </template>
@@ -32,36 +41,51 @@ export default {
   data () {
     return {
       play: false,
-      history: []
+      history: [],
+      step: 0,
+      currentInput: '',
+      writting: false
     }
   },
-  watch: {
-    async play () {
-      if (!this.play) {
-        this.history = []
-        return
-      }
-      const sleep = duration => new Promise(resolve => setTimeout(resolve, duration))
-      const updateHistory = cmd => (this.history = [
+  methods: {
+    start() {
+      this.play = true
+      this.applyCommand(this.step)
+    },
+    sleep(duration) { return new Promise(resolve => setTimeout(resolve, duration)) },
+    updateHistory (cmd) {
+      this.history = [
         ...this.history.slice(0, this.history.length - 1),
         cmd
-      ])
-      for (const cmd of this.commands) {
-        this.history.push({})
-        let input = cmd.input
-        const prompts = cmd.prompt || {}
-        for (const key in prompts) {
-          const value = prompt(prompts[key])
-          input = input.replace(`{{${key}}}`, value)
-        }
-        for (const i in input.split("")) {
-          updateHistory({ input: input.slice(0, i) })
-          await sleep(this.delay)
-        }
-        updateHistory({ input })
-        await sleep(this.delay * 10)
-        updateHistory({ ...cmd, input })
+      ]
+    },
+    handleKey(event) {
+      if (this.writting) { return }
+      debugger
+    },
+    next() {
+      const cmd = this.commands[this.step]
+      this.updateHistory({ ...cmd, input: this.currentInput })
+      this.step = this.step + 1 
+      this.applyCommand()
+    },
+    async applyCommand() {
+      if (this.step >= this.commands.length) { return }
+      this.writting = true
+      const cmd = this.commands[this.step]
+      this.history.push({})
+      this.currentInput = cmd.input
+      for (const key in (cmd.prompts || {})) {
+        const value = prompt(cmd.prompts[key])
+        this.currentInput = this.currentInput.replace(`{{${key}}}`, value)
       }
+      for (const i in this.currentInput.split("")) {
+        this.updateHistory({ input: this.currentInput.slice(0, i) })
+        await this.sleep(this.delay)
+      }
+      this.writting = false
+      this.updateHistory({ input: this.currentInput, wait: true })
+      setTimeout(() => this.$el.querySelector('.wait').focus(), 100)
     }
   }
 }
@@ -117,7 +141,21 @@ section {
   overflow: auto;
 }
 
-a {
+.wait {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  line-height: 1.5;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+a.start {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   height: 100%;
@@ -132,4 +170,10 @@ a {
 
 .gray { color: gray; }
 .green { color: rgba(12,168,108,1);}
+
+@keyframes blink {
+  from {opacity: 1;}
+  50% {opacity: 0;}
+  to {opacity: 1;}
+}
 </style>
