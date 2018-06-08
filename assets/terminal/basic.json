@@ -7,9 +7,9 @@
   "class": "green",
   "output": "Service \"Discord invitation\" deployed with the ID: 3rbi318y4feqt9hou24t24t"
 }, {
-  "input": "cat application.yml",
+  "input": "cat application.js",
   "type": "file",
-  "output": "<strong>source:<br/>&nbsp;&nbsp;service: \"331rjkq3qi3ugr31iurib13\"<br/>&nbsp;&nbsp;event: onRequest<br/>tasks:<br/>&nbsp;&nbsp;sendInvitationEmail:<br/>&nbsp;&nbsp;&nbsp;&nbsp;service: \"3rbi318y4feqt9hou24t24t\"<br/>&nbsp;&nbsp;&nbsp;&nbsp;task: send<br/>&nbsp;&nbsp;&nbsp;&nbsp;data:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: $source.data.email</strong>"
+  "output": "<strong>require('mesg-js')<br/>&nbsp;.application()<br/>&nbsp;.whenEvent(<br/>&nbsp;&nbsp;{ serviceID: '331rjkq3qi3ugr31iurib13', filter: 'request' },<br/>&nbsp;&nbsp;{ serviceID: '3rbi318y4feqt9hou24t24t', send: 'start', inputs: (_, event) => ({<br/>&nbsp;&nbsp;&nbsp;email: event.data.email<br/>&nbsp;&nbsp;})}<br/>&nbsp;)</strong>"
 }, {
   "input": "mesg-core application start application.yml",
   "class": "green",
@@ -18,7 +18,7 @@
   "prompts": {
     "email": "What is your email"
   },
-  "input": "curl https://address-of-my-server.com -d email=\"{{email}}\"",
+  "input": "curl http://localhost:3000/webhook -d email=\"{{email}}\"",
   "class": "green",
   "output": "Request executed and invitation email sent"
 }]
