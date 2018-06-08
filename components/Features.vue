@@ -23,6 +23,7 @@
               :class="extraClass(feature)"
               @click="currentFeature = feature">
               {{ feature.title }}
+              <span>▶</span>
             </a>
           </nav>
         </aside>
@@ -88,6 +89,17 @@ export default {
   aside a {
     display: block;
     margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside a span {
+    transition: all 300ms;
+    color: rgba(0,0,0,.1);
+  }
+
+  aside a:hover span {
+    transform: translateX(2px);
   }
 
   main {
