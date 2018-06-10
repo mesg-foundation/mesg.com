@@ -1,8 +1,7 @@
 <template>
   <a
     class="shadow light hover"
-    :href="service.url"
-    target="_blank">
+    :href="href" nuxt>
     <h3 class="truncate">{{ service.name }}</h3>
     <p class="p1">{{ service.description }}</p>
   </a>
@@ -14,6 +13,11 @@ export default {
     service: {
       type: Object,
       required: true
+    }
+  },
+  computed: {
+    href() {
+      return this.service.url.replace("https://github.com/", "/examples/")
     }
   }
 }
