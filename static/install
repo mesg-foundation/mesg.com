@@ -13,8 +13,10 @@ else
 fi
 
 if command_exists docker; then
+  version=$(docker -v)
+  echo "Docker already installed, using $version"
 else
-  echo "Installing docker..."
+  echo "Installing Docker..."
   bash <(curl -fsSL get.docker.com)
 fi
 
