@@ -5,14 +5,13 @@
       <span></span>
       <span></span>
     </nav>
-    <section>
+    <section ref="scroll">
       <div class="history">
         <div v-for="(cmd, i) in history" :key="i">
           <div>
             $&nbsp;<span class="prompt">{{ cmd.input }}</span>
             <input
               v-if="cmd.wait"
-              @keyup.enter="handleKey()"
               @click="next()"
               value="█"
               class="wait"
@@ -59,15 +58,12 @@ export default {
         cmd
       ]
     },
-    handleKey(event) {
-      if (this.writting) { return }
-      debugger
-    },
     next() {
       const cmd = this.commands[this.step]
       this.updateHistory({ ...cmd, input: this.currentInput })
       this.step = this.step + 1 
       this.applyCommand()
+      this.scrollToBottom()
     },
     async applyCommand() {
       if (this.step >= this.commands.length) { return }
@@ -81,12 +77,20 @@ export default {
       }
       for (const i in this.currentInput.split("")) {
         this.updateHistory({ input: this.currentInput.slice(0, i) })
+        this.scrollToBottom()
         await this.sleep(this.delay)
       }
       this.writting = false
       this.updateHistory({ input: this.currentInput, wait: true })
       setTimeout(() => this.$el.querySelector('.wait').focus(), 100)
+      this.scrollToBottom()
+    },
+    scrollToBottom () {
+      this.$refs['scroll'].scrollTop = this.$refs['scroll'].scrollHeight
     }
+  },
+  mounted () {
+    this.scrollToBottom()
   }
 }
 </script>
@@ -94,7 +98,7 @@ export default {
 <style scoped>
 .terminal-window {
   text-align: left;
-  width: 640px;
+  width: 750px;
   height: 460px;
   border-radius: 10px;
   margin: auto;
