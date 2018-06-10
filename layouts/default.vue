@@ -115,6 +115,12 @@ select {
   background: rgb(29, 197, 133);
 }
 
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .shadow {
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
 }
@@ -125,6 +131,13 @@ select {
 
 .bordered {
   border: solid 1px #f2f2f2;
+}
+
+.hover {
+  transition: all 300ms;
+}
+.hover:hover {
+  transform: translateY(-2px);
 }
 
 .dark { color: rgba(255, 255, 255, 0.8); }
@@ -144,4 +157,6 @@ h4 {
 ul {
   line-height: 1.5em;
 }
+
+.p1 { padding: 1em; }
 </style>

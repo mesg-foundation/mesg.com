@@ -19,7 +19,7 @@
           <nav>
             <a
               v-for="(feature, i) in features" :key="i"
-              class="button"
+              class="button hover"
               :class="extraClass(feature)"
               @click="currentFeature = feature">
               {{ feature.title }}

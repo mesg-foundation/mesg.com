@@ -6,7 +6,7 @@
         {{ release.name }}
       </a>
     </h3>
-    <div class="content" v-html="html"></div>
+    <div class="content p1" v-html="html"></div>
     <slot></slot>
   </main>
 </template>
@@ -47,7 +47,6 @@ export default {
 
 <style scoped>
   .content {
-    padding: 1em;
     text-align: left;
     max-height: 600px;
     overflow: scroll;

@@ -2,36 +2,30 @@
   <div class="light">
     <section class="container">
       <h2>Services</h2>
-      <ul>
-        <li
-          class="shadow light"
-          v-for="(service, i) in services" :key="i">
-          <a :href="service.url" target="_blank">
-            <h3>{{ service.name }}</h3>
-            <p>{{ service.description }}</p>
-          </a>
-        </li>
-      </ul>
+      <Grid :items="services">
+        <ServiceCard slot-scope="{ item }" :service="item"/>
+      </Grid>
     </section>
     <section class="container">
       <h2>Applications</h2>
-      <ul>
-        <li
-          class="shadow light"
-          v-for="(application, i) in applications" :key="i">
-          <a :href="application.url" target="_blank">
-            <h3>{{ application.name }}</h3>
-            <p>{{ application.description }}</p>
-          </a>
-        </li>
-      </ul>
+      <Grid :items="applications">
+        <ApplicationCard slot-scope="{ item }" :application="item"/>
+      </Grid>
     </section>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import Grid from '~/components/Grid'
+import ServiceCard from '~/components/ServiceCard'
+import ApplicationCard from '~/components/ApplicationCard'
 export default {
+  components: {
+    Grid,
+    ServiceCard,
+    ApplicationCard
+  },
   async asyncData() {
     const services = await axios.get(`https://raw.githubusercontent.com/mesg-foundation/awesome/master/services.json`)
     const applications = await axios.get(`https://raw.githubusercontent.com/mesg-foundation/awesome/master/applications.json`)
@@ -46,40 +40,5 @@ export default {
 <style scoped>
   h2 {
     margin-top: 2em;
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3em;
-    padding: 0;
-  }
-
-  li {
-    margin: .5em;
-    transition: all 300ms;
-  }
-
-  li:hover {
-    transform: translateY(-2px);
-  }
-
-  a {
-    display: block;
-    max-width: 100%;
-    width: 246px;
-    text-decoration: none;
-    height: 100%;
-  }
-
-  h3 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  p {
-    padding: 1em;
   }
 </style>
