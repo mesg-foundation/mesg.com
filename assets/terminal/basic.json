@@ -1,17 +1,21 @@
-[{ 
-  "input": "mesg-core service deploy mesg-examples/webhook",
+[{
+  "input": "bash <(curl -s https://mesg.tech/install)",
   "class": "green",
-  "output": "Service \"Webhook\" deployed with the ID: 331rjkq3qi3ugr31iurib13"
+  "output": "MESG Core installed and started"
 }, { 
-  "input": "mesg-core service deploy mesg-examples/discord-invitation",
+  "input": "mesg-core service deploy https://github.com/mesg-foundation/service-webhook.git",
   "class": "green",
-  "output": "Service \"Discord invitation\" deployed with the ID: 3rbi318y4feqt9hou24t24t"
+  "output": "Service deployed with ID: v1_d3cd1f941849b5e5609d713c140a103d"
+}, { 
+  "input": "mesg-core service deploy https://github.com/mesg-foundation/service-discord-invitation.git",
+  "class": "green",
+  "output": "Service deployed with ID: v1_9bd8c903d26d28ca17bc970ea38695a8"
 }, {
-  "input": "cat application.js",
+  "input": "nano application.js",
   "type": "file",
-  "output": "<strong>require('mesg-js')<br/>&nbsp;.application()<br/>&nbsp;.whenEvent(<br/>&nbsp;&nbsp;{ serviceID: '331rjkq3qi3ugr31iurib13', filter: 'request' },<br/>&nbsp;&nbsp;{ serviceID: '3rbi318y4feqt9hou24t24t', send: 'start', inputs: (_, event) => ({<br/>&nbsp;&nbsp;&nbsp;email: event.data.email<br/>&nbsp;&nbsp;})}<br/>&nbsp;)</strong>"
+  "output": "<strong>require('mesg-js')<br/>&nbsp;&nbsp;.application()<br/>&nbsp;&nbsp;.whenEvent({ serviceID: 'v1_d3cd1f941849b5e5609d713c140a103d' }, {<br/>&nbsp;&nbsp;&nbsp;&nbsp;serviceID: 'v1_9bd8c903d26d28ca17bc970ea38695a8',<br/>&nbsp;&nbsp;&nbsp;&nbsp;taskKey: 'send',<br/>&nbsp;&nbsp;&nbsp;&nbsp;inputs: (_, event) => ({<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: event.data.email,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sendgridAPIKey: process.env.SENDGRID_API_KEY<br/>&nbsp;&nbsp;&nbsp;&nbsp;})<br/>&nbsp;&nbsp;})</strong>"
 }, {
-  "input": "mesg-core application start application.yml",
+  "input": "npm install -g mesg-js && node application.js",
   "class": "green",
   "output": "Your application is up and running"
 }, {
