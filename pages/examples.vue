@@ -53,6 +53,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3em;
+    padding: 0;
   }
 
   li {
@@ -67,7 +68,7 @@ export default {
   a {
     display: block;
     max-width: 100%;
-    width: 250px;
+    width: 246px;
     text-decoration: none;
     height: 100%;
   }
