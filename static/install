@@ -8,6 +8,10 @@ else
   machine="386"
 fi
 
+echo "Installing docker..."
+bash <(curl -fsSL get.docker.com)
+
+echo "Installing MESG..."
 link=$(curl -s https://api.github.com/repos/mesg-foundation/core/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
 
 path="/usr/local/bin/mesg-core"
@@ -17,4 +21,6 @@ fi
 
 sudo curl --progress -L $link -o $path
 sudo chmod +x $path
+
+echo "Starting MESG..."
 $path start
