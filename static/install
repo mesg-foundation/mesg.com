@@ -4,20 +4,21 @@ command_exists() {
 	command -v "$@" > /dev/null 2>&1
 }
 
-system=$(uname -s | tr A-Z a-z)
-machine=$(uname -m)
-if [ $machine == "x86_64" ]; then
-  machine="amd64"
-else
-  machine="386"
-fi
-
 if command_exists docker; then
   version=$(docker -v)
   echo "Docker already installed, using $version"
 else
   echo "Installing Docker..."
   bash <(curl -fsSL get.docker.com)
+  sudo usermod -aG docker $(whoami)
+fi
+
+system=$(uname -s | tr A-Z a-z)
+machine=$(uname -m)
+if [ $machine == "x86_64" ]; then
+  machine="amd64"
+else
+  machine="386"
 fi
 
 echo "Installing MESG..."
