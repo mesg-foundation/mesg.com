@@ -6,9 +6,7 @@
         <Links docs github blog discussion small></Links>
       </div>
     </footer>
-    <footer class="dark">
-      <Discord id="448501704388902912"></Discord>
-    </footer>
+    <Discord id="448501704388902912"></Discord>
   </div>
 </template>
 
