@@ -1,0 +1,20 @@
+#!/bin/bash
+
+system=$(uname -s | tr A-Z a-z)
+machine=$(uname -m)
+if [ $machine == "x86_64" ]; then
+  machine="amd64"
+else
+  machine="386"
+fi
+
+link=$(curl -s https://api.github.com/repos/mesg-foundation/core/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
+
+path="/usr/local/bin/mesg-core"
+if [ system == "darwin" ]; then
+  path="~/.local/bin/mesg-core"
+fi
+
+curl --progress -L $link -o $path
+chmod +x $path
+$path start
