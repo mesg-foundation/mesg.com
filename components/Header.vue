@@ -1,8 +1,8 @@
 <template>
   <header class="container">
-    <h1>Technology-Interoperable DApps</h1>
+    <h1>Build future proof applications</h1>
     <p>
-      MESG is an open-source decentralized infrastructure that makes all technologies, including blockchains, interoperable.
+      MESG is an open-source decentralized infrastructure that makes all technologies, including blockchains, interoperable and let you create advanced applications.
     </p>
     <p class="extra">
       It’s a building platform for developers.
