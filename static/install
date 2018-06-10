@@ -15,6 +15,6 @@ if [ system == "darwin" ]; then
   path="~/.local/bin/mesg-core"
 fi
 
-curl --progress -L $link -o $path
-chmod +x $path
+sudo curl --progress -L $link -o $path
+sudo chmod +x $path
 $path start
