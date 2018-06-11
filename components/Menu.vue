@@ -19,7 +19,7 @@ export default {
     menus () {
       return [
         { title: "Docs", href: "https://docs.mesg.tech" },
-        { title: "Examples", href: "/examples" },
+        { title: "Marketplace", href: "/marketplace" },
         { title: "Discord", href: "https://discord.gg/SaZ5HcE" },
         { title: "Blog", href: "https://medium.com/mesg" }
       ]

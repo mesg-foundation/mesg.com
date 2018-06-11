@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     href() {
-      return this.service.url.replace("https://github.com/", "/examples/")
+      return this.service.url.replace("https://github.com/", "/marketplace/")
     }
   }
 }

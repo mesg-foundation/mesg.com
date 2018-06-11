@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="dark">
-      <h1>Examples</h1>
+      <h1>Marketplace</h1>
     </div>
     <div class="light">
       <div class="container">

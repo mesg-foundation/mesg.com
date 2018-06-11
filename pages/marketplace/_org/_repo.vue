@@ -2,7 +2,7 @@
   <div class="light">
     <div class="container p1">
       <nav>
-        <nuxt-link to="/examples">Examples</nuxt-link>
+        <nuxt-link to="/marketplace">Marketplace</nuxt-link>
       </nav>
       <GithubReadme :url="url"/>
     </div>
