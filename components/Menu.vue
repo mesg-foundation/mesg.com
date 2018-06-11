@@ -6,7 +6,7 @@
     <div class="nav-items">
       <a
         v-for="menu in menus" :key="menu.href"
-        :href="menu.href" target="blank">
+        :href="menu.href">
         {{ menu.title }}
       </a>
     </div>
@@ -19,6 +19,7 @@ export default {
     menus () {
       return [
         { title: "Docs", href: "https://docs.mesg.tech" },
+        { title: "Examples", href: "/examples" },
         { title: "Discord", href: "https://discord.gg/SaZ5HcE" },
         { title: "Blog", href: "https://medium.com/mesg" }
       ]

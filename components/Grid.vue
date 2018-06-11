@@ -32,4 +32,10 @@ export default {
     max-width: 100%;
     width: 246px;
   }
+
+  @media only screen and (max-width: 480px) {
+    li {
+      width: 100%;
+    }
+  }
 </style>
