@@ -12,7 +12,7 @@
     "description": "Imperative programming is so old-school. We want real-time and event-driven applications that are really reactive.<br/><br/>Now, the only business logic you have to write is the description of how you want to execute a specific task.<br/><br/>Your Application is a simple list of <strong>when</strong> ... and <strong>then</strong> ..."
   },
   {
-    "title": "Almost no coding",
+    "title": "Minimal coding",
     "description": "Building features onto your application is really simple when it’s event-driven and service-oriented. You don't even need any coding skills to create an application.<br/><br/>Imagine a specific workflow, then just describe it in a <strong>workflow file</strong> and your application is all set and ready to run."
   },
   {
