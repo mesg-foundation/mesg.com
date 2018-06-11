@@ -119,6 +119,7 @@ select {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
 }
 
 .shadow {
@@ -159,4 +160,9 @@ ul {
 }
 
 .p1 { padding: 1em; }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
 </style>

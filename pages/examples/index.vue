@@ -1,17 +1,24 @@
 <template>
-  <div class="light">
-    <section class="container">
-      <h2>Services</h2>
-      <Grid :items="services">
-        <ServiceCard slot-scope="{ item }" :service="item"/>
-      </Grid>
-    </section>
-    <section class="container">
-      <h2>Applications</h2>
-      <Grid :items="applications">
-        <ApplicationCard slot-scope="{ item }" :application="item"/>
-      </Grid>
-    </section>
+  <div>
+    <div class="dark">
+      <h1>Examples</h1>
+    </div>
+    <div class="light">
+      <div class="container">
+        <section>
+          <h2>Services</h2>
+          <Grid :items="services">
+            <ServiceCard slot-scope="{ item }" :service="item"/>
+          </Grid>
+        </section>
+        <section>
+          <h2>Applications</h2>
+          <Grid :items="applications">
+            <ApplicationCard slot-scope="{ item }" :application="item"/>
+          </Grid>
+        </section>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,7 +45,11 @@ export default {
 </script>
 
 <style scoped>
+  h1 {
+    text-align: center;
+    padding: 1em;
+  }
   h2 {
-    margin-top: 2em;
+    padding-top: 2em;
   }
 </style>

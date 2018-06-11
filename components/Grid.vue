@@ -23,8 +23,8 @@ export default {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3em;
     padding: 0;
+    padding-bottom: 2em;
   }
 
   li {
