@@ -1,7 +1,7 @@
 <template>
   <a
     class="shadow light hover"
-    :href="href" nuxt>
+    :href="service.url" nuxt target="_blank">
     <h3 class="truncate">{{ service.name }}</h3>
     <p class="p1">{{ service.description }}</p>
   </a>
