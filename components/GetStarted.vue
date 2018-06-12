@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <h2>Get Started</h2>
-      <p>Create your first application in less than 5 minutes</p>
+      <p>Create your first application in less than 5 minutes.</p>
       <Terminal class="shadow" :commands="basicApp"></Terminal>
     </div>
   </section>

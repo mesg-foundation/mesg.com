@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Community driven</h2>
       <p>
-        Come join us in creating this amazing tool that will help you and others build applications with ease
+        Come join us in creating this amazing tool that helps users build applications with ease.
       </p>
 
 

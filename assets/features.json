@@ -1,7 +1,7 @@
 [
   {
     "title": "Technology Agnostic",
-    "description": "Connect any technology. If a technology can send and/or receive data, that means it can be connected to MESG.<br/><br/>Connections can come from any traditional web service, any blockchain technology, IoT or any private event system that your company might have.<br/><br/>You get it, <strong>anything with data can be connected to MESG</strong>."
+    "description": "Connect any technology. If a technology can send and/or receive data, that means it can be connected to MESG.<br/><br/>Connections can come from any traditional web service, blockchain technology, IoT or private event system that your company might have.<br/><br/>You get it, <strong>anything with data can be connected to MESG</strong>."
   },
   {
     "title": "Service Oriented",
@@ -17,6 +17,6 @@
   },
   {
     "title": "Decentralized",
-    "description": "Decentralization is more than just a hot topic, it's a new way to create applications where users don't need to use servers any longer, or make sure those servers are running 100% of the time.<br/><br/>With MESG, your application’s services <strong>run everywhere</strong>, and every part of your application is <strong>executed by different actors</strong> on the network."
+    "description": "Decentralization is more than just a hot topic, it's a new way to create applications where users no longer need to use servers or make sure those servers are running 100% of the time.<br/><br/>With MESG, your application’s services <strong>run everywhere</strong>, and every part of your application is <strong>executed by different actors</strong> on the network."
   }
 ]

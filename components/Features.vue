@@ -3,8 +3,8 @@
     <div class="container">
       <h2>The right tool for all your needs</h2>
       <p>
-        With MESG, you will be able to create an application connected to any technology you want,<br/>
-        from traditional web services to Blockchain technologies, with ease.
+        With MESG, you can create an application connected to any technology you’d like,<br/>
+        from traditional web services to Blockchain technologies.
       </p>
 
       <div class="features">
