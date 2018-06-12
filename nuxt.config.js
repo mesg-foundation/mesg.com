@@ -28,7 +28,10 @@ module.exports = {
     theme_color: 'rgba(20, 9, 48, 1)'
   },
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-117583862-2'
+    }]
   ],
   /*
   ** Build configuration
