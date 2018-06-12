@@ -1,14 +1,23 @@
 <template>
   <nav class="container">
-    <a href="/" class="title">
+    <nuxt-link to="/" class="title">
       <img src="~/assets/logo.svg" alt="">
-    </a>
+    </nuxt-link>
     <div class="nav-items">
-      <a
-        v-for="menu in menus" :key="menu.href"
-        :href="menu.href">
-        {{ menu.title }}
-      </a>
+      <template v-for="menu in menus" >
+        <nuxt-link
+          v-if="menu.internal"
+          :key="menu.href"
+          :to="menu.href">
+          {{ menu.title }}
+        </nuxt-link>
+        <a
+          v-else
+          :key="menu.href"
+          :href="menu.href">
+          {{ menu.title }}
+        </a>
+      </template>
     </div>
   </nav>
 </template>
@@ -19,7 +28,7 @@ export default {
     menus () {
       return [
         { title: "Docs", href: "https://docs.mesg.tech" },
-        { title: "Marketplace", href: "/marketplace" },
+        { title: "Marketplace", href: "/marketplace",  internal: true },
         { title: "Discord", href: "https://discord.gg/SaZ5HcE" },
         { title: "Blog", href: "https://medium.com/mesg" }
       ]
