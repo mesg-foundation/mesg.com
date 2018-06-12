@@ -59,7 +59,6 @@ export default {
       ]
     },
     next() {
-      debugger
       const cmd = this.commands[this.step]
       if (!this.history.filter(x => x.wait).length) { return }
       this.updateHistory({ ...cmd, input: this.currentInput })
