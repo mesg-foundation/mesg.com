@@ -5,7 +5,7 @@
       <span></span>
       <span></span>
     </nav>
-    <section ref="scroll">
+    <section ref="scroll" @click="next()">
       <div class="history">
         <div v-for="(cmd, i) in history" :key="i">
           <div>
@@ -59,7 +59,9 @@ export default {
       ]
     },
     next() {
+      debugger
       const cmd = this.commands[this.step]
+      if (!this.history.filter(x => x.wait).length) { return }
       this.updateHistory({ ...cmd, input: this.currentInput })
       this.step = this.step + 1 
       this.applyCommand()
