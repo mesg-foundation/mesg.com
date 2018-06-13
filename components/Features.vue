@@ -31,7 +31,7 @@
           <h3>{{ currentFeature.title }}</h3>
           <p v-html="currentFeature.description"></p>
           <div class="actions">
-            <a href="https://docs.mesg.tech" class="button button--success">
+            <a href="https://docs.mesg.com" class="button button--success">
               Get started 
             </a>
           </div>

@@ -27,7 +27,7 @@ export default {
   computed: {
     menus () {
       return [
-        { title: "Docs", href: "https://docs.mesg.tech" },
+        { title: "Docs", href: "https://docs.mesg.com" },
         { title: "Marketplace", href: "/marketplace",  internal: true },
         { title: "Discord", href: "https://discord.gg/SaZ5HcE" },
         { title: "Blog", href: "https://medium.com/mesg" }

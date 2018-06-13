@@ -1,5 +1,5 @@
 [{
-  "input": "bash <(curl -s https://mesg.tech/install)",
+  "input": "bash <(curl -s https://mesg.com/install)",
   "class": "green",
   "output": "MESG Core installed and started"
 }, { 
