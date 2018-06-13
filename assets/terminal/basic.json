@@ -1,0 +1,28 @@
+[{
+  "input": "bash <(curl -s https://mesg.tech/install)",
+  "class": "green",
+  "output": "MESG Core installed and started"
+}, { 
+  "input": "mesg-core service deploy https://github.com/mesg-foundation/service-webhook.git",
+  "class": "green",
+  "output": "Service deployed with ID: v1_d3cd1f941849b5e5609d713c140a103d"
+}, { 
+  "input": "mesg-core service deploy https://github.com/mesg-foundation/service-discord-invitation.git",
+  "class": "green",
+  "output": "Service deployed with ID: v1_9bd8c903d26d28ca17bc970ea38695a8"
+}, {
+  "input": "nano application.js",
+  "type": "file",
+  "output": "<strong>require('mesg-js')<br/>&nbsp;&nbsp;.application()<br/>&nbsp;&nbsp;.whenEvent({ serviceID: 'v1_d3cd1f941849b5e5609d713c140a103d' }, {<br/>&nbsp;&nbsp;&nbsp;&nbsp;serviceID: 'v1_9bd8c903d26d28ca17bc970ea38695a8',<br/>&nbsp;&nbsp;&nbsp;&nbsp;taskKey: 'send',<br/>&nbsp;&nbsp;&nbsp;&nbsp;inputs: (_, event) => ({<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: event.data.email,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sendgridAPIKey: process.env.SENDGRID_API_KEY<br/>&nbsp;&nbsp;&nbsp;&nbsp;})<br/>&nbsp;&nbsp;})</strong>"
+}, {
+  "input": "npm install --save mesg-js && node application.js",
+  "class": "green",
+  "output": "Your application is up and running"
+}, {
+  "prompts": {
+    "email": "What is your email"
+  },
+  "input": "curl http://localhost:3000/webhook -d email=\"{{email}}\"",
+  "class": "green",
+  "output": "Request executed and invitation email sent"
+}]
