@@ -25,12 +25,8 @@ echo "Installing MESG..."
 link=$(curl -s https://api.github.com/repos/mesg-foundation/core/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
 
 path="/usr/local/bin/mesg-core"
-if [ system == "darwin" ]; then
-  path="~/.local/bin/mesg-core"
-fi
 
 sudo curl --progress -L $link -o $path
 sudo chmod +x $path
 
-echo "Starting MESG..."
 $path start
