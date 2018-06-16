@@ -3,11 +3,18 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'MESG - Technology-Interoperable DApps',
+    title: 'MESG - Build future-proof applications',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'MESG is an open-source decentralized infrastructure which makes all technologies on or off the blockchain interoperable. It’s a building platform for developers.' }
+      { hid: 'description', name: 'description', content: 'MESG is an open-source decentralized infrastructure for advanced application development that makes all technologies, including blockchains, interoperable.' },
+      { hid: 'image', property: 'og:image', content: '/logo.jpg' },
+      { hid: 'title', property: 'og:title', content: 'MESG - Build future-proof applications' },
+      { hid: 'url', property: 'og:url', content: 'https://mesg.com/' },
+      { hid: 'site_name', property: 'og:site_name', content: 'MESG' },
+      { hid: 'type', property: 'og:type', content: 'website' }
+
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
