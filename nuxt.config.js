@@ -8,7 +8,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'MESG is an open-source decentralized infrastructure for advanced application development that makes all technologies, including blockchains, interoperable.' },
-      { hid: 'image', property: 'og:image', content: '/logo.jpg' },
+      { hid: 'image', property: 'og:image', content: 'https://mesg.com/logo.jpg' },
       { hid: 'title', property: 'og:title', content: 'MESG - Build future-proof applications' },
       { hid: 'url', property: 'og:url', content: 'https://mesg.com/' },
       { hid: 'site_name', property: 'og:site_name', content: 'MESG' },
