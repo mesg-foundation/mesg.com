@@ -29,6 +29,7 @@ export default {
       return [
         { title: "Docs", href: "https://docs.mesg.com" },
         { title: "Marketplace", href: "/marketplace",  internal: true },
+        { title: "Jobs", href: "https://github.com/mesg-foundation/core/wiki/Jobs" },
         { title: "Discord", href: "https://discord.gg/SaZ5HcE" },
         { title: "Blog", href: "https://medium.com/mesg" }
       ]
