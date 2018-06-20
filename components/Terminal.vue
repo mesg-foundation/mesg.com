@@ -43,7 +43,8 @@ export default {
       history: [],
       step: 0,
       currentInput: '',
-      writting: false
+      writting: false,
+      inputs: {}
     }
   },
   methods: {
@@ -67,13 +68,17 @@ export default {
       this.scrollToBottom()
     },
     async applyCommand() {
-      if (this.step >= this.commands.length) { return }
+      if (this.step >= this.commands.length) {
+        this.$emit('finished', this.inputs)
+        return
+      }
       this.writting = true
       const cmd = this.commands[this.step]
       this.history.push({})
       this.currentInput = cmd.input
       for (const key in (cmd.prompts || {})) {
         const value = prompt(cmd.prompts[key])
+        this.inputs[key] = value
         this.currentInput = this.currentInput.replace(`{{${key}}}`, value)
       }
       for (const i in this.currentInput.split("")) {
