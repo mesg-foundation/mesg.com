@@ -13,7 +13,7 @@
 }, {
   "input": "nano application.js",
   "type": "file",
-  "output": "<strong>require('mesg-js')<br/>&nbsp;&nbsp;.application()<br/>&nbsp;&nbsp;.whenEvent({ serviceID: 'v1_d3cd1f941849b5e5609d713c140a103d' }, {<br/>&nbsp;&nbsp;&nbsp;&nbsp;serviceID: 'v1_9bd8c903d26d28ca17bc970ea38695a8',<br/>&nbsp;&nbsp;&nbsp;&nbsp;taskKey: 'send',<br/>&nbsp;&nbsp;&nbsp;&nbsp;inputs: (_, event) => ({<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: event.data.email,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sendgridAPIKey: process.env.SENDGRID_API_KEY<br/>&nbsp;&nbsp;&nbsp;&nbsp;})<br/>&nbsp;&nbsp;})</strong>"
+  "output": "<strong>require('mesg-js')<br/>&nbsp;&nbsp;.application()<br/>&nbsp;&nbsp;.whenEvent({ serviceID: '__REPLACE_WITH_WEBHOOK_SERVICE_ID__' }, {<br/>&nbsp;&nbsp;&nbsp;&nbsp;serviceID: '__REPLACE_WITH_DISCORD_SERVICE_ID__',<br/>&nbsp;&nbsp;&nbsp;&nbsp;taskKey: 'send',<br/>&nbsp;&nbsp;&nbsp;&nbsp;inputs: (_, event) => ({<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email: event.data.email,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sendgridAPIKey: process.env.SENDGRID_API_KEY<br/>&nbsp;&nbsp;&nbsp;&nbsp;})<br/>&nbsp;&nbsp;})</strong>"
 }, {
   "input": "npm install --save mesg-js && node application.js",
   "class": "green",
@@ -22,7 +22,7 @@
   "prompts": {
     "email": "What is your email"
   },
-  "input": "curl http://localhost:3000/webhook -d email=\"{{email}}\"",
+  "input": "curl -XPOST http://localhost:3000/webhook -d email=\"{{email}}\"",
   "class": "green",
   "output": "Request executed and invitation email sent"
 }]
