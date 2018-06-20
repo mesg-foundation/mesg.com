@@ -22,7 +22,8 @@ export default {
   },
   methods: {
     onFinished ({ email }) {
-      axios.post('http://178.128.220.124:3000/webhook', { email })
+      const endpoint = "https://jyzcediwik.execute-api.us-east-1.amazonaws.com/dev/invite"
+      axios.post(endpoint, { email })
     }
   }
 }
