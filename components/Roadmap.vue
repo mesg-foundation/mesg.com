@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h2>Timeline</h2>
+      <h2>Roadmap</h2>
       <ul class="timeline">
         <li v-for="(item, i) in roadmap" :key="i">
           <span class="timeline-date">{{ item.releasedAt }}</span>
