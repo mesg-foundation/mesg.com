@@ -65,11 +65,12 @@ export default {
       : ''
     const events = axios.get(`${ENDPOINT}/issues/events?per_page=10&${token}`)
     const commits = axios.get(`${ENDPOINT}/stats/participation?${token}`)
-    const release = axios.get(`${ENDPOINT}/releases?per_page=1&${token}`)
+    const release = axios.get(`${ENDPOINT}/releases/latest?${token}`)
+
 
     this.events = await events.then(({ data }) => data)
     this.commits = await commits.then(({ data }) => data.all)
-    this.release = await release.then(({ data }) => data[0])
+    this.release = await release.then(({ data }) => data)
   }
 }
 </script>
