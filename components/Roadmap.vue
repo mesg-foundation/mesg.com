@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h2>Roadmap</h2>
+      <h2>Timeline</h2>
       <ul class="timeline">
         <li v-for="(item, i) in roadmap" :key="i">
           <span class="timeline-date">{{ item.releasedAt }}</span>
@@ -54,14 +54,14 @@ h2 {
 		width: 75%;
 		width: calc(100% - 180px);
     float: left;
-    border-left: 3px #d5d6eb solid;
+    border-left: 3px rgba(32, 19, 81, .2) solid;
 		padding-left: 30px;
 	}
   .timeline-content:before {
 		content: '';
     width: 12px;
     height: 12px;
-    background: #505393;
+    background: rgba(32, 19, 81, 1);
     position: absolute;
     left: 176px;
     top: 8px;
