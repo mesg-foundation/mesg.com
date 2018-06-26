@@ -1,7 +1,7 @@
 <template>
   <main>
     <h3>
-      Lastest version:
+      Latest version:
       <a :href="release.html_url" target="_blank">
         {{ release.name }}
       </a>
