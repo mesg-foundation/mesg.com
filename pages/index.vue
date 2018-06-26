@@ -4,6 +4,7 @@
     <GetStarted class="light"></GetStarted>
     <Features class="gray border"></Features>
     <Github class="light border"></Github>
+    <Roadmap class="gray border"></Roadmap>    
   </div>
 </template>
 
@@ -12,12 +13,14 @@ import Header from '~/components/Header'
 import GetStarted from '~/components/GetStarted'
 import Features from '~/components/Features'
 import Github from '~/components/Github'
+import Roadmap from '~/components/Roadmap'
 export default {
   components: {
     Header,
     GetStarted,
     Features,
-    Github
+    Github,
+    Roadmap
   }
 }
 </script>
