@@ -45,14 +45,14 @@ h2 {
     position: relative;
   }
   .timeline-date {
-		width: 180px;
+		width: 100px;
     float: left;
 		text-align: right;
     padding-right: 20px;
   }
   .timeline-content {
 		width: 75%;
-		width: calc(100% - 180px);
+		width: calc(100% - 100px);
     float: left;
     border-left: 3px rgba(32, 19, 81, .2) solid;
 		padding-left: 30px;
@@ -63,7 +63,7 @@ h2 {
     height: 12px;
     background: rgba(32, 19, 81, 1);
     position: absolute;
-    left: 176px;
+    left: 95px;
     top: 8px;
     border-radius: 100%;
 	}
