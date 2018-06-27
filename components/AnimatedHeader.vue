@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+span {
+  color: #FFCB1B;
+}
 span::after {
   display: inline-block;
   width: 2px;
@@ -64,7 +67,7 @@ span::after {
   content: "";
   margin-left: .1em;
   margin-bottom: -.2em;
-  background: rgba(255, 255, 255, .8);
+  background: #FFCB1B;
   opacity: 0;
 }
 span.blink::after {
