@@ -2,9 +2,10 @@
   <div>
     <Header class="dark"></Header>
     <GetStarted class="light"></GetStarted>
-    <Features class="gray border"></Features>
-    <Github class="light border"></Github>
-    <Roadmap class="gray border"></Roadmap>    
+    <Sharing class="gray border"></Sharing>
+    <Features class="light border"></Features>
+    <Github class="gray border"></Github>
+    <Roadmap class="light border"></Roadmap>    
   </div>
 </template>
 
@@ -14,13 +15,15 @@ import GetStarted from '~/components/GetStarted'
 import Features from '~/components/Features'
 import Github from '~/components/Github'
 import Roadmap from '~/components/Roadmap'
+import Sharing from '~/components/Sharing'
 export default {
   components: {
     Header,
     GetStarted,
     Features,
     Github,
-    Roadmap
+    Roadmap,
+    Sharing
   }
 }
 </script>
