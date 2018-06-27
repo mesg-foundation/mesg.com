@@ -32,7 +32,7 @@
           <p v-html="currentFeature.description"></p>
           <div class="actions">
             <a href="https://docs.mesg.com" class="button button--success">
-              Get started 
+              Get started →
             </a>
           </div>
         </main>
