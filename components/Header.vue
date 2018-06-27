@@ -2,7 +2,8 @@
   <header class="container">
     <h1>Build applications connected to <AnimatedHeader :words="words"></AnimatedHeader></h1>
     <p>
-      MESG is an open-source decentralized infrastructure for advanced application development that makes all technologies, including blockchains, interoperable.
+      MESG is an open-source ultra-powerful building framework for developers which connects all technologies, including blockchains.
+      Instead of connecting services directly to applications, connect them to Core so services can be reused and shared in a decentralized ecosystem.
     </p>
     <p>
       <span class="mono shadow">bash &lt;(curl -s https://mesg.com/install)</span>
