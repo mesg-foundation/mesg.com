@@ -70,5 +70,8 @@ export default {
     font-size: .8em;
     margin: 15px;
     color: white;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
   }
 </style>
