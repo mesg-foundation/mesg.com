@@ -1,5 +1,5 @@
 [{
-  "releasedAt": "May 1st 2018",
+  "releasedAt": "June 2018",
   "title": "Core Launched",
   "description": "Create your services and connect them together with your application through a single connection to Core, allowing Core to handle all communications and interoperability with any technology."
 }, {
@@ -9,9 +9,9 @@
 }, {
   "releasedAt": "Q4 2018",
   "title": "Beta Network",
-  "description": "The decentralized beta Network means no coding or servers are necessary to run your applications. We will also launch an economy based on your participation in the Network."
+  "description": "The beta decentralized Network means no coding or servers are necessary to run your applications. Connect thousands of services or applications from our shared repository."
 }, {
   "releasedAt": "Q3 2019",
   "title": "Main Network",
-  "description": "MESG launches its own blockchain Network providing for full scalability and a cheaper and faster user experience."
+  "description": "MESG launches its own blockchain Network providing for full scalability and a cheaper and faster user experience. The main network will host the full functionality of the value-driven open market for the sharing of services."
 }]
