@@ -1,11 +1,12 @@
 <template>
   <section>
     <div class="container">
-      <h2>Community driven</h2>
-      <p>
-        Come join us in creating this amazing tool that helps users build applications with ease.
-      </p>
-
+      <div class="marging">
+        <h2>Community driven</h2>
+        <p>
+          Come join us in creating this amazing tool that helps users build applications with ease.
+        </p>
+      </div>
 
       <div class="stats">
         <Release v-if="release" :release="release">
@@ -16,22 +17,24 @@
           </trend>
         </Release>
 
-        <main class="activity light shadow bordered">
-          <h3>
-            Activity
-            <a
-              class="github-button"
-              href="https://github.com/mesg-foundation/core"
-              data-icon="octicon-star"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Star mesg-foundation/core on GitHub">
-              Star
-            </a>
-          </h3>
-          <nav>
-            <Event v-for="event in events" :key="event.id" :event="event"></Event>
-          </nav>
+        <main>
+          <div class="activity light shadow bordered">
+            <h3>
+              Activity
+              <a
+                class="github-button"
+                href="https://github.com/mesg-foundation/core"
+                data-icon="octicon-star"
+                data-size="large"
+                data-show-count="true"
+                aria-label="Star mesg-foundation/core on GitHub">
+                Star
+              </a>
+            </h3>
+            <nav>
+              <Event v-for="event in events" :key="event.id" :event="event"></Event>
+            </nav>
+          </div>
         </main>
       </div>
     </div>
@@ -76,17 +79,23 @@ export default {
 </script>
 
 <style scoped>
+  .container {
+    padding: 0
+  }
+  .marging {
+    margin: 0 20px;
+  }
   .stats {
     display: flex;
     justify-content: space-around;
-    margin-top: 2em;
+    margin-top: 40px;
     flex-wrap: wrap;
   }
 
   main {
     max-width: 100%;
-    width: 480px;
-    margin: 1em;
+    width: 100%;
+    padding: 0 20px
   }
 
   iframe {
@@ -94,6 +103,14 @@ export default {
   }
 
   svg {
-    min-height: 100px;
+    width: auto;
+    height: auto;
   }
+
+  @media screen and (min-width: 1080px) {
+    main {
+      width: 540px;
+    }
+  }
+
 </style>

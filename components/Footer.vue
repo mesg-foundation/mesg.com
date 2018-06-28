@@ -23,11 +23,9 @@ export default {
 
 <style scoped>
 footer {
-  padding: 3em;
+  padding: 80px 0;
 }
 .dark {
-  border-top: solid 1px #DDD;
-  border-bottom: solid 1px #DDD;
   text-align: center;
 }
 </style>

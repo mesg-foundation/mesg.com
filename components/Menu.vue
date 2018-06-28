@@ -65,6 +65,7 @@ a {
   font-weight: 600;
   font-size: 14px;
 }
+a:hover { color: #FFCB1B }
 .title {
   font-family: 'Jura', sans-serif;
   font-size: 23px;

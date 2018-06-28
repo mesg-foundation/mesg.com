@@ -72,8 +72,7 @@ p {
 .container {
   max-width: 1080px;
   margin: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0 20px;
 }
 
 .button, select {
@@ -147,8 +146,11 @@ select {
 
 .light { background: white; color: #444; }
 .light a { color: #444; }
+.light a:hover { color: #222 }
 
 .gray { background: #f2f2f2; color: #444; }
+.gray a { color: #444; }
+.gray a:hover { color: #222 }
 
 h4 {
   margin-bottom: 1em;

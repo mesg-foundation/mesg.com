@@ -59,10 +59,7 @@ a {
   letter-spacing: 2.5px;
   color: black;
   background: white;
-  margin: 15px;
-}
-nav.small a {
-  margin: 10px;
+  margin: 0px 10px;
 }
 svg {
   height: .9em;
@@ -75,6 +72,11 @@ svg g rect path {
 @media only screen and (max-width: 480px) {
   a {
     display: block;
+    margin: 0 0 10px 0;
+  }
+  a:last-child {
+    margin-bottom: 0px;
   }
 }
+
 </style>

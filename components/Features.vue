@@ -1,11 +1,13 @@
 <template>
   <section>
     <div class="container">
-      <h2>The right tool for all your needs</h2>
-      <p>
-        With MESG, you can create an application connected to any technology you’d like,<br/>
-        from traditional web services to Blockchain technologies.
-      </p>
+      <div class="marging">
+        <h2>The right tool for all your needs</h2>
+        <p>
+          With MESG, you can create an application connected to any technology you’d like,<br/>
+          from traditional web services to Blockchain technologies.
+        </p>
+      </div>
 
       <div class="features">
         <select v-model="currentFeature">
@@ -64,8 +66,14 @@ export default {
 </script>
 
 <style scoped>
+  .marging {
+    margin: 0 20px;
+  }
+  .container {
+    padding: 0
+  }
   .features {
-    margin-top: 3em;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     text-align: left;
@@ -73,17 +81,15 @@ export default {
   }
 
   aside {
-    width: 280px;
-    margin: .5em;
+    margin: 20px;
     max-width: 100%;
+    width: 280px;
   }
 
   select {
     display: none;
-    width: 720px;
-    max-width: 100%;
-    margin: .5em;
-    margin-bottom: 1em;
+    width: 100%;
+    margin: 20px;
   }
 
   aside a {
@@ -103,12 +109,12 @@ export default {
   }
 
   main {
-    width: 720px;
-    margin: .5em;
+    margin: 20px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 2px;
+    width: 720px
   }
 
   main p {
