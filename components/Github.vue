@@ -94,7 +94,7 @@ export default {
 
   main {
     max-width: 100%;
-    width: 100%;
+    width: 760px;
     padding: 0 20px
   }
 

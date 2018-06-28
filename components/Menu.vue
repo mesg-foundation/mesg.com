@@ -74,19 +74,26 @@ a:hover { color: #FFCB1B }
 .title small {
   text-transform: none;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
+  .title {
+    margin: 0;
+  }
   img {
-    height: 3em;
+    height: 4em;
     margin: 1.5em;
   }
   nav {
     justify-content: center;
+    flex-direction: column-reverse;
   }
   .nav-items {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  a {
-    margin: 0;
+}
+@media only screen and (max-width: 580px) {
+  .nav-items a {
+    display: none;
   }
 }
 </style>

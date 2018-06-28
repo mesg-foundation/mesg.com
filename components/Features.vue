@@ -88,7 +88,8 @@ export default {
 
   select {
     display: none;
-    width: 100%;
+    width: 750px;
+    max-width: 100%;
     margin: 20px;
   }
 
@@ -129,12 +130,15 @@ export default {
     margin-top: 1.25em;
   }
   
-  @media only screen and (max-width: 1064px) {
+  @media only screen and (max-width: 1079px) {
     aside {
       display: none;
     }
     select {
       display: block;
+    }
+    main {
+      width: 750px;
     }
   }
 </style>

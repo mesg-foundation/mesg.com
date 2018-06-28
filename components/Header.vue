@@ -77,4 +77,14 @@ export default {
     display: inline-block;
     overflow: hidden;
   }
+  @media only screen and (max-width: 500px) {
+    .mono {
+      width: 300px
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    header {
+      margin-top: 20px;
+    }
+  }
 </style>
