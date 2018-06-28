@@ -3,7 +3,7 @@
     <h1 class="mb-big">Build applications connected to <AnimatedHeader :words="words"></AnimatedHeader></h1>
     <p class="mb-big">
       MESG is an open-source technology-agnostic framework for developing service-oriented applications.
-      It’s a building platform where services can be connected to all technologies and be reused and shared so <strong>you</strong> can focus on innovation rather than implementation.
+      It’s a building platform where services can be connected to all technologies and be reused and shared so you can focus on innovation rather than implementation.
     </p>
     <p class="mb-big">
       <span class="mono shadow">bash &lt;(curl -s https://mesg.com/install)</span>
@@ -40,9 +40,6 @@ export default {
 <style scoped>
   .mb-big {
     margin-bottom: 60px;
-  }
-  strong {
-    color: white;
   }
   header {
     margin-top: 80px;
