@@ -25,10 +25,6 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  margin-bottom: 4em;
-}
-
 .timeline {
 	list-style: none;
   padding: 0;
@@ -36,6 +32,18 @@ h2 {
 
 .timeline > li {
 	margin-bottom: 60px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 1079px) {
+  .container {
+    width: 770px;
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 840px) {
