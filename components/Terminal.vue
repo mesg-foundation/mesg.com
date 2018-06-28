@@ -14,6 +14,7 @@
               v-if="cmd.wait"
               @click="next()"
               value="█"
+              ref="wait"
               class="wait"
               type="submit"/>
           </div>
@@ -49,6 +50,7 @@ export default {
   },
   methods: {
     start() {
+      if (this.play) { return }
       this.play = true
       this.applyCommand(this.step)
     },
@@ -88,7 +90,11 @@ export default {
       }
       this.writting = false
       this.updateHistory({ input: this.currentInput, wait: true })
-      setTimeout(() => this.$el.querySelector('.wait').focus(), 100)
+      this.$nextTick(() => {
+        if (this.$refs['wait'].length) {
+          this.$refs['wait'][0].focus()
+        }
+      })
       this.scrollToBottom()
     },
     scrollToBottom () {
@@ -97,6 +103,17 @@ export default {
   },
   mounted () {
     this.scrollToBottom()
+    this.observer = window.IntersectionObserver
+      ? new window.IntersectionObserver(x => x[0].isIntersecting ? this.start() : null, {
+        threshold: [0, 0.2],
+        root: null,
+        rootMargin: '0px 0px 0px 0px'
+      })
+      : { observe: () => {}, disconnect: () => {} }
+    this.$nextTick(() => this.observer.observe(this.$el))
+  },
+  destroyed () {
+    this.observer.disconnect()
   }
 }
 </script>

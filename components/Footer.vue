@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <footer class="gray">
+    <footer class="dark">
       <div class="container">
         <h2>Get started and join us now !</h2>
         <Links docs github blog discussion small></Links>
@@ -25,7 +25,7 @@ export default {
 footer {
   padding: 3em;
 }
-.gray {
+.dark {
   border-top: solid 1px #DDD;
   border-bottom: solid 1px #DDD;
   text-align: center;

@@ -32,7 +32,7 @@
           <p v-html="currentFeature.description"></p>
           <div class="actions">
             <a href="https://docs.mesg.com" class="button button--success">
-              Get started 
+              Get started →
             </a>
           </div>
         </main>
@@ -80,7 +80,7 @@ export default {
 
   select {
     display: none;
-    width: 600px;
+    width: 720px;
     max-width: 100%;
     margin: .5em;
     margin-bottom: 1em;
@@ -103,7 +103,7 @@ export default {
   }
 
   main {
-    width: 600px;
+    width: 720px;
     margin: .5em;
     max-width: 100%;
     display: flex;
@@ -123,7 +123,7 @@ export default {
     margin-top: 1.25em;
   }
   
-  @media only screen and (max-width: 944px) {
+  @media only screen and (max-width: 1064px) {
     aside {
       display: none;
     }
