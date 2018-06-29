@@ -16,12 +16,12 @@
         @click="menuShow = !menuShow">
         &times;
       </a>
-      <!--<nuxt-link
+      <nuxt-link
         class="mobile-only"
         @click.native="menuShow = false"
         to="/">
         Home
-      </nuxt-link>-->
+      </nuxt-link>
       <template v-for="menu in menus" >
         <nuxt-link
           v-if="menu.internal"
@@ -61,7 +61,7 @@ export default {
       return [
         { title: "Docs", href: "https://docs.mesg.com" },
         { title: "Marketplace", href: "/marketplace",  internal: true },
-        { title: "Mission", href: "/mission",  internal: true },
+        // { title: "Mission", href: "/mission",  internal: true },
         { title: "Jobs", href: "https://github.com/mesg-foundation/core/wiki/Jobs" },
         { title: "Discord", href: "https://discord.gg/SaZ5HcE" },
         { title: "Blog", href: "https://medium.com/mesg" }
