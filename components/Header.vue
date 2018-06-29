@@ -5,6 +5,7 @@
       MESG is an open-source technology-agnostic framework for developing service-oriented applications.
       It’s a building platform where services can be connected to all technologies and be reused and shared so you can focus on innovation rather than implementation.
     </p>
+    <p class="mb-big tagline">Event-driven architecture meets interoperability. Decentralized.</p>
     <p class="mb-big">
       <span class="mono shadow">bash &lt;(curl -s https://mesg.com/install)</span>
     </p>
@@ -38,6 +39,10 @@ export default {
 </script>
 
 <style scoped>
+  .tagline {
+    font-weight: 500;
+    color: white;
+  }
   .mb-big {
     margin-bottom: 60px;
   }
