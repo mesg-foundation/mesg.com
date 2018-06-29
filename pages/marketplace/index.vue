@@ -45,11 +45,10 @@ export default {
 </script>
 
 <style scoped>
-  h1 {
-    text-align: center;
-    padding: 1em;
-  }
   h2 {
     padding-top: 2em;
+  }
+  .container {
+    padding: 0;
   }
 </style>
