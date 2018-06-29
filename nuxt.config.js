@@ -3,13 +3,13 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'MESG - Build future-proof applications',
+    title: 'MESG - Build applications connected to Anything',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'MESG is an open-source decentralized infrastructure for advanced application development that makes all technologies, including blockchains, interoperable.' },
+      { hid: 'description', name: 'description', content: 'MESG is an open-source technology-agnostic framework for developing service-oriented applications.' },
       { hid: 'image', property: 'og:image', content: 'https://mesg.com/logo.jpg' },
-      { hid: 'title', property: 'og:title', content: 'MESG - Build future-proof applications' },
+      { hid: 'title', property: 'og:title', content: 'MESG - Build applications connected to Anything' },
       { hid: 'url', property: 'og:url', content: 'https://mesg.com/' },
       { hid: 'site_name', property: 'og:site_name', content: 'MESG' },
       { hid: 'type', property: 'og:type', content: 'website' }
