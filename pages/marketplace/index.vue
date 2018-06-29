@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="dark">
-      <h1>Marketplace</h1>
-    </div>
+    <Title>Marketplace</Title>
     <div class="light">
       <div class="container">
         <section>
@@ -27,11 +25,13 @@ import axios from 'axios'
 import Grid from '~/components/Grid'
 import ServiceCard from '~/components/ServiceCard'
 import ApplicationCard from '~/components/ApplicationCard'
+import Title from '~/components/Title'
 export default {
   components: {
     Grid,
     ServiceCard,
-    ApplicationCard
+    ApplicationCard,
+    Title
   },
   async asyncData() {
     const services = await axios.get(`https://raw.githubusercontent.com/mesg-foundation/awesome/master/services.json`)
