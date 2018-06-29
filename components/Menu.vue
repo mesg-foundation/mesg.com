@@ -16,6 +16,12 @@
         @click="menuShow = !menuShow">
         &times;
       </a>
+      <nuxt-link
+        class="mobile-only"
+        @click.native="menuShow = false"
+        to="/">
+        Home
+      </nuxt-link>
       <template v-for="menu in menus" >
         <nuxt-link
           v-if="menu.internal"
@@ -105,7 +111,10 @@ a:hover { color: #FFCB1B }
 .title small {
   text-transform: none;
 }
-@media only screen and (max-width: 700px) {
+.mobile-only {
+  display: none;
+}
+@media only screen and (max-width: 840px) {
   .title {
     margin: 0;
   }
@@ -120,6 +129,10 @@ a:hover { color: #FFCB1B }
   .nav-items {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .mobile-only {
+    display: initial;
   }
 
   .toggle {
