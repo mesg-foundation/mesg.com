@@ -16,12 +16,12 @@
         @click="menuShow = !menuShow">
         &times;
       </a>
-      <nuxt-link
+      <!--<nuxt-link
         class="mobile-only"
         @click.native="menuShow = false"
         to="/">
         Home
-      </nuxt-link>
+      </nuxt-link>-->
       <template v-for="menu in menus" >
         <nuxt-link
           v-if="menu.internal"
