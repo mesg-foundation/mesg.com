@@ -11,7 +11,4 @@ h1 {
   text-align: center;
   padding: 1em;
 }
-.dark {
-  margin-bottom: 1em;
-}
 </style>
