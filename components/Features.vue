@@ -118,16 +118,20 @@ export default {
     width: 720px
   }
 
+  main h3 {
+    padding: 20px;
+  }
+
   main p {
     flex: 1;
-    padding: 1.5em;
+    padding: 20px;
+    text-align: justify;
   }
 
   .actions {
     display: flex;
     justify-content: flex-end;
-    padding: 1.5em;
-    margin-top: 1.25em;
+    padding: 20px;
   }
   
   @media only screen and (max-width: 1079px) {
