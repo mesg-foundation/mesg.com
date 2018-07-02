@@ -4,6 +4,10 @@
     <div class="light">
       <div class="container">
         <section>
+          <p>Welcome to the Marketplace, where services can be shared and reused. Building powerful applications is now just a matter of connecting the existing existing services below. </p>
+          <p>Feeling creative? Get started building and deploying your own services using our <a href="https://github.com/mesg-foundation/awesome" target="_blank">Awesome Repository</a> on Github.</p>
+        </section>
+        <section>
           <h2>Services</h2>
           <Grid :items="services">
             <ServiceCard slot-scope="{ item }" :service="item"/>
@@ -50,5 +54,12 @@ export default {
   }
   .container {
     padding: 0;
+  }
+  section:first-child {
+    padding-top: 1em;
+  }
+  p {
+    margin-top: 2em;
+    text-align: justify;
   }
 </style>
