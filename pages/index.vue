@@ -1,11 +1,11 @@
 <template>
   <div>
     <Header class="dark"></Header>
-    <GetStarted class="light"></GetStarted>
-    <Sharing class="gray border"></Sharing>
-    <Features class="light border"></Features>
-    <Github class="gray border"></Github>
-    <Roadmap class="light border"></Roadmap>    
+    <GetStarted class="gray"></GetStarted>
+    <Sharing class="light border"></Sharing>
+    <Features class="gray border"></Features>
+    <Github class="light border"></Github>
+    <Roadmap class="gray border"></Roadmap>    
   </div>
 </template>
 
