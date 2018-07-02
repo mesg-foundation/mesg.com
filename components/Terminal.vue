@@ -17,6 +17,7 @@
               ref="wait"
               class="wait"
               type="submit"/>
+            <span class="hint" v-if="cmd.wait">Press ENTER</span>
           </div>
           <div :class="cmd.class" v-html="cmd.output"></div>
         </div>
@@ -136,7 +137,7 @@ nav {
   padding-left: 10px;
 }
 
-nav span {
+nav > span {
   width: 12px;
   height: 12px;
   margin: 10px 4px 0 0;
@@ -180,6 +181,11 @@ section {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   cursor: pointer;
+}
+
+.wait + span {
+  display: inline;
+  color: #777;
 }
 
 a.start {
