@@ -11,6 +11,7 @@
           </div>
         </li>
       </ul>
+      <nuxt-link class="button hover button--success" to="/mission">Check out our mission →</nuxt-link>
     </div>
   </section>
 </template>
@@ -38,6 +39,9 @@ li:last-child {
   margin-bottom: 0px;
 }
 
+.button {
+  margin-top: 2em;
+}
 
 @media only screen and (max-width: 1079px) {
   .container {
