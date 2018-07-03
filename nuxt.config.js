@@ -12,12 +12,16 @@ module.exports = {
       { hid: 'title', property: 'og:title', content: 'MESG - Build applications connected to Anything' },
       { hid: 'url', property: 'og:url', content: 'https://mesg.com/' },
       { hid: 'site_name', property: 'og:site_name', content: 'MESG' },
-      { hid: 'type', property: 'og:type', content: 'website' }
-
-
+      { hid: 'type', property: 'og:type', content: 'website' },
+      { name: 'msapplication-TileColor', content: '#ffffff' },
+      { name: 'theme-color', content: '#ffffff' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Jura' }
     ],
     script: [
