@@ -6,6 +6,7 @@
         <p>
           Come join us in creating this amazing tool that helps users build applications with ease.
         </p>
+        <nuxt-link class="button hover button--success" to="/marketplace">Check Awesome MESG</nuxt-link>
       </div>
 
       <div class="stats">
@@ -96,6 +97,10 @@ export default {
     max-width: 100%;
     width: 760px;
     padding: 0 20px
+  }
+
+  .button {
+    margin-top: 2em;
   }
 
   iframe {
