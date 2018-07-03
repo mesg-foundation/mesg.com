@@ -6,6 +6,8 @@
         <section>
           <p>
             Welcome to the Marketplace, where services can be shared and reused. Building powerful applications is now just a matter of connecting the existing existing services below.
+          </p>
+          <p>
             Feeling creative? Get started building and deploying your own services using our <a href="https://github.com/mesg-foundation/awesome" target="_blank">Awesome Repository</a> on Github.
           </p>
         </section>
@@ -53,9 +55,6 @@ export default {
 <style scoped>
   h2 {
     padding-top: 2em;
-  }
-  .container {
-    padding: 0;
   }
   section:first-child {
     padding-top: 1em;
