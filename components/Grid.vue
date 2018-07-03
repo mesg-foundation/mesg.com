@@ -30,7 +30,7 @@ export default {
   li {
     margin: .5em;
     max-width: 100%;
-    width: 246px;
+    width: 244px;
   }
 
   @media only screen and (max-width: 480px) {
