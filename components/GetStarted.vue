@@ -4,6 +4,7 @@
       <h2>Get Started</h2>
       <p>Create an entire application in less than 5 minutes.</p>
       <Terminal class="shadow" :commands="basicApp" @finished="onFinished"></Terminal>
+      <a href="https://github.com/mesg-foundation/core#readme" target="_blank">Give me more!!</a>
     </div>
   </section>
 </template>
@@ -36,5 +37,9 @@ export default {
   }
   p {
     margin-bottom: 40px;
+  }
+  a {
+    display: inline-block;
+    margin-top: 2em;
   }
 </style>
