@@ -1,6 +1,6 @@
 <template>
   <header class="container mb-big">
-    <h1 class="mb-big">Build applications connected to <AnimatedHeader :words="words"></AnimatedHeader></h1>
+    <h1 class="mb-big">Build applications connected to <span class="animatedHeader"><AnimatedHeader :words="words"></AnimatedHeader></span></h1>
     <p class="mb-big">
       MESG is an open-source technology-agnostic framework for developing service-oriented applications.
       It’s a building platform where services can be connected to all technologies and be reused and shared so you can focus on innovation rather than implementation.
@@ -87,6 +87,11 @@ export default {
   @media only screen and (max-width: 700px) {
     header {
       margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 870px) {
+    h1 .animatedHeader {
+      display: block;
     }
   }
 </style>
