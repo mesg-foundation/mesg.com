@@ -4,7 +4,7 @@
       <h2>Share and Reuse Services</h2>
       <p>By connecting services to Core rather than your application, they can be re-used and shared, effectively transforming services into sharable commodities.</p>
       <p>Core features event-driven architecture, allowing you to experiment with different services, including cross-chain transactions. This allows maximum flexibility to keep iterating your application until your perfect solution is developed. </p>
-      <p class="no-margin">That’s just the beginning. Together we're building a decentralized infrastructure so developers can just plug and play and be rewarded for their contributions. </p>
+      <p class="no-margin">That’s just the beginning. Together we're building a decentralized infrastructure so developers can just plug and play and be rewarded for their contributions. <a href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank">Core is launching a new era</a></p>
       <img class="" src="~/assets/schema1.svg" alt=""/>
       <nuxt-link class="button hover button--success" to="/marketplace">Check out existing services →</nuxt-link>
     </div>

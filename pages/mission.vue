@@ -5,7 +5,7 @@
     <div class="light">
       <section>
         <div class="container">
-          <h2>Build upon collective wisdom.</h2>
+          <h2>Build upon collective wisdom</h2>
           <p>The promise of the internet at its inception was to be a common, impartial network providing equal access to connections and ideas for the progress and betterment of humanity. </p>
           <p>Along the way, we strayed from the internet’s original mission and its potential to unite us.</p>
           <p>The global trend towards centralization has created a host of problems. Large corporations to bootstrapping entrepreneurs now find themselves in vulnerable positions with many points of failure. </p>
