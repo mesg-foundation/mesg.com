@@ -34,6 +34,26 @@ import Grid from '~/components/Grid'
 import ServiceCard from '~/components/ServiceCard'
 import ApplicationCard from '~/components/ApplicationCard'
 import Title from '~/components/Title'
+
+const REGEXP = /^- \[(.*)\]\((http.*)\) - (.*)/
+
+const filteredBody = (body, from, to) => {
+  const lines = body.split("\n")
+  return lines.slice(
+    lines.indexOf(`# ${from}`),
+    lines.indexOf(`# ${to}`)
+  )
+}
+
+const extract = (body, from, to) => filteredBody(body, from, to)
+  .map(x => x.match(REGEXP))
+  .filter(x => x)
+  .map(x => ({
+    name: x[1],
+    url: x[2],
+    description: x[3]
+  }))
+
 export default {
   components: {
     Grid,
@@ -42,11 +62,10 @@ export default {
     Title
   },
   async asyncData() {
-    const services = await axios.get(`https://raw.githubusercontent.com/mesg-foundation/awesome/master/services.json`)
-    const applications = await axios.get(`https://raw.githubusercontent.com/mesg-foundation/awesome/master/applications.json`)
+    const { data } = await axios.get(`https://raw.githubusercontent.com/mesg-foundation/awesome/master/README.md`)
     return {
-      services: services.data,
-      applications: applications.data,
+      services: extract(data, "Services", "Applications"),
+      applications: extract(data, "Applications", "Contribution")
     }
   }
 }
