@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h2>Latest news</h2>
+      <h2>Latest Articles</h2>
       <Grid class="grid" :items="articles">
         <ArticleCard slot-scope="{ item }" :article="item"></ArticleCard>
       </Grid>
