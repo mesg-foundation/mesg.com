@@ -6,6 +6,7 @@
     <Features class="gray border"></Features>
     <Github class="light border"></Github>
     <Roadmap class="gray border"></Roadmap>    
+    <Articles class="light border"></Articles>    
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Features from '~/components/Features'
 import Github from '~/components/Github'
 import Roadmap from '~/components/Roadmap'
 import Sharing from '~/components/Sharing'
+import Articles from '~/components/Articles'
 export default {
   components: {
     Header,
@@ -23,7 +25,8 @@ export default {
     Features,
     Github,
     Roadmap,
-    Sharing
+    Sharing,
+    Articles
   }
 }
 </script>
