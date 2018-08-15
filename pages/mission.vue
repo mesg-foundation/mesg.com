@@ -40,6 +40,7 @@ export default {
   section {
     padding: 20px;
     width: 790px;
+    max-width: 100%;
     margin: auto;
   }
   h2 {
