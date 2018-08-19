@@ -47,9 +47,9 @@ module.exports = {
       id: 'UA-117583862-2'
     }]
   ],
-  router: {
-    middleware: ['mesg-curl']
-  },
+  // router: {
+  //   middleware: ['mesg-curl']
+  // },
   /*
   ** Build configuration
   */
