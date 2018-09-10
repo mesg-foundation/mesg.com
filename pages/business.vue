@@ -124,6 +124,7 @@ ul {
 }
 
 li {
+  cursor: pointer;
   padding: .5em 1em;
   width: 100%;
 }
