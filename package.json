@@ -17,6 +17,7 @@
     "@nuxtjs/pwa": "^2.0.8",
     "axios": "^0.18.0",
     "nuxt": "^1.0.0",
+    "vued3tree": "^3.6.1",
     "vuetrend": "^0.3.2"
   },
   "devDependencies": {
