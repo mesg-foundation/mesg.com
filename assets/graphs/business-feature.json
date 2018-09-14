@@ -1,0 +1,300 @@
+{
+  "name": "businessToFeature",
+  "children": [
+    {
+      "name": "AWS",
+      "children": [
+        { "name": "Analyze data" },
+        { "name": "Fiat payments" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Airbnb",
+      "children": [
+        { "name": "Control remotely" },
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "children": [
+        { "name": "Control remotely" },
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Real time notifications" },
+        { "name": "Store data" },
+        { "name": "Tracking items" }
+      ]
+    },
+    {
+      "name": "Apple",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Azure",
+      "children": [
+        { "name": "Analyze data" }
+      ]
+    },
+    {
+      "name": "Bank of America",
+      "children": [
+        { "name": "Real time data" },
+        { "name": "Trustless governance" }
+      ]
+    },
+    {
+      "name": "Bitcoin",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "Bloomberg",
+      "children": [
+        { "name": "Graphical user interface" },
+        { "name": "Real time data" },
+        { "name": "Real time notifications" }
+      ]
+    },
+    {
+      "name": "British Airways",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Real time data" },
+        { "name": "Real time notifications" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Coinbase",
+      "children": [
+        { "name": "Crypto payment" },
+        { "name": "Prove identity" }
+      ]
+    },
+    {
+      "name": "Coinfi",
+      "children": [
+        { "name": "Real time data" }
+      ]
+    },
+    {
+      "name": "Dominos",
+      "children": [
+        { "name": "Real time notifications" }
+      ]
+    },
+    {
+      "name": "EOS",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "Ethereum",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "Expedia",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "Facebook",
+      "children": [
+        { "name": "Analyze data" },
+        { "name": "Graphical user interface" },
+        { "name": "Real time notifications" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "FedEx",
+      "children": [
+        { "name": "Graphical user interface" },
+        { "name": "Real time notifications" },
+        { "name": "Tracking items" }
+      ]
+    },
+    {
+      "name": "Google",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Real time notifications" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "children": [
+        { "name": "Analyze data" }
+      ]
+    },
+    {
+      "name": "H&M",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Store data" },
+        { "name": "Tracking items" }
+      ]
+    },
+    {
+      "name": "IRS",
+      "children": [
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "JP Morgan",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Prove data authenticity" },
+        { "name": "Prove identity" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Lawyers",
+      "children": [
+        { "name": "Prove data authenticity" },
+        { "name": "Trustless governance" }
+      ]
+    },
+    {
+      "name": "Microsoft Corporation",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Real time data" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Oracle",
+      "children": [
+        { "name": "Analyze data" }
+      ]
+    },
+    {
+      "name": "Paypal",
+      "children": [
+        { "name": "Crypto payment" },
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Prove data authenticity" },
+        { "name": "Real time notifications" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Pfizer",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Prove data authenticity" },
+        { "name": "Store data" },
+        { "name": "Tracking items" }
+      ]
+    },
+    {
+      "name": "Prudential",
+      "children": [
+        { "name": "Prove identity" },
+        { "name": "Trustless governance" }
+      ]
+    },
+    {
+      "name": "SEC",
+      "children": [
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "children": [
+        { "name": "Analyze data" }
+      ]
+    },
+    {
+      "name": "Shopify",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "Skyscanner",
+      "children": [
+        { "name": "Real time data" }
+      ]
+    },
+    {
+      "name": "Subway",
+      "children": [
+        { "name": "Crypto payment" }
+      ]
+    },
+    {
+      "name": "UPS",
+      "children": [
+        { "name": "Tracking items" }
+      ]
+    },
+    {
+      "name": "Uber",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Real time data" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "UnitedHealth",
+      "children": [
+        { "name": "Fiat payments" },
+        { "name": "Graphical user interface" },
+        { "name": "Prove data authenticity" },
+        { "name": "Prove identity" },
+        { "name": "Store data" },
+        { "name": "Trustless governance" }
+      ]
+    },
+    {
+      "name": "Wolfram Alpha",
+      "children": [
+        { "name": "Analyze data" },
+        { "name": "Graphical user interface" }
+      ]
+    },
+    {
+      "name": "Youtube",
+      "children": [
+        { "name": "Graphical user interface" },
+        { "name": "Store data" }
+      ]
+    },
+    {
+      "name": "Zapier",
+      "children": [
+        { "name": "Analyze data" }
+      ]
+    }
+  ]
+}
