@@ -9,11 +9,16 @@
             {{graph.title}}
           </option>
         </select>
+        <label>
+          <input type="checkbox" v-model="circular">
+          Circular view
+        </label>
         <div class="tree-container">
           <component :is="component"
             ref="tree"
             v-if="component"
             :data="graphs[type].data"
+            :layoutType="circular ? 'circular' : 'euclidean'"
             nodeText="name"
             class="tree"/>
         </div>
@@ -28,6 +33,7 @@ export default {
   data () {
     return {
       component: null,
+      circular: false,
       type: "featureToBusiness"
     }
   },
@@ -61,6 +67,10 @@ export default {
 </script>
 
 <style>
+.container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 .tree {
   height: 800px;
   width: 100%;
@@ -68,5 +78,9 @@ export default {
 .graph-root {
   height: 800px;
   width: 100%;
+}
+select {
+  padding-right: 40px;
+  margin-right: 20px;
 }
 </style>
