@@ -11,11 +11,11 @@
             <img src="~/assets/mesg-icon-enterprises@3x.png" alt="Enterprises">
             Enterprises
           </a>
-          <a href="#" half flex column justify-center align-center>
+          <a href="#" half flex column justify-center align-center mb0>
             <img src="~/assets/mesg-icon-entrepreneurs@3x.png" alt="Entrepreneurs">
             Entrepreneurs
           </a>
-          <a href="#" half flex column justify-center align-center>
+          <a href="#" half flex column justify-center align-center mb0>
             <img src="~/assets/mesg-icon-incubators@3x.png" alt="Incubators">
             Incubators
           </a>
@@ -38,6 +38,12 @@
 </template>
 
 <style scoped>
+section {
+  background-color: #f1f0f8;
+  background-color: var(--pale-grey);
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.25);
+}
+
 a {
   font-family: Quicksand;
   font-size: 24px;

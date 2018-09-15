@@ -53,9 +53,10 @@ html {
 [space-between] { justify-content: space-between; }
 [space-around] { justify-content: space-around; }
 [half] { width: 50%; }
-[mt0] { margin-top: 0px; }
-[mb1] { margin-bottom: 40px; }
-[mr1] { margin-right: 40px; }
+[mt0] { margin-top: 0px!important; }
+[mb0] { margin-bottom: 0px!important; }
+[mb1] { margin-bottom: 40px!important; }
+[mr1] { margin-right: 40px!important; }
 
 .container {
   width: 1440px;
