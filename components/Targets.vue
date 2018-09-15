@@ -67,8 +67,6 @@ img {
 }
 
 h2 {
-  width: 600px;
-  height: 39px;
   font-family: Quicksand;
   font-size: 32px;
   font-weight: 700;
