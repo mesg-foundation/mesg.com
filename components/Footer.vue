@@ -3,7 +3,6 @@
     <footer class="dark">
       <div class="container">
         <h2>Get started and join us now!</h2>
-        <Links docs github blog discussion small></Links>
       </div>
     </footer>
     <Discord id="448501704388902912"></Discord>
@@ -12,11 +11,9 @@
 
 <script>
 import Discord from '~/components/Discord'
-import Links from '~/components/Links'
 export default {
   components: {
-    Discord,
-    Links
+    Discord
   }
 }
 </script>

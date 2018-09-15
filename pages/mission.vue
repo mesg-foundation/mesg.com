@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <Title>Mission</Title>
+    <h1>Mission</h1>
     <div class="light">
       <section>
         <div class="container">
@@ -25,16 +25,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Title from '~/components/Title'
-export default {
-  components: {
-    Title
-  }
-}
-</script>
-
 
 <style scoped>
   section {
