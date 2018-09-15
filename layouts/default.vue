@@ -52,7 +52,8 @@ html {
 [align-center] { align-items: center; }
 [space-between] { justify-content: space-between; }
 [space-around] { justify-content: space-around; }
-[half] { width: 50%; }
+[half] { width: 600px; }
+[separator] { flex: 1; }
 [mt0] { margin-top: 0px!important; }
 [mb0] { margin-bottom: 0px!important; }
 [mb1] { margin-bottom: 40px!important; }

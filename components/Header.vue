@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container" flex row>
+    <div class="container" flex row space-between>
       <header flex column justify-center half>
         <img mb1 class="logo" src="~/assets/mesg-logo-horizontal-white.svg" alt="MESG">
         <h2 mb1 mt0>Build applications connecting any technologies</h2>
@@ -35,13 +35,9 @@ section {
   background-image: linear-gradient(55deg, var(--dark-blue-grey), var(--purple));
 }
 
-.container > * {
-  width: 50%;
-}
-
 .schema {
-  width: 100%;
-  height: 701px;
+  max-width: 100%;
+  height: 700px;
   object-fit: contain;
 }
 

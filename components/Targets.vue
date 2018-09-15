@@ -1,21 +1,21 @@
 <template>
   <section>
-    <div class="container" flex row>
+    <div class="container" flex row space-between>
       <div half justify-center>
         <nav flex row wrap>
-          <a href="#" half flex column justify-center align-center>
+          <a href="#" flex column justify-center align-center>
             <img src="~/assets/mesg-icon-developers@3x.png" alt="Developers">
             Developers
           </a>
-          <a href="#" half flex column justify-center align-center>
+          <a href="#" flex column justify-center align-center>
             <img src="~/assets/mesg-icon-enterprises@3x.png" alt="Enterprises">
             Enterprises
           </a>
-          <a href="#" half flex column justify-center align-center mb0>
+          <a href="#" flex column justify-center align-center mb0>
             <img src="~/assets/mesg-icon-entrepreneurs@3x.png" alt="Entrepreneurs">
             Entrepreneurs
           </a>
-          <a href="#" half flex column justify-center align-center mb0>
+          <a href="#" flex column justify-center align-center mb0>
             <img src="~/assets/mesg-icon-incubators@3x.png" alt="Incubators">
             Incubators
           </a>
@@ -42,6 +42,7 @@ section {
   background-color: #f1f0f8;
   background-color: var(--pale-grey);
   box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 a {
@@ -56,6 +57,7 @@ a {
   color: #9452ff;
   color: var(--lighter-purple);
   margin-bottom: 60px;
+  width: 50%;
 }
 
 img {
