@@ -47,6 +47,7 @@ html {
 [flex] { display: flex; }
 [row] { flex-direction: row; }
 [column] { flex-direction: column; }
+[wrap] { flex-wrap: wrap; }
 [justify-center] { justify-content: center; }
 [align-center] { align-items: center; }
 [space-between] { justify-content: space-between; }

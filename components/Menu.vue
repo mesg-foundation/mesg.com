@@ -4,9 +4,9 @@
       <img src="~/assets/mesg-brandmark-white@3x.png" alt="MESG">
     </a>
     <div>
-      <Button mr1 href="/overview">Overview</Button>
-      <Button mr1 href="/marketplace">Marketplace</Button>
-      <Button mr1 href="https://docs.mesg.com">Documentation</Button>
+      <a mr1 href="/overview">Overview</a>
+      <a mr1 href="/marketplace">Marketplace</a>
+      <a mr1 href="https://docs.mesg.com">Documentation</a>
       <Button href="#" small white>Install</Button>
     </div>
   </nav>
