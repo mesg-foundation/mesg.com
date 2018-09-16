@@ -6,7 +6,7 @@
         <h2 mb1 mt0>Build applications connecting any technologies</h2>
         <p mb1 mt0>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
         <nav flex>
-          <Button href="#" mr1 primary>Get in Touch</Button>
+          <Button href="#" @click.native="popup = true" mr1 primary>Get in Touch</Button>
           <Button href="https://docs.mesg.com" outline>Learn More</Button>
         </nav>
       </header>
@@ -14,14 +14,26 @@
         <img class="schema" src="~/assets/mesg-schema-header@3x.png" alt="MESG-header">
       </div>
     </div>
+    <Popup v-model="popup">
+      <ContactForm/>
+    </Popup>
   </section>
 </template>
 
 <script>
 import Button from '~/components/Button'
+import Popup from '~/components/Popup'
+import ContactForm from '~/components/ContactForm'
 export default {
   components: {
-    Button
+    Button,
+    Popup,
+    ContactForm
+  },
+  data () {
+    return {
+      popup: false
+    }
   }
 }
 </script>

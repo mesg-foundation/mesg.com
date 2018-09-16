@@ -1,18 +1,21 @@
 <template>
-  <a
+  <a v-if="!submit"
     :href="href"
     :class="{ small, primary, white, outline }">
     <slot></slot>
   </a>
+  <button v-else
+    type="submit"
+    :class="{ small, primary, white, outline }">
+    <slot></slot>
+  </button>
 </template>
 
 <script>
 export default {
   props: {
-    href: {
-      type: String,
-      required: true
-    },
+    href: String,
+    submit: Boolean,
     small: Boolean,
     primary: Boolean,
     white: Boolean,
@@ -22,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-a {
+a, button {
   border-radius: 30px;
   font-family: Quicksand;
   font-size: 17px;
@@ -34,6 +37,7 @@ a {
   text-align: center;
   padding: 20px 38px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .small {
