@@ -1,14 +1,14 @@
 <template>
-  <a v-if="!submit"
-    :href="href"
-    :class="{ small, primary, white, outline }">
-    <slot></slot>
-  </a>
-  <button v-else
+  <button v-if="submit"
     type="submit"
     :class="{ small, primary, white, outline }">
     <slot></slot>
   </button>
+  <a v-else
+    :href="href"
+    :class="{ small, primary, white, outline }">
+    <slot></slot>
+  </a>
 </template>
 
 <script>
