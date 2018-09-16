@@ -38,21 +38,8 @@
 </template>
 
 <style scoped>
-section {
-  background-color: #f1f0f8;
-  background-color: var(--pale-grey);
-  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.25);
-  z-index: 1;
-}
-
 a {
-  font-family: Quicksand;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-decoration: none;
   color: #9452ff;
   color: var(--lighter-purple);
@@ -61,35 +48,12 @@ a {
 }
 
 img {
-  max-width: 100%;
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-family: Quicksand;
-  font-size: 32px;
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #491e8c;
-  color: var(--purple);
   margin-top: 20px;
-}
-
-p {
-  font-family: Quicksand;
-  font-size: 17px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #251440;
-  color: var(--dark-blue-grey);
-  text-align: justify;
 }
 </style>

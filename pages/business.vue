@@ -1,29 +1,27 @@
 <template>
-  <div class="light">
-    <section>
-      <div class="container">
-        <select v-model="type">
-          <option
-            v-for="(graph, key) in graphs" :key="key"
-            :value="key">
-            {{graph.title}}
-          </option>
-        </select>
-        <label>
-          <input type="checkbox" v-model="circular">
-          Circular view
-        </label>
-        <div class="tree-container">
-          <component :is="component"
-            ref="tree"
-            v-if="component"
-            :data="graphs[type].data"
-            :layoutType="circular ? 'circular' : 'euclidean'"
-            nodeText="name"
-            class="tree"/>
-        </div>
+  <div>
+    <div class="container">
+      <select v-model="type">
+        <option
+          v-for="(graph, key) in graphs" :key="key"
+          :value="key">
+          {{graph.title}}
+        </option>
+      </select>
+      <label>
+        <input type="checkbox" v-model="circular">
+        Circular view
+      </label>
+      <div class="tree-container">
+        <component :is="component"
+          ref="tree"
+          v-if="component"
+          :data="graphs[type].data"
+          :layoutType="circular ? 'circular' : 'euclidean'"
+          nodeText="name"
+          class="tree"/>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 

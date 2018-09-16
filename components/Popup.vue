@@ -1,7 +1,7 @@
 <template>
   <div v-if="value">
     <div class="background" @click="$emit('input', false)"></div>
-    <section>
+    <section class="white">
       <slot></slot>
     </section>
   </div>
@@ -24,10 +24,6 @@ export default {
   background: rgba(0,0,0,0.25);
 }
 section {
-  background-color: #f1f0f8;
-  background-color: var(--pale-grey);
-  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.25);
-  z-index: 1;
   position: fixed;
   top: 50%;
   left: 50%;

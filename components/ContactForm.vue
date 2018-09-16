@@ -35,13 +35,7 @@ export default {
 
 <style scoped>
 label, input, textarea {
-  font-family: Quicksand;
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #251440;
   color: var(--dark-blue-grey);
 }

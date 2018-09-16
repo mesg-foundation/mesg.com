@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style>
+/* Reset */
 html {
   font-size: 16px;
   word-spacing: 1px;
@@ -43,7 +44,10 @@ html {
   margin: 0;
   padding: 0;
 }
+</style>
 
+<style>
+/* Structure */
 [flex] { display: flex; }
 [row] { flex-direction: row; flex-wrap: wrap; }
 [column] { flex-direction: column; }
@@ -87,10 +91,11 @@ html {
   [hide-mobile] { display: none; }
   [column] > img { margin-top: 40px; }
 }
+</style>
 
+<style>
 /* Text styles */
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p, a, button, label, input, textarea {
   font-family: Quicksand;
   font-style: normal;
   font-stretch: normal;
@@ -100,30 +105,57 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
+  font-weight: bold;
   color: #f8f8f8;
 }
 
 h2 {
-  font-family: Quicksand;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: bold;
   color: #491e8c;
   color: var(--purple);
 }
 
 h3 {
-  font-family: Quicksand;
   font-size: 24px;
-  font-weight: 500;
-  color: #491e8c;
-  color: var(--purple);
+  font-weight: bold;
+  color: #251440;
+  color: var(--dark-blue-grey);
 }
 
-h4 {
-  font-family: Quicksand;
-  font-size: 18px;
-  color: #491e8c;
-  color: var(--purple);
+p {
+  font-size: 17px;
+  color: #251440;
+  color: var(--dark-blue-grey);
+  text-align: justify;
+}
+</style>
+
+<style>
+/* Design */
+.dark {
+  background-image: linear-gradient(30deg, #251440, #491e8c);
+  background-image: linear-gradient(30deg, var(--dark-blue-grey), var(--purple));
+  z-index: 10;
+}
+
+.dark h2,
+.dark p {
+  color: #f1f0f8;
+  color: var(--pale-grey);
+}
+
+.white {
+  background-color: #f1f0f8;
+  background-color: var(--pale-grey);
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 </style>

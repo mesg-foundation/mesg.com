@@ -65,42 +65,6 @@
 </template>
 
 <style scoped>
-section {
-  background-image: linear-gradient(30deg, #251440, #491e8c);
-  background-image: linear-gradient(30deg, var(--dark-blue-grey), var(--purple));
-  z-index: -10;
-}
-
-h2 {
-  font-family: Quicksand;
-  font-size: 32px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #f1f0f8;
-  color: var(--pale-grey);
-}
-
-p {
-  font-family: Quicksand;
-  font-size: 17px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  text-align: justify;
-}
-
-img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
 .container {
   padding-top: 40px;
   padding-bottom: 40px;

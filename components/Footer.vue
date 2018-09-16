@@ -1,5 +1,5 @@
 <template>
-  <footer hide-mobile>
+  <footer hide-mobile class="white">
     <div class="container">
       <nav flex row space-around>
         <a href="/" ><img src="~/assets/mesg-logo-vertical-purple@3x.png" alt="MESG"></a>
@@ -24,8 +24,6 @@
 footer {
   border-top: solid 1px #cac5e4;
   border-top: solid 1px var(--light-blue-grey);
-  background-image: linear-gradient(to bottom, #f1f0f8, #ffffff);
-  background-image: linear-gradient(to bottom, var(--pale-grey), var(--blanc-background));
 }
 
 footer .container {
@@ -33,26 +31,9 @@ footer .container {
   padding-bottom: 40px;
 }
 
-h3 {
-  font-family: Quicksand;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #251440;
-  color: var(--dark-blue-grey);
-}
-
 a {
-  font-family: Quicksand;
   font-size: 15px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #251440;
   color: var(--dark-blue-grey);
   text-decoration: none;
@@ -60,8 +41,6 @@ a {
 }
 
 img {
-  max-width: 100%;
   height: 200px;
-  object-fit: contain;
 }
 </style>

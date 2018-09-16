@@ -42,42 +42,22 @@ export default {
 <style scoped>
 section {
   padding-top: 80px;
-  background-image: linear-gradient(55deg, #251440, #491e8c);
-  background-image: linear-gradient(55deg, var(--dark-blue-grey), var(--purple));
 }
 
 .schema {
-  max-width: 100%;
   height: 700px;
-  object-fit: contain;
 }
 
 .logo {
   width: 376px;
-  max-width: 100%;
 }
 
 h2 {
-  font-family: Quicksand;
   font-size: 38px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #f1f0f8;
-  color: var(--pale-grey);
 }
 
 p {
-  font-family: Quicksand;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #f1f0f8;
-  color: var(--pale-grey);
 }
 </style>

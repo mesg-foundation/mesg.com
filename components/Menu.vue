@@ -48,36 +48,17 @@ nav {
 }
 
 img {
-  max-width: 100%;
   width: 40px;
   height: 40px;
 }
 
 a {
-  font-family: Quicksand;
   font-size: 17px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   height: 20px;
-  line-height: normal;
-  letter-spacing: normal;
   text-decoration: none;
   color: #f1f0f8;
   color: var(--pale-grey);
-}
-
-p {
-  font-family: Quicksand;
-  font-size: 17px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #251440;
-  color: var(--dark-blue-grey);
-  text-align: justify;
 }
 
 p a {
