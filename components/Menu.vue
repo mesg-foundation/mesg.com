@@ -5,7 +5,7 @@
         <img src="~/assets/mesg-brandmark-white@3x.png" alt="MESG">
       </a>
       <div hide-mobile>
-        <a mr1 href="/overview">Overview</a>
+        <a mr1 href="#overview">Overview</a>
         <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr1 href="https://docs.mesg.com">Documentation</a>
         <Button @click.native="install = true" href="#" small white>Install</Button>

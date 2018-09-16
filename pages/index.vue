@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Header/>
-    <Targets/>
-    <Features/>
-    <Business/>
-    <Blockchain/>
+    <Header id="introduction"/>
+    <Targets id="targets"/>
+    <Features id="overview"/>
+    <Business id="business"/>
+    <Blockchain id="blockchain"/>
   </div>
 </template>
 
