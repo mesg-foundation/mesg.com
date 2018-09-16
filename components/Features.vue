@@ -50,8 +50,11 @@
           The MESG economy is fueled by the sharing and reuse of code. Services and Applications are shared and reused through an open marketplace, expediting the development process.
           <br><br>
           You can create residual income by building Services and Applications, or simply by participating in the network. Creators of apps can choose how much each actor in the network, including the creator themselves, is paid for their participation. This creates a value-driven economy and community-driven governance.
+          <!--
+          TODO:
           <br><br>
           <strong>For more information on how you can start participating in the network today, click here.</strong>
+          -->
         </p>
       </div>
       <div half flex column justify-center>

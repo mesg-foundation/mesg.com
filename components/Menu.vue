@@ -6,7 +6,7 @@
       </a>
       <div hide-mobile>
         <a mr1 href="/overview">Overview</a>
-        <a mr1 href="/marketplace">Marketplace</a>
+        <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr1 href="https://docs.mesg.com">Documentation</a>
         <Button href="#" small white>Install</Button>
       </div>

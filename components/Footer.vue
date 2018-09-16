@@ -11,10 +11,9 @@
         </div>
         <div flex column>
           <h3 mb1>Developer Resources</h3>
-          <a href="#">What is MESG? Get started</a>
-          <a href="#">Browse our source code on Github</a>
-          <a href="#">Read the documentation</a>
-          <a href="#">Want to write about MESG?</a>
+          <a href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank">What is MESG? Get started</a>
+          <a href="https://github.com/mesg-foundation/core">Browse our source code on Github</a>
+          <a href="https://docs.mesg.com">Read the documentation</a>
         </div>
       </nav>
     </div>
