@@ -1,5 +1,11 @@
 <template>
-  <form name="contact" method="POST" netlify flex column>
+  <form
+    name="contact"
+    method="POST"
+    action="https://formspree.io/contact@mesg.com"
+    flex column>
+    <input type="hidden" name="_next" value="https://mesg.com/" />
+    <input type="hidden" name="_subject" value="New Contact" />
     <div flex row space-between>
       <label>Name:</label>
       <input type="text" name="name" />
@@ -23,15 +29,6 @@ export default {
   components: {
     Button
   }
-  // methods: {
-  //   submit () {
-  //     e.preventDefault();
-  //     var $form = $(this);
-  //     $.post($form.attr("action"), $form.serialize()).then(function() {
-  //       alert("Thank you!");
-  //     });
-  //   }
-  // }
 }
 </script>
 
