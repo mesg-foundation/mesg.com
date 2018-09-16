@@ -1,13 +1,15 @@
 <template>
-  <nav flex row space-between>
-    <a href="/">
-      <img src="~/assets/mesg-brandmark-white@3x.png" alt="MESG">
-    </a>
-    <div>
-      <a mr1 href="/overview">Overview</a>
-      <a mr1 href="/marketplace">Marketplace</a>
-      <a mr1 href="https://docs.mesg.com">Documentation</a>
-      <Button href="#" small white>Install</Button>
+  <nav>
+    <div class="container" p0 flex row space-between>
+      <a href="/">
+        <img src="~/assets/mesg-brandmark-white@3x.png" alt="MESG">
+      </a>
+      <div hide-mobile>
+        <a mr1 href="/overview">Overview</a>
+        <a mr1 href="/marketplace">Marketplace</a>
+        <a mr1 href="https://docs.mesg.com">Documentation</a>
+        <Button href="#" small white>Install</Button>
+      </div>
     </div>
   </nav>
 </template>
@@ -32,6 +34,7 @@ nav {
 }
 
 img {
+  max-width: 100%;
   width: 40px;
   height: 40px;
 }

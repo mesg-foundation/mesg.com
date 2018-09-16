@@ -10,7 +10,7 @@
           <Button href="#" outline>Learn More</Button>
         </nav>
       </header>
-      <div flex half align-center justify-center>
+      <div flex column half align-center justify-center>
         <img class="schema" src="~/assets/mesg-schema-header@3x.png" alt="MESG-header">
       </div>
     </div>
@@ -29,7 +29,6 @@ export default {
 
 <style scoped>
 section {
-  height: 1024px;
   padding-top: 80px;
   background-image: linear-gradient(55deg, #251440, #491e8c);
   background-image: linear-gradient(55deg, var(--dark-blue-grey), var(--purple));
@@ -43,6 +42,7 @@ section {
 
 .logo {
   width: 376px;
+  max-width: 100%;
 }
 
 h2 {

@@ -45,24 +45,47 @@ html {
 }
 
 [flex] { display: flex; }
-[row] { flex-direction: row; }
+[row] { flex-direction: row; flex-wrap: wrap; }
 [column] { flex-direction: column; }
-[wrap] { flex-wrap: wrap; }
 [justify-center] { justify-content: center; }
 [align-center] { align-items: center; }
 [space-between] { justify-content: space-between; }
 [space-around] { justify-content: space-around; }
+
 [half] { width: 600px; }
-[separator] { flex: 1; }
+[p0] { padding: 0!important; }
 [mt0] { margin-top: 0px!important; }
 [mb0] { margin-bottom: 0px!important; }
 [mb1] { margin-bottom: 40px!important; }
 [mr1] { margin-right: 40px!important; }
 
 .container {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   padding: 80px;
   margin: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 100%;
+    padding: 40px;
+  }
+  [half] { width: calc(50% - 40px); }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 40px;
+  }
+  [half] { width: 100%; }
+  [mb1] { margin-bottom: 20px!important; }
+  [mr1] { margin-right: 20px!important; }
+  [row-reverse-mobile] { flex-direction: row-reverse; }
+  [column-reverse-mobile] { flex-direction: column-reverse; }
+  [hide-mobile] { display: none; }
+  [column] > img { margin-top: 40px; }
 }
 
 /* Text styles */

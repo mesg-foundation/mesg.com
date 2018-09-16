@@ -1,8 +1,8 @@
 <template>
   <section>
-    <div class="container" flex row space-between>
+    <div class="container" flex row space-between column-reverse-mobile>
       <div half justify-center>
-        <nav flex row wrap>
+        <nav flex row>
           <a href="#" flex column justify-center align-center>
             <img src="~/assets/mesg-icon-developers@3x.png" alt="Developers">
             Developers
@@ -61,6 +61,7 @@ a {
 }
 
 img {
+  max-width: 100%;
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
@@ -89,5 +90,6 @@ p {
   letter-spacing: normal;
   color: #251440;
   color: var(--dark-blue-grey);
+  text-align: justify;
 }
 </style>

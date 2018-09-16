@@ -3,7 +3,7 @@
     <div class="container" flex row justify-center>
       <h1>Paving the way to mass blockchain adoption</h1>
     </div>
-    <div class="container" flex row space-between>
+    <div class="container" flex row column-reverse-mobile space-between>
       <div half flex column justify-center align-center>
         <img src="~/assets/mesg-schema-adoption-before@3x.png" alt="adoption-before">
         <p>App users are responsible for direct interaction with technologies</p>
@@ -68,6 +68,7 @@ p {
   letter-spacing: normal;
   color: #f1f0f8;
   color: var(--pale-grey);
+  text-align: justify;
 }
 
 img {

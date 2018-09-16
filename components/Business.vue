@@ -51,6 +51,7 @@ p {
   letter-spacing: normal;
   color: #251440;
   color: var(--dark-blue-grey);
+  text-align: justify;
 }
 
 img {

@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer hide-mobile>
     <div class="container">
       <nav flex row space-around>
         <a href="/" ><img src="~/assets/mesg-logo-vertical-purple@3x.png" alt="MESG"></a>
@@ -18,18 +18,8 @@
         </div>
       </nav>
     </div>
-    <Discord id="448501704388902912"></Discord>
   </footer>
 </template>
-
-<script>
-import Discord from '~/components/Discord'
-export default {
-  components: {
-    Discord
-  }
-}
-</script>
 
 <style scoped>
 footer {
@@ -71,6 +61,7 @@ a {
 }
 
 img {
+  max-width: 100%;
   height: 200px;
   object-fit: contain;
 }

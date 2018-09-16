@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container" flex row space-between>
+    <div class="container" flex row space-between column-reverse-mobile>
       <div half flex column justify-center>
         <img src="~/assets/mesg-schema-connect@3x.png" alt="connect">
       </div>
@@ -23,7 +23,7 @@
         <img src="~/assets/mesg-schema-apps@3x.png" alt="apps">
       </div>
     </div>
-    <div class="container" flex row space-between>
+    <div class="container" flex row space-between column-reverse-mobile>
       <div half flex column justify-center>
         <img src="~/assets/mesg-schema-network@3x.png" alt="network">
       </div>
@@ -90,6 +90,7 @@ p {
   letter-spacing: normal;
   color: #f1f0f8;
   color: var(--pale-grey);
+  text-align: justify;
 }
 
 img {
