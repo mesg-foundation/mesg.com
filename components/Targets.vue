@@ -3,22 +3,22 @@
     <div class="container" flex row space-between column-reverse-mobile>
       <div half justify-center>
         <nav flex row>
-          <a href="#" flex column justify-center align-center>
+          <span flex column justify-center align-center>
             <img src="~/assets/mesg-icon-developers@3x.png" alt="Developers">
             Developers
-          </a>
-          <a href="#" flex column justify-center align-center>
+          </span>
+          <span flex column justify-center align-center>
             <img src="~/assets/mesg-icon-enterprises@3x.png" alt="Enterprises">
             Enterprises
-          </a>
-          <a href="#" flex column justify-center align-center mb0>
+          </span>
+          <span flex column justify-center align-center mb0>
             <img src="~/assets/mesg-icon-entrepreneurs@3x.png" alt="Entrepreneurs">
             Entrepreneurs
-          </a>
-          <a href="#" flex column justify-center align-center mb0>
+          </span>
+          <span flex column justify-center align-center mb0>
             <img src="~/assets/mesg-icon-incubators@3x.png" alt="Incubators">
             Incubators
-          </a>
+          </span>
         </nav>
       </div>
       <div half>
@@ -38,7 +38,8 @@
 </template>
 
 <style scoped>
-a {
+span {
+  font-family: Quicksand;
   font-size: 24px;
   text-decoration: none;
   color: #9452ff;
