@@ -1,7 +1,7 @@
 <template>
   <footer hide-mobile class="white">
     <div class="container">
-      <nav flex row space-around>
+      <nav flex row space-between>
         <a href="/" ><img src="~/assets/mesg-logo-vertical-purple@3x.png" alt="MESG"></a>
         <div flex column>
           <h3 mb1>Community</h3>
@@ -42,5 +42,6 @@ a {
 
 img {
   height: 200px;
+  width: auto;
 }
 </style>
