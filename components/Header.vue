@@ -7,7 +7,7 @@
         <p mb1 mt0>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
         <nav flex>
           <Button href="#" @click.native="popup = true" mr1 primary>Get in Touch</Button>
-          <Button href="https://docs.mesg.com" outline>Learn More</Button>
+          <Button href="#targets" outline>Learn More</Button>
         </nav>
       </header>
       <div flex column half align-center justify-center>

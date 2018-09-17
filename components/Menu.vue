@@ -8,31 +8,17 @@
         <a mr1 href="#overview">Overview</a>
         <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr1 href="https://docs.mesg.com">Documentation</a>
-        <Button @click.native="install = true" href="#" small white>Install</Button>
+        <Button href="https://docs.mesg.com/guide/start-here/installation.html" small white>Install</Button>
       </div>
     </div>
-    <Popup v-model="install">
-      <div>
-        <p mb1>Open a terminal on your computer and run the following command:</p>
-        <code mb1>bash &lt;(curl -s https://mesg.com/install)</code>
-        <p>You can also download the <a href="https://github.com/mesg-foundation/core/releases/latest">latest release on Github</a>.</p>
-      </div>
-    </Popup>
   </nav>
 </template>
 
 <script>
 import Button from '~/components/Button'
-import Popup from '~/components/Popup'
 export default {
   components: {
-    Button,
-    Popup
-  },
-  data () {
-    return {
-      install: false
-    }
+    Button
   }
 }
 </script>
