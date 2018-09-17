@@ -31,12 +31,9 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: 'rgba(20, 9, 48, 1)' },
-  env: {
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN
-  },
+  loading: { color: '#491e8c' },
   manifest: {
-    theme_color: 'rgba(20, 9, 48, 1)'
+    theme_color: '#491e8c'
   },
   modules: [
     '@nuxtjs/pwa',
