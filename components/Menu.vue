@@ -8,6 +8,7 @@
         <a mr1 href="#overview">Overview</a>
         <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr1 href="https://docs.mesg.com">Documentation</a>
+        <a mr1 href="https://forum.mesg.com">Get Help</a>
         <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small white>Install</Button>
       </div>
     </div>
