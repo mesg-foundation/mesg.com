@@ -7,6 +7,7 @@
           <h3 mb1>Community</h3>
           <a href="https://medium.com/mesg">Medium</a>
           <a href="https://github.com/mesg-foundation">Github</a>
+          <a href="https://forum.mesg.com/">Forum</a>
           <a href="https://discord.gg/SaZ5HcE">Discord</a>
         </div>
         <div flex column>
