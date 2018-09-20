@@ -1,6 +1,6 @@
 <template>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="460" height="270" viewBox="0 0 460 270" style="enable-background:new 0 0 460 270;" xml:space="preserve">
+	 x="0px" y="0px" viewBox="0 0 460 270" style="enable-background:new 0 0 460 270;" xml:space="preserve">
 <g id="Schema">
 	<g id="Background">
 		<path id="Circle-4_1_" class="st0" d="M435.4,230.4c0,0-92,3.8-205.5,3.8s-205.5-3.8-205.5-3.8c0-113.5,92-205.5,205.5-205.5
