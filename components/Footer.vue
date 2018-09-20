@@ -2,7 +2,9 @@
   <footer hide-mobile class="white">
     <div class="container">
       <nav flex row space-between>
-        <a href="/" ><MESGLogoVerticalPurple /></a>
+        <div flex column>
+          <MESGLogoVerticalPurple />
+        </div>
         <div flex column>
           <h3 mb1>Community</h3>
           <a href="https://medium.com/mesg">Medium</a>
@@ -49,5 +51,4 @@ a {
   text-decoration: none;
   margin-bottom: 20px;
 }
-
 </style>

@@ -2,7 +2,7 @@
   <section>
     <div class="container" flex row space-between>
       <div half flex column justify-center>
-        <h2 mb1>What is a business if not a collection of functions?</h2>
+        <h2>What is a business if not a collection of functions?</h2>
         <p>
           MESG allows you to easily automate and connect business functions, streamline processes and even allow departments or even industries to work together without a hitch. No coding required.
           <br><br>
@@ -30,7 +30,4 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  margin-top: 20px;
-}
 </style>
