@@ -2,14 +2,14 @@
   <nav>
     <div class="container" p0 flex row space-between>
       <a href="/">
-        <img src="~/assets/mesg-brandmark-white@3x.png" alt="MESG">
+        <IconBrandmarkWhite />
       </a>
       <div hide-mobile>
         <a mr1 href="#overview">Overview</a>
         <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr1 href="https://docs.mesg.com">Documentation</a>
         <a mr1 href="https://forum.mesg.com">Get Help</a>
-        <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small white>Get Started</Button>
+        <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small purple>Get Started</Button>
       </div>
     </div>
   </nav>
@@ -17,9 +17,11 @@
 
 <script>
 import Button from '~/components/Button'
+import IconBrandmarkWhite from '~/components/IconBrandmarkWhite'
 export default {
   components: {
-    Button
+    Button,
+    IconBrandmarkWhite
   }
 }
 </script>
@@ -34,14 +36,9 @@ nav {
   width: 100%;
 }
 
-img {
-  width: 40px;
-  height: 40px;
-}
-
 a {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: bold;
   height: 20px;
   text-decoration: none;
   color: #f1f0f8;

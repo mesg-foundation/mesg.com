@@ -2,7 +2,7 @@
   <footer hide-mobile class="white">
     <div class="container">
       <nav flex row space-between>
-        <a href="/" ><img src="~/assets/mesg-logo-vertical-purple@3x.png" alt="MESG"></a>
+        <a href="/" ><MESGLogoVerticalPurple /></a>
         <div flex column>
           <h3 mb1>Community</h3>
           <a href="https://medium.com/mesg">Medium</a>
@@ -20,6 +20,15 @@
     </div>
   </footer>
 </template>
+
+<script>
+import MESGLogoVerticalPurple from '~/components/MESGLogoVerticalPurple'
+export default {
+  components: {
+    MESGLogoVerticalPurple
+  }
+}
+</script>
 
 <style scoped>
 footer {
@@ -41,8 +50,4 @@ a {
   margin-bottom: 20px;
 }
 
-img {
-  height: 200px;
-  width: auto;
-}
 </style>

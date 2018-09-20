@@ -2,7 +2,7 @@
   <section>
     <div class="container" flex row space-between column-reverse-mobile>
       <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-connect@3x.png" alt="connect">
+        <SchemaConnection />
       </div>
       <div half flex column justify-center>
         <h2 mb1>Connect anything</h2>
@@ -20,12 +20,12 @@
         </p>
       </div>
       <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-apps@3x.png" alt="apps">
+        <SchemaApps />
       </div>
     </div>
     <div class="container" flex row space-between column-reverse-mobile>
       <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-network@3x.png" alt="network">
+        <SchemaNetwork />
       </div>
       <div half flex column justify-center>
         <h2 mb1>Grow your network</h2>
@@ -58,11 +58,26 @@
         </p>
       </div>
       <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-income@3x.png" alt="income">
+        <SchemaIncome />
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import SchemaConnection from '~/components/SchemaConnection'
+import SchemaApps from '~/components/SchemaApps'
+import SchemaNetwork from '~/components/SchemaNetwork'
+import SchemaIncome from '~/components/SchemaIncome'
+export default {
+  components: {
+    SchemaConnection,
+    SchemaApps,
+    SchemaNetwork,
+    SchemaIncome
+  }
+}
+</script>
 
 <style scoped>
 .container {

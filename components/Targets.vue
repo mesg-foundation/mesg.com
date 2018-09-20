@@ -4,19 +4,19 @@
       <div half justify-center>
         <nav flex row>
           <span flex column justify-center align-center>
-            <img src="~/assets/mesg-icon-developers@3x.png" alt="Developers">
+            <IconDevelopers mb2 />
             Developers
           </span>
           <span flex column justify-center align-center>
-            <img src="~/assets/mesg-icon-enterprises@3x.png" alt="Enterprises">
+            <IconEnterprises mb2 />
             Enterprises
           </span>
           <span flex column justify-center align-center mb0>
-            <img src="~/assets/mesg-icon-entrepreneurs@3x.png" alt="Entrepreneurs">
+            <IconEntrepreneurs mb2 />
             Entrepreneurs
           </span>
           <span flex column justify-center align-center mb0>
-            <img src="~/assets/mesg-icon-incubators@3x.png" alt="Incubators">
+            <IconIncubators mb2 />
             Incubators
           </span>
         </nav>
@@ -37,6 +37,21 @@
   </section>
 </template>
 
+<script>
+import IconDevelopers from '~/components/IconDevelopers'
+import IconEnterprises from '~/components/IconEnterprises'
+import IconEntrepreneurs from '~/components/IconEntrepreneurs'
+import IconIncubators from '~/components/IconIncubators'
+export default {
+  components: {
+    IconDevelopers,
+    IconEnterprises,
+    IconEntrepreneurs,
+    IconIncubators
+  }
+}
+</script>
+
 <style scoped>
 span {
   font-family: Quicksand;
@@ -46,12 +61,6 @@ span {
   color: var(--lighter-purple);
   margin-bottom: 60px;
   width: 50%;
-}
-
-img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
 }
 
 h2 {

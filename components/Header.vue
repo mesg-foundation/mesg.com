@@ -2,8 +2,8 @@
   <section>
     <div class="container" flex row space-between>
       <header flex column justify-center half>
-        <img mb1 class="logo" src="~/assets/mesg-logo-horizontal-white.svg" alt="MESG">
-        <h2 mb1 mt0>Build applications connecting any technologies</h2>
+        <MESGLogoHorizontalWhite mb1 />
+        <h1 mb1 mt0>Build applications connecting any technologies</h1>
         <p mb1 mt0>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
         <nav flex>
           <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" mr1 primary>Get in Touch</Button>
@@ -11,7 +11,7 @@
         </nav>
       </header>
       <div flex column half align-center justify-center>
-        <img class="schema" src="~/assets/mesg-schema-header@3x.png" alt="MESG-header">
+        <SchemaHeader />
       </div>
     </div>
   </section>
@@ -19,9 +19,13 @@
 
 <script>
 import Button from '~/components/Button'
+import MESGLogoHorizontalWhite from '~/components/MESGLogoHorizontalWhite'
+import SchemaHeader from '~/components/SchemaHeader'
 export default {
   components: {
-    Button
+    Button,
+    MESGLogoHorizontalWhite,
+    SchemaHeader
   }
 }
 </script>
@@ -32,20 +36,11 @@ section {
   padding-top: 80px;
 }
 
-.schema {
-  height: 700px;
-}
-
-.logo {
-  width: 376px;
-}
-
-h2 {
-  font-size: 38px;
-  font-weight: 500;
-}
-
 p {
   font-size: 24px;
+}
+
+.MESGLogoHorizontalWhite {
+  align: left;
 }
 </style>

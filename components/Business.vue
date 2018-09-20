@@ -14,11 +14,20 @@
         </p>
       </div>
       <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-business@3x.png" alt="business">
+        <SchemaBusiness />
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import SchemaBusiness from '~/components/SchemaBusiness'
+export default {
+  components: {
+    SchemaBusiness
+  }
+}
+</script>
 
 <style scoped>
 h2 {
