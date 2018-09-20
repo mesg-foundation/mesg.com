@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 section {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 p {
@@ -41,7 +41,7 @@ p {
 }
 
 .schema {
-  max-height: 80vh;
+  max-height: 75vh;
 }
 
 .logo {
