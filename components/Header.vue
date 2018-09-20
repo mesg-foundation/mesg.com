@@ -2,7 +2,7 @@
   <section>
     <div class="container" flex row space-between>
       <header flex column justify-center half>
-        <MESGLogoHorizontalWhite mb1 />
+        <MESGLogoHorizontalWhite mb1 class="logo"/>
         <h1 mb1 mt0>Build applications connecting any technologies</h1>
         <p mb1 mt0>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
         <nav flex>
@@ -11,7 +11,7 @@
         </nav>
       </header>
       <div flex column half align-center justify-center>
-        <SchemaHeader />
+        <SchemaHeader class="schema"/>
       </div>
     </div>
   </section>
@@ -40,7 +40,15 @@ p {
   font-size: 24px;
 }
 
-.MESGLogoHorizontalWhite {
-  align: left;
+.schema {
+  max-height: 80vh;
 }
+
+.logo {
+  width: 60%;
+  max-width: 60%;
+  object-fit: contain;
+}
+
+
 </style>
