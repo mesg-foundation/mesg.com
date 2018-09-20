@@ -1,5 +1,5 @@
 <template>
-  <footer hide-mobile class="white">
+  <footer hide-responsive class="white">
     <div class="container">
       <nav flex row space-between>
         <div flex column>
