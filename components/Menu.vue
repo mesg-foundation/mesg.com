@@ -2,9 +2,9 @@
   <nav>
     <div class="container" p0 flex row space-between>
       <a href="/">
-        <IconBrandmarkWhite />
+        <IconBrandmarkWhite class="brandmark" />
       </a>
-      <div hide-mobile>
+      <div hide-responsive>
         <a mr1 href="#overview">Overview</a>
         <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr1 href="https://docs.mesg.com">Documentation</a>
@@ -58,4 +58,11 @@ code {
   color: white;
   text-align: center;
 }
+
+.brandmark {
+  width: 40px;
+  max-width: 40px;
+  object-fit: contain;
+}
+
 </style>
