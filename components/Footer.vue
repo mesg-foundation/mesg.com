@@ -51,4 +51,9 @@ a {
   text-decoration: none;
   margin-bottom: 20px;
 }
+
+svg {
+  width: 10em;
+  max-width: 10em;
+}
 </style>
