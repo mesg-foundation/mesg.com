@@ -41,7 +41,7 @@ a, button {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding: 1.1em 2.4em;
+  padding: 1em 2em;
   text-decoration: none;
   cursor: pointer;
 }
@@ -75,12 +75,13 @@ a, button {
 
 @media only screen and (max-width: 768px) {
   a {
-    font-size: 0.8em;
+    font-size: 1em;
   }
-}
 @media only screen and (max-width: 414px) {
-  a {
-    font-size: 0.8em;
+    a, button {
+      font-size: 0.8em;
+      padding: 1em 1.6em;
+    }
   }
 }
 </style>
