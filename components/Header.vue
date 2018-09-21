@@ -3,11 +3,11 @@
   <div class="container-parent">
     <div class="container-child" flex row space-between>
       <header flex column justify-center half>
-        <MESGLogoHorizontalWhite mb1 class="logo"/>
-        <h1 mb1 mt0>Build applications connecting any technologies</h1>
-        <p mb1 mt0>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
+        <MESGLogoHorizontalWhite mb2 class="logo"/>
+        <h1>Build applications connecting any technologies</h1>
+        <p mb2>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" mr1 primary>Get in Touch</Button>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" mr2 primary>Get in Touch</Button>
           <Button href="#targets" outline>Learn More</Button>
         </nav>
       </header>
@@ -35,15 +35,16 @@ export default {
 
 <style scoped>
 section {
-  padding-top: 40px;
+  padding-top: 2.4em;
 }
 
 p {
-  font-size: 24px;
+  font-size: 1.6em;
+  font-weight: normal;
 }
 
 .schema {
-  max-height: 80vh;
+  max-height: calc(100vh - 12em);
 }
 
 .logo {
@@ -51,6 +52,13 @@ p {
   max-width: 60%;
   object-fit: contain;
 }
-
-
+@media only screen and (max-width: 768px) {
+ header {
+   text-align: center;
+   align-items: center;
+ }
+ section {
+   padding-top: 0;
+ }
+}
 </style>

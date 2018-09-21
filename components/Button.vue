@@ -36,20 +36,20 @@ export default {
 
 <style scoped>
 a, button {
-  height: 60px;
-  border-radius: 30px;
-  font-size: 17px;
+  height: 3.6em;
+  border-radius: 3em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding: 18px 40px;
+  padding: 1.1em 2.4em;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn--small {
-  height: 40px;
-  border-radius: 20px;
-  padding: 10px 26px;
+  height: 2.4em;
+  border-radius: 1.2em;
+  padding: 0.6em 1.2em;
 }
 
 .btn--primary {
@@ -69,7 +69,18 @@ a, button {
 .btn--outline {
   color: #9452ff;
   color: var(--lighter-purple);
-  border: solid 2px #9452ff;
-  border: solid 2px var(--lighter-purple);
+  border: solid 0.1em #9452ff;
+  border: solid 0.1em var(--lighter-purple);
+}
+
+@media only screen and (max-width: 768px) {
+  a {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 414px) {
+  a {
+    font-size: 0.8em;
+  }
 }
 </style>

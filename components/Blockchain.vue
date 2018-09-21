@@ -42,7 +42,7 @@ export default {
 <style scoped>
 h2 {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 svg {
@@ -53,8 +53,8 @@ svg {
 @media only screen and (max-width: 375px) {
   .container-child-title {
     width: 100%;
-    padding: 40px;
-    padding-bottom: 0px;
+    padding: 2.4em;
+    padding-bottom: 0;
   }
 }
 </style>

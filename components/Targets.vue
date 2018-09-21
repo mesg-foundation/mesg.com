@@ -5,19 +5,19 @@
       <div half>
         <nav flex row>
           <span flex column align-center>
-            <IconDevelopers mb2 />
+            <IconDevelopers mb1 />
             Developers
           </span>
           <span flex column align-center>
-            <IconEnterprises mb2 />
+            <IconEnterprises mb1 />
             Enterprises
           </span>
           <span flex column align-center mb0>
-            <IconEntrepreneurs mb2 />
+            <IconEntrepreneurs mb1 />
             Entrepreneurs
           </span>
           <span flex column align-center mb0>
-            <IconIncubators mb2 />
+            <IconIncubators mb1 />
             Incubators
           </span>
         </nav>
@@ -57,27 +57,27 @@ export default {
 <style scoped>
 span {
   font-family: Quicksand;
-  font-size: 24px;
+  font-size: 1.4em;
   text-decoration: none;
   color: #9452ff;
   color: var(--lighter-purple);
   width: 50%;
-  margin-bottom: 40px;
+  margin-bottom: 2.4em;
 }
 @media only screen and (max-width: 768px) {
   span {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 320px) {
   span {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 414px) {
   span {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
