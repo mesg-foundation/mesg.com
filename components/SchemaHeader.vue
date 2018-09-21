@@ -3807,7 +3807,7 @@
 </template>
 
 <style scoped>
-  .st0{opacity:5.000000e-02;}
+  .st0{opacity:0.05;}
   .st1{fill:#AE3FE8;}
   .st2{opacity:0.3;}
   .st3{opacity:0.7;fill:#1AB644;enable-background:new    ;}

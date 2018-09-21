@@ -522,7 +522,7 @@
 </template>
 
 <style scoped>
-	.st0{opacity:5.000000e-02;fill:#AE3FE8;enable-background:new    ;}
+	.st0{opacity:0.05;fill:#AE3FE8;enable-background:new    ;}
 	.st1{opacity:0.3;}
 	.st2{fill:#FFFFFF;}
 	.st3{fill:#251440;}

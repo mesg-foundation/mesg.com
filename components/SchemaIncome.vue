@@ -4220,7 +4220,7 @@ AAAAAElFTkSuQmCC" transform="matrix(0.2353 0 0 0.2353 231.7743 171.9757)">
 </template>
 
 <style scoped>
-	.st0{opacity:5.000000e-02;fill:#1AB644;}
+	.st0{opacity:0.05;fill:#1AB644;}
 	.st1{fill:#FFFFFF;enable-background:new    ;}
 	.st2{fill:#CAC5E4;}
 	.st3{fill:#4D2F15;}

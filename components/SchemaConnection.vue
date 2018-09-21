@@ -485,7 +485,7 @@
 </template>
 
 <style scoped>
-	.st0{opacity:5.000000e-02;fill:#AE3FE8;}
+	.st0{opacity:0.05;fill:#AE3FE8;}
 	.st1{fill:#FFFFFF;enable-background:new    ;}
 	.st2{fill:#251440;}
 	.st3{opacity:0.2;clip-path:url(#App-shadow-mask);fill:#9452FF;enable-background:new    ;}

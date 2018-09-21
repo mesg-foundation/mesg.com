@@ -1236,11 +1236,11 @@
 </template>
 
 <style scoped>
-	.st0{opacity:5.000000e-02;fill:#AE3FE8;}
-	.st1{opacity:5.000000e-02;fill:#F145FF;}
-	.st2{opacity:5.000000e-02;fill:#4563FF;}
-	.st3{opacity:5.000000e-02;fill:#513FE8;}
-	.st4{opacity:5.000000e-02;fill:#9452FF;}
+	.st0{opacity:0.05;fill:#AE3FE8;}
+	.st1{opacity:0.05;fill:#F145FF;}
+	.st2{opacity:0.05;fill:#4563FF;}
+	.st3{opacity:0.05;fill:#513FE8;}
+	.st4{opacity:0.05;fill:#9452FF;}
 	.st5{fill:#251440;}
 	.st6{fill:#9452FF;}
 	.st7{fill:none;stroke:#9452FF;stroke-width:1.8426;stroke-miterlimit:10;}

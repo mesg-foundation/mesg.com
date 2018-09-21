@@ -988,8 +988,8 @@ f5YBcVhYWFhYWFhYWFhYWFhYWFhYWFhYWFhY2P/Z/wowADWUTXB/NHKcAAAAAElFTkSuQmCC" transf
 </template>
 
 <style scoped>
-	.st0{opacity:7.000000e-02;fill:#9452FF;enable-background:new    ;}
-	.st1{opacity:7.000000e-02;fill:#FFFFFF;enable-background:new    ;}
+	.st0{opacity:0.07;fill:#9452FF;enable-background:new    ;}
+	.st1{opacity:0.07;fill:#FFFFFF;enable-background:new    ;}
 	.st2{fill:#9452FF;stroke:#F1F0F8;stroke-width:2.3079;stroke-miterlimit:10;}
 	.st3{fill:#FFFFFF;}
 	.st4{fill:#491D8C;}
