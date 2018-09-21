@@ -91,13 +91,13 @@ p {
   h1 { font-size: 2.2em;}
   h2 { font-size: 1.8em;}
   h3 {font-size: 1.4em;}
-  p {font-size: 0.8em;}
+  p {font-size: 1em;}
 }
 @media only screen and (max-width: 414px) {
   h1 { font-size: 2em;}
   h2 { font-size: 1.6em;}
   h3 {font-size: 1.2em;}
-  p {font-size: 0.8em;}
+  p {font-size: 1em;}
 }
 </style>
 
