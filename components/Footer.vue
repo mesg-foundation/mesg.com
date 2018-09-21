@@ -1,6 +1,7 @@
 <template>
   <footer hide-responsive class="white">
-    <div class="container">
+  <div class="container-parent">
+    <div class="container-child">
       <nav flex row space-between>
         <div flex column>
           <MESGLogoVerticalPurple />
@@ -20,6 +21,7 @@
         </div>
       </nav>
     </div>
+  </div>
   </footer>
 </template>
 
@@ -38,10 +40,11 @@ footer {
   border-top: solid 1px var(--light-blue-grey);
 }
 
-footer .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+footer .container-parent {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
+
 
 a {
   font-size: 15px;
