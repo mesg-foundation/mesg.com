@@ -64,6 +64,11 @@ span {
   width: 50%;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 768px) {
+  span {
+    margin-bottom: 0px;
+  }
+}
 @media only screen and (max-width: 320px) {
   span {
     width: 100%;
