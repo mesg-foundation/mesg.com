@@ -62,7 +62,6 @@ code {
 .brandmark {
   width: 40px;
   max-width: 40px;
-  object-fit: contain;
 }
 
 </style>

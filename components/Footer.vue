@@ -56,7 +56,7 @@ a {
 }
 
 svg {
-  width: 10em;
-  max-width: 10em;
+  width: 9.8em;
+  max-width: 9.8em;
 }
 </style>
