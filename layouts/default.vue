@@ -119,7 +119,7 @@ html {
   [hide-responsive] { display: none; }
   [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 80px;}
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .container-parent {
     width: 100%;
     padding: 0px;
@@ -128,11 +128,7 @@ html {
   }
   .container-child {
     width: 100%;
-    padding: 40px;
-  }
-  .flex-item {
-    display: column;
-    justify-content: space-around;
+    padding: 30px;
   }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 40px;}
 }

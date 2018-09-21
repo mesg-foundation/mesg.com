@@ -1,28 +1,29 @@
 <template>
   <section>
-    <div class="container" flex row space-between column-reverse-mobile>
-      <div half justify-center>
+  <div class="container-parent">
+    <div class="container-child" flex row space-between column-reverse-responsive align-center>
+      <div half>
         <nav flex row>
-          <span flex column justify-center align-center>
+          <span flex column align-center>
             <IconDevelopers mb2 />
             Developers
           </span>
-          <span flex column justify-center align-center>
+          <span flex column align-center>
             <IconEnterprises mb2 />
             Enterprises
           </span>
-          <span flex column justify-center align-center mb0>
+          <span flex column align-center mb0>
             <IconEntrepreneurs mb2 />
             Entrepreneurs
           </span>
-          <span flex column justify-center align-center mb0>
+          <span flex column align-center mb0>
             <IconIncubators mb2 />
             Incubators
           </span>
         </nav>
       </div>
       <div half>
-        <h2 mb1>An ultra-efficient solution built for you</h2>
+        <h2>An ultra-efficient solution built for you</h2>
         <p>
           <strong>MESG is fueled by a single vision: to create a building platform powered by automation that is infinitely compatible and massively efficient.</strong>
           <br>
@@ -34,6 +35,7 @@
         </p>
       </div>
     </div>
+  </div>
   </section>
 </template>
 
@@ -59,11 +61,20 @@ span {
   text-decoration: none;
   color: #9452ff;
   color: var(--lighter-purple);
-  margin-bottom: 60px;
   width: 50%;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 320px) {
+  span {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  span {
+    margin-bottom: 0px;
+  }
 }
 
-h2 {
-  margin-top: 20px;
-}
+
 </style>

@@ -63,5 +63,11 @@ code {
   width: 40px;
   max-width: 40px;
 }
+@media only screen and (max-width: 414px) {
+  nav {
+    width: 100%;
+    padding: 30px;
+  }
+}
 
 </style>
