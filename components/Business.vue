@@ -1,6 +1,7 @@
 <template>
   <section>
-    <div class="container" flex row space-between>
+  <div class="container-parent">
+    <div class="container-child" flex row space-between>
       <div half flex column justify-center>
         <h2>What is a business if not a collection of functions?</h2>
         <p>
@@ -13,10 +14,11 @@
           <strong>The only limit is your imagination.</strong>
         </p>
       </div>
-      <div half flex column justify-center>
+      <div half flex column justify-center align-center>
         <SchemaBusiness />
       </div>
     </div>
+  </div>
   </section>
 </template>
 
@@ -28,6 +30,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
