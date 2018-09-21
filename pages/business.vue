@@ -1,84 +1,42 @@
 <template>
-  <div>
+  <div id="business">
     <div class="container">
-      <select v-model="type">
-        <option
-          v-for="(graph, key) in graphs" :key="key"
-          :value="key">
-          {{graph.title}}
-        </option>
-      </select>
-      <label>
-        <input type="checkbox" v-model="circular">
-        Circular view
-      </label>
-      <div class="tree-container">
-        <component :is="component"
-          ref="tree"
-          v-if="component"
-          :data="graphs[type].data"
-          :layoutType="circular ? 'circular' : 'euclidean'"
-          nodeText="name"
-          class="tree"/>
-      </div>
+      <v-tree :data="tree" />
     </div>
   </div>
 </template>
 
 <script>
-const connections = require("~/assets/graphs/connections.json")
+import { VTree, VSelectTree } from 'vue-tree-halower'
+import 'vue-tree-halower/dist/halower-tree.min.css'
+const data = require("~/assets/graphs/business-feature.json")
 export default {
+  components: {
+    VTree
+  },
   data () {
     return {
-      component: null,
-      circular: false,
-      type: "featureToBusiness"
+      tree: data.children
     }
-  },
-  computed: {
-    graphs () {
-      return {
-        featureToBusiness: {
-          title: "feature to business",
-          data: require("~/assets/graphs/feature-business.json")
-        },
-        featureToTech: {
-          title: "feature to tech",
-          data: require("~/assets/graphs/feature-tech.json")
-        },
-        techToFeature: {
-          title: "tech to feature",
-          data: require("~/assets/graphs/tech-feature.json")
-        },
-        businessToFeature: {
-          title: "business to feature",
-          data: require("~/assets/graphs/business-feature.json")
-        }
-      }
-    }
-  },
-  mounted () {
-    const { tree } = require('vued3tree')
-    this.component = tree
   }
 }
 </script>
 
 <style>
-.container {
-  padding-top: 1em;
-  padding-bottom: 1em;
+#business {
+  margin-top: 100px;
 }
-.tree {
-  height: 800px;
-  width: 100%;
+
+.halo-tree .tree-expand {
+  line-height: 11px;
 }
-.graph-root {
-  height: 800px;
-  width: 100%;
-}
-select {
-  padding-right: 40px;
-  margin-right: 20px;
+
+.node-title {
+  font-family: Quicksand;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
 }
 </style>
