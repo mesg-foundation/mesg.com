@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 266" style="enable-background:new 0 0 200 266;" xml:space="preserve">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200" viewBox="0 0 200 266" style="enable-background:new 0 0 200 266;" xml:space="preserve">
   <g id="Logo">
   	<g id="Brandmark">
   		<path id="CORES" class="st0" d="M100,40.5c8.5,0,15.3,6.9,15.3,15.3s-6.9,15.3-15.3,15.3s-15.3-6.9-15.3-15.3S91.5,40.5,100,40.5z

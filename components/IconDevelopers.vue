@@ -1,6 +1,6 @@
 <template>
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-		 y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+		 y="0px" width="100" height="100" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 	<circle id="Circle-BG" class="st0" cx="50" cy="50" r="50"/>
 	<g id="Circle-Outline">
 		<linearGradient id="Gradient" gradientUnits="userSpaceOnUse" x1="50" y1="100" x2="50" y2="-9.094947e-13">
