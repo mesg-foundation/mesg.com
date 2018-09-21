@@ -1,6 +1,7 @@
 <template>
   <section>
-    <div class="container" flex row space-between>
+  <div class="container-parent">
+    <div class="container-child" flex row space-between>
       <header flex column justify-center half>
         <MESGLogoHorizontalWhite mb1 class="logo"/>
         <h1 mb1 mt0>Build applications connecting any technologies</h1>
@@ -14,6 +15,7 @@
         <SchemaHeader class="schema"/>
       </div>
     </div>
+  </div>
   </section>
 </template>
 
@@ -41,7 +43,7 @@ p {
 }
 
 .schema {
-  max-height: 75vh;
+  max-height: 80vh;
 }
 
 .logo {
