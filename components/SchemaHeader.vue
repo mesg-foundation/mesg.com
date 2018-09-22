@@ -3812,7 +3812,7 @@
   .st2{opacity:0.3;}
   .st3{opacity:0.7;fill:#1AB644;enable-background:new    ;}
   .st4{fill:#FFFFFF;}
-  .st5{font-family:'Quicksand-Medium';}
+  .st5{font-family:'Quicksand';font-weight: bolder;}
   .st6{font-size:13.3709px;}
   .st7{opacity:0.4;}
   .st8{opacity:0.7;fill:#F145FF;enable-background:new    ;}
