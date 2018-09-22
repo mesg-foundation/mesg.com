@@ -1,17 +1,18 @@
 <template>
   <section>
-    <div class="container" flex row space-between column-reverse-mobile>
-      <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-connect@3x.png" alt="connect">
+  <div class="container-parent">
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaConnection />
       </div>
       <div half flex column justify-center>
-        <h2 mb1>Connect anything</h2>
+        <h2>Connect anything</h2>
         <p>Build applications that easily connect any technologies together, including <strong>any</strong> blockchains or web APIs. Imagine the possibilities: any technology connecting to anything else with data through a decentralized network. There has never been a solution quite like this before.</p>
       </div>
     </div>
-    <div class="container" flex row space-between>
+    <div class="container-child" flex row space-between>
       <div half flex column justify-center>
-        <h2 mb1>Supercharge existing apps</h2>
+        <h2>Supercharge existing apps</h2>
         <p>
           <strong>By connecting your existing app to MESG Core, your app accesses leading-edge technologies to deliver excellent user experiences.</strong>
           <br>
@@ -19,16 +20,16 @@
           Existing blockchain DApp can easily be connected to the MESG Network, which means you can now give any DApp advanced functionalities such as email notifications, payment confirmations, or literally any other third party technology, including any blockchains or Web APIs.
         </p>
       </div>
-      <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-apps@3x.png" alt="apps">
+      <div half flex column justify-center align-center>
+        <SchemaApps />
       </div>
     </div>
-    <div class="container" flex row space-between column-reverse-mobile>
-      <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-network@3x.png" alt="network">
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaNetwork />
       </div>
       <div half flex column justify-center>
-        <h2 mb1>Grow your network</h2>
+        <h2>Grow your network</h2>
         <p>
           <strong>Discover the power of a decentralized network.</strong>
           <br>
@@ -43,9 +44,9 @@
         </p>
       </div>
     </div>
-    <div class="container" flex row space-between>
+    <div class="container-child" flex row space-between>
       <div half flex column justify-center>
-        <h2 mb1>Generate income while accelerating your productivity</h2>
+        <h2>Generate income while accelerating your productivity</h2>
         <p>
           The MESG economy is fueled by the sharing and reuse of code. Services and Applications are shared and reused through an open marketplace, expediting the development process.
           <br><br>
@@ -57,22 +58,25 @@
           -->
         </p>
       </div>
-      <div half flex column justify-center>
-        <img src="~/assets/mesg-schema-income@3x.png" alt="income">
+      <div half flex column justify-center align-center>
+        <SchemaIncome />
       </div>
     </div>
+  </div>
   </section>
 </template>
 
-<style scoped>
-.container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+<script>
+import SchemaConnection from '~/components/SchemaConnection'
+import SchemaApps from '~/components/SchemaApps'
+import SchemaNetwork from '~/components/SchemaNetwork'
+import SchemaIncome from '~/components/SchemaIncome'
+export default {
+  components: {
+    SchemaConnection,
+    SchemaApps,
+    SchemaNetwork,
+    SchemaIncome
+  }
 }
-.container:first-child {
-  padding-top: 80px;
-}
-.container:last-child {
-  padding-bottom: 80px;
-}
-</style>
+</script>

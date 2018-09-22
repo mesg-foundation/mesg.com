@@ -1,47 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Schema-adoption" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 461 600" style="enable-background:new 0 0 461 600;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.05;fill:#4563FF;enable-background:new    ;}
-	.st1{fill:#CAC5E4;}
-	.st2{fill:#EACAB3;}
-	.st3{fill:#4D2F15;}
-	.st4{fill:#513FE8;}
-	.st5{fill:#F1F0F8;}
-	.st6{fill:#221101;}
-	.st7{fill:#CD9476;}
-	.st8{opacity:0.05;fill:#AE3FE8;enable-background:new    ;}
-	.st9{fill:#343434;}
-	.st10{fill:#8B8B8B;}
-	.st11{fill:#3C3C3B;}
-	.st12{fill:#151515;}
-	.st13{fill:#393939;}
-	.st14{fill:#252F3E;}
-	.st15{fill:#FF9900;}
-	.st16{fill:#694C47;}
-	.st17{fill:#F4DBB9;}
-	.st18{fill:#0B87BE;}
-	.st19{fill:#46B7E3;}
-	.st20{fill:#FFD14F;}
-	.st21{fill:#121F2F;}
-	.st22{fill:#FFFFFF;}
-	.st23{fill:#E9BD8C;}
-	.st24{fill:#9B7457;}
-	.st25{fill:url(#coin_1_);}
-	.st26{fill:#251440;}
-	.st27{fill:#9452FF;}
-	.st28{opacity:0.2;clip-path:url(#SVGID_2_);fill:#9452FF;enable-background:new    ;}
-	.st29{fill:none;stroke:#9452FF;stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st30{fill:#1AB644;}
-	.st31{fill:none;stroke:url(#Line_9_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st32{fill:none;stroke:url(#Line_10_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st33{fill:none;stroke:url(#Line_11_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st34{fill:none;stroke:url(#Line_12_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st35{fill:none;stroke:url(#Line_13_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st36{fill:none;stroke:url(#Line_14_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st37{fill:none;stroke:url(#Line_15_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-	.st38{fill:none;stroke:url(#Line_16_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
-</style>
+<template>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="461" viewBox="0 0 461 600" style="enable-background:new 0 0 461 600;" xml:space="preserve">
 <g id="Schema">
 	<g id="Users">
 		<g id="Background-users">
@@ -682,3 +641,46 @@
 	</g>
 </g>
 </svg>
+</template>
+
+<style scoped>
+	.st0{opacity:0.05;fill:#4563FF;enable-background:new    ;}
+	.st1{fill:#CAC5E4;}
+	.st2{fill:#EACAB3;}
+	.st3{fill:#4D2F15;}
+	.st4{fill:#513FE8;}
+	.st5{fill:#F1F0F8;}
+	.st6{fill:#221101;}
+	.st7{fill:#CD9476;}
+	.st8{opacity:0.05;fill:#AE3FE8;enable-background:new    ;}
+	.st9{fill:#343434;}
+	.st10{fill:#8B8B8B;}
+	.st11{fill:#3C3C3B;}
+	.st12{fill:#151515;}
+	.st13{fill:#393939;}
+	.st14{fill:#252F3E;}
+	.st15{fill:#FF9900;}
+	.st16{fill:#694C47;}
+	.st17{fill:#F4DBB9;}
+	.st18{fill:#0B87BE;}
+	.st19{fill:#46B7E3;}
+	.st20{fill:#FFD14F;}
+	.st21{fill:#121F2F;}
+	.st22{fill:#FFFFFF;}
+	.st23{fill:#E9BD8C;}
+	.st24{fill:#9B7457;}
+	.st25{fill:url(#coin_1_);}
+	.st26{fill:#251440;}
+	.st27{fill:#9452FF;}
+	.st28{opacity:0.2;clip-path:url(#SVGID_2_);fill:#9452FF;enable-background:new    ;}
+	.st29{fill:none;stroke:#9452FF;stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st30{fill:#1AB644;}
+	.st31{fill:none;stroke:url(#Line_9_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st32{fill:none;stroke:url(#Line_10_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st33{fill:none;stroke:url(#Line_11_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st34{fill:none;stroke:url(#Line_12_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st35{fill:none;stroke:url(#Line_13_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st36{fill:none;stroke:url(#Line_14_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st37{fill:none;stroke:url(#Line_15_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+	.st38{fill:none;stroke:url(#Line_16_);stroke-width:2.3617;stroke-linecap:round;stroke-linejoin:round;}
+</style>

@@ -1,23 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Schema-Income" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 506 600" style="enable-background:new 0 0 506 600;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.05;fill:#1AB644;}
-	.st1{fill:#FFFFFF;enable-background:new    ;}
-	.st2{fill:#CAC5E4;}
-	.st3{fill:#4D2F15;}
-	.st4{fill:#221101;}
-	.st5{fill:#491D8C;}
-	.st6{fill:#9452FF;}
-	.st7{fill:#1AB644;}
-	.st8{fill:#FFFFFF;}
-	.st9{fill:#CD9476;}
-	.st10{fill:#EACAB3;}
-	.st11{fill:#251440;}
-	.st12{fill:none;stroke:#F145FF;stroke-width:1.092;stroke-linecap:round;stroke-linejoin:round;}
-	.st13{fill:#F145FF;}
-	.st14{fill:#513FE8;}
-</style>
+<template>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="506" viewBox="0 0 506 600" style="enable-background:new 0 0 506 600;" xml:space="preserve">
 <g id="Schema">
 	<g id="Background">
 		<path id="Circle-5" class="st0" d="M0.2,288.2C0.2,427.7,113.4,541,253,541c139.5,0,252.8-113.1,252.8-252.8
@@ -4234,3 +4217,22 @@ AAAAAElFTkSuQmCC" transform="matrix(0.2353 0 0 0.2353 231.7743 171.9757)">
 	</g>
 </g>
 </svg>
+</template>
+
+<style scoped>
+	.st0{opacity:0.05;fill:#1AB644;}
+	.st1{fill:#FFFFFF;enable-background:new    ;}
+	.st2{fill:#CAC5E4;}
+	.st3{fill:#4D2F15;}
+	.st4{fill:#221101;}
+	.st5{fill:#491D8C;}
+	.st6{fill:#9452FF;}
+	.st7{fill:#1AB644;}
+	.st8{fill:#FFFFFF;}
+	.st9{fill:#CD9476;}
+	.st10{fill:#EACAB3;}
+	.st11{fill:#251440;}
+	.st12{fill:none;stroke:#F145FF;stroke-width:1.092;stroke-linecap:round;stroke-linejoin:round;}
+	.st13{fill:#F145FF;}
+	.st14{fill:#513FE8;}
+</style>

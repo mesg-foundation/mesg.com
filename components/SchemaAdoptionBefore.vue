@@ -1,37 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Schema-adoption-before" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="0 0 460 270" style="enable-background:new 0 0 460 270;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.05;fill:#4563FF;enable-background:new    ;}
-	.st1{fill:#F1F0F8;}
-	.st2{fill:#9452FF;}
-	.st3{fill:#343434;}
-	.st4{fill:#8B8B8B;}
-	.st5{fill:#3C3C3B;}
-	.st6{fill:#151515;}
-	.st7{fill:#393939;}
-	.st8{fill:#252F3E;}
-	.st9{fill:#FF9900;}
-	.st10{fill:#694C47;}
-	.st11{fill:#F4DBB9;}
-	.st12{fill:#0B87BE;}
-	.st13{fill:#46B7E3;}
-	.st14{fill:#FFD14F;}
-	.st15{fill:#121F2F;}
-	.st16{fill:#FFFFFF;}
-	.st17{fill:#E9BD8C;}
-	.st18{fill:#9B7457;}
-	.st19{fill:url(#coin_1_);}
-	.st20{fill:#CAC5E4;}
-	.st21{fill:#EACAB3;}
-	.st22{fill:#4D2F15;}
-	.st23{fill:#513FE8;}
-	.st24{fill:none;stroke:url(#Line_4_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
-	.st25{fill:none;stroke:url(#Line_5_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
-	.st26{fill:none;stroke:url(#Line_6_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
-	.st27{fill:none;stroke:url(#Line_7_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
-	.st28{fill:#1AB644;}
-</style>
+<template>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="460" viewBox="0 0 460 270" style="enable-background:new 0 0 460 270;" xml:space="preserve">
 <g id="Schema">
 	<g id="Background">
 		<path id="Circle-4_1_" class="st0" d="M435.4,230.4c0,0-92,3.8-205.5,3.8s-205.5-3.8-205.5-3.8c0-113.5,92-205.5,205.5-205.5
@@ -410,3 +379,36 @@
 	</g>
 </g>
 </svg>
+</template>
+
+<style scoped>
+	.st0{opacity:0.05;fill:#4563FF;enable-background:new    ;}
+	.st1{fill:#F1F0F8;}
+	.st2{fill:#9452FF;}
+	.st3{fill:#343434;}
+	.st4{fill:#8B8B8B;}
+	.st5{fill:#3C3C3B;}
+	.st6{fill:#151515;}
+	.st7{fill:#393939;}
+	.st8{fill:#252F3E;}
+	.st9{fill:#FF9900;}
+	.st10{fill:#694C47;}
+	.st11{fill:#F4DBB9;}
+	.st12{fill:#0B87BE;}
+	.st13{fill:#46B7E3;}
+	.st14{fill:#FFD14F;}
+	.st15{fill:#121F2F;}
+	.st16{fill:#FFFFFF;}
+	.st17{fill:#E9BD8C;}
+	.st18{fill:#9B7457;}
+	.st19{fill:url(#coin_1_);}
+	.st20{fill:#CAC5E4;}
+	.st21{fill:#EACAB3;}
+	.st22{fill:#4D2F15;}
+	.st23{fill:#513FE8;}
+	.st24{fill:none;stroke:url(#Line_4_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
+	.st25{fill:none;stroke:url(#Line_5_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
+	.st26{fill:none;stroke:url(#Line_6_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
+	.st27{fill:none;stroke:url(#Line_7_);stroke-width:2.3587;stroke-linecap:round;stroke-linejoin:round;}
+	.st28{fill:#1AB644;}
+</style>

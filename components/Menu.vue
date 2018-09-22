@@ -1,15 +1,15 @@
 <template>
-  <nav>
+  <nav  hide-responsive>
     <div class="container" p0 flex row space-between>
       <a href="/">
-        <img src="~/assets/mesg-brandmark-white@3x.png" alt="MESG">
+        <IconBrandmarkWhite class="brandmark" />
       </a>
-      <div hide-mobile>
-        <a mr1 href="#overview">Overview</a>
-        <a mr1 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
-        <a mr1 href="https://docs.mesg.com">Documentation</a>
-        <a mr1 href="https://forum.mesg.com">Get Help</a>
-        <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small white>Get Started</Button>
+      <div>
+        <a mr2 href="#overview">Overview</a>
+        <a mr2 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
+        <a mr2 href="https://docs.mesg.com">Documentation</a>
+        <a mr2 href="https://forum.mesg.com">Get Help</a>
+        <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small purple>Get Started</Button>
       </div>
     </div>
   </nav>
@@ -17,9 +17,11 @@
 
 <script>
 import Button from '~/components/Button'
+import IconBrandmarkWhite from '~/components/IconBrandmarkWhite'
 export default {
   components: {
-    Button
+    Button,
+    IconBrandmarkWhite
   }
 }
 </script>
@@ -27,22 +29,17 @@ export default {
 
 <style scoped>
 nav {
-  padding: 30px 40px;
+  padding: 1.8em 2.4em;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-img {
-  width: 40px;
-  height: 40px;
-}
-
 a {
-  font-size: 17px;
-  font-weight: 500;
-  height: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  height: 2.4em;
   text-decoration: none;
   color: #f1f0f8;
   color: var(--pale-grey);
@@ -57,8 +54,20 @@ p a {
 code {
   display: block;
   background: black;
-  padding: 10px;
+  padding: 0.6em;
   color: white;
   text-align: center;
 }
+
+.brandmark {
+  width: 2.4em;
+  max-width: 2.4em;
+}
+@media only screen and (max-width: 414px) {
+  nav {
+    width: 100%;
+    padding: 1.8em;
+  }
+}
+
 </style>

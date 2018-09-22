@@ -1,23 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Icon-Incubators" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.1;fill:#4563FF;enable-background:new    ;}
-	.st1{fill:url(#SVGID_1_);}
-	.st2{clip-path:url(#Mask_1_);}
-	.st3{fill:#CAC5E4;}
-	.st4{fill:#F1F0F8;}
-	.st5{clip-path:url(#Mask_1_);fill:url(#Fire_1_);}
-	.st6{fill:#491D8C;}
-	.st7{fill:#9452FF;}
-	.st8{clip-path:url(#Mask_1_);fill:#9452FF;}
-	.st9{clip-path:url(#Mask_1_);fill:url(#Bottom-rocket_1_);}
-	.st10{clip-path:url(#Mask_1_);fill:#491D8C;}
-</style>
+<template>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="100" height="100" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <g id="Icon">
 	<circle id="Circle-BG" class="st0" cx="50" cy="50" r="50"/>
 	<g id="Circle-outline">
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="50" y1="100" x2="50" y2="-1.220703e-06">
+		<linearGradient id="Gradient" gradientUnits="userSpaceOnUse" x1="50" y1="100" x2="50" y2="-1.220703e-06">
 			<stop  offset="0" style="stop-color:#251440"/>
 			<stop  offset="1" style="stop-color:#9452FF"/>
 		</linearGradient>
@@ -328,3 +315,18 @@ QgsNsITLO8U7VGAG6Azl32iAJYwfrUesW9mzRpA3gY3ANrgv7hr7ogVOtMC2G/LyaJVhVIG6/g0o
 	</g>
 </g>
 </svg>
+</template>
+
+<style scoped>
+	.st0{opacity:0.1;fill:#4563FF;enable-background:new    ;}
+	.st1{fill:url(#Gradient);}
+	.st2{clip-path:url(#Mask_1_);}
+	.st3{fill:#CAC5E4;}
+	.st4{fill:#F1F0F8;}
+	.st5{clip-path:url(#Mask_1_);fill:url(#Fire_1_);}
+	.st6{fill:#491D8C;}
+	.st7{fill:#9452FF;}
+	.st8{fill:#9452FF;}
+	.st9{fill:url(#Bottom-rocket_1_);}
+	.st10{fill:#491D8C;}
+</style>

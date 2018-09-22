@@ -1,18 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Schema-Business" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
-<style type="text/css">
-	.st0{opacity:0.07;fill:#9452FF;enable-background:new    ;}
-	.st1{opacity:0.07;fill:#FFFFFF;enable-background:new    ;}
-	.st2{fill:#9452FF;stroke:#F1F0F8;stroke-width:2.3079;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;}
-	.st4{fill:#491D8C;}
-	.st5{fill:#F1F0F8;}
-	.st6{fill:none;stroke:#F145FF;stroke-width:2.3079;stroke-linecap:round;stroke-linejoin:round;}
-	.st7{fill:#F145FF;}
-	.st8{fill:#9452FF;}
-	.st9{fill:#251440;}
-</style>
+<template>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="600" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
 <g id="Schema">
 	<g id="Background">
 		<path id="Circle-4" class="st0" d="M300,598.9c-79.8,0-154.9-31.1-211.3-87.5S1.2,379.9,1.2,300.1S32.3,145.2,88.7,88.8
@@ -997,3 +985,17 @@ f5YBcVhYWFhYWFhYWFhYWFhYWFhYWFhYWFhY2P/Z/wowADWUTXB/NHKcAAAAAElFTkSuQmCC" transf
 	</g>
 </g>
 </svg>
+</template>
+
+<style scoped>
+	.st0{opacity:0.07;fill:#9452FF;enable-background:new    ;}
+	.st1{opacity:0.07;fill:#FFFFFF;enable-background:new    ;}
+	.st2{fill:#9452FF;stroke:#F1F0F8;stroke-width:2.3079;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#491D8C;}
+	.st5{fill:#F1F0F8;}
+	.st6{fill:none;stroke:#F145FF;stroke-width:2.3079;stroke-linecap:round;stroke-linejoin:round;}
+	.st7{fill:#F145FF;}
+	.st8{fill:#9452FF;}
+	.st9{fill:#251440;}
+</style>
