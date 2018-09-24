@@ -1,299 +1,957 @@
 {
-  "name": "businessToFeature",
+  "title": "businessToFeature",
   "children": [
     {
-      "name": "AWS",
+      "title": "AWS",
       "children": [
-        { "name": "Analyze data" },
-        { "name": "Fiat payments" },
-        { "name": "Store data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Airbnb",
+      "title": "Airbnb",
       "children": [
-        { "name": "Control remotely" },
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Store data" }
+        {
+          "title": "Control remotely",
+          "children": [
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Amazon",
+      "title": "Amazon",
       "children": [
-        { "name": "Control remotely" },
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Real time notifications" },
-        { "name": "Store data" },
-        { "name": "Tracking items" }
+        {
+          "title": "Control remotely",
+          "children": [
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+        
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        },
+        {
+          "title": "Tracking items",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Apple",
+      "title": "Apple",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Store data" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Azure",
+      "title": "Azure",
       "children": [
-        { "name": "Analyze data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Bank of America",
+      "title": "Bank of America",
       "children": [
-        { "name": "Real time data" },
-        { "name": "Trustless governance" }
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Trustless governance",
+          "children": [
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Bitcoin",
+      "title": "Bitcoin",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "Bloomberg",
+      "title": "Bloomberg",
       "children": [
-        { "name": "Graphical user interface" },
-        { "name": "Real time data" },
-        { "name": "Real time notifications" }
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "British Airways",
+      "title": "British Airways",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Real time data" },
-        { "name": "Real time notifications" },
-        { "name": "Store data" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Coinbase",
+      "title": "Coinbase",
       "children": [
-        { "name": "Crypto payment" },
-        { "name": "Prove identity" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Prove identity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Coinfi",
+      "title": "Coinfi",
       "children": [
-        { "name": "Real time data" }
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Dominos",
+      "title": "Dominos",
       "children": [
-        { "name": "Real time notifications" }
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "EOS",
+      "title": "EOS",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "Ethereum",
+      "title": "Ethereum",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "Expedia",
+      "title": "Expedia",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "Facebook",
+      "title": "Facebook",
       "children": [
-        { "name": "Analyze data" },
-        { "name": "Graphical user interface" },
-        { "name": "Real time notifications" },
-        { "name": "Store data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "FedEx",
+      "title": "FedEx",
       "children": [
-        { "name": "Graphical user interface" },
-        { "name": "Real time notifications" },
-        { "name": "Tracking items" }
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Tracking items",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Google",
+      "title": "Google",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Real time notifications" },
-        { "name": "Store data" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Google Analytics",
+      "title": "Google Analytics",
       "children": [
-        { "name": "Analyze data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "H&M",
+      "title": "H&M",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Store data" },
-        { "name": "Tracking items" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        },
+        {
+          "title": "Tracking items",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "IRS",
+      "title": "IRS",
       "children": [
-        { "name": "Store data" }
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "JP Morgan",
+      "title": "JP Morgan",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Prove data authenticity" },
-        { "name": "Prove identity" },
-        { "name": "Store data" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Prove data authenticity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Prove identity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Lawyers",
+      "title": "Lawyers",
       "children": [
-        { "name": "Prove data authenticity" },
-        { "name": "Trustless governance" }
+        {
+          "title": "Prove data authenticity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Trustless governance",
+          "children": [
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Microsoft Corporation",
+      "title": "Microsoft Corporation",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "Netflix",
+      "title": "Netflix",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Real time data" },
-        { "name": "Store data" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Oracle",
+      "title": "Oracle",
       "children": [
-        { "name": "Analyze data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Paypal",
+      "title": "Paypal",
       "children": [
-        { "name": "Crypto payment" },
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Prove data authenticity" },
-        { "name": "Real time notifications" },
-        { "name": "Store data" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Prove data authenticity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Real time notifications",
+          "children": [
+            { "title": "Mobile devices" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Pfizer",
+      "title": "Pfizer",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Prove data authenticity" },
-        { "name": "Store data" },
-        { "name": "Tracking items" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Prove data authenticity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        },
+        {
+          "title": "Tracking items",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Prudential",
+      "title": "Prudential",
       "children": [
-        { "name": "Prove identity" },
-        { "name": "Trustless governance" }
+        {
+          "title": "Prove identity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Trustless governance",
+          "children": [
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "SEC",
+      "title": "SEC",
       "children": [
-        { "name": "Store data" }
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Salesforce",
+      "title": "Salesforce",
       "children": [
-        { "name": "Analyze data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Shopify",
+      "title": "Shopify",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "Skyscanner",
+      "title": "Skyscanner",
       "children": [
-        { "name": "Real time data" }
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Subway",
+      "title": "Subway",
       "children": [
-        { "name": "Crypto payment" }
+        {
+          "title": "Crypto payment",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        }
       ]
     },
     {
-      "name": "UPS",
+      "title": "UPS",
       "children": [
-        { "name": "Tracking items" }
+        {
+          "title": "Tracking items",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     },
     {
-      "name": "Uber",
+      "title": "Uber",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Real time data" },
-        { "name": "Store data" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Real time data",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "UnitedHealth",
+      "title": "UnitedHealth",
       "children": [
-        { "name": "Fiat payments" },
-        { "name": "Graphical user interface" },
-        { "name": "Prove data authenticity" },
-        { "name": "Prove identity" },
-        { "name": "Store data" },
-        { "name": "Trustless governance" }
+        {
+          "title": "Fiat payments",
+          "children": [
+            { "title": "Payment service provider" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Prove data authenticity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" }
+          ]
+        },
+        {
+          "title": "Prove identity",
+          "children": [
+            { "title": "Blockchain" },
+            { "title": "Database" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        },
+        {
+          "title": "Trustless governance",
+          "children": [
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Wolfram Alpha",
+      "title": "Wolfram Alpha",
       "children": [
-        { "name": "Analyze data" },
-        { "name": "Graphical user interface" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        },
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        }
       ]
     },
     {
-      "name": "Youtube",
+      "title": "Youtube",
       "children": [
-        { "name": "Graphical user interface" },
-        { "name": "Store data" }
+        {
+          "title": "Graphical user interface",
+          "children": [
+            { "title": "Database" },
+            { "title": "IoT" },
+            { "title": "Blockchain" },
+            { "title": "AI" },
+            { "title": "Computation" },
+            { "title": "Payment service provider" }
+          ]
+        },
+        {
+          "title": "Store data",
+          "children": [
+            { "title": "Database" },
+            { "title": "Blockchain" }
+          ]
+        }
       ]
     },
     {
-      "name": "Zapier",
+      "title": "Zapier",
       "children": [
-        { "name": "Analyze data" }
+        {
+          "title": "Analyze data",
+          "children": [
+            { "title": "Database" },
+            { "title": "AI" },
+            { "title": "computation" },
+            { "title": "IoT" }
+          ]
+        }
       ]
     }
   ]
