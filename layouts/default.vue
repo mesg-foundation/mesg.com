@@ -181,6 +181,7 @@ svg {
     padding: 2.4em;
   }
   [half] { width: calc(50% - 2.4em); }
+  [third] { width: calc(33% - 2.4em); }
 }
 
 @media only screen and (max-width: 768px) {
@@ -196,9 +197,9 @@ svg {
   [half] { width: 100%; }
   [mb1] { margin-bottom: 0.6em!important; }
   [mr1] { margin-right: 0.6em!important; }
+  [hide-responsive] { display: none; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
-  [hide-responsive] { display: none; }
   [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 4.8em;}
 }
 @media only screen and (max-width: 414px) {
@@ -214,5 +215,6 @@ svg {
   }
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
+  [hide-mobile] { display: none; }
 }
 </style>

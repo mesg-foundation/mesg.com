@@ -7,7 +7,7 @@
     <div class="container-child" flex row column-reverse-responsive space-between>
       <div half flex column justify-center align-center>
         <SchemaAdoptionBefore mb2/>
-        <p>App users are responsible for direct interaction with technologies</p>
+        <p class="subtitle">App users are responsible for direct interaction with technologies</p>
       </div>
       <div half flex column justify-center>
         <h3>Current system</h3>
@@ -21,7 +21,7 @@
       </div>
       <div half flex column justify-center align-center>
         <SchemaAdoption mb2/>
-        <p>App users bypass the complexities by using MESG</p>
+        <p class="subtitle">App users bypass the complexities by using MESG</p>
       </div>
     </div>
   </div>
@@ -48,6 +48,10 @@ h2 {
 svg {
   width: 75%;
   max-width: 75%;
+}
+.subtitle {
+  text-align: center;
+
 }
 
 @media only screen and (max-width: 375px) {

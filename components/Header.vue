@@ -60,5 +60,13 @@ p {
  section {
    padding-top: 0;
  }
+ p {
+   font-size: 1.4em;
+ }
 }
+ @media only screen and (max-width: 414px) {
+   p {
+     font-size: 1.2em;
+   }
+ }
 </style>

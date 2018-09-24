@@ -1,19 +1,19 @@
 <template>
-  <footer hide-responsive class="white">
+  <footer class="white">
   <div class="container-parent">
     <div class="container-child">
       <nav flex row space-between>
-        <div flex column>
-          <MESGLogoVerticalPurple />
+        <div flex column third>
+          <MESGLogoVerticalPurple class="logo" hide-mobile/>
         </div>
-        <div flex column>
+        <div flex column third mb2-m>
           <h3>Community</h3>
           <a href="https://medium.com/mesg">Medium</a>
           <a href="https://github.com/mesg-foundation">Github</a>
           <a href="https://forum.mesg.com/">Forum</a>
           <a href="https://discord.gg/SaZ5HcE">Discord</a>
         </div>
-        <div flex column>
+        <div flex column third>
           <h3>Developer Resources</h3>
           <a href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank">What is MESG? Get started</a>
           <a href="https://github.com/mesg-foundation/core">Browse our source code on Github</a>
@@ -52,11 +52,23 @@ a {
   color: #251440;
   color: var(--dark-blue-grey);
   text-decoration: none;
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
 }
 
-svg {
-  width: 9.8em;
-  max-width: 9.8em;
+.logo {
+  width: 50%;
+  max-width: 50%;
+  object-fit: contain;
 }
+
+@media only screen and (max-width: 768px) {
+  [column] > svg { object-fit: contain; margin-top: 0em;}
+  [third] { width: calc(33% - 1.2em); }
+}
+@media only screen and (max-width: 414px) {
+  [third] { width: 100%; max-width: 100%; }
+  [column] > svg { object-fit: contain; margin-top: 0em;}
+  [mb2-m] { margin-bottom: 1.2em!important; }
+}
+
 </style>
