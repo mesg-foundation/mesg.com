@@ -45,6 +45,7 @@ p {
 
 .schema {
   max-height: calc(100vh - 12em);
+  min-height: 600px;
 }
 
 .logo {
