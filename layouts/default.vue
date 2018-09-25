@@ -8,6 +8,7 @@
       --green-cta: #30b24b;
       --light-blue-grey: #cac5e4;
       --pale-grey: #f1f0f8;
+      --pale-white: #dfe1f8;
       --blanc-background: #ffffff;
     }
     </style>
@@ -80,7 +81,12 @@ h3 {
   color: var(--dark-blue-grey);
   margin-bottom: 1.2em;
 }
-
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #491e8c;
+  color: var(--purple);
+}
 p {
   font-size: 1em;
   font-weight: normal;
@@ -181,7 +187,6 @@ svg {
     padding: 2.4em;
   }
   [half] { width: calc(50% - 2.4em); }
-  [third] { width: calc(33% - 2.4em); }
 }
 
 @media only screen and (max-width: 768px) {

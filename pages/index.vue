@@ -5,6 +5,7 @@
     <Features id="overview" class="dark"/>
     <Business id="business" class="white"/>
     <Blockchain id="blockchain" class="dark"/>
+    <Team id="team" class="white"/>
   </div>
 </template>
 
@@ -14,13 +15,15 @@ import Targets from '~/components/Targets'
 import Features from '~/components/Features'
 import Business from '~/components/Business'
 import Blockchain from '~/components/Blockchain'
+import Team from '~/components/Team'
 export default {
   components: {
     Header,
     Targets,
     Features,
     Business,
-    Blockchain
+    Blockchain,
+    Team
   }
 }
 </script>
