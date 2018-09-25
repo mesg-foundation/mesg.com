@@ -16,6 +16,9 @@
             :socialNetworks="t.socialNetworks"/>
         </div>
       </div>
+      <div class="container-child-title" flex row justify-center align-center>
+          <h2>Our Amazing partners</h2>
+      </div>
     </div>
   </section>
 </template>
@@ -30,20 +33,20 @@ export default {
     return {
       team: [
         ...[
-          { name: "Anthony Estebe", role: "CTO / Co-founder", pictureUrl: "https://picture.com", socialNetworks: [
+          { name: "Anthony Estebe", role: "CTO / Co-founder", pictureUrl: require("~/assets/AnthonyEstebe.jpg"), socialNetworks: [
             { type: "telegram", link: "safsafasda" },
             { type: "mail", link: "affeaffeafea" },
             { type: "twitter", link: "faejbfea" },
             { type: "linkedin", link: "faejbfea" },
             { type: "github", link: "faejbfea" }
           ] },
-          { name: "Alexis Sirkia", role: "Co-founder", pictureUrl: "https://picture.com", socialNetworks: [
+          { name: "Alexis Sirkia", role: "Co-founder", pictureUrl: require("~/assets/AlexisSirkia.jpeg"), socialNetworks: [
             { type: "telegram", link: "sdsafafa" },
             { type: "mail", link: "affeaffeafea" },
             { type: "twitter", link: "faejbfea" },
             { type: "linkedin", link: "faejbfea" }
           ] },
-          { name: "Nicolas Mahé", role: "CTO / Co-founder", pictureUrl: "https://picture.com", socialNetworks: [
+          { name: "Nicolas Mahé", role: "CTO / Co-founder", pictureUrl: require("~/assets/NicolasMahe.jpg"), socialNetworks: [
             { type: "telegram", link: "safsafasda" },
             { type: "mail", link: "affeaffeafea" },
             { type: "twitter", link: "faejbfea" },
@@ -52,7 +55,7 @@ export default {
           ] }
         ].sort((a, b) => a.name.localeCompare(b.name)),
         ...[
-          { name: "Emmanuel Drouin", role: "Art Director", pictureUrl: "https://picture.com", socialNetworks: [
+          { name: "Emmanuel Drouin", role: "Art Director", pictureUrl: require("~/assets/EmmanuelDrouin.jpg"), socialNetworks: [
             { type: "telegram", link: "safsafasda" },
             { type: "twitter", link: "faejbfea" },
             { type: "linkedin", link: "faejbfea" }
@@ -69,19 +72,20 @@ export default {
             { type: "linkedin", link: "faejbfea" },
             { type: "github", link: "faejbfea" }
           ] },
-          { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: "https://picture.com", socialNetworks: [
+          { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: require("~/assets/JanieLim.jpg"), socialNetworks: [
             { type: "telegram", link: "safsafasda" },
             { type: "twitter", link: "faejbfea" },
             { type: "linkedin", link: "faejbfea" }
           ] },
-          { name: "Will Morgan", role: "Executive Brand Manager", pictureUrl: "https://picture.com", socialNetworks: [
+          { name: "Will Morgan", role: "Executive Brand Manager", pictureUrl: require("~/assets/WillMorgan.jpg"), socialNetworks: [
             { type: "telegram", link: "safsafasda" },
             { type: "twitter", link: "faejbfea" },
             { type: "linkedin", link: "faejbfea" }
-          ] },
-          { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: "", socialNetworks: [
           ] }
-        ].sort((a, b) => a.name.localeCompare(b.name))
+        ].sort((a, b) => a.name.localeCompare(b.name)),
+        ...[
+          { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: "", socialNetworks: [] }
+        ]
       ]
     }
   }

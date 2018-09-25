@@ -1,7 +1,6 @@
 <template>
   <div class="Rectangle-white" flex row space-between align-center>
-    <div class="Picture" flex column>
-      <img :src="pictureUrl" :alt="name">
+    <div class="Picture" flex column :style="style">
     </div>
     <div class="content" flex column>
       <h4>{{name}}</h4>
@@ -41,7 +40,11 @@ export default {
     github () {
       return this.socialNetworks.find(x => x.type === "github")
     },
-
+    style () {
+      return {
+        backgroundImage: `url(${this.pictureUrl})`
+      }
+    }
 
   }
 }
@@ -62,6 +65,9 @@ export default {
   border-radius: 10px;
   background-color: #dfe1f8;
   background-color: var(--pale-white);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .content {
   width: 60%;
