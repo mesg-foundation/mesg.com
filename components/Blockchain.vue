@@ -51,14 +51,5 @@ svg {
 }
 .subtitle {
   text-align: center;
-
-}
-
-@media only screen and (max-width: 375px) {
-  .container-child-title {
-    width: 100%;
-    padding: 2.4em;
-    padding-bottom: 0;
-  }
 }
 </style>
