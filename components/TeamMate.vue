@@ -83,7 +83,8 @@ a {
 }
 a:hover {
   color: #9452ff;
-  color: var(--lighter-purple)
+  color: var(--lighter-purple);
+  transition: 0.3s;
 }
 p {
   margin-bottom: 0.6em;

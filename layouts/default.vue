@@ -5,7 +5,9 @@
       --dark-blue-grey: #251440;
       --purple: #491e8c;
       --lighter-purple: #9452ff;
+      --lighter-purple-hover: #6F3DBF;
       --green-cta: #30b24b;
+      --green-cta-hover: #1F8C36;
       --light-blue-grey: #cac5e4;
       --pale-grey: #f1f0f8;
       --pale-white: #dfe1f8;

@@ -54,6 +54,11 @@ a {
   text-decoration: none;
   margin-bottom: 1em;
 }
+a:hover {
+  color: #9452ff;
+  color: var(--lighter-purple);
+  transition: 0.3s;
+}
 
 .logo {
   width: 50%;

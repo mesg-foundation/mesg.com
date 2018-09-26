@@ -56,6 +56,12 @@ a, button {
   color: var(--pale-grey);
   background-color: #30b24b;
   background-color: var(--green-cta);
+  opacity:1;
+}
+.btn--primary:hover {
+  background-color: #1F8C36;
+  background-color: var(--green-cta-hover);
+  transition: 0.3s;
 }
 
 .btn--purple {
@@ -63,6 +69,12 @@ a, button {
   color: var(--pale-grey);
   background-color: #9452ff;
   background-color: var(--lighter-purple);
+  opacity:1;
+}
+.btn--purple:hover {
+  background-color: #6F3DBF;
+  background-color: var(--lighter-purple-hover);
+  transition: 0.3s;
 }
 
 .btn--outline {
@@ -70,6 +82,13 @@ a, button {
   color: var(--lighter-purple);
   border: solid 0.15em #9452ff;
   border: solid 0.15em var(--lighter-purple);
+}
+.btn--outline:hover {
+  color: #f1f0f8;
+  color: var(--pale-grey);
+  background-color: #9452ff;
+  background-color: var(--lighter-purple);
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 768px) {
