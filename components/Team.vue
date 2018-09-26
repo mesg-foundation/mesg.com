@@ -33,58 +33,46 @@ export default {
     return {
       team: [
         ...[
-          { name: "Anthony Estebe", role: "CTO / Co-founder", pictureUrl: require("~/assets/AnthonyEstebe.jpg"), socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "mail", link: "affeaffeafea" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" },
-            { type: "github", link: "faejbfea" }
+          { name: "Anthony Estebe", role: "CTO / Co-founder", pictureUrl: require("~/assets/Team/MESG-Anthony.jpg"), socialNetworks:[
+            { type: "twitter", link: "https://twitter.com/antho1404" },
+            { type: "linkedin", link: "https://www.linkedin.com/in/anthony-estebe-aab18831/" },
+            { type: "github", link: "https://github.com/antho1404" }
           ] },
-          { name: "Alexis Sirkia", role: "Co-founder", pictureUrl: require("~/assets/AlexisSirkia.jpeg"), socialNetworks: [
-            { type: "telegram", link: "sdsafafa" },
-            { type: "mail", link: "affeaffeafea" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" }
+          { name: "Alexis Sirkia", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Alexis.jpg"), socialNetworks: [
+            { type: "linkedin", link: "https://www.linkedin.com/in/sirkia/" }
           ] },
-          { name: "Nicolas Mahé", role: "CTO / Co-founder", pictureUrl: require("~/assets/NicolasMahe.jpg"), socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "mail", link: "affeaffeafea" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" },
-            { type: "github", link: "faejbfea" }
+          { name: "Nicolas Mahé", role: "CTO / Co-founder", pictureUrl: require("~/assets/Team/MESG-Nicolas.jpg"), socialNetworks: [
+            { type: "linkedin", link: "https://www.linkedin.com/in/nicolas-mahe" },
+            { type: "github", link: "https://github.com/NicolasMahe" }
           ] }
         ].sort((a, b) => a.name.localeCompare(b.name)),
         ...[
-          { name: "Emmanuel Drouin", role: "Art Director", pictureUrl: require("~/assets/EmmanuelDrouin.jpg"), socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" }
+          { name: "Emmanuel Drouin", role: "Art Director", pictureUrl: require("~/assets/Team/MESG-Emmanuel.jpg"), socialNetworks: [
+            { type: "twitter", link: "https://twitter.com/graphicSepion" },
+            { type: "linkedin", link: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/" }
           ] },
-          { name: "Hubert Krauze", role: "Core Developer", pictureUrl: "https://picture.com", socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" },
-            { type: "github", link: "faejbfea" }
+          { name: "Hubert Krauze", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team.jpg"), socialNetworks: [
+            { type: "twitter", link: "https://twitter.com/krhubert" },
+            { type: "linkedin", link: "https://www.linkedin.com/in/hubert-krauze-67a6389b/" },
+            { type: "github", link: "https://github.com/krhubert" }
           ] },
-          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: "https://picture.com", socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" },
-            { type: "github", link: "faejbfea" }
+          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team.jpg"), socialNetworks: [
+            { type: "twitter", link: "https://twitter.com/ilgooz" },
+            { type: "github", link: "https://github.com/ilgooz" }
           ] },
-          { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: require("~/assets/JanieLim.jpg"), socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" }
+          { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: require("~/assets/Team/MESG-Janie.jpg"), socialNetworks: [
+            { type: "twitter", link: "https://twitter.com/koreanoprah" },
+            { type: "linkedin", link: "https://www.linkedin.com/in/janie-lim-135968b5/" }
           ] },
-          { name: "Will Morgan", role: "Executive Brand Manager", pictureUrl: require("~/assets/WillMorgan.jpg"), socialNetworks: [
-            { type: "telegram", link: "safsafasda" },
-            { type: "twitter", link: "faejbfea" },
-            { type: "linkedin", link: "faejbfea" }
+          { name: "Will Morgan", role: "Executive Brand Manager", pictureUrl: require("~/assets/Team/MESG-Will.jpg"), socialNetworks: [
+            { type: "twitter", link: "https://twitter.com/dwilliamsmorgan" },
+            { type: "linkedin", link: "https://www.linkedin.com/in/will-morgan-02a18326/" }
           ] }
         ].sort((a, b) => a.name.localeCompare(b.name)),
         ...[
-          { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: "", socialNetworks: [] }
+          { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: require("~/assets/Team/MESG-Join.jpg"), socialNetworks: [
+            { type: "mail", link: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform" }
+          ] }
         ]
       ]
     }
