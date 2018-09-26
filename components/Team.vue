@@ -19,6 +19,20 @@
       <div class="container-child-title" flex row justify-center align-center>
           <h2>Our Amazing partners</h2>
       </div>
+      <div class="container-child" flex row justify-center align-center>
+        <a href="https://www.amazix.com/" target="blank">
+          <img src="~/assets/Partners/Amazix.png" class="partners" alt="Amazix">
+        </a>
+        <a href="https://blockchainlab.co.in/" target="blank">
+          <img src="~/assets/Partners/Blockchain-lab.png" class="partners" alt="Blockchain-lab">
+        </a>
+        <a href="http://www.kelmanlawkc.com/" target="blank">
+          <img src="~/assets/Partners/Kelman-law-firm.png" class="partners" alt="Kelman-law-firm">
+        </a>
+        <a href="https://wachsman.com/" target="blank">
+          <img src="~/assets/Partners/Wachsman.png" class="partners" alt="Wachsman">
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -61,6 +75,7 @@ export default {
             { type: "github", link: "https://github.com/ilgooz" }
           ] },
           { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: require("~/assets/Team/MESG-Janie.jpg"), socialNetworks: [
+            { type: "telegram", link: "https://telegram.me/janielim" },
             { type: "twitter", link: "https://twitter.com/koreanoprah" },
             { type: "linkedin", link: "https://www.linkedin.com/in/janie-lim-135968b5/" }
           ] },
@@ -92,10 +107,32 @@ h3 {
 .card {
   margin: 1.2em;
 }
+
+img {
+  width: 240px;
+  max-width: 240px;
+  margin: 2.4em
+}
+a:hover {
+  background-color: #FFFFFF;
+  background-color: var(--blanc-background);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
+}
+
 @media only screen and (max-width: 768px) {
   .card {
     margin: 0em;
     margin-bottom: 2.4em;
+  }
+}
+@media only screen and (max-width: 414px) {
+  h2 {
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+    margin: 1.2em;
   }
 }
 </style>
