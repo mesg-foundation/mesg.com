@@ -89,6 +89,7 @@ a:hover {
 p {
   margin-bottom: 0.6em;
 }
+
 @media only screen and (max-width: 414px) {
   .Picture {
     width: 100%;

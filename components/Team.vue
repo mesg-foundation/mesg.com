@@ -16,23 +16,6 @@
             :socialNetworks="t.socialNetworks"/>
         </div>
       </div>
-      <div class="container-child-title" flex row justify-center align-center>
-          <h2>Our Amazing partners</h2>
-      </div>
-      <div class="container-child" flex row justify-center align-center>
-        <a href="https://www.amazix.com/" target="blank">
-          <img src="~/assets/Partners/Amazix.png" class="partners" alt="Amazix">
-        </a>
-        <a href="https://blockchainlab.co.in/" target="blank">
-          <img src="~/assets/Partners/Blockchain-lab.png" class="partners" alt="Blockchain-lab">
-        </a>
-        <a href="http://www.kelmanlawkc.com/" target="blank">
-          <img src="~/assets/Partners/Kelman-law-firm.png" class="partners" alt="Kelman-law-firm">
-        </a>
-        <a href="https://wachsman.com/" target="blank">
-          <img src="~/assets/Partners/Wachsman.png" class="partners" alt="Wachsman">
-        </a>
-      </div>
     </div>
   </section>
 </template>
@@ -86,7 +69,7 @@ export default {
         ].sort((a, b) => a.name.localeCompare(b.name)),
         ...[
           { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: require("~/assets/Team/MESG-Join.jpg"), socialNetworks: [
-            { type: "mail", link: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform" }
+            { type: "mail", link: "https://goo.gl/forms/ifXyNfaQn8VC7pfu1" }
           ] }
         ]
       ]
@@ -107,16 +90,11 @@ h3 {
 .card {
   margin: 1.2em;
 }
-
-img {
-  width: 240px;
-  max-width: 240px;
-  margin: 2.4em
+.container-parent {
+  padding-bottom: 0;
 }
-a:hover {
-  background-color: #FFFFFF;
-  background-color: var(--blanc-background);
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
+.white {
+  box-shadow: 0 0 1.2em 1.2em rgba(0, 0, 0, 0.25);
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,10 +107,9 @@ a:hover {
   h2 {
     margin-bottom: 0;
   }
-  img {
-    width: 100%;
-    max-width: 100%;
-    margin: 1.2em;
+  .card {
+    margin: 0em;
+    margin-bottom: 1.2em;
   }
 }
 </style>

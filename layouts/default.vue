@@ -158,22 +158,18 @@ svg {
 
 .container-parent {
   width: 100%;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding: 2.4em;
   margin: auto;
 }
 .container-child {
   width: 100%;
   max-width: 1440px;
-  padding: 4.8em;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding: 2.4em;
   margin: auto;
 }
 .container-child-title {
   width: 100%;
   padding: 2.4em;
-  padding-bottom: 2.4em;
 }
 
 
@@ -181,8 +177,6 @@ svg {
   .container-parent {
     width: 100%;
     padding: 2.4em;
-    padding-top: 4.8em;
-    padding-bottom: 4.8em;
   }
   .container-child {
     width: 100%;
@@ -190,12 +184,10 @@ svg {
   }
   [half] { width: calc(50% - 2.4em); }
 }
-
 @media only screen and (max-width: 768px) {
   .container-parent {
     width: 100%;
-    padding-top: 2.4em;
-    padding-bottom: 2.4em;
+    padding: 2.4em;
   }
   .container-child {
     width: 100%;
@@ -213,12 +205,15 @@ svg {
   .container-parent {
     width: 100%;
     padding: 0;
-    padding-top: 0;
-    padding-bottom: 0;
   }
   .container-child {
     width: 100%;
     padding: 1.8em;
+  }
+  .container-child-title {
+    width: 100%;
+    padding: 1.8em;
+    padding-bottom: 0;
   }
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
