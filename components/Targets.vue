@@ -68,6 +68,9 @@ span {
   span {
     margin-bottom: 0;
   }
+  svg {
+    margin-top: 2.4em;
+  }
 }
 @media only screen and (max-width: 320px) {
   span {
