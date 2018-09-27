@@ -64,10 +64,20 @@ p {
  p {
    font-size: 1.4em;
  }
+ .logo {
+   margin-top: 0;
+ }
 }
+
  @media only screen and (max-width: 414px) {
    p {
      font-size: 1.2em;
+   }
+   svg {
+     margin-top: 2.4em;
+   }
+   .schema {
+     min-height: 400px;
    }
  }
 </style>
