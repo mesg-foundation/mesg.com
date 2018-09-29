@@ -5,9 +5,12 @@
       --dark-blue-grey: #251440;
       --purple: #491e8c;
       --lighter-purple: #9452ff;
+      --lighter-purple-hover: #6F3DBF;
       --green-cta: #30b24b;
+      --green-cta-hover: #1F8C36;
       --light-blue-grey: #cac5e4;
       --pale-grey: #f1f0f8;
+      --pale-white: #dfe1f8;
       --blanc-background: #ffffff;
     }
     </style>
@@ -80,7 +83,12 @@ h3 {
   color: var(--dark-blue-grey);
   margin-bottom: 1.2em;
 }
-
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #491e8c;
+  color: var(--purple);
+}
 p {
   font-size: 1em;
   font-weight: normal;
@@ -150,22 +158,18 @@ svg {
 
 .container-parent {
   width: 100%;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding: 2.4em;
   margin: auto;
 }
 .container-child {
   width: 100%;
   max-width: 1440px;
-  padding: 4.8em;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding: 2.4em;
   margin: auto;
 }
 .container-child-title {
   width: 100%;
   padding: 2.4em;
-  padding-bottom: 2.4em;
 }
 
 
@@ -173,8 +177,6 @@ svg {
   .container-parent {
     width: 100%;
     padding: 2.4em;
-    padding-top: 4.8em;
-    padding-bottom: 4.8em;
   }
   .container-child {
     width: 100%;
@@ -182,12 +184,10 @@ svg {
   }
   [half] { width: calc(50% - 2.4em); }
 }
-
 @media only screen and (max-width: 768px) {
   .container-parent {
     width: 100%;
-    padding-top: 2.4em;
-    padding-bottom: 2.4em;
+    padding: 2.4em;
   }
   .container-child {
     width: 100%;
@@ -196,23 +196,27 @@ svg {
   [half] { width: 100%; }
   [mb1] { margin-bottom: 0.6em!important; }
   [mr1] { margin-right: 0.6em!important; }
+  [hide-responsive] { display: none; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
-  [hide-responsive] { display: none; }
   [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 4.8em;}
 }
 @media only screen and (max-width: 414px) {
   .container-parent {
     width: 100%;
     padding: 0;
-    padding-top: 0;
-    padding-bottom: 0;
   }
   .container-child {
     width: 100%;
     padding: 1.8em;
   }
+  .container-child-title {
+    width: 100%;
+    padding: 1.8em;
+    padding-bottom: 0;
+  }
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
+  [hide-mobile] { display: none; }
 }
 </style>

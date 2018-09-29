@@ -36,7 +36,6 @@ export default {
 
 <style scoped>
 a, button {
-  height: 3.6em;
   border-radius: 3em;
   font-size: 1em;
   font-weight: bold;
@@ -47,9 +46,9 @@ a, button {
 }
 
 .btn--small {
-  height: 2.4em;
-  border-radius: 1.2em;
-  padding: 0.6em 1.2em;
+
+  border-radius: 1.5em;
+  padding: 0.5em 1em;
 }
 
 .btn--primary {
@@ -57,6 +56,12 @@ a, button {
   color: var(--pale-grey);
   background-color: #30b24b;
   background-color: var(--green-cta);
+  opacity:1;
+}
+.btn--primary:hover {
+  background-color: #1F8C36;
+  background-color: var(--green-cta-hover);
+  transition: 0.3s;
 }
 
 .btn--purple {
@@ -64,13 +69,26 @@ a, button {
   color: var(--pale-grey);
   background-color: #9452ff;
   background-color: var(--lighter-purple);
+  opacity:1;
+}
+.btn--purple:hover {
+  background-color: #6F3DBF;
+  background-color: var(--lighter-purple-hover);
+  transition: 0.3s;
 }
 
 .btn--outline {
   color: #9452ff;
   color: var(--lighter-purple);
-  border: solid 0.1em #9452ff;
-  border: solid 0.1em var(--lighter-purple);
+  border: solid 0.15em #9452ff;
+  border: solid 0.15em var(--lighter-purple);
+}
+.btn--outline:hover {
+  color: #f1f0f8;
+  color: var(--pale-grey);
+  background-color: #9452ff;
+  background-color: var(--lighter-purple);
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -80,7 +98,6 @@ a, button {
 @media only screen and (max-width: 414px) {
     a, button {
       font-size: 0.8em;
-      padding: 1em 1.6em;
     }
   }
 }

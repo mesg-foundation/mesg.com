@@ -1,19 +1,19 @@
 <template>
-  <footer hide-responsive class="white">
+  <footer class="white">
   <div class="container-parent">
     <div class="container-child">
       <nav flex row space-between>
-        <div flex column>
-          <MESGLogoVerticalPurple />
+        <div class="footer" flex column>
+          <MESGLogoVerticalPurple class="logo" hide-mobile/>
         </div>
-        <div flex column>
+        <div class="footer" flex column>
           <h3>Community</h3>
-          <a href="https://medium.com/mesg">Medium</a>
-          <a href="https://github.com/mesg-foundation">Github</a>
-          <a href="https://forum.mesg.com/">Forum</a>
-          <a href="https://discord.gg/SaZ5HcE">Discord</a>
+          <a href="https://medium.com/mesg"><i class="fab fa-medium-m"></i>Medium</a>
+          <a href="https://github.com/mesg-foundation"><i class="fab fa-github-alt"></i>Github</a>
+          <a href="https://forum.mesg.com/"><i class="fas fa-comments"></i>Forum</a>
+          <a href="https://discord.gg/SaZ5HcE"><i class="fab fa-discord"></i>Discord</a>
         </div>
-        <div flex column>
+        <div class="footer" flex column>
           <h3>Developer Resources</h3>
           <a href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank">What is MESG? Get started</a>
           <a href="https://github.com/mesg-foundation/core">Browse our source code on Github</a>
@@ -40,11 +40,9 @@ footer {
   border-top: solid 0.05em var(--light-blue-grey);
 }
 
-footer .container-parent {
-  padding-top: 0;
-  padding-bottom: 0;
+.container-parent {
+  padding: 0;
 }
-
 
 a {
   font-size: 0.9em;
@@ -52,11 +50,41 @@ a {
   color: #251440;
   color: var(--dark-blue-grey);
   text-decoration: none;
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
+}
+a:hover {
+  color: #9452ff;
+  color: var(--lighter-purple);
+  transition: 0.3s;
 }
 
-svg {
-  width: 9.8em;
-  max-width: 9.8em;
+i {
+  margin-right: 0.6em;
 }
+
+.logo {
+  width: 70%;
+  max-width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  svg {
+      margin-top: 0;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .container-child {
+      padding: 0;
+  }
+  svg {
+      margin-top: 0;
+  }
+  nav {
+    flex-direction: column;
+    padding: 1.8em;
+  }
+  .footer:last-child {
+    margin-top: 1.2em;
+  }
+}
+
 </style>
