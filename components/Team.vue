@@ -48,12 +48,12 @@ export default {
             { type: "twitter", link: "https://twitter.com/graphicSepion" },
             { type: "linkedin", link: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/" }
           ] },
-          { name: "Hubert Krauze", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team.jpg"), socialNetworks: [
+          { name: "Hubert Krauze", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team-Default.jpg"), socialNetworks: [
             { type: "twitter", link: "https://twitter.com/krhubert" },
             { type: "linkedin", link: "https://www.linkedin.com/in/hubert-krauze-67a6389b/" },
             { type: "github", link: "https://github.com/krhubert" }
           ] },
-          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team.jpg"), socialNetworks: [
+          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team-Default.jpg"), socialNetworks: [
             { type: "twitter", link: "https://twitter.com/ilgooz" },
             { type: "github", link: "https://github.com/ilgooz" }
           ] },
@@ -89,12 +89,6 @@ h3 {
 
 .card {
   margin: 1.2em;
-}
-.container-parent {
-  padding-bottom: 0;
-}
-.white {
-  box-shadow: 0 0 1.2em 1.2em rgba(0, 0, 0, 0.25);
 }
 
 @media only screen and (max-width: 768px) {
