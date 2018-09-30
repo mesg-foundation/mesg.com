@@ -3,8 +3,8 @@
   <div class="container-parent">
     <div class="container-child">
       <nav flex row space-between>
-        <div class="footer" flex column>
-          <MESGLogoVerticalPurple class="logo" hide-responsive/>
+        <div class="footer" flex column hide-responsive>
+          <MESGLogoVerticalPurple class="logo"/>
         </div>
         <div class="footer" flex column>
           <h3>Community</h3>
@@ -69,8 +69,10 @@ i {
 }
 
 .logo {
-  width: 70%;
-  max-width: 70%;
+  width: 136px;
+  max-width: 136px;
+  height: 180px;
+  max-height: 180px;
 }
 
 @media only screen and (max-width: 768px) {
