@@ -11,3 +11,4 @@ npm-debug.log
 dist
 
 .envrc
+**/.DS_Store
