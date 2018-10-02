@@ -41,7 +41,7 @@ p {
 }
 
 .schema {
-  height: calc(100vh - 16em);
+  max-height: calc(100vh - 14em);
   min-height: 520px;
 }
 
@@ -50,13 +50,17 @@ p {
   max-width: 60%;
   object-fit: contain;
 }
-.container-child {
-  height: calc(100vh - 4.8em);
-}
-.container-parent {
-  height: 100vh;
+
+section {
+  padding-top: 2.4em;
 }
 
+
+@media only screen and (min-width: 1025px) {
+ .container-child {
+   min-height:calc(100vh - 7.2em);
+ }
+}
 @media only screen and (max-width: 768px) {
  header {
    text-align: center;
