@@ -55,13 +55,10 @@ section {
   padding-top: 2.4em;
 }
 
-.container-parent {
-  min-height:calc(100vh - 2.4em);
-}
 
-@media only screen and (max-width: 1024px) {
- .container-parent {
-   min-height:calc(50vh + 2.4em);
+@media only screen and (min-width: 1025px) {
+ .container-child {
+   min-height:calc(100vh - 7.2em);
  }
 }
 @media only screen and (max-width: 768px) {
@@ -78,9 +75,6 @@ section {
  .logo {
    margin-top: 0;
  }
- .container-parent {
-   min-height:calc(100vh + 2.4em);
- }
 }
 
  @media only screen and (max-width: 414px) {
@@ -92,9 +86,6 @@ section {
    }
    .schema {
      min-height: 400px;
-   }
-   .container-parent {
-     min-height:calc(100vh + 1.8em);
    }
  }
 </style>
