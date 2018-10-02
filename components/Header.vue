@@ -41,7 +41,7 @@ p {
 }
 
 .schema {
-  height: calc(100vh - 16em);
+  max-height: calc(100vh - 14em);
   min-height: 520px;
 }
 
@@ -50,13 +50,20 @@ p {
   max-width: 60%;
   object-fit: contain;
 }
-.container-child {
-  height: calc(100vh - 4.8em);
-}
-.container-parent {
-  height: 100vh;
+
+section {
+  padding-top: 2.4em;
 }
 
+.container-parent {
+  min-height:calc(100vh - 2.4em);
+}
+
+@media only screen and (max-width: 1024px) {
+ .container-parent {
+   min-height:calc(50vh + 2.4em);
+ }
+}
 @media only screen and (max-width: 768px) {
  header {
    text-align: center;
@@ -71,6 +78,9 @@ p {
  .logo {
    margin-top: 0;
  }
+ .container-parent {
+   min-height:calc(100vh + 2.4em);
+ }
 }
 
  @media only screen and (max-width: 414px) {
@@ -82,6 +92,9 @@ p {
    }
    .schema {
      min-height: 400px;
+   }
+   .container-parent {
+     min-height:calc(100vh + 1.8em);
    }
  }
 </style>
