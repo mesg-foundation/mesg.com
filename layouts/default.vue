@@ -12,6 +12,7 @@
       --pale-grey: #f1f0f8;
       --pale-white: #dfe1f8;
       --blanc-background: #ffffff;
+      --animation-speed: 1;
     }
     </style>
     <Menu/>
