@@ -45,11 +45,12 @@ a {
   color: var(--pale-grey);
 }
 
-p a {
-  font-weight: bold;
-  color: #251440;
-  color: var(--dark-blue-grey);
+a:hover {
+  color: #9452ff;
+  color: var(--lighter-purple);
+  transition: 0.2s ease-in-out;
 }
+
 
 code {
   display: block;

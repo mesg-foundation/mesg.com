@@ -84,7 +84,7 @@ a {
 a:hover {
   color: #9452ff;
   color: var(--lighter-purple);
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 p {
   margin-bottom: 0.6em;

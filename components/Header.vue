@@ -34,9 +34,6 @@ export default {
 
 
 <style scoped>
-section {
-  padding-top: 2.4em;
-}
 
 p {
   font-size: 1.6em;
@@ -44,14 +41,25 @@ p {
 }
 
 .schema {
-  max-height: calc(100vh - 12em);
-  min-height: 600px;
+  max-height: calc(100vh - 14em);
+  min-height: 520px;
 }
 
 .logo {
   width: 60%;
   max-width: 60%;
   object-fit: contain;
+}
+
+section {
+  padding-top: 2.4em;
+}
+
+
+@media only screen and (min-width: 1025px) {
+ .container-child {
+   min-height:calc(100vh - 7.2em);
+ }
 }
 @media only screen and (max-width: 768px) {
  header {
