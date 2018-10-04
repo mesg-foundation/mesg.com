@@ -3037,8 +3037,11 @@
   		<path id="Circle-absorbtion" class="st2" d="M480,78.7c0,0,0,90.7,0,141.3c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220
   			C0,143.4,0,78.7,0,78.7"/>
   		<g id="Bubbles-mask">
+  			<defs>
+  				<path id="Mask-bubbles" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
+  			</defs>
   			<clipPath id="Mask-bubbles-1">
-          <path id="Mask-bubbles" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
+  				<use xlink:href="#Mask-bubbles"  style="overflow:visible;"/>
   			</clipPath>
   			<g id="Bubbles" class="st3">
   				<g id="Bubble-11">
@@ -3092,7 +3095,7 @@
   					<text transform="matrix(1 0 0 1 222.5075 60.352)" class="st6 st7 st8">Apple </text>
   					<text transform="matrix(1 0 0 1 228.5075 76.352)" class="st6 st7 st8">Pay</text>
   				</g>
-  		</g>
+  			</g>
         <linearGradient id="Circle-absorbtion-shadow_1_" gradientUnits="userSpaceOnUse" x1="240" y1="356.8001" x2="240" y2="116.9001" gradientTransform="matrix(1 0 0 1 0 103.0999)">
         <stop  offset="0" style="stop-color:#251440"/>
         <stop  offset="0.45" style="stop-color:#251440;stop-opacity:0"/>
