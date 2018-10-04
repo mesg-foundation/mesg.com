@@ -4065,11 +4065,8 @@
     transform: translateY(0px);
     opacity: 0;
   }
-  33% {
+  50% {
     opacity: 1;
-  }
-  66% {
-    opacity: 0.7;
   }
   100% {
     transform: translateY(430px);
