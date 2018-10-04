@@ -3037,13 +3037,34 @@
   		<path id="Circle-absorbtion" class="st2" d="M480,78.7c0,0,0,90.7,0,141.3c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220
   			C0,143.4,0,78.7,0,78.7"/>
   		<g id="Bubbles-mask">
-  			<defs>
-  				<path id="Mask-bubbles" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
-  			</defs>
-  			<clipPath id="Mask-bubbles-1">
-  				<use xlink:href="#Mask-bubbles"  style="overflow:visible;"/>
-  			</clipPath>
-  			<g id="Bubbles" class="st3">
+  			<g id="Bubbles">
+  				<g id="Bubble-11">
+  					<circle class="st5" cx="263.9" cy="52.5" r="38.5"/>
+  					<text transform="matrix(1 0 0 1 232.4763 57.2435)" class="st6 st7 st8">Reporting</text>
+  				</g>
+  				<g id="Bubble-10">
+  					<circle class="st5" cx="407" cy="59.5" r="31.5"/>
+  					<text transform="matrix(1 0 0 1 381.2072 64.2235)" class="st6 st7 st8">Security</text>
+  				</g>
+  				<g id="Bubble-9">
+  					<circle class="st10" cx="116.2" cy="52.3" r="38.7"/>
+  					<text transform="matrix(1 0 0 1 85.4816 49.2393)" class="st6 st7 st8">Metadata</text>
+  					<text transform="matrix(1 0 0 1 91.6816 65.2393)" class="st6 st7 st8">support</text>
+  				</g>
+  				<g id="Bubble-8">
+  					<circle class="st12" cx="339.5" cy="51.1" r="39.9"/>
+  					<text transform="matrix(1 0 0 1 326.1447 47.9171)" class="st6 st7 st8">Visa</text>
+  					<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">checkout</text>
+  				</g>
+  				<g id="Bubble-7">
+  					<circle class="st5" cx="202.8" cy="55.8" r="35.2"/>
+  					<text transform="matrix(1 0 0 1 180.7419 52.6044)" class="st6 st7 st8">Instant </text>
+  					<text transform="matrix(1 0 0 1 177.0419 68.6044)" class="st6 st7 st8">payouts</text>
+  				</g>
+  				<g id="Bubble-6">
+  					<circle class="st12" cx="77.2" cy="45.5" r="45.5"/>
+  					<text transform="matrix(1 0 0 1 36.7209 50.2265)" class="st6 st7 st8">Tokenization</text>
+  				</g>
   				<g id="Bubble-5">
   					<circle class="st12" cx="409.6" cy="53" r="38"/>
   					<text transform="matrix(1 0 0 1 380.049 49.7649)" class="st6 st7 st8">Microsoft </text>
@@ -3791,7 +3812,6 @@
 .st0{opacity:0.1;}
 .st1{fill:#AE3FE8;}
 .st2{opacity:0.45;fill:url(#Circle-absorbtion_1_);enable-background:new    ;}
-.st3{clip-path:url(#Mask-bubbles-1);}
 .st4{opacity:1;}
 .st5{opacity:1;fill:#1AB644;enable-background:new    ;}
 .st6{fill:#FFFFFF;}
@@ -3935,7 +3955,7 @@
   opacity:0;
   animation: move calc(var(--animation-speed) * 7s) calc(var(--animation-speed) * 5.65s) forwards infinite ease-out;
 }
-/*#Bubble-6 {
+#Bubble-6 {
   opacity:0;
   animation: move calc(var(--animation-speed) * 7s) calc(var(--animation-speed) * 6.65s) forwards infinite ease-out;
 }
@@ -3959,7 +3979,7 @@
   opacity:0;
   animation: move calc(var(--animation-speed) * 7s) calc(var(--animation-speed) * 13.15s) forwards infinite ease-out;
 }
-*/
+
 
 @keyframes show {
   to {
