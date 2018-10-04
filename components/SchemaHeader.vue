@@ -3037,11 +3037,8 @@
   		<path id="Circle-absorbtion" class="st2" d="M480,78.7c0,0,0,90.7,0,141.3c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220
   			C0,143.4,0,78.7,0,78.7"/>
   		<g id="Bubbles-mask">
-  			<defs>
-  				<path id="Mask-bubbles" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
-  			</defs>
   			<clipPath id="Mask-bubbles-1">
-  				<use xlink:href="#Mask-bubbles"  style="overflow:visible;"/>
+          <path id="Mask-bubbles" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
   			</clipPath>
   			<g id="Bubbles" class="st3">
   				<g id="Bubble-11">
