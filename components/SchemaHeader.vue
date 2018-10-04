@@ -3032,7 +3032,7 @@
 
   			<linearGradient id="Circle-absorbtion_1_" gradientUnits="userSpaceOnUse" x1="240" y1="356.8001" x2="240" y2="-24.3999" gradientTransform="matrix(1 0 0 1 0 103.0999)">
   			<stop  offset="0" style="stop-color:#9452FF"/>
-  			<stop  offset="0.75" style="stop-color:#FFFFFF;stop-opacity:0"/>
+  			<stop  offset="0.8" style="stop-color:#9452FF;stop-opacity:0"/>
   		</linearGradient>
   		<path id="Circle-absorbtion" class="st2" d="M480,78.7c0,0,0,90.7,0,141.3c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220
   			C0,143.4,0,78.7,0,78.7"/>
@@ -3097,8 +3097,8 @@
   				</g>
   			</g>
         <linearGradient id="Circle-absorbtion-shadow_1_" gradientUnits="userSpaceOnUse" x1="240" y1="356.8001" x2="240" y2="116.9001" gradientTransform="matrix(1 0 0 1 0 103.0999)">
-        <stop  offset="0.25" style="stop-color:#000000"/>
-        <stop  offset="0.75" style="stop-color:#251440;stop-opacity:0"/>
+        <stop  offset="0" style="stop-color:#251440"/>
+        <stop  offset="0.45" style="stop-color:#251440;stop-opacity:0"/>
         </linearGradient>
         <path id="Circle-absorbtion-shadow" class="st24" d="M480,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220"/>
   		</g>
@@ -3815,14 +3815,14 @@
 </template>
 
 <style scoped>
-.st0{opacity:0.05;}
+.st0{opacity:0.1;}
 .st1{fill:#AE3FE8;}
-.st2{opacity:0.35;fill:url(#Circle-absorbtion_1_);enable-background:new    ;}
+.st2{opacity:0.45;fill:url(#Circle-absorbtion_1_);enable-background:new    ;}
 .st3{clip-path:url(#Mask-bubbles-1);}
 .st4{opacity:1;}
 .st5{opacity:1;fill:#1AB644;enable-background:new    ;}
 .st6{fill:#FFFFFF;}
-.st7{font-family:'Quicksand-Regular';}
+.st7{font-family:'Quicksand';}
 .st8{font-size:13.3709px;}
 .st10{opacity:1;fill:#F145FF;enable-background:new    ;}
 .st12{opacity:1;fill:#4563FF;enable-background:new    ;}
@@ -3836,7 +3836,7 @@
 .st21{fill:#4563FF;}
 .st22{fill:#1AB644;}
 .st23{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:100;}
-.st24{opacity:0.45;fill:url(#Circle-absorbtion-shadow_1_);enable-background:new    ;}
+.st24{opacity:0.75;fill:url(#Circle-absorbtion-shadow_1_);enable-background:new    ;}
 
 
 /*MESG logo*/
@@ -3918,7 +3918,7 @@
 }
 #Circle-absorbtion-shadow {
     opacity: 0;
-    animation: show-move calc(var(--animation-speed) * 0.75s) calc(var(--animation-speed) * 1.65s) forwards 1 linear;
+    animation: show-move1 calc(var(--animation-speed) * 0.75s) calc(var(--animation-speed) * 1.65s) forwards 1 linear;
 }
 #Technology {
     opacity:0;
@@ -3995,7 +3995,7 @@
 }
 @keyframes show2 {
   to {
-    opacity: 5.000000e-02;
+    opacity: 0.1;
     }
 }
 @keyframes show-move {
@@ -4004,7 +4004,17 @@
     transform: translateY(15px);
   }
   to {
-    opacity: 0.35;
+    opacity: 0.45;
+    transform: translateY(0px);
+    }
+}
+@keyframes show-move1 {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 0.75;
     transform: translateY(0px);
     }
 }
@@ -4069,15 +4079,15 @@
 @keyframes size {
   0% {
     transform: scale(1);
-    opacity : 0.05;
+    opacity : 0.1;
   }
   50% {
     transform: scale(0.95);
-    opacity : 0.05;
+    opacity : 0.08;
     }
   100% {
     transform: scale(1);
-    opacity : 0.05;
+    opacity : 0.1;
     }
 }
 
