@@ -30,19 +30,19 @@ export default {
     return {
       team: [
         ...[
-          { name: "Anthony Estebe", role: "CTO / Co-founder", pictureUrl: require("~/assets/Team/MESG-Anthony.jpg"), socialNetworks:[
+          { name: "Anthony Estebe", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Anthony.jpg"), socialNetworks:[
             { type: "twitter", link: "https://twitter.com/antho1404" },
             { type: "linkedin", link: "https://www.linkedin.com/in/anthony-estebe-aab18831/" },
             { type: "github", link: "https://github.com/antho1404" }
           ] },
-          { name: "Alexis Sirkia", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Alexis.jpg"), socialNetworks: [
-            { type: "linkedin", link: "https://www.linkedin.com/in/sirkia/" }
-          ] },
-          { name: "Nicolas Mahé", role: "CTO / Co-founder", pictureUrl: require("~/assets/Team/MESG-Nicolas.jpg"), socialNetworks: [
+          { name: "Nicolas Mahé", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Nicolas.jpg"), socialNetworks: [
             { type: "linkedin", link: "https://www.linkedin.com/in/nicolas-mahe" },
             { type: "github", link: "https://github.com/NicolasMahe" }
+          ] },
+          { name: "Alexis Sirkia", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Alexis.jpg"), socialNetworks: [
+            { type: "linkedin", link: "https://www.linkedin.com/in/sirkia/" }
           ] }
-        ].sort((a, b) => a.name.localeCompare(b.name)),
+        ],
         ...[
           { name: "Emmanuel Drouin", role: "Art Director", pictureUrl: require("~/assets/Team/MESG-Emmanuel.jpg"), socialNetworks: [
             { type: "twitter", link: "https://twitter.com/graphicSepion" },
