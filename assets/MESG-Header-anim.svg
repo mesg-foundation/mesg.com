@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Schema-Header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 480 700" style="enable-background:new 0 0 480 700;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:5.000000e-02;}
 	.st1{fill:#AE3FE8;}
 	.st2{opacity:0.35;fill:url(#Circle-absorbtion_1_);enable-background:new    ;}
-	.st3{clip-path:url(#Mask_1_);}
+	.st3{clip-path:url(#SVGID_2_);}
 	.st4{opacity:0.3;}
 	.st5{opacity:0.7;fill:#1AB644;enable-background:new    ;}
 	.st6{fill:#FFFFFF;}
@@ -19,8 +20,8 @@
 	.st14{fill:#251440;}
 	.st15{fill:#9452FF;}
 	.st16{opacity:0.1;}
-	.st17{opacity:0.4;fill:#FFFFFF;enable-background:new    ;}
-	.st18{opacity:0.2;clip-path:url(#SVGID_2_);fill:#9452FF;enable-background:new    ;}
+	.st17{opacity:0.4;fill:#FFFFFF;}
+	.st18{opacity:0.2;clip-path:url(#SVGID_4_);fill:#9452FF;enable-background:new    ;}
 	.st19{fill:none;stroke:#F145FF;stroke-width:2;stroke-miterlimit:10;}
 	.st20{fill:#F145FF;}
 	.st21{fill:#4563FF;}
@@ -33,7 +34,7 @@
 				<circle class="st1" cx="239.9" cy="460" r="239.9"/>
 			</g>
 			<g id="Circle-4" class="st0">
-
+				
 					<image style="overflow:visible;opacity:0.25;enable-background:new    ;" width="1542" height="983" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABgYAAAPXCAYAAADg8/AcAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAA/v9JREFUeNrs3YuS4kiSqGGHVPbM
 vP/L7nZVptbqTOu0OsqvESEh4P/MMECQJOISEuFydxEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1186,7 +1187,7 @@ y/teAAAAAElFTkSuQmCC" transform="matrix(0.2398 0 0 0.2388 55.1072 410.318)">
 				<path class="st1" d="M419.1,460c0,99-80.2,179.2-179.2,179.2S60.7,559,60.7,460s80.2,0.1,179.2,0.1S419.1,361,419.1,460z"/>
 			</g>
 			<g id="Circle-3" class="st0">
-
+				
 					<image style="overflow:visible;opacity:0.25;enable-background:new    ;" width="1167" height="746" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABI8AAALqCAYAAAC8HHTRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAtbFJREFUeNrs3Y1y4kqyruFEyD0z
 93+xe5/VBp1w7EWMVnXlX1VJSOJ9Ighj7LaRQBh9nZklAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2011,7 +2012,7 @@ YII=" transform="matrix(0.2392 0 0 0.2387 100.4672 421.5979)">
 					z"/>
 			</g>
 			<g id="Circle-2_1_" class="st0">
-
+				
 					<image style="overflow:visible;opacity:0.25;enable-background:new    ;" width="883" height="571" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA3MAAAI7CAYAAABGNcLPAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAgrBJREFUeNrsnYluI8mSLZ1JVt87
 //+vr6tKEvNhgBYmOyrc/XhkJFczgJBEbSTFJU2+HDMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2605,7 +2606,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAv8j8BBgBERDPgUZY0eQAAAABJRU5ErkJggg==" tr
 				<path class="st1" d="M340,460c0,55.2-44.7,99.9-99.9,99.9S140,515.2,140,460s44.7-0.2,99.9-0.2S340,404.8,340,460z"/>
 			</g>
 			<g id="Circle-1_1_" class="st0">
-
+				
 					<image style="overflow:visible;opacity:0.25;enable-background:new    ;" width="675" height="442" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqMAAAG6CAYAAAA8rk+mAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAYllJREFUeNrs/Y1yIsuudo2qgO71
 7vu/2DWnbeCLHWdyds3slPQoK4vfMSIIY+xuGygXg0cppRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3054,77 +3055,79 @@ AAAAAAAAAAAAAAAAAADwv/x/AgwATbmuzRSDzvoAAAAASUVORK5CYII=" transform="matrix(0.23
 				<path class="st1" d="M314.6,460c0,41.2-33.4,74.6-74.6,74.6s-74.6-33.4-74.6-74.6s33.4,0.1,74.6,0.1S314.6,418.8,314.6,460z"/>
 			</g>
 		</g>
-
-			<linearGradient id="Circle-absorbtion_1_" gradientUnits="userSpaceOnUse" x1="240" y1="356.8001" x2="240" y2="-24.3999" gradientTransform="matrix(1 0 0 1 0 103.0999)">
+		
+			<linearGradient id="Circle-absorbtion_1_" gradientUnits="userSpaceOnUse" x1="240" y1="345.1999" x2="240" y2="726.3999" gradientTransform="matrix(1 0 0 -1 0 805.0999)">
 			<stop  offset="0" style="stop-color:#9452FF"/>
 			<stop  offset="0.75" style="stop-color:#FFFFFF;stop-opacity:0"/>
 		</linearGradient>
 		<path id="Circle-absorbtion" class="st2" d="M480,78.7c0,0,0,90.7,0,141.3c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220
 			C0,143.4,0,78.7,0,78.7"/>
 		<g id="Bubbles-mask">
-			<defs>
-				<path id="Mask" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
-			</defs>
-			<clipPath id="Mask_1_">
-				<use xlink:href="#Mask"  style="overflow:visible;"/>
-			</clipPath>
-			<g id="Bubbles" class="st3">
-				<g id="Bubble-11" class="st4">
-					<circle class="st5" cx="263.9" cy="52.5" r="38.5"/>
-					<text transform="matrix(1 0 0 1 232.4763 57.2435)" class="st6 st7 st8">Reporting</text>
-				</g>
-				<g id="Bubble-10" class="st9">
-					<circle class="st5" cx="407" cy="59.5" r="31.5"/>
-					<text transform="matrix(1 0 0 1 381.2072 64.2235)" class="st6 st7 st8">Security</text>
-				</g>
-				<g id="Bubble-9" class="st9">
-					<circle class="st10" cx="116.2" cy="52.3" r="38.7"/>
-					<text transform="matrix(1 0 0 1 85.4816 49.2393)" class="st6 st7 st8">Metadata</text>
-					<text transform="matrix(1 0 0 1 91.6816 65.2393)" class="st6 st7 st8">support</text>
-				</g>
-				<g id="Bubble-8" class="st11">
-					<circle class="st12" cx="339.5" cy="51.1" r="39.9"/>
-					<text transform="matrix(1 0 0 1 326.1447 47.9171)" class="st6 st7 st8">Visa</text>
-					<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">checkout</text>
-				</g>
-				<g id="Bubble-7" class="st11">
-					<circle class="st5" cx="202.8" cy="55.8" r="35.2"/>
-					<text transform="matrix(1 0 0 1 180.7419 52.6044)" class="st6 st7 st8">Instant </text>
-					<text transform="matrix(1 0 0 1 177.0419 68.6044)" class="st6 st7 st8">payouts</text>
-				</g>
-				<g id="Bubble-6" class="st13">
-					<circle class="st12" cx="77.2" cy="45.5" r="45.5"/>
-					<text transform="matrix(1 0 0 1 36.7209 50.2265)" class="st6 st7 st8">Tokenization</text>
-				</g>
-				<g id="Bubble-5">
-					<circle class="st12" cx="409.6" cy="53" r="38"/>
-					<text transform="matrix(1 0 0 1 380.049 49.7649)" class="st6 st7 st8">Microsoft </text>
-					<text transform="matrix(1 0 0 1 397.749 65.7649)" class="st6 st7 st8">Pay</text>
-				</g>
-				<g id="Bubble-4">
-					<circle class="st10" cx="257.8" cy="55" r="36"/>
-					<text transform="matrix(1 0 0 1 235.8771 51.6584)" class="st6 st7 st8">Instant </text>
-					<text transform="matrix(1 0 0 1 229.6771 67.6584)" class="st6 st7 st8">transfert</text>
-				</g>
-				<g id="Bubble-3">
-					<circle class="st5" cx="120.1" cy="53.8" r="37.2"/>
-					<text transform="matrix(1 0 0 1 93.0666 50.5725)" class="st6 st7 st8">Business </text>
-					<text transform="matrix(1 0 0 1 91.7666 66.5725)" class="st6 st7 st8">analytics</text>
-				</g>
-				<g id="Bubble-2">
-					<circle class="st10" cx="352.3" cy="50.1" r="40.9"/>
-					<text transform="matrix(1 0 0 1 319.174 54.8654)" class="st6 st7 st8">Webhooks</text>
-				</g>
-				<g id="Bubble-1">
-					<circle class="st12" cx="240.5" cy="63.5" r="27.5"/>
-					<text transform="matrix(1 0 0 1 222.5075 60.352)" class="st6 st7 st8">Apple </text>
-					<text transform="matrix(1 0 0 1 228.5075 76.352)" class="st6 st7 st8">Pay</text>
+			<g>
+				<defs>
+					<path id="SVGID_1_" d="M480,0c0,0,0,169.4,0,220c0,132.5-107.4,239.9-239.9,239.9S0,352.5,0,220C0,143.4,0,0,0,0H480z"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="Bubbles" class="st3">
+					<g id="Bubble-11" class="st4">
+						<circle class="st5" cx="263.9" cy="52.5" r="38.5"/>
+						<text transform="matrix(1 0 0 1 232.4763 57.2435)" class="st6 st7 st8">Reporting</text>
+					</g>
+					<g id="Bubble-10" class="st9">
+						<circle class="st5" cx="407" cy="59.5" r="31.5"/>
+						<text transform="matrix(1 0 0 1 381.2072 64.2235)" class="st6 st7 st8">Security</text>
+					</g>
+					<g id="Bubble-9" class="st9">
+						<circle class="st10" cx="116.2" cy="52.3" r="38.7"/>
+						<text transform="matrix(1 0 0 1 85.4816 49.2393)" class="st6 st7 st8">Metadata</text>
+						<text transform="matrix(1 0 0 1 91.6816 65.2393)" class="st6 st7 st8">support</text>
+					</g>
+					<g id="Bubble-8" class="st11">
+						<circle class="st12" cx="339.5" cy="51.1" r="39.9"/>
+						<text transform="matrix(1 0 0 1 326.1447 47.9171)" class="st6 st7 st8">Visa</text>
+						<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">checkout</text>
+					</g>
+					<g id="Bubble-7" class="st11">
+						<circle class="st5" cx="202.8" cy="55.8" r="35.2"/>
+						<text transform="matrix(1 0 0 1 180.7419 52.6044)" class="st6 st7 st8">Instant </text>
+						<text transform="matrix(1 0 0 1 177.0419 68.6044)" class="st6 st7 st8">payouts</text>
+					</g>
+					<g id="Bubble-6" class="st13">
+						<circle class="st12" cx="77.2" cy="45.5" r="45.5"/>
+						<text transform="matrix(1 0 0 1 36.7209 50.2266)" class="st6 st7 st8">Tokenization</text>
+					</g>
+					<g id="Bubble-5">
+						<circle class="st12" cx="409.6" cy="53" r="38"/>
+						<text transform="matrix(1 0 0 1 380.049 49.7649)" class="st6 st7 st8">Microsoft </text>
+						<text transform="matrix(1 0 0 1 397.749 65.7649)" class="st6 st7 st8">Pay</text>
+					</g>
+					<g id="Bubble-4">
+						<circle class="st10" cx="257.8" cy="55" r="36"/>
+						<text transform="matrix(1 0 0 1 235.8771 51.6584)" class="st6 st7 st8">Instant </text>
+						<text transform="matrix(1 0 0 1 229.6771 67.6584)" class="st6 st7 st8">transfert</text>
+					</g>
+					<g id="Bubble-3">
+						<circle class="st5" cx="120.1" cy="53.8" r="37.2"/>
+						<text transform="matrix(1 0 0 1 93.0666 50.5725)" class="st6 st7 st8">Business </text>
+						<text transform="matrix(1 0 0 1 91.7666 66.5725)" class="st6 st7 st8">analytics</text>
+					</g>
+					<g id="Bubble-2">
+						<circle class="st10" cx="352.3" cy="50.1" r="40.9"/>
+						<text transform="matrix(1 0 0 1 319.174 54.8654)" class="st6 st7 st8">Webhooks</text>
+					</g>
+					<g id="Bubble-1">
+						<circle class="st12" cx="240.5" cy="63.5" r="27.5"/>
+						<text transform="matrix(1 0 0 1 222.5075 60.3521)" class="st6 st7 st8">Apple </text>
+						<text transform="matrix(1 0 0 1 228.5075 76.3521)" class="st6 st7 st8">Pay</text>
+					</g>
 				</g>
 			</g>
 		</g>
 		<g id="MESG-logo">
 			<g id="Circle-MESG_26_">
-
+				
 					<image style="overflow:visible;opacity:0.25;enable-background:new    ;" width="517" height="517" id="Circle-shadow" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgUAAAIFCAYAAABCnI4NAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAV2ZJREFUeNrsvYly20jTNlsAKc9y
 /9d6ZiyRxPnfiFF8cLvWBkACYGYEQ4tlW6REduLpqmoRAAAAAAAAAAAAAAAAAAAAgN8ZeAgAeH53
@@ -3527,31 +3530,45 @@ AAAAAABOx/8vwAA2RWQi68HVtAAAAABJRU5ErkJggg==" transform="matrix(0.2381 0 0 0.237
 					C186.3,430.4,210.4,406.3,239.9,406.3 M239.9,404.3c-30.8,0-55.7,24.9-55.7,55.7s24.9,55.7,55.7,55.7s55.7-24.9,55.7-55.7
 					C295.8,429.2,270.8,404.3,239.9,404.3L239.9,404.3z"/>
 			</g>
-			<g id="MESG-brandmark" class="st16">
-				<path class="st17" d="M259.8,463.4c-4.3,0-7.8-3.5-7.8-7.8c0-2.9,1.6-5.5,4-6.8c-2.2-2.6-5-4.7-8.3-6c-0.7,3.6-3.9,6.4-7.7,6.4
-					s-7-2.7-7.7-6.4c-3.2,1.3-6.1,3.4-8.3,6c2.4,1.3,4,3.9,4,6.8c0,4.3-3.5,7.8-7.8,7.8c-0.3,0-0.6,0-1-0.1c0.2,3.6,1.4,6.9,3.2,9.8
-					c1.4-1.3,3.3-2.1,5.3-2.1c4.3,0,7.8,3.5,7.8,7.8c0,1.2-0.3,2.3-0.8,3.3c1.6,0.4,3.4,0.6,5.1,0.6c1.8,0,3.5-0.2,5.1-0.6
-					c-0.5-1-0.8-2.1-0.8-3.3c0-4.3,3.5-7.8,7.8-7.8c2.1,0,3.9,0.8,5.3,2.1c1.8-2.9,2.9-6.2,3.2-9.8
-					C260.4,463.3,260,463.4,259.8,463.4z"/>
-				<circle class="st6" cx="239.9" cy="441.2" r="6.8"/>
-				<circle class="st6" cx="259.8" cy="455.5" r="6.8"/>
-				<circle class="st6" cx="227.8" cy="478.8" r="6.8"/>
-				<circle class="st6" cx="252.2" cy="478.8" r="6.8"/>
-				<circle class="st6" cx="220.2" cy="455.5" r="6.8"/>
-				<path class="st17" d="M284.6,455.5c0-12.8-9.7-23.3-22-24.7c-3.9-8.6-12.6-14.5-22.6-14.5s-18.7,6-22.6,14.5
-					c-12.4,1.4-22,12-22,24.7c0,7.2,3.1,13.8,8,18.3c-0.3,1.6-0.5,3.2-0.5,4.9c0,13.7,11.2,24.9,24.9,24.9c4.4,0,8.6-1.2,12.2-3.2
-					c3.6,2,7.8,3.2,12.2,3.2c13.7,0,24.9-11.2,24.9-24.9c0-1.7-0.2-3.3-0.5-4.9C281.5,469.3,284.6,462.8,284.6,455.5z M276.3,472.7
-					c-1.4-5.7-4.8-10.6-9.5-14c-0.1,0.3-0.3,0.6-0.5,0.9c4.5,3.4,7.8,8.3,9.1,13.9c-4.2,3.7-9.6,5.9-15.5,6c0,0.3-0.1,0.7-0.2,1
-					c6.1,0,11.6-2.2,15.9-5.8c0.2,1.4,0.4,2.7,0.4,4.2c0,13.2-10.7,23.9-23.9,23.9c-4.1,0-7.9-1-11.2-2.8c4.9-3.1,8.6-7.8,10.4-13.3
-					c-0.3,0-0.7-0.1-1-0.2c-1.8,5.5-5.6,10-10.4,12.9c-4.9-2.9-8.6-7.5-10.4-12.9c-0.3,0.1-0.7,0.1-1,0.2
-					c1.8,5.6,5.6,10.3,10.4,13.3c-3.3,1.8-7.2,2.8-11.2,2.8c-13.2,0-23.9-10.7-23.9-23.9c0-1.4,0.1-2.8,0.4-4.2
-					c4.3,3.6,9.9,5.8,15.9,5.8c-0.1-0.3-0.1-0.7-0.2-1c-5.9-0.1-11.4-2.3-15.5-6c1.3-5.7,4.6-10.6,9.1-13.9
-					c-0.2-0.3-0.3-0.6-0.5-0.9c-4.6,3.4-8,8.3-9.5,14c-4.5-4.4-7.3-10.4-7.3-17.2c0-12.1,9-22.1,20.6-23.7c-1.2,2.9-1.8,6-1.8,9.3
-					c0,2.7,0.4,5.2,1.2,7.6c0.3-0.2,0.6-0.3,0.9-0.5c-0.7-2.3-1.1-4.7-1.1-7.1c0-3.4,0.7-6.6,2-9.5c0.7-0.1,1.5-0.1,2.2-0.1
-					c5.2,0,9.9,1.7,13.9,4.4c0.2-0.3,0.5-0.5,0.7-0.7c-4.1-3-9.1-4.7-14.6-4.7c-0.6,0-1.2,0-1.7,0.1c3.9-7.9,12.1-13.4,21.5-13.4
-					s17.6,5.5,21.5,13.4c-0.6,0-1.1-0.1-1.7-0.1c-5.4,0-10.5,1.8-14.6,4.7c0.3,0.2,0.5,0.5,0.7,0.7c3.9-2.8,8.7-4.4,13.9-4.4
-					c0.7,0,1.5,0,2.2,0.1c1.3,2.9,2,6.1,2,9.5c0,2.5-0.4,4.9-1.1,7.1c0.3,0.1,0.6,0.3,0.9,0.5c0.8-2.4,1.2-5,1.2-7.6
-					c0-3.3-0.7-6.4-1.8-9.3c11.6,1.6,20.6,11.6,20.6,23.7C283.6,462.3,280.8,468.4,276.3,472.7z"/>
+			<g id="MESG-brandmark_1_" class="st16">
+				<circle id="Core-1_3_" class="st6" cx="239.9" cy="441.6" r="6.7"/>
+				<circle id="Core-2_3_" class="st6" cx="220.4" cy="455.7" r="6.7"/>
+				<circle id="Core-3_3_" class="st6" cx="259.4" cy="455.7" r="6.7"/>
+				<circle id="Core-4_3_" class="st6" cx="227.9" cy="478.6" r="6.7"/>
+				<circle id="Core-5_3_" class="st6" cx="252" cy="478.6" r="6.7"/>
+				<path id="Center" class="st17" d="M243.5,478.6c0-2.3,0.9-4.4,2.5-6c1.6-1.6,3.7-2.5,6-2.5c2.1,0,4.1,0.8,5.7,2.2
+					c1.4-2.5,2.4-5.3,2.7-8.2c-0.3,0-0.6,0-0.9,0c-2.3,0-4.4-0.9-6-2.5c-1.6-1.6-2.5-3.7-2.5-6s0.9-4.4,2.5-6c0.5-0.5,1.1-1,1.8-1.3
+					c-1.9-2.2-4.3-3.9-7-5.1c-0.3,1.6-1.1,3.1-2.3,4.2c-1.6,1.6-3.7,2.5-6,2.5c-2.3,0-4.4-0.9-6-2.5c-1.2-1.2-2-2.6-2.3-4.2
+					c-2.7,1.2-5.1,2.9-7,5.1c0.6,0.4,1.2,0.8,1.8,1.3c1.6,1.6,2.5,3.7,2.5,6s-0.9,4.4-2.5,6c-1.6,1.6-3.7,2.5-6,2.5
+					c-0.3,0-0.6,0-0.9,0c0.3,3,1.2,5.8,2.7,8.2c1.6-1.4,3.5-2.2,5.7-2.2c2.3,0,4.4,0.9,6,2.5c1.6,1.6,2.5,3.7,2.5,6
+					c0,1.2-0.3,2.4-0.7,3.5c1.4,0.3,2.8,0.5,4.3,0.5s2.9-0.2,4.3-0.5C243.8,481,243.5,479.8,243.5,478.6z"/>
+				<path id="Circles_1_" class="st17" d="M282.6,445.9c-1.3-3-3.1-5.7-5.4-8c-2.3-2.3-5-4.1-8-5.4c-2-0.9-4.2-1.5-6.4-1.7
+					c-1.2-2.6-2.9-5-5-7c-2.3-2.3-5-4.1-8-5.4c-3.1-1.3-6.4-2-9.8-2s-6.7,0.7-9.8,2c-3,1.3-5.7,3.1-8,5.4c-2,2-3.7,4.4-4.9,7
+					c-2.3,0.3-4.6,0.9-6.8,1.8c-3,1.3-5.7,3.1-8,5.4c-2.3,2.3-4.1,5-5.4,8c-1.3,3.1-2,6.4-2,9.8c0,3.4,0.7,6.7,2,9.8
+					c1.3,3,3.1,5.7,5.4,8c0.2,0.2,0.3,0.3,0.5,0.5c-0.3,1.5-0.4,3.1-0.4,4.6c0,3.4,0.7,6.7,2,9.8c1.3,3,3.1,5.7,5.4,8
+					c2.3,2.3,5,4.1,8,5.4c3.1,1.3,6.4,2,9.8,2s6.7-0.7,9.8-2c0.8-0.3,1.5-0.7,2.3-1.1c0.7,0.4,1.5,0.8,2.3,1.1c3.1,1.3,6.4,2,9.8,2
+					c3.4,0,6.7-0.7,9.8-2c3-1.3,5.7-3.1,8-5.4c2.3-2.3,4.1-5,5.4-8c1.3-3.1,2-6.4,2-9.8c0-1.6-0.1-3.1-0.4-4.6
+					c0.2-0.2,0.4-0.3,0.5-0.5c2.3-2.3,4.1-5,5.4-8c1.3-3.1,2-6.4,2-9.8C284.5,452.3,283.9,449,282.6,445.9z M280.7,464.7
+					c-1.1,2.6-2.6,4.9-4.6,6.9c-0.3-0.9-0.6-1.9-1-2.8c-1.3-3-3.1-5.7-5.4-8c-0.8-0.8-1.6-1.5-2.4-2.1c-0.2,0.7-0.6,1.3-1,1.9
+					c0.7,0.5,1.3,1.1,1.9,1.7c2.1,2.1,3.8,4.6,4.9,7.3c0.5,1.2,0.9,2.4,1.2,3.6c-1.8,1.5-3.8,2.8-6,3.7c-2.5,1.1-5.2,1.7-8,1.8
+					c0,0.7-0.1,1.4-0.3,2.1c3.1-0.1,6.2-0.7,9.1-2c2-0.9,3.9-2,5.6-3.3c0.1,1,0.2,2,0.2,3.1c0,3.1-0.6,6.1-1.8,9
+					c-1.2,2.7-2.8,5.2-4.9,7.3c-2.1,2.1-4.6,3.8-7.3,4.9c-2.8,1.2-5.9,1.8-9,1.8c-3.1,0-6.1-0.6-9-1.8c-0.3-0.1-0.7-0.3-1-0.5
+					c1.3-0.9,2.5-1.9,3.7-3c2.3-2.3,4.1-5,5.4-8c0.2-0.4,0.4-0.9,0.5-1.3c-0.7,0-1.4-0.2-2.1-0.4c-0.1,0.3-0.2,0.6-0.4,0.9
+					c-1.2,2.7-2.8,5.2-4.9,7.3c-1.3,1.3-2.7,2.4-4.3,3.4c-1.5-0.9-3-2.1-4.3-3.4c-2.1-2.1-3.8-4.6-4.9-7.3c-0.1-0.3-0.2-0.6-0.4-0.9
+					c-0.7,0.2-1.4,0.3-2.1,0.4c0.2,0.5,0.3,0.9,0.5,1.3c1.3,3,3.1,5.7,5.4,8c1.1,1.1,2.3,2.1,3.7,3c-0.3,0.2-0.7,0.3-1,0.5
+					c-2.8,1.2-5.9,1.8-9,1.8s-6.1-0.6-9-1.8c-2.7-1.2-5.2-2.8-7.3-4.9c-2.1-2.1-3.8-4.6-4.9-7.3c-1.2-2.8-1.8-5.9-1.8-9
+					c0-1,0.1-2.1,0.2-3.1c1.7,1.3,3.6,2.4,5.6,3.3c2.9,1.2,5.9,1.9,9.1,2c-0.2-0.7-0.3-1.4-0.3-2.1c-2.8-0.1-5.4-0.7-8-1.8
+					c-2.2-0.9-4.2-2.2-6-3.7c0.3-1.2,0.7-2.4,1.2-3.6c1.2-2.7,2.8-5.2,4.9-7.3c0.6-0.6,1.3-1.2,1.9-1.7c-0.4-0.6-0.7-1.2-1-1.9
+					c-0.8,0.7-1.7,1.4-2.4,2.1c-2.3,2.3-4.1,5-5.4,8c-0.4,0.9-0.7,1.8-1,2.8c-1.9-2-3.5-4.4-4.6-6.9c-1.2-2.8-1.8-5.9-1.8-9
+					c0-3.1,0.6-6.1,1.8-9c1.2-2.7,2.8-5.2,4.9-7.3c2.1-2.1,4.6-3.8,7.3-4.9c1.6-0.7,3.3-1.2,5-1.5c-1,2.7-1.5,5.6-1.5,8.6
+					c0,2.4,0.3,4.7,1,7c0.6-0.4,1.2-0.7,1.9-0.9c-0.5-2-0.8-4-0.8-6.1c0-3.1,0.6-6,1.8-8.8c0.5,0,1.1-0.1,1.6-0.1
+					c3.1,0,6.1,0.6,9,1.8c1.3,0.6,2.6,1.2,3.8,2c0.2-0.3,0.5-0.6,0.8-0.9c0.2-0.2,0.4-0.4,0.7-0.6c-1.4-0.9-2.9-1.8-4.4-2.4
+					c-3.1-1.3-6.4-2-9.8-2c-0.2,0-0.4,0-0.6,0c1.1-2,2.4-3.8,4-5.3c2.1-2.1,4.6-3.8,7.3-4.9c2.8-1.2,5.9-1.8,9-1.8
+					c3.1,0,6.1,0.6,9,1.8c2.7,1.2,5.2,2.8,7.3,4.9c1.6,1.6,2.9,3.4,4,5.4c-0.3,0-0.7,0-1,0c-3.4,0-6.7,0.7-9.8,2
+					c-1.5,0.7-3,1.5-4.4,2.4c0.2,0.2,0.5,0.4,0.7,0.6c0.3,0.3,0.5,0.6,0.8,0.9c1.2-0.8,2.4-1.5,3.8-2c2.8-1.2,5.9-1.8,9-1.8
+					c0.7,0,1.3,0,2,0.1c1.2,2.8,1.7,5.8,1.7,8.8c0,2.1-0.3,4.2-0.8,6.2c0.7,0.2,1.3,0.6,1.9,1c0.7-2.3,1-4.7,1-7.2
+					c0-2.9-0.5-5.8-1.5-8.5c1.6,0.3,3.1,0.8,4.6,1.4c2.7,1.2,5.2,2.8,7.3,4.9c2.1,2.1,3.8,4.6,4.9,7.3c1.2,2.8,1.8,5.9,1.8,9
+					S281.9,461.9,280.7,464.7z"/>
 			</g>
 			<path id="MESG" class="st6" d="M218.2,449.9c-0.3-0.3-0.7-0.5-1.2-0.5c-0.6,0-1,0.3-1.4,0.8l-6.9,10.3l-6.8-10.3
 				c-0.2-0.2-0.4-0.4-0.6-0.6c-0.3-0.1-0.5-0.2-0.8-0.2c-0.5,0-0.9,0.2-1.2,0.5s-0.5,0.7-0.5,1.2V469c0,0.5,0.1,0.9,0.4,1.2
@@ -3584,14 +3601,16 @@ AAAAAABOx/8vwAA2RWQi68HVtAAAAABJRU5ErkJggg==" transform="matrix(0.2381 0 0 0.237
 					c0,0.6-0.5,1.1-1.1,1.1H222.1z"/>
 				<g id="Shadow-inside_1_">
 					<g>
-						<defs>
-							<path id="SVGID_1_" d="M257.8,646.8h-35.7c-0.9,0-1.7-0.8-1.7-1.7v-35.7c0-0.9,0.8-1.7,1.7-1.7h35.7c0.9,0,1.7,0.8,1.7,1.7
-								V645C259.5,646,258.8,646.8,257.8,646.8z"/>
-						</defs>
-						<clipPath id="SVGID_2_">
-							<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-						</clipPath>
-						<polygon class="st18" points="259.5,607.6 220.4,646.8 259.5,646.8 						"/>
+						<g>
+							<defs>
+								<path id="SVGID_3_" d="M257.8,646.8h-35.7c-0.9,0-1.7-0.8-1.7-1.7v-35.7c0-0.9,0.8-1.7,1.7-1.7h35.7c0.9,0,1.7,0.8,1.7,1.7
+									V645C259.5,646,258.8,646.8,257.8,646.8z"/>
+							</defs>
+							<clipPath id="SVGID_4_">
+								<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+							</clipPath>
+							<polygon class="st18" points="259.5,607.6 220.4,646.8 259.5,646.8 							"/>
+						</g>
 					</g>
 				</g>
 				<path id="Code" class="st6" d="M231.6,634.2c0.1,0.1,0.2,0.2,0.2,0.3v0.9c0,0.1-0.1,0.3-0.2,0.3l-4.4,2.2l4.4,2.2
