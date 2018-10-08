@@ -90,6 +90,6 @@
 </template>
 
 <style scoped>
-.st0{fill:#251440;}
-.st1{opacity:0.4;fill:#251440;}
+.st0{fill:#491e8c;}
+.st1{opacity:0.4;fill:#491e8c;}
 </style>
