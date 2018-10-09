@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/pwa": "^2.0.8",
-    "axios": "^0.18.0",
-    "nuxt": "^1.0.0",
-    "vuetrend": "^0.3.2"
+    "@nuxtjs/pwa": "^2.5.0",
+    "nuxt": "^1.4.2",
+    "vue-tree-halower": "^1.7.3"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.6",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.7.1",
+    "vue": "^2.5.17"
   }
 }

@@ -3,16 +3,16 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'MESG - Build applications connected to Anything',
+    title: 'MESG - Build applications connecting any technologies',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'MESG is an open-source technology-agnostic framework for developing service-oriented applications.' },
+      { hid: 'description', name: 'description', content: 'Automate and expand business functions through a decentralized reward-driven ecosystem.' },
       { hid: 'og:image:height', property: 'og:image:height', content: '1257' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2400' },
       { hid: 'og:image', property: 'og:image', content: 'https://mesg.com/og-image.jpg' },
-      { hid: 'og:title', property: 'og:title', content: 'MESG - Build applications connected to Anything' },
-      { hid: 'og:description', property: "og:description", content: "MESG is an open-source technology-agnostic framework for developing service-oriented applications." },
+      { hid: 'og:title', property: 'og:title', content: 'MESG - Build applications connecting any technologies' },
+      { hid: 'og:description', property: "og:description", content: "Automate and expand business functions through a decentralized reward-driven ecosystem." },
       { hid: 'og:url', property: 'og:url', content: 'https://mesg.com/' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'MESG' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -25,21 +25,16 @@ module.exports = {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Jura' }
-    ],
-    script: [
-      { src: "https://buttons.github.io/buttons.js" }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity: 'sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin: 'anonymous' }
     ]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: 'rgba(20, 9, 48, 1)' },
-  env: {
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN
-  },
+  loading: { color: '#491e8c' },
   manifest: {
-    theme_color: 'rgba(20, 9, 48, 1)'
+    theme_color: '#491e8c'
   },
   modules: [
     '@nuxtjs/pwa',

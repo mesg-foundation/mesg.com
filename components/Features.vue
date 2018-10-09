@@ -1,148 +1,82 @@
 <template>
   <section>
-    <div class="container">
-      <div class="marging">
-        <h2>The right tool for all your needs</h2>
-        <p>
-          With MESG, you can create an application connected to any technology you’d like,<br/>
-          from traditional web services to Blockchain technologies.
-        </p>
+  <div class="container-parent">
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaConnection />
       </div>
-
-      <div class="features">
-        <select v-model="currentFeature">
-          <option
-            v-for="(feature, i) in features" :key="i"
-            :value="feature">
-            {{ feature.title }}
-          </option>
-        </select>
-        <aside>
-          <nav>
-            <a
-              v-for="(feature, i) in features" :key="i"
-              class="button hover"
-              :class="extraClass(feature)"
-              @click="currentFeature = feature">
-              {{ feature.title }}
-              <span>▶</span>
-            </a>
-          </nav>
-        </aside>
-        <main class="shadow light">
-          <h3>{{ currentFeature.title }}</h3>
-          <p v-html="currentFeature.description"></p>
-          <div class="actions">
-            <a href="https://docs.mesg.com" class="button button--success">
-              Get started →
-            </a>
-          </div>
-        </main>
+      <div half flex column justify-center>
+        <h2>Connect anything</h2>
+        <p>Build applications that easily connect any technologies together, including <strong>any</strong> blockchains or web APIs. Imagine the possibilities: any technology connecting to anything else with data through a decentralized network. There has never been a solution quite like this before.</p>
       </div>
     </div>
+    <div class="container-child" flex row space-between>
+      <div half flex column justify-center>
+        <h2>Supercharge existing apps</h2>
+        <p>
+          <strong>By connecting your existing app to MESG Core, your app accesses leading-edge technologies to deliver excellent user experiences.</strong>
+          <br>
+          <br>
+          Existing blockchain DApp can easily be connected to the MESG Network, which means you can now give any DApp advanced functionalities such as email notifications, payment confirmations, or literally any other third party technology, including any blockchains or Web APIs.
+        </p>
+      </div>
+      <div half flex column justify-center align-center>
+        <SchemaApps />
+      </div>
+    </div>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaNetwork />
+      </div>
+      <div half flex column justify-center>
+        <h2>Grow your network</h2>
+        <p>
+          <strong>Discover the power of a decentralized network.</strong>
+          <br>
+          <br>
+          Once deployed, apps live on the Network, so you won’t need to run a server to keep your app or business running.
+          <br>
+          <br>
+          Through the Network, you’ll have access to all other previously-connected technologies or industries, giving your app or business superpowers.
+          <br>
+          <br>
+          <strong>Now your apps or business can be truly serverless.</strong>
+        </p>
+      </div>
+    </div>
+    <div class="container-child" flex row space-between>
+      <div half flex column justify-center>
+        <h2>Generate income while accelerating your productivity</h2>
+        <p>
+          The MESG economy is fueled by the sharing and reuse of code. Services and Applications are shared and reused through an open marketplace, expediting the development process.
+          <br><br>
+          You can create residual income by building Services and Applications, or simply by participating in the network. Creators of apps can choose how much each actor in the network, including the creator themselves, is paid for their participation. This creates a value-driven economy and community-driven governance.
+          <!--
+          TODO:
+          <br><br>
+          <strong>For more information on how you can start participating in the network today, click here.</strong>
+          -->
+        </p>
+      </div>
+      <div half flex column justify-center align-center>
+        <SchemaIncome />
+      </div>
+    </div>
+  </div>
   </section>
 </template>
 
 <script>
-const features = require("~/assets/features")
+import SchemaConnection from '~/components/SchemaConnection'
+import SchemaApps from '~/components/SchemaApps'
+import SchemaNetwork from '~/components/SchemaNetwork'
+import SchemaIncome from '~/components/SchemaIncome'
 export default {
-  data () {
-    return {
-      currentFeature: features[0]
-    }
-  },
-  computed: {
-    features() { return features }
-  },
-  methods: {
-    extraClass(feature) {
-      return {
-        "shadow": this.currentFeature === feature,
-        "shadow--soft": this.currentFeature !== feature
-      }
-    }
+  components: {
+    SchemaConnection,
+    SchemaApps,
+    SchemaNetwork,
+    SchemaIncome
   }
 }
 </script>
-
-<style scoped>
-  .marging {
-    margin: 0 20px;
-  }
-  .container {
-    padding: 0
-  }
-  .features {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    flex-wrap: wrap;
-  }
-
-  aside {
-    margin: 20px;
-    max-width: 100%;
-    width: 280px;
-  }
-
-  select {
-    display: none;
-    width: 750px;
-    max-width: 100%;
-    margin: 20px;
-  }
-
-  aside a {
-    display: block;
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  aside a span {
-    transition: all 300ms;
-    color: rgba(0,0,0,.1);
-  }
-
-  aside a:hover span {
-    transform: translateX(2px);
-  }
-
-  main {
-    margin: 20px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 2px;
-    width: 720px
-  }
-
-  main h3 {
-    padding: 20px;
-  }
-
-  main p {
-    flex: 1;
-    padding: 20px;
-    text-align: justify;
-  }
-
-  .actions {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-  }
-  
-  @media only screen and (max-width: 1079px) {
-    aside {
-      display: none;
-    }
-    select {
-      display: block;
-    }
-    main {
-      width: 750px;
-    }
-  }
-</style>
