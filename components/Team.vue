@@ -67,12 +67,7 @@ export default {
             { type: "twitter", link: "https://twitter.com/ilgooz" },
             { type: "github", link: "https://github.com/ilgooz" }
           ] }
-        /*].sort((a, b) => a.name.localeCompare(b.name)),
-        ...[
-          { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: require("~/assets/Team/MESG-Join.jpg"), socialNetworks: [
-            { type: "mail", link: "https://goo.gl/forms/ifXyNfaQn8VC7pfu1" }
-          ] }
-        ]*/
+        ]
       ]
     }
   }
