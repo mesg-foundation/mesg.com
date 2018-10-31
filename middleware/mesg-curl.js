@@ -7,6 +7,7 @@ const message = `
 ╚═╝     ╚═╝╚══════╝╚══════╝ ╚═════╝ 
 
 Website: https://mesg.com
+Forum: https://forum.mesg.com
 Documentation: https://docs.mesg.com
 Github: https://github.com/mesg-foundation
 
