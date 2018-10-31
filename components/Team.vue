@@ -44,18 +44,8 @@ export default {
           ] }
         ],
         ...[
-          { name: "Emmanuel Drouin", role: "Art Director", pictureUrl: require("~/assets/Team/MESG-Emmanuel.jpg"), socialNetworks: [
-            { type: "twitter", link: "https://twitter.com/graphicSepion" },
-            { type: "linkedin", link: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/" }
-          ] },
-          { name: "Hubert Krauze", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team-Default.jpg"), socialNetworks: [
-            { type: "twitter", link: "https://twitter.com/krhubert" },
-            { type: "linkedin", link: "https://www.linkedin.com/in/hubert-krauze-67a6389b/" },
-            { type: "github", link: "https://github.com/krhubert" }
-          ] },
-          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Team-Default.jpg"), socialNetworks: [
-            { type: "twitter", link: "https://twitter.com/ilgooz" },
-            { type: "github", link: "https://github.com/ilgooz" }
+          { name: "Adriaan Du Toit", role: "Operations Manager", pictureUrl: require("~/assets/Team/MESG-Adriaan.jpg"), socialNetworks: [
+            { type: "linkedin", link: "https://www.linkedin.com/in/adriaandt/" }
           ] },
           { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: require("~/assets/Team/MESG-Janie.jpg"), socialNetworks: [
             { type: "telegram", link: "https://telegram.me/janielim" },
@@ -65,13 +55,24 @@ export default {
           { name: "Will Morgan", role: "Executive Brand Manager", pictureUrl: require("~/assets/Team/MESG-Will.jpg"), socialNetworks: [
             { type: "twitter", link: "https://twitter.com/dwilliamsmorgan" },
             { type: "linkedin", link: "https://www.linkedin.com/in/will-morgan-02a18326/" }
+          ] },
+          { name: "Emmanuel Drouin", role: "UI / UX Designer", pictureUrl: require("~/assets/Team/MESG-Emmanuel.jpg"), socialNetworks: [
+            { type: "linkedin", link: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/" }
+          ] },
+          { name: "Hubert Krauze", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Hubert.jpg"), socialNetworks: [
+            { type: "linkedin", link: "https://www.linkedin.com/in/hubert-krauze-67a6389b/" },
+            { type: "github", link: "https://github.com/krhubert" }
+          ] },
+          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Ilker.jpg"), socialNetworks: [
+            { type: "twitter", link: "https://twitter.com/ilgooz" },
+            { type: "github", link: "https://github.com/ilgooz" }
           ] }
-        ].sort((a, b) => a.name.localeCompare(b.name)),
+        /*].sort((a, b) => a.name.localeCompare(b.name)),
         ...[
           { name: "Join the MESG Team", role: "Feel free to send us your resume", pictureUrl: require("~/assets/Team/MESG-Join.jpg"), socialNetworks: [
             { type: "mail", link: "https://goo.gl/forms/ifXyNfaQn8VC7pfu1" }
           ] }
-        ]
+        ]*/
       ]
     }
   }
