@@ -5,11 +5,9 @@ services:
     build: ./
     restart: always
     environment:
-      - VIRTUAL_HOST=test.mesg.com
-      - LETSENCRYPT_HOST=test.mesg.com
+      - VIRTUAL_HOST=mesg.com
+      - LETSENCRYPT_HOST=mesg.com
       - LETSENCRYPT_EMAIL=admin@mesg.com
-      # - VIRTUAL_PROTO=https
-      # - VIRTUAL_PORT=443
   nginx-proxy:
     image: jwilder/nginx-proxy
     restart: always
