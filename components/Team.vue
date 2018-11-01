@@ -44,7 +44,7 @@ export default {
           ] }
         ],
         ...[
-          { name: "Adriaan Du Toit", role: "Operations Manager", pictureUrl: require("~/assets/Team/MESG-Adriaan.jpg"), socialNetworks: [
+          { name: "Adriaan Du Toit", role: "Head of Operations", pictureUrl: require("~/assets/Team/MESG-Adriaan.jpg"), socialNetworks: [
             { type: "linkedin", link: "https://www.linkedin.com/in/adriaandt/" }
           ] },
           { name: "Janie Lim", role: "Chief Evangelist", pictureUrl: require("~/assets/Team/MESG-Janie.jpg"), socialNetworks: [
