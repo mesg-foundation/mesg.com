@@ -12,3 +12,5 @@ dist
 
 .envrc
 **/.DS_Store
+
+certs/
