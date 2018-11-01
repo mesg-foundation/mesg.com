@@ -11,7 +11,8 @@ Forum: https://forum.mesg.com
 Documentation: https://docs.mesg.com
 Github: https://github.com/mesg-foundation
 
-Install the core: \`bash <(curl -s https://mesg.com/install)\`
+Install the core by executing:
+bash <(curl -s https://mesg.com/install)
 
 HAPPY CODING :)
 `
