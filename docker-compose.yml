@@ -8,17 +8,23 @@ services:
       - VIRTUAL_HOST=mesg.com
       - LETSENCRYPT_HOST=mesg.com
       - LETSENCRYPT_EMAIL=admin@mesg.com
+  curl:
+    build: ./curl
+    restart: always
   nginx-proxy:
     image: jwilder/nginx-proxy
     restart: always
     ports:
       - "80:80"
       - "443:443"
+    environment:
+      - ENABLE_IPV6=true
     volumes:
       - ./certs:/etc/nginx/certs:ro
       - /etc/nginx/vhost.d
       - /usr/share/nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./nginxvhost:/etc/nginx/vhost.d
     labels:
       - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
   letsencrypt-nginx-proxy-companion:
