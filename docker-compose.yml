@@ -5,12 +5,13 @@ services:
     build: ./
     restart: always
     environment:
-      - VIRTUAL_HOST=mesg.com
-      - LETSENCRYPT_HOST=mesg.com
+      - VIRTUAL_HOST=test.mesg.com
+      - LETSENCRYPT_HOST=test.mesg.com
       - LETSENCRYPT_EMAIL=admin@mesg.com
   curl:
     build: ./curl
     restart: always
+    container_name: curl
   nginx-proxy:
     image: jwilder/nginx-proxy
     restart: always
@@ -19,6 +20,7 @@ services:
       - "443:443"
     environment:
       - ENABLE_IPV6=true
+      - HTTPS_METHOD=noredirect
     volumes:
       - ./certs:/etc/nginx/certs:ro
       - /etc/nginx/vhost.d
