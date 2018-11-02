@@ -1,0 +1,7 @@
+if ($http_user_agent ~* "curl.*") {
+  proxy_pass http://curl:8080;
+  break;
+}
+if ($https != "on") {
+  return 301 https://$host$request_uri;
+}
