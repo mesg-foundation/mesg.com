@@ -1,20 +1,5 @@
 const message = `
-███╗   ███╗███████╗███████╗ ██████╗ 
-████╗ ████║██╔════╝██╔════╝██╔════╝ 
-██╔████╔██║█████╗  ███████╗██║  ███╗
-██║╚██╔╝██║██╔══╝  ╚════██║██║   ██║
-██║ ╚═╝ ██║███████╗███████║╚██████╔╝
-╚═╝     ╚═╝╚══════╝╚══════╝ ╚═════╝ 
-
-Website: https://mesg.com
-Forum: https://forum.mesg.com
-Documentation: https://docs.mesg.com
-Github: https://github.com/mesg-foundation
-
-Install the core by executing:
-bash <(curl -s https://mesg.com/install)
-
-HAPPY CODING :)
+WRONG
 `
 
 export default function ({ req, res }) {
