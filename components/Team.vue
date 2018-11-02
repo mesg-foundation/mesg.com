@@ -63,8 +63,9 @@ export default {
             { type: "linkedin", link: "https://www.linkedin.com/in/hubert-krauze-67a6389b/" },
             { type: "github", link: "https://github.com/krhubert" }
           ] },
-          { name: "Ilker Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Ilker.jpg"), socialNetworks: [
+          { name: "İlker Göktuğ Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Ilker.jpg"), socialNetworks: [
             { type: "twitter", link: "https://twitter.com/ilgooz" },
+            { type: "linkedin", link: "https://www.linkedin.com/in/ilker-goktug-ozturk/" },
             { type: "github", link: "https://github.com/ilgooz" }
           ] }
         ]
