@@ -12,7 +12,6 @@ services:
   curl:
     build: ./curl
     restart: always
-    container_name: curl
   nginx-proxy:
     image: jwilder/nginx-proxy
     restart: always
@@ -26,7 +25,7 @@ services:
       - /etc/nginx/vhost.d
       - /usr/share/nginx/html
       - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./nginxvhost:/etc/nginx/vhost.d:ro
+      - ./nginxvhost:/etc/nginx/vhost.d
     labels:
       - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
   letsencrypt-nginx-proxy-companion:
