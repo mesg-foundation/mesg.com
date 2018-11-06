@@ -2,36 +2,23 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row space-between column-reverse-responsive align-center>
-      <div half>
-        <nav flex row>
-          <span flex column align-center>
-            <IconDevelopers mb1 />
-            Developers
-          </span>
-          <span flex column align-center>
-            <IconEnterprises mb1 />
-            Enterprises
-          </span>
-          <span flex column align-center mb0>
-            <IconEntrepreneurs mb1 />
-            Entrepreneurs
-          </span>
-          <span flex column align-center mb0>
-            <IconIncubators mb1 />
-            Incubators
-          </span>
-        </nav>
+      <div half flex column justify-center align-center>
+        <SchemaBusinessIntegration mb2/>
+        <p class="subtitle">
+          *MESG is not associated with or sponsored by these companies.
+          Each trademarked logo used in this example is the property of their respective owners.
+        </p>
       </div>
       <div half>
-        <h2>An ultra-efficient solution built for you</h2>
+        <h2>Business integration made simple</h2>
         <p>
-          <strong>MESG is fueled by a single vision: to create a building platform powered by automation that is infinitely compatible and massively efficient.</strong>
+          MESG has a single vision: To become the universally-used platform for connecting traditional technology to trustless systems.
           <br>
           <br>
-          The MESG infrastructure is a combination of best processes that deliver power and efficiency: an open source infrastructure featuring event-driven architecture for building businesses and apps connecting technologies through a decentralized Core.
+          The MESG infrastructure allows your business to <strong>connect to any technology</strong> which sends or receives data, regardless of the programming language.
           <br>
           <br>
-          It gives developers and entrepreneurs complete freedom to own their ideas, plus the flexibility to implement them when and how they want to, all while getting rewarded for their participation in the network.
+          It’s free to sign up, easy to use, <strong>works with your existing software stack</strong>, and can cut development & maintenance costs by 50% or more.
         </p>
       </div>
     </div>
@@ -40,49 +27,20 @@
 </template>
 
 <script>
-import IconDevelopers from '~/components/IconDevelopers'
-import IconEnterprises from '~/components/IconEnterprises'
-import IconEntrepreneurs from '~/components/IconEntrepreneurs'
-import IconIncubators from '~/components/IconIncubators'
+import SchemaBusinessIntegration from '~/components/SchemaBusinessIntegration'
 export default {
   components: {
-    IconDevelopers,
-    IconEnterprises,
-    IconEntrepreneurs,
-    IconIncubators
+    SchemaBusinessIntegration
   }
 }
 </script>
 
 <style scoped>
-span {
-  font-family: Quicksand;
-  font-size: 1.4em;
-  text-decoration: none;
-  color: #9452ff;
-  color: var(--lighter-purple);
-  width: 50%;
-  margin-bottom: 2.4em;
+svg {
+  width: 75%;
+  max-width: 75%;
 }
-@media only screen and (max-width: 768px) {
-  span {
-    margin-bottom: 0;
-  }
-  svg {
-    margin-top: 2.4em;
-  }
+.subtitle {
+  text-align: center;
 }
-@media only screen and (max-width: 320px) {
-  span {
-    width: 100%;
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 414px) {
-  span {
-    margin-bottom: 0;
-  }
-}
-
-
 </style>

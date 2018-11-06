@@ -3,9 +3,12 @@
   <div class="container-parent">
       <div class="container-child" flex row space-between align-center>
         <div half flex column justify-center align-center>
-        <h2>Join our community</h2>
-        <p mb2>MESG is fueled by participation and is truly community-driven.
-          Take the reigns: building is in your hands. Start by building applications, connecting businesses, or contributing to the community.</p>
+        <h2>Start to build now</h2>
+        <p mb2>
+          MESG is community-driven. Take the reigns: building is in your hands.
+          To get started, open your terminal and run:
+
+        </p>
           <nav flex>
             <Button href="https://docs.mesg.com/" target="_blank" purple><i class="fas fa-code"></i> Developers</Button>
           </nav>
@@ -13,8 +16,10 @@
         <div class="line-separator" flex column justify-center align-center>
         </div>
         <div half flex column justify-center align-center>
-        <h2>Get involved today</h2>
-        <p mb2>Find out how you can get involved and start benefiting from this massively powerful tool today.</p>
+        <h2>Start optimizing today</h2>
+        <p mb2>
+          Find out how you can start automating, streamlining and expanding your business today with MESG.
+        </p>
           <nav flex>
             <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary><i class="fas fa-chart-line"></i> Business</Button>
           </nav>
