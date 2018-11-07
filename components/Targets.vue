@@ -5,7 +5,7 @@
       <div half flex column justify-center align-center>
         <SchemaBusinessIntegration mb2/>
         <p class="subtitle">
-          *MESG is not associated with or sponsored by these companies.
+          *MESG is not associated with or sponsored by these companies.<br>
           Each trademarked logo used in this example is the property of their respective owners.
         </p>
       </div>
@@ -42,5 +42,7 @@ svg {
 }
 .subtitle {
   text-align: center;
+  font-size: 0.6em;
+  opacity: 0.65;
 }
 </style>
