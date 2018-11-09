@@ -1,17 +1,38 @@
 [{
-  "releasedAt": "June 2018",
-  "title": "Core Launched",
-  "description": "Create your services and connect them together with your application through a single connection to Core, allowing Core to handle all communications and interoperability with any technology."
+  "releasedAt": "2018",
+  "Q": "Q4",
+  "user": "+5 partners using MESG",
+  "title": "MESG Beta Network",
+  "b1": "Businesses become easily scalable",
+  "b2": "Partners transition into Network users"
 }, {
-  "releasedAt": "Q3 2018",
-  "title": "Rapid Deployment",
-  "description": "No need to code your application anymore, just send a list of events with corresponding tasks within a simple configuration file to Core which will then execute tasks on your application’s behalf."
+  "releasedAt": "2019",
+  "Q": "Q2",
+  "user": "+10 partners using MESG",
+  "title": "Private Sale",
+  "b1": "Allows early adopters to participate in the economy"
 }, {
-  "releasedAt": "Q4 2018",
-  "title": "Beta Network",
-  "description": "The beta decentralized Network means no coding or servers are necessary to run your applications. Connect thousands of services or applications from our shared repository."
+  "releasedAt": ".",
+  "title": "Test Net",
+  "b1": "Enables the use of the utility token",
+  "b2": "Launch of the MESG Token economy"
 }, {
-  "releasedAt": "Q3 2019",
-  "title": "Main Network",
-  "description": "MESG launches its own blockchain Network providing for full scalability and a cheaper and faster user experience. The main network will host the full functionality of the value-driven open market for the sharing of services."
+  "releasedAt": ".",
+  "title": "Release of ERC 20",
+  "b1": "Enables Test Net access"
+}, {
+  "releasedAt": ".",
+  "Q": "Q3",
+  "user": "+10 partners using MESG",
+  "title": "Long-term public token sale",
+  "b1": "Listing on exchanges",
+  "b2": "Enables access to the Test Network"
+}, {
+  "releasedAt": "2020",
+  "Q": "Q1",
+  "user": "+25 partners using MESG",
+  "title": "Public Network",
+  "b1": "Release of native MESG Token",
+  "b2": "Self-regulating ecosystem consistently increasing the value of the MESG Token",
+  "b3": "ERC20 tokens converted to MESG Tokens"
 }]

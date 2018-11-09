@@ -1,17 +1,32 @@
 <template>
   <section>
-    <div class="container">
-      <h2>Roadmap</h2>
-      <ul class="timeline">
-        <li v-for="(item, i) in roadmap" :key="i">
-          <span class="timeline-date">{{ item.releasedAt }}</span>
-          <div class="timeline-content">
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.description }}</p>
+    <div class="container-parent">
+      <div class="container-child" flex column align-center>
+        <ul class="timeline" flex column justify-center>
+          <li v-for="(item, i) in roadmap" :key="i">
+            <div flex row align-top>
+              <span flex column class="timeline-date">{{ item.releasedAt }}
+              </span>
+              <p class="Q" flex column justify-center align-center>{{ item.Q }}
+              </p>
+              <div class="timeline-content" flex column>
+                <p class="user" mb1>{{ item.user }}</p>
+                <h4 mb1>{{ item.title }}</h4>
+                <p>{{ item.b1 }}</p>
+                <p>{{ item.b2 }}</p>
+                <p>{{ item.b3 }}</p>
+              </div>
+            </div>
+          </li>
+          <div flex column class="timeline">
+            <div class="arrival">
+              <h4 mb1 class="titlefinal">MESG Enterprise Solutions</h4>
+              <p class="final">A profit-driven subsidiary of the MESG Foundation</p>
+              <p class="final">Delivering the global standard for the enterprise adoption of decentralized technology</p>
+            </div>
           </div>
-        </li>
-      </ul>
-      <nuxt-link class="button hover button--success" to="/mission">Check out our mission →</nuxt-link>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
@@ -26,30 +41,98 @@ export default {
 </script>
 
 <style scoped>
-.timeline {
-	list-style: none;
+ul {
+  list-style: none;
   padding: 0;
+  width: 100%;
+  max-width: 720px;
+  overflow: hidden;
+  position: relative;
 }
 
-.timeline > li {
-	margin-bottom: 60px;
+.Q {
+  opacity:1;
+  font-family: Quicksand;
+  font-style: medium;
+  font-size: 1.6em;
+  color:#ffa744;
+  color:var(--Orange-cta);
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  background-color: var(--white-content);
+  border-radius: 50%;
 }
 
-li:last-child {
-  margin-bottom: 0px;
+.timeline-date {
+  font-family: Quicksand;
+  font-style: medium;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-size: 1.6em;
+  color:#9452ff;
+  color:var(--lighter-purple);
+  width: 30%;
+  float: left;
+  text-align: right;
+  padding-right: 2.4em;
 }
 
-.button {
-  margin-top: 2em;
+.timeline-content {
+  width: 60%;
+  float:right;
+  border-left: 1px #9452ff solid;
+  padding-left: 2.4em;
+  padding-bottom: 3.6em;
+}
+.arrival {
+  border-radius: 1em;
+  padding:2.4em;
+  width: 100%;
+  background-color: #ffffff;
+  background-color: var(--white-content);
+}
+.titlefinal {
+  color:#ffa744;
+  color:var(--Orange-cta);
+}
+.final {
+  color:#57577e;
+  color: var(--dark-grey);
+}
+.user{
+  opacity:1;
+  background-color: #ffa744;
+  background-color: var(--Orange-cta);
+  border-radius: 3em;
+  padding: 0.5em 0.5em;
+  width: 60%;
 }
 
-@media only screen and (max-width: 1079px) {
-  .container {
-    width: 770px;
-    max-width: 100%;
+h4 {
+  color:#ffffff;
+  color:var(--white-content);
+}
+
+@media only screen and (max-width: 414px) {
+  .timeline-date {
+    padding-right: 1.2em;
+  }
+  .timeline-content {
+    padding-left: 1.2em;
+    width: 100%;
+  }
+  .arrival {
+    padding:1.2em;
+  }
+  .user {
+    width: 100%;
   }
 }
 
+/*
 @media screen and (min-width: 840px) {
   .timeline > li {
     overflow: hidden;
@@ -89,5 +172,5 @@ li:last-child {
   .timeline-content p {
     margin-bottom: 1.5em;
   }
-}
+}*/
 </style>
