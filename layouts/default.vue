@@ -2,16 +2,16 @@
   <div>
     <style>
     :root {
-      --dark-blue-grey: #251440;
+      --dark-purple: #251440;
       --purple: #491e8c;
       --lighter-purple: #9452ff;
       --lighter-purple-hover: #6F3DBF;
-      --green-cta: #30b24b;
-      --green-cta-hover: #1F8C36;
-      --light-blue-grey: #cac5e4;
-      --pale-grey: #f1f0f8;
-      --pale-white: #dfe1f8;
-      --blanc-background: #ffffff;
+      --Orange-cta: #ffa744;
+      --Orange-cta-hover: #ffa744;
+      --dark-grey: #57577e;
+      --lighter-grey: #d6d0e7;
+      --pale-white: #fafafe;
+      --white-content: #ffffff;
       --animation-speed: 1;
     }
     </style>
@@ -53,7 +53,7 @@ html {
 
 <style>
 /* Text styles */
-h1, h2, h3, h4, p, a, button, label, input, textarea {
+h1, h2, h3, h4, a, button, label, input, textarea {
   font-family: Quicksand;
   font-style: normal;
   font-stretch: normal;
@@ -65,7 +65,7 @@ h1, h2, h3, h4, p, a, button, label, input, textarea {
 h1 {
   font-size: 2.4em;
   font-weight: bold;
-  color: #f1f0f8;
+  color: #ffffff;
   margin-bottom: 1.2em;
 }
 
@@ -80,8 +80,8 @@ h2 {
 h3 {
   font-size: 1.6em;
   font-weight: bold;
-  color: #251440;
-  color: var(--dark-blue-grey);
+  color: #491e8c;
+  color: var(--purple);
   margin-bottom: 1.2em;
 }
 h4 {
@@ -91,10 +91,15 @@ h4 {
   color: var(--purple);
 }
 p {
-  font-size: 1em;
+  font-family: Open Sans;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   font-weight: normal;
-  color: #251440;
-  color: var(--dark-blue-grey);
+  font-size: 1em;
+  color: #57577e;
+  color: var(--dark-grey);
 }
 @media only screen and (max-width: 768px) {
   h1 { font-size: 2.2em;}
@@ -114,19 +119,23 @@ p {
 /* Design */
 .dark {
   background-image: linear-gradient(135deg, #251440 35%, #491e8c 100%);
-  background-image: linear-gradient(135deg, var(--dark-blue-grey) 35%, var(--purple) 100%);
+  background-image: linear-gradient(135deg, var(--dark-purple) 35%, var(--purple) 100%);
 }
 
 .dark h2,
-.dark h3,
+.dark h3 {
+  color: #ffffffff;
+  color: var(--white-content);
+}
 .dark p {
-  color: #f1f0f8;
-  color: var(--pale-grey);
+  opacity: 0.65;
+  color: #ffffffff;
+  color: var(--white-content);
 }
 
 .white {
-  background-color: #f1f0f8;
-  background-color: var(--pale-grey);
+  background-color: #fafafe;
+  background-color: var(--pale-white);
   box-shadow: 0 0 1.2em 1.2em rgba(0, 0, 0, 0.25);
   position: relative;
 }

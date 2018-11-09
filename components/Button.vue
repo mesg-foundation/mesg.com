@@ -50,50 +50,50 @@ a, button {
   padding: 0.5em 1em;
 }
 .btn--small:hover {
-  color: #f1f0f8;
-  color: var(--pale-grey);
+  color: #ffffff;
+  color: var(--white-content);
   transition: 0.4s ease-in-out;
 }
 
 .btn--primary {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  background-color: #30b24b;
-  background-color: var(--green-cta);
+  color: #ffffff;
+  color: var(--white-content);
+  background-color: #ffa744;
+  background-color: var(--Orange-cta);
   opacity:1;
 }
 .btn--primary:hover {
-  background-color: #1F8C36;
-  background-color: var(--green-cta-hover);
+  background-color: #ffa744;
+  background-color: var(--Orange-cta);
   transition: 0.4s ease-in-out;
 }
 
 .btn--purple {
-  color: #f1f0f8;
-  color: var(--pale-grey);
+  color: #ffffff;
+  color: var(--white-content);
   background-color: #9452ff;
   background-color: var(--lighter-purple);
   opacity:1;
 }
 .btn--purple:hover {
-  color: #f1f0f8;
-  color: var(--pale-grey);
+  color: #ffffff;
+  color: var(--white-content);
   background-color: #6F3DBF;
   background-color: var(--lighter-purple-hover);
   transition: 0.4s ease-in-out;
 }
 
 .btn--outline {
-  color: #9452ff;
-  color: var(--lighter-purple);
-  border: solid 0.15em #9452ff;
-  border: solid 0.15em var(--lighter-purple);
+  color: #ffa744;
+  color: var(--Orange-cta);
+  border: solid 0.15em #ffa744;
+  border: solid 0.15em var(--Orange-cta);
 }
 .btn--outline:hover {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  background-color: #9452ff;
-  background-color: var(--lighter-purple);
+  color: #ffffffff;
+  color: var(--white-content);
+  background-color: #ffa744;
+  background-color: var(--Orange-cta);
   transition: 0.4s ease-in-out;
 }
 

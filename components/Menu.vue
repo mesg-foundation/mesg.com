@@ -1,15 +1,16 @@
 <template>
   <nav  hide-responsive>
-    <div class="container" p0 flex row space-between>
+    <div class="container" p0 flex row space-between justify-center align-center>
       <a href="/">
-        <IconBrandmarkWhite class="brandmark" />
+        <MESGLogoHorizontalWhite class="logo" />
       </a>
       <div>
-        <a mr2 href="#overview">Overview</a>
+        <a mr2 href="#team">Team</a>
+        <a mr2 href="#roadmap">Roadmap</a>
         <a mr2 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr2 href="https://docs.mesg.com">Documentation</a>
         <a mr2 href="https://forum.mesg.com">Get Help</a>
-        <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small purple>Get Started</Button>
+        <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small primary>Get Started</Button>
       </div>
     </div>
   </nav>
@@ -17,11 +18,11 @@
 
 <script>
 import Button from '~/components/Button'
-import IconBrandmarkWhite from '~/components/IconBrandmarkWhite'
+import MESGLogoHorizontalWhite from '~/components/MESGLogoHorizontalWhite'
 export default {
   components: {
     Button,
-    IconBrandmarkWhite
+    MESGLogoHorizontalWhite
   }
 }
 </script>
@@ -34,6 +35,8 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: solid 0.025em #491e8c;
+  border-bottom: solid 0.025em var(--purple);
 }
 
 a {
@@ -41,8 +44,8 @@ a {
   font-weight: bold;
   height: 2.4em;
   text-decoration: none;
-  color: #f1f0f8;
-  color: var(--pale-grey);
+  color: #ffffff;
+  color: var(--white-content);
 }
 
 a:hover {
@@ -60,10 +63,11 @@ code {
   text-align: center;
 }
 
-.brandmark {
-  width: 2.4em;
-  max-width: 2.4em;
+.logo {
+  width: 50%;
+  max-width: 100%;
 }
+
 @media only screen and (max-width: 414px) {
   nav {
     width: 100%;

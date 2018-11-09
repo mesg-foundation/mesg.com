@@ -1,24 +1,34 @@
 <template>
   <section>
-    <div class="container-parent">
-      <div class="container-child-title" flex row justify-center align-center>
+    <div class="container-parent" flex row space-between justify-center align-center>
+      <div class="container-child-title" flex justify-center align-center>
           <h2>Our Amazing partners</h2>
       </div>
       <div class="container-child" flex row justify-center align-center>
-        <a href="https://www.amazix.com/" target="blank">
-          <img src="~/assets/Partners/Amazix.png" class="partners" alt="Amazix">
-        </a>
-        <a href="https://blockchainlab.co.in/" target="blank">
-          <img src="~/assets/Partners/Blockchain-lab.png" class="partners" alt="Blockchain-lab">
-        </a>
-        <a href="http://www.kelmanlawkc.com/" target="blank">
-          <img src="~/assets/Partners/Kelman-law-firm.png" class="partners" alt="Kelman-law-firm">
-        </a>
-        <a href="https://wachsman.com/" target="blank">
-          <img src="~/assets/Partners/Wachsman.png" class="partners" alt="Wachsman">
-        </a>
+        <div class="content" half flex row justify-center align-center>
+            <div flex column justify-center align-center>
+              <img src="~/assets/Partners/Yellow-LOGO.png" alt="Yellow">
+            </div>
+            <div class="content-partners" flex column justify-center align-center>
+              <p>
+                Incubated by Yellow.com, a premier blockchain incubator and fund with a track record of success.
+              </p>
+            </div>
+          </div>
+        <div class="separator" flex justify-center align-center>
+        </div>
+        <div half flex row justify-center align-center>
+            <div flex column justify-center align-center>
+              <img src="~/assets/Partners/GSR-1.png" alt="GSR">
+            </div>
+            <div class="content-partners" flex column justify-center align-center>
+              <p>
+                In collaboration with GSR.io, one of the largest cryptocurrency market makers.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
 </template>
 
@@ -28,33 +38,47 @@ h2 {
   margin-bottom: 0;
 }
 img {
-  width: 100%;
-  max-width: 100%;
   padding:2.4em;
 }
-a {
-    margin: 0.6em;
+
+.separator {
+  width: 0.05em;
+  height:100px;
+  border: solid 0.025em #d6d0e7;
+  border: solid 0.025em var(--lighter-grey);
+  margin:2.4em;
 }
-a:hover {
-  background-color: #FFFFFF;
-  background-color: var(--blanc-background);
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
+.content-partners {
+  width: 50%;
+  max-width: 600px;
 }
-.container-parent {
-  padding-top: 0;
-}
+
 .white {
-  box-shadow: 0 1.2em 1.2em 0 rgba(0, 0, 0, 0.25);
+  border-top: solid 0.025em #d6d0e7;
+  border-top: solid 0.025em var(--lighter-grey);
+  box-shadow: none;
 }
+
 @media only screen and (max-width: 1024px) {
-  img {
-    object-fit: contain;
-    padding: 1.2em;
+  .separator {
+    width: 100%;
+    height:0.05em;
+    border: solid 0.025em #d6d0e7;
+    border: solid 0.025em var(--lighter-grey);
+    margin:0;
+  }
+  .content {
+    padding-bottom: 1.8em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .content-partners {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 414px) {
-  a {
-      margin: 0;
+  img {
+    padding:1.8em;
   }
 }
 </style>
