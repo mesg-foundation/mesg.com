@@ -13,6 +13,7 @@
             :name="t.name"
             :pictureUrl="t.pictureUrl"
             :role="t.role"
+            :companies="t.companies"
             :socialNetworks="t.socialNetworks"/>
         </div>
       </div>
@@ -34,7 +35,13 @@ export default {
             { type: "twitter", link: "https://twitter.com/antho1404" },
             { type: "linkedin", link: "https://www.linkedin.com/in/anthony-estebe-aab18831/" },
             { type: "github", link: "https://github.com/antho1404" }
-          ] },
+          ],
+          companies:[
+            { alt: "muute", src: require("~/assets/Company/Schlumberger.png") },
+            { alt: "muute", src: require("~/assets/Company/Schlumberger.png") },
+            { alt: "muute", src: require("~/assets/Company/Schlumberger.png") }
+          ]
+          },
           { name: "Nicolas Mahé", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Nicolas.jpg"), socialNetworks: [
             { type: "linkedin", link: "https://www.linkedin.com/in/nicolas-mahe" },
             { type: "github", link: "https://github.com/NicolasMahe" }

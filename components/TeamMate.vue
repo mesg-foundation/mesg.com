@@ -6,12 +6,13 @@
       <h4>{{name}}</h4>
       <p>{{role}}</p>
       <nav>
-        <a v-if="telegram" :href="telegram.link" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a v-for="company in companies" :key="company"><img :src="company.src"/></a>
+      </nav>      
+        <!--<nav>
         <a v-if="twitter" :href="twitter.link" target="_blank"><i class="fab fa-twitter"></i></a>
         <a v-if="linkedin" :href="linkedin.link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a v-if="github" :href="github.link" target="_blank"><i class="fab fa-github-alt"></i></a>
-        <a v-if="mail" :href="mail.link" target="_blank"><i class="fas fa-envelope"></i></a>
-      </nav>
+        <a v-if="github" :href="github.link" target="_blank"><i class="fab fa-github"></i></a>
+      </nav>-->
     </div>
   </div>
 </template>
@@ -22,12 +23,10 @@ export default {
     pictureUrl: String,
     name: String,
     role: String,
+    companies: Array,
     socialNetworks: Array
   },
   computed: {
-    telegram () {
-      return this.socialNetworks.find(x => x.type === "telegram")
-    },
     twitter () {
       return this.socialNetworks.find(x => x.type === "twitter")
     },
@@ -36,9 +35,6 @@ export default {
     },
     github () {
       return this.socialNetworks.find(x => x.type === "github")
-    },
-    mail () {
-      return this.socialNetworks.find(x => x.type === "mail")
     },
     style () {
       return {
@@ -56,21 +52,33 @@ export default {
   object-fit: contain;
   border-radius: 10px;
   background-color: #ffffff;
-  background-color: var(--blanc-background);
+  background-color: var(--white-content);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.Rectangle-white:hover {
+  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
 }
 .Picture {
   width: 40%;
   height: 160px;
   object-fit: contain;
   border-radius: 10px;
-  background-color: #dfe1f8;
-  background-color: var(--pale-white);
   background-position: center center;
   background-repeat: no-repeat;
   background-size:cover;
   border-top-right-radius: 20% 50%;
   border-bottom-right-radius: 20% 50%;
 }
+.Picture:hover {
+  color: #491e8c;
+  color: var(--purple);
+}
+
+.logo {
+  width: 100%;
+  height: 20px;
+}
+
 .content {
   width: 60%;
   padding: 1.2em;
