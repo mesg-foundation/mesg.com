@@ -1,6 +1,7 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 viewBox="0 0 8022 2114" style="enable-background:new 0 0 8022 2114;" xml:space="preserve">
+
   <g id="Logo">
   	<g id="Wordmark">
   		<path id="M" class="st0" d="M3879.6,387.6c-21.2-20.4-47.2-31.5-78.1-33c-36.8,0-67.7,16.8-92.1,50.4l-454.7,680.2l-449.2-680.5
@@ -36,11 +37,11 @@
   			c72.8-21.8,140.7-53.1,201.4-92.7c36.4-22.7,54.8-55.1,54.8-96.3v-439.5C8021.7,1085.2,8011.2,1058.9,7990.6,1037.5z"/>
   	</g>
   	<g id="Brandmark">
-  		<circle id="Core-1" class="st0" cx="1080" cy="608.3" r="161.3"/>
-  		<circle id="Core-2" class="st0" cx="608.1" cy="951" r="161.3"/>
-  		<circle id="Core-3" class="st0" cx="1551.9" cy="951" r="161.3"/>
-  		<circle id="Core-4" class="st0" cx="788.4" cy="1505.7" r="161.3"/>
-  		<circle id="Core-5" class="st0" cx="1371.6" cy="1505.7" r="161.3"/>
+  		<circle id="Core-1_1_" class="st0" cx="1080" cy="608.3" r="161.3"/>
+  		<circle id="Core-2_1_" class="st0" cx="608.1" cy="951" r="161.3"/>
+  		<circle id="Core-3_1_" class="st0" cx="1551.9" cy="951" r="161.3"/>
+  		<circle id="Core-4_1_" class="st0" cx="788.4" cy="1505.7" r="161.3"/>
+  		<circle id="Core-5_1_" class="st0" cx="1371.6" cy="1505.7" r="161.3"/>
   		<path id="Center" class="st1" d="M1167,1505.7c0-54.6,21.3-106,59.9-144.6c38.6-38.6,90-59.9,144.6-59.9
   			c51.2,0,99.5,18.7,137.1,52.8c34.8-59.7,57.6-127.3,64.8-199.6c-7.1,0.7-14.4,1.1-21.6,1.1c-54.6,0-106-21.3-144.6-59.9
   			s-59.9-90-59.9-144.6c0-54.6,21.3-106,59.9-144.6c12.9-12.9,27.2-23.8,42.5-32.7c-46.8-52.3-104.5-94.6-169.5-123.3
@@ -91,17 +92,6 @@
 </template>
 
 <style scoped>
-.st0{fill:#FFFFFF;}
-.st1{opacity:0.4;fill:#FFFFFF;}
+.st0{fill:#491E8C;}
+.st1{opacity:0.4;fill:#491E8C;}
 </style>
-
-<!--
-<script>
-import Draggable from "gsap/Draggable";
-
-export default {
-  mounted () {
-
-  }
-}
-</script> -->
