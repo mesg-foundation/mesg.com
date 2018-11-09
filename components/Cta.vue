@@ -77,11 +77,17 @@ i {
 .container-content {
   padding: 2.4em;
   width: 50%;
+  height: 350px;
+  max-height: 100%;
   max-width: 720px;
+  background-color: #ffffff;
+  background-color: var(--white-content);
 }
 .container-parent {
   padding:0;
   height: 100%;
+  background-color: #57577e;
+  background-color: var(--dark-grey);
 }
 
 

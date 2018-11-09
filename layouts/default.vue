@@ -62,6 +62,15 @@ h1, h2, h3, h4, a, button, label, input, textarea {
   font-weight: normal;
 }
 
+.link {
+  color: #9452ff;
+  color: var(--lighter-purple);
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 2.4em;
   font-weight: bold;

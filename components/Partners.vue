@@ -11,7 +11,7 @@
             </div>
             <div class="content-partners" flex column justify-center align-center>
               <p>
-                Incubated by Yellow.com, a premier blockchain incubator and fund with a track record of success.
+                Incubated by <a class="link" href="http://yellow.com/" target="_blank">Yellow.com</a>, a premier blockchain incubator and fund with a track record of success.
               </p>
             </div>
           </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="content-partners" flex column justify-center align-center>
               <p>
-                In collaboration with GSR.io, one of the largest cryptocurrency market makers.
+                In collaboration with <a class="link" href="http://www.gsr.io/" target="_blank">GSR.io</a>, one of the largest cryptocurrency market makers.
               </p>
             </div>
           </div>
