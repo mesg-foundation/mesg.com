@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container-parent" flex row space-between justify-center align-center>
-      <div class="container-child-title" flex justify-center align-center>
+      <div class="container-child" flex justify-center align-center>
           <h2>Our Amazing partners</h2>
       </div>
       <div class="container-child" flex row justify-center align-center>
@@ -43,14 +43,17 @@ img {
 
 .separator {
   width: 0.05em;
-  height:100px;
+  height:80px;
   border: solid 0.025em #d6d0e7;
   border: solid 0.025em var(--lighter-grey);
-  margin:2.4em;
+  margin:1.2em;
 }
 .content-partners {
   width: 50%;
   max-width: 600px;
+}
+.container-child {
+  padding: 1.2em;
 }
 
 .white {
