@@ -11,8 +11,7 @@
           <a href="https://docs.mesg.com">Read the documentation</a>
         </div>
       </div>
-      <div class="container-social">
-        <div class="container-child-2" flex row space-between align-center>
+        <div class="container-child" flex row space-between align-center>
           <p class="copyright">
             Copyright MESG Foundation 2018
           </p>
@@ -26,7 +25,6 @@
             <a href="https://www.facebook.com/mesgfoundation/" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
-      </div>
     </div>
   </footer>
 </template>
@@ -44,12 +42,6 @@ export default {
 .container-child {
   border-top: solid 0.05em #d6d0e7;
   border-top: solid 0.05em var(--lighter-grey);
-}
-.container-child-2 {
-  width: 100%;
-  max-width: 1440px;
-  padding: 2.4em;
-  margin: auto;
 }
 
 footer {
