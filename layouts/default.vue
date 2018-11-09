@@ -164,7 +164,9 @@ svg {
 [mb0] { margin-bottom: 0!important; }
 [mb1] { margin-bottom: 1.2em!important; }
 [mb2] { margin-bottom: 2.4em!important; }
+[mr1] { margin-right: 1.2em!important; }
 [mr2] { margin-right: 2.4em!important; }
+
 
 .container-parent {
   width: 100%;

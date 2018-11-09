@@ -1,62 +1,87 @@
 <template>
-  <footer class="white">
-  <div class="container-parent">
-    <div class="container-child">
-      <nav flex row space-between>
-        <div class="footer" flex column hide-responsive>
-          <MESGLogoVerticalPurple class="logo"/>
-        </div>
-        <div class="footer" flex column>
-          <h3>Community</h3>
-          <a href="https://medium.com/mesg"><i class="fab fa-medium-m"></i>Medium</a>
-          <a href="https://github.com/mesg-foundation"><i class="fab fa-github-alt"></i>Github</a>
-          <a href="https://forum.mesg.com/"><i class="fas fa-comments"></i>Forum</a>
-          <a href="https://discord.gg/SaZ5HcE"><i class="fab fa-discord"></i>Discord</a>
-        </div>
-        <div class="footer" flex column>
-          <h3>Follow us</h3>
-          <a href="https://twitter.com/mesgfoundation"><i class="fab fa-twitter"></i>Twitter</a>
-          <a href="https://www.linkedin.com/company/mesg/"><i class="fab fa-linkedin-in"></i>Linkedin</a>
-          <a href="https://www.facebook.com/mesgfoundation/"><i class="fab fa-facebook-f"></i>Facebook</a>
-        </div>
-        <div class="footer" flex column mb0>
-          <h3>Developer Resources</h3>
-          <a href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank">What is MESG? Get started</a>
-          <a href="https://github.com/mesg-foundation/core">Browse our source code on Github</a>
+  <footer>
+    <div class="container-parent">
+      <div class="container-child" flex row space-between align-center>
+        <a href="/">
+          <MESGLogoHorizontalPurple class="logo" />
+        </a>
+        <div>
+          <a mr2 href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank">What is MESG? Get started</a>
+          <a mr2 href="https://github.com/mesg-foundation/core">Browse our source code on Github</a>
           <a href="https://docs.mesg.com">Read the documentation</a>
         </div>
-      </nav>
+      </div>
+      <div class="container-social">
+        <div class="container-child-2" flex row space-between align-center>
+          <p class="copyright">
+            Copyright MESG Foundation 2018
+          </p>
+          <div>
+            <a mr1 href="https://medium.com/mesg" target="_blank"><i class="fab fa-medium-m"></i></a>
+            <a mr1 href="https://github.com/mesg-foundation" target="_blank"><i class="fab fa-github"></i></a>
+            <a mr1 href="https://forum.mesg.com/" target="_blank"><i class="fas fa-comments"></i></a>
+            <a mr1 href="https://discordapp.com/invite/SaZ5HcE" target="_blank"><i class="fab fa-discord"></i></a>
+            <a mr1 href="https://twitter.com/mesgfoundation" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a mr1 href="https://www.linkedin.com/company/mesg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/mesgfoundation/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
   </footer>
 </template>
 
 <script>
-import MESGLogoVerticalPurple from '~/components/MESGLogoVerticalPurple'
+import MESGLogoHorizontalPurple from '~/components/MESGLogoHorizontalPurple'
 export default {
   components: {
-    MESGLogoVerticalPurple
+    MESGLogoHorizontalPurple
   }
 }
 </script>
 
 <style scoped>
+.container-child {
+  border-top: solid 0.05em #d6d0e7;
+  border-top: solid 0.05em var(--lighter-grey);
+}
+.container-child-2 {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2.4em;
+  margin: auto;
+}
+
 footer {
-  border-top: solid 0.05em #cac5e4;
-  border-top: solid 0.05em var(--light-blue-grey);
+  background-color: #fafafe;
+  background-color: var(--pale-white);
 }
 
 .container-parent {
   padding: 0;
 }
+.container-social {
+  border-top: solid 0.05em #d6d0e7;
+  border-top: solid 0.05em var(--lighter-grey);
+  width: 100%;
+  background-color: #ffffff;
+  background-color: var(--white-content);
+}
+
+.copyright {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #57577e;
+  color: var(--dark-grey);
+}
 
 a {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
-  color: #251440;
-  color: var(--dark-blue-grey);
+  height: 2.4em;
   text-decoration: none;
-  margin-bottom: 1em;
+  color: #57577e;
+  color: var(--dark-grey);
 }
 a:hover {
   color: #9452ff;
@@ -64,20 +89,9 @@ a:hover {
   transition: 0.2s ease-in-out;
 }
 
-i {
-  margin-right: 0.6em;
-}
-
-h3 {
-  color: #491e8c;
-  color: var(--purple);
-}
-
 .logo {
-  width: 136px;
-  max-width: 136px;
-  height: 180px;
-  max-height: 180px;
+  width: 50%;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
