@@ -5,8 +5,8 @@
         <MESGLogoHorizontalWhite class="logo" />
       </a>
       <div>
-        <a mr2 href="#team">Team</a>
-        <a mr2 href="#roadmap">Roadmap</a>
+        <nuxt-link mr2 to="/team">Team</nuxt-link>
+        <nuxt-link mr2 to="/roadmap">Roadmap</nuxt-link>
         <a mr2 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
         <a mr2 href="https://docs.mesg.com">Documentation</a>
         <a mr2 href="https://forum.mesg.com">Get Help</a>
