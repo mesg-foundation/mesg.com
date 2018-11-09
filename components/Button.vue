@@ -40,14 +40,14 @@ a, button {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding: 1em 2em;
+  padding: 1em 4em;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn--small {
   border-radius: 1.5em;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.6em;
 }
 .btn--small:hover {
   color: #ffffff;
