@@ -40,6 +40,7 @@ section {
  }
  section {
    padding-top: 0;
+   min-height: 0;
  }
  p {
    font-size: 1.4em;
