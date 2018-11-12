@@ -217,6 +217,7 @@ svg {
   [half] { width: 100%; }
   [mb1] { margin-bottom: 0.6em!important; }
   [mr1] { margin-right: 0.6em!important; }
+  [mr2] { margin-right: 1.2em!important; }
   [hide-responsive] { display: none; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
@@ -235,6 +236,9 @@ svg {
     width: 100%;
     padding: 1.8em;
     padding-bottom: 0;
+  }
+  h1 {
+    margin-bottom:0.6em;
   }
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
