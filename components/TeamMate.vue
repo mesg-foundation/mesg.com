@@ -5,9 +5,12 @@
     <div class="content" flex column>
       <h4>{{name}}</h4>
       <p>{{role}}</p>
+      <div v-if="companies">
+        <div class="Separator-dotted"></div>
+      </div>
       <nav>
-        <a v-for="company in companies" :key="company"><img :src="company.src"/></a>
-      </nav>      
+        <a v-for="company in companies" :key="company"><img :src="company.src" class="logo"/></a>
+      </nav>
         <!--<nav>
         <a v-if="twitter" :href="twitter.link" target="_blank"><i class="fab fa-twitter"></i></a>
         <a v-if="linkedin" :href="linkedin.link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -23,6 +26,7 @@ export default {
     pictureUrl: String,
     name: String,
     role: String,
+    separator: Array,
     companies: Array,
     socialNetworks: Array
   },
@@ -35,6 +39,9 @@ export default {
     },
     github () {
       return this.socialNetworks.find(x => x.type === "github")
+    },
+    Separator () {
+      return this.separator.find(x => x.type === "Separator")
     },
     style () {
       return {
@@ -58,6 +65,8 @@ export default {
 .Rectangle-white:hover {
   box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
 }
+
+
 .Picture {
   width: 40%;
   height: 160px;
@@ -69,14 +78,18 @@ export default {
   border-top-right-radius: 20% 50%;
   border-bottom-right-radius: 20% 50%;
 }
-.Picture:hover {
-  color: #491e8c;
-  color: var(--purple);
-}
+
 
 .logo {
+  max-width: 80px;
+}
+
+.Separator-dotted {
+  border: 0.5px #d6d0e7 dotted;
   width: 100%;
-  height: 20px;
+  height: 0.05em;
+  margin-top:0.6em;
+  margin-bottom: 0.6em;
 }
 
 .content {
@@ -93,9 +106,6 @@ a:hover {
   color: #9452ff;
   color: var(--lighter-purple);
   transition: 0.2s ease-in-out;
-}
-p {
-  margin-bottom: 0.6em;
 }
 
 @media only screen and (max-width: 414px) {
