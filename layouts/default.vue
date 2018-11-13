@@ -170,9 +170,12 @@ svg {
 [half] { width: 600px; }
 [p0] { padding: 0!important; }
 [mt0] { margin-top: 0!important; }
+[mt1] { margin-top: 1.2em!important; }
 [mb0] { margin-bottom: 0!important; }
+[mb05] { margin-bottom: 0.6em!important; }
 [mb1] { margin-bottom: 1.2em!important; }
 [mb2] { margin-bottom: 2.4em!important; }
+[mb3] { margin-bottom: 4.8em!important; }
 [mr1] { margin-right: 1.2em!important; }
 [mr2] { margin-right: 2.4em!important; }
 
@@ -205,6 +208,7 @@ svg {
   }
   [half] { width: calc(50% - 2.4em); }
 }
+
 @media only screen and (max-width: 768px) {
   .container-parent {
     width: 100%;

@@ -1,6 +1,16 @@
 <template>
   <div class="Rectangle-white" flex row space-between align-center>
     <div class="Picture" flex column :style="style">
+      <div class="picture-hover">
+        <nav class="social" flex row justify-center align-center>
+          <a
+            v-for="network in socialNetworks" :key="network"
+            class="social-networks"
+            :href="network.link" target="_blank" flex justify-center align-center>
+            <i class="fab" :class="`fa-${network.icon}`"></i>
+          </a>
+        </nav>
+      </div>
     </div>
     <div class="content" flex column>
       <h4>{{name}}</h4>
@@ -11,11 +21,6 @@
       <nav>
         <a v-for="company in companies" :key="company"><img :src="company.src" class="logo"/></a>
       </nav>
-        <!--<nav>
-        <a v-if="twitter" :href="twitter.link" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a v-if="linkedin" :href="linkedin.link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a v-if="github" :href="github.link" target="_blank"><i class="fab fa-github"></i></a>
-      </nav>-->
     </div>
   </div>
 </template>
@@ -26,23 +31,10 @@ export default {
     pictureUrl: String,
     name: String,
     role: String,
-    separator: Array,
     companies: Array,
     socialNetworks: Array
   },
   computed: {
-    twitter () {
-      return this.socialNetworks.find(x => x.type === "twitter")
-    },
-    linkedin () {
-      return this.socialNetworks.find(x => x.type === "linkedin")
-    },
-    github () {
-      return this.socialNetworks.find(x => x.type === "github")
-    },
-    Separator () {
-      return this.separator.find(x => x.type === "Separator")
-    },
     style () {
       return {
         backgroundImage: `url(${this.pictureUrl})`
@@ -63,11 +55,16 @@ export default {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
 .Rectangle-white:hover {
+  transition: calc(var(--animation-speed) * 0.25s) ease-out;
   box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
 }
 
+.Rectangle-white:hover .picture-hover {
+  display: block;
+}
 
 .Picture {
+  position: relative;
   width: 40%;
   height: 160px;
   object-fit: contain;
@@ -77,11 +74,31 @@ export default {
   background-size:cover;
   border-top-right-radius: 20% 50%;
   border-bottom-right-radius: 20% 50%;
+  overflow: hidden;
 }
 
+.picture-hover {
+  display: none;
+  background: rgba(73,30,140,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: Opac calc(var(--animation-speed) * 0.25s) 1 ease-out;
+}
+@keyframes Opac {
+  from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+}
 
 .logo {
   max-width: 80px;
+  margin-right: 0.6em;
 }
 
 .Separator-dotted {
@@ -96,16 +113,38 @@ export default {
   width: 60%;
   padding: 1.2em;
 }
-a {
-  align-items: center;
-  padding-right: 1em;
-  color: #cac5e4;
-  color: var(--light-blue-grey)
+
+.social {
+  height: 100%;
+  width: 100%;
 }
-a:hover {
+.social-networks {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  color: #57577e;
+  color: var(--dark-grey);
+  height: 36px;
+  width: 36px;
+  background-color: #ffffff;
+  background-color: var(--white-content);
+  border-radius:50%;
+  animation: Bubble calc(var(--animation-speed) * 0.25s) 1 ease-out;
+}
+@keyframes Bubble {
+  from {
+    opacity: 0;
+    transform: scale(0);
+    }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+.social-networks:hover {
   color: #9452ff;
   color: var(--lighter-purple);
-  transition: 0.2s ease-in-out;
+  transition: calc(var(--animation-speed) * 0.2s) linear;
 }
 
 @media only screen and (max-width: 414px) {
