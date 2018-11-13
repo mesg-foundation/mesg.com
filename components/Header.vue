@@ -80,7 +80,7 @@ section {
    align-items: center;
  }
  section {
-   padding-top: 0;
+   padding-top: 3.6em;
  }
  p {
    font-size: 1.4em;
@@ -99,6 +99,9 @@ section {
    }
    .schema {
      min-height: 400px;
+   }
+   section {
+     padding-top:6em;
    }
  }
 
