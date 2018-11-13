@@ -176,6 +176,7 @@ svg {
 [mb1] { margin-bottom: 1.2em!important; }
 [mb2] { margin-bottom: 2.4em!important; }
 [mb3] { margin-bottom: 4.8em!important; }
+[mr05] { margin-right: 0.6em!important; }
 [mr1] { margin-right: 1.2em!important; }
 [mr2] { margin-right: 2.4em!important; }
 

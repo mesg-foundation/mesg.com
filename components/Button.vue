@@ -46,8 +46,8 @@ a, button {
 }
 
 .btn--small {
-  border-radius: 1.5em;
-  padding: 0.5em 1.6em;
+  border-radius: 3em;
+  padding: 0.1em 1.8em;
 }
 .btn--small:hover {
   color: #ffffff;

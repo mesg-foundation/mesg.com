@@ -1,19 +1,19 @@
 <template>
-  <nav  hide-responsive>
-    <div class="container" p0 flex row space-between justify-center align-center>
+  <div>
+    <nav flex row space-between align-center>
       <a href="/">
         <MESGLogoHorizontalWhite class="logo" />
       </a>
-      <div>
-        <nuxt-link mr2 to="/team">Team</nuxt-link>
-        <nuxt-link mr2 to="/roadmap">Roadmap</nuxt-link>
-        <a mr2 href="https://github.com/mesg-foundation/awesome#readme" target="_blank">Marketplace</a>
-        <a mr2 href="https://docs.mesg.com">Documentation</a>
-        <a mr2 href="https://forum.mesg.com">Get Help</a>
+      <div class="menu" hide-responsive flex row space-between align-center>
+        <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
+        <nuxt-link to="/roadmap" class="menu-nav">Roadmap</nuxt-link>
+        <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="menu-nav">Marketplace</a>
+        <a href="https://docs.mesg.com" class="menu-nav">Documentation</a>
+        <a href="https://forum.mesg.com" class="menu-nav" mr05>Get Help</a>
         <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small primary>Get Started</Button>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 
 <script>
@@ -30,22 +30,27 @@ export default {
 
 <style scoped>
 nav {
-  padding: 1.8em 2.4em;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   border-bottom: solid 0.025em #491e8c;
   border-bottom: solid 0.025em var(--purple);
+}
+.menu {
+  height: 40px;
+  padding-right: 1.4em;
 }
 
 a {
   font-size: 1em;
   font-weight: bold;
-  height: 2.4em;
+  height: 40px;
+  line-height: 40px;
   text-decoration: none;
   color: #ffffff;
   color: var(--white-content);
+  padding: 1.4em;
+  box-sizing: content-box;
+  border-bottom: solid 1px transparent;
 }
 
 a:hover {
@@ -54,25 +59,20 @@ a:hover {
   transition: 0.2s ease-in-out;
 }
 
-
-code {
-  display: block;
-  background: black;
-  padding: 0.6em;
-  color: white;
-  text-align: center;
+.menu-nav:hover, .menu-nav.nuxt-link-active {
+  border-bottom-color: var(--lighter-purple);
 }
 
 .logo {
-  width: 50%;
-  max-width: 100%;
+  width: 153px;
+  height: 40px;
 }
 
-@media only screen and (max-width: 414px) {
-  nav {
-    width: 100%;
-    padding: 1.8em;
+@media only screen and (max-width: 1023px) {
+  .menu {
+    display:none;
   }
 }
+
 
 </style>

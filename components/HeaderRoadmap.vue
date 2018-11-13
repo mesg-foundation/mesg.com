@@ -5,7 +5,7 @@
       <header flex row justify-center align-center>
         <div class="content" flex column justify-center align-center>
         <h1>
-          The MESG Team
+          The MESG Roadmap
         </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum quam scelerisque dolor sodales viverra.</p>
       </div>

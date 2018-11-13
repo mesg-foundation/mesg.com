@@ -119,6 +119,7 @@ export default {
   width: 100%;
 }
 .social-networks {
+  text-decoration: none;
   margin-left: 0.4em;
   margin-right: 0.4em;
   color: #57577e;

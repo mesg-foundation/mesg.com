@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <Partners/>
     <div class="container-parent">
       <div class="container-child" flex row column-responsive space-between align-center>
         <div>
@@ -31,9 +32,11 @@
 
 <script>
 import MESGLogoHorizontalPurple from '~/components/MESGLogoHorizontalPurple'
+import Partners from '~/components/Partners'
 export default {
   components: {
-    MESGLogoHorizontalPurple
+    MESGLogoHorizontalPurple,
+    Partners
   }
 }
 </script>
@@ -45,8 +48,11 @@ export default {
 }
 
 footer {
+  position: relative;
   background-color: #fafafe;
   background-color: var(--pale-white);
+  border-top: solid 0.5px #d6d0e7;
+  border-top: solid 0.5px var(--lighter-grey);
 }
 
 .container-parent {
