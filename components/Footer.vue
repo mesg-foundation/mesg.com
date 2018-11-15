@@ -67,6 +67,7 @@ footer {
 }
 
 a {
+  opacity:1;
   width: auto;
   font-size: 1em;
   font-weight: bold;
@@ -76,9 +77,8 @@ a {
   color: var(--dark-grey);
 }
 a:hover {
-  color: #9452ff;
-  color: var(--lighter-purple);
-  transition: 0.2s ease-in-out;
+  opacity:0.8;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 .logo {

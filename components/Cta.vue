@@ -86,8 +86,8 @@ i {
 .container-parent {
   padding:0;
   height: 100%;
-  background-color: #57577e;
-  background-color: var(--dark-grey);
+  background-color: #ffffff;
+  background-color: var(--white-content);
 }
 
 
@@ -103,8 +103,10 @@ i {
     height: 280px;
   }
   .container-content {
+    padding: 4.8em;
     width: 100%;
     max-width: 768px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 414px) {
@@ -116,6 +118,7 @@ i {
   }
   .container-content {
     padding: 1.8em;
+    height: auto;
   }
 }
 </style>

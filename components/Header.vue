@@ -40,6 +40,9 @@ export default {
 
 
 <style scoped>
+.container-parent {
+  z-index:-1;
+}
 
 p {
   font-size: 1.6em;

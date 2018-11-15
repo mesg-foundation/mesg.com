@@ -5,9 +5,9 @@
       --dark-purple: #251440;
       --purple: #491e8c;
       --lighter-purple: #9452ff;
-      --lighter-purple-hover: #6F3DBF;
+      --lighter-purple-hover: #5D28B2;
       --Orange-cta: #ffa744;
-      --Orange-cta-hover: #ffa744;
+      --Orange-cta-hover: #E5963D;
       --dark-grey: #57577e;
       --lighter-grey: #d6d0e7;
       --pale-white: #fafafe;
@@ -68,14 +68,17 @@ h1, h2, h3, h4, a, button, label, input, textarea {
   text-decoration: none;
 }
 .link:hover {
-  text-decoration: underline;
+  color: #5D28B2;
+  color: var(--lighter-purple-hover);
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+  border-bottom: 1px solid;
 }
 
 h1 {
   font-size: 2.4em;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.8em;
 }
 
 h2 {
@@ -83,7 +86,7 @@ h2 {
   font-weight: bold;
   color: #491e8c;
   color: var(--purple);
-  margin-bottom: 1.2em;
+  margin-bottom: 0.8em;
 }
 
 h3 {
@@ -91,7 +94,7 @@ h3 {
   font-weight: bold;
   color: #491e8c;
   color: var(--purple);
-  margin-bottom: 1.2em;
+  margin-bottom: 0.8em;
 }
 h4 {
   font-size: 1.2em;
@@ -164,6 +167,7 @@ svg {
 [justify-center] { justify-content: center; }
 [align-center] { align-items: center; }
 [align-left] { align-items: left; }
+[align-right] { align-items: right; }
 [space-between] { justify-content: space-between; }
 [space-around] { justify-content: space-around; }
 
@@ -209,6 +213,9 @@ svg {
   }
   [half] { width: calc(50% - 2.4em); }
 }
+@media only screen and (max-width: 1023px) {
+[hide-responsive] { display: none; }
+}
 
 @media only screen and (max-width: 768px) {
   .container-parent {
@@ -223,7 +230,6 @@ svg {
   [mb1] { margin-bottom: 0.6em!important; }
   [mr1] { margin-right: 0.6em!important; }
   [mr2] { margin-right: 1.2em!important; }
-  [hide-responsive] { display: none; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
   [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 4.8em;}

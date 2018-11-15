@@ -3,9 +3,7 @@
     type="submit"
     :class="{
       'btn--small': small,
-      'btn--primary': primary,
-      'btn--purple': purple,
-      'btn--outline': outline
+      'btn--primary': primary
     }">
     <slot></slot>
   </button>
@@ -13,9 +11,7 @@
     :href="href"
     :class="{
       'btn--small': small,
-      'btn--primary': primary,
-      'btn--purple': purple,
-      'btn--outline': outline
+      'btn--primary': primary
     }">
     <slot></slot>
   </a>
@@ -52,7 +48,7 @@ a, button {
 .btn--small:hover {
   color: #ffffff;
   color: var(--white-content);
-  transition: 0.4s ease-in-out;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 .btn--primary {
@@ -60,41 +56,11 @@ a, button {
   color: var(--white-content);
   background-color: #ffa744;
   background-color: var(--Orange-cta);
-  opacity:1;
 }
 .btn--primary:hover {
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
-  transition: 0.4s ease-in-out;
-}
-
-.btn--purple {
-  color: #ffffff;
-  color: var(--white-content);
-  background-color: #9452ff;
-  background-color: var(--lighter-purple);
-  opacity:1;
-}
-.btn--purple:hover {
-  color: #ffffff;
-  color: var(--white-content);
-  background-color: #6F3DBF;
-  background-color: var(--lighter-purple-hover);
-  transition: 0.4s ease-in-out;
-}
-
-.btn--outline {
-  color: #ffa744;
-  color: var(--Orange-cta);
-  border: solid 0.15em #ffa744;
-  border: solid 0.15em var(--Orange-cta);
-}
-.btn--outline:hover {
-  color: #ffffffff;
-  color: var(--white-content);
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
-  transition: 0.4s ease-in-out;
+  background-color: #E5963D;
+  background-color: var(--Orange-cta-hover);
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 @media only screen and (max-width: 768px) {
