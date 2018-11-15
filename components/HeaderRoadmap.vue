@@ -7,7 +7,7 @@
         <h1>
           The MESG Roadmap
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum quam scelerisque dolor sodales viverra.</p>
+        <p>Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.</p>
       </div>
       </header>
     </div>
@@ -30,8 +30,9 @@ section {
 }
 .content {
   width: 100%;
-  max-width: 1000px;
+  max-width: 960px;
 }
+
 
 @media only screen and (max-width: 768px) {
  header {

@@ -14,8 +14,12 @@
                   <div class="content" mb05>
                     <p class="user" flex column align-center>{{ quarter.users }}</p>
                     <div v-for="goal in quarter.goals" :key="goal">
-                      <h4 mb1 mt1>{{ goal.title }}</h4>
-                      <p v-for="sub in goal.subgoals" :key="sub" mb05>{{ sub }}</p>
+                      <h4 mb05 mt1>{{ goal.title }}</h4>
+                      <ul class="list">
+                        <li v-for="sub in goal.subgoals" :key="sub" mb05 class="list-content">
+                          {{ sub }}
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -25,9 +29,11 @@
         </ul>
         <div class="solutions" flex column justify-center>
           <div class="arrival">
-            <h4 mb1 class="titlefinal">MESG Enterprise Solutions</h4>
-            <p class="final" mb05>A profit-driven subsidiary of the MESG Foundation</p>
-            <p class="final">Delivering the global standard for the enterprise adoption of decentralized technology</p>
+            <h4 mb05 class="titlefinal">MESG Enterprise Solutions</h4>
+            <ul class="list">
+              <li class="list-final" mb05>A profit-driven subsidiary of the MESG Foundation</li>
+              <li class="list-final">Delivering the global standard for the enterprise adoption of decentralized technology</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -71,7 +77,7 @@ h4 {
 .content {
   position: relative;
   margin-top:-64px;
-  margin-left:1.2em;
+  padding-left:1.2em;
 }
 .quarters {
   width: 85%;
@@ -100,6 +106,50 @@ h4 {
   border-radius: 50%;
   position:relative;
 }
+.list-content {
+  font-family: Open Sans;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-size: 1em;
+  opacity:0.65;
+}
+.list-final {
+  font-family: Open Sans;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-size: 1em;
+  opacity:1;
+  color:#57577e;
+  color: var(--dark-grey);
+}
+
+.list {
+  padding-left: 1.2em;
+  color: #ffffff;
+  color: var(--white-content);
+}
+
+.list li {
+  position: relative;
+}
+
+.list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--lighter-purple);
+}
 
 .solutions {
   width: 100%;
@@ -114,10 +164,6 @@ h4 {
 .titlefinal {
   color:#ffa744;
   color:var(--Orange-cta);
-}
-.final {
-  color:#57577e;
-  color: var(--dark-grey);
 }
 .user {
   opacity:1;
