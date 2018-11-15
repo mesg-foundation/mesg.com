@@ -6,9 +6,9 @@
     <Business id="business" class="white"/>
     <Blockchain id="blockchain" class="dark"/>
     <Cta id="cta" class="white"/>
-    <Partners id="partners" class="white"/>
   </div>
 </template>
+
 
 <script>
 import Header from '~/components/Header'
@@ -17,7 +17,6 @@ import Features from '~/components/Features'
 import Business from '~/components/Business'
 import Blockchain from '~/components/Blockchain'
 import Cta from '~/components/Cta'
-import Partners from '~/components/Partners'
 export default {
   components: {
     Header,
@@ -25,8 +24,7 @@ export default {
     Features,
     Business,
     Blockchain,
-    Cta,
-    Partners
+    Cta
   }
 }
 </script>
