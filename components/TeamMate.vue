@@ -55,7 +55,7 @@ export default {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
 .Rectangle-white:hover {
-  transition: calc(var(--animation-speed) * 0.25s) ease-out;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
   box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,7 +85,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: Opac calc(var(--animation-speed) * 0.25s) 1 ease-out;
+  animation: Opac calc(var(--animation-speed) * 0.1s) 1 ease;
 }
 @keyframes Opac {
   from {
@@ -129,7 +129,7 @@ export default {
   background-color: #ffffff;
   background-color: var(--white-content);
   border-radius:50%;
-  animation: Bubble calc(var(--animation-speed) * 0.25s) 1 ease-out;
+  animation: Bubble calc(var(--animation-speed) * 0.2s) 1 ease-out;
 }
 @keyframes Bubble {
   from {
@@ -143,9 +143,8 @@ export default {
 }
 
 .social-networks:hover {
-  color: #9452ff;
-  color: var(--lighter-purple);
-  transition: calc(var(--animation-speed) * 0.2s) linear;
+  opacity:0.8;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 @media only screen and (max-width: 414px) {

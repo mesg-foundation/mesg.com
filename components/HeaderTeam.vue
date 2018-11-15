@@ -7,7 +7,7 @@
         <h1>
           The MESG Team
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum quam scelerisque dolor sodales viverra.</p>
+        <p>The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.</p>
       </div>
       </header>
     </div>
@@ -30,7 +30,7 @@ section {
 }
 .content {
   width: 100%;
-  max-width: 1000px;
+  max-width: 960px;
 }
 
 @media only screen and (max-width: 768px) {

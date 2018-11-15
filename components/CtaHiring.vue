@@ -4,9 +4,9 @@
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
         <h2>
-          Want to work on a great project?
+          Interested in working on a world-changing project?
         </h2>
-        <p mb2>Because we are always searching for new talents, feel free to send us your resume.</p>
+        <p mb2>We are always seeking new talent, so feel free to send us your resume.</p>
         <nav flex>
           <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>We are Hiring</Button>
         </nav>
