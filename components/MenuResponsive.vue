@@ -82,6 +82,7 @@ export default {
   background-color: var(--white-content);
   transition: all calc(var(--animation-speed) * 0.2s) ease-in;
 }
+
 .line, .line-1 {
   margin-bottom:6px;
 }
@@ -110,6 +111,7 @@ a {
   color: var(--white-content);
   box-sizing: content-box;
   border-bottom: solid 2px transparent;
+  cursor: pointer;
 }
 
 .button {
@@ -135,8 +137,10 @@ a {
   padding-left:0;
   padding-right:0;
   border-bottom: 1px solid #3C1972;
+  opacity:0.65;
 }
 .menu-nav:hover, .menu-nav.nuxt-link-active {
+  opacity:1;
   border-bottom-color: #9452ff;
   border-bottom-color: var(--lighter-purple);
 }
