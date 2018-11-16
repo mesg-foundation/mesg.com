@@ -11,7 +11,7 @@
           Today, many popular business solutions do not share data or integrate with each other. <strong>This makes it expensive and time consuming for companies to scale effectively</strong>.
           <br>
           <br>
-          MESG allows previously-incompatible devices to exchange information, creating a new world of business opportunities. Build new solutions by combining <strong>any</strong> technologies together, including blockchains or web APIs.
+          MESG allows previously-incompatible devices to exchange information, creating a new world of business opportunities. Build new solutions by combining <strong>any</strong> technologies together, including blockchains or Web APIs.
         </p>
       </div>
     </div>
@@ -53,7 +53,7 @@
       <div half flex column justify-center>
         <h2>Generate income while accelerating productivity</h2>
         <p>
-          An economy is built within MESG powered by the sharing and reuse of code. <strong>Applications and their components are shared and reused through an open marketplace</strong>, expediting the development process. 
+          An economy is built within MESG powered by the sharing and reuse of code. <strong>Applications and their components are shared and reused through an open marketplace</strong>, expediting the development process.
           <br>
           <br>
           Anyone can receive income with MESG by participating in the Network.
