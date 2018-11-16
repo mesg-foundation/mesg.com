@@ -83,7 +83,7 @@ section {
    align-items: center;
  }
  section {
-   padding-top: 3.6em;
+   padding-top:4.8em;
  }
  p {
    font-size: 1.4em;
@@ -104,7 +104,7 @@ section {
      min-height: 400px;
    }
    section {
-     padding-top:6em;
+     padding-top:3.6em;
    }
  }
 

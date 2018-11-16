@@ -40,6 +40,7 @@ section {
    align-items: center;
  }
  section {
+   padding-top:4.8em;
    min-height: 0;
  }
  p {
@@ -50,6 +51,9 @@ section {
  @media only screen and (max-width: 414px) {
    p {
      font-size: 1.2em;
+   }
+   section {
+     padding-top:3.6em;
    }
  }
 
