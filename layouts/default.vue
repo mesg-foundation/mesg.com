@@ -34,7 +34,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Reset */
 html {
@@ -58,11 +57,11 @@ html {
 /* Text styles */
 h1, h2, h3, h4, a, button, label, input, textarea {
   font-family: 'Quicksand', sans-serif;
-  font-style: normal;
+  font-style:normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  font-weight: normal;
+  font-weight:normal;
 }
 
 .link {

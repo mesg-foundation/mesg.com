@@ -29,9 +29,11 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
+
 .st0{fill:#9452FF;}
 .st1{fill:#491E8C;}
-.st2 {fill:#FFFFFF;font-family:'OpenSans-Regular';font-size:10px;}
+.st2 {fill:#FFFFFF;font-family:'OpenSans', sans-serif;font-size:10px;}
 .st3{clip-path:url(#mask-arrow-1);}
 
 
