@@ -104,7 +104,7 @@ section {
      min-height: 400px;
    }
    section {
-     padding-top:3.6em;
+     padding-top:3.8em;
    }
  }
 

@@ -53,7 +53,7 @@ section {
      font-size: 1.2em;
    }
    section {
-     padding-top:3.6em;
+     padding-top:3.8em;
    }
  }
 

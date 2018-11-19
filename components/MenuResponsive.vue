@@ -1,6 +1,6 @@
 <template>
   <div class="menu-responsive" flex column justify-center>
-    <div class="nav-burger" flex row space-between align-center>
+    <div class="nav-burger" flex row space-between justify-center align-center>
       <a href ="/">
         <MESGLogoHorizontalWhite class="logo" />
       </a>
@@ -66,11 +66,12 @@ export default {
 
 .nav-burger {
   z-index: 2;
-  height: 40px;
-  line-height: 40px;
   background-color: #491e8c;
   background-color: var(--purple);
-  padding:2.4em;
+  padding-left:2.4em;
+  padding-right:2.4em;
+  padding-top:1.2em;
+  padding-bottom:1.2em;
 }
 .line {
   right:14px;
@@ -82,23 +83,31 @@ export default {
   background-color: var(--white-content);
   transition: all calc(var(--animation-speed) * 0.2s) ease-in;
 }
+.burger {
+  line-height: 30px;
+  height: 30px;
+}
 
-.line, .line-1 {
-  margin-bottom:6px;
+.line-1 {
+  margin-bottom:9px;
 }
-.line, .line-3 {
-  margin-top:6px;
+.line-2 {
+  margin-bottom: 9px;
 }
+.line-3 {
+  margin-bottom:0;
+}
+
 .animated .line-1 {
-  transform: translateX(9px) rotate(45deg) translateY(14px);
-
+  width: 36px;
+  transform: translateX(13px) rotate(45deg) translateY(18px);
 }
 .animated .line-2 {
   opacity:0;
 }
 .animated .line-3 {
-  transform: translateX(9px) rotate(-45deg) translateY(-14px);
-
+  width: 36px;
+  transform: translateX(13px) rotate(-45deg) translateY(-18px);
 }
 
 a {
@@ -192,20 +201,14 @@ a {
       transform: translateY(0);
     }
   }
-  a {
-    height: 1.8em;
-    line-height: 1.8em;
-    padding:0;
-  }
   .nav-burger {
-    height: 1.8em;
-    line-height: 1.8em;
-    padding:1.8em;
+    padding-left:1.8em;
+    padding-right:1.8em;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
   }
   .logo {
-    line-height: 1.8em;
-    height: 30px;
-    width: 114px;
+    width:114px;
   }
   .menu-responsive {
     position: fixed;

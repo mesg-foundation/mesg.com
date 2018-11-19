@@ -41,7 +41,6 @@ nav {
 }
 
 .menu {
-  height: 40px;
   padding-right: 1.4em;
 }
 
