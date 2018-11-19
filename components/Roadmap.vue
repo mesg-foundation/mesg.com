@@ -94,7 +94,7 @@ h4 {
 
 .Q {
   opacity:1;
-  font-family: QuickSand;
+  font-family: 'QuickSand', sans-serif;
   font-style: medium;
   font-size: 1.6em;
   color:#ffa744;
@@ -107,7 +107,7 @@ h4 {
   position:relative;
 }
 .list-content {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -117,7 +117,7 @@ h4 {
   opacity:0.65;
 }
 .list-final {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;

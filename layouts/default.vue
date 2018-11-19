@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* Reset */
 html {
   font-size: 1em;
@@ -54,7 +57,7 @@ html {
 <style>
 /* Text styles */
 h1, h2, h3, h4, a, button, label, input, textarea {
-  font-family: Quicksand;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -103,7 +106,7 @@ h4 {
   color: var(--purple);
 }
 p {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
