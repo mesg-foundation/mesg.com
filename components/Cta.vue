@@ -2,7 +2,7 @@
   <section>
     <div class="container-parent" flex row column-reverse-responsive justify-center align-center>
       <div class="container-content" half flex column justify-center align-center>
-          <h2>Start to build now</h2>
+          <h2>Start building now</h2>
           <p mb05>
             MESG is community-driven. Take the reigns: building is in your hands.
           </p>

@@ -3060,7 +3060,7 @@
   				<g id="Bubble-8">
   					<circle class="st12" cx="339.5" cy="51.1" r="39.9"/>
   					<text transform="matrix(1 0 0 1 326.1447 47.9171)" class="st6 st7 st8">Visa</text>
-  					<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">checkout</text>
+  					<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">Checkout</text>
   				</g>
   				<g id="Bubble-7">
   					<circle class="st5" cx="202.8" cy="55.8" r="35.2"/>
