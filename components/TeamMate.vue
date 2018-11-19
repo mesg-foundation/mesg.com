@@ -1,16 +1,25 @@
 <template>
   <div class="Rectangle-white" flex row space-between align-center>
     <div class="Picture" flex column :style="style">
+      <div class="picture-hover">
+        <nav class="social" flex row justify-center align-center>
+          <a
+            v-for="network in socialNetworks" :key="network"
+            class="social-networks"
+            :href="network.link" target="_blank" flex justify-center align-center>
+            <i class="fab" :class="`fa-${network.icon}`"></i>
+          </a>
+        </nav>
+      </div>
     </div>
     <div class="content" flex column>
       <h4>{{name}}</h4>
       <p>{{role}}</p>
+      <div v-if="companies">
+        <div class="Separator-dotted"></div>
+      </div>
       <nav>
-        <a v-if="telegram" :href="telegram.link" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-        <a v-if="twitter" :href="twitter.link" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a v-if="linkedin" :href="linkedin.link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a v-if="github" :href="github.link" target="_blank"><i class="fab fa-github-alt"></i></a>
-        <a v-if="mail" :href="mail.link" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a v-for="company in companies" :key="company"><img :src="company.src" class="logo"/></a>
       </nav>
     </div>
   </div>
@@ -22,24 +31,10 @@ export default {
     pictureUrl: String,
     name: String,
     role: String,
+    companies: Array,
     socialNetworks: Array
   },
   computed: {
-    telegram () {
-      return this.socialNetworks.find(x => x.type === "telegram")
-    },
-    twitter () {
-      return this.socialNetworks.find(x => x.type === "twitter")
-    },
-    linkedin () {
-      return this.socialNetworks.find(x => x.type === "linkedin")
-    },
-    github () {
-      return this.socialNetworks.find(x => x.type === "github")
-    },
-    mail () {
-      return this.socialNetworks.find(x => x.type === "mail")
-    },
     style () {
       return {
         backgroundImage: `url(${this.pictureUrl})`
@@ -56,38 +51,100 @@ export default {
   object-fit: contain;
   border-radius: 10px;
   background-color: #ffffff;
-  background-color: var(--blanc-background);
+  background-color: var(--white-content);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
+.Rectangle-white:hover {
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Rectangle-white:hover .picture-hover {
+  display: block;
+}
+
 .Picture {
+  position: relative;
   width: 40%;
   height: 160px;
   object-fit: contain;
   border-radius: 10px;
-  background-color: #dfe1f8;
-  background-color: var(--pale-white);
   background-position: center center;
   background-repeat: no-repeat;
   background-size:cover;
   border-top-right-radius: 20% 50%;
   border-bottom-right-radius: 20% 50%;
+  overflow: hidden;
 }
+
+.picture-hover {
+  display: none;
+  background: rgba(73,30,140,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: Opac calc(var(--animation-speed) * 0.1s) 1 ease;
+}
+@keyframes Opac {
+  from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+}
+
+.logo {
+  max-width: 80px;
+  margin-right: 0.6em;
+}
+
+.Separator-dotted {
+  border: 0.5px #d6d0e7 dotted;
+  width: 100%;
+  height: 0.05em;
+  margin-top:0.6em;
+  margin-bottom: 0.6em;
+}
+
 .content {
   width: 60%;
   padding: 1.2em;
 }
-a {
-  align-items: center;
-  padding-right: 1em;
-  color: #cac5e4;
-  color: var(--light-blue-grey)
+
+.social {
+  height: 100%;
+  width: 100%;
 }
-a:hover {
-  color: #9452ff;
-  color: var(--lighter-purple);
-  transition: 0.2s ease-in-out;
+.social-networks {
+  text-decoration: none;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  color: #57577e;
+  color: var(--dark-grey);
+  height: 36px;
+  width: 36px;
+  background-color: #ffffff;
+  background-color: var(--white-content);
+  border-radius:50%;
+  animation: Bubble calc(var(--animation-speed) * 0.2s) 1 ease-out;
 }
-p {
-  margin-bottom: 0.6em;
+@keyframes Bubble {
+  from {
+    opacity: 0;
+    transform: scale(0);
+    }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+.social-networks:hover {
+  opacity:0.8;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 @media only screen and (max-width: 414px) {

@@ -7,17 +7,25 @@
       </div>
       <div half flex column justify-center>
         <h2>Connect anything</h2>
-        <p>Build applications that easily connect any technologies together, including <strong>any</strong> blockchains or web APIs. Imagine the possibilities: any technology connecting to anything else with data through a decentralized network. There has never been a solution quite like this before.</p>
+        <p>
+          Today, many popular business solutions do not share data or integrate with each other. <strong>This makes it expensive and time consuming for companies to scale effectively</strong>.
+          <br>
+          <br>
+          MESG allows previously-incompatible devices to exchange information, creating a new world of business opportunities. Build new solutions by combining <strong>any</strong> technologies together, including blockchains or Web APIs.
+        </p>
       </div>
     </div>
     <div class="container-child" flex row space-between>
       <div half flex column justify-center>
-        <h2>Supercharge existing apps</h2>
+        <h2>Supercharge existing businesses</h2>
         <p>
-          <strong>By connecting your existing app to MESG Core, your app accesses leading-edge technologies to deliver excellent user experiences.</strong>
+          Connect your software suite to MESG to gain access to technologies that can optimize operations, reach new markets, or deliver excellent user experiences.
           <br>
           <br>
-          Existing blockchain DApp can easily be connected to the MESG Network, which means you can now give any DApp advanced functionalities such as email notifications, payment confirmations, or literally any other third party technology, including any blockchains or Web APIs.
+          <strong>Any corporate software can be connected to the MESG Network</strong>, which means you can now integrate and automate functionalities such as email, notifications, payments, or literally any other third-party technology.
+          <br>
+          <br>
+          With MESG, connect to the blockchain components your business needs, avoiding the constraints of full adoption.
         </p>
       </div>
       <div half flex column justify-center align-center>
@@ -31,26 +39,24 @@
       <div half flex column justify-center>
         <h2>Grow your network</h2>
         <p>
-          <strong>Discover the power of a decentralized network.</strong>
+          Discover the power of a decentralized network.
           <br>
           <br>
-          Once deployed, apps live on the Network, so you won’t need to run a server to keep your app or business running.
+          MESG’s decentralized network offers users instant and unlimited scale for their custom integrations, without the worry of frustrating downtime or network bottlenecks.
           <br>
           <br>
-          Through the Network, you’ll have access to all other previously-connected technologies or industries, giving your app or business superpowers.
-          <br>
-          <br>
-          <strong>Now your apps or business can be truly serverless.</strong>
+          <strong>Achieve limitless expansion within a single tool</strong>; MESG doesn’t limit customers to predefined channels of growth. Implement the features you need, when you need them.
         </p>
       </div>
     </div>
     <div class="container-child" flex row space-between>
       <div half flex column justify-center>
-        <h2>Generate income while accelerating your productivity</h2>
+        <h2>Generate income while accelerating productivity</h2>
         <p>
-          The MESG economy is fueled by the sharing and reuse of code. Services and Applications are shared and reused through an open marketplace, expediting the development process.
-          <br><br>
-          You can create residual income by building Services and Applications, or simply by participating in the network. Creators of apps can choose how much each actor in the network, including the creator themselves, is paid for their participation. This creates a value-driven economy and community-driven governance.
+          An economy is built within MESG powered by the sharing and reuse of code. <strong>Applications and their components are shared and reused through an open marketplace</strong>, expediting the development process.
+          <br>
+          <br>
+          Anyone can receive income with MESG by participating in the Network.
           <!--
           TODO:
           <br><br>

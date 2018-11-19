@@ -3060,7 +3060,7 @@
   				<g id="Bubble-8">
   					<circle class="st12" cx="339.5" cy="51.1" r="39.9"/>
   					<text transform="matrix(1 0 0 1 326.1447 47.9171)" class="st6 st7 st8">Visa</text>
-  					<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">checkout</text>
+  					<text transform="matrix(1 0 0 1 310.7447 63.9171)" class="st6 st7 st8">Checkout</text>
   				</g>
   				<g id="Bubble-7">
   					<circle class="st5" cx="202.8" cy="55.8" r="35.2"/>
@@ -3501,9 +3501,9 @@
   YyFHAACQAgCeewd5/k47+TcAACkA4Ll5AFj0AXjhAYCTP4dZ7AEAAAAAAAAAAAAAAAAAAAAAAAAA
   AAAAAABOx/8vwAA2RWQi68HVtAAAAABJRU5ErkJggg==" transform="matrix(0.2381 0 0 0.2377 178.4672 398.558)">
   				</image>
-  				<path id="Circle-BG" class="st14" d="M239.9,514.8c-30.2,0-54.7-24.5-54.7-54.7s24.5-54.7,54.7-54.7s54.7,24.5,54.7,54.7
+  				<path id="Circle-BG" class="st15" d="M239.9,514.8c-30.2,0-54.7-24.5-54.7-54.7s24.5-54.7,54.7-54.7s54.7,24.5,54.7,54.7
   					C294.6,490.1,270.1,514.8,239.9,514.8z"/>
-  				<path id="Circle-outline" class="st15" d="M239.9,406.3c29.6,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7
+  				<path id="Circle-outline" class="st1" d="M239.9,406.3c29.6,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7
   					C186.3,430.4,210.4,406.3,239.9,406.3 M239.9,404.3c-30.8,0-55.7,24.9-55.7,55.7s24.9,55.7,55.7,55.7s55.7-24.9,55.7-55.7
   					C295.8,429.2,270.8,404.3,239.9,404.3L239.9,404.3z"/>
   			</g>
@@ -3655,7 +3655,7 @@
   			s-0.2,0.1-0.3,0.1s-0.2,0-0.3-0.1c-0.1-0.1-0.1-0.2-0.1-0.3v-6.9c0-0.1,0-0.2,0.1-0.3s0.2-0.1,0.3-0.1s0.2,0,0.3,0.1
   			c0.1,0.1,0.1,0.2,0.1,0.3v0.8c0.3-0.4,0.7-0.8,1.2-1.1s1.1-0.4,1.6-0.4C276.6,683.9,277.3,684.2,277.7,684.8z"/>
   		<g id="Connection">
-  			<line id="Line-purple" class="st19" x1="239.9" y1="515.8" x2="239.9" y2="586"/>
+  			<line id="Line-Orange" class="st19" x1="239.9" y1="515.8" x2="239.9" y2="586"/>
   			<rect id="Line-light" x="238.9" y="545.2" class="st6" width="2" height="11.3"/>
         <rect id="Line-light2" x="238.9" y="545.2" class="st6" width="2" height="11.3"/>
   			<g id="Circle-2-2">
@@ -3674,7 +3674,7 @@
   	</g>
   	<g id="Details">
   		<g id="Technology">
-  			<circle class="st20" cx="412.2" cy="620.3" r="6.5"/>
+  			<circle class="st1" cx="412.2" cy="620.3" r="6.5"/>
   			<path class="st6" d="M428.3,616.5c0.1,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2c-0.1,0-0.1,0.1-0.2,0.1h-2v5.8
   				c0,0.1,0,0.1-0.1,0.2s-0.1,0.1-0.2,0.1s-0.2,0-0.2-0.1s-0.1-0.1-0.1-0.2V617h-2c-0.1,0-0.1,0-0.2-0.1s-0.1-0.1-0.1-0.2
   				c0-0.1,0-0.1,0.1-0.2c0.1,0,0.1-0.1,0.2-0.1h4.5C428.1,616.4,428.2,616.4,428.3,616.5z M432.3,620.5c-0.1,0.1-0.1,0.1-0.2,0.1
@@ -3829,26 +3829,26 @@
 </template>
 
 <style scoped>
-.st0{opacity:0.1;}
-.st1{fill:#AE3FE8;}
+.st0{opacity:0.12;}
+.st1{fill:#9452FF;}
 .st2{opacity:0.45;fill:url(#Circle-absorbtion_1_);enable-background:new    ;}
 .st3{clip-path:url(#Mask-bubbles-1); -webkit-clip-path:url(#Mask-bubbles-1);}
 .st4{opacity:1;}
-.st5{opacity:1;fill:#1AB644;enable-background:new    ;}
+.st5{opacity:1;fill:#513FE8;enable-background:new    ;}
 .st6{fill:#FFFFFF;}
 .st7{font-family:'Quicksand';}
 .st8{font-size:13.3709px;}
-.st10{opacity:1;fill:#F145FF;enable-background:new    ;}
-.st12{opacity:1;fill:#4563FF;enable-background:new    ;}
-.st14{fill:#251440;}
-.st15{fill:#9452FF;}
+.st10{opacity:1;fill:#9452FF;enable-background:new    ;}
+.st12{opacity:1;fill:#AE3FE8;enable-background:new    ;}
+.st14{fill:#491E8C;}
+.st15{fill:#251440;}
 .st16{opacity:0.1;}
 .st17{opacity:0.4;fill:#FFFFFF;enable-background:new    ;}
 .st18{opacity:0.2;clip-path:url(#SVGID_2_);fill:#9452FF;enable-background:new    ;}
-.st19{fill:none;stroke:#F145FF;stroke-width:2;stroke-miterlimit:10;}
-.st20{fill:#F145FF;}
-.st21{fill:#4563FF;}
-.st22{fill:#1AB644;}
+.st19{fill:none;stroke:#FFA744;stroke-width:2;stroke-miterlimit:10;}
+.st20{fill:#FFA744;}
+.st21{fill:#AE3FE8;}
+.st22{fill:#513FE8;}
 .st23{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:100;}
 .st24{opacity:0.75;fill:url(#Circle-absorbtion-shadow_1_);enable-background:new    ;}
 
@@ -3896,7 +3896,7 @@
     opacity: 0;
     animation: show calc(var(--animation-speed) * 0.15s) calc(var(--animation-speed) * 0.5s) forwards 1 linear;
 }
-#Line-purple {
+#Line-Orange {
     opacity:0;
     stroke-dasharray: 65;
     stroke-dashoffset: 65;

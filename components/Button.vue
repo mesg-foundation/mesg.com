@@ -3,9 +3,7 @@
     type="submit"
     :class="{
       'btn--small': small,
-      'btn--primary': primary,
-      'btn--purple': purple,
-      'btn--outline': outline
+      'btn--primary': primary
     }">
     <slot></slot>
   </button>
@@ -13,9 +11,7 @@
     :href="href"
     :class="{
       'btn--small': small,
-      'btn--primary': primary,
-      'btn--purple': purple,
-      'btn--outline': outline
+      'btn--primary': primary
     }">
     <slot></slot>
   </a>
@@ -40,61 +36,31 @@ a, button {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding: 1em 2em;
+  padding: 1em 4em;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn--small {
-  border-radius: 1.5em;
-  padding: 0.5em 1em;
+  border-radius: 3em;
+  padding: 0.1em 1.8em;
 }
 .btn--small:hover {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  transition: 0.4s ease-in-out;
+  color: #ffffff;
+  color: var(--white-content);
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 .btn--primary {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  background-color: #30b24b;
-  background-color: var(--green-cta);
-  opacity:1;
+  color: #ffffff;
+  color: var(--white-content);
+  background-color: #ffa744;
+  background-color: var(--Orange-cta);
 }
 .btn--primary:hover {
-  background-color: #1F8C36;
-  background-color: var(--green-cta-hover);
-  transition: 0.4s ease-in-out;
-}
-
-.btn--purple {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  background-color: #9452ff;
-  background-color: var(--lighter-purple);
-  opacity:1;
-}
-.btn--purple:hover {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  background-color: #6F3DBF;
-  background-color: var(--lighter-purple-hover);
-  transition: 0.4s ease-in-out;
-}
-
-.btn--outline {
-  color: #9452ff;
-  color: var(--lighter-purple);
-  border: solid 0.15em #9452ff;
-  border: solid 0.15em var(--lighter-purple);
-}
-.btn--outline:hover {
-  color: #f1f0f8;
-  color: var(--pale-grey);
-  background-color: #9452ff;
-  background-color: var(--lighter-purple);
-  transition: 0.4s ease-in-out;
+  background-color: #E5963D;
+  background-color: var(--Orange-cta-hover);
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 @media only screen and (max-width: 768px) {
