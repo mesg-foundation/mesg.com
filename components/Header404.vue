@@ -13,7 +13,7 @@
             Click on the button below to go back to Home, let's act like nothing happened
           </p>
           <nav flex>
-            <Button href="/" target="_blank" primary>cd $HOME</Button>
+            <Button href="/" primary>cd $HOME</Button>
           </nav>
       </header>
       <div flex column half align-center justify-center>
