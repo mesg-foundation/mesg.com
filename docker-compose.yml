@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       - VIRTUAL_HOST=mesg.com
-      - LETSENCRYPT_HOST=mesg.com
+      - LETSENCRYPT_HOST=mesg.com,www.mesg.com
       - LETSENCRYPT_EMAIL=admin@mesg.com
       - HTTPS_METHOD=noredirect
   curl:
