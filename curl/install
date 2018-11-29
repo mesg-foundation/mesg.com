@@ -24,10 +24,18 @@ fi
 echo "Installing MESG..."
 link=$(curl -s https://api.github.com/repos/mesg-foundation/core/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
 
-path="/usr/local/bin/mesg-core"
+mesgbin="/usr/local/bin/mesg-core"
 
-sudo curl --progress -L $link -o $path
-sudo chmod +x $path
+sudo curl --progress -L $link -o $mesgbin
+sudo chmod +x $mesgbin
+echo "Done"
 
-$path stop
-$path start
+if [[ ! -S /var/run/docker.sock ]]; then
+  echo "It seems that docker daemon is not running"
+	echo "To start MESG run docker first and then:"
+	echo "$ $mesgbin start"
+	exit 1
+fi
+
+$mesgbin stop
+$mesgbin start
