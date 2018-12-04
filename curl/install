@@ -56,7 +56,7 @@ fi
 if [[ ! -S /var/run/docker.sock ]]; then
   echo "It seems that docker daemon is not running"
 	echo "To start MESG run docker first and then:"
-	echo "$ $mesgbin start"
+	echo "mesg-core start"
 	exit 1
 fi
 
