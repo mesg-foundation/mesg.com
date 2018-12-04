@@ -60,5 +60,5 @@ if [[ ! -S /var/run/docker.sock ]]; then
 	exit 1
 fi
 
-$mesgbin stop
+mesg-core stop
 $mesgbin start
