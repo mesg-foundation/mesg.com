@@ -34,13 +34,6 @@ sudo curl --progress -L $link -o $mesgbin
 sudo chmod +x $mesgbin
 echo "Done"
 
-if [[ ! -S /var/run/docker.sock ]]; then
-  echo "It seems that docker daemon is not running"
-	echo "To start MESG run docker first and then:"
-	echo "$ $mesgbin start"
-	exit 1
-fi
-
 if [[ $(get_swarm_state) != "active" ]]; then
   docker swarm init
 fi
