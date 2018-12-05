@@ -48,7 +48,9 @@ fi
 # check if swarm initialized without error
 if [[ $(get_swarm_state) != "active" ]]; then
   echo "It seems that docker swarm is not active"
-	echo "Please init docker swarm, and then execute:"
+	echo "Please init docker swarm with the following command:"
+  echo "docker swarm init"
+  echo "And start mesg by executing:"
 	echo "mesg-core start"
 	exit 1
 fi
