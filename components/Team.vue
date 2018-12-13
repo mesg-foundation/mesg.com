@@ -52,7 +52,7 @@ export default {
           ],
           companies:[
             { alt: "Yellow", src: require("~/assets/Company/Yellow.png") },
-            { alt: "Gsr", src: require("~/assets/Company/GSR.png") },
+            { alt: "GTD", src: require("~/assets/Company/GTD.png") },
             { alt: "Momemtum", src: require("~/assets/Company/Momemtum.png") },
             { alt: "PredictionVC", src: require("~/assets/Company/prediction.png") }          ]
           }
@@ -82,7 +82,11 @@ export default {
           { name: "Hubert Krauze", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Hubert.jpg"), socialNetworks: [
             { icon: "linkedin-in", link: "https://www.linkedin.com/in/hubert-krauze-67a6389b/" },
             { icon: "github", link: "https://github.com/krhubert" }
-          ] },
+          ],
+          companies:[
+            { alt: "OVH", src: require("~/assets/Company/OVH.png") },
+            { alt: "Credit Agricole", src: require("~/assets/Company/CA.png") }          ]
+          },
           { name: "İlker Göktuğ Öztürk", role: "Core Developer", pictureUrl: require("~/assets/Team/MESG-Ilker.jpg"), socialNetworks: [
             { icon: "linkedin-in", link: "https://www.linkedin.com/in/ilker-goktug-ozturk/" },
             { icon: "github", link: "https://github.com/ilgooz" }
