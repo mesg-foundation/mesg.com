@@ -72,7 +72,7 @@ h4 {
   padding-top:0;
 }
 .container-child {
-  padding-top:0;
+  padding-top:4.8em;
 }
 .content {
   position: relative;

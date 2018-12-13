@@ -2,14 +2,16 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row space-between>
-      <header flex half column justify-center>
+      <header flex column half justify-center>
         <h1>
-          The MESG Roadmap
+          What is MESG?
         </h1>
-        <p>Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.</p>
+        <p>
+          MESG is a bridge between the legacy web and the new decentralized and trustless web.
+        </p>
       </header>
-      <div class="roadmap" flex column half justify-center align-center>
-        <SchemaConnection />
+      <div flex column half justify-center align-center>
+        <SchemaNutshell />
       </div>
     </div>
   </div>
@@ -17,19 +19,15 @@
 </template>
 
 <script>
-import SchemaConnection from '~/components/SchemaConnection'
+import SchemaNutshell from '~/components/SchemaNutshell'
 export default {
   components: {
-    SchemaConnection
+    SchemaNutshell
   }
 }
 </script>
 
 <style scoped>
-
-svg {
-  max-width: 75%;
-}
 
 p {
   font-size: 1.6em;
@@ -37,17 +35,12 @@ p {
 }
 
 section {
-  position:relative;
   padding-top: 5.4em;
   min-height: 30vh;
 }
-
 .container-child {
   padding-bottom:4.8em;
-  border-bottom: dotted 0.5px #9452ff;
-  border-bottom: dotted 0.5px var(--lighter-purple);
 }
-
 
 
 @media only screen and (max-width: 768px) {

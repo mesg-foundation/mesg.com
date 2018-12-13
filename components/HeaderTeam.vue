@@ -1,36 +1,44 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row justify-center align-center>
-      <header flex row justify-center align-center>
-        <div class="content" flex column justify-center align-center>
+    <div class="container-child" flex row space-between>
+      <header flex half column justify-center>
         <h1>
           The MESG Team
         </h1>
         <p>The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.</p>
-      </div>
       </header>
+      <div flex column half justify-center align-center>
+        <SchemaConnection />
+      </div>
     </div>
   </div>
   </section>
 </template>
 
+<script>
+import SchemaConnection from '~/components/SchemaConnection'
+export default {
+  components: {
+    SchemaConnection
+  }
+}
+</script>
 
 <style scoped>
+
+svg {
+  max-width: 75%;
+}
 
 p {
   font-size: 1.6em;
   font-weight: normal;
-  text-align: center;
 }
 
 section {
   padding-top: 5.4em;
   min-height: 30vh;
-}
-.content {
-  width: 100%;
-  max-width: 960px;
 }
 
 @media only screen and (max-width: 768px) {
