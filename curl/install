@@ -4,6 +4,10 @@ command_exists() {
 	command -v "$@" > /dev/null 2>&1
 }
 
+get_swarm_state() {
+  echo $(docker info --format  '{{.Swarm.LocalNodeState}}')
+}
+
 if command_exists docker; then
   version=$(docker -v)
   echo "Docker already installed, using $version"
@@ -30,12 +34,26 @@ sudo curl --progress -L $link -o $mesgbin
 sudo chmod +x $mesgbin
 echo "Done"
 
-if [[ ! -S /var/run/docker.sock ]]; then
-  echo "It seems that docker daemon is not running"
-	echo "To start MESG run docker first and then:"
-	echo "$ $mesgbin start"
+if [[ $(get_swarm_state) != "active" ]]; then
+  docker swarm init
+fi
+
+# check if swarm initialized without error
+if [[ $(get_swarm_state) != "active" ]]; then
+  echo "It seems that docker swarm is not active"
+	echo "Please init docker swarm with the following command:"
+  echo "docker swarm init"
+  echo "And start mesg by executing:"
+	echo "mesg-core start"
 	exit 1
 fi
 
-$mesgbin stop
-$mesgbin start
+if [[ ! -S /var/run/docker.sock ]]; then
+  echo "It seems that docker daemon is not running"
+	echo "Please start docker, and then execute:"
+	echo "mesg-core start"
+	exit 1
+fi
+
+mesg-core stop
+mesg-core start
