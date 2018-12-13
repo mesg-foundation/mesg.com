@@ -1,10 +1,13 @@
 <template>
   <footer>
-    <Partners/>
     <div class="container-parent">
       <div class="container-child" flex row column-responsive space-between align-center>
-        <div>
-          <MESGLogoHorizontalPurple class="logo" />
+        <div flex row space-between align-center>
+          <MESGLogoHorizontalPurple />
+          <div class="incubator">
+            <p>Incubated by</p>
+            <img src="~/assets/Partners/Yellow.png" alt="Yellow" class="logo">
+          </div>
         </div>
         <div class="container-nav">
           <a mr2 href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank" class="nav">What is MESG? Get started</a>
@@ -32,11 +35,9 @@
 
 <script>
 import MESGLogoHorizontalPurple from '~/components/MESGLogoHorizontalPurple'
-import Partners from '~/components/Partners'
 export default {
   components: {
-    MESGLogoHorizontalPurple,
-    Partners
+    MESGLogoHorizontalPurple
   }
 }
 </script>
@@ -81,12 +82,22 @@ a:hover {
   transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
-.logo {
+svg {
   width: 190px;
   height: 50px;
+  padding-right:1.2em;
+}
+.logo {
+  max-width: 80px;
+}
+.incubator {
+  font-size: 0.6em;
+  font-weight: bold;
+  padding-left: 1.2em;
+  border-left: solid 1px #d6d0e7;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .container-nav {
     width: 100%;
     height: auto;
@@ -94,9 +105,6 @@ a:hover {
   }
 }
 @media only screen and (max-width: 768px) {
-  .container-nav {
-    padding-top: 1.2em;
-  }
   .social {
     padding-right: 0.6em;
   }

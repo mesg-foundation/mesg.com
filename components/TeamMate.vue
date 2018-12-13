@@ -85,7 +85,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: Opac calc(var(--animation-speed) * 0.1s) 1 ease;
+  animation: Opac calc(var(--animation-speed) * 0.1s) ease;
 }
 @keyframes Opac {
   from {
@@ -129,7 +129,7 @@ export default {
   background-color: #ffffff;
   background-color: var(--white-content);
   border-radius:50%;
-  animation: Bubble calc(var(--animation-speed) * 0.2s) 1 ease-out;
+  animation: Bubble calc(var(--animation-speed) * 0.2s) ease-out;
 }
 @keyframes Bubble {
   from {
