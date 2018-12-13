@@ -7,11 +7,11 @@
       <div class="container-child" flex row justify-center align-center>
         <div class="content" half flex row justify-center align-center>
             <div class="partners-logo" flex row justify-center>
-              <img src="~/assets/Partners/Yellow-LOGO.png" alt="Yellow">
+              <img src="~/assets/Partners/Yellow.png" alt="Yellow">
             </div>
             <div class="partners-desc" flex row justify-center>
               <p>
-                Incubated by <a class="link" href="http://yellow.com/" target="_blank">Yellow.com</a>, a premier blockchain incubator and fund with a track record of success.
+                Incubated by <a class="link" href="http://yellow.com/" target="_blank">Yellow</a>, a premier blockchain incubator and fund with a track record of success.
               </p>
             </div>
           </div>
@@ -19,11 +19,11 @@
         </div>
         <div class="content" half flex row justify-center align-center>
           <div class="partners-logo" flex row justify-center>
-            <img src="~/assets/Partners/GSR-1.png" alt="GSR">
+            <img src="~/assets/Partners/Yuser.png" alt="Yuser">
           </div>
           <div class="partners-desc" flex row justify-center>
               <p>
-                In collaboration with <a class="link" href="http://www.gsr.io/" target="_blank">GSR.io</a>, one of the largest cryptocurrency market makers.
+                In collaboration with <a class="link" href="https://yuser.co/" target="_blank">Yuser</a>, the first gamified social network that empowers users to share rewards for original content.
               </p>
             </div>
           </div>
@@ -42,12 +42,12 @@ p {
 }
 
 .separator {
-  width: 0.5px;
+  width: 1px;
   height:60px;
   max-height: 100%;
   margin-left: 1.8em;
   margin-right: 1.8em;
-  border-right: 0.5px #d6d0e7 dotted;
+  border-right: 1px #d6d0e7 dotted;
 }
 
 .partners-logo {
@@ -75,12 +75,12 @@ img {
   }
   .separator {
     width: 100%;
-    height: 0.5px;
+    height: 1px;
     margin-top: 1.2em;
     margin-bottom: 1.2em;
     margin-left: 0;
     margin-right: 0;
-    border-top: 0.5px #d6d0e7 dotted;
+    border-top: 1px #d6d0e7 dotted;
   }
 }
 @media only screen and (max-width: 414px) {
