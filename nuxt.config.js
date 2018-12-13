@@ -38,10 +38,10 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/pwa',
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-117583862-2'
-    }]
-  ],
+    process.env.GA_ID ? ['@nuxtjs/google-analytics', {
+      id: process.env.GA_ID
+    }] : null
+  ].filter(x => x),
   /*
   ** Build configuration
   */
