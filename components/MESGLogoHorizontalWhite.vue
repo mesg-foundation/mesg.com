@@ -1,5 +1,5 @@
 <template>
-  <svg version="1.1" id="MESG-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 viewBox="0 0 8022 2114" style="enable-background:new 0 0 8022 2114;" xml:space="preserve">
   <g id="Logo">
   	<g id="Wordmark">

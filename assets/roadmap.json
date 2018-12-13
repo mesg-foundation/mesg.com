@@ -1,17 +1,78 @@
-[{
-  "releasedAt": "June 2018",
-  "title": "Core Launched",
-  "description": "Create your services and connect them together with your application through a single connection to Core, allowing Core to handle all communications and interoperability with any technology."
-}, {
-  "releasedAt": "Q3 2018",
-  "title": "Rapid Deployment",
-  "description": "No need to code your application anymore, just send a list of events with corresponding tasks within a simple configuration file to Core which will then execute tasks on your application’s behalf."
-}, {
-  "releasedAt": "Q4 2018",
-  "title": "Beta Network",
-  "description": "The beta decentralized Network means no coding or servers are necessary to run your applications. Connect thousands of services or applications from our shared repository."
-}, {
-  "releasedAt": "Q3 2019",
-  "title": "Main Network",
-  "description": "MESG launches its own blockchain Network providing for full scalability and a cheaper and faster user experience. The main network will host the full functionality of the value-driven open market for the sharing of services."
-}]
+[
+  {
+    "year": 2018,
+    "quarters": [
+      {
+        "name": "Q4",
+        "users": "+5 partners using MESG",
+        "goals": [
+          {
+            "title": "MESG Beta Network",
+            "subgoals": [
+              "Businesses become easily scalable",
+              "Partners transition into Network users"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "quarters": [
+      {
+        "name": "Q2",
+        "users": "+10 partners using MESG",
+        "goals": [
+          {
+            "title": "Private Sale",
+            "subgoals": ["Allows early adopters to participate in the economy"]
+          },
+          {
+            "title": "Test Net",
+            "subgoals": [
+              "Enables the use of the utility token",
+              "Launch of the MESG Token economy"
+            ]
+          },
+          {
+            "title": "Release of ERC20",
+            "subgoals": ["Enables Test Net access"]
+          }
+        ]
+      },
+      {
+        "name": "Q3",
+        "users": "+10 partners using MESG",
+        "goals": [
+          {
+            "title": "Long-term public token sale",
+            "subgoals": [
+              "Listing on exchanges",
+              "Enables access to the Test Network"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "quarters": [
+      {
+        "name": "Q1",
+        "users": "+25 partners using MESG",
+        "goals": [
+          {
+            "title": "Public Network",
+            "subgoals": [
+              "Release of native MESG Token",
+              "Self-regulating ecosystem consistently increasing the value of the MESG Token",
+              "ERC20 tokens converted to MESG Tokens"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

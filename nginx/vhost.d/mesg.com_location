@@ -1,5 +1,5 @@
-if ($http_user_agent ~* "curl.*") {
-  proxy_pass http://curl:8080;
+if ($http_user_agent ~* "^curl.*") {
+  proxy_pass http://mesg_curl_1:8080;
   break;
 }
 if ($https != "on") {

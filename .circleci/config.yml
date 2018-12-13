@@ -8,7 +8,7 @@ jobs:
       - run: mkdir -p ~/.ssh
       - run: touch ~/.ssh/known_hosts
       - run: "echo 'Host * \nStrictHostKeyChecking no\nUserKnownHostsFile /dev/null' >> ~/.ssh/config"
-      - run: ssh root@mesg.com "cd ~/mesg.com; git pull; docker-compose up --build -d"
+      - run: ssh root@mesg.com "cd ~/mesg.com; git pull; docker-compose -p mesg up --build -d"
 
 workflows:
   version: 2

@@ -14,3 +14,5 @@ dist
 **/.DS_Store
 
 certs/
+nginx/vhost.d/default
+nginx/conf.d/default.conf
