@@ -5,12 +5,12 @@
           <MESGLogoHorizontalWhite class="logo" />
         </a>
         <div class="menu" flex row space-between align-center>
+          <!--<nuxt-link to="/whatismesg" class="menu-nav">How it works</nuxt-link>
+          <nuxt-link to="/whatismesg" class="menu-nav">Solution</nuxt-link>-->
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav">Roadmap</nuxt-link>
-          <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="menu-nav">Marketplace</a>
-          <a href="https://docs.mesg.com" class="menu-nav">Documentation</a>
-          <a href="https://forum.mesg.com" class="menu-nav" mr05>Get Help</a>
-          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small primary>Get Started</Button>
+          <a href="https://docs.mesg.com" target="_blank" class="menu-nav">Documentation</a>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" small primary>Get in touch</Button>
         </div>
     </nav>
     <MenuResponsive class="responsive"/>
@@ -32,6 +32,7 @@ export default {
 
 
 <style scoped>
+
 nav {
   z-index:1;
   position: absolute;
@@ -42,6 +43,16 @@ nav {
 
 .menu {
   padding-right: 1.4em;
+}
+.menu-nav {
+  opacity:0.65;
+}
+.menu-nav:hover, .menu-nav.nuxt-link-active {
+  opacity:1;
+  color: #ffffff;
+  color: var(--white-content);
+  border-bottom-color: #9452ff;
+  border-bottom-color: var(--lighter-purple);
 }
 
 a {
@@ -56,23 +67,11 @@ a {
   box-sizing: content-box;
   border-bottom: solid 2px transparent;
 }
-.menu-nav {
-  opacity:0.65;
-}
 a:hover {
   opacity:1;
   color: #ffffff;
   color: var(--white-content);
   transition: calc(var(--animation-speed) * 0.1s) ease;
-}
-
-.menu-nav:hover, .menu-nav.nuxt-link-active {
-  opacity:1;
-  color: #ffffff;
-  color: var(--white-content);
-  border-bottom-color: #9452ff;
-  border-bottom-color: var(--lighter-purple);
-
 }
 
 .logo {
@@ -91,12 +90,10 @@ a:hover {
   position: relative;
 }
 
-
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
   .responsive {
     display:flex;
   }
 }
-
 
 </style>

@@ -1,8 +1,9 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child-title" flex row justify-center align-center>
+    <div class="container-child-title" flex column justify-center align-center>
       <h2>Paving the way to mass blockchain adoption</h2>
+      <div class="separator-orange"></div>
     </div>
     <div class="container-child" flex row column-reverse-responsive space-between>
       <div half flex column justify-center align-center>
@@ -49,7 +50,6 @@ export default {
 <style scoped>
 h2 {
   text-align: center;
-  margin-bottom: 0;
 }
 
 svg {
@@ -59,4 +59,13 @@ svg {
 .subtitle {
   text-align: center;
 }
+
+.separator-orange {
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color:#ffa744;
+  background-color: var(--Orange-cta);
+}
+
 </style>

@@ -20,10 +20,8 @@
         <nav @click="open = !open" class="nav" flex column justify-center align-center>
           <nuxt-link to="/team" class="menu-nav" flex column justify-center align-center>Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" flex column justify-center align-center>Roadmap</nuxt-link>
-          <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="menu-nav" flex column justify-center align-center>Marketplace</a>
-          <a href="https://docs.mesg.com" class="menu-nav" flex column justify-center align-center>Documentation</a>
-          <a href="https://forum.mesg.com" class="menu-nav" mb2 flex column justify-center align-center>Get Help</a>
-          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" class="button" small primary>Get Started</Button>
+          <a href="https://docs.mesg.com" target="_blank" class="menu-nav" flex column justify-center align-center mb2>Documentation</a>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" small primary class="button">Get in touch</Button>
         </nav>
     </div>
   </transition>
@@ -49,30 +47,49 @@ export default {
 
 <style scoped>
 
+.container-child {
+  width: 90%;
+  padding-top:0;
+  background-color: #491e8c;
+  background-color: var(--purple);
+}
+.nav {
+  width: 100%;
+ }
+ .nav-burger {
+   z-index: 2;
+   background-color: #491e8c;
+   background-color: var(--purple);
+   padding-left:2.4em;
+   padding-right:2.4em;
+   padding-top:1.2em;
+   padding-bottom:1.2em;
+ }
+ .burger {
+   line-height: 30px;
+   height: 30px;
+ }
+.menu-nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-top:1.2em;
+  padding-bottom:1.2em;
+  padding-left:0;
+  padding-right:0;
+  border-bottom: 1px solid #3C1972;
+  opacity:0.65;
+}
+.menu-nav:hover, .menu-nav.nuxt-link-active {
+  opacity:1;
+  border-bottom-color: #9452ff;
+  border-bottom-color: var(--lighter-purple);
+}
 .menu-responsive {
   z-index: 1;
   position: absolute;
 }
 
-.logo {
-  line-height: 40px;
-  width: 153px;
-  height: 40px;
-}
-.logo:hover {
-  opacity:0.8;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
-}
-
-.nav-burger {
-  z-index: 2;
-  background-color: #491e8c;
-  background-color: var(--purple);
-  padding-left:2.4em;
-  padding-right:2.4em;
-  padding-top:1.2em;
-  padding-bottom:1.2em;
-}
 .line {
   right:14px;
   display:block;
@@ -83,11 +100,6 @@ export default {
   background-color: var(--white-content);
   transition: all calc(var(--animation-speed) * 0.2s) ease-in;
 }
-.burger {
-  line-height: 30px;
-  height: 30px;
-}
-
 .line-1 {
   margin-bottom:9px;
 }
@@ -97,7 +109,6 @@ export default {
 .line-3 {
   margin-bottom:0;
 }
-
 .animated .line-1 {
   width: 36px;
   transform: translateX(13px) rotate(45deg) translateY(18px);
@@ -108,6 +119,16 @@ export default {
 .animated .line-3 {
   width: 36px;
   transform: translateX(13px) rotate(-45deg) translateY(-18px);
+}
+
+.logo {
+  line-height: 40px;
+  width: 153px;
+  height: 40px;
+}
+.logo:hover {
+  opacity:0.8;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 a {
@@ -126,32 +147,6 @@ a {
 .button {
   width: 80%;
   padding: 0.1em;
-}
-
-.container-child {
-  width: 90%;
-  padding-top:0;
-  background-color: #491e8c;
-  background-color: var(--purple);
-}
-.nav {
-  width: 100%;
- }
-.menu-nav {
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  padding-top:1.2em;
-  padding-bottom:1.2em;
-  padding-left:0;
-  padding-right:0;
-  border-bottom: 1px solid #3C1972;
-  opacity:0.65;
-}
-.menu-nav:hover, .menu-nav.nuxt-link-active {
-  opacity:1;
-  border-bottom-color: #9452ff;
-  border-bottom-color: var(--lighter-purple);
 }
 
 @media only screen and (max-width: 1023px) {

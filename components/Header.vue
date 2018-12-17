@@ -8,9 +8,6 @@
           connecting any technologies
         </h1>
         <p mb2>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
-        <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Get in Touch</Button>
-        </nav>
       </header>
       <div flex column half align-center justify-center>
         <SchemaHeader class="schema"/>
