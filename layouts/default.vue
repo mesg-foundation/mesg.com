@@ -242,7 +242,9 @@ svg {
   [third] { width: calc(33% - 2.4em); }
   [thirdtwo] { width: calc(66% - 2.4em) }
 }
-
+@media only screen and (max-width: 1023px) {
+  [hide-responsive] { display: none; }
+  }
 @media only screen and (max-width: 768px) {
   .container-parent {
     width: 100%;
@@ -259,7 +261,6 @@ svg {
   [mr1] { margin-right: 0.6em!important; }
   [mr2] { margin-right: 1.2em!important; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
-  [hide-responsive] { display: none; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
   [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 4.8em;}
 }
