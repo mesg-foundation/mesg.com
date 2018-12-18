@@ -1,0 +1,94 @@
+<template>
+  <section>
+  <div class="container-parent">
+    <div class="container-child" flex row space-between>
+      <div third flex column>
+        <nav flex column class="sidebar">
+          <a v-for="category in faq" :key="category.id" :href="`#${category.id}`">{{category.category}}</a>
+        </nav>
+      </div>
+      <div thirdtwo flex column>
+        <div v-for="category in faq" :key="category.id" :id="category.id">
+          <h2>{{category.category}}</h2>
+          <div class="separator-orange"></div>
+          <div v-for="text in category.text" :key="text.title" mt2>
+            <h3>{{text.title}}</h3>
+            <p v-html="text.content"></p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+</template>
+
+<script>
+const faq = require("~/assets/faq")
+export default {
+  computed: {
+    faq () {
+      return faq
+    }
+  }
+}
+</script>
+
+
+<style scoped>
+
+.sidebar {
+    border: solid 1px #d6d0e7;
+    border-radius:4px;
+    position:sticky;
+    top:0;
+    margin-bottom: 1.8em;
+}
+
+a {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.2em;
+  color: #57577e;
+  color: var(--dark-grey);
+  border-bottom: dotted 1px #d6d0e7;
+}
+a:hover {
+  opacity:0.8;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+  border-left: solid 2px #9452ff;
+  border-radius:1px;
+}
+
+.separator {
+  margin-top:2.4em;
+  margin-bottom: 2.4em;
+  border: dotted 0.5px #d6d0e7;
+}
+.separator-orange {
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color:#ffa744;
+  background-color: var(--Orange-cta);
+}
+@media only screen and (max-width: 768px) {
+  a {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  [third] { width: 100%}
+  [thirdtwo] { width: 100%}
+}
+@media only screen and (max-width: 414px) {
+  .separator {
+    margin-top:1.8em;
+    margin-bottom: 1.8em;
+  }
+  [mt2] { margin-top: 1.8em!important; }
+
+}
+
+</style>

@@ -1,55 +1,47 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row space-between>
-      <header flex half column justify-center>
+    <div class="container-child" flex row justify-center align-center>
+      <header flex column justify-center align-center class="content">
         <h1>
           The MESG Roadmap
         </h1>
         <p>Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.</p>
       </header>
-      <div class="roadmap" flex column half justify-center align-center>
-        <SchemaConnection />
-      </div>
     </div>
   </div>
   </section>
 </template>
 
-<script>
-import SchemaConnection from '~/components/SchemaConnection'
-export default {
-  components: {
-    SchemaConnection
-  }
-}
-</script>
-
 <style scoped>
 
-svg {
-  max-width: 75%;
-}
-
-p {
-  font-size: 1.6em;
-  font-weight: normal;
-}
-
 section {
-  position:relative;
   padding-top: 5.4em;
   min-height: 30vh;
 }
 
-.container-child {
-  padding-bottom:4.8em;
-  border-bottom: dotted 0.5px #9452ff;
-  border-bottom: dotted 0.5px var(--lighter-purple);
+.content {
+  width: 100%;
+  max-width: 1100px;
 }
 
+p {
+  text-align:center;
+  font-size: 1.6em;
+  font-weight: normal;
+}
 
-
+@media only screen and (min-width: 1025px) {
+ .container-child {
+   height:50vh;
+ }
+}
+@media only screen and (max-width: 1024px) {
+  .content {
+    width: 100%;
+    max-width: 768px;
+  }
+}
 @media only screen and (max-width: 768px) {
  header {
    text-align: center;

@@ -42,7 +42,11 @@ section {
   padding-bottom:4.8em;
 }
 
-
+@media only screen and (min-width: 1025px) {
+ .container-child {
+   height:50vh;
+ }
+}
 @media only screen and (max-width: 768px) {
  header {
    text-align: center;
