@@ -40,8 +40,6 @@ export default {
 .sidebar {
     border: solid 1px #d6d0e7;
     border-radius:4px;
-    position:sticky;
-    top:0;
     margin-bottom: 1.8em;
 }
 
