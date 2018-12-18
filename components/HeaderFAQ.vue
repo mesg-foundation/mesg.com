@@ -2,11 +2,16 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
-      <header flex half column justify-center align-center class="content">
+      <header flex column justify-center align-center class="content">
         <h1>
-          The MESG Team
+          Frequently Asked Questions
         </h1>
-        <p>The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.</p>
+        <p mb1>
+          Below are some common questions and answers about MESG and the MESG Network.
+        </p>
+        <p class="small">
+          These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to GitHub and other resources for additional details.
+        </p>
       </header>
     </div>
   </div>
@@ -29,6 +34,14 @@ p {
   text-align:center;
   font-size: 1.6em;
   font-weight: normal;
+}
+
+.small {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 0.6em;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -55,7 +68,6 @@ p {
    font-size: 1.4em;
  }
 }
-
  @media only screen and (max-width: 414px) {
    p {
      font-size: 1.2em;

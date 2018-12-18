@@ -1,10 +1,7 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row space-between column-reverse-responsive>
-      <div half flex column justify-center align-center>
-        <SchemaConnection />
-      </div>
+    <div class="container-child" flex row space-between>
       <div half flex column justify-center>
         <h2>Connect anything</h2>
         <p>
@@ -14,8 +11,14 @@
           MESG allows previously-incompatible devices to exchange information, creating a new world of business opportunities. Build new solutions by combining <strong>any</strong> technologies together, including blockchains or Web APIs.
         </p>
       </div>
+      <div half flex column justify-center align-center>
+        <SchemaConnection />
+      </div>
     </div>
-    <div class="container-child" flex row space-between>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaApps />
+      </div>
       <div half flex column justify-center>
         <h2>Supercharge existing businesses</h2>
         <p>
@@ -28,14 +31,8 @@
           With MESG, connect to the blockchain components your business needs, avoiding the constraints of full adoption.
         </p>
       </div>
-      <div half flex column justify-center align-center>
-        <SchemaApps />
-      </div>
     </div>
-    <div class="container-child" flex row space-between column-reverse-responsive>
-      <div half flex column justify-center align-center>
-        <SchemaNetwork />
-      </div>
+    <div class="container-child" flex row space-between>
       <div half flex column justify-center>
         <h2>Grow your network</h2>
         <p>
@@ -48,8 +45,14 @@
           <strong>Achieve limitless expansion within a single tool</strong>; MESG doesn’t limit customers to predefined channels of growth. Implement the features you need, when you need them.
         </p>
       </div>
+      <div half flex column justify-center align-center>
+        <SchemaNetwork />
+      </div>
     </div>
-    <div class="container-child" flex row space-between>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaIncome />
+      </div>
       <div half flex column justify-center>
         <h2>Generate income while accelerating productivity</h2>
         <p>
@@ -63,9 +66,6 @@
           <strong>For more information on how you can start participating in the network today, click here.</strong>
           -->
         </p>
-      </div>
-      <div half flex column justify-center align-center>
-        <SchemaIncome />
       </div>
     </div>
   </div>

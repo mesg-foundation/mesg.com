@@ -1,46 +1,51 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row justify-center align-center>
-      <header flex half column justify-center align-center class="content">
+    <div class="container-child" flex row space-between>
+      <header flex column half justify-center>
         <h1>
-          The MESG Team
+          What is MESG?
         </h1>
-        <p>The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.</p>
+        <p>
+          MESG is a bridge between the legacy web and the new decentralized and trustless web.
+        </p>
       </header>
+      <div flex column half justify-center align-center>
+        <SchemaNutshell />
+      </div>
     </div>
   </div>
   </section>
 </template>
 
+<script>
+import SchemaNutshell from '~/components/SchemaNutshell'
+export default {
+  components: {
+    SchemaNutshell
+  }
+}
+</script>
+
 <style scoped>
+
+p {
+  font-size: 1.6em;
+  font-weight: normal;
+}
 
 section {
   padding-top: 5.4em;
   min-height: 30vh;
 }
-
-.content {
-  width: 100%;
-  max-width: 1100px;
-}
-
-p {
-  text-align:center;
-  font-size: 1.6em;
-  font-weight: normal;
+.container-child {
+  padding-bottom:4.8em;
 }
 
 @media only screen and (min-width: 1025px) {
  .container-child {
    height:50vh;
  }
-}
-@media only screen and (max-width: 1024px) {
-  .content {
-    width: 100%;
-    max-width: 768px;
-  }
 }
 @media only screen and (max-width: 768px) {
  header {
