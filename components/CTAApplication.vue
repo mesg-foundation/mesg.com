@@ -1,0 +1,42 @@
+<template>
+  <section>
+  <div class="container-parent">
+    <div class="container-child" flex row justify-center align-center>
+      <div class="content" flex column justify-center align-center>
+        <h2>
+          MESG in application
+        </h2>
+        <p mb2>
+          Discorver our Use Cases to know how you can integrate MESG in your Business and the value it will provide.
+        </p>
+        <nav flex>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Use Cases</Button>
+        </nav>
+      </div>
+    </div>
+  </div>
+  </section>
+</template>
+
+<script>
+import Button from '~/components/Button'
+export default {
+  components: {
+    Button
+  }
+}
+</script>
+
+<style scoped>
+
+.container-parent {
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Hire.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  text-align: center;
+}
+
+
+
+</style>

@@ -1,8 +1,9 @@
 <template>
   <section>
     <div class="container-parent">
-      <div class="container-child-title" flex row justify-center align-center>
+      <div class="container-child-title" flex column justify-center align-center>
           <h2>The Core of the Project</h2>
+          <div class="separator-orange"></div>
       </div>
       <div class="container-child">
         <div flex row justify-center>
@@ -101,7 +102,6 @@ export default {
 <style scoped>
 h2 {
   text-align: center;
-  margin-bottom: 0;
 }
 h3 {
   margin-bottom: 0em;
@@ -109,6 +109,14 @@ h3 {
 
 .card {
   margin: 1.2em;
+}
+
+.separator-orange {
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color:#ffa744;
+  background-color: var(--Orange-cta);
 }
 
 
@@ -119,9 +127,6 @@ h3 {
   }
 }
 @media only screen and (max-width: 414px) {
-  h2 {
-    margin-bottom: 0;
-  }
   .card {
     margin: 0em;
     margin-bottom: 1.2em;

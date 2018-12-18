@@ -383,21 +383,21 @@
   			<ellipse class="st4" cx="378.3" cy="300.7" rx="28" ry="27.7"/>
   			<g id="Drive-logo">
 
-  					<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-66.9131" y1="528.4998" x2="-66.8315" y2="528.4182" gradientTransform="matrix(172.7 0 0 -144.3 11930.5996 76554.3047)">
+  					<linearGradient id="Gradient-1" gradientUnits="userSpaceOnUse" x1="-66.9131" y1="528.4998" x2="-66.8315" y2="528.4182" gradientTransform="matrix(172.7 0 0 -144.3 11930.5996 76554.3047)">
   					<stop  offset="0" style="stop-color:#F6C338"/>
   					<stop  offset="0.5228" style="stop-color:#FFD351"/>
   					<stop  offset="1" style="stop-color:#F6C338"/>
   				</linearGradient>
   				<path class="st28" d="M374.6,291.7h7.3l6.8,11.8h-7.3L374.6,291.7z"/>
 
-  					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-67.0464" y1="528.0404" x2="-67.1281" y2="527.9587" gradientTransform="matrix(211.6 0 0 -77.1 14575.8008 41015.3945)">
+  					<linearGradient id="Gradient-2" gradientUnits="userSpaceOnUse" x1="-67.0464" y1="528.0404" x2="-67.1281" y2="527.9587" gradientTransform="matrix(211.6 0 0 -77.1 14575.8008 41015.3945)">
   					<stop  offset="0" style="stop-color:#286EE6"/>
   					<stop  offset="0.521" style="stop-color:#4286FB"/>
   					<stop  offset="1" style="stop-color:#286EE6"/>
   				</linearGradient>
   				<path class="st29" d="M388.8,303.5l-3.6,6.2h-13.8l3.7-6.2H388.8z"/>
 
-  					<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-65.534" y1="529.3704" x2="-65.5577" y2="529.2891" gradientTransform="matrix(128 0 0 -221.4 8763 117494.3906)">
+  					<linearGradient id="Gradient-3" gradientUnits="userSpaceOnUse" x1="-65.534" y1="529.3704" x2="-65.5577" y2="529.2891" gradientTransform="matrix(128 0 0 -221.4 8763 117494.3906)">
   					<stop  offset="0" style="stop-color:#069B5A"/>
   					<stop  offset="0.531" style="stop-color:#11AA62"/>
   					<stop  offset="1" style="stop-color:#069B5A"/>
@@ -765,10 +765,10 @@
 </template>
 
 <style scoped>
-.st0{opacity:0.06;fill:#4563FF;enable-background:new    ;}
-.st1{opacity:0.06;fill:#AE3FE8;enable-background:new    ;}
-.st2{opacity:0.06;fill:#513FE8;enable-background:new    ;}
-.st3{opacity:0.06;fill:#F145FF;enable-background:new    ;}
+.st0{opacity:0.06;fill:#4563FF;}
+.st1{opacity:0.06;fill:#AE3FE8;}
+.st2{opacity:0.06;fill:#513FE8;}
+.st3{opacity:0.06;fill:#F145FF;}
 .st4{fill:#FFFFFF;}
 .st5{fill:#27346A;}
 .st6{fill:#2790C3;}
@@ -793,10 +793,10 @@
 .st25{fill:#95BF46;}
 .st26{fill:#5E8E3E;}
 .st27{fill:#0F9BD7;}
-.st28{fill:url(#SVGID_1_);}
-.st29{fill:url(#SVGID_2_);}
-.st30{fill:url(#SVGID_3_);}
-.st31{opacity:0.1;enable-background:new    ;}
+.st28{fill:url(#Gradient-1);}
+.st29{fill:url(#Gradient-2);}
+.st30{fill:url(#Gradient-3);}
+.st31{opacity:0.1;}
 .st32{fill:#1A478A;}
 .st33{fill:#798690;}
 .st34{fill:#DA000A;}
@@ -810,5 +810,5 @@
 .st42{fill:#F7B916;}
 .st43{fill:#1F3561;}
 .st44{fill:#491E8C;}
-.st45{opacity:0.4;fill:#FFFFFF;enable-background:new    ;}
+.st45{opacity:0.4;fill:#FFFFFF;}
 </style>

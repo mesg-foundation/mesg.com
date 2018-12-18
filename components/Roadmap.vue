@@ -3,12 +3,12 @@
     <div class="container-parent">
       <div class="container-child" flex column align-center>
         <ul class="timeline-years" flex column justify-center>
-          <li v-for="year in roadmap" :key="year">
+          <li v-for="year in roadmap" :key="year" class="list-year">
             <div class="year" flex column justify-center align-right>
               <h2 mr2>{{year.year}}</h2>
             </div>
             <ul class="quarters" flex column justify-center>
-              <li v-for="quarter in year.quarters" :key="quarter">
+              <li v-for="quarter in year.quarters" :key="quarter" class="list-quarter">
                 <p class="Q" flex column justify-center align-center mb05><strong>{{ quarter.name }}</strong></p>
                 <div class="timeline" flex column>
                   <div class="content" mb05>
@@ -52,10 +52,38 @@ export default {
 
 <style scoped>
 
+.container-parent {
+  padding-top:0;
+}
+
+.content {
+  position: relative;
+  margin-top:-64px;
+  padding-left:1.2em;
+}
+
 ul{
   width: 100%;
   max-width: 600px;
   list-style: none;
+}
+
+li.list-year::before {
+  background: none;
+  width: 0;
+  height: 0;
+}
+li.list-quarter::before {
+  background: none;
+  width: 0;
+  height: 0;
+}
+ul.quarters {
+  padding-left:0;
+}
+
+.timeline-years {
+  padding-left:0;
 }
 
 h2 {
@@ -68,17 +96,6 @@ h4 {
   color:var(--white-content);
 }
 
-.container-parent {
-  padding-top:0;
-}
-.container-child {
-  padding-top:0;
-}
-.content {
-  position: relative;
-  margin-top:-64px;
-  padding-left:1.2em;
-}
 .quarters {
   width: 85%;
   max-width: 600px;
@@ -106,6 +123,11 @@ h4 {
   border-radius: 50%;
   position:relative;
 }
+.list {
+  padding-left: 1.2em;
+  color: #ffffff;
+  color: var(--white-content);
+}
 .list-content {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -127,28 +149,6 @@ h4 {
   opacity:1;
   color:#57577e;
   color: var(--dark-grey);
-}
-
-.list {
-  padding-left: 1.2em;
-  color: #ffffff;
-  color: var(--white-content);
-}
-
-.list li {
-  position: relative;
-}
-
-.list li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: .5em;
-  left: -1em;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background: var(--lighter-purple);
 }
 
 .solutions {
@@ -174,7 +174,6 @@ h4 {
   width: 55%;
 }
 
-
 .timeline {
   padding-left: 2.4em;
   padding-right: 1.8em;
@@ -183,7 +182,6 @@ h4 {
   position: relative;
   margin-bottom: 1.2em;
 }
-
 .timeline:before {
   content: "";
   width: 15px;
@@ -195,7 +193,6 @@ h4 {
   position: absolute;
   background: #251440;
 }
-
 .timeline:after {
   content: "";
   width: 15px;
@@ -207,6 +204,7 @@ h4 {
   position: absolute;
   background: #9452ff;
 }
+
 @media screen and (max-width: 768px) {
   .timeline {
     padding-right: 1.8em;
@@ -241,7 +239,5 @@ h4 {
     width: 100%;
   }
 }
-
-
 
 </style>
