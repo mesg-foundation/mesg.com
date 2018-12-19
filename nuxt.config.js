@@ -44,6 +44,12 @@ module.exports = {
     }] : null
   ].filter(x => x),
   /*
+  ** Plugins
+  */
+  plugins: [
+    { src: '~/plugins/vue-sticky-directive', ssr: false }
+  ],
+  /*
   ** Build configuration
   */
   build: {
