@@ -46,12 +46,6 @@ section {
   min-height: 30vh;
 }
 
-/*
-@media only screen and (min-width: 1025px) {
- .container-child {
-   min-height:calc(100vh - 10em);
- }
-}*/
 @media only screen and (min-width: 1025px) {
  .container-child {
    height:50vh;
@@ -60,7 +54,6 @@ section {
 @media only screen and (max-width: 768px) {
   header {
     text-align: center;
-    align-items: center;
   }
  section {
    padding-top:4.8em;
@@ -73,6 +66,9 @@ section {
 }
 
  @media only screen and (max-width: 414px) {
+   header {
+     text-align: left;
+   }
    section {
      padding-top:3.8em;
    }

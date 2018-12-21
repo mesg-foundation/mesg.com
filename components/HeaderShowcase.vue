@@ -28,6 +28,11 @@ export default {
       type: Object,
       required: true
     }
+  },
+  computed: {
+    usecases () {
+      return require('~/assets/usecases.json')
+    }
   }
 }
 </script>
@@ -51,12 +56,6 @@ section {
   min-height: 30vh;
 }
 
-/*
-@media only screen and (min-width: 1025px) {
- .container-child {
-   min-height:calc(100vh - 10em);
- }
-}*/
 @media only screen and (min-width: 1025px) {
  .container-child {
    height:50vh;
