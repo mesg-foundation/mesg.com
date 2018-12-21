@@ -15,6 +15,7 @@
       --animation-speed: 1;
     }
     </style>
+    <Token/>
     <Menu/>
     <nuxt/>
     <Footer/>
@@ -22,10 +23,12 @@
 </template>
 
 <script>
+import Token from '~/components/Token'
 import Menu from '~/components/Menu'
 import Footer from '~/components/Footer'
 export default {
   components: {
+    Token,
     Menu,
     Footer
   }
@@ -165,6 +168,11 @@ li::before {
   opacity: 0.65;
   color: #ffffffff;
   color: var(--white-content);
+}
+
+.purple {
+  background-color: #9452ff;
+  background-color: var(--lighter-purple);
 }
 
 .white {
