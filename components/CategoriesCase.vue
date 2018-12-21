@@ -3,7 +3,7 @@
   <div class="container-parent">
     <div class="container-child" flex row justify-center>
       <div v-for="usecase in usecases" :key="usecase.id" class="usecase" third flex column space-between>
-        <div :style="pictureStyle" class="picture" flex column>
+        <div :style="pictureStyle(usecase)" class="picture" flex column>
         </div>
         <div class="content" flex column justify-center>
           <div flex row>
@@ -26,16 +26,12 @@ export default {
     usecases: {
       type: Array,
       required: true
-    },
-    usecase: {
-      type:Object,
-      required:true
     }
   },
-  computed: {
-    pictureStyle () {
+  methods: {
+    pictureStyle (usecase) {
       return {
-        backgroundImage: `url(${this.usecases.picture})`
+        backgroundImage: `url(${usecase.picture})`
       }
     }
   }

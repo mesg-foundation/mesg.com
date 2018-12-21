@@ -5,9 +5,9 @@
         <h2>Project progress</h2>
         <div class="separator-orange"></div>
     </div>
-    <div class="container-child" flex row space-between
-      v-for="progress in usecase.progress" :key="progress">
-      <div :style="pictureStyle" class="picture" half flex column>
+    <div v-for="(progress, i) in usecase.progress" :key="progress"
+      class="container-child" :class="{ reverse: i % 2 === 1 }" flex row space-between>
+      <div :style="progressPicture(progress)" class="picture" half flex column>
       </div>
       <div half flex column justify-center>
         <div flex row>
@@ -32,10 +32,10 @@ export default {
       required: true
     }
   },
-  computed: {
-    pictureStyle () {
+  methods: {
+    progressPicture (progress) {
       return {
-        backgroundImage: `url(${this.usecase.picture})`
+        backgroundImage: `url(${progress.picture})`
       }
     }
   }
@@ -67,6 +67,10 @@ a {
     height: 200px;
     margin-bottom:1.2em;
   }
+}
+
+.container-child.reverse {
+  flex-direction: row-reverse;
 }
 
 </style>
