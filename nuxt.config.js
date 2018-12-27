@@ -43,6 +43,9 @@ module.exports = {
       id: process.env.GA_ID
     }] : null
   ].filter(x => x),
+  router: {
+    middleware: ['mesg-curl']
+  },
   /*
   ** Build configuration
   */
