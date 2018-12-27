@@ -18,12 +18,13 @@
     <transition name="appear">
       <div v-if="open" class="container-child" flex column justify-center align-center>
         <nav @click="open = !open" class="nav" flex column justify-center align-center>
+          <nuxt-link to="/whatismesg" class="menu-nav" flex column justify-center align-center>How it works</nuxt-link>
+          <nuxt-link to="/solution" class="menu-nav" flex column justify-center align-center>Solution</nuxt-link>
+          <nuxt-link to="/showcases" class="menu-nav" flex column justify-center align-center>Showcases</nuxt-link>
+          <nuxt-link to="/token" class="menu-nav" flex column justify-center align-center>Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav" flex column justify-center align-center>Team</nuxt-link>
-          <nuxt-link to="/roadmap" class="menu-nav" flex column justify-center align-center>Roadmap</nuxt-link>
-          <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="menu-nav" flex column justify-center align-center>Marketplace</a>
-          <a href="https://docs.mesg.com" class="menu-nav" flex column justify-center align-center>Documentation</a>
-          <a href="https://forum.mesg.com" class="menu-nav" mb2 flex column justify-center align-center>Get Help</a>
-          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" class="button" small primary>Get Started</Button>
+          <nuxt-link to="/roadmap" class="menu-nav" mb2 flex column justify-center align-center>Roadmap</nuxt-link>
+          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" class="button" small primary flex column justify-center align-center>Get Started</Button>
         </nav>
     </div>
   </transition>

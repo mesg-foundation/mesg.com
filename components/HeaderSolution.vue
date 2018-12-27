@@ -7,7 +7,7 @@
       </div>
       <header flex column justify-center align-center>
         <h1>
-          How MESG works?
+          The MESG solution
         </h1>
         <p>
           MESG is a bridge between the legacy web and the new decentralized and trustless web.
@@ -46,8 +46,8 @@ p {
 .schema {
   max-height: calc(30vh - 15em);
   min-height:450px;
-  margin-top:0;
   padding-bottom:2.4em;
+  margin-top:0;
 }
 
 section {

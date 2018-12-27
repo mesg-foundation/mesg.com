@@ -65,6 +65,7 @@ h1, h2, h3, h4, a, button, label, input, textarea {
 }
 
 .link {
+  font-weight: bold;
   color: #9452ff;
   color: var(--lighter-purple);
   text-decoration: none;
@@ -73,7 +74,6 @@ h1, h2, h3, h4, a, button, label, input, textarea {
   color: #5D28B2;
   color: var(--lighter-purple-hover);
   transition: calc(var(--animation-speed) * 0.1s) ease;
-  border-bottom: 1px solid;
 }
 
 h1 {
@@ -170,14 +170,20 @@ li::before {
 .white {
   background-color: #fafafe;
   background-color: var(--pale-white);
-  box-shadow: 0 0 1.2em 1.2em rgba(0, 0, 0, 0.25);
-  position: relative;
 }
 
 svg {
-  width: 100%;
-  max-width: 100%;
+  width: 85%;
+  max-width: 85%;
   object-fit: contain;
+}
+
+.separator-orange {
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color:#ffa744;
+  background-color: var(--Orange-cta);
 }
 </style>
 
@@ -262,7 +268,7 @@ svg {
   [mr2] { margin-right: 1.2em!important; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
-  [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 4.8em;}
+  [column] > svg { width: 75%; max-width: 75%; object-fit: contain; margin-top: 4.8em;}
 }
 @media only screen and (max-width: 414px) {
   .container-parent {

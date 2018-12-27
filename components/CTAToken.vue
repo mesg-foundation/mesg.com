@@ -4,13 +4,14 @@
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
         <h2>
-          MESG in application
+          The MESG Token
         </h2>
         <p mb2>
-          Discorver our Use Cases to know how you can integrate MESG in your Business and the value it will provide.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa.<br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa.
         </p>
-        <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Use Cases</Button>
+        <nav flex justify-center align-center>
+          <Button to="/" primary>Discover the MESG Token</Button>
         </nav>
       </div>
     </div>
@@ -30,13 +31,11 @@ export default {
 <style scoped>
 
 .container-parent {
-  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Hire.jpg");
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Build.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   text-align: center;
 }
-
-
 
 </style>

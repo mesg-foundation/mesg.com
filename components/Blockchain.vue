@@ -5,11 +5,7 @@
       <h2>Paving the way to mass blockchain adoption</h2>
       <div class="separator-orange"></div>
     </div>
-    <div class="container-child" flex row column-reverse-responsive space-between>
-      <div half flex column justify-center align-center>
-        <SchemaAdoptionBefore mb2/>
-        <p class="subtitle">App users are responsible for direct interaction with technologies</p>
-      </div>
+    <div class="container-child" flex row space-between>
       <div half flex column justify-center>
         <h3>Current system</h3>
         <p>
@@ -19,17 +15,21 @@
           This seamless user experience is critical for blockchain’s mass adoption.
         </p>
       </div>
+      <div half flex column justify-center align-center>
+        <SchemaAdoptionBefore mb2/>
+        <p class="subtitle">App users are responsible for direct interaction with technologies</p>
+      </div>
     </div>
-    <div class="container-child" flex row space-between>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <div half flex column justify-center align-center>
+        <SchemaAdoption mb2/>
+        <p class="subtitle">App users bypass the complexities by using MESG</p>
+      </div>
       <div half flex column justify-center>
         <h3>MESG System</h3>
         <p>
           With MESG, blockchain developers can pay the overhead, saving the users from a cumbersome experience, then generate income via other avenues such as advertising, much like Web 2.0 applications.
         </p>
-      </div>
-      <div half flex column justify-center align-center>
-        <SchemaAdoption mb2/>
-        <p class="subtitle">App users bypass the complexities by using MESG</p>
       </div>
     </div>
   </div>
@@ -52,20 +52,8 @@ h2 {
   text-align: center;
 }
 
-svg {
-  width: 75%;
-  max-width: 75%;
-}
 .subtitle {
   text-align: center;
-}
-
-.separator-orange {
-  width: 60px;
-  height: 6px;
-  border-radius: 3px;
-  background-color:#ffa744;
-  background-color: var(--Orange-cta);
 }
 
 </style>

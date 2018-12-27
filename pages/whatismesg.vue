@@ -1,10 +1,14 @@
 <template>
   <div>
       <HeaderMesg id="introduction" class="dark"/>
-      <Nutshell id="nutshell" class="white"/>
-      <HowDoesItWork id="mesg" class="dark"/>
-      <WhyImportant id="whyimportant" class="white"/>
-      <CTAApplication id="ctaapplication" class="dark"/>
+      <div class="white">
+        <Nutshell id="nutshell"/>
+        <HowDoesItWork id="mesg"/>
+        <WhyImportant id="whyimportant"/>
+        <Features id="features"/>
+        <Blockchain id="blockchain"/>
+      </div>
+      <CTAGetStarted id="get started" class="dark"/>
   </div>
 </template>
 
@@ -13,14 +17,18 @@ import HeaderMesg from '~/components/HeaderMesg'
 import Nutshell from '~/components/Nutshell'
 import HowDoesItWork from '~/components/HowDoesItWork'
 import WhyImportant from '~/components/WhyImportant'
-import CTAApplication from '~/components/CTAApplication'
+import Features from '~/components/Features'
+import Blockchain from '~/components/Blockchain'
+import CTAGetStarted from '~/components/CTAGetStarted'
 export default {
   components: {
     HeaderMesg,
     Nutshell,
     HowDoesItWork,
     WhyImportant,
-    CTAApplication
+    Features,
+    Blockchain,
+    CTAGetStarted
   }
 }
 </script>

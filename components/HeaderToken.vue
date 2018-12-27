@@ -1,18 +1,21 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex column space-between>
-      <div flex column justify-center align-center>
+    <div class="container-child" flex row column-reverse-responsive space-between>
+      <header flex half column justify-center>
+        <h1>
+          Purchase the MESG token
+        </h1>
+        <p mb2>
+          The MESG token will be listing soon, get up to date by clicking on the button below to make sure you won't miss it.
+        </p>
+        <nav flex>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>I want the MESG token</Button>
+        </nav>
+      </header>
+      <div flex column half justify-center align-center>
         <SchemaHeader class="schema" />
       </div>
-      <header flex column justify-center align-center>
-        <h1>
-          How MESG works?
-        </h1>
-        <p>
-          MESG is a bridge between the legacy web and the new decentralized and trustless web.
-        </p>
-      </header>
     </div>
   </div>
   </section>
@@ -20,9 +23,11 @@
 
 <script>
 import SchemaHeader from '~/components/SchemaHeader'
+import Button from '~/components/Button'
 export default {
   components: {
-    SchemaHeader
+    SchemaHeader,
+    Button
   }
 }
 </script>
@@ -33,14 +38,9 @@ export default {
   z-index:-1;
 }
 
-h1{
-  text-align: center;
-}
-
 p {
   font-size: 1.6em;
   font-weight: normal;
-  text-align: center;
 }
 
 .schema {

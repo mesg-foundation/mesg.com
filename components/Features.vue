@@ -60,11 +60,6 @@
           <br>
           <br>
           Anyone can receive income with MESG by participating in the Network.
-          <!--
-          TODO:
-          <br><br>
-          <strong>For more information on how you can start participating in the network today, click here.</strong>
-          -->
         </p>
       </div>
     </div>
