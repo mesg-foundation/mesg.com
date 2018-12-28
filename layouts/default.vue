@@ -15,8 +15,8 @@
       --animation-speed: 1;
     }
     </style>
-    <Token/>
-    <Menu/>
+    <Token class="token-bar"/>
+    <Menu class="menu-bar"/>
     <nuxt/>
     <Footer/>
   </div>
@@ -307,5 +307,23 @@ svg {
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
   [hide-mobile] { display: none; }
+}
+</style>
+
+<style scoped>
+.token-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.menu-bar {
+  margin-top: 57px;
+}
+@media only screen and (max-width: 414px) {
+  .menu-bar {
+    margin-top: 70px;
+  } 
 }
 </style>

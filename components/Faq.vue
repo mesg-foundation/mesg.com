@@ -28,7 +28,7 @@ const faq = require("~/assets/faq")
 export default {
   data () {
     return {
-      offset: { top: 30 },
+      offset: { top: 70 },
       shouldStick: true,
     }
   },
