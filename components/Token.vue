@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="banner" flex row space-between justify-center align-center>
+    <nuxt-link to="/token" class="banner" flex row space-between justify-center align-center>
       <div class="coming" flex row justify-center align-center>
         <div class="token" mr1></div>
         <p>
@@ -9,13 +9,11 @@
       </div>
       <div flex row justify-center align-center>
         <nav class="more">
-          <nuxt-link class="button btn" to="/token">
-            Learn More
-            <!--<i class="fas fa-angle-down" ml1></i>-->
-          </nuxt-link>
+          Learn More
+          <!--<i class="fas fa-angle-down" ml1></i>-->
         </nav>
       </div>
-    </div>
+    </nuxt-link>
     <!--<transition name="appear">
       <div v-if="open" class="infos" @click="open = !open" flex row space-between justify-center align-center>
         <div flex row thirdtwo justicy-center align-center>
