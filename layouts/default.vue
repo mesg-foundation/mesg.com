@@ -15,17 +15,20 @@
       --animation-speed: 1;
     }
     </style>
-    <Menu/>
+    <Token class="token-bar"/>
+    <Menu class="menu-bar"/>
     <nuxt/>
     <Footer/>
   </div>
 </template>
 
 <script>
+import Token from '~/components/Token'
 import Menu from '~/components/Menu'
 import Footer from '~/components/Footer'
 export default {
   components: {
+    Token,
     Menu,
     Footer
   }
@@ -167,6 +170,11 @@ li::before {
   color: var(--white-content);
 }
 
+.purple {
+  background-color: #9452ff;
+  background-color: var(--lighter-purple);
+}
+
 .white {
   background-color: #fafafe;
   background-color: var(--pale-white);
@@ -296,5 +304,23 @@ svg {
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
   [hide-mobile] { display: none; }
+}
+</style>
+
+<style scoped>
+.token-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.menu-bar {
+  margin-top: 57px;
+}
+@media only screen and (max-width: 414px) {
+  .menu-bar {
+    margin-top: 70px;
+  } 
 }
 </style>
