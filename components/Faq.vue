@@ -2,8 +2,8 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row space-between>
-      <div third flex column>
-        <nav flex column class="sidebar">
+      <div third flex column hide-responsive>
+        <nav v-sticky="shouldStick" sticky-offset="offset" sticky-side="top" flex column class="sidebar">
           <a v-for="category in faq" :key="category.id" :href="`#${category.id}`">{{category.category}}</a>
         </nav>
       </div>
@@ -26,6 +26,29 @@
 <script>
 const faq = require("~/assets/faq")
 export default {
+  data () {
+    return {
+      offset: { top: 30 },
+      shouldStick: true,
+    }
+  },
+  mounted () {
+    // find out what size the window is loaded in and configure the stickiness.
+    this.$nextTick(() => { this.setShouldStick() })
+
+    // configure stickiness on each change to window's size.
+    window.addEventListener('resize', this.setShouldStick)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.setShouldStick)
+  },
+  methods: {
+    // setShouldStick ensures to make sidebar sticky when it's not vertically
+    // aligned with the content.
+		setShouldStick() {
+      this.shouldStick = document.documentElement.clientWidth > 768
+		},
+  },
   computed: {
     faq () {
       return faq
@@ -38,9 +61,9 @@ export default {
 <style scoped>
 
 .sidebar {
-    border: solid 1px #d6d0e7;
-    border-radius:4px;
-    margin-bottom: 1.8em;
+  border: solid 1px #d6d0e7;
+  border-radius:4px;
+  margin-bottom: 1.8em;
 }
 
 a {
@@ -91,7 +114,9 @@ a:hover {
     margin-bottom: 1.8em;
   }
   [mt2] { margin-top: 1.8em!important; }
-
+}
+@media only screen and (max-width: 1023px) {
+  [thirdtwo] { width: 100%; }
 }
 
 </style>
