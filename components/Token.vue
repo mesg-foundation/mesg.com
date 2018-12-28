@@ -3,19 +3,20 @@
     <div class="banner" flex row space-between justify-center align-center>
       <div class="coming" flex row justify-center align-center>
         <div class="token" mr1></div>
-        <p hide-mobile>
+        <p>
           The MESG token is coming
         </p>
       </div>
       <div flex row justify-center align-center>
         <nav class="more">
-          <a @click="open = !open" :class="{ animated: open }">
-            Learn More<i class="fas fa-angle-down" ml1></i>
-          </a>
+          <nuxt-link class="button btn" to="/token">
+            Learn More
+            <!--<i class="fas fa-angle-down" ml1></i>-->
+          </nuxt-link>
         </nav>
       </div>
     </div>
-    <transition name="appear">
+    <!--<transition name="appear">
       <div v-if="open" class="infos" @click="open = !open" flex row space-between justify-center align-center>
         <div flex row thirdtwo justicy-center align-center>
           <div class="content-picture" flex column justify-center align-center>
@@ -37,24 +38,24 @@
             <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" primary>Buy the MESG token</Button>
           </nav>
         </div>
-      </transition>
+      </transition>-->
   </div>
 </template>
 
 <script>
-import Button from '~/components/Button'
-import SchemaConnection from '~/components/SchemaConnection'
-export default {
-  components: {
-    Button,
-    SchemaConnection
-  },
-  data () {
-    return {
-      open: false
-    }
-  }
-}
+// import Button from '~/components/Button'
+// import SchemaConnection from '~/components/SchemaConnection'
+// export default {
+//   components: {
+//     Button,
+//     SchemaConnection
+//   },
+//   data () {
+//     return {
+//       open: false
+//     }
+//   }
+// }
 </script>
 
 <style scoped>
@@ -186,6 +187,7 @@ svg {
     padding-right:1.8em;
     padding-top:0.6em;
     padding-bottom:0.6em;
+    flex-direction: column;
   }
   @keyframes appear-in {
     0% {
