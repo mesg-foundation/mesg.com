@@ -7,7 +7,7 @@
     }">
     <slot></slot>
   </button>
-  <a v-else
+  <a v-else-if="href"
     :href="href"
     :class="{
       'btn--small': small,
@@ -15,12 +15,21 @@
     }">
     <slot></slot>
   </a>
+  <nuxt-link v-else
+    :to="to"
+    :class="{
+      'btn--small': small,
+      'btn--primary': primary
+    }">
+    <slot></slot>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
   props: {
     href: String,
+    to: [Object, String],
     submit: Boolean,
     small: Boolean,
     primary: Boolean,
