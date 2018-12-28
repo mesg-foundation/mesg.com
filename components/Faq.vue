@@ -2,7 +2,7 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row space-between>
-      <div third flex column>
+      <div third flex column hide-responsive>
         <nav v-sticky="shouldStick" sticky-offset="offset" sticky-side="top" flex column class="sidebar">
           <a v-for="category in faq" :key="category.id" :href="`#${category.id}`">{{category.category}}</a>
         </nav>
@@ -109,6 +109,9 @@ a:hover {
     margin-bottom: 1.8em;
   }
   [mt2] { margin-top: 1.8em!important; }
+}
+@media only screen and (max-width: 1023px) {
+  [thirdtwo] { width: 100%; }
 }
 
 </style>
