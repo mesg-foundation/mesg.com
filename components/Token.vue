@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="banner" flex row space-between justify-center align-center>
-      <div flex row justify-center align-center>
+      <div class="coming" flex row justify-center align-center>
         <div class="token" mr1></div>
-        <p>
+        <p hide-mobile>
           The MESG token is coming
         </p>
       </div>
@@ -144,7 +144,7 @@ svg {
 }
 @keyframes appear-in {
   0% {
-    transform: translateY(-300px);
+    transform: translateY(-400px);
   }
   100% {
     transform: translateY(0);
@@ -165,6 +165,14 @@ svg {
   .infos {
     padding:2.4em;
   }
+  @keyframes appear-in {
+    0% {
+      transform: translateY(-944px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   [third] { width: 100%;}
   [thirdtwo] { width: 100%;}
 }
@@ -173,15 +181,19 @@ svg {
   .infos {
     padding:1.8em;
   }
-  .more {
-    align-items:center;
-    padding-top:1.2em;
-  }
   .banner {
     padding-left:1.8em;
     padding-right:1.8em;
     padding-top:0.6em;
     padding-bottom:0.6em;
+  }
+  @keyframes appear-in {
+    0% {
+      transform: translateY(-742px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 
