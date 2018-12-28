@@ -47,6 +47,12 @@ module.exports = {
     middleware: ['mesg-curl']
   },
   /*
+  ** Plugins
+  */
+  plugins: [
+    { src: '~/plugins/vue-sticky-directive', ssr: false }
+  ],
+  /*
   ** Build configuration
   */
   build: {
