@@ -1,28 +1,28 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex column space-between>
-      <div flex column justify-center align-center>
-        <SchemaHeader class="schema" />
-      </div>
-      <header flex column justify-center align-center>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <header half flex column justify-center>
         <h1>
-          The MESG solution
+          The MESG Engine
         </h1>
         <p>
           MESG is a bridge between the legacy web and the new decentralized and trustless web.
         </p>
       </header>
+      <div half flex column justify-center align-center>
+        <SchemaEngine class="schema" />
+      </div>
     </div>
   </div>
   </section>
 </template>
 
 <script>
-import SchemaHeader from '~/components/SchemaHeader'
+import SchemaEngine from '~/components/SchemaEngine'
 export default {
   components: {
-    SchemaHeader
+    SchemaEngine
   }
 }
 </script>
@@ -31,27 +31,23 @@ export default {
 
 .container-parent {
   z-index:-1;
+  padding-top: 5.4em;
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
 
-h1{
-  text-align: center;
-}
 
 p {
   font-size: 1.6em;
   font-weight: normal;
-  text-align: center;
 }
 
 .schema {
   max-height: calc(30vh - 15em);
   min-height:450px;
-  padding-bottom:2.4em;
   margin-top:0;
-}
-
-section {
-  padding-top: 5.4em;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -64,11 +60,15 @@ section {
    padding-top:4.8em;
    min-height: 0;
  }
+ header{
+   text-align:center;
+ }
  p {
    font-size: 1.4em;
  }
  .schema {
-   width: 65%;
+   min-height:280px;
+   margin-bottom:2.4em;
  }
 }
 
@@ -80,8 +80,7 @@ section {
      padding-top:3.8em;
    }
    .schema {
-     min-height: 400px;
-     width: 85%;
+     margin-bottom:1.8em;
    }
  }
 

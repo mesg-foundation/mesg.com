@@ -18,9 +18,8 @@
     <transition name="appear">
       <div v-if="open" class="container-child" flex column justify-center align-center>
         <nav @click="open = !open" class="nav" flex column justify-center align-center>
-          <nuxt-link to="/whatismesg" class="menu-nav" flex column justify-center align-center>How it works</nuxt-link>
-          <nuxt-link to="/solution" class="menu-nav" flex column justify-center align-center>Solution</nuxt-link>
-          <nuxt-link to="/showcases" class="menu-nav" flex column justify-center align-center>Showcases</nuxt-link>
+          <nuxt-link to="/marketplace" class="menu-nav" flex column justify-center align-center>Marketplace</nuxt-link>
+          <nuxt-link to="/engine" class="menu-nav" flex column justify-center align-center>Engine</nuxt-link>
           <nuxt-link to="/token" class="menu-nav" flex column justify-center align-center>Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav" flex column justify-center align-center>Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mb2 flex column justify-center align-center>Roadmap</nuxt-link>
@@ -172,12 +171,6 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .appear-enter-active {
-    animation: appear-in calc(var(--animation-speed) * 0.4s) ease-out;
-  }
-  .appear-leave-active {
-    animation: appear-in calc(var(--animation-speed) * 0.4s) reverse ease-in;
-  }
   @keyframes appear-in {
     0% {
       transform: translateY(-944px);
@@ -188,12 +181,6 @@ a {
   }
 }
 @media only screen and (max-width: 414px) {
-  .appear-enter-active {
-    animation: appear-in calc(var(--animation-speed) * 0.4s) ease-out;
-  }
-  .appear-leave-active {
-    animation: appear-in calc(var(--animation-speed) * 0.4s) reverse ease-in;
-  }
   @keyframes appear-in {
     0% {
       transform: translateY(-742px);

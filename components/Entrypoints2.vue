@@ -5,21 +5,21 @@
         <nav flex row justify-center align-center>
           <nuxt-link to="team" class="card">
             <div flex column justify-center align-center>
-              <IconEntrepreneurs mb1/>
+              <IconTeam class="icon" mb1/>
               <h2 mb05>Team</h2>
               <p>The people behind MESG</p>
             </div>
           </nuxt-link>
           <nuxt-link to="/roadmap" class="card">
             <div flex column justify-center align-center>
-              <IconIncubators mb1/>
+              <IconRoadmap class="icon" mb1/>
               <h2 mb05>Roadmap</h2>
               <p>Our vision and goals</p>
             </div>
           </nuxt-link>
           <nuxt-link to="faq" class="card">
             <div flex column justify-center align-center>
-              <IconDevelopers mb1/>
+              <IconFAQ class="icon" mb1/>
               <h2 mb05>FAQ</h2>
               <p>Find more about MESG</p>
             </div>
@@ -31,14 +31,14 @@
 </template>
 
 <script>
-import IconIncubators from '~/components/IconIncubators'
-import IconEntrepreneurs from '~/components/IconEntrepreneurs'
-import IconDevelopers from '~/components/IconDevelopers'
+import IconRoadmap from '~/components/IconRoadmap'
+import IconTeam from '~/components/IconTeam'
+import IconFAQ from '~/components/IconFAQ'
 export default {
   components: {
-    IconIncubators,
-    IconEntrepreneurs,
-    IconDevelopers
+    IconRoadmap,
+    IconTeam,
+    IconFAQ
   },
   props: {
     to: String
@@ -55,6 +55,10 @@ h2 {
 
 svg{
   margin-top:0;
+}
+
+.icon {
+  max-width: 100px;
 }
 
 .card {

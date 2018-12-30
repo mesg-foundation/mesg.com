@@ -5,9 +5,8 @@
           <MESGLogoHorizontalWhite class="logo" />
         </a>
         <div class="menu" flex row space-between align-center>
-          <nuxt-link to="/whatismesg" class="menu-nav">How it works</nuxt-link>
-          <nuxt-link to="/solution" class="menu-nav">Solution</nuxt-link>
-          <nuxt-link to="/showcases" class="menu-nav">Showcases</nuxt-link>
+          <nuxt-link to="/marketplace" class="menu-nav">Marketplace</nuxt-link>
+          <nuxt-link to="/engine" class="menu-nav">Engine</nuxt-link>
           <nuxt-link to="/token" class="menu-nav">Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mr1>Roadmap</nuxt-link>

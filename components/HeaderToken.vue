@@ -14,7 +14,7 @@
         </nav>
       </header>
       <div flex column half justify-center align-center>
-        <SchemaHeader class="schema" />
+        <IconToken class="schema" />
       </div>
     </div>
   </div>
@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import SchemaHeader from '~/components/SchemaHeader'
+import IconToken from '~/components/IconToken'
 import Button from '~/components/Button'
 export default {
   components: {
-    SchemaHeader,
+    IconToken,
     Button
   }
 }
@@ -36,6 +36,11 @@ export default {
 
 .container-parent {
   z-index:-1;
+  padding-top: 5.4em;
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
 
 p {
@@ -44,14 +49,10 @@ p {
 }
 
 .schema {
+  max-width: 400px;
   max-height: calc(30vh - 15em);
   min-height:450px;
   margin-top:0;
-  padding-bottom:2.4em;
-}
-
-section {
-  padding-top: 5.4em;
 }
 
 @media only screen and (min-width: 1025px) {

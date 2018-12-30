@@ -2,18 +2,18 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
-      <div class="content" flex column justify-center align-center>
-        <h2>
-          The MESG Token
-        </h2>
+      <header flex column justify-center align-center>
+        <IconToken2 class="token" mb1/>
+        <h1>
+          Purchase the MESG token
+        </h1>
         <p mb2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa.<br/>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa.
+          The MESG token will be listing soon, get up to date by clicking on the button below to make sure you won't miss it.
         </p>
-        <nav flex justify-center align-center>
-          <Button to="/" primary>Discover the MESG Token</Button>
+        <nav flex>
+          <Button to="token" primary>Discover the MESG token</Button>
         </nav>
-      </div>
+      </header>
     </div>
   </div>
   </section>
@@ -21,9 +21,11 @@
 
 <script>
 import Button from '~/components/Button'
+import IconToken2 from '~/components/IconToken2'
 export default {
   components: {
-    Button
+    Button,
+    IconToken2
   }
 }
 </script>
@@ -31,11 +33,15 @@ export default {
 <style scoped>
 
 .container-parent {
-  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Build.jpg");
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  text-align: center;
+  text-align:center;
+}
+
+.token {
+  max-width: 100px;
 }
 
 </style>

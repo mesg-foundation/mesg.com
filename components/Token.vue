@@ -2,14 +2,14 @@
   <div>
     <nuxt-link to="/token" class="banner" flex row space-between justify-center align-center>
       <div class="coming" flex row justify-center align-center>
-        <div class="token" mr1></div>
+        <IconToken2 class="token" mr1 />
         <p>
           The MESG token is coming
         </p>
       </div>
       <div flex row justify-center align-center>
         <nav class="more">
-          Learn More
+          Learn More <i class="fas fa-arrow-right"></i>
           <!--<i class="fas fa-angle-down" ml1></i>-->
         </nav>
       </div>
@@ -54,6 +54,12 @@
 //     }
 //   }
 // }
+import IconToken2 from '~/components/IconToken2'
+export default {
+   components: {
+     IconToken2
+   }
+}
 </script>
 
 <style scoped>
@@ -72,6 +78,11 @@
   background-color: #9452ff;
   background-color: var(--lighter-purple);
 }
+.banner:hover {
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+  background-color: #5D28B2;
+  background-color: var(--lighter-purple-hover);
+}
 
 .infos {
   z-index:10;
@@ -81,6 +92,10 @@
   right:0;
   background-color: #9452ff;
   background-color: var(--lighter-purple);
+}
+
+i {
+  margin-left:0.6em;
 }
 
 p {
@@ -107,11 +122,7 @@ svg {
 }
 
 .token {
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
+  max-width: 30px;
 }
 
 .picture {

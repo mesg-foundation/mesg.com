@@ -1,18 +1,12 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row space-between>
-      <div class="bloc resp" half flex column justify-center>
-        <h2>Marketplace</h2>
-        <p mb2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus suscipit ullamcorper. In feugiat et dolor quis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus suscipit ullamcorper. In feugiat et dolor quis dapibus.
-        </p>
+    <div class="container-child" flex row space-between justify-center align-center>
+      <div half flex column jsutify-center align-center>
+        <SchemaMarketplaceDetail />
       </div>
-      <div class="bloc" half flex column justify-center>
-        <h2>Engine</h2>
-        <p mb2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus suscipit ullamcorper. In feugiat et dolor quis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus suscipit ullamcorper. In feugiat et dolor quis dapibus.
-        </p>
+      <div half flex column jsutify-center align-center>
+        <SchemaEngineDetail />
       </div>
     </div>
   </div>
@@ -20,15 +14,26 @@
 </template>
 
 <script>
-import SchemaConnection from '~/components/SchemaConnection'
+import SchemaMarketplaceDetail from '~/components/SchemaMarketplaceDetail'
+import SchemaEngineDetail from '~/components/SchemaEngineDetail'
 export default {
   components: {
-    SchemaConnection
+    SchemaMarketplaceDetail,
+    SchemaEngineDetail
   }
 }
 </script>
 
 <style scoped>
+
+.container-parent {
+  padding-top:0;
+  padding-bottom:0;
+}
+.container-child {
+  padding-top:0;
+  padding-bottom:0;
+}
 
 .bloc {
   padding: 2.4em;

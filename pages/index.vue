@@ -2,7 +2,7 @@
   <div>
     <Header id="introduction" class="dark"/>
     <div class="white">
-      <Concept id="concept"/>
+      <MarketplaceEngine id="marketplace engine"/>
       <Entrypoints id="entry points"/>
       <Entrypoints2 id="entry points 2"/>
     </div>
@@ -13,14 +13,14 @@
 
 <script>
 import Header from '~/components/Header'
-import Concept from '~/components/Concept'
+import MarketplaceEngine from '~/components/MarketplaceEngine'
 import Entrypoints from '~/components/Entrypoints'
 import Entrypoints2 from '~/components/Entrypoints2'
 import CTAToken from '~/components/CTAToken'
 export default {
   components: {
     Header,
-    Concept,
+    MarketplaceEngine,
     Entrypoints,
     Entrypoints2,
     CTAToken
