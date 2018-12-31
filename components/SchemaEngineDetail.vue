@@ -197,7 +197,7 @@
 .st4{fill:#D6D0E7;}
 .st5{fill:#491E8C;}
 .st6{fill:none;}
-.st7{font-family:'Quicksand-Medium';}
+.st7{font-family:'Quicksand';}
 .st8{font-size:40px;}
 .st9{fill:#9452FF;}
 .st10{fill:#AE3FE8;}

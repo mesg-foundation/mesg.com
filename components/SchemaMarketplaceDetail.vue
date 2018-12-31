@@ -3158,7 +3158,7 @@
 .st18{fill:none;stroke:#FFA744;stroke-width:2;stroke-miterlimit:10;}
 .st19{fill:#FFA744;}
 .st20{fill:none;}
-.st21{font-family:'Quicksand-Medium';}
+.st21{font-family:'Quicksand';}
 .st22{font-size:40px;}
 .st23{font-family:'OpenSans-Regular';}
 .st24{font-size:20px;}
