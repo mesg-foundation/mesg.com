@@ -10,7 +10,7 @@
           Get paid for the Modules you create in a value driven economy based on participation and useful contribution.
         </p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Keep me updated</Button>
+          <Button href="http://eepurl.com/drKt-5" target="_blank" primary>Keep me updated</Button>
         </nav>
       </header>
       <div flex column half justify-center align-center>

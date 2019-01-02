@@ -11,7 +11,7 @@
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>
         <nav flex>
-          <Button to="token" primary>Keep me updated</Button>
+          <Button href="http://eepurl.com/drKt-5" target="_blank" primary>Keep me updated</Button>
         </nav>
       </div>
     </div>
