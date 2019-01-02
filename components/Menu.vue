@@ -5,11 +5,11 @@
           <MESGLogoHorizontalWhite class="logo" />
         </a>
         <div class="menu" flex row space-between align-center>
+          <nuxt-link to="/market" class="menu-nav">Market</nuxt-link>
+          <nuxt-link to="/engine" class="menu-nav">Engine</nuxt-link>
+          <nuxt-link to="/token" class="menu-nav">Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
-          <nuxt-link to="/roadmap" class="menu-nav">Roadmap</nuxt-link>
-          <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="menu-nav">Marketplace</a>
-          <a href="https://docs.mesg.com" class="menu-nav">Documentation</a>
-          <a href="https://forum.mesg.com" class="menu-nav" mr05>Get Help</a>
+          <nuxt-link to="/roadmap" class="menu-nav" mr1>Roadmap</nuxt-link>
           <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small primary>Get Started</Button>
         </div>
     </nav>
@@ -52,7 +52,7 @@ a {
   text-decoration: none;
   color: #ffffff;
   color: var(--white-content);
-  padding: 1.4em;
+  padding: 1.2em;
   box-sizing: content-box;
   border-bottom: solid 2px transparent;
 }

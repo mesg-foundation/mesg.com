@@ -4,14 +4,14 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          The MESG Team
+          MESG Market
         </h1>
         <p>
-          The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.
+          Earn tokens when others make use of your applications.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <IconTeam class="schema" />
+        <SchemaMarketplace class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import IconTeam from '~/components/IconTeam'
+import SchemaMarketplace from '~/components/SchemaMarketplace'
 export default {
   components: {
-    IconTeam
+    SchemaMarketplace
   }
 }
 </script>
@@ -56,27 +56,27 @@ p {
  }
 }
 @media only screen and (max-width: 768px) {
- section {
-   padding-top:4.8em;
-   min-height: 0;
+  section {
+    padding-top:4.8em;
+    min-height: 0;
+  }
+  header{
+    text-align:center;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  .schema {
+    min-height:280px;
+    margin-bottom:2.4em;
+  }
+  .container-parent {
+    padding-top: 2.4em;
+  }
+  .container-child {
+    max-width: 600px;
+  }
  }
- header{
-   text-align:center;
- }
- p {
-   font-size: 1.4em;
- }
- .schema {
-   min-height:280px;
-   margin-bottom:2.4em;
- }
- .container-parent {
-   padding-top: 2.4em;
- }
- .container-child {
-   max-width: 600px;
- }
-}
 
  @media only screen and (max-width: 414px) {
    p {

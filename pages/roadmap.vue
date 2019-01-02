@@ -1,7 +1,7 @@
 <template>
-  <div class="dark">
-    <HeaderRoadmap id="introduction"/>
-    <Roadmap id="roadmap"/>
+  <div>
+    <HeaderRoadmap id="introduction" class="dark"/>
+    <Roadmap id="roadmap" class="white"/>
   </div>
 </template>
 

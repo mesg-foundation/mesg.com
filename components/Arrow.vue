@@ -40,16 +40,16 @@
 
 #Circle {
   opacity: 0;
-  animation: show-move calc(var(--animation-speed) * 0.5s) calc(var(--animation-speed) *  3s) forwards 1 ease-out;
+  animation: show-move calc(var(--animation-speed) * 0.5s) calc(var(--animation-speed) *  1s) forwards 1 ease-out;
 }
 #Arrow {
   opacity:0;
-  animation: show calc(var(--animation-speed) * 0.5s) calc(var(--animation-speed) * 3.8s) forwards 1 linear, show-move2 calc(var(--animation-speed) * 5s) forwards infinite ease-out;
+  animation: show calc(var(--animation-speed) * 0.5s) calc(var(--animation-speed) * 1.8s) forwards 1 linear, show-move2 calc(var(--animation-speed) * 5s) forwards infinite ease-out;
 }
 
 #learn {
  opacity:0;
- animation: show-move3 calc(var(--animation-speed) * 0.5s) calc(var(--animation-speed) * 3s) forwards 1 ease-out;
+ animation: show-move3 calc(var(--animation-speed) * 0.5s) calc(var(--animation-speed) * 1s) forwards 1 ease-out;
  }
 
 @keyframes show {

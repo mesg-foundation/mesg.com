@@ -28,7 +28,7 @@ const faq = require("~/assets/faq")
 export default {
   data () {
     return {
-      offset: { top: 30 },
+      offset: { top: 70 },
       shouldStick: true,
     }
   },
@@ -98,10 +98,15 @@ a:hover {
   a {
     font-size: 1em;
   }
+  [third] { width: calc(33% - 2.4em) }
+  [thirdtwo] { width: calc(66% - 2.4em) }
 }
 @media only screen and (max-width: 767px) {
-  [third] { width: 100%}
-  [thirdtwo] { width: 100%}
+  a {
+    font-size: 1em;
+  }
+  [third] { width: 100%; }
+  [thirdtwo] { width: 100%; }
 }
 @media only screen and (max-width: 414px) {
   .separator {

@@ -4,13 +4,13 @@
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
         <h2>
-          MESG in application
+          Start optimizing today
         </h2>
         <p mb2>
-          Discorver our Use Cases to know how you can integrate MESG in your Business and the value it will provide.
+          Find out how you can start automating, streamlining and expanding your business today with MESG.
         </p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Use Cases</Button>
+          <Button to="/market" primary>Learn how you can earn</Button>
         </nav>
       </div>
     </div>
@@ -30,13 +30,15 @@ export default {
 <style scoped>
 
 .container-parent {
-  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Hire.jpg");
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Business.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   text-align: center;
 }
 
-
+.content {
+  max-width: 600px;
+}
 
 </style>

@@ -1,95 +1,80 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row space-between>
-      <header flex column justify-center half>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <header half flex column justify-center>
         <h1>
-          Build applications <br>
-          connecting any technologies
+          The new economy of app development
         </h1>
-        <p mb2>Automate and expand business functions through a decentralized reward-driven ecosystem.</p>
-        <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Get in Touch</Button>
-        </nav>
+        <p>
+          Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.
+        </p>
       </header>
-      <div flex column half align-center justify-center>
-        <SchemaHeader class="schema"/>
+      <div half flex column justify-center align-center>
+        <SchemaMESG class="schema" />
       </div>
-    </div>
-    <div class="scroll-down" flex row justify-center align-center hide-responsive>
-      <Arrow class="Arrow-more"/>
     </div>
   </div>
   </section>
 </template>
 
 <script>
-import Button from '~/components/Button'
-import MESGLogoHorizontalWhite from '~/components/MESGLogoHorizontalWhite'
-import SchemaHeader from '~/components/SchemaHeader'
-import Arrow from '~/components/Arrow'
+import SchemaMESG from '~/components/SchemaMESG'
 export default {
   components: {
-    Button,
-    MESGLogoHorizontalWhite,
-    SchemaHeader,
-    Arrow
+    SchemaMESG
   }
 }
 </script>
 
-
 <style scoped>
+
 .container-parent {
   z-index:-1;
+  padding-top: 5.4em;
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
+
 
 p {
   font-size: 1.6em;
   font-weight: normal;
 }
 
-.scroll-down {
-  margin-bottom: -1em;
-}
-.Arrow-more {
-  height: 4em;
-}
-
 .schema {
-  max-height: calc(100vh - 15em);
-  min-height:520px;
+  max-height: calc(30vh - 15em);
+  min-height:450px;
+  margin-top:0;
 }
-
-.logo {
-  width: 60%;
-  max-width: 60%;
-  object-fit: contain;
-}
-
-section {
-  padding-top: 2.4em;
-}
-
 
 @media only screen and (min-width: 1025px) {
  .container-child {
-   min-height:calc(100vh - 10em);
+   min-height:calc(30vh - 10em);
  }
 }
 @media only screen and (max-width: 768px) {
- header {
-   text-align: center;
-   align-items: center;
- }
  section {
    padding-top:4.8em;
+   min-height: 0;
+ }
+ header{
+   text-align:center;
  }
  p {
    font-size: 1.4em;
  }
- .logo {
-   margin-top: 0;
+ .schema {
+   min-height:280px;
+   margin-bottom:2.4em;
+ }
+ .container-parent {
+   padding-top: 2.4em;
+ }
+ .container-child {
+   max-width: 600px;
  }
 }
 
@@ -97,14 +82,16 @@ section {
    p {
      font-size: 1.2em;
    }
-   svg {
-     margin-top: 2.4em;
-   }
-   .schema {
-     min-height: 400px;
-   }
    section {
      padding-top:3.8em;
+   }
+   .schema {
+     max-height: 280px;
+     max-width: 280px;
+     margin-bottom:1.8em;
+   }
+   .container-parent {
+     padding-top: 0em;
    }
  }
 

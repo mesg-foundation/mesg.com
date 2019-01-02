@@ -15,17 +15,20 @@
       --animation-speed: 1;
     }
     </style>
-    <Menu/>
+    <Token class="token-bar"/>
+    <Menu class="menu-bar"/>
     <nuxt/>
     <Footer/>
   </div>
 </template>
 
 <script>
+import Token from '~/components/Token'
 import Menu from '~/components/Menu'
 import Footer from '~/components/Footer'
 export default {
   components: {
+    Token,
     Menu,
     Footer
   }
@@ -167,27 +170,29 @@ li::before {
   color: var(--white-content);
 }
 
+.purple {
+  background-color: #9452ff;
+  background-color: var(--lighter-purple);
+}
+
 .white {
   background-color: #fafafe;
   background-color: var(--pale-white);
-  box-shadow: 0 0 1.2em 1.2em rgba(0, 0, 0, 0.25);
-  position: relative;
 }
 
 svg {
-  width: 100%;
-  max-width: 100%;
+  width: 85%;
+  max-width: 85%;
   object-fit: contain;
 }
 
 .separator-orange {
   width: 60px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #ffa744;
-    background-color: var(--Orange-cta);
+  height: 6px;
+  border-radius: 3px;
+  background-color:#ffa744;
+  background-color: var(--Orange-cta);
 }
-
 </style>
 
 <style>
@@ -207,6 +212,7 @@ svg {
 [thirdtwo] { width: 800px; }
 [p0] { padding: 0!important; }
 [mt0] { margin-top: 0!important; }
+[mt05] { margin-top: 0.6em!important; }
 [mt1] { margin-top: 1.2em!important; }
 [mt2] { margin-top: 2.4em!important; }
 [mb0] { margin-bottom: 0!important; }
@@ -277,7 +283,7 @@ svg {
   [mr2] { margin-right: 1.2em!important; }
   [row-reverse-responsive] { flex-direction: row-reverse; }
   [column-reverse-responsive] { flex-direction: column-reverse; }
-  [column] > svg { width: 80%; max-width: 80%; object-fit: contain; margin-top: 4.8em;}
+  [column] > svg { width: 75%; max-width: 75%; object-fit: contain; margin-top: 4.8em;}
 }
 @media only screen and (max-width: 414px) {
   .container-parent {
@@ -299,5 +305,23 @@ svg {
   [mb2] { margin-bottom: 1.2em!important; }
   [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
   [hide-mobile] { display: none; }
+}
+</style>
+
+<style scoped>
+.token-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.menu-bar {
+  margin-top: 57px;
+}
+@media only screen and (max-width: 414px) {
+  .menu-bar {
+    margin-top: 70px;
+  }
 }
 </style>

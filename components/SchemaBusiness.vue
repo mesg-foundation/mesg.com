@@ -668,7 +668,7 @@
 .st0{opacity:0.06;fill:#9452FF;enable-background:new    ;}
 .st1{fill:#491E8C;}
 .st2{fill:#FFFFFF;}
-.st3{font-family:'Quicksand-Medium', sans-serif;;}
+.st3{font-family:'Quicksand', sans-serif;;}
 .st4{font-size:16px;}
 .st5{fill:#30B24B;}
 .st6{fill:none;stroke:#FFA744;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}

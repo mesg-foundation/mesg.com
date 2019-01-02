@@ -10,10 +10,11 @@
           </div>
         </div>
         <div class="container-nav" flex row align-center>
-          <nuxt-link to="/faq" class="nav" mr1>FAQ</nuxt-link>
-          <a href="https://medium.com/mesg/mesg-core-v1-0-launch-a-new-era-89c534855413" target="_blank" class="nav" mr1>What is MESG?</a>
-          <a href="https://docs.mesg.com/" target="_blank" class="nav" mr1>Documentation</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform" target="_blank" class="nav">Get in touch</a>
+          <nuxt-link to="/faq" class="nav" mr2>FAQ</nuxt-link>
+          <a href="https://forum.mesg.com" target="_blank" class="nav" mr2>Get Help</a>
+          <a href="https://docs.mesg.com" target="_blank" class="nav" mr2>Documentation</a>
+          <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="nav" mr2>Marketplace</a>
+          <a href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" class="nav">Get in touch</a>
         </div>
       </div>
       <div class="container-child separator"  flex row space-between column-reverse-responsive>
@@ -99,10 +100,12 @@ a:hover {
   transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
   .container-nav {
     padding-top:1.2em;
   }
+}
+@media only screen and (max-width: 768px) {
   [mr1] { margin-right: 1.2em!important; }
   [column-reverse-responsive] { flex-direction: row; }
 }

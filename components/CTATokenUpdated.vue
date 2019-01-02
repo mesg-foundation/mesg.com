@@ -3,12 +3,15 @@
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
-        <h2>
-          Have more questions?
-        </h2>
-        <p mb2>If you didn’t find the answers you were seeking, feel free to contact us.<br/> We'll get back to you in a flash!</p>
+        <IconToken2 class="token" mb1/>
+        <h1>
+          Build Modules, Earn Tokens
+        </h1>
+        <p mb2>
+          The MESG Token will be available soon. Introducing the token for the new economy of development.
+        </p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>I have a question</Button>
+          <Button href="http://eepurl.com/drKt-5" target="_blank" primary>Keep me updated</Button>
         </nav>
       </div>
     </div>
@@ -18,25 +21,35 @@
 
 <script>
 import Button from '~/components/Button'
+import IconToken2 from '~/components/IconToken2'
 export default {
   components: {
-    Button
+    Button,
+    IconToken2
   }
 }
 </script>
 
 <style scoped>
 
+svg {
+  margin-top:0;
+}
+
 .container-parent {
   background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  text-align: center;
+  text-align:center;
 }
 
 .content {
   max-width: 600px;
+}
+
+.token {
+  max-width: 100px;
 }
 
 </style>
