@@ -4,14 +4,14 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          The MESG Marketplace
+          MESG Engine
         </h1>
         <p>
-          MESG is a bridge between the legacy web and the new decentralized and trustless web.
+          Connect and automate divergent tech.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <SchemaMarketplace class="schema" />
+        <SchemaEngine class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import SchemaMarketplace from '~/components/SchemaMarketplace'
+import SchemaEngine from '~/components/SchemaEngine'
 export default {
   components: {
-    SchemaMarketplace
+    SchemaEngine
   }
 }
 </script>
@@ -67,7 +67,14 @@ p {
    font-size: 1.4em;
  }
  .schema {
+   min-height:280px;
    margin-bottom:2.4em;
+ }
+ .container-parent {
+   padding-top: 2.4em;
+ }
+ .container-child {
+   max-width: 600px;
  }
 }
 
@@ -79,8 +86,12 @@ p {
      padding-top:3.8em;
    }
    .schema {
-     min-height:280px;
+     max-height: 280px;
+     max-width: 280px;
      margin-bottom:1.8em;
+   }
+   .container-parent {
+     padding-top: 0em;
    }
  }
 

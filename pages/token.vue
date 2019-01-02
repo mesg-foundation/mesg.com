@@ -4,9 +4,8 @@
       <div class="white">
         <TokenDesc id="token"/>
         <Documentations id="documentations"/>
-        <Exchangeslisting id="exchanges"/>
       </div>
-      <CTAToken id="token" class="dark"/>
+      <CTATokenUpdated id="token updated" class="dark"/>
   </div>
 </template>
 
@@ -14,15 +13,13 @@
 import HeaderToken from '~/components/HeaderToken'
 import TokenDesc from '~/components/TokenDesc'
 import Documentations from '~/components/Documentations'
-import Exchangeslisting from '~/components/Exchangeslisting'
-import CTAToken from '~/components/CTAToken'
+import CTATokenUpdated from '~/components/CTATokenUpdated'
 export default {
   components: {
     HeaderToken,
     TokenDesc,
     Documentations,
-    Exchangeslisting,
-    CTAToken
+    CTATokenUpdated
   }
 }
 </script>

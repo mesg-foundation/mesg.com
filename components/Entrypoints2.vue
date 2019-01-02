@@ -53,6 +53,10 @@ h2 {
   text-decoration: none;
 }
 
+P {
+  text-align:center;
+}
+
 svg{
   margin-top:0;
 }
@@ -81,6 +85,11 @@ svg{
   .card {
     width: 100%;
     margin: 1.2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    padding:1.8em;
   }
 }
 

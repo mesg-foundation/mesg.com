@@ -4,10 +4,10 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          MESG is the new economy of development
+          The new economy of app development
         </h1>
         <p>
-          MESG is a bridge between the legacy web and the new decentralized and trustless web.
+          Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.
         </p>
       </header>
       <div half flex column justify-center align-center>
@@ -70,6 +70,12 @@ p {
    min-height:280px;
    margin-bottom:2.4em;
  }
+ .container-parent {
+   padding-top: 2.4em;
+ }
+ .container-child {
+   max-width: 600px;
+ }
 }
 
  @media only screen and (max-width: 414px) {
@@ -80,7 +86,12 @@ p {
      padding-top:3.8em;
    }
    .schema {
+     max-height: 280px;
+     max-width: 280px;
      margin-bottom:1.8em;
+   }
+   .container-parent {
+     padding-top: 0em;
    }
  }
 

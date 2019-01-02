@@ -2,14 +2,14 @@
   <section>
     <div class="container-parent">
       <div class="container-child-title" flex column justify-center align-center>
-        <h2>The MESG documents</h2>
+        <h2>MESG documents</h2>
         <div class="separator-orange"></div>
       </div>
       <div class="container-child" flex row justify-center spacebetween>
         <nav flex row justify-center align-center>
           <a href="https://drive.google.com/open?id=15oygF6uYjzh3KnYVEBOvYW86KWkG6ZVA" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/MESG 2 pager-1.jpg"/>
+              <img src="~/assets/documents/MESG-2pager-1.jpg" alt="Technical One pager"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Technical One pager</h3>
@@ -17,7 +17,7 @@
           </a>
           <a href="https://drive.google.com/open?id=1jPWQnI-kR-iXjqmYr9Y-2mqtS3TNSQv2" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/Decentralized Network of Services.jpg"/>
+              <img src="~/assets/documents/Decentralized-Network-of-Services.jpg" alt="Decentralized Network of Services"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Decentralized Network of Services</h3>
@@ -25,7 +25,7 @@
           </a>
           <a href="https://drive.google.com/open?id=15oygF6uYjzh3KnYVEBOvYW86KWkG6ZVA" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/MESG 2 pager-2.jpg"/>
+              <img src="~/assets/documents/MESG-2pager-2.jpg" alt="Business One pager"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Business One pager</h3>
@@ -33,7 +33,7 @@
           </a>
           <a href="https://drive.google.com/open?id=1jVdhjKPF5qe8EL6vIQ38jtMPUz-VMgql" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/MESG Business Plan Summary.jpg"/>
+              <img src="~/assets/documents/MESG-Business-Plan-Summary.jpg" alt="Business Plan"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Business Plan</h3>
@@ -45,21 +45,6 @@
   </section>
 </template>
 
-<script>
-import IconIncubators from '~/components/IconIncubators'
-import IconEntrepreneurs from '~/components/IconEntrepreneurs'
-import IconDevelopers from '~/components/IconDevelopers'
-export default {
-  components: {
-    IconIncubators,
-    IconEntrepreneurs,
-    IconDevelopers
-  },
-  props: {
-    to: String
-  }
-}
-</script>
 
 <style scoped>
 
@@ -73,14 +58,10 @@ h3 {
   text-decoration: none;
 }
 
-svg{
-  margin-top:0;
-}
-
 img {
   width: 50%;
   max-width: 145px;
-  margin-bottom:1.6em;
+  margin-bottom:1.5em;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -141,9 +122,6 @@ img {
 @media only screen and (min-width: 414px) {
   .container-child-title {
     padding-top:0;
-  }
-  .container-child {
-    padding-bottom:0;
   }
 }
 @media only screen and (max-width: 414px) {

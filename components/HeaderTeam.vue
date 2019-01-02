@@ -67,7 +67,14 @@ p {
    font-size: 1.4em;
  }
  .schema {
+   min-height:280px;
    margin-bottom:2.4em;
+ }
+ .container-parent {
+   padding-top: 2.4em;
+ }
+ .container-child {
+   max-width: 600px;
  }
 }
 
@@ -79,8 +86,12 @@ p {
      padding-top:3.8em;
    }
    .schema {
-     min-height:280px;
+     max-height: 280px;
+     max-width: 280px;
      margin-bottom:1.8em;
+   }
+   .container-parent {
+     padding-top: 0em;
    }
  }
 

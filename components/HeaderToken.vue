@@ -4,13 +4,13 @@
     <div class="container-child" flex row column-reverse-responsive space-between>
       <header flex half column justify-center>
         <h1>
-          Purchase the MESG token
+          The App Development Token
         </h1>
         <p mb2>
-          The MESG token will be listing soon, get up to date by clicking on the button below to make sure you won't miss it.
+          Get paid for the Modules you create in a value driven economy based on participation and useful contribution.
         </p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>I want the MESG token</Button>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Keep me updated</Button>
         </nav>
       </header>
       <div flex column half justify-center align-center>
@@ -65,11 +65,22 @@ p {
    padding-top:4.8em;
    min-height: 0;
  }
+ header{
+   text-align:center;
+   align-items:center;
+ }
  p {
    font-size: 1.4em;
  }
  .schema {
-   width: 65%;
+   min-height:280px;
+   margin-bottom:2.4em;
+ }
+ .container-parent {
+   padding-top: 2.4em;
+ }
+ .container-child {
+   max-width: 600px;
  }
 }
 
@@ -81,8 +92,12 @@ p {
      padding-top:3.8em;
    }
    .schema {
-     min-height: 400px;
-     width: 85%;
+     max-height: 280px;
+     max-width: 280px;
+     margin-bottom:1.8em;
+   }
+   .container-parent {
+     padding-top: 0em;
    }
  }
 

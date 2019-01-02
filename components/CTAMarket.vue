@@ -4,11 +4,13 @@
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
         <h2>
-          Interested in working on a world-changing project?
+          Start optimizing today
         </h2>
-        <p mb2>We are always seeking new talent, so feel free to send us your resume.</p>
+        <p mb2>
+          Find out how you can start automating, streamlining and expanding your business today with MESG.
+        </p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>We are Hiring</Button>
+          <Button to="/market" primary>Learn how you can earn</Button>
         </nav>
       </div>
     </div>
@@ -28,7 +30,7 @@ export default {
 <style scoped>
 
 .container-parent {
-  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Hire.jpg");
+  background-image:linear-gradient(155deg, rgba(37, 20, 64, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Business.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;

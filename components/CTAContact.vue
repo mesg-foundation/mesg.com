@@ -35,6 +35,8 @@ export default {
   text-align: center;
 }
 
-
+.content {
+  max-width: 600px;
+}
 
 </style>

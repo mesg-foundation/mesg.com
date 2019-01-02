@@ -4,7 +4,7 @@
       <div class="coming" flex row justify-center align-center>
         <IconToken2 class="token" mr1 />
         <p>
-          The MESG token is coming
+          MESG Token Available Soon
         </p>
       </div>
       <div flex row justify-center align-center>

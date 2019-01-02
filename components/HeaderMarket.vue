@@ -4,14 +4,14 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          The MESG Engine
+          MESG Market
         </h1>
         <p>
-          MESG is a bridge between the legacy web and the new decentralized and trustless web.
+          Earn tokens when others make use of your applications.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <SchemaEngine class="schema" />
+        <SchemaMarketplace class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import SchemaEngine from '~/components/SchemaEngine'
+import SchemaMarketplace from '~/components/SchemaMarketplace'
 export default {
   components: {
-    SchemaEngine
+    SchemaMarketplace
   }
 }
 </script>
@@ -56,21 +56,27 @@ p {
  }
 }
 @media only screen and (max-width: 768px) {
- section {
-   padding-top:4.8em;
-   min-height: 0;
+  section {
+    padding-top:4.8em;
+    min-height: 0;
+  }
+  header{
+    text-align:center;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  .schema {
+    min-height:280px;
+    margin-bottom:2.4em;
+  }
+  .container-parent {
+    padding-top: 2.4em;
+  }
+  .container-child {
+    max-width: 600px;
+  }
  }
- header{
-   text-align:center;
- }
- p {
-   font-size: 1.4em;
- }
- .schema {
-   min-height:280px;
-   margin-bottom:2.4em;
- }
-}
 
  @media only screen and (max-width: 414px) {
    p {
@@ -80,7 +86,12 @@ p {
      padding-top:3.8em;
    }
    .schema {
+     max-height: 280px;
+     max-width: 280px;
      margin-bottom:1.8em;
+   }
+   .container-parent {
+     padding-top: 0em;
    }
  }
 

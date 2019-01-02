@@ -1,20 +1,20 @@
 <template>
   <div>
-      <HeaderSolution id="introduction" class="dark"/>
+      <HeaderEngine id="introduction" class="dark"/>
       <EngineStory id="engine story" class="white"/>
-      <CTAGetintouch id="get in touch" class="dark"/>
+      <CTAMarket id="cta market" class="dark"/>
   </div>
 </template>
 
 <script>
-import HeaderSolution from '~/components/HeaderSolution'
+import HeaderEngine from '~/components/HeaderEngine'
 import EngineStory from '~/components/EngineStory'
-import CTAGetintouch from '~/components/CTAGetintouch'
+import CTAMarket from '~/components/CTAMarket'
 export default {
   components: {
-    HeaderSolution,
+    HeaderEngine,
     EngineStory,
-    CTAGetintouch
+    CTAMarket
   }
 }
 </script>

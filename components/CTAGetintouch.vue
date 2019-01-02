@@ -37,6 +37,10 @@ export default {
   text-align: center;
 }
 
+.content {
+  max-width: 600px;
+}
+
 i {
   margin-right: 0.6em;
 }

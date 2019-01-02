@@ -212,6 +212,7 @@ svg {
 [thirdtwo] { width: 800px; }
 [p0] { padding: 0!important; }
 [mt0] { margin-top: 0!important; }
+[mt05] { margin-top: 0.6em!important; }
 [mt1] { margin-top: 1.2em!important; }
 [mt2] { margin-top: 2.4em!important; }
 [mb0] { margin-bottom: 0!important; }
