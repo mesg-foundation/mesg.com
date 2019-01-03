@@ -10,16 +10,16 @@
             "title": "Marketplace",
             "subgoals": [
               "Runs on Ethereum Mainnet",
-              "Developers earn tokens by licensing their modules",
-              "Users reuse existing modules to create applications"
+              "Developers can earn tokens by licensing their Modules",
+              "Users reuse existing Modules to create applications"
             ]
           },
           {
-            "title": "Release of MESG Token",
+            "title": "Release of the MESG Token",
             "subgoals": [
               "Listed on exchanges",
-              "Created as an ERC20 on Ethereum Mainnet",
-              "Enables access to the modules of the Marketplace"
+              "Created as an ERC20 on the Ethereum Mainnet",
+              "Enables access to the Modules on the Marketplace"
             ]
           }
         ]
@@ -32,7 +32,7 @@
             "title": "MESG Application",
             "subgoals": [
               "No need to code anymore",
-              "Anyone can build MESG application"
+              "Anyone can build a MESG application"
             ]
           }
         ]
@@ -45,7 +45,7 @@
             "title": "Test Net",
             "subgoals": [
               "Modules are executed directly on the decentralized network",
-              "Users don't need to run modules on their own computers"
+              "Users no longer need to run Modules on their own computers"
             ]
           }
         ]
