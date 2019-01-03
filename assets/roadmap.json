@@ -1,43 +1,39 @@
 [
   {
-    "year": 2018,
+    "year": 2019,
     "quarters": [
       {
-        "name": "Q4",
+        "name": "Q1",
         "users": "+5 partners using MESG",
         "goals": [
           {
-            "title": "MESG Beta Network",
+            "title": "Marketplace",
             "subgoals": [
-              "Businesses become easily scalable",
-              "Partners transition into Network users"
+              "Runs on Ethereum Mainnet",
+              "Developers can earn tokens by licensing their Modules",
+              "Users reuse existing Modules to create applications"
+            ]
+          },
+          {
+            "title": "Release of the MESG Token",
+            "subgoals": [
+              "Listed on exchanges",
+              "Created as an ERC20 on the Ethereum Mainnet",
+              "Enables access to the Modules on the Marketplace"
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "year": 2019,
-    "quarters": [
+      },
       {
         "name": "Q2",
         "users": "+10 partners using MESG",
         "goals": [
           {
-            "title": "Private Sale",
-            "subgoals": ["Allows early adopters to participate in the economy"]
-          },
-          {
-            "title": "Test Net",
+            "title": "MESG Application",
             "subgoals": [
-              "Enables the use of the utility token",
-              "Launch of the MESG Token economy"
+              "No need to code anymore",
+              "Anyone can build a MESG application"
             ]
-          },
-          {
-            "title": "Release of ERC20",
-            "subgoals": ["Enables Test Net access"]
           }
         ]
       },
@@ -46,10 +42,10 @@
         "users": "+10 partners using MESG",
         "goals": [
           {
-            "title": "Long-term public token sale",
+            "title": "Test Net",
             "subgoals": [
-              "Listing on exchanges",
-              "Enables access to the Test Network"
+              "Modules are executed directly on the decentralized network",
+              "Users no longer need to run Modules on their own computers"
             ]
           }
         ]
@@ -67,6 +63,7 @@
             "title": "Public Network",
             "subgoals": [
               "Release of native MESG Token",
+              "Launch of the full MESG Token economy",
               "Self-regulating ecosystem consistently increasing the value of the MESG Token",
               "ERC20 tokens converted to MESG Tokens"
             ]
