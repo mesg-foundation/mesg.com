@@ -17,7 +17,8 @@ module.exports = {
       { hid: 'og:site_name', property: 'og:site_name', content: 'MESG' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
-      { name: 'theme-color', content: '#ffffff' }
+      { name: 'theme-color', content: '#ffffff' },
+      { name: 'google-site-verification', content: 'i3CdpilCzrJntOqUSydRtMsgjHt-wBF7QwOHckT19sI' }
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
@@ -41,7 +42,12 @@ module.exports = {
     '@nuxtjs/pwa',
     process.env.GA_ID ? ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID
-    }] : null
+    }] : null,
+    process.env.GA_ID ? ['@nuxtjs/google-tag-manager', {
+      id: process.env.GA_ID,
+      layer: 'dataLayer',
+      pageTracking: true
+    }] : null,
   ].filter(x => x),
   router: {
     middleware: ['mesg-curl']
