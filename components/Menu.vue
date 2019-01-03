@@ -1,9 +1,9 @@
 <template>
   <div>
     <nav hide-responsive flex row space-between align-center>
-        <a href ="/" >
+        <nuxt-link to ="/" >
           <MESGLogoHorizontalWhite class="logo" />
-        </a>
+        </nuxt-link>
         <div class="menu" flex row space-between align-center>
           <nuxt-link to="/market" class="menu-nav">Market</nuxt-link>
           <nuxt-link to="/engine" class="menu-nav">Engine</nuxt-link>
