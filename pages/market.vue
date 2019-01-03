@@ -7,6 +7,9 @@
 </template>
 
 <script>
+const title = 'MESG Marketplace'
+const description = 'Earn tokens when others make use of your applications.'
+
 import HeaderMarket from '~/components/HeaderMarket'
 import MarketStory from '~/components/MarketStory'
 import CTAGetStarted from '~/components/CTAGetStarted'
@@ -15,6 +18,14 @@ export default {
     HeaderMarket,
     MarketStory,
     CTAGetStarted
+  },
+  head: {
+    title: title,
+    meta: [
+      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'description', name: 'description', content: description },
+      { hid: 'og:description', property: "og:description", content: description },
+    ]
   }
 }
 </script>

@@ -7,6 +7,9 @@
 </template>
 
 <script>
+const title = 'Frequently Asked Questions'
+const description = 'Below are some common questions and answers about MESG and the MESG Network.'
+
 import HeaderFAQ from '~/components/HeaderFAQ'
 import Faq from '~/components/Faq'
 import CTAContact from '~/components/CTAContact'
@@ -15,6 +18,14 @@ export default {
     HeaderFAQ,
     Faq,
     CTAContact
+  },
+  head: {
+    title: title,
+    meta: [
+      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'description', name: 'description', content: description },
+      { hid: 'og:description', property: "og:description", content: description },
+    ]
   }
 }
 </script>

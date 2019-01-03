@@ -7,6 +7,9 @@
 </template>
 
 <script>
+const title = 'The MESG Team'
+const description = 'The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.'
+
 import HeaderTeam from '~/components/HeaderTeam'
 import Team from '~/components/Team'
 import CtaHiring from '~/components/CtaHiring'
@@ -15,6 +18,14 @@ export default {
     HeaderTeam,
     Team,
     CtaHiring,
+  },
+  head: {
+    title: title,
+    meta: [
+      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'description', name: 'description', content: description },
+      { hid: 'og:description', property: "og:description", content: description },
+    ]
   }
 }
 </script>

@@ -7,6 +7,9 @@
 </template>
 
 <script>
+const title = "MESG Engine"
+const description = "Connect and automate divergent tech."
+
 import HeaderEngine from '~/components/HeaderEngine'
 import EngineStory from '~/components/EngineStory'
 import CTAMarket from '~/components/CTAMarket'
@@ -15,6 +18,14 @@ export default {
     HeaderEngine,
     EngineStory,
     CTAMarket
+  },
+  head: {
+    title: title,
+    meta: [
+      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'description', name: 'description', content: description },
+      { hid: 'og:description', property: "og:description", content: description },
+    ]
   }
 }
 </script>

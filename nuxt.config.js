@@ -3,16 +3,17 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'MESG - Build applications connecting any technologies',
+    title: 'MESG - The new economy of app development',
+    titleTemplate: '%s | MESG',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Automate and expand business functions through a decentralized reward-driven ecosystem.' },
+      { hid: 'description', name: 'description', content: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.' },
       { hid: 'og:image:height', property: 'og:image:height', content: '1257' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2400' },
       { hid: 'og:image', property: 'og:image', content: 'https://mesg.com/og-image.jpg' },
-      { hid: 'og:title', property: 'og:title', content: 'MESG - Build applications connecting any technologies' },
-      { hid: 'og:description', property: "og:description", content: "Automate and expand business functions through a decentralized reward-driven ecosystem." },
+      { hid: 'og:title', property: 'og:title', content: 'MESG - The new economy of app development' },
+      { hid: 'og:description', property: "og:description", content: "Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it." },
       { hid: 'og:url', property: 'og:url', content: 'https://mesg.com/' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'MESG' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
