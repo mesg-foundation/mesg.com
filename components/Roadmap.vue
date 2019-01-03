@@ -3,17 +3,17 @@
     <div class="container-parent">
       <div class="container-child" flex column align-center>
         <ul class="timeline-years" flex column justify-center>
-          <li v-for="year in roadmap" :key="year" class="list-year">
+          <li v-for="year in roadmap" :key="year.year" class="list-year">
             <div class="year" flex column justify-center align-right>
               <h2 mr2>{{year.year}}</h2>
             </div>
             <ul class="quarters" flex column justify-center>
-              <li v-for="quarter in year.quarters" :key="quarter" class="list-quarter">
+              <li v-for="quarter in year.quarters" :key="quarter.name" class="list-quarter">
                 <p class="Q" flex column justify-center align-center mb05><strong>{{ quarter.name }}</strong></p>
                 <div class="timeline" flex column>
                   <div class="content" mb05>
                     <p class="user" flex column align-center>{{ quarter.users }}</p>
-                    <div v-for="goal in quarter.goals" :key="goal">
+                    <div v-for="goal in quarter.goals" :key="goal.title">
                       <h4 mb05 mt1>{{ goal.title }}</h4>
                       <ul class="list">
                         <li v-for="sub in goal.subgoals" :key="sub" mb05 class="list-content">

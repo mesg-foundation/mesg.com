@@ -4,7 +4,7 @@
       <div class="picture-hover">
         <nav class="social" flex row justify-center align-center>
           <a
-            v-for="network in socialNetworks" :key="network"
+            v-for="network in socialNetworks" :key="network.link"
             class="social-networks"
             :href="network.link" target="_blank" flex justify-center align-center>
             <i class="fab" :class="`fa-${network.icon}`"></i>
@@ -19,7 +19,7 @@
         <div class="Separator-dotted"></div>
       </div>
       <nav>
-        <a v-for="company in companies" :key="company"><img :src="company.src" class="logo"/></a>
+        <a v-for="(company, i) in companies" :key="i"><img :src="company.src" class="logo"/></a>
       </nav>
     </div>
   </div>
