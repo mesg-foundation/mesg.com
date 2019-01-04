@@ -44,6 +44,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
     process.env.GA_ID ? ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID
     }] : null,
@@ -55,6 +56,13 @@ module.exports = {
   ].filter(x => x),
   router: {
     middleware: ['mesg-curl']
+  },
+  sitemap: {
+    hostname: 'https://mesg.com',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: true, // Enable me when using nuxt generate
+    exclude: ['showcases']
   },
   /*
   ** Plugins
