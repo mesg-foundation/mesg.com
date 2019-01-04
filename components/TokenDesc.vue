@@ -11,12 +11,12 @@
         <p mb1>
           Tokens provide access to the MESG Market where users buy and sell the components of applications.
         </p>
+        <h4 mb05>Incentives</h4>
         <p mb1>
-          <strong>Incentives</strong><br/>
           Participants of all levels are rewarded for helping maintain the functionality and governance of the network, or to provide new components of applications
         </p>
+        <h4 mb05>Governance</h4>
         <p mb2>
-          <strong>Governance</strong><br/>
           Governance in MESG is based on a proof of stake system where users are required to stake tokens as collateral to participate. The more tokens a user stakes, the more potential income is earned.
         </p>
         <nav>

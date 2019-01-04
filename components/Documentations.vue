@@ -130,7 +130,6 @@ img {
   }
   img {
     width: 55%;
-    margin-bottom:1.4em;
   }
 }
 
