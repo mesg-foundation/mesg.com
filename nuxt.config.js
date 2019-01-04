@@ -5,7 +5,7 @@ module.exports = {
   head: {
     title: 'MESG - The new economy of app development',
     titleTemplate: '%s | MESG',
-    headAttrs: {
+    htmlAttrs: {
       prefix: "og: http://ogp.me/ns#"
     },
     meta: [
