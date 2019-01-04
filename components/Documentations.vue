@@ -9,7 +9,7 @@
         <nav flex row justify-center align-center>
           <a href="https://drive.google.com/open?id=1jPWQnI-kR-iXjqmYr9Y-2mqtS3TNSQv2" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/Decentralized-Network-of-Services.jpg" alt="Decentralized Network of Services"/>
+              <img src="~/assets/documents/Decentralized-Network-of-Services.jpg" alt="MESG - Whitepaper"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Whitepaper</h3>
@@ -17,15 +17,15 @@
           </a>
           <a href="https://drive.google.com/open?id=1gwtMbic0wJLfN5oQ814LEx1YVrkToPZn" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg" alt="MESG's application of Decentralized Network of Services"/>
+              <img src="~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg" alt="MESG - Technical Implementation"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Technical Implementation</h3>
             </div>
           </a>
-          <a href="https://drive.google.com/open?id=15oygF6uYjzh3KnYVEBOvYW86KWkG6ZVA" target="blank" class="card" flex column justify-center align-center>
+          <a href="https://drive.google.com/open?id=15z6-RNnk0-VD2qpwfD3sFvue6NzPskXV" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/MESG-2pager-1.jpg" alt="Business One pager"/>
+              <img src="~/assets/documents/MESG-2pager-1.jpg" alt="MESG - Two pager"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Two pager</h3>
@@ -33,7 +33,7 @@
           </a>
           <a href="https://drive.google.com/open?id=1jVdhjKPF5qe8EL6vIQ38jtMPUz-VMgql" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
-              <img src="~/assets/documents/MESG-Business-Plan-Summary.jpg" alt="Business Plan"/>
+              <img src="~/assets/documents/MESG-Business-Plan-Summary.jpg" alt="MESG - Business Plan"/>
             </div>
             <div class="title" flex column justify-center align-center>
               <h3>Business Plan</h3>
