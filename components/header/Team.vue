@@ -4,14 +4,14 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          The new economy of app development
+          The MESG Team
         </h1>
         <p>
-          Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.
+          The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <SchemaMESG class="schema" />
+        <IconTeam class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import SchemaMESG from '~/components/SchemaMESG'
+import IconTeam from '~/components/icon/Team'
 export default {
   components: {
-    SchemaMESG
+    IconTeam
   }
 }
 </script>

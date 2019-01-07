@@ -1,17 +1,20 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row space-between column-reverse-responsive>
-      <header half flex column justify-center>
+    <div class="container-child" flex row column-reverse-responsive space-between>
+      <header flex half column justify-center>
         <h1>
-          The MESG Team
+          The App Development Token
         </h1>
-        <p>
-          The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.
+        <p mb2>
+          Get paid for the Modules you create in a value driven economy based on participation and useful contribution.
         </p>
+        <nav flex>
+          <Button href="http://eepurl.com/drKt-5" target="_blank" primary>Keep me updated</Button>
+        </nav>
       </header>
-      <div half flex column justify-center align-center>
-        <IconTeam class="schema" />
+      <div flex column half justify-center align-center>
+        <IconToken class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +22,12 @@
 </template>
 
 <script>
-import IconTeam from '~/components/IconTeam'
+import IconToken from '~/components/icon/Token'
+import Button from '~/components/Button'
 export default {
   components: {
-    IconTeam
+    IconToken,
+    Button
   }
 }
 </script>
@@ -38,13 +43,13 @@ export default {
   background-size:cover;
 }
 
-
 p {
   font-size: 1.6em;
   font-weight: normal;
 }
 
 .schema {
+  max-width: 400px;
   max-height: calc(30vh - 15em);
   min-height:450px;
   margin-top:0;
@@ -62,6 +67,7 @@ p {
  }
  header{
    text-align:center;
+   align-items:center;
  }
  p {
    font-size: 1.4em;

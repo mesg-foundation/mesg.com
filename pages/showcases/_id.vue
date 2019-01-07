@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import HeaderShowcase from '~/components/HeaderShowcase'
+import HeaderShowcase from '~/components/header/Showcase'
 import Progress from '~/components/Progress'
-import CTANext from '~/components/CTANext'
-import Header404 from '~/components/Header404'
+import CTANext from '~/components/cta/Next'
+import Header404 from '~/components/header/404'
 export default {
   components: {
     Header404,

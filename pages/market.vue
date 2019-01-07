@@ -10,9 +10,9 @@
 const title = 'MESG Marketplace'
 const description = 'Earn tokens when others make use of your applications.'
 
-import HeaderMarket from '~/components/HeaderMarket'
+import HeaderMarket from '~/components/header/Market'
 import MarketStory from '~/components/MarketStory'
-import CTAGetStarted from '~/components/CTAGetStarted'
+import CTAGetStarted from '~/components/cta/GetStarted'
 export default {
   components: {
     HeaderMarket,

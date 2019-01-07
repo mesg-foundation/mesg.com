@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import SchemaMarketplaceDetail from '~/components/SchemaMarketplaceDetail'
-import SchemaEngineDetail from '~/components/SchemaEngineDetail'
+import SchemaMarketplaceDetail from '~/components/schema/MarketplaceDetail'
+import SchemaEngineDetail from '~/components/schema/EngineDetail'
 export default {
   components: {
     SchemaMarketplaceDetail,

@@ -68,10 +68,10 @@
 </template>
 
 <script>
-import SchemaConnection from '~/components/SchemaConnection'
-import SchemaApps from '~/components/SchemaApps'
-import SchemaNetwork from '~/components/SchemaNetwork'
-import SchemaIncome from '~/components/SchemaIncome'
+import SchemaConnection from '~/components/schema/Connection'
+import SchemaApps from '~/components/schema/Apps'
+import SchemaNetwork from '~/components/schema/Network'
+import SchemaIncome from '~/components/schema/Income'
 export default {
   components: {
     SchemaConnection,

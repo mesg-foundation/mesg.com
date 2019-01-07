@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import SchemaMarketplace from '~/components/SchemaMarketplace'
-import SchemaEngine from '~/components/SchemaEngine'
+import SchemaMarketplace from '~/components/schema/Marketplace'
+import SchemaEngine from '~/components/schema/Engine'
 export default {
   components: {
     SchemaMarketplace,

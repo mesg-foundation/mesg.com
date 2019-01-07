@@ -13,10 +13,10 @@
 const title = 'The App Development Token'
 const description = 'Get paid for the Modules you create in a value driven economy based on participation and useful contribution.'
 
-import HeaderToken from '~/components/HeaderToken'
+import HeaderToken from '~/components/header/Token'
 import TokenDesc from '~/components/TokenDesc'
 import Documentations from '~/components/Documentations'
-import CTATokenUpdated from '~/components/CTATokenUpdated'
+import CTATokenUpdated from '~/components/cta/TokenUpdated'
 export default {
   components: {
     HeaderToken,

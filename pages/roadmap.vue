@@ -9,7 +9,7 @@
 const title = 'The MESG Roadmap'
 const description = 'Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.'
 
-import HeaderRoadmap from '~/components/HeaderRoadmap'
+import HeaderRoadmap from '~/components/header/Roadmap'
 import Roadmap from '~/components/Roadmap'
 export default {
   components: {

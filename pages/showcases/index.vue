@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HeaderShowcaseCategories from '~/components/HeaderShowcaseCategories'
+import HeaderShowcaseCategories from '~/components/header/ShowcaseCategories'
 import CategoriesCase from '~/components/CategoriesCase'
-import CTANext from '~/components/CTANext'
+import CTANext from '~/components/cta/Next'
 export default {
   components: {
     HeaderShowcaseCategories,

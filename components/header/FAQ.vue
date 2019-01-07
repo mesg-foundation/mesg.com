@@ -4,14 +4,17 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          The MESG Roadmap
+          Frequently Asked Questions
         </h1>
-        <p>
-          Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.
+        <p mb1>
+          Below are some common questions and answers about MESG and the MESG Network.
+        </p>
+        <p class="small">
+          These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to GitHub and other resources for additional details.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <IconRoadmap class="schema" />
+        <IconFAQ class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +22,10 @@
 </template>
 
 <script>
-import IconRoadmap from '~/components/IconRoadmap'
+import IconFAQ from '~/components/icon/FAQ'
 export default {
   components: {
-    IconRoadmap
+    IconFAQ
   }
 }
 </script>
@@ -42,6 +45,14 @@ export default {
 p {
   font-size: 1.6em;
   font-weight: normal;
+}
+
+.small {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 0.6em;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .schema {

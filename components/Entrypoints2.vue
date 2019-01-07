@@ -31,9 +31,9 @@
 </template>
 
 <script>
-import IconRoadmap from '~/components/IconRoadmap'
-import IconTeam from '~/components/IconTeam'
-import IconFAQ from '~/components/IconFAQ'
+import IconRoadmap from '~/components/icon/Roadmap'
+import IconTeam from '~/components/icon/Team'
+import IconFAQ from '~/components/icon/FAQ'
 export default {
   components: {
     IconRoadmap,

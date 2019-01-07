@@ -12,11 +12,11 @@
 
 
 <script>
-import Header from '~/components/Header'
+import Header from '~/components/header/Base'
 import MarketEngine from '~/components/MarketEngine'
 import Entrypoints from '~/components/Entrypoints'
 import Entrypoints2 from '~/components/Entrypoints2'
-import CTAToken from '~/components/CTAToken'
+import CTAToken from '~/components/cta/Token'
 export default {
   components: {
     Header,

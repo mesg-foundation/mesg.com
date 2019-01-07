@@ -4,14 +4,14 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          MESG Market
+          The new economy of app development
         </h1>
         <p>
-          Earn tokens when others make use of your applications.
+          Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <SchemaMarketplace class="schema" />
+        <SchemaMESG class="schema" />
       </div>
     </div>
   </div>
@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import SchemaMarketplace from '~/components/SchemaMarketplace'
+import SchemaMESG from '~/components/schema/MESG'
 export default {
   components: {
-    SchemaMarketplace
+    SchemaMESG
   }
 }
 </script>
@@ -56,27 +56,27 @@ p {
  }
 }
 @media only screen and (max-width: 768px) {
-  section {
-    padding-top:4.8em;
-    min-height: 0;
-  }
-  header{
-    text-align:center;
-  }
-  p {
-    font-size: 1.4em;
-  }
-  .schema {
-    min-height:280px;
-    margin-bottom:2.4em;
-  }
-  .container-parent {
-    padding-top: 2.4em;
-  }
-  .container-child {
-    max-width: 600px;
-  }
+ section {
+   padding-top:4.8em;
+   min-height: 0;
  }
+ header{
+   text-align:center;
+ }
+ p {
+   font-size: 1.4em;
+ }
+ .schema {
+   min-height:280px;
+   margin-bottom:2.4em;
+ }
+ .container-parent {
+   padding-top: 2.4em;
+ }
+ .container-child {
+   max-width: 600px;
+ }
+}
 
  @media only screen and (max-width: 414px) {
    p {

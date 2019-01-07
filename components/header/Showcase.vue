@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import SchemaNutshell from '~/components/SchemaNutshell'
+import SchemaNutshell from '~/components/schema/Nutshell'
 export default {
   components: {
     SchemaNutshell

@@ -10,9 +10,9 @@
 const title = "MESG Engine"
 const description = "Connect and automate divergent tech."
 
-import HeaderEngine from '~/components/HeaderEngine'
+import HeaderEngine from '~/components/header/Engine'
 import EngineStory from '~/components/EngineStory'
-import CTAMarket from '~/components/CTAMarket'
+import CTAMarket from '~/components/cta/Market'
 export default {
   components: {
     HeaderEngine,

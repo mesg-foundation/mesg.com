@@ -4,17 +4,14 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          Frequently Asked Questions
+          MESG Engine
         </h1>
-        <p mb1>
-          Below are some common questions and answers about MESG and the MESG Network.
-        </p>
-        <p class="small">
-          These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to GitHub and other resources for additional details.
+        <p>
+          Connect and automate divergent tech.
         </p>
       </header>
       <div half flex column justify-center align-center>
-        <IconFAQ class="schema" />
+        <SchemaEngine class="schema" />
       </div>
     </div>
   </div>
@@ -22,10 +19,10 @@
 </template>
 
 <script>
-import IconFAQ from '~/components/IconFAQ'
+import SchemaEngine from '~/components/schema/Engine'
 export default {
   components: {
-    IconFAQ
+    SchemaEngine
   }
 }
 </script>
@@ -45,14 +42,6 @@ export default {
 p {
   font-size: 1.6em;
   font-weight: normal;
-}
-
-.small {
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 0.6em;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .schema {

@@ -10,9 +10,9 @@
 const title = 'The MESG Team'
 const description = 'The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.'
 
-import HeaderTeam from '~/components/HeaderTeam'
+import HeaderTeam from '~/components/header/Team'
 import Team from '~/components/Team'
-import CtaHiring from '~/components/CtaHiring'
+import CtaHiring from '~/components/cta/Hiring'
 export default {
   components: {
     HeaderTeam,

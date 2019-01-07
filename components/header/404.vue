@@ -26,7 +26,7 @@
 
 <script>
 import Button from '~/components/Button'
-import Schema404 from '~/components/Schema404'
+import Schema404 from '~/components/schema/404'
 export default {
   components: {
     Button,

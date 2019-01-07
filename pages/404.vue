@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Header404 from '~/components/Header404'
+import Header404 from '~/components/header/404'
 export default {
   components: {
     Header404

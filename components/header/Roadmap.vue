@@ -1,20 +1,17 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row column-reverse-responsive space-between>
-      <header flex half column justify-center>
+    <div class="container-child" flex row space-between column-reverse-responsive>
+      <header half flex column justify-center>
         <h1>
-          The App Development Token
+          The MESG Roadmap
         </h1>
-        <p mb2>
-          Get paid for the Modules you create in a value driven economy based on participation and useful contribution.
+        <p>
+          Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.
         </p>
-        <nav flex>
-          <Button href="http://eepurl.com/drKt-5" target="_blank" primary>Keep me updated</Button>
-        </nav>
       </header>
-      <div flex column half justify-center align-center>
-        <IconToken class="schema" />
+      <div half flex column justify-center align-center>
+        <IconRoadmap class="schema" />
       </div>
     </div>
   </div>
@@ -22,12 +19,10 @@
 </template>
 
 <script>
-import IconToken from '~/components/IconToken'
-import Button from '~/components/Button'
+import IconRoadmap from '~/components/icon/Roadmap'
 export default {
   components: {
-    IconToken,
-    Button
+    IconRoadmap
   }
 }
 </script>
@@ -43,13 +38,13 @@ export default {
   background-size:cover;
 }
 
+
 p {
   font-size: 1.6em;
   font-weight: normal;
 }
 
 .schema {
-  max-width: 400px;
   max-height: calc(30vh - 15em);
   min-height:450px;
   margin-top:0;
@@ -67,7 +62,6 @@ p {
  }
  header{
    text-align:center;
-   align-items:center;
  }
  p {
    font-size: 1.4em;

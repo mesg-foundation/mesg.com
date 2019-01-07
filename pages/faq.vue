@@ -10,9 +10,9 @@
 const title = 'Frequently Asked Questions'
 const description = 'Below are some common questions and answers about MESG and the MESG Network.'
 
-import HeaderFAQ from '~/components/HeaderFAQ'
+import HeaderFAQ from '~/components/header/FAQ'
 import Faq from '~/components/Faq'
-import CTAContact from '~/components/CTAContact'
+import CTAContact from '~/components/cta/Contact'
 export default {
   components: {
     HeaderFAQ,

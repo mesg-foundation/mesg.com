@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import SchemaBusiness from '~/components/SchemaBusiness'
+import SchemaBusiness from '~/components/schema/Business'
 export default {
   components: {
     SchemaBusiness
