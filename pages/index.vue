@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Header id="introduction" class="dark"/>
+    <Header id="introduction" class="dark"
+      :schema="schema"
+      :title="title"
+      :description="description"
+    />
     <div class="white">
       <MarketEngine id="market engine"/>
       <Entrypoints id="entry points"/>
@@ -12,11 +16,13 @@
 
 
 <script>
+import SchemaMESG from '~/components/schema/MESG'
 import Header from '~/components/Header'
 import MarketEngine from '~/components/MarketEngine'
 import Entrypoints from '~/components/Entrypoints'
 import Entrypoints2 from '~/components/Entrypoints2'
-import CTAToken from '~/components/CTAToken'
+import CTAToken from '~/components/cta/Token'
+import page from './page'
 export default {
   components: {
     Header,
@@ -24,6 +30,13 @@ export default {
     Entrypoints,
     Entrypoints2,
     CTAToken
-  }
+  },
+  mixins: [
+    page({
+      title: 'The new economy of app development',
+      description: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.',
+      schema: SchemaMESG
+    })
+  ]
 }
 </script>

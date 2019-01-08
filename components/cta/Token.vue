@@ -21,7 +21,7 @@
 
 <script>
 import Button from '~/components/Button'
-import IconToken2 from '~/components/IconToken2'
+import IconToken2 from '~/components/icon/Token2'
 export default {
   components: {
     Button,

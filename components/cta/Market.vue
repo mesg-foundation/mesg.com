@@ -10,7 +10,7 @@
           Find out how you can start automating, streamlining and expanding your business today with MESG.
         </p>
         <nav flex>
-          <Button to="/market" primary>Learn how you can earn</Button>
+          <Button to="/marketplace" primary>Learn how you can earn</Button>
         </nav>
       </div>
     </div>

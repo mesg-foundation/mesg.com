@@ -1,33 +1,72 @@
 <template>
   <section>
-  <div class="container-parent">
-    <div class="container-child" flex row space-between column-reverse-responsive>
-      <header half flex column justify-center>
-        <h1>
-          The new economy of app development
-        </h1>
-        <p>
-          Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.
-        </p>
-      </header>
-      <div half flex column justify-center align-center>
-        <SchemaMESG class="schema" />
+    <div class="container-parent">
+      <nav v-if="backTitle && backLink" flex row>
+        <nuxt-link :to="backLink" class="link">
+          <i class="fas fa-arrow-left" mr05></i>
+          {{ backTitle }}
+        </nuxt-link>
+      </nav>
+      <div class="container-child" flex row space-between column-reverse-responsive>
+        <header half flex column justify-center>
+          <h1 v-html="title"></h1>
+          <p v-html="description"></p>
+          <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
+          <nav v-if="actionLink && actionTitle" flex mt2>
+            <Button :href="actionLink" target="_blank" primary>{{ actionTitle }}</Button>
+          </nav>
+        </header>
+        <div half flex column justify-center align-center>
+          <component :is="schema" class="schema" />
+        </div>
       </div>
     </div>
-  </div>
   </section>
 </template>
 
 <script>
-import SchemaMESG from '~/components/SchemaMESG'
+import Button from '~/components/Button'
 export default {
-  components: {
-    SchemaMESG
+  components: { Button },
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    schema: {
+      type: Object
+    },
+    backLink: {
+      type: [String, Object]
+    },
+    backTitle: {
+      type: String
+    },
+    actionLink: {
+      type: String
+    },
+    actionTitle: {
+      type: String
+    },
+    smallDescription: {
+      type: String
+    }
   }
 }
 </script>
 
 <style scoped>
+
+.container-parent > nav {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2.4em;
+  margin:auto;
+}
 
 .container-parent {
   z-index:-1;
@@ -38,6 +77,9 @@ export default {
   background-size:cover;
 }
 
+.small {
+  font-size: 1em;
+}
 
 p {
   font-size: 1.6em;

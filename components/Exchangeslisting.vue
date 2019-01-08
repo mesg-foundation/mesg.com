@@ -40,12 +40,8 @@
 </template>
 
 <script>
-import SchemaBusiness from '~/components/SchemaBusiness'
 const exchanges = require("~/assets/exchanges")
 export default {
-  components: {
-    SchemaBusiness
-  },
   computed: {
     exchanges () { return exchanges }
   },

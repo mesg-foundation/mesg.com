@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import SchemaHMW1 from '~/components/SchemaHMW1'
-import SchemaHMW2 from '~/components/SchemaHMW2'
-import SchemaHMW3 from '~/components/SchemaHMW3'
+import SchemaHMW1 from '~/components/schema/HMW1'
+import SchemaHMW2 from '~/components/schema/HMW2'
+import SchemaHMW3 from '~/components/schema/HMW3'
 export default {
   components: {
     SchemaHMW1,

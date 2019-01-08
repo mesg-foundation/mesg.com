@@ -9,7 +9,7 @@
         </p>
         <h4 mb05>Access</h4>
         <p mb1>
-          Tokens provide access to the MESG Market where users buy and sell the components of applications.
+          Tokens provide access to the MESG Marketplace where users buy and sell the components of applications.
         </p>
         <h4 mb05>Incentives</h4>
         <p mb1>
@@ -20,7 +20,7 @@
           Governance in MESG is based on a proof of stake system where users are required to stake tokens as collateral to participate. The more tokens a user stakes, the more potential income is earned.
         </p>
         <nav>
-          <nuxt-link to="/market" class="link">Find out more about the economy<i class="fas fa-arrow-right"></i></nuxt-link>
+          <nuxt-link to="/marketplace" class="link">Find out more about the economy<i class="fas fa-arrow-right"></i></nuxt-link>
         </nav>
       </div>
       <div half flex column>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import SchemaBusiness from '~/components/SchemaBusiness'
+import SchemaBusiness from '~/components/schema/Business'
 export default {
   components: {
     SchemaBusiness
