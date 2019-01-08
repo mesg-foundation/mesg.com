@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header id="introduction" class="dark"
+    <Header id="introduction" class="dark token-header"
       :title="title"
       :description="description"
       :schema="schema"
@@ -32,3 +32,9 @@ export default {
   ]
 }
 </script>
+
+<style>
+.token-header .container-child {
+  min-height: 80vh!important;
+}
+</style>
