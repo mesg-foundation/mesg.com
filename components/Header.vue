@@ -12,7 +12,7 @@
           <h1 v-html="title"></h1>
           <p v-html="description"></p>
           <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
-          <nav v-if="actionLink && actionTitle" flex mt2>
+          <nav v-if="actionLink && actionTitle" flex mt2 class="actions">
             <Button :href="actionLink" target="_blank" primary>{{ actionTitle }}</Button>
           </nav>
         </header>
@@ -65,7 +65,7 @@ export default {
   width: 100%;
   max-width: 1440px;
   padding: 2.4em;
-  margin:auto;
+  margin: auto;
 }
 
 .container-parent {
@@ -118,6 +118,9 @@ p {
  .container-child {
    max-width: 600px;
  }
+ .actions a {
+    margin: auto;
+  }
 }
 
  @media only screen and (max-width: 414px) {

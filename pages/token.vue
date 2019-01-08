@@ -36,5 +36,6 @@ export default {
 <style>
 .token-header .container-child {
   min-height: 80vh!important;
+  max-height: 100vh!important;
 }
 </style>
