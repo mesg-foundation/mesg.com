@@ -11,7 +11,7 @@
           Save time and money by using existing Modules in the MESG Market. Or build Modules and offer them to the community to earn MESG Tokens.
         </p>
         <nav>
-          <nuxt-link to="/market" class="link">Learn more<i class="fas fa-arrow-right" ml05></i></nuxt-link>
+          <nuxt-link to="/marketplace" class="link">Learn more<i class="fas fa-arrow-right" ml05></i></nuxt-link>
         </nav>
       </div>
       <div half flex column>

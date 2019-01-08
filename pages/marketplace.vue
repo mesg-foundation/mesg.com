@@ -1,6 +1,6 @@
 <template>
   <div>
-      <HeaderMarket id="introduction" class="dark"/>
+      <HeaderMarketplace id="introduction" class="dark"/>
       <MarketStory id="market story" class="white"/>
       <CTAGetStarted id="get started" class="dark"/>
   </div>
@@ -8,14 +8,14 @@
 
 <script>
 const title = 'MESG Marketplace'
-const description = 'Earn tokens when others make use of your applications.'
+const description = 'Earn tokens when others make use of the Modules within your applications. Introducing the new economy of application development.'
 
-import HeaderMarket from '~/components/HeaderMarket'
+import HeaderMarketplace from '~/components/HeaderMarketplace'
 import MarketStory from '~/components/MarketStory'
 import CTAGetStarted from '~/components/CTAGetStarted'
 export default {
   components: {
-    HeaderMarket,
+    HeaderMarketplace,
     MarketStory,
     CTAGetStarted
   },

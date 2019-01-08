@@ -5,7 +5,7 @@
           <MESGLogoHorizontalWhite class="logo" />
         </nuxt-link>
         <div class="menu" flex row space-between align-center>
-          <nuxt-link to="/market" class="menu-nav">Market</nuxt-link>
+          <nuxt-link to="/marketplace" class="menu-nav">Marketplace</nuxt-link>
           <nuxt-link to="/engine" class="menu-nav">Engine</nuxt-link>
           <nuxt-link to="/token" class="menu-nav">Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
@@ -57,7 +57,7 @@ a {
   border-bottom: solid 2px transparent;
 }
 .menu-nav {
-  opacity:0.65;
+  opacity:0.85;
 }
 a:hover {
   opacity:1;

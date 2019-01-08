@@ -4,10 +4,10 @@
     <div class="container-child" flex row space-between column-reverse-responsive>
       <header half flex column justify-center>
         <h1>
-          MESG Market
+          MESG Marketplace
         </h1>
         <p>
-          Earn tokens when others make use of your applications.
+          Earn tokens when others make use of the Modules within your applications. Introducing the new economy of application development.
         </p>
       </header>
       <div half flex column justify-center align-center>

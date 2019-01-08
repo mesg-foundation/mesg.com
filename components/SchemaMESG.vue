@@ -2444,27 +2444,4 @@
 .st68{display:none;opacity:0.2;fill:#491E8C;}
 .st69{display:none;opacity:0.2;fill:#AE3FE8;}
 
-/*animation*/
-#MESG {
-  animation: move calc(var(--animation-speed) * 6s) calc(var(--animation-speed) * 1s) forwards infinite ease;
-}
-
-@keyframes move {
-  0% {
-    transform: translateY(0px);
-    }
-  25% {
-    transform: translateY(15px);
-    }
-  50% {
-    transform: translateY(0px);
-    }
-  75% {
-    transform: translateY(-15px);
-    }
-  100% {
-    transform: translateY(0px) ;
-  }
-}
-
 </style>

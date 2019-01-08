@@ -7,8 +7,8 @@
 </template>
 
 <script>
-const title = "MESG Engine"
-const description = "Connect and automate divergent tech."
+const title = 'MESG Engine'
+const description = 'Connect and automate divergent tech with the MESG Engine. Now you can gain control over the flow of data and level of security between your whole stack of connected systems.'
 
 import HeaderEngine from '~/components/HeaderEngine'
 import EngineStory from '~/components/EngineStory'
