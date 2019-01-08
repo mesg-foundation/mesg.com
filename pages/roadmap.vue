@@ -1,28 +1,29 @@
 <template>
   <div>
-    <HeaderRoadmap id="introduction" class="dark"/>
+    <Header id="introduction" class="dark"
+      :title="title"
+      :description="description"
+      :schema="schema" />
     <Roadmap id="roadmap" class="white"/>
   </div>
 </template>
 
 <script>
-const title = 'The MESG Roadmap'
-const description = 'Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.'
-
-import HeaderRoadmap from '~/components/header/Roadmap'
+import Header from '~/components/Header'
+import IconRoadmap from '~/components/icon/Roadmap'
 import Roadmap from '~/components/Roadmap'
+import page from './page'
 export default {
   components: {
-    HeaderRoadmap,
+    Header,
     Roadmap
   },
-  head: {
-    title: title,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', property: "og:description", content: description },
-    ]
-  }
+  mixins: [
+    page({
+      title: 'The MESG Roadmap',
+      description: 'Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.',
+      schema: IconRoadmap
+    })
+  ]
 }
 </script>

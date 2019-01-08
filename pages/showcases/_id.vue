@@ -1,26 +1,47 @@
 <template>
   <div v-if="usecase">
-      <HeaderShowcase :usecase="usecase" id="introduction" class="dark"/>
-      <Progress :usecase="usecase" id="progress" class="white"/>
-      <CTANext id="next" class="dark"/>
+    <Header :usecase="usecase" id="introduction" class="dark"
+      :title="title"
+      :description="description"
+      :schema="schema" 
+      backTitle="Back to showcase"
+      backLink="/showcases" />
+    <Progress :usecase="usecase" id="progress" class="white"/>
+    <CTANext id="next" class="dark"/>
   </div>
   <div v-else>
-    <Header404 id="introduction" class="dark"/>
+    <Header
+      id="introduction" class="dark"
+      :schema="schema404"
+      title="Hey dude,"
+      description="Looks like that page doesn't exist."
+      smallDescription="Click on the button below to go back to Home, let's act like nothing happened"
+      actionLink="/"
+      actionTitle="cd $HOME"
+    />
   </div>
 </template>
 
 <script>
-import HeaderShowcase from '~/components/header/Showcase'
 import Progress from '~/components/Progress'
 import CTANext from '~/components/cta/Next'
-import Header404 from '~/components/header/404'
+import Header from '~/components/Header'
+import Schema404 from '~/components/schema/404'
+import SchemaNutshell from '~/components/schema/Nutshell'
+import page from '../page'
 export default {
   components: {
-    Header404,
-    HeaderShowcase,
+    Header,
     Progress,
     CTANext
   },
+  mixins: [
+    page({
+      title: 'usecase.title',
+      description: 'usecase.text',
+      schema: SchemaNutshell
+    })
+  ],
   computed: {
     usecases () {
       return require('~/assets/usecases.json')
@@ -28,7 +49,8 @@ export default {
     usecase () {
       return this.usecases
         .filter(x => x.id === this.$route.params.id)[0]
-    }
+    },
+    schema404 () { return Schema404 }
   }
 }
 </script>

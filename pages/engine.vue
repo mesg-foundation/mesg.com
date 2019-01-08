@@ -1,31 +1,34 @@
 <template>
   <div>
-      <HeaderEngine id="introduction" class="dark"/>
-      <EngineStory id="engine story" class="white"/>
-      <CTAMarket id="cta market" class="dark"/>
+    <Header
+      id="introduction" class="dark"
+      :schema="schema"
+      :title="title"
+      :description="description"
+    />
+    <EngineStory id="engine story" class="white"/>
+    <CTAMarket id="cta market" class="dark"/>
   </div>
 </template>
 
 <script>
-const title = "MESG Engine"
-const description = "Connect and automate divergent tech."
-
-import HeaderEngine from '~/components/header/Engine'
 import EngineStory from '~/components/EngineStory'
 import CTAMarket from '~/components/cta/Market'
+import Header from '~/components/Header'
+import SchemaEngine from '~/components/schema/Engine'
+import page from './page'
 export default {
   components: {
-    HeaderEngine,
+    Header,
     EngineStory,
     CTAMarket
   },
-  head: {
-    title: title,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', property: "og:description", content: description },
-    ]
-  }
+  mixins:[
+    page({
+      title: "MESG Engine",
+      description: "Connect and automate divergent tech.",
+      schema: SchemaEngine
+    })
+  ]
 }
 </script>

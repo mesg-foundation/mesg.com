@@ -1,31 +1,32 @@
 <template>
   <div>
-      <HeaderMarket id="introduction" class="dark"/>
-      <MarketStory id="market story" class="white"/>
-      <CTAGetStarted id="get started" class="dark"/>
+    <Header id="introduction" class="dark"
+      :title="title"
+      :description="description"
+      :schema="schema" />
+    <MarketStory id="market story" class="white"/>
+    <CTAGetStarted id="get started" class="dark"/>
   </div>
 </template>
 
 <script>
-const title = 'MESG Marketplace'
-const description = 'Earn tokens when others make use of your applications.'
-
-import HeaderMarket from '~/components/header/Market'
+import Header from '~/components/Header'
 import MarketStory from '~/components/MarketStory'
 import CTAGetStarted from '~/components/cta/GetStarted'
+import SchemaMarketplace from '~/components/schema/Marketplace'
+import page from './page'
 export default {
   components: {
-    HeaderMarket,
+    Header,
     MarketStory,
     CTAGetStarted
   },
-  head: {
-    title: title,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', property: "og:description", content: description },
-    ]
-  }
+  mixins: [
+    page({
+      title: 'MESG Marketplace',
+      description: 'Earn tokens when others make use of your applications.',
+      schema: SchemaMarketplace
+    })
+  ]
 }
 </script>

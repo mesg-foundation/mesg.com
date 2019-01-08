@@ -1,31 +1,34 @@
 <template>
   <div>
-    <HeaderFAQ id="introduction" class="dark"/>
+    <Header
+      id="introduction" class="dark"
+      :schema="schema"
+      :title="title"
+      :description="description"
+    />
     <Faq id="faq" class="white"/>
     <CTAContact id="contact" class="dark"/>
   </div>
 </template>
 
 <script>
-const title = 'Frequently Asked Questions'
-const description = 'Below are some common questions and answers about MESG and the MESG Network.'
-
-import HeaderFAQ from '~/components/header/FAQ'
+import Header from '~/components/Header'
+import IconFAQ from '~/components/icon/FAQ'
 import Faq from '~/components/Faq'
 import CTAContact from '~/components/cta/Contact'
+import page from './page'
 export default {
   components: {
-    HeaderFAQ,
+    Header,
     Faq,
     CTAContact
   },
-  head: {
-    title: title,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', property: "og:description", content: description },
-    ]
-  }
+  mixins: [
+    page({
+      title: 'Frequently Asked Questions',
+      description: 'Below are some common questions and answers about MESG and the MESG Network.',
+      schema: IconFAQ
+    })
+  ]
 }
 </script>

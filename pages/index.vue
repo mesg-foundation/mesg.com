@@ -16,36 +16,27 @@
 
 
 <script>
-const title = 'The new economy of app development'
-const description = 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.'
-
 import SchemaMESG from '~/components/schema/MESG'
-import Header from '~/components/header/Base'
+import Header from '~/components/Header'
 import MarketEngine from '~/components/MarketEngine'
 import Entrypoints from '~/components/Entrypoints'
 import Entrypoints2 from '~/components/Entrypoints2'
 import CTAToken from '~/components/cta/Token'
+import page from './page'
 export default {
   components: {
     Header,
     MarketEngine,
     Entrypoints,
     Entrypoints2,
-    CTAToken,
-    SchemaMESG
+    CTAToken
   },
-  head: {
-    title: title,
-    meta: [
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'description', name: 'description', content: description },
-      { hid: 'og:description', property: "og:description", content: description },
-    ]
-  },
-  computed: {
-    title () { return title },
-    description () { return description },
-    schema () { return SchemaMESG }
-  }
+  mixins: [
+    page({
+      title: 'The new economy of app development',
+      description: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.',
+      schema: SchemaMESG
+    })
+  ]
 }
 </script>
