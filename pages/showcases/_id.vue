@@ -36,11 +36,11 @@ export default {
     CTANext
   },
   mixins: [
-    page({
-      title: 'usecase.title',
-      description: 'usecase.text',
+    page(self => ({
+      title: self.usecase.title,
+      description: self.usecase.text,
       schema: SchemaNutshell
-    })
+    }))
   ],
   computed: {
     usecases () {
