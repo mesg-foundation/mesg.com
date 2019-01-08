@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import SchemaImportant from '~/components/SchemaImportant'
+import SchemaImportant from '~/components/schema/Important'
 export default {
   components: {
     SchemaImportant

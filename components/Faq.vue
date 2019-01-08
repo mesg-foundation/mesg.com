@@ -17,6 +17,9 @@
           </div>
           <div class="separator"></div>
         </div>
+        <p>
+          <small><em>* These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to GitHub and other resources for additional details.</em></small>
+        </p>
       </div>
     </div>
   </div>

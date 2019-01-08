@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import SchemaAdoptionBefore from '~/components/SchemaAdoptionBefore'
-import SchemaAdoption from '~/components/SchemaAdoption'
+import SchemaAdoptionBefore from '~/components/schema/AdoptionBefore'
+import SchemaAdoption from '~/components/schema/Adoption'
 export default {
   components: {
     SchemaAdoptionBefore,
