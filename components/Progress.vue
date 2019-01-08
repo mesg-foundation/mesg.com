@@ -5,7 +5,7 @@
         <h2>Project progress</h2>
         <div class="separator-orange"></div>
     </div>
-    <div v-for="(progress, i) in usecase.progress" :key="progress"
+    <div v-for="(progress, i) in usecase.progress" :key="i"
       class="container-child" :class="{ reverse: i % 2 === 1 }" flex row space-between>
       <div :style="progressPicture(progress)" class="picture" half flex column>
       </div>
