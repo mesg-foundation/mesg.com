@@ -24,7 +24,7 @@ export default {
   mixins: [
     page({
       title: 'MESG Marketplace',
-      description: 'Earn tokens when others make use of your applications.',
+      description: 'Earn tokens when others make use of the Modules within your applications. Introducing the new economy of application development.',
       schema: SchemaMarketplace
     })
   ]

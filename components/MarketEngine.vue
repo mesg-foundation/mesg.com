@@ -6,12 +6,12 @@
         <div class="schema" flex column space-between>
           <SchemaMarketplace />
         </div>
-        <h2>MESG Market</h2>
+        <h2>MESG Marketplace</h2>
         <p mb2>
-          Save time and money by using existing Modules in the MESG Market. Or build Modules and offer them to the community to earn MESG Tokens.
+          Save time and money by using existing Modules in the MESG Marketplace. Or build Modules and offer them to the community to earn MESG Tokens.
         </p>
         <nav>
-          <nuxt-link to="/market" class="link">Learn more<i class="fas fa-arrow-right"></i></nuxt-link>
+          <nuxt-link to="/marketplace" class="link">Learn more<i class="fas fa-arrow-right"></i></nuxt-link>
         </nav>
       </div>
       <div half flex column>

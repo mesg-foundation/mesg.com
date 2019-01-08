@@ -18,7 +18,7 @@
     <transition name="appear">
       <div v-if="open" class="container-child" flex column justify-center align-center>
         <nav @click="open = !open" class="nav" flex column justify-center align-center>
-          <nuxt-link to="/market" class="menu-nav" flex column justify-center align-center>Market</nuxt-link>
+          <nuxt-link to="/marketplace" class="menu-nav" flex column justify-center align-center>Marketplace</nuxt-link>
           <nuxt-link to="/engine" class="menu-nav" flex column justify-center align-center>Engine</nuxt-link>
           <nuxt-link to="/token" class="menu-nav" flex column justify-center align-center>Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav" flex column justify-center align-center>Team</nuxt-link>
