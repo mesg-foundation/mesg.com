@@ -2,8 +2,7 @@
   <Header
     :schema="schema"
     title="Frequently Asked Questions"
-    description="Below are some common questions and answers about MESG and the MESG Network."
-    smallDescription="These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to GitHub and other resources for additional details."
+  description="Below are some common questions and answers about MESG and the MESG Network."
   />
 </template>
 

@@ -78,11 +78,7 @@ export default {
 }
 
 .small {
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 0.6em;
-  line-height: normal;
-  letter-spacing: normal;
+  font-size: 1em;
 }
 
 p {
