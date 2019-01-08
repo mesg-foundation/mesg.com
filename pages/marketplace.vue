@@ -11,9 +11,9 @@
 
 <script>
 import Header from '~/components/Header'
-import SchemaMarketplace from '~/components/SchemaMarketplace'
+import SchemaMarketplace from '~/components/schema/Marketplace'
 import MarketStory from '~/components/MarketStory'
-import CTAGetStarted from '~/components/CTAGetStarted'
+import CTAGetStarted from '~/components/cta/GetStarted'
 import page from './page'
 export default {
   components: {

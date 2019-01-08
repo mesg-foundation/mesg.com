@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import IconMarketplace from '~/components/IconMarketplace'
-import IconEngine from '~/components/IconEngine'
+import IconMarketplace from '~/components/icon/Marketplace'
+import IconEngine from '~/components/icon/Engine'
 export default {
   components: {
     IconMarketplace,
