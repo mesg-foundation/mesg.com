@@ -32,7 +32,7 @@ export default {
     return {
       team: [
         ...[
-          { name: "Anthony Estebe", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Anthony.jpg"), socialNetworks:[
+          { name: "Anthony Estebe", role: "CEO, Co-founder", pictureUrl: require("~/assets/Team/MESG-Anthony.jpg"), socialNetworks:[
             { icon: "linkedin-in", link: "https://www.linkedin.com/in/anthony-estebe-aab18831/" },
             { icon: "github", link: "https://github.com/antho1404" }
           ],
@@ -40,7 +40,7 @@ export default {
             { alt: "Schlumberger", src: require("~/assets/Company/Schlumberger.png") },
             { alt: "Gozilio", src: require("~/assets/Company/Gozilio.png") }          ]
           },
-          { name: "Nicolas Mahé", role: "Co-founder", pictureUrl: require("~/assets/Team/MESG-Nicolas.jpg"), socialNetworks: [
+          { name: "Nicolas Mahé", role: "CTO, Co-founder", pictureUrl: require("~/assets/Team/MESG-Nicolas.jpg"), socialNetworks: [
             { icon: "linkedin-in", link: "https://www.linkedin.com/in/nicolas-mahe" },
             { icon: "github", link: "https://github.com/NicolasMahe" }
           ],
