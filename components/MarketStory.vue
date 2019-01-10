@@ -8,6 +8,8 @@
         </p>
       </div>
 
+      <div class="separator-orange" mb2></div>
+
       <div flex row space-between>
         <div half flex column>
           <div class="block" flex column justify-center mb2>
@@ -29,6 +31,8 @@
           </div>
         </div>
       </div>
+
+      <div class="separator-orange" mb2></div>
 
       <div class="content" flex column justify-center mb2 mt2>
         <h2>Even more ways to benefit</h2>
