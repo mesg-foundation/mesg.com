@@ -24,7 +24,7 @@ export default {
   mixins: [
     page({
       title: 'The MESG Team',
-      description: 'The MESG Foundation is a group of world-class impassioned individuals, dedicated to solving major issues in tech interoperability.',
+      description: 'The MESG Foundation is a group of passionate individuals dedicated to the creation of a new economy for developers',
       schema: IconTeam
     })
   ]
