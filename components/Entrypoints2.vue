@@ -5,21 +5,21 @@
         <nav flex row justify-center align-center>
           <nuxt-link to="team" class="card">
             <div flex column justify-center align-center>
-              <IconTeam class="icon" mb1/>
+              <IconiconTeam class="icon" mb1/>
               <h2 mb05>Team</h2>
               <p>The people behind MESG</p>
             </div>
           </nuxt-link>
           <nuxt-link to="/roadmap" class="card">
             <div flex column justify-center align-center>
-              <IconRoadmap class="icon" mb1/>
+              <IconiconRoadmap class="icon" mb1/>
               <h2 mb05>Roadmap</h2>
               <p>Our vision and goals</p>
             </div>
           </nuxt-link>
           <nuxt-link to="faq" class="card">
             <div flex column justify-center align-center>
-              <IconFAQ class="icon" mb1/>
+              <IconiconFAQ class="icon" mb1/>
               <h2 mb05>FAQ</h2>
               <p>Find more about MESG</p>
             </div>
@@ -31,14 +31,14 @@
 </template>
 
 <script>
-import IconRoadmap from '~/components/icon/Roadmap'
-import IconTeam from '~/components/icon/Team'
-import IconFAQ from '~/components/icon/FAQ'
+import IconiconRoadmap from '~/components/icon/iconRoadmap'
+import IconiconTeam from '~/components/icon/iconTeam'
+import IconiconFAQ from '~/components/icon/iconFaq'
 export default {
   components: {
-    IconRoadmap,
-    IconTeam,
-    IconFAQ
+    IconiconRoadmap,
+    IconiconTeam,
+    IconiconFAQ
   },
   props: {
     to: String

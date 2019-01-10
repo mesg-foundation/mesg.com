@@ -11,7 +11,7 @@
 
 <script>
 import Header from '~/components/Header'
-import IconTeam from '~/components/icon/Team'
+import SchemaTeam from '~/components/schema/SchemaTeam'
 import Team from '~/components/Team'
 import CtaHiring from '~/components/cta/Hiring'
 import page from './page'
@@ -25,7 +25,7 @@ export default {
     page({
       title: 'The MESG Team',
       description: 'The MESG Foundation is a group of passionate individuals dedicated to the creation of a new economy for developers',
-      schema: IconTeam
+      schema: SchemaTeam
     })
   ]
 }
