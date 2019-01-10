@@ -4,20 +4,20 @@
       :title="title"
       :description="description"/>
     <Features id="features" class="white"/>
-    <CTAContact id="contact" class="dark"/>
+    <CTAGetStarted id="get started" class="dark"/>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
 import Features from '~/components/Features'
-import CTAContact from '~/components/cta/Contact'
+import CTAGetStarted from '~/components/cta/GetStarted'
 import page from './page'
 export default {
   components: {
     Header,
     Features,
-    CTAContact
+    CTAGetStarted
   },
   mixins: [
     page({
