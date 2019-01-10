@@ -4,10 +4,10 @@
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
         <h2>
-          Start building now
+          Get started today
         </h2>
         <p mb05>
-          MESG is community-driven. Take the reigns: building is in your hands.
+          MESG’s revolutionary development tool already allows you to build and connect Modules today. 
         </p>
         <p mb05>
           <strong>To get started, open your terminal and run:</strong>

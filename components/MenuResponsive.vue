@@ -20,6 +20,7 @@
         <nav @click="open = !open" class="nav" flex column justify-center align-center>
           <nuxt-link to="/marketplace" class="menu-nav" flex column justify-center align-center>Marketplace</nuxt-link>
           <nuxt-link to="/engine" class="menu-nav" flex column justify-center align-center>Engine</nuxt-link>
+          <nuxt-link to="/features" class="menu-nav" flex column justify-center align-center>Features</nuxt-link>
           <nuxt-link to="/token" class="menu-nav" flex column justify-center align-center>Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav" flex column justify-center align-center>Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mb2 flex column justify-center align-center>Roadmap</nuxt-link>

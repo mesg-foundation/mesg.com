@@ -1,66 +1,19 @@
 <template>
   <section>
   <div class="container-parent">
-    <div class="container-child" flex row space-between>
-      <div half flex column justify-center>
-        <h2>Connect anything</h2>
-        <p>
-          Today, many popular business solutions do not share data or integrate with each other. <strong>This makes it expensive and time consuming for companies to scale effectively</strong>.
-          <br>
-          <br>
-          MESG allows previously-incompatible devices to exchange information, creating a new world of business opportunities. Build new solutions by combining <strong>any</strong> technologies together, including blockchains or Web APIs.
-        </p>
+    <div class="container-child features" flex row space-between>
+      <div third flex column hide-responsive>
+        <nav v-sticky="shouldStick" sticky-offset="offset" sticky-side="top" flex column class="sidebar">
+          <a v-for="feature in features" :key="feature.id" :href="`#${feature.id}`">{{feature.title}}</a>
+        </nav>
       </div>
-      <div half flex column justify-center align-center>
-        <SchemaConnection />
-      </div>
-    </div>
-    <div class="container-child" flex row space-between column-reverse-responsive>
-      <div half flex column justify-center align-center>
-        <SchemaApps />
-      </div>
-      <div half flex column justify-center>
-        <h2>Supercharge existing businesses</h2>
-        <p>
-          Connect your software suite to MESG to gain access to technologies that can optimize operations, reach new markets, or deliver excellent user experiences.
-          <br>
-          <br>
-          <strong>Any corporate software can be connected to the MESG Network</strong>, which means you can now integrate and automate functionalities such as email, notifications, payments, or literally any other third-party technology.
-          <br>
-          <br>
-          With MESG, connect to the blockchain components your business needs, avoiding the constraints of full adoption.
-        </p>
-      </div>
-    </div>
-    <div class="container-child" flex row space-between>
-      <div half flex column justify-center>
-        <h2>Grow your network</h2>
-        <p>
-          Discover the power of a decentralized network.
-          <br>
-          <br>
-          MESG’s decentralized network offers users instant and unlimited scale for their custom integrations, without the worry of frustrating downtime or network bottlenecks.
-          <br>
-          <br>
-          <strong>Achieve limitless expansion within a single tool</strong>; MESG doesn’t limit customers to predefined channels of growth. Implement the features you need, when you need them.
-        </p>
-      </div>
-      <div half flex column justify-center align-center>
-        <SchemaNetwork />
-      </div>
-    </div>
-    <div class="container-child" flex row space-between column-reverse-responsive>
-      <div half flex column justify-center align-center>
-        <SchemaIncome />
-      </div>
-      <div half flex column justify-center>
-        <h2>Generate income while accelerating productivity</h2>
-        <p>
-          An economy is built within MESG powered by the sharing and reuse of code. <strong>Applications and their components are shared and reused through an open marketplace</strong>, expediting the development process.
-          <br>
-          <br>
-          Anyone can receive income with MESG by participating in the Network.
-        </p>
+      <div thirdtwo flex column>
+        <div v-for="feature in features" :key="feature.id" :id="feature.id">
+          <h2>{{feature.title}}</h2>
+          <div class="separator-orange"></div>
+          <div v-html="feature.text" mt2></div>
+          <div class="separator"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -68,16 +21,105 @@
 </template>
 
 <script>
-import SchemaConnection from '~/components/schema/Connection'
-import SchemaApps from '~/components/schema/Apps'
-import SchemaNetwork from '~/components/schema/Network'
-import SchemaIncome from '~/components/schema/Income'
+const features = require("~/assets/features")
 export default {
-  components: {
-    SchemaConnection,
-    SchemaApps,
-    SchemaNetwork,
-    SchemaIncome
+  data () {
+    return {
+      offset: { top: 70 },
+      shouldStick: true,
+    }
+  },
+  mounted () {
+    // find out what size the window is loaded in and configure the stickiness.
+    this.$nextTick(() => { this.setShouldStick() })
+
+    // configure stickiness on each change to window's size.
+    window.addEventListener('resize', this.setShouldStick)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.setShouldStick)
+  },
+  methods: {
+    // setShouldStick ensures to make sidebar sticky when it's not vertically
+    // aligned with the content.
+		setShouldStick() {
+      this.shouldStick = document.documentElement.clientWidth > 768
+		},
+  },
+  computed: {
+    features () {
+      return features
+    }
   }
 }
 </script>
+
+
+<style scoped>
+
+.sidebar {
+  border: solid 1px #d6d0e7;
+  border-radius:4px;
+  margin-bottom: 1.8em;
+}
+
+a {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.2em;
+  color: #57577e;
+  color: var(--dark-grey);
+  border-bottom: dotted 1px #d6d0e7;
+}
+a:hover {
+  opacity:0.8;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+  border-left: solid 2px #9452ff;
+  border-radius:1px;
+}
+
+.separator {
+  margin-top:2.4em;
+  margin-bottom: 2.4em;
+  border: dotted 0.5px #d6d0e7;
+}
+.separator-orange {
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color:#ffa744;
+  background-color: var(--Orange-cta);
+}
+@media only screen and (max-width: 768px) {
+  a {
+    font-size: 1em;
+  }
+  [third] { width: calc(33% - 2.4em) }
+  [thirdtwo] { width: calc(66% - 2.4em) }
+}
+@media only screen and (max-width: 767px) {
+  a {
+    font-size: 1em;
+  }
+  [third] { width: 100%; }
+  [thirdtwo] { width: 100%; }
+}
+@media only screen and (max-width: 414px) {
+  .separator {
+    margin-top:1.8em;
+    margin-bottom: 1.8em;
+  }
+  [mt2] { margin-top: 1.8em!important; }
+}
+@media only screen and (max-width: 1023px) {
+  [thirdtwo] { width: 100%; }
+}
+</style>
+
+<style>
+.features p {
+  margin-bottom: 1em;
+}
+
+</style>

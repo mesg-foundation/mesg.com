@@ -7,6 +7,7 @@
         <div class="menu" flex row space-between align-center>
           <nuxt-link to="/marketplace" class="menu-nav">Marketplace</nuxt-link>
           <nuxt-link to="/engine" class="menu-nav">Engine</nuxt-link>
+          <nuxt-link to="/features" class="menu-nav">Features</nuxt-link>
           <nuxt-link to="/token" class="menu-nav">Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mr1>Roadmap</nuxt-link>
