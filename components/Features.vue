@@ -8,8 +8,7 @@
         </nav>
       </div>
       <div thirdtwo flex column>
-        <div v-for="feature in features" :key="feature.id">
-          <div :id="feature.id" mt2></div>
+        <div v-for="feature in features" :key="feature.id" :id="feature.id">
           <h2>{{feature.title}}</h2>
           <div class="separator-orange"></div>
           <div v-html="feature.text" mt2></div>

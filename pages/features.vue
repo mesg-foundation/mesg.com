@@ -22,7 +22,7 @@ export default {
   mixins: [
     page({
       title: 'MESG Features',
-      description: 'MESG is extremely flexible and expandable, so we encourage you to think beyond these possibilities.',
+      description: 'MESG is extremely flexible and expandable, so we encourage you to think beyond these features.',
     })
   ]
 }
