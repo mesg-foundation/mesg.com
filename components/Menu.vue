@@ -58,7 +58,7 @@ a {
   border-bottom: solid 2px transparent;
 }
 .menu-nav {
-  opacity:0.65;
+  opacity:0.85;
 }
 a:hover {
   opacity:1;
