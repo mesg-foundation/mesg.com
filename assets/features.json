@@ -2,7 +2,7 @@
   {
     "id":"rapid-integration",
     "title":"Rapid feature integration",
-    "text":"<p><em>Plug features into <strong>any</strong> application - we are even using MESG to build MESG itself.</em></p><p>The highly-interconnected nature of most applications can make testing out new technologies, functionalities and solutions inefficient and challenging. Even the removal of a single feature can require the complex reconfiguration of an entire application. </p><p>MESG Modules make prototyping and updates efficient, because they allow any Module to work with any other Module or application. This means the addition or removal of any feature can be done easily, without heavy reconfiguration. </p><p>Connect to new features, blockchains or even custom software, including monolithic applications, through the MESG Engine. Update or test out features without needing to break your entire application.</p>"
+    "text":"<p><em>Plug features into <strong>any</strong> application - we are even using MESG to build MESG itself.</em></p><p>The highly-interconnected nature of most applications can make testing out new technologies, functionalities and solutions inefficient and challenging. Even the removal of a single feature can require the complex reconfiguration of an entire application. </p><p>MESG Modules make prototyping and updates efficient, because all Modules are automatically compatible with any other Module or application. This means the addition or removal of any feature can be done easily, without heavy reconfiguration. </p><p>Connect to new features, blockchains or even custom software, including monolithic applications, through the MESG Engine. Update or test out features without needing to break your entire application.</p>"
   },
   {
     "id":"multi-language",
@@ -17,7 +17,7 @@
   {
     "id":"autonomous-workflows",
     "title":"Autonomous workflows",
-    "text":"<p><em>MESG features flow-based programming, defining applications as networks of \"black box\" processes.</em></p><p>Events on blockchains or other difficult-to-reach technologies can be easily combined into powerful workflows using the MESG Engine. </p><p>Creating event workflows with blockchains can make atomic swaps, sidechain or lightning network deployment fast and easy. These features can make businesses more efficient and profitable, or add entirely new business cases that were not previously possible.</p><p>React to Ethereum transactions being processed. Emit user data to MailChimp to enhance customer onboarding. Automate bookkeeping processes using Quickbooks.  The possibilities are endless.</p>"
+    "text":"<p><em>MESG features flow-based programming, defining applications as networks of \"black box\" processes.</em></p><p>Events on blockchains or other difficult-to-reach technologies can be easily combined into powerful workflows using the MESG Engine. </p><p>Creating event workflows with blockchains can make atomic swaps, sidechain or lightning network deployment fast and easy. These features can make businesses more efficient and profitable, or add entirely new business cases that were not previously possible.</p><p>React to Ethereum transactions being processed. Emit user data to MailChimp to enhance customer onboarding. Automate bookkeeping processes using QuickBooks. The possibilities are endless.</p>"
   },
   {
     "id":"hybrid-decentralized-applications",
