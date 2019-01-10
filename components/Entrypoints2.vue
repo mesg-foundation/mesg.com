@@ -48,6 +48,14 @@ export default {
 
 <style scoped>
 
+.container-parent {
+  padding-top:0;
+}
+.container-child {
+  padding-top:0;
+}
+
+
 h2 {
   margin-bottom:0;
   text-decoration: none;

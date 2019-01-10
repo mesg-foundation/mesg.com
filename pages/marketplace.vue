@@ -1,19 +1,19 @@
 <template>
   <div>
-    <Header id="introduction" class="dark"
-      :title="title"
-      :description="description"
-      :schema="schema" />
-    <MarketStory id="market story" class="white"/>
-    <CTAGetStarted id="get started" class="dark"/>
+      <Header id="introduction" class="dark"
+        :title="title"
+        :description="description"
+        :schema="schema" />
+      <MarketStory id="market story" class="white"/>
+      <CTAGetStarted id="get started" class="dark"/>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
+import SchemaMarketplace from '~/components/schema/Marketplace'
 import MarketStory from '~/components/MarketStory'
 import CTAGetStarted from '~/components/cta/GetStarted'
-import SchemaMarketplace from '~/components/schema/Marketplace'
 import page from './page'
 export default {
   components: {
