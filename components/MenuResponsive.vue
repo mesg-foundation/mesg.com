@@ -146,7 +146,7 @@ a {
   padding-left:0;
   padding-right:0;
   border-bottom: 1px solid #3C1972;
-  opacity:0.65;
+  opacity:0.85;
 }
 .menu-nav:hover, .menu-nav.nuxt-link-active {
   opacity:1;

@@ -165,7 +165,7 @@ li::before {
   color: var(--white-content);
 }
 .dark p {
-  opacity: 0.65;
+  opacity: 0.85;
   color: #ffffffff;
   color: var(--white-content);
 }
