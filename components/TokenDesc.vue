@@ -3,37 +3,31 @@
   <div class="container-parent">
     <div class="container-child" flex row space-between>
       <div class="paragraphe" half flex column justify-center>
-        <h2>Fueling the new economy of development</h2>
-        <p mb1>
-          The MESG token is a utility token that has three purposes: <strong>access, incentives and governance</strong>.
-        </p>
-        <h4 mb05>Access</h4>
-        <p mb1>
-          Tokens provide access to the MESG Marketplace where users buy and sell the components of applications.
-        </p>
-        <h4 mb05>Incentives</h4>
-        <p mb1>
-          Participants of all levels are rewarded for helping maintain the functionality and governance of the network, or to provide new components of applications
-        </p>
-        <h4 mb05>Governance</h4>
-        <p mb2>
-          Governance in MESG is based on a proof of stake system where users are required to stake tokens as collateral to participate. The more tokens a user stakes, the more potential income is earned.
-        </p>
-        <nav>
-          <nuxt-link to="/marketplace" class="link">Find out more about the economy<i class="fas fa-arrow-right"></i></nuxt-link>
-        </nav>
+        <h2>Algorithmic token offering</h2>
+        
+        <h4 mb05>Sale Distribution</h4>
+        <p mb1>The sale distribution of 62.5% will be released in daily allotments.</p>
+        
+        <h4 mb05>Algorithm</h4>
+        <p mb1>Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand.</p>
+        
+        <h4 mb05>Initial offering</h4>
+        <p mb1>On the first day of the exchange listing, 250,000 tokens will be released to initiate the offering.</p>
+
+        <h4 mb05>Transparency</h4>
+        <p mb1>Metrics will be published daily to enhance transparency between the MESG Foundation and the community.</p>
       </div>
       <div half flex column>
         <h2>The MESG Token</h2>
         <p mb2>
           <strong>Token Distribution </strong>
-            <ul mb1 mt05>
-              <li>Token supply <span>250MM</span></li>
-              <li>Sale Distribution <span>62.5%</span></li>
-              <li>Reserve <span>20%</span></li>
-              <li>Team and Founders <span>12.5%</span></li>
-              <li>Partners <span>5%</span></li>
-            </ul>
+          <ul mb1 mt05>
+            <li>Total token supply <span>250MM</span></li>
+            <li>Sale Distribution <span>62.5%</span></li>
+            <li>Reserve <span>20%</span></li>
+            <li>Team and Founders <span>12.5%</span></li>
+            <li>Partners <span>5%</span></li>
+          </ul>
         </p>
         <nav>
           <nuxt-link to="/roadmap" class="link">Check out our current phase in our roadmap<i class="fas fa-arrow-right"></i></nuxt-link>
