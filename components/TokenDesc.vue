@@ -5,14 +5,14 @@
       <div class="paragraphe" half flex column justify-center>
         <h2>Algorithmic token offering</h2>
         
-        <h4 mb05>Sale Distribution</h4>
-        <p mb1>The sale distribution of 62.5% will be released in daily allotments.</p>
+        <h4 mb05>Supply Distribution</h4>
+        <p mb1>The supply distribution of 62.5% will be released in daily allotments.</p>
         
         <h4 mb05>Algorithm</h4>
         <p mb1>Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand.</p>
         
-        <h4 mb05>Initial offering</h4>
-        <p mb1>On the first day of the exchange listing, 250,000 tokens will be released to initiate the offering.</p>
+        <h4 mb05>Initial supply</h4>
+        <p mb1>On the first day of the exchange listing, 0.1% of the total supply will be released to initiate the supply.</p>
 
         <h4 mb05>Transparency</h4>
         <p mb1>Metrics will be published daily to enhance transparency between the MESG Foundation and the community.</p>
