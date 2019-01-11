@@ -10,7 +10,7 @@
 
 <script>
 import Header from '~/components/Header'
-import IconRoadmap from '~/components/icon/Roadmap'
+import ROADMAP from '~/components/schema/ROADMAP'
 import Roadmap from '~/components/Roadmap'
 import page from './page'
 export default {
@@ -22,7 +22,7 @@ export default {
     page({
       title: 'The MESG Roadmap',
       description: 'Our vision is to make business integration simple by becoming the universally-used platform for connecting traditional technology to trustless systems.',
-      schema: IconRoadmap
+      schema: ROADMAP
     })
   ]
 }

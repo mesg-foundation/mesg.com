@@ -13,7 +13,7 @@
 
 <script>
 import Header from '~/components/Header'
-import IconFAQ from '~/components/icon/FAQ'
+import FAQ from '~/components/schema/FAQ'
 import Faq from '~/components/Faq'
 import CTAContact from '~/components/cta/Contact'
 import page from './page'
@@ -27,7 +27,7 @@ export default {
     page({
       title: 'Frequently Asked Questions',
       description: 'Below are some common questions and answers about MESG and the MESG Network.',
-      schema: IconFAQ
+      schema: FAQ
     })
   ]
 }

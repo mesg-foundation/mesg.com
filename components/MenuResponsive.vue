@@ -134,6 +134,7 @@ a {
   padding-top:0;
   background-color: #491e8c;
   background-color: var(--purple);
+  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.2);
 }
 .nav {
   width: 100%;
@@ -195,6 +196,7 @@ a {
     padding-right:1.8em;
     padding-top:0.6em;
     padding-bottom:0.6em;
+    border-bottom: solid 1px #251440;
   }
   .logo {
     width:114px;
