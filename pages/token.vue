@@ -26,7 +26,7 @@ export default {
   mixins: [
     page({
       title: 'MESG Token Available Soon',
-      description: 'Keep in touch to discover the new way of token distribution: Algorithmic Token Offering',
+      description: 'Keep in touch to discover the new way of token distribution: Algorithmic Token Offering.',
       schema: IconToken
     })
   ]
