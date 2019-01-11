@@ -3,9 +3,12 @@
     <Header id="introduction" class="dark token-header"
       :title="title"
       :description="description"
-      :schema="schema"
-      actionLink="http://eepurl.com/drKt-5"
-      actionTitle="Keep me updated" />
+      :schema="schema" />
+    <div class="white">
+      <TokenDesc id="token"/>
+      <Documentations id="documentations"/>
+    </div>
+    <CTATokenUpdated id="token updated" class="dark"/>
   </div>
 </template>
 
@@ -25,17 +28,10 @@ export default {
   },
   mixins: [
     page({
-      title: 'MESG Token Available Soon',
-      description: 'Keep in touch to discover the new way of token distribution: Algorithmic Token Offering',
+      title: 'The MESG Token',
+      description: 'MESG Foundation offers tokens through exchanges using an innovative Algorithmic Token Offering system',
       schema: IconToken
     })
   ]
 }
 </script>
-
-<style>
-.token-header .container-child {
-  min-height: 80vh!important;
-  max-height: 100vh!important;
-}
-</style>
