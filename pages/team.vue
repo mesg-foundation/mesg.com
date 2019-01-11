@@ -11,7 +11,7 @@
 
 <script>
 import Header from '~/components/Header'
-import IconTeam from '~/components/icon/Team'
+import TEAM from '~/components/schema/TEAM'
 import Team from '~/components/Team'
 import CtaHiring from '~/components/cta/Hiring'
 import page from './page'
@@ -24,8 +24,8 @@ export default {
   mixins: [
     page({
       title: 'The MESG Team',
-      description: 'The MESG Foundation is a group of passionate individuals dedicated to the creation of a new economy for developers',
-      schema: IconTeam
+      description: 'The MESG Foundation is a group of passionate individuals dedicated to the creation of a new economy for developers.',
+      schema: TEAM
     })
   ]
 }
