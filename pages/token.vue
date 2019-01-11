@@ -3,7 +3,9 @@
     <Header id="introduction" class="dark token-header"
       :title="title"
       :description="description"
-      :schema="schema" />
+      :schema="schema"
+      actionLink="http://eepurl.com/drKt-5"
+      actionTitle="Keep me updated" />
     <div class="white">
       <TokenDesc id="token"/>
       <Documentations id="documentations"/>
