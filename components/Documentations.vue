@@ -31,7 +31,7 @@
               <h3>Two pager</h3>
             </div>
           </a>
-          <a href="https://drive.google.com/open?id=1jVdhjKPF5qe8EL6vIQ38jtMPUz-VMgql" target="blank" class="card" flex column justify-center align-center>
+          <a href="https://drive.google.com/open?id=1fzSFWq0Gon67tXza0Irb9p7hZMT4gMRb" target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
               <img src="~/assets/documents/MESG-Business-Plan-Summary.jpg" alt="MESG - Business Plan"/>
             </div>
