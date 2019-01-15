@@ -59,6 +59,14 @@ export default {
           }
         ],
         ...[
+          { name: "Wayne Skeen", role: "Head of Business", pictureUrl: require("~/assets/Team/MESG-Wayne.jpg"), socialNetworks: [
+            { icon: "linkedin-in", link: "https://www.linkedin.com/in/wayneskeen/" }
+          ],
+          companies: [
+            { alt: "Confirmation Capital", src: require("~/assets/Company/confirmation-capital.png") },
+            { alt: "Magnify", src: require("~/assets/Company/magnify.png") },
+            { alt: "ADF", src: require("~/assets/Company/adf.jpeg") }
+          ]},
           { name: "Adriaan Du Toit", role: "Head of Operations", pictureUrl: require("~/assets/Team/MESG-Adriaan.jpg"), socialNetworks: [
             { icon: "linkedin-in", link: "https://www.linkedin.com/in/adriaandt/" }
           ],

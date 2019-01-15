@@ -99,6 +99,7 @@ export default {
 .logo {
   max-width: 80px;
   margin-right: 0.6em;
+  max-height: 34px;
 }
 
 .Separator-dotted {
