@@ -26,7 +26,7 @@
             <li>Sale Distribution <span>62.5%</span></li>
             <li>Reserve <span>20%</span></li>
             <li>Team and Founders <span>12.5%</span></li>
-            <li>Partners <span>5%</span></li>
+            <li>Partners & Bounties <span>5%</span></li>
           </ul>
         </p>
         <nav>
