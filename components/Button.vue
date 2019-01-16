@@ -1,28 +1,24 @@
 <template>
   <button v-if="submit"
     type="submit"
-    :class="{
-      'btn--small': small,
-      'btn--primary': primary
-    }">
+    :class="classes">
     <slot></slot>
   </button>
   <a v-else-if="href"
     :href="href"
-    :class="{
-      'btn--small': small,
-      'btn--primary': primary
-    }">
+    :class="classes">
     <slot></slot>
   </a>
-  <nuxt-link v-else
+  <nuxt-link v-else-if="to"
     :to="to"
-    :class="{
-      'btn--small': small,
-      'btn--primary': primary
-    }">
+    :class="classes">
     <slot></slot>
   </nuxt-link>
+  <a v-else
+    @click="$emit('click')"
+    :class="classes">
+    <slot></slot>
+  </a>
 </template>
 
 <script>
@@ -35,6 +31,14 @@ export default {
     primary: Boolean,
     purple: Boolean,
     outline: Boolean
+  },
+  computed: {
+    classes () {
+      return {
+        'btn--small': this.small,
+        'btn--primary': this.primary
+      }
+    }
   }
 }
 </script>
