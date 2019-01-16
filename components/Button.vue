@@ -3,21 +3,25 @@
     type="submit"
     :class="classes">
     <slot></slot>
+    <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </button>
   <a v-else-if="href"
     :href="href"
     :class="classes">
     <slot></slot>
+    <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </a>
   <nuxt-link v-else-if="to"
     :to="to"
     :class="classes">
     <slot></slot>
+    <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </nuxt-link>
   <a v-else
     @click="$emit('click')"
     :class="classes">
     <slot></slot>
+    <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </a>
 </template>
 
@@ -30,7 +34,8 @@ export default {
     small: Boolean,
     primary: Boolean,
     purple: Boolean,
-    outline: Boolean
+    outline: Boolean,
+    icon: String
   },
   computed: {
     classes () {
@@ -52,6 +57,14 @@ a, button {
   padding: 1em 4em;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+}
+
+i { 
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 1em;
 }
 
 .btn--small {

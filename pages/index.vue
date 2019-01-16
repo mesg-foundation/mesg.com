@@ -4,7 +4,8 @@
       :schema="schema"
       :title="title"
       :description="description"
-      actionTitle="▶ Watch the video of our founders"
+      actionTitle="MESG Founders video"
+      actionIcon="play"
       @actionClicked="video = !video"
     />
     <Popup v-model="video">
