@@ -9,7 +9,7 @@
       @actionClicked="video = !video"
     />
     <Popup v-model="video">
-      <Video src="https://www.youtube.com/embed/VjPG51iE_fk" />
+      <Video src="https://www.youtube.com/embed/VjPG51iE_fk?autoplay=1" />
     </Popup>
     <div class="white">
       <MarketEngine id="market engine"/>
