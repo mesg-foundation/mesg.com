@@ -3,7 +3,8 @@
     <Header id="introduction" class="dark hackathon"
       :title="title"
       :description="description"
-      smallDescription="One month online hackaton to build a kick ass application with MESG"
+      :schema="schema"
+      smallDescription="January 18th to February 17th"
       full-height
       actionTitle="Register Now !"
       actionLink="https://forum.mesg.com/t/mesg-online-hackathon-18th-january-to-17th-february-2019/170" />
@@ -12,6 +13,7 @@
 
 <script>
 import Header from '~/components/Header'
+import SchemaHackathon from '~/components/schema/Hackathon'
 import page from './page'
 export default {
   components: {
@@ -20,8 +22,8 @@ export default {
   mixins: [
     page({
       title: 'MESG Hackathon',
-      description: 'Participate to the MESG online Hackathon and receive up to $10,000 of prizes in MESG token'
-      // schema: SchemaMarketplace
+      description: 'Build a kickass application with MESG and win up to $10,000 in MESG tokens',
+      schema: SchemaHackathon
     })
   ]
 }
