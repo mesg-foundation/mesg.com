@@ -7,7 +7,7 @@
           {{ backTitle }}
         </nuxt-link>
       </nav>
-      <div class="container-child" flex row space-between column-reverse-responsive>
+      <div class="container-child" :class="{ fullHeight }" flex row space-between column-reverse-responsive>
         <header half flex column justify-center>
           <h1 v-html="title"></h1>
           <p v-html="description"></p>
@@ -54,6 +54,9 @@ export default {
     },
     smallDescription: {
       type: String
+    },
+    fullHeight: {
+      type: Boolean
     }
   }
 }
@@ -140,4 +143,7 @@ p {
    }
  }
 
+.fullHeight {
+  min-height: 80vh;
+}
 </style>
