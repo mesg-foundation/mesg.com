@@ -12,8 +12,9 @@
           <h1 v-html="title"></h1>
           <p v-html="description"></p>
           <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
-          <nav v-if="actionLink && actionTitle" flex mt2 class="actions">
-            <Button :href="actionLink" target="_blank" primary>{{ actionTitle }}</Button>
+          <nav v-if="actionTitle" flex mt2 class="actions">
+            <Button v-if="actionLink" :href="actionLink" target="_blank" primary :icon="actionIcon">{{ actionTitle }}</Button>
+            <Button v-else @click="$emit('actionClicked')" primary :icon="actionIcon">{{ actionTitle }}</Button>
           </nav>
         </header>
         <div half flex column justify-center align-center>
@@ -50,6 +51,9 @@ export default {
       type: String
     },
     actionTitle: {
+      type: String
+    },
+    actionIcon: {
       type: String
     },
     smallDescription: {

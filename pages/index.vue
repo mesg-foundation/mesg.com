@@ -4,7 +4,13 @@
       :schema="schema"
       :title="title"
       :description="description"
+      actionTitle="What is MESG?"
+      actionIcon="play"
+      @actionClicked="video = !video"
     />
+    <Popup v-model="video">
+      <Video src="https://www.youtube.com/embed/VjPG51iE_fk?autoplay=1" />
+    </Popup>
     <div class="white">
       <MarketEngine id="market engine"/>
       <Entrypoints2 id="entry points 2"/>
@@ -17,6 +23,8 @@
 <script>
 import SchemaMESG from '~/components/schema/MESG'
 import Header from '~/components/Header'
+import Video from '~/components/Video'
+import Popup from '~/components/Popup'
 import MarketEngine from '~/components/MarketEngine'
 import Entrypoints2 from '~/components/Entrypoints2'
 import CTAToken from '~/components/cta/Token'
@@ -26,7 +34,9 @@ export default {
     Header,
     MarketEngine,
     Entrypoints2,
-    CTAToken
+    CTAToken,
+    Video,
+    Popup
   },
   mixins: [
     page({
@@ -34,6 +44,11 @@ export default {
       description: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.',
       schema: SchemaMESG
     })
-  ]
+  ],
+  data () {
+    return {
+      video: false
+    }
+  }
 }
 </script>
