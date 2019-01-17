@@ -99,6 +99,12 @@ p {
  .container-child {
    min-height:calc(30vh - 10em);
  }
+ .fullHeight {
+    min-height: 80vh;
+  }
+  .fullHeight .schema {
+    min-height: 600px;
+  }
 }
 @media only screen and (max-width: 768px) {
  section {
@@ -143,7 +149,4 @@ p {
    }
  }
 
-.fullHeight {
-  min-height: 80vh;
-}
 </style>
