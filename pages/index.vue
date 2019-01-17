@@ -4,7 +4,7 @@
       :schema="schema"
       :title="title"
       :description="description"
-      actionTitle="MESG Founders video"
+      actionTitle="What is MESG?"
       actionIcon="play"
       @actionClicked="video = !video"
     />
