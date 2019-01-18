@@ -5,7 +5,7 @@
       --dark-purple: #251440;
       --purple: #491e8c;
       --lighter-purple: #9452ff;
-      --lighter-purple-hover: #5D28B2;
+      --lighter-purple-hover: #854AE5;
       --Orange-cta: #ffa744;
       --Orange-cta-hover: #E5963D;
       --dark-grey: #57577e;
@@ -155,8 +155,8 @@ li::before {
 <style>
 /* Design */
 .dark {
-  background-image: linear-gradient(135deg, #251440 35%, #491e8c 100%);
-  background-image: linear-gradient(135deg, var(--dark-purple) 35%, var(--purple) 100%);
+  background-image: linear-gradient(135deg, #251440 0%, #491e8c 100%);
+  background-image: linear-gradient(135deg, var(--dark-purple) 0%, var(--purple) 100%);
 }
 
 .dark h2,

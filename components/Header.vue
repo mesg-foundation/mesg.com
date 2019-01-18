@@ -10,8 +10,11 @@
       <div class="container-child" :class="{ fullHeight }" flex row space-between column-reverse-responsive>
         <header half flex column justify-center>
           <h1 v-html="title"></h1>
-          <p v-html="description"></p>
-          <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
+          <slot v-if="$slots.default" />
+          <div v-else>
+            <p v-html="description"></p>
+            <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
+          </div>
           <nav v-if="actionTitle" flex mt2 class="actions">
             <Button v-if="actionLink" :href="actionLink" target="_blank" primary :icon="actionIcon">{{ actionTitle }}</Button>
             <Button v-else @click="$emit('actionClicked')" primary :icon="actionIcon">{{ actionTitle }}</Button>
