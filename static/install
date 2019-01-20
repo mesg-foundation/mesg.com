@@ -34,6 +34,8 @@ sudo curl --progress -L $link -o $mesgbin
 sudo chmod +x $mesgbin
 echo "Done"
 
+mkdir -p ~/.mesg/systemservices
+
 if [[ $(get_swarm_state) != "active" ]]; then
   docker swarm init
 fi
@@ -55,6 +57,5 @@ if [[ ! -S /var/run/docker.sock ]]; then
 	exit 1
 fi
 
-mkdir -p ~/.mesg/systemservices
 mesg-core stop
 mesg-core start
