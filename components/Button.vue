@@ -33,7 +33,6 @@ export default {
     submit: Boolean,
     small: Boolean,
     primary: Boolean,
-    purple: Boolean,
     outline: Boolean,
     icon: String
   },
@@ -41,7 +40,8 @@ export default {
     classes () {
       return {
         'btn--small': this.small,
-        'btn--primary': this.primary
+        'btn--primary': this.primary,
+        'btn--outline': this.outline
       }
     }
   }
@@ -60,7 +60,7 @@ a, button {
   position: relative;
 }
 
-i { 
+i {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
@@ -86,6 +86,18 @@ i {
 .btn--primary:hover {
   background-color: #E5963D;
   background-color: var(--Orange-cta-hover);
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+}
+.btn--outline {
+  color: #ffa744;
+  color: var(--Orange-cta);
+  border: solid 2px #ffa744;
+}
+.btn--outline:hover {
+  color: #ffffff;
+  color: var(--white-content);
+  background-color: #ffa744;
+  background-color: var(--Orange-cta);
   transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 

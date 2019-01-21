@@ -4,8 +4,10 @@
       :schema="schema"
       :title="title"
       :description="description">
-      <p mb2>{{ description }}</p>
-      <a @click="video = !video"><i class="fas fa-play-circle" mr05></i><i class="far fa-play-circle" mr05></i>Watch the MESG introduction</a>
+      <p>{{ description }}</p>
+      <nav flex mt2 class="actions">
+        <Button @click="video = !video" class="btn" outline><i class="far fa-play-circle" mr05></i>Watch the MESG introduction</Button>
+      </nav>
     </Header>
     <Popup v-model="video">
       <Video src="https://www.youtube.com/embed/VjPG51iE_fk?autoplay=1" />
@@ -23,6 +25,7 @@
 <script>
 import SchemaMESG from '~/components/schema/MESG'
 import Header from '~/components/Header'
+import Button from '~/components/Button'
 import Video from '~/components/Video'
 import Popup from '~/components/Popup'
 import HackathonBanner from '~/components/HackathonBanner'
@@ -33,6 +36,7 @@ import page from './page'
 export default {
   components: {
     Header,
+    Button,
     HackathonBanner,
     MarketEngine,
     Entrypoints2,
@@ -57,46 +61,20 @@ export default {
 
 <style scoped>
 
-a {
-  display:inline-block;
-  font: 'Quicksand';
-  font-size: 1.2em;
+.btn:hover .far {
   font-weight: bold;
-  font-style: normal;
-  color: #9452ff;
-  color: var(--lighter-purple);
-  text-decoration: none;
-}
-a:hover {
-  color: #5D28B2;
-  color: var(--lighter-purple-hover);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
-  cursor: pointer;
-}
-a:hover .fas {
-  display:inline-block;
-}
-
-a:hover .far {
-  display:none;
-}
-
-.fas {
-  position:relative;
-  display:none;
 }
 
 i {
+  font-weight: normal;
   vertical-align: middle;
   font-size: 2em;
+  margin-left:0;
 }
 
-@media only screen and (max-width: 414px) {
-  a {
-    font-size: 1em;
-  }
-  i {
-    font-size: 1.8em;
+@media only screen and (max-width: 768px) {
+ .actions a {
+    margin: auto;
   }
 }
 
