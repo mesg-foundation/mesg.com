@@ -92,6 +92,7 @@ i {
   color: #ffa744;
   color: var(--Orange-cta);
   border: solid 2px #ffa744;
+  padding: 0.75em 1.25em;
 }
 .btn--outline:hover {
   color: #ffffff;
