@@ -138,6 +138,12 @@ li::before {
   background: var(--lighter-purple);
 }
 
+.caption {
+  opacity:0.65;
+  padding-bottom:1.2em;
+  text-align:center;
+}
+
 @media only screen and (max-width: 768px) {
   h1 { font-size: 2.2em;}
   h2 { font-size: 1.8em;}
