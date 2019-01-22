@@ -20,7 +20,7 @@
       <div class="container-child separator"  flex row space-between column-reverse-responsive>
           <div flex row>
             <p class="copyright">
-              Copyright MESG Foundation 2018
+              Copyright © 2019 MESG Foundation, All rights reserved.
             </p>
           </div>
           <div class="social" flex row >
@@ -30,7 +30,7 @@
             <a mr1 href="https://discordapp.com/invite/SaZ5HcE" target="_blank"><i class="fab fa-discord"></i></a>
             <a mr1 href="https://twitter.com/mesgfoundation" target="_blank"><i class="fab fa-twitter"></i></a>
             <a mr1 href="https://www.linkedin.com/company/mesg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a mr1 href="https://t.me/mesg_community/" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a mr1 href="https://t.me/mesg_community/" target="_blank"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://www.facebook.com/mesgfoundation/" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>

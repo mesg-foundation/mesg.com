@@ -64,7 +64,6 @@ i {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  margin-left: 1em;
 }
 
 .btn--small {
