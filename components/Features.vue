@@ -11,7 +11,7 @@
         <div v-for="feature in features" :key="feature.id" :id="feature.id">
           <h2>{{feature.title}}</h2>
           <div class="separator-orange"></div>
-          <img :src="feature.picture" :alt="feature.title">
+          <img :src="feature.picture" :alt="feature.title" mt2>
           <div v-html="feature.text" mt2></div>
           <div class="separator"></div>
         </div>
@@ -130,6 +130,7 @@ a:hover {
   background-color:#ffa744;
   background-color: var(--Orange-cta);
 }
+
 @media only screen and (max-width: 768px) {
   a {
     font-size: 1em;
