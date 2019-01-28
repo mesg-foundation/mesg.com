@@ -12,7 +12,7 @@
             <p class="date"><i class="far fa-calendar-check" mr05></i>January 18th to February 17th</p>
           </div>
           <div class="third" flex column justify-center align-center>
-            <Button href="https://forum.mesg.com/t/mesg-online-hackathon-18th-january-to-17th-february-2019/170" target="_blank" primary>Register Now!</Button>
+            <Button href="https://mesg-hackathon.devpost.com/" target="_blank" primary>Register Now!</Button>
           </div>
         </div>
       </div>
