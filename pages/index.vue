@@ -15,7 +15,7 @@
     <div class="white">
       <HackathonBanner id="mesg hackathon"/>
       <MarketEngine id="market engine"/>
-      <Entrypoints2 id="entry points 2"/>
+      <FeaturesHome id="features"/>
     </div>
     <CTAToken id="token" class="dark"/>
   </div>
@@ -30,7 +30,7 @@ import Video from '~/components/Video'
 import Popup from '~/components/Popup'
 import HackathonBanner from '~/components/HackathonBanner'
 import MarketEngine from '~/components/MarketEngine'
-import Entrypoints2 from '~/components/Entrypoints2'
+import FeaturesHome from '~/components/FeaturesHome'
 import CTAToken from '~/components/cta/Token'
 import page from './page'
 export default {
@@ -39,7 +39,7 @@ export default {
     Button,
     HackathonBanner,
     MarketEngine,
-    Entrypoints2,
+    FeaturesHome,
     CTAToken,
     Video,
     Popup

@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 a, button {
-  border-radius: 3em;
+  border-radius: 0.3em;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
@@ -67,7 +67,7 @@ i {
 }
 
 .btn--small {
-  border-radius: 3em;
+  border-radius: 0.3em;
   padding: 0.1em 1.8em;
 }
 .btn--small:hover {
