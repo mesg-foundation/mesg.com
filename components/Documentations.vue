@@ -62,14 +62,14 @@ img {
   width: 50%;
   max-width: 145px;
   margin-bottom:1.5em;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.07);
 }
 
 .picture {
   width: 100%;
   height: 60%;
-  border-top-left-radius:10px;
-  border-top-right-radius:10px;
+  border-top-left-radius:0.3em;
+  border-top-right-radius:0.3em;
   padding:0;
   background-color: #491e8c;
   background-color: var(--purple);
@@ -87,15 +87,15 @@ img {
   text-decoration: none;
   width: 300px;
   height: 300px;
-  border-radius:10px;
+  border-radius:0.3em;
   background-color: #ffffff;
   background-color: var(--white-content);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
   margin:1.2em;
 }
 .card:hover {
   transition: calc(var(--animation-speed) * 0.1s) ease;
-  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.07);
   cursor: pointer;
 }
 
@@ -117,11 +117,6 @@ img {
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 414px) {
-  .container-child-title {
-    padding-top:0;
   }
 }
 @media only screen and (max-width: 414px) {
