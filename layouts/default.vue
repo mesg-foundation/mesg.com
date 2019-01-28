@@ -102,7 +102,7 @@ h3 {
   margin-bottom: 0.8em;
 }
 h4 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   color: #491e8c;
   color: var(--purple);

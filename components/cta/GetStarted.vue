@@ -7,7 +7,7 @@
           Get started today
         </h2>
         <p mb05>
-          MESG’s revolutionary development tool already allows you to build and connect Modules today. 
+          MESG’s revolutionary development tool already allows you to build and connect Modules today.
         </p>
         <p mb05>
           <strong>To get started, open your terminal and run:</strong>
@@ -16,7 +16,7 @@
             bash &lt;(curl -fsSL https://mesg.com/install)
           </code>
         <nav flex justify-center align-center>
-          <Button href="https://docs.mesg.com/" target="_blank" primary><i class="fas fa-code"></i>Get Started</Button>
+          <Button href="https://docs.mesg.com/" target="_blank" primary>Get Started</Button>
         </nav>
       </div>
     </div>
@@ -45,10 +45,6 @@ export default {
 
 .content {
   max-width: 600px;
-}
-
-i {
-  margin-right: 0.6em;
 }
 
 code {

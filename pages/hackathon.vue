@@ -6,7 +6,7 @@
       :schema="schema"
       smallDescription="smalldescription"
       full-height
-      actionTitle="Register Now!"
+      actionTitle="Register Now"
       actionLink="https://mesg-hackathon.devpost.com/">
       <p mb05>Build a kickass application with MESG and win up to <span>$10,000 in MESG tokens</span><i class="fas fa-terminal" ml05></i></p>
       <p class="date"><i class="far fa-calendar-check" mr05></i>January 18th to February 17th</p>

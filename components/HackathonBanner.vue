@@ -12,7 +12,7 @@
             <p class="date"><i class="far fa-calendar-check" mr05></i>January 18th to February 17th</p>
           </div>
           <div class="third" flex column justify-center align-center>
-            <Button href="https://mesg-hackathon.devpost.com/" target="_blank" primary>Register Now!</Button>
+            <Button href="https://mesg-hackathon.devpost.com/" target="_blank" outline>Register Now</Button>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default {
   padding-bottom:0;
 }
 .container-child {
-  padding-bottom:0.6em;
+  padding-bottom:0;
 }
 
 .date {
@@ -67,7 +67,7 @@ span {
 
 .card {
   width: 100%;
-  border-radius:10px;
+  border-radius:0.3em;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
 

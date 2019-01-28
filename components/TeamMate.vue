@@ -52,11 +52,11 @@ export default {
   border-radius: 10px;
   background-color: #ffffff;
   background-color: var(--white-content);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 .Rectangle-white:hover {
   transition: calc(var(--animation-speed) * 0.1s) ease;
-  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.07);
 }
 
 .Rectangle-white:hover .picture-hover {

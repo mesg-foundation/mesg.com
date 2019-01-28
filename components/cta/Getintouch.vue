@@ -10,7 +10,7 @@
           Find out how you can start automating, streamlining and expanding your business today with MESG.
         </p>
         <nav flex>
-          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary><i class="fas fa-chart-line"></i>Get in touch</Button>
+          <Button href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" primary>Get in touch</Button>
         </nav>
       </div>
     </div>
@@ -39,10 +39,6 @@ export default {
 
 .content {
   max-width: 600px;
-}
-
-i {
-  margin-right: 0.6em;
 }
 
 code {

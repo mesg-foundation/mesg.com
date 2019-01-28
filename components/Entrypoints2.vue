@@ -93,13 +93,8 @@ svg{
   .card {
     width: 100%;
     margin: 1.2em;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .card {
     padding:1.8em;
   }
 }
-
 
 </style>
