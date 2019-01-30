@@ -17,7 +17,7 @@
       <div class="content" flex column justify-center mb2>
         <h2>Connections are everything</h2>
         <p>
-          MESG is built for ultimate flexibility, allowing for the connection of nearly every system and technology in a normalized way.  MESG Modules connect directly to the source of data through APIs, decentralized networks or standalone microservices. The MESG Engine then provides connectivity between those Modules and other devices and applications.
+          MESG is for building modular applications with ultimate flexibility, allowing for the connection of nearly every system and technology in a normalized way.  MESG Modules connect directly to the source of data through APIs, decentralized networks or standalone microservices. The MESG Engine then provides connectivity between those Modules and other devices and applications.
         </p>
       </div>
       <div class="content" flex column justify-center>
