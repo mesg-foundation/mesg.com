@@ -25,7 +25,7 @@
           </div>
           <h2>MESG Marketplace</h2>
           <p>
-            Save time and money by using existing Modules in the MESG Marketplace. Or build Modules and offer them to the community to earn MESG Tokens.
+            Save time by building applications using existing Modules in the MESG Marketplace. Or earn MESG Tokens by building Modules and offering them to the community.
           </p>
           <nav flex mt2>
             <Button to="/marketplace" outline>Learn more</Button>
