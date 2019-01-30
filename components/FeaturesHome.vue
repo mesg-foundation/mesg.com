@@ -3,7 +3,7 @@
     <div class="container-parent">
       <div class="container-child" flex row justify-center>
         <div class="content" flex column justify-center align-center>
-          <h2>Why use MESG?</h2>
+          <h2>What can MESG do for you?</h2>
           <div class="separator-orange" mb2></div>
         </div>
         <nav flex row justify-center align-center>
