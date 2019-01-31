@@ -7,7 +7,7 @@
           Get started today
         </h2>
         <p mb05>
-          MESG’s revolutionary development tool already allows you to build and connect Modules today.
+          MESG’s revolutionary development tool is available now, allowing you to build and connect apps and Modules.
         </p>
         <p mb05>
           <strong>To get started, open your terminal and run:</strong>
