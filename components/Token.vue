@@ -4,7 +4,7 @@
       <div class="coming" flex row justify-center align-center>
         <IconToken2 class="token" mr1 />
         <p>
-          MESG Token Available Soon
+          MESG Token Available Feb 14th on DigiFinex
         </p>
       </div>
       <div flex row justify-center align-center>
