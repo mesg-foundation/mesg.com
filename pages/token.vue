@@ -31,7 +31,7 @@ export default {
   mixins: [
     page({
       title: 'The MESG Token',
-      description: 'MESG Foundation offers tokens through exchanges using an innovative Algorithmic Token Offering system',
+      description: 'Starting Feburary 14th, the MESG Foundation will be offering tokens through DigiFinex using an innovative Algorithmic Token Offering system',
       schema: IconToken
     })
   ]
