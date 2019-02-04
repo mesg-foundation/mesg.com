@@ -44,7 +44,7 @@ const features = [
   {
     id: "autonomous-workflows",
     title: "Autonomous workflows",
-    text: "<p class='caption'><em>MESG features flow-based programming to create reactive applications with endless possibility.</em></p><p>Events on blockchains or other difficult-to-reach technologies can be easily combined into powerful workflows using the MESG Engine. </p><p>Creating event workflows with blockchains can make atomic swaps, sidechain or lightning network deployment fast and easy. These features can make businesses more efficient and profitable, or add entirely new business cases that were not previously possible.</p><p>React to Ethereum transactions being processed. Emit user data to MailChimp to enhance customer onboarding. Automate bookkeeping processes using QuickBooks. The possibilities are endless.</p>",
+    text: "<p class='caption'><em>MESG features flow-based programming to create reactive applications with endless possibility.</em></p><p>Events on blockchains or other difficult-to-reach technologies can be easily combined into powerful workflows using the MESG Engine. </p><p>Creating event workflows with blockchains can make atomic swaps, sidechain or lightning network deployment fast and easy. These features can make businesses more efficient and profitable, or add entirely new business cases that were not previously possible.</p><p>React to Ethereum transactions being processed. Emit user data to SendGrid to enhance customer onboarding. Automate bookkeeping processes using QuickBooks. The possibilities are endless.</p>",
     picture: require('~/assets/features/autonomous-workflows.svg')
   },
   {
