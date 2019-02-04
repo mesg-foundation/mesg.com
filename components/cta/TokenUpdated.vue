@@ -10,9 +10,7 @@
         <p mb2>
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>
-        <nav flex>
-          <Button href="http://eepurl.com/drKt-5" target="_blank" primary>Keep me updated</Button>
-        </nav>
+        <Subscribe></Subscribe>
       </div>
     </div>
   </div>
@@ -20,11 +18,11 @@
 </template>
 
 <script>
-import Button from '~/components/Button'
 import IconToken2 from '~/components/icon/Token2'
+import Subscribe from '~/components/Subscribe'
 export default {
   components: {
-    Button,
+    Subscribe,
     IconToken2
   }
 }
