@@ -15,9 +15,11 @@
             <p v-html="description"></p>
             <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
           </div>
-          <nav v-if="actionTitle" flex mt2 class="actions">
-            <Button v-if="actionLink" :href="actionLink" target="_blank" primary :icon="actionIcon">{{ actionTitle }}</Button>
-            <Button v-else @click="$emit('actionClicked')" primary :icon="actionIcon">{{ actionTitle }}</Button>
+          <nav v-if="actionTitle || $slots.action" flex mt2 class="actions">
+            <slot name="action">
+              <Button v-if="actionLink" :href="actionLink" target="_blank" primary :icon="actionIcon">{{ actionTitle }}</Button>
+              <Button v-else @click="$emit('actionClicked')" primary :icon="actionIcon">{{ actionTitle }}</Button>
+            </slot>
           </nav>
         </header>
         <div half flex column justify-center align-center>
