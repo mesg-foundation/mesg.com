@@ -126,6 +126,9 @@ p {
  p {
    font-size: 1.4em;
  }
+ nav {
+    justify-content: center;
+  }
  .schema {
    min-height:280px;
    margin-bottom:2.4em;
