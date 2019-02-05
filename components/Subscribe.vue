@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submit">
+  <form @submit.prevent="submit" flex>
     <output>{{error}}</output>
     <output>{{response}}</output>
     <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" class="field" required>
@@ -62,18 +62,14 @@ export default {
 
 <style scoped>
 
-form {
-  width: 100%;
-}
-
 .btn {
+  border:none;
+  padding:1em 2em;
   border-top-left-radius: 0;
   border-bottom-left-radius:0;
 }
 
 .field {
-  width: 50%;
-  max-width: 300px;
   font-size: 1em;
   font-weight: bold;
   text-align: left;
@@ -85,5 +81,10 @@ form {
   border-bottom-left-radius:0.3em;
 }
 
+@media only screen and (max-width: 414px) {
+  .field {
+    font-size: 0.8em;
+  }
+}
 
 </style>

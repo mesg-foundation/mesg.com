@@ -10,7 +10,7 @@
         <p mb2>
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>
-        <Subscribe></Subscribe>
+        <Subscribe flex justify-center></Subscribe>
       </div>
     </div>
   </div>
