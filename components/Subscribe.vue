@@ -3,7 +3,7 @@
     <output>{{error}}</output>
     <output>{{response}}</output>
     <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" class="field" required>
-    <Button type="submit" :value="title" class="btn" primary/>
+    <Button type="submit" class="btn" primary>{{ title }}</Button>
   </form>
 </template>
 
