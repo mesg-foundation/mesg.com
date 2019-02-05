@@ -4,7 +4,7 @@
       :title="title"
       :description="description"
       :schema="schema">
-      <Subscribe slot="action" title="Subscribe now!" />
+      <Subscribe slot="action" title="Subscribe now" />
     </Header>
     <div class="white">
       <TokenDesc id="token"/>
@@ -33,7 +33,7 @@ export default {
   mixins: [
     page({
       title: 'The MESG Token',
-      description: 'Starting Feburary 14th, the MESG Foundation will be offering tokens through DigiFinex using an innovative Algorithmic Token Offering system',
+      description: 'Starting Feburary 14th, the MESG Foundation will be offering tokens through DigiFinex using an innovative Algorithmic Token Offering system.',
       schema: IconToken
     })
   ]

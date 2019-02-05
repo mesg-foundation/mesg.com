@@ -2,15 +2,19 @@
   <form @submit.prevent="submit">
     <output>{{error}}</output>
     <output>{{response}}</output>
-    <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" required>
-    <input type="submit" :value="title">
+    <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" class="field" required>
+    <Button type="submit" :value="title" class="btn" primary/>
   </form>
 </template>
 
 <script>
+import Button from '~/components/Button'
 const url = 'https://app.sgwidget.com/v2/api/newsletter-signup'
 export default {
-  props: {
+  components: {
+    Button
+  },
+    props: {
     title: {
       type: String,
       default: 'Subscribe'
@@ -55,3 +59,31 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+form {
+  width: 100%;
+}
+
+.btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius:0;
+}
+
+.field {
+  width: 50%;
+  max-width: 300px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  padding: 1em;
+  background-color: #fafafe;
+  background-color: var(--pale-white);
+  border:none;
+  border-top-left-radius:0.3em;
+  border-bottom-left-radius:0.3em;
+}
+
+
+</style>
