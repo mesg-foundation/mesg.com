@@ -4,8 +4,8 @@
       <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" class="field" required>
       <Button submit class="btn" primary>{{ title }}</Button>
     </div>
-    <output class="error message" flex justify-center align-center mt1><i class="fas fa-exclamation-circle" mr05></i>{{error}}</output>
-    <output class="response message" flex justify-center align-center mt1><i class="fas fa-check" mr05></i>{{response}}</output>
+    <output v-if="error" class="error message" flex justify-center align-center mt1><i class="fas fa-exclamation-circle" mr05></i>{{error}}</output>
+    <output v-if="response" class="response message" flex justify-center align-center mt1><i class="fas fa-check" mr05></i>{{response}}</output>
   </form>
 </template>
 
