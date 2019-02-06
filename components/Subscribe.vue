@@ -1,9 +1,11 @@
 <template>
-  <form @submit.prevent="submit" flex>
-    <output>{{error}}</output>
-    <output>{{response}}</output>
-    <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" class="field" required>
-    <Button submit class="btn" primary>{{ title }}</Button>
+  <form @submit.prevent="submit" flex column>
+    <div flex>
+      <input type="email" v-model="email" name="sg_email" placeholder="you@example.com" class="field" required>
+      <Button submit class="btn" primary>{{ title }}</Button>
+    </div>
+    <output class="error message" flex justify-center align-center mt1><i class="fas fa-exclamation-circle" mr05></i>{{error}}</output>
+    <output class="response message" flex justify-center align-center mt1><i class="fas fa-check" mr05></i>{{response}}</output>
   </form>
 </template>
 
@@ -79,6 +81,28 @@ export default {
   border:none;
   border-top-left-radius:0.3em;
   border-bottom-left-radius:0.3em;
+}
+
+.message {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #ffffff;
+  color: var(--white-content);
+}
+.error {
+  border-radius: 0.3em;
+  padding:1em;
+  background-color: #D82439;
+}
+.response {
+  border-radius: 0.3em;
+  padding:1em;
+  background-color: #1BA539;
 }
 
 @media only screen and (max-width: 414px) {
