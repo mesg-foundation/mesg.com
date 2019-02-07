@@ -8,8 +8,8 @@
       <nav flex mt2>
         <Button href="" class="btn" primary mb2>Buy the MESG Token</Button>
       </nav>
-      <div v-for="exchange in exchanges" :key="exchange.exchanges" class="listing" flex row align-center>
-        <p mr1>Listing on:</p>
+      <div v-for="exchange in exchanges" :key="exchange.exchanges" class="listing" flex column>
+        <p mb1>Listing on:</p>
         <a href="https://www.digifinex.com" target="_blank" flex>
           <img :src="exchange.svg" :alt="exchange.title" class="logo"/>
         </a>
@@ -84,7 +84,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .listing {
+  .listing a {
     justify-content: center;
   }
 }
