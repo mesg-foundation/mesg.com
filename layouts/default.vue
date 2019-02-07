@@ -23,12 +23,10 @@
 </template>
 
 <script>
-import Token from '~/components/Token'
 import Menu from '~/components/Menu'
 import Footer from '~/components/Footer'
 export default {
   components: {
-    Token,
     Menu,
     Footer
   }
@@ -315,7 +313,7 @@ svg {
 </style>
 
 <style scoped>
-.token-bar {
+/*.token-bar {
   position: fixed;
   top: 0;
   right: 0;
@@ -329,5 +327,5 @@ svg {
   .menu-bar {
     margin-top: 70px;
   }
-}
+}*/
 </style>

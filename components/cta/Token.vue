@@ -11,7 +11,7 @@
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>
         <nav flex>
-          <Button to="token" primary>Learn more</Button>
+          <Button to="token" primary>Discover the MESG Token</Button>
         </nav>
       </div>
     </div>

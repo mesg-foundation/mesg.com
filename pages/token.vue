@@ -6,14 +6,20 @@
       :schema="schema">
       <p>{{ description }}</p>
       <nav flex mt2>
-        <Button href="" class="btn" primary mr1>Buy the MESG Token</Button>
-        <Button href="" class="btn" outline>Learn how to buy the token</Button>
+        <Button href="" class="btn" primary mb2>Buy the MESG Token</Button>
       </nav>
+      <div v-for="exchange in exchanges" :key="exchange.exchanges" class="listing" flex row align-center>
+        <p mr1>Listing on:</p>
+        <a href="https://www.digifinex.com" target="_blank" flex>
+          <img :src="exchange.svg" :alt="exchange.title" class="logo"/>
+        </a>
+      </div>
     </header>
     <div class="white">
       <Tokenintro id="token introduction"/>
       <TokenDesc id="token"/>
       <Documentations id="documentations"/>
+      <Howtobuy id="how to buy on DigiFinex" />
     </div>
     <CTATokenUpdated id="token updated" class="dark"/>
   </div>
@@ -25,9 +31,9 @@ import Button from '~/components/Button'
 import Tokenintro from '~/components/Tokenintro'
 import TokenDesc from '~/components/TokenDesc'
 import Documentations from '~/components/Documentations'
+import Howtobuy from '~/components/Howtobuy'
 import CTATokenUpdated from '~/components/cta/TokenUpdated'
 import IconToken from '~/components/icon/Token'
-import Subscribe from '~/components/Subscribe'
 import page from './page'
 export default {
   components: {
@@ -36,15 +42,51 @@ export default {
     Tokenintro,
     TokenDesc,
     Documentations,
-    CTATokenUpdated,
-    Subscribe
+    Howtobuy,
+    CTATokenUpdated
+  },
+  computed: {
+    exchanges () {
+      return exchanges
+    }
   },
   mixins: [
     page({
       title: 'The MESG Token',
-      description: 'The MESG Foundation is now offering tokens through DigiFinex using an innovative Algorithmic Token Offering system',
+      description: 'The MESG Foundation is now offering tokens through DigiFinex using an innovative Algorithmic Token Offering system.',
       schema: IconToken
     })
   ]
 }
+const exchanges = [
+  {
+    title: "Digifinex",
+    svg: require('~/assets/digifinex.svg'),
+  }
+]
 </script>
+
+<style scoped>
+
+.listing p {
+  font-size: 0.8em;
+}
+
+a .logo {
+  height: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: calc(var(--animation-speed) * 0.1s) ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .listing {
+    justify-content: center;
+  }
+}
+
+</style>

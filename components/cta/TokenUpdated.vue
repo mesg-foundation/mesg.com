@@ -3,15 +3,15 @@
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
       <div class="content" v-for="exchange in exchanges" :key="exchange.exchanges" flex column justify-center align-center>
-        <img :src="exchange.svg" :alt="exchange.title" class="logo" mb1/>
-        <h1>
-          Token available on Digifinex
-        </h1>
+        <h3>
+          Token available on
+        </h3>
+        <img :src="exchange.svg" :alt="exchange.title" class="logo" mb2/>
         <p mb2>
-          The MESG Token will be available soon. Introducing the token for the new economy of development.
+          The MESG Token is now available on DigiFinex. Introducing the token for the new economy of development.
         </p>
         <nav flex>
-          <Button href="" class="btn" primary mr1>Buy the MESG Token</Button>
+          <Button href="" class="btn" primary>Buy the MESG Token</Button>
         </nav>
       </div>
     </div>
@@ -20,12 +20,10 @@
 </template>
 
 <script>
-import IconToken2 from '~/components/icon/Token2'
-import Subscribe from '~/components/Subscribe'
+import Button from '~/components/Button'
 export default {
   components: {
-    Subscribe,
-    IconToken2
+    Button,
   },
   computed: {
     exchanges () {
@@ -60,7 +58,7 @@ svg {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 400px;
 }
 
 </style>
