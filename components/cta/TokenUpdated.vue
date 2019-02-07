@@ -2,15 +2,17 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
-      <div class="content" flex column justify-center align-center>
-        <IconToken2 class="token" mb1/>
+      <div class="content" v-for="exchange in exchanges" :key="exchange.exchanges" flex column justify-center align-center>
+        <img :src="exchange.svg" :alt="exchange.title" class="logo" mb1/>
         <h1>
-          Build Modules, Earn Tokens
+          Token available on Digifinex
         </h1>
         <p mb2>
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>
-        <Subscribe flex justify-center></Subscribe>
+        <nav flex>
+          <Button href="" class="btn" primary mr1>Buy the MESG Token</Button>
+        </nav>
       </div>
     </div>
   </div>
@@ -24,8 +26,19 @@ export default {
   components: {
     Subscribe,
     IconToken2
+  },
+  computed: {
+    exchanges () {
+      return exchanges
+    }
   }
 }
+  const exchanges = [
+    {
+      title: "Digifinex",
+      svg: require('~/assets/digifinex.svg'),
+    }
+]
 </script>
 
 <style scoped>
@@ -46,8 +59,8 @@ svg {
   max-width: 600px;
 }
 
-.token {
-  max-width: 100px;
+.logo {
+  max-width: 200px;
 }
 
 </style>

@@ -4,9 +4,14 @@
       :title="title"
       :description="description"
       :schema="schema">
-      <Subscribe slot="action" title="Subscribe now" />
-    </Header>
+      <p>{{ description }}</p>
+      <nav flex mt2>
+        <Button href="" class="btn" primary mr1>Buy the MESG Token</Button>
+        <Button href="" class="btn" outline>Learn how to buy the token</Button>
+      </nav>
+    </header>
     <div class="white">
+      <Tokenintro id="token introduction"/>
       <TokenDesc id="token"/>
       <Documentations id="documentations"/>
     </div>
@@ -16,6 +21,8 @@
 
 <script>
 import Header from '~/components/Header'
+import Button from '~/components/Button'
+import Tokenintro from '~/components/Tokenintro'
 import TokenDesc from '~/components/TokenDesc'
 import Documentations from '~/components/Documentations'
 import CTATokenUpdated from '~/components/cta/TokenUpdated'
@@ -25,6 +32,8 @@ import page from './page'
 export default {
   components: {
     Header,
+    Button,
+    Tokenintro,
     TokenDesc,
     Documentations,
     CTATokenUpdated,
@@ -33,7 +42,7 @@ export default {
   mixins: [
     page({
       title: 'The MESG Token',
-      description: 'Starting Feburary 14th, the MESG Foundation will be offering tokens through DigiFinex using an innovative Algorithmic Token Offering system.',
+      description: 'The MESG Foundation is now offering tokens through DigiFinex using an innovative Algorithmic Token Offering system',
       schema: IconToken
     })
   ]
