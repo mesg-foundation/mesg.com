@@ -4,9 +4,9 @@
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
         <IconToken2 class="token" mb1/>
-        <h1>
+        <h2>
           Build Modules, Earn Tokens
-        </h1>
+        </h2>
         <p mb2>
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>

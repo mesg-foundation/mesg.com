@@ -325,9 +325,14 @@ svg {
 .menu-bar {
   margin-top: 57px;
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 590px) {
   .menu-bar {
-    margin-top: 70px;
+    margin-top: 47px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu-bar {
+    margin-top: 58px;
   }
 }
 </style>
