@@ -7,7 +7,9 @@
       </div>
       <div class="container-child" flex row justify-center spacebetween>
         <nav flex row justify-center align-center>
-          <a href="https://drive.google.com/open?id=1jPWQnI-kR-iXjqmYr9Y-2mqtS3TNSQv2" target="blank" class="card" flex column justify-center align-center>
+          <a 
+            href="/documents/decentralized-network-of-services.pdf" download="Decentralized Network of Services"
+            target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
               <img src="~/assets/documents/Decentralized-Network-of-Services.jpg" alt="MESG - Whitepaper"/>
             </div>
@@ -15,7 +17,9 @@
               <h3>Whitepaper</h3>
             </div>
           </a>
-          <a href="https://drive.google.com/open?id=1gwtMbic0wJLfN5oQ814LEx1YVrkToPZn" target="blank" class="card" flex column justify-center align-center>
+          <a 
+            href="/documents/MESG-application-of-the-decentralized-network-of-services.pdf" download="MESG's Application of the Decentralized Network of Services" 
+            target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
               <img src="~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg" alt="MESG - Technical Implementation"/>
             </div>
@@ -23,7 +27,9 @@
               <h3>Technical Implementation</h3>
             </div>
           </a>
-          <a href="https://drive.google.com/open?id=15z6-RNnk0-VD2qpwfD3sFvue6NzPskXV" target="blank" class="card" flex column justify-center align-center>
+          <a 
+            href="/documents/MESG-2-pager.pdf" download="MESG 2 pager" 
+            target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
               <img src="~/assets/documents/MESG-2pager-1.jpg" alt="MESG - Two pager"/>
             </div>
@@ -31,7 +37,9 @@
               <h3>Two pager</h3>
             </div>
           </a>
-          <a href="https://drive.google.com/open?id=1fzSFWq0Gon67tXza0Irb9p7hZMT4gMRb" target="blank" class="card" flex column justify-center align-center>
+          <a 
+            href="/documents/MESG-business-plan-summary.pdf" download="MESG Business Plan Summary" 
+            target="blank" class="card" flex column justify-center align-center>
             <div class="picture" flex column justify-center align-center>
               <img src="~/assets/documents/MESG-Business-Plan-Summary.jpg" alt="MESG - Business Plan"/>
             </div>
