@@ -3,14 +3,11 @@
     <div class="container-parent">
       <div class="container-child">
         <div class="title" flex column justify-center align-center>
-          <h2>The use of the MESG Token</h2>
+          <h2>The token utility</h2>
           <div class="separator-orange" flex column justify-center align-center mb2></div>
         </div>
-        <div flex row justify-center align-center>
-          <div v-for="use in uses" :key="use.uses" class="content" flex third column justify-center>
-            <div flex column justify-center>
-              <img :src="use.icon" :alt="use.title" class="logo" mb1/>
-            </div>
+        <div flex row justify-center>
+          <div v-for="use in uses" :key="use.uses" class="content" flex third column>
             <h3>{{use.title}}</h3>
             <p>{{use.desc}}</p>
           </div>
@@ -23,22 +20,19 @@
 <script>
 const uses = [
   {
-    id: "rapid-integration",
-    title: "Integration",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a iaculis est. Curabitur porta ex faucibus viverra suscipit. Nunc id turpis non risus consectetur dignissim. Suspendisse pharetra dui a auctor ultricies.",
-    icon: require('~/assets/icons/features-integration.svg')
+    id: "Fuels",
+    title: "Fuels",
+    desc: "The MESG Token fuels an entire economy built into MESG. It will initially allow access to Modules deployed on the MESG Marketplace, allowing developers to be paid for the use of these Modules.",
   },
   {
-    id: "multi-language",
+    id: "Decentralisation",
     title: "Decentralisation",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a iaculis est. Curabitur porta ex faucibus viverra suscipit. Nunc id turpis non risus consectetur dignissim. Suspendisse pharetra dui a auctor ultricies.",
-    icon: require('~/assets/icons/multi-language.svg')
+    desc: "Once the decentralized network is launched (Q1 2020), the token will also be used to buy and sell the then-decentralized Modules and power and secure the MESG Network.",
   },
   {
-    id: "event-driven",
+    id: "Security",
     title: "Security",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a iaculis est. Curabitur porta ex faucibus viverra suscipit. Nunc id turpis non risus consectetur dignissim. Suspendisse pharetra dui a auctor ultricies.",
-    icon: require('~/assets/icons/event-driven.svg')
+    desc: "Network security will be ensured through the rewarding of participants for their contributions in processing power and providing verification of processes on the network.",
   }
 ]
 export default {
@@ -61,10 +55,6 @@ export default {
 
 .content {
   padding:1.2em;
-}
-
-.logo {
-  max-width: 50px;
 }
 
 @media only screen and (max-width: 768px) {

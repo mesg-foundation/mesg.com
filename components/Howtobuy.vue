@@ -3,8 +3,8 @@
     <div class="container-parent">
       <div class="container-child" flex row justify-center spacebetween>
         <div class="card" flex row justify-center align-center>
-          <div class="third" v-for="icon in icons" :key="icon.icons" flex column justify-center align-center>
-            <img :src="icon.svg" :alt="icon.title" class="icon"/>
+          <div class="third" flex column justify-center align-center>
+            <Howtobuy class="icon"/>
           </div>
           <div class="third resp" flex column justify-center>
             <h3 mb05>How to buy the MESG Token</h3>
@@ -22,25 +22,13 @@
 
 <script>
 import Button from '~/components/Button'
+import Howtobuy from '~/components/icon/Howtobuy'
 export default {
   components: {
-    Button
-  },
-  props: {
-    to: String
-  },
-  computed: {
-    icons () {
-      return icons
-    }
+    Button,
+    Howtobuy
   }
 }
-  const icons = [
-    {
-      title: "MESG Token",
-      svg: require('~/assets/icons/Algorithmic-token.svg'),
-    }
-]
 </script>
 
 <style scoped>
@@ -50,7 +38,7 @@ svg {
 }
 
 .icon {
-  max-width: 180px;
+  max-width: 300px;
 }
 
 .card {
