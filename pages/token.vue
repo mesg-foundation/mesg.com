@@ -9,7 +9,7 @@
         <Button href="" class="btn" primary mb2>Buy the MESG Token</Button>
       </nav>
       <div v-for="exchange in exchanges" :key="exchange.exchanges" class="listing" flex column>
-        <p mb1>Listing on:</p>
+        <p mb05>Listing on:</p>
         <a href="https://www.digifinex.com" target="_blank" flex>
           <img :src="exchange.svg" :alt="exchange.title" class="logo"/>
         </a>

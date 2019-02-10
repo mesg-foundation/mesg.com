@@ -3,7 +3,7 @@
   <div class="container-parent">
     <div class="container-child" flex row space-around>
       <div flex column justify-center align-center>
-        <h2>Algorithmic token offering</h2>
+        <h2>Algorithmic Token Offering</h2>
         <div class="separator-orange" flex column justify-center align-center mb2></div>
       </div>
       <div flex row justify-center>
