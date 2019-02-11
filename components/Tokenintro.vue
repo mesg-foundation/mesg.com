@@ -3,7 +3,7 @@
     <div class="container-parent">
       <div class="container-child">
         <div class="title" flex column justify-center align-center>
-          <h2>The token utility</h2>
+          <h2>The MESG Token’s utility</h2>
           <div class="separator-orange" flex column justify-center align-center mb2></div>
         </div>
         <div flex row justify-center>
@@ -20,19 +20,19 @@
 <script>
 const uses = [
   {
-    id: "Fuels",
-    title: "Fuels",
-    desc: "The MESG Token fuels an entire economy built into MESG. It will initially allow access to Modules deployed on the MESG Marketplace, allowing developers to be paid for the use of these Modules.",
+    id: "sell",
+    title: "Sell Modules",
+    desc: "The MESG Token fuels an entire development economy within MESG. It allows access to discrete app components, called Modules, listed on the MESG Marketplace. Developers are paid directly when others use their Modules.",
   },
   {
-    id: "Decentralisation",
-    title: "Decentralisation",
-    desc: "Once the decentralized network is launched (Q1 2020), the token will also be used to buy and sell the then-decentralized Modules and power and secure the MESG Network.",
+    id: "buy",
+    title: "Buy Modules",
+    desc: "Buying premade Modules saves developers significant time when building apps. MESG allows them to simply plug-and-play any Modules into any app, so features can be implemented without needing to write code, or learn new languages.",
   },
   {
     id: "Security",
-    title: "Security",
-    desc: "Network security will be ensured through the rewarding of participants for their contributions in processing power and providing verification of processes on the network.",
+    title: "Network Support",
+    desc: "Once MESG’s decentralized network is launched (Q1 2020), the token will also be used to buy and sell the then-decentralized Modules and power and secure the entire MESG Network.",
   }
 ]
 export default {

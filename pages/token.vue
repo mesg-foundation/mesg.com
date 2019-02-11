@@ -53,7 +53,7 @@ export default {
   mixins: [
     page({
       title: 'The MESG Token',
-      description: 'The MESG Foundation is now offering tokens through DigiFinex using an innovative Algorithmic Token Offering system.',
+      description: 'Buy and sell app components in the new economy of app development. Available now on DigiFinex.',
       schema: IconToken
     })
   ]

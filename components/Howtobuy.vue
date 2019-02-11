@@ -8,7 +8,7 @@
           </div>
           <div class="third resp" flex column justify-center>
             <h3 mb05>How to buy the MESG Token</h3>
-            <p mb05>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a iaculis est. Curabitur porta ex faucibus viverra suscipit.
+            <p mb05>New to utility tokens? We’ve written a step-by-step tutorial of how to buy MESG Tokens on DigiFinex.
             </p>
           </div>
           <div class="third" flex column justify-center align-center>
