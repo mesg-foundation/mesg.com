@@ -47,7 +47,7 @@ export default {
   mixins: [
     page({
       title: 'The new economy of app development',
-      description: 'Build applications connecting reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.',
+      description: 'Build applications connecting reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine.',
       schema: SchemaMESG
     })
   ],
