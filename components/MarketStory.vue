@@ -4,7 +4,7 @@
     <div class="container-child" flex column align-center>
       <div class="content" flex column justify-center mb2 mt2>
         <p class="subheading">
-          The MESG Marketplace is made up of by two kinds of participants: some create Modules and <strong>get paid</strong> for their work, and others <strong>save time</strong> in the integration of powerful features.
+          The MESG Marketplace is made up of by two kinds of participants: some create Modules and <strong>get rewarded</strong> for their work, and others <strong>save time</strong> in the integration of powerful features.
         </p>
       </div>
 
