@@ -7,7 +7,7 @@
           <div class="separator-orange" flex column justify-center align-center mb2></div>
         </div>
         <div flex row justify-center>
-          <div v-for="use in uses" :key="use.uses" class="content" flex third column>
+          <div v-for="use in uses" :key="use.title" class="content" flex third column>
             <h3>{{use.title}}</h3>
             <p>{{use.desc}}</p>
           </div>
@@ -20,19 +20,16 @@
 <script>
 const uses = [
   {
-    id: "sell",
-    title: "Sell Modules",
-    desc: "The MESG Token fuels an entire development economy within MESG. It allows access to discrete app components, called Modules, listed on the MESG Marketplace. Developers are paid directly when others use their Modules.",
+    title: "Buy and Sell Modules",
+    desc: "Developers use MESG Tokens to purchase Modules directly from other users. Then, any Modules can simply plug-and-play into any app. This allows developers to implement features without needing to write code or learn new languages first.",
   },
   {
-    id: "buy",
-    title: "Buy Modules",
-    desc: "Buying premade Modules saves developers significant time when building apps. MESG allows them to simply plug-and-play any Modules into any app, so features can be implemented without needing to write code, or learn new languages.",
+    title: "Decentralize executions",
+    desc: "The MESG Token allows you to be part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation. Serverless executions result in unstoppable, inexpensive and maintenance-free applications.",
   },
   {
-    id: "Security",
-    title: "Network Support",
-    desc: "Once MESG’s decentralized network is launched (Q1 2020), the token will also be used to buy and sell the then-decentralized Modules and power and secure the entire MESG Network.",
+    title: "Network Security",
+    desc: "Participants stake MESG Tokens on the network as collateral, ensuring good behavior and availability. Then, Module creators set aside MESG Tokens to be released upon the execution of a successful job. Held tokens are released once validators ensure the validity of a transaction.",
   }
 ]
 export default {
