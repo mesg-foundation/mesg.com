@@ -69,6 +69,10 @@ export default {
 
 <style scoped>
 
+h2 {
+  text-align: center;
+}
+
 p {
   text-decoration: none;
   text-align:center;
