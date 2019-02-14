@@ -12,7 +12,7 @@
             </p>
           </div>
           <div class="third" flex column justify-center align-center>
-            <Button href="" target="_blank" outline>Learn how to buy the token</Button>
+            <Button href="https://medium.com/mesg/how-to-buy-mesg-tokens-on-digifinex-be79adc0f067" target="_blank" outline>Learn how to buy the token</Button>
           </div>
         </div>
       </div>
