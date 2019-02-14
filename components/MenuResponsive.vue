@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-responsive" flex column justify-center>
+  <div class="menu-responsive" :class="{ sticky }" flex column justify-center @scroll="updateSticky">
     <div class="nav-burger" flex row space-between justify-center align-center>
       <a href ="/">
         <MESGLogoHorizontalWhite class="logo" />
@@ -41,8 +41,20 @@ export default {
   },
   data () {
     return {
-      open: false
+      open: false,
+      sticky: false
     }
+  },
+  methods: {
+    updateSticky (e) {
+      this.sticky = window.scrollY > 145
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.updateSticky);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.updateSticky);
   }
 }
 
@@ -201,8 +213,9 @@ a {
   .logo {
     width:114px;
   }
-  .menu-responsive {
+  .menu-responsive.sticky {
     position: fixed;
+    top: 0;
   }
 }
 
