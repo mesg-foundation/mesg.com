@@ -11,7 +11,7 @@
           The MESG Token is now available on DigiFinex. Introducing the token for the new economy of development.
         </p>
         <nav flex>
-          <Button href="" class="btn" primary>Buy the MESG Token</Button>
+          <Button href="https://www.digifinex.com" class="btn" primary>Buy the MESG Token</Button>
         </nav>
       </div>
     </div>

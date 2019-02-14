@@ -6,7 +6,7 @@
       :schema="schema">
       <p>{{ description }}</p>
       <nav flex mt2>
-        <Button href="" class="btn" primary mb2>Buy the MESG Token</Button>
+        <Button href="https://www.digifinex.com" class="btn" primary mb2>Buy the MESG Token</Button>
       </nav>
       <div v-for="exchange in exchanges" :key="exchange.exchanges" class="listing" flex column>
         <p mb05>Listing on:</p>

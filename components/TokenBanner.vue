@@ -11,7 +11,7 @@
             <p><span>An innovative Algorithmic Token Offering system.</span></p>
           </div>
           <div class="third" flex column justify-center align-center>
-            <Button href="" target="_blank" primary>Buy the MESG Token</Button>
+            <Button href="https://www.digifinex.com" target="_blank" primary>Buy the MESG Token</Button>
           </div>
         </div>
       </div>
