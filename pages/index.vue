@@ -13,7 +13,6 @@
       <Video src="https://www.youtube.com/embed/VjPG51iE_fk?autoplay=1" />
     </Popup>
     <div class="white">
-      <TokenBanner id="mesg token" class="dark"/>
       <MarketEngine id="market engine"/>
       <FeaturesHome id="features"/>
     </div>
@@ -28,7 +27,6 @@ import Header from '~/components/Header'
 import Button from '~/components/Button'
 import Video from '~/components/Video'
 import Popup from '~/components/Popup'
-import TokenBanner from '~/components/TokenBanner'
 import MarketEngine from '~/components/MarketEngine'
 import FeaturesHome from '~/components/FeaturesHome'
 import CTAToken from '~/components/cta/Token'
@@ -37,7 +35,6 @@ export default {
   components: {
     Header,
     Button,
-    TokenBanner,
     MarketEngine,
     FeaturesHome,
     CTAToken,

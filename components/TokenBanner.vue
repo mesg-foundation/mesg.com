@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="primary">
     <div class="container-parent">
       <div class="container-child" flex row justify-center spacebetween>
         <div class="card" flex row justify-center align-center>
@@ -7,11 +7,11 @@
             <Listed class="icon"/>
           </div>
           <div class="third resp" flex column justify-center>
-            <h3>MESG Token available</h3>
+            <h3>MESG Token now available</h3>
             <p><span>An innovative Algorithmic Token Offering system.</span></p>
           </div>
           <div class="third" flex column justify-center align-center>
-            <Button href="https://www.digifinex.com" target="_blank" primary>Buy the MESG Token</Button>
+            <Button href="https://www.digifinex.com" class="btn" target="_blank" primary>Buy the MESG Token</Button>
           </div>
         </div>
       </div>
@@ -34,6 +34,10 @@ export default {
 </script>
 
 <style scoped>
+
+.primary {
+  background-color: var(--Orange-cta);
+}
 
 .container-parent {
   padding-top:0;
@@ -58,11 +62,6 @@ p {
   text-align:center;
 }
 
-span {
-  color: #ffa744;
-  color: var(--Orange-cta);
-}
-
 .icon {
   max-width: 200px;
 }
@@ -74,6 +73,13 @@ span {
 .third {
   width: 33%;
   padding:1.2em;
+}
+
+.btn {
+  background-color: var(--purple)!important;
+}
+.btn:hover {
+  background-color: var(--lighter-purple-hover);
 }
 
 @media only screen and (max-width: 768px) {
