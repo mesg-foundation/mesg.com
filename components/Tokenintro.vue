@@ -20,7 +20,7 @@
 <script>
 const uses = [
   {
-    title: "Buy and Sell Modules",
+    title: "Buy and sell modules",
     desc: "Developers use MESG Tokens to purchase Modules directly from other users. Then, any Modules can simply plug-and-play into any app. This allows developers to implement features without needing to write code or learn new languages first.",
   },
   {
@@ -28,7 +28,7 @@ const uses = [
     desc: "The MESG Token allows you to be part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation. Serverless executions result in unstoppable, inexpensive and maintenance-free applications.",
   },
   {
-    title: "Network Security",
+    title: "Secure the network",
     desc: "Participants stake MESG Tokens on the network as collateral, ensuring good behavior and availability. Then, Module creators set aside MESG Tokens to be released upon the execution of a successful job. Held tokens are released once validators ensure the validity of a transaction.",
   }
 ]
