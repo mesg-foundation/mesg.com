@@ -3,14 +3,14 @@
     <div class="container-parent">
       <div class="container-child" flex row justify-center spacebetween>
         <div class="card" flex row justify-center align-center>
-          <div class="third" flex column justify-center align-center>
+          <div class="third list" flex column justify-center align-center>
             <Listed class="icon"/>
           </div>
           <div class="third resp" flex column justify-center>
             <h3>MESG Token now available</h3>
             <p><span>An innovative Algorithmic Token Offering system.</span></p>
           </div>
-          <div class="third" flex column justify-center align-center>
+          <div class="third action" flex column justify-center align-center>
             <Button href="https://www.digifinex.com" class="btn" target="_blank" primary>Buy the MESG Token</Button>
           </div>
         </div>
@@ -96,6 +96,13 @@ p {
   .resp {
     padding-top:0;
     padding-bottom:0;
+  }
+  .resp p, .list { display: none; }
+  .resp h3 {
+    margin-top: 1.2em;
+  }
+  .action {
+    padding-top: 1em;
   }
 }
 </style>

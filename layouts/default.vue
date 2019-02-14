@@ -15,7 +15,6 @@
       --animation-speed: 1;
     }
     </style>
-    <Token class="token-bar"/>
     <TokenBanner id="mesg token"/>
     <Menu class="menu-bar"/>
     <nuxt/>
