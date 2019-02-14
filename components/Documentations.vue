@@ -56,6 +56,13 @@
 
 <style scoped>
 
+.container-parent {
+  padding-bottom:0;
+}
+.container-child {
+  padding-bottom:0;
+}
+
 h2 {
   text-align: center;
 }

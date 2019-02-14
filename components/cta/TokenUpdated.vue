@@ -2,15 +2,17 @@
   <section>
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
-      <div class="content" flex column justify-center align-center>
-        <IconToken2 class="token" mb1/>
+      <div class="content" v-for="exchange in exchanges" :key="exchange.exchanges" flex column justify-center align-center>
         <h2>
-          Build Modules, Earn Tokens
+          Token available on
         </h2>
+        <img :src="exchange.svg" :alt="exchange.title" class="logo" mb2/>
         <p mb2>
-          The MESG Token will be available soon. Introducing the token for the new economy of development.
+          The MESG Token is now available on DigiFinex. Introducing the token for the new economy of development.
         </p>
-        <Subscribe flex justify-center></Subscribe>
+        <nav flex>
+          <Button href="https://www.digifinex.com" target="_blank" class="btn" primary>Buy the MESG Token</Button>
+        </nav>
       </div>
     </div>
   </div>
@@ -18,14 +20,23 @@
 </template>
 
 <script>
-import IconToken2 from '~/components/icon/Token2'
-import Subscribe from '~/components/Subscribe'
+import Button from '~/components/Button'
 export default {
   components: {
-    Subscribe,
-    IconToken2
+    Button,
+  },
+  computed: {
+    exchanges () {
+      return exchanges
+    }
   }
 }
+  const exchanges = [
+    {
+      title: "Digifinex",
+      svg: require('~/assets/digifinex.svg'),
+    }
+]
 </script>
 
 <style scoped>
@@ -46,8 +57,8 @@ svg {
   max-width: 600px;
 }
 
-.token {
-  max-width: 100px;
+.logo {
+  max-width: 400px;
 }
 
 </style>

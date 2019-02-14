@@ -54,7 +54,7 @@ a, button {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding: 1em 4em;
+  padding: 1em 2em;
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -68,7 +68,7 @@ i {
 
 .btn--small {
   border-radius: 0.3em;
-  padding: 0.1em 1.8em;
+  padding: 0.1em 2em;
 }
 .btn--small:hover {
   color: #ffffff;
@@ -87,11 +87,11 @@ i {
   background-color: var(--Orange-cta-hover);
   transition: calc(var(--animation-speed) * 0.1s) ease;
 }
+
 .btn--outline {
   color: #ffa744;
   color: var(--Orange-cta);
   border: solid 2px #ffa744;
-  padding: 0.75em 1.25em;
 }
 .btn--outline:hover {
   color: #ffffff;

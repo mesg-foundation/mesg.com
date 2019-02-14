@@ -3,7 +3,7 @@
   <div class="container-parent">
     <div class="container-child" flex row justify-center align-center>
       <div class="content" flex column justify-center align-center>
-        <IconToken2 class="token" mb1/>
+        <AlgorithmicToken class="token" mb1/>
         <h2>
           Build Modules, Earn Tokens
         </h2>
@@ -11,7 +11,7 @@
           The MESG Token will be available soon. Introducing the token for the new economy of development.
         </p>
         <nav flex>
-          <Button to="token" primary>Learn more</Button>
+          <Button to="token" primary>Discover the MESG Token</Button>
         </nav>
       </div>
     </div>
@@ -21,20 +21,16 @@
 
 <script>
 import Button from '~/components/Button'
-import IconToken2 from '~/components/icon/Token2'
+import AlgorithmicToken from '~/components/schema/AlgorithmicToken'
 export default {
   components: {
     Button,
-    IconToken2
+    AlgorithmicToken
   }
 }
 </script>
 
 <style scoped>
-
-svg {
-  margin-top:0;
-}
 
 .container-parent {
   background-image:linear-gradient(155deg, rgba(73, 30, 140, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Contact.jpg");
@@ -49,7 +45,7 @@ svg {
 }
 
 .token {
-  max-width: 100px;
+  max-width: 300px;
 }
 
 </style>
