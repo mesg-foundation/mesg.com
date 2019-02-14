@@ -7,7 +7,7 @@
             <Listed class="icon"/>
           </div>
           <div class="third resp" flex column justify-center>
-            <h3>MESG Token available</h3>
+            <h3>MESG Token now available</h3>
             <p><span>An innovative Algorithmic Token Offering system.</span></p>
           </div>
           <div class="third" flex column justify-center align-center>
@@ -76,7 +76,7 @@ p {
 }
 
 .btn {
-  background-color: var(--lighter-purple);
+  background-color: var(--purple)!important;
 }
 .btn:hover {
   background-color: var(--lighter-purple-hover);

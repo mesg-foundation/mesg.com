@@ -16,6 +16,7 @@
     }
     </style>
     <Token class="token-bar"/>
+    <TokenBanner id="mesg token"/>
     <Menu class="menu-bar"/>
     <nuxt/>
     <Footer/>
@@ -25,10 +26,12 @@
 <script>
 import Menu from '~/components/Menu'
 import Footer from '~/components/Footer'
+import TokenBanner from '~/components/TokenBanner'
 export default {
   components: {
     Menu,
-    Footer
+    Footer,
+    TokenBanner
   }
 }
 </script>
