@@ -36,7 +36,7 @@ export default {
 <style scoped>
 
 .primary {
-  background-image: linear-gradient(135deg, var(--Orange-cta) 0%, var(--Orange-cta-hover) 100%);
+  background-color: var(--Orange-cta);
 }
 
 .container-parent {
