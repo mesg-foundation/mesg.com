@@ -12,8 +12,8 @@
     <Popup v-model="video">
       <Video src="https://www.youtube.com/embed/VjPG51iE_fk?autoplay=1" />
     </Popup>
+    <TokenBanner id="mesg token"/>
     <div class="white">
-      <TokenBanner id="mesg token" class="dark"/>
       <MarketEngine id="market engine"/>
       <FeaturesHome id="features"/>
     </div>
