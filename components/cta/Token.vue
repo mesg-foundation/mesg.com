@@ -8,7 +8,7 @@
           Build Modules, Earn Tokens
         </h2>
         <p mb2>
-          The MESG Token will be available soon. Introducing the token for the new economy of development.
+          The MESG Token is available now. Introducing the token for the new economy of development.
         </p>
         <nav flex>
           <Button to="token" primary>Discover the MESG Token</Button>
