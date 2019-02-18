@@ -11,7 +11,7 @@
           <nuxt-link to="/token" class="menu-nav">Token</nuxt-link>
           <nuxt-link to="/team" class="menu-nav">Team</nuxt-link>
           <nuxt-link to="/roadmap" class="menu-nav" mr1>Roadmap</nuxt-link>
-          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small primary>Get Started</Button>
+          <Button href="https://docs.mesg.com/guide/start-here/quick-start-guide.html" small outline>Get Started</Button>
         </div>
     </nav>
     <MenuResponsive class="responsive"/>
@@ -37,8 +37,6 @@ nav {
   z-index:1;
   position: absolute;
   width: 100%;
-  border-bottom: solid 0.025em #491e8c;
-  border-bottom: solid 0.025em var(--purple);
 }
 
 .menu {

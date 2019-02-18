@@ -81,11 +81,13 @@ i {
   color: var(--white-content);
   background-color: #ffa744;
   background-color: var(--Orange-cta);
+  border: solid 2px #ffa744;
 }
 .btn--primary:hover {
   background-color: #E5963D;
   background-color: var(--Orange-cta-hover);
   transition: calc(var(--animation-speed) * 0.1s) ease;
+  border: solid 2px #E5963D;
 }
 
 .btn--outline {

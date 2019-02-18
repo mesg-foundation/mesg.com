@@ -5,8 +5,9 @@
       :title="title"
       :description="description">
       <p>{{ description }}</p>
-      <nav flex mt2 class="actions">
-        <Button @click="video = !video" class="btn" outline><i class="far fa-play-circle" mr05></i>Watch the MESG introduction</Button>
+      <nav flex mt2>
+        <Button @click="video = !video" class="btn" outline><i class="far fa-play-circle" mr05></i>MESG Introduction</Button>
+        <Button class="btn token" to="/token" primary>Discover the MESG Token</Button>
       </nav>
     </Header>
     <Popup v-model="video">
@@ -65,13 +66,24 @@ export default {
 i {
   font-weight: normal;
   vertical-align: middle;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-left:0;
 }
 
-@media only screen and (max-width: 768px) {
- .actions a {
-    margin: auto;
+.token {
+  margin-left:2em;
+}
+
+@media only screen and (max-width: 414px) {
+ nav {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+  .token {
+    margin-top:1.8em;
+    margin-left:0;
   }
 }
 
