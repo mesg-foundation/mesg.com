@@ -17,7 +17,7 @@
             <p>MESG has a market-driven economy where developers generate income by building Modules and making them available to others to employ in their own applications.</p>
             <p>Modules are discreet, functional components of applications built by developers that can make up significant portions of apps, such as connections to APIs or blockchains. <strong>Once built, Modules can be sold, purchased or re-used.</strong></p>
             <p>The creators of Modules are free to choose the price in MESG Tokens that developers will pay to use them. Upon each Module integration, a token payment is delivered back to the creator.</p>
-            <p>This economy is set to debut at the end of January, 2019. Get a head start by <a href="https://docs.mesg.com/" target="_blank" class="link">creating Modules today!</a></p>
+            <p>This economy is set to debut at the end of Q1, 2019. Get a head start by <a href="https://docs.mesg.com/" target="_blank" class="link">creating Modules today!</a></p>
           </div>
         </div>
         <div half flex column>
@@ -27,7 +27,7 @@
             <p>This eliminates much of the repetitive work in development, <strong>delivering companies and developers significant time savings</strong>, not only in deployment, but in maintenance throughout the life of the application.</p>
             <p>Plus, MESG’s open Marketplace gives developers access to exciting, cutting-edge Modules, which allow <strong>quick implementation of features from the most popular and useful technologies</strong>.</p>
             <p>Developers and companies seeking accelerated efficiency and exciting features form the other major player in the MESG Marketplace, creating steady demand in the economy of development.</p>
-            <p>Until the release of the Marketplace at the end of January 2019, all Modules will temporarily be shared for free on <a href="https://github.com/mesg-foundation/awesome/" target="_blank" class="link">Github</a>.</p>
+            <p>Until the release of the Marketplace at the end of Q1 2019, all Modules will temporarily be shared for free on <a href="https://github.com/mesg-foundation/awesome/" target="_blank" class="link">Github</a>.</p>
           </div>
         </div>
       </div>
