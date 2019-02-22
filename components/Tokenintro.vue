@@ -20,16 +20,16 @@
 <script>
 const uses = [
   {
-    title: "Buy and sell Modules",
-    desc: "App components, called Modules, are bought and sold using the MESG Token. Then Modules can be used in any app, no complex coding required.",
-  },
-  {
     title: "Decentralize executions",
     desc: "You can become a part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation.",
   },
   {
-    title: "Secure the network",
+  title: "Secure the network",
     desc: "All participants stake MESG Tokens to commit to their availability and good behavior. Then, participants are rewarded for validating each execution.",
+  },
+  {
+    title: "Buy and sell Modules",
+    desc: "App components, called Modules, are bought and sold using the MESG Token. Then Modules can be used in any app, no complex coding required.",
   }
 ]
 export default {
