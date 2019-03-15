@@ -23,34 +23,38 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Progress from '~/components/Progress'
 import CTANext from '~/components/cta/Next'
 import Header from '~/components/Header'
 import Schema404 from '~/components/schema/404'
 import SchemaNutshell from '~/components/schema/Nutshell'
 import page from '../page'
+
 export default {
   components: {
     Header,
     Progress,
     CTANext
   },
+  
+  computed: {
+    ...mapState([ 'usecases' ]),
+
+    usecase () {
+      return this.usecases
+        .filter(x => x.id === this.$route.params.id)[0]
+    },
+
+    schema404 () { return Schema404 }
+  },
+
   mixins: [
     page(self => ({
       title: self.usecase.title,
       description: self.usecase.text,
       schema: SchemaNutshell
     }))
-  ],
-  computed: {
-    usecases () {
-      return require('~/assets/usecases.json')
-    },
-    usecase () {
-      return this.usecases
-        .filter(x => x.id === this.$route.params.id)[0]
-    },
-    schema404 () { return Schema404 }
-  }
+  ]
 }
 </script>

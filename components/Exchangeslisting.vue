@@ -40,11 +40,11 @@
 </template>
 
 <script>
-const exchanges = require("~/assets/exchanges")
+import { mapState } from 'vuex'
+
 export default {
-  computed: {
-    exchanges () { return exchanges }
-  },
+  computed: mapState([ 'exchanges' ]),
+  
   methods: {
     pictureStyle (exchange) {
       return {

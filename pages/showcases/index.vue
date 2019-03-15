@@ -10,28 +10,28 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Header from '~/components/Header'
 import CategoriesCase from '~/components/CategoriesCase'
 import CTANext from '~/components/cta/Next'
 import SchemaNutshell from '~/components/schema/Nutshell'
 import page from '../page'
+
 export default {
   components: {
     Header,
     CategoriesCase,
     CTANext
   },
+
+  computed: mapState([ 'usecases' ]),
+
   mixins: [
     page({
       title: 'MESG Showcase',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa, volutpat nec auctor vel, vehicula ac est.',
       schema: SchemaNutshell
     })
-  ],
-  computed: {
-    usecases () {
-      return require('~/assets/usecases.json')
-    }
-  }
+  ]
 }
 </script>

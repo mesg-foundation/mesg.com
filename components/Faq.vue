@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import SideMenu from '~/components/SideMenu'
 
 export default {
@@ -33,9 +34,7 @@ export default {
   },
 
   computed: {
-    faq() {
-      return require("~/assets/faq")
-    },
+    ...mapState([ 'faq' ]),
 
     menuItems() {
       return this.faq.map(({ id, category }) => {
