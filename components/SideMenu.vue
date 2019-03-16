@@ -6,11 +6,31 @@
 
 <script>
 export default {
-  data () {
-    return {
-      offset: { top: 70 },
-      shouldStick: true,
+  props: {
+    items: {
+      type: Array,
+      required: true
+    },
+
+    offset: {
+      type: Object,
+      default: () => {
+        return { top: 70 }
+      }
+    },
+
+    shouldStick: {
+      type: Boolean,
+      default: true
     }
+  },
+
+  methods: {
+    // setShouldStick ensures to make sidebar sticky when it's not vertically
+    // aligned with the content.
+		setShouldStick() {
+      this.shouldStick = document.documentElement.clientWidth > 768
+		},
   },
 
   mounted () {
@@ -23,21 +43,6 @@ export default {
 
   beforeDestroy() {
     window.removeEventListener('resize', this.setShouldStick)
-  },
-
-  methods: {
-    // setShouldStick ensures to make sidebar sticky when it's not vertically
-    // aligned with the content.
-		setShouldStick() {
-      this.shouldStick = document.documentElement.clientWidth > 768
-		},
-  },
-
-  props: {
-    items: {
-      type: Array,
-      required: true
-    }
   },
 }
 </script>
