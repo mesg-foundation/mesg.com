@@ -8,7 +8,7 @@
           </div>
           <div class="text" flex column justify-center align-center>
             <h3>MESG Token now available</h3>
-            <p><span>An innovative Algorithmic Token Offering system.</span></p>
+            <p><span>An innovative Algorithmic Token Distribution system.</span></p>
           </div>
           <div class="action" flex column justify-center align-center>
             <Button href="https://www.digifinex.com" target="_blank" primary>Buy the MESG Token</Button>
