@@ -10,17 +10,20 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Header from '~/components/Header'
 import CategoriesCase from '~/components/CategoriesCase'
 import CTANext from '~/components/cta/Next'
 import SchemaNutshell from '~/components/schema/Nutshell'
 import page from '../page'
+
 export default {
   components: {
     Header,
     CategoriesCase,
     CTANext
   },
+
   mixins: [
     page({
       title: 'MESG Showcase',
@@ -28,10 +31,7 @@ export default {
       schema: SchemaNutshell
     })
   ],
-  computed: {
-    usecases () {
-      return require('~/assets/usecases.json')
-    }
-  }
+
+  computed: mapState([ 'usecases' ])
 }
 </script>

@@ -42,11 +42,10 @@
 </template>
 
 <script>
-const roadmap = require("~/assets/roadmap")
+import { mapState } from 'vuex'
+
 export default {
-  computed: {
-    roadmap () { return roadmap }
-  }
+  computed: mapState([ 'roadmap' ])
 }
 </script>
 
