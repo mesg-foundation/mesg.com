@@ -24,14 +24,14 @@ export default {
     CTANext
   },
 
-  computed: mapState([ 'usecases' ]),
-
   mixins: [
     page({
       title: 'MESG Showcase',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum orci eget convallis efficitur. Morbi urna massa, volutpat nec auctor vel, vehicula ac est.',
       schema: SchemaNutshell
     })
-  ]
+  ],
+
+  computed: mapState([ 'usecases' ])
 }
 </script>

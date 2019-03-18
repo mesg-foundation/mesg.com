@@ -37,6 +37,14 @@ export default {
     Progress,
     CTANext
   },
+
+  mixins: [
+    page(self => ({
+      title: self.usecase.title,
+      description: self.usecase.text,
+      schema: SchemaNutshell
+    }))
+  ],
   
   computed: {
     ...mapState([ 'usecases' ]),
@@ -47,14 +55,6 @@ export default {
     },
 
     schema404 () { return Schema404 }
-  },
-
-  mixins: [
-    page(self => ({
-      title: self.usecase.title,
-      description: self.usecase.text,
-      schema: SchemaNutshell
-    }))
-  ]
+  }
 }
 </script>
