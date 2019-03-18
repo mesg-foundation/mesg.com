@@ -17,7 +17,7 @@
     "@nuxtjs/google-tag-manager": "^2.1.1",
     "@nuxtjs/pwa": "^2.5.0",
     "@nuxtjs/sitemap": "^0.2.0",
-    "nuxt": "^1.4.2",
+    "nuxt": "^2.4.5",
     "vue-sticky-directive": "0.0.7",
     "vue-tree-halower": "^1.7.3"
   },
