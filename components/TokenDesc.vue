@@ -73,6 +73,9 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
   .paragraphe {
     margin-bottom: 2.4em;
   }

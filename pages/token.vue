@@ -6,9 +6,9 @@
       :schema="schema">
       <p>{{ description }}</p>
       <div class="listing">
-        <p mt2 mb1>You can buy the MESG Token on:</p>
+        <p mt2 mb1>You can buy and trade the MESG Token on:</p>
       </div>
-      <nav class="listing" flex row>
+      <nav class="exchanges" flex row>
         <Button href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" white flex column mr1 mt1><img src="~/assets/Digifinex.svg" alt="Digifinex" class="logo"/></Button>
         <Button href="https://idex.market/eth/mesg" target="_blank" white flex column mr1 mt1><img src="~/assets/IDEX.svg" alt="Idex" class="logo"/></Button>
         <Button href="https://idex.market/eth/mesg" target="_blank" white flex column mt1><img src="~/assets/bitforex.svg" alt="Bitforex" class="logo"/></Button>
@@ -75,6 +75,14 @@ export default {
   .listing a {
     justify-content: center;
   }
+  [mr1]{ margin-right: 1.2em!important; }
+}
+
+@media only screen and (max-width: 550px) {
+  .exchanges {
+    flex-direction: column;
+  }
+  [mr1]{ margin-right: 0em!important; }
 }
 
 </style>
