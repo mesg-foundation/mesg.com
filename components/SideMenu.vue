@@ -1,5 +1,5 @@
 <template>
-  <nav v-sticky="shouldStick" sticky-offset="offset" sticky-side="top" flex column class="sidebar">
+  <nav v-sticky="sticky" sticky-offset="offset" sticky-side="top" flex column class="sidebar">
     <a v-for="item in items" :key="item.id" :href="`#${item.id}`">{{item.text}}</a>
   </nav>
 </template>
@@ -25,24 +25,30 @@ export default {
     }
   },
 
+  data() {
+    return {
+      sticky: this.shouldStick
+    }
+  },
+
   methods: {
-    // setShouldStick ensures to make sidebar sticky when it's not vertically
+    // setSticky ensures to make sidebar sticky when it's not vertically
     // aligned with the content.
-		setShouldStick() {
-      this.shouldStick = document.documentElement.clientWidth > 768
+		setSticky() {
+      this.sticky = this.shouldStick && document.documentElement.clientWidth > 768
 		},
   },
 
   mounted () {
     // find out what size the window is loaded in and configure the stickiness.
-    this.$nextTick(() => { this.setShouldStick() })
+    this.$nextTick(() => { this.setSticky() })
 
     // configure stickiness on each change to window's size.
-    window.addEventListener('resize', this.setShouldStick)
+    window.addEventListener('resize', this.setSticky)
   },
 
   beforeDestroy() {
-    window.removeEventListener('resize', this.setShouldStick)
+    window.removeEventListener('resize', this.setSticky)
   },
 }
 </script>
