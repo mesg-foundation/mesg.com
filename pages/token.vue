@@ -5,15 +5,14 @@
       :description="description"
       :schema="schema">
       <p>{{ description }}</p>
-      <nav flex mt2>
-        <Button href="https://www.digifinex.com/en-ww/trade/BTC/MESG" target="_blank" class="btn" primary mb2>Buy the MESG Token</Button>
-      </nav>
-      <div v-for="exchange in exchanges" :key="exchange.exchanges" class="listing" flex column>
-        <p mb05>Listing on:</p>
-        <a href="https://www.digifinex.com" target="_blank" flex>
-          <img :src="exchange.svg" :alt="exchange.title" class="logo"/>
-        </a>
+      <div class="listing">
+        <p mt2 mb1>You can buy the MESG Token on:</p>
       </div>
+      <nav class="listing" flex row>
+        <Button href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" white flex column mr1 mt1><img src="~/assets/Digifinex.svg" alt="Digifinex" class="logo"/></Button>
+        <Button href="https://idex.market/eth/mesg" target="_blank" white flex column mr1 mt1><img src="~/assets/IDEX.svg" alt="Idex" class="logo"/></Button>
+        <Button href="https://idex.market/eth/mesg" target="_blank" white flex column mt1><img src="~/assets/bitforex.svg" alt="Bitforex" class="logo"/></Button>
+      </nav>
     </header>
     <div class="white">
       <Tokenintro id="token introduction"/>
@@ -53,34 +52,23 @@ export default {
   mixins: [
     page({
       title: 'The MESG Token',
-      description: 'Buy and sell app components in the new economy of app development. Available now on DigiFinex.',
+      description: 'Buy and sell app components in the new economy of app development.',
       schema: IconToken
     })
   ]
 }
-const exchanges = [
-  {
-    title: "Digifinex",
-    svg: require('~/assets/digifinex.svg'),
-  }
-]
+
 </script>
 
 <style scoped>
 
 .listing p {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
-a .logo {
+.logo {
   height: 20px;
   text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-  opacity: 0.85;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 @media only screen and (max-width: 768px) {
