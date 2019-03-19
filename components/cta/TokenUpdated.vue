@@ -7,7 +7,7 @@
           Buy and trade the MESG Token
         </h2>
         <nav class="exchanges" flex row justify-center>
-          <Button href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" white flex column mr1 mt1><img src="~/assets/Digifinex.svg" alt="Digifinex" class="logo"/></Button>
+          <Button href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" white flex column mr1 mt1><img src="~/assets/digifinex.svg" alt="Digifinex" class="logo"/></Button>
           <Button href="https://idex.market/eth/mesg" target="_blank" white flex column mt1><img src="~/assets/IDEX.svg" alt="Idex" class="logo"/></Button>
         </nav>
       </div>
