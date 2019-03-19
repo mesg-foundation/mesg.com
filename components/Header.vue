@@ -83,7 +83,7 @@ export default {
 .container-parent {
   z-index:-1;
   padding-top: 5.4em;
-  background-image:linear-gradient(155deg, rgba(73, 30, 140, 1) 0%, rgba(73, 30, 140, 0.95) 100%), url("~/assets/Contact.jpg");
+  background-image:linear-gradient(155deg, rgba(73, 30, 140, 1) 0%, rgba(73, 30, 140, 0.95) 100%), url("~assets/Contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
