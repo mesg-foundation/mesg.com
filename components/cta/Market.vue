@@ -30,7 +30,7 @@ export default {
 <style scoped>
 
 .container-parent {
-  background-image:linear-gradient(155deg, rgba(73, 30, 140, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~/assets/Business.jpg");
+  background-image:linear-gradient(155deg, rgba(73, 30, 140, 0.9) 0%, rgba(73, 30, 140, 0.9) 100%), url("~assets/Business.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
