@@ -1,3 +1,5 @@
+const { UnusedFilesWebpackPlugin } = require("unused-files-webpack-plugin")
+
 module.exports = {
   /*
   ** Headers of the page
@@ -86,6 +88,18 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+
+    plugins: [
+      new UnusedFilesWebpackPlugin({
+        patterns: [
+          '**/*.*',
+          '!*',
+          '!static/**',
+          '!assets/documents/**',
+          '!**/*.md'
+        ]
+      }),
+    ],
   }
 }
