@@ -1,26 +1,18 @@
 <template>
   <section class="card" flex column justify-center align-center>
-    <WithRoot :show="link">
-      <a target="blank" :href="link" :download="linkFileName">
-        <div class="picture" flex column justify-center align-center>
-          <img :src="thumbnail" :alt="thumbnailName"/>
-        </div>
-        <div class="title" flex column justify-center align-center>
-          <h3>{{ title }}</h3>
-        </div>
-      </a>
-    </WithRoot>
+    <a target="blank" :href="link" :download="linkFileName" v-show-only-children="!link">
+      <div class="picture" flex column justify-center align-center>
+        <img :src="thumbnail" :alt="thumbnailName"/>
+      </div>
+      <div class="title" flex column justify-center align-center>
+        <h3>{{ title }}</h3>
+      </div>
+    </a>
   </section>
 </template>
 
 <script>
-import WithRoot from '~/components/Helpers/WithRoot'
-
 export default {
-  components: {
-    WithRoot
-  },
-
   props: {
     title: {
       type: String,
