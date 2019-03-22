@@ -4,6 +4,7 @@ import features from './data/features'
 import exchanges from './data/exchanges'
 import roadmap from './data/roadmap'
 import usecases from './data/usecases'
+import documentations from './data/documentations'
 
 export const state = () => ({
   team,
@@ -11,5 +12,6 @@ export const state = () => ({
   features,
   exchanges,
   roadmap,
-  usecases
+  usecases,
+  documentations
 })

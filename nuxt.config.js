@@ -68,7 +68,8 @@ module.exports = {
   ** Plugins
   */
   plugins: [
-    { src: '~/plugins/vue-sticky-directive', ssr: false }
+    { src: '~/plugins/directives/sticky', ssr: false },
+    { src: '~/plugins/directives/show-only-children' },
   ],
   /*
   ** Build configuration
