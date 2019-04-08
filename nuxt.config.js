@@ -1,3 +1,5 @@
+const { UnusedFilesWebpackPlugin } = require("unused-files-webpack-plugin")
+
 module.exports = {
   /*
   ** Headers of the page
@@ -68,7 +70,8 @@ module.exports = {
   ** Plugins
   */
   plugins: [
-    { src: '~/plugins/vue-sticky-directive', ssr: false }
+    { src: '~/plugins/directives/sticky', ssr: false },
+    { src: '~/plugins/directives/show-only-children' },
   ],
   /*
   ** Build configuration
@@ -86,6 +89,18 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+
+    plugins: [
+      new UnusedFilesWebpackPlugin({
+        patterns: [
+          '**/*.*',
+          '!*',
+          '!static/**',
+          '!assets/documents/**',
+          '!**/*.md'
+        ]
+      }),
+    ],
   }
 }
