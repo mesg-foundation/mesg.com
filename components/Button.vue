@@ -33,6 +33,7 @@ export default {
     submit: Boolean,
     small: Boolean,
     primary: Boolean,
+    secondary: Boolean,
     white: Boolean,
     outline: Boolean,
     icon: String
@@ -42,6 +43,7 @@ export default {
       return {
         'btn--small': this.small,
         'btn--primary': this.primary,
+        'btn--secondary': this.secondary,
         'btn--white': this.white,
         'btn--outline': this.outline
       }
@@ -50,7 +52,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a, button {
   border-radius: 0.3em;
   font-size: 1em;
@@ -78,18 +80,14 @@ i {
   transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
-.btn--primary {
-  color: #ffffff;
-  color: var(--white-content);
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
-  border: solid 2px #ffa744;
-}
-.btn--primary:hover {
-  background-color: #E5963D;
-  background-color: var(--Orange-cta-hover);
+.btn--secondary {
+  color: #fff;
+  background-color: var(--purple);
   transition: calc(var(--animation-speed) * 0.1s) ease;
-  border: solid 2px #E5963D;
+
+  &:hover {
+    background-color: var(--lighter-purple);
+  }
 }
 
 .btn--white {

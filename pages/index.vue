@@ -1,13 +1,13 @@
 <template>
   <div>
-    <Header id="introduction" class="dark"
+    <Header id="introduction"
       :schema="schema"
       :title="title"
       :description="description">
       <p>{{ description }}</p>
       <nav flex mt2>
-        <Button @click="video = !video" class="btn" outline><i class="far fa-play-circle" mr05></i>MESG Introduction</Button>
-        <Button class="btn token" to="/token" primary>Discover the MESG Token</Button>
+        <Button class="btn token" to="/token" secondary>Enterprise Solutions</Button>
+        <Button class="btn token" to="/token" primary>Get Started</Button>
       </nav>
     </Header>
     <Popup v-model="video">
@@ -45,7 +45,7 @@ export default {
   mixins: [
     page({
       title: 'The new economy of app development',
-      description: 'Build applications connecting reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine.',
+      description: 'Build applications connecting reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it.',
       schema: SchemaMESG
     })
   ],
@@ -58,9 +58,10 @@ export default {
 </script>
 
 <style scoped>
-
-.btn:hover .far {
-  font-weight: bold;
+.btn {
+  font-family: 'Open Sans';
+  font-size: 17px;
+  font-weight: 700;
 }
 
 i {
@@ -70,11 +71,8 @@ i {
   margin-left:0;
 }
 
-.token {
-  margin-left:2em;
-}
 
-@media only screen and (max-width: 414px) {
+/* @media only screen and (max-width: 414px) {
  nav {
     flex-direction: column;
   }
@@ -85,6 +83,6 @@ i {
     margin-top:1.8em;
     margin-left:0;
   }
-}
+} */
 
 </style>
