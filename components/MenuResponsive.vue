@@ -9,7 +9,7 @@
   >
     <div class="nav-burger" flex row space-between justify-center align-center>
       <a href="/">
-        <MESGLogoHorizontalWhite class="logo"/>
+        <img src alt>
       </a>
       <nav class="burger">
         <a @click="open = !open" :class="{ animated: open }">
@@ -68,11 +68,9 @@
 
 <script>
 import Button from "~/components/Button";
-import MESGLogoHorizontalWhite from "~/components/MESGLogoHorizontalWhite";
 export default {
   components: {
-    Button,
-    MESGLogoHorizontalWhite
+    Button
   },
   data() {
     return {

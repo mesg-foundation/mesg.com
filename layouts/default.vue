@@ -12,21 +12,20 @@
     --lighter-grey: #d6d0e7;
     --pale-white: #fafafe;
     --white: #ffffff;
+    --title-color: #0e061c;
+    --text-color: #3c3940;
   }
     </style>
     <Menu class="menu-bar"/>
     <nuxt/>
-    <Footer/>
   </div>
 </template>
 
 <script>
 import Menu from "~/components/Menu";
-import Footer from "~/components/Footer";
 export default {
   components: {
-    Menu,
-    Footer
+    Menu
   }
 };
 </script>
@@ -59,168 +58,42 @@ h2,
 h3,
 h4,
 a,
+p,
 button,
 label,
 input,
 textarea {
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  font-weight: normal;
-}
-
-.link {
-  font-weight: bold;
-  color: #9452ff;
-  color: var(--lighter-purple);
-  text-decoration: none;
-}
-.link:hover {
-  color: #5d28b2;
-  color: var(--lighter-purple-hover);
-}
-
-h1 {
-  font-size: 2.4em;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 0.8em;
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: bold;
-  color: #491e8c;
-  color: var(--purple);
-  margin-bottom: 0.8em;
-}
-
-h3 {
-  font-size: 1.6em;
-  font-weight: bold;
-  color: #491e8c;
-  color: var(--purple);
-  margin-bottom: 0.8em;
-}
-h4 {
-  font-size: 1em;
-  font-weight: bold;
-  color: #491e8c;
-  color: var(--purple);
-}
-p {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   font-weight: normal;
-  font-size: 1em;
-  color: #57577e;
-  color: var(--dark-grey);
 }
-
-ul {
-  padding-left: 1.2em;
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--title-color);
 }
-li {
-  position: relative;
-  list-style: none;
-}
-li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0.5em;
-  left: -1.2em;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background: var(--lighter-purple);
-}
-
-.caption {
-  opacity: 0.65;
-  padding-bottom: 1.2em;
+h2 {
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
+  color: var(--title-color);
 }
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.2em;
-  }
-  h2 {
-    font-size: 1.8em;
-  }
-  h3 {
-    font-size: 1.4em;
-  }
-  p {
-    font-size: 1em;
-  }
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--title-color);
 }
-@media only screen and (max-width: 414px) {
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.6em;
-  }
-  h3 {
-    font-size: 1.2em;
-  }
-  p {
-    font-size: 1em;
-  }
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--title-color);
 }
-</style>
-
-<style>
-/* Design */
-.dark {
-  background-image: linear-gradient(135deg, #251440 0%, #491e8c 100%);
-  background-image: linear-gradient(
-    135deg,
-    var(--dark-purple) 0%,
-    var(--purple) 100%
-  );
-}
-
-.dark h2,
-.dark h3 {
-  color: #ffffffff;
-  color: var(--white);
-}
-.dark p {
-  opacity: 0.85;
-  color: #ffffffff;
-  color: var(--white);
-}
-
-.purple {
-  background-color: #9452ff;
-  background-color: var(--lighter-purple);
-}
-
-.white {
-  background-color: #fafafe;
-  background-color: var(--pale-white);
-}
-
-svg {
-  width: 85%;
-  max-width: 85%;
-  object-fit: contain;
-}
-
-.separator-orange {
-  width: 60px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
+p {
+  font-size: 17px;
+  color: var(--text-color);
 }
 </style>
 
@@ -432,27 +305,4 @@ svg {
     display: none;
   }
 }
-</style>
-
-<style scoped>
-/*.token-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
-}
-.menu-bar {
-  margin-top: 57px;
-}
-@media only screen and (max-width: 590px) {
-  .menu-bar {
-    margin-top: 47px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .menu-bar {
-    margin-top: 58px;
-  }
-}*/
 </style>

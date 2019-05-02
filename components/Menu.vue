@@ -2,7 +2,7 @@
   <div>
     <nav hide-responsive flex row space-between align-center>
       <nuxt-link to="/">
-        <MESGLogoHorizontalPurple class="logo"/>
+        <img src alt>
       </nuxt-link>
       <div class="menu" flex row space-between align-center>
         <nuxt-link to="/products">Products</nuxt-link>
@@ -23,12 +23,10 @@
 
 <script>
 import Button from "~/components/Button";
-import MESGLogoHorizontalPurple from "~/components/MESGLogoHorizontalPurple";
 import MenuResponsive from "~/components/MenuResponsive";
 export default {
   components: {
     Button,
-    MESGLogoHorizontalPurple,
     MenuResponsive
   }
 };
