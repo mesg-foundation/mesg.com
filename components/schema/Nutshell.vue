@@ -1,3 +1,3 @@
 <template>
-  <img src="~/assets/svg-rework/nutshell.svg" alt="Nutshell"/>
+  <img src="~/assets/svg-rework/nutshell.svg" alt="Nutshell">
 </template>

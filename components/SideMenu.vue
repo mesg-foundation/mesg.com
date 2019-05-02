@@ -15,7 +15,7 @@ export default {
     offset: {
       type: Object,
       default: () => {
-        return { top: 70 }
+        return { top: 70 };
       }
     },
 
@@ -28,35 +28,38 @@ export default {
   data() {
     return {
       sticky: this.shouldStick
-    }
+    };
   },
 
   methods: {
     // setSticky ensures to make sidebar sticky when it's not vertically
     // aligned with the content.
-		setSticky() {
-      this.sticky = this.shouldStick && document.documentElement.clientWidth > 768
-		},
+    setSticky() {
+      this.sticky =
+        this.shouldStick && document.documentElement.clientWidth > 768;
+    }
   },
 
-  mounted () {
+  mounted() {
     // find out what size the window is loaded in and configure the stickiness.
-    this.$nextTick(() => { this.setSticky() })
+    this.$nextTick(() => {
+      this.setSticky();
+    });
 
     // configure stickiness on each change to window's size.
-    window.addEventListener('resize', this.setSticky)
+    window.addEventListener("resize", this.setSticky);
   },
 
   beforeDestroy() {
-    window.removeEventListener('resize', this.setSticky)
-  },
-}
+    window.removeEventListener("resize", this.setSticky);
+  }
+};
 </script>
 
 <style scoped>
 .sidebar {
   border: solid 1px #d6d0e7;
-  border-radius:4px;
+  border-radius: 4px;
   margin-bottom: 1.8em;
 }
 
@@ -71,8 +74,7 @@ a {
 }
 
 a:hover {
-  opacity:0.8;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+  opacity: 0.8;
   border-left: solid 2px #9452ff;
   border-radius: 1px;
 }

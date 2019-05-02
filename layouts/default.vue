@@ -1,19 +1,18 @@
 <template>
   <div>
     <style>
-    :root {
-      --dark-purple: #251440;
-      --purple: #491e8c;
-      --lighter-purple: #9452ff;
-      --lighter-purple-hover: #854AE5;
-      --Orange-cta: #ffa744;
-      --Orange-cta-hover: #E5963D;
-      --dark-grey: #57577e;
-      --lighter-grey: #d6d0e7;
-      --pale-white: #fafafe;
-      --white-content: #ffffff;
-      --animation-speed: 1;
-    }
+  :root {
+    --dark-purple: #251440;
+    --purple: #491e8c;
+    --lighter-purple: #9452ff;
+    --lighter-purple-hover: #854ae5;
+    --Orange-cta: #ffa744;
+    --Orange-cta-hover: #e5963d;
+    --dark-grey: #57577e;
+    --lighter-grey: #d6d0e7;
+    --pale-white: #fafafe;
+    --white: #ffffff;
+  }
     </style>
     <Menu class="menu-bar"/>
     <nuxt/>
@@ -22,14 +21,14 @@
 </template>
 
 <script>
-import Menu from '~/components/Menu'
-import Footer from '~/components/Footer'
+import Menu from "~/components/Menu";
+import Footer from "~/components/Footer";
 export default {
   components: {
     Menu,
-    Footer,
+    Footer
   }
-}
+};
 </script>
 
 <style>
@@ -44,7 +43,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -53,13 +54,21 @@ html {
 
 <style>
 /* Text styles */
-h1, h2, h3, h4, a, button, label, input, textarea {
-  font-family: 'Quicksand', sans-serif;
-  font-style:normal;
+h1,
+h2,
+h3,
+h4,
+a,
+button,
+label,
+input,
+textarea {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 .link {
@@ -69,9 +78,8 @@ h1, h2, h3, h4, a, button, label, input, textarea {
   text-decoration: none;
 }
 .link:hover {
-  color: #5D28B2;
+  color: #5d28b2;
   color: var(--lighter-purple-hover);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
 }
 
 h1 {
@@ -103,7 +111,7 @@ h4 {
   color: var(--purple);
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -114,8 +122,8 @@ p {
   color: var(--dark-grey);
 }
 
-ul{
-  padding-left:1.2em;
+ul {
+  padding-left: 1.2em;
 }
 li {
   position: relative;
@@ -125,7 +133,7 @@ li::before {
   content: "";
   display: block;
   position: absolute;
-  top: .5em;
+  top: 0.5em;
   left: -1.2em;
   width: 8px;
   height: 8px;
@@ -134,22 +142,38 @@ li::before {
 }
 
 .caption {
-  opacity:0.65;
-  padding-bottom:1.2em;
-  text-align:center;
+  opacity: 0.65;
+  padding-bottom: 1.2em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-  h1 { font-size: 2.2em;}
-  h2 { font-size: 1.8em;}
-  h3 {font-size: 1.4em;}
-  p {font-size: 1em;}
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  p {
+    font-size: 1em;
+  }
 }
 @media only screen and (max-width: 414px) {
-  h1 { font-size: 2em;}
-  h2 { font-size: 1.6em;}
-  h3 {font-size: 1.2em;}
-  p {font-size: 1em;}
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1em;
+  }
 }
 </style>
 
@@ -157,18 +181,22 @@ li::before {
 /* Design */
 .dark {
   background-image: linear-gradient(135deg, #251440 0%, #491e8c 100%);
-  background-image: linear-gradient(135deg, var(--dark-purple) 0%, var(--purple) 100%);
+  background-image: linear-gradient(
+    135deg,
+    var(--dark-purple) 0%,
+    var(--purple) 100%
+  );
 }
 
 .dark h2,
 .dark h3 {
   color: #ffffffff;
-  color: var(--white-content);
+  color: var(--white);
 }
 .dark p {
   opacity: 0.85;
   color: #ffffffff;
-  color: var(--white-content);
+  color: var(--white);
 }
 
 .purple {
@@ -191,43 +219,99 @@ svg {
   width: 60px;
   height: 6px;
   border-radius: 3px;
-  background-color:#ffa744;
+  background-color: #ffa744;
   background-color: var(--Orange-cta);
 }
 </style>
 
 <style>
 /* Structure */
-[flex] { display: flex; }
-[row] { flex-direction: row; flex-wrap: wrap; }
-[column] { flex-direction: column; }
-[justify-center] { justify-content: center; }
-[align-center] { align-items: center; }
-[align-left] { align-items: left; }
-[align-right] { align-items: right; }
-[space-between] { justify-content: space-between; }
-[space-around] { justify-content: space-around; }
+[flex] {
+  display: flex;
+}
+[row] {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+[column] {
+  flex-direction: column;
+}
+[justify-center] {
+  justify-content: center;
+}
+[align-center] {
+  align-items: center;
+}
+[align-left] {
+  align-items: left;
+}
+[align-right] {
+  align-items: right;
+}
+[space-between] {
+  justify-content: space-between;
+}
+[space-around] {
+  justify-content: space-around;
+}
 
-[half] { width: 600px; }
-[third] { width: 400px; }
-[thirdtwo] { width: 800px; }
-[p0] { padding: 0!important; }
-[mt0] { margin-top: 0!important; }
-[mt05] { margin-top: 0.6em!important; }
-[mt1] { margin-top: 1.2em!important; }
-[mt2] { margin-top: 2.4em!important; }
-[mb0] { margin-bottom: 0!important; }
-[mb05] { margin-bottom: 0.6em!important; }
-[mb1] { margin-bottom: 1.2em!important; }
-[mb2] { margin-bottom: 2.4em!important; }
-[mb3] { margin-bottom: 4.8em!important; }
-[mr05] { margin-right: 0.6em!important; }
-[mr1] { margin-right: 1.2em!important; }
-[mr2] { margin-right: 2.4em!important; }
-[ml05] { margin-left: 0.6em!important; }
-[ml1] { margin-left: 1.2em!important; }
-[ml2] { margin-left: 2.4em!important; }
-
+[half] {
+  width: 600px;
+}
+[third] {
+  width: 400px;
+}
+[thirdtwo] {
+  width: 800px;
+}
+[p0] {
+  padding: 0 !important;
+}
+[mt0] {
+  margin-top: 0 !important;
+}
+[mt05] {
+  margin-top: 0.6em !important;
+}
+[mt1] {
+  margin-top: 1.2em !important;
+}
+[mt2] {
+  margin-top: 2.4em !important;
+}
+[mb0] {
+  margin-bottom: 0 !important;
+}
+[mb05] {
+  margin-bottom: 0.6em !important;
+}
+[mb1] {
+  margin-bottom: 1.2em !important;
+}
+[mb2] {
+  margin-bottom: 2.4em !important;
+}
+[mb3] {
+  margin-bottom: 4.8em !important;
+}
+[mr05] {
+  margin-right: 0.6em !important;
+}
+[mr1] {
+  margin-right: 1.2em !important;
+}
+[mr2] {
+  margin-right: 2.4em !important;
+}
+[ml05] {
+  margin-left: 0.6em !important;
+}
+[ml1] {
+  margin-left: 1.2em !important;
+}
+[ml2] {
+  margin-left: 2.4em !important;
+}
 
 .container-parent {
   width: 100%;
@@ -245,7 +329,6 @@ svg {
   padding: 2.4em;
 }
 
-
 @media only screen and (max-width: 1440px) {
   .container-parent {
     width: 100%;
@@ -255,18 +338,30 @@ svg {
     width: 100%;
     padding: 2.4em;
   }
-  [half] { width: calc(50% - 2.4em); }
-  [third] { width: calc(33% - 2.4em); }
-  [thirdtwo] { width: calc(66% - 2.4em) }
+  [half] {
+    width: calc(50% - 2.4em);
+  }
+  [third] {
+    width: calc(33% - 2.4em);
+  }
+  [thirdtwo] {
+    width: calc(66% - 2.4em);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-  [third] { width: calc(50% - 2.4em) }
-  [thirdtwo] { width: calc(50% - 2.4em) }
+  [third] {
+    width: calc(50% - 2.4em);
+  }
+  [thirdtwo] {
+    width: calc(50% - 2.4em);
+  }
 }
 @media only screen and (max-width: 1023px) {
-  [hide-responsive] { display: none; }
+  [hide-responsive] {
+    display: none;
   }
+}
 @media only screen and (max-width: 768px) {
   .container-parent {
     width: 100%;
@@ -276,15 +371,36 @@ svg {
     width: 100%;
     padding: 2.4em;
   }
-  [half] { width: 100%; }
-  [third] { width: 100%; }
-  [thirdtwo] { width: 100%; }
-  [mb1] { margin-bottom: 0.6em!important; }
-  [mr1] { margin-right: 0.6em!important; }
-  [mr2] { margin-right: 1.2em!important; }
-  [row-reverse-responsive] { flex-direction: row-reverse; }
-  [column-reverse-responsive] { flex-direction: column-reverse; }
-  [column] > svg { width: 75%; max-width: 75%; object-fit: contain; margin-top: 4.8em;}
+  [half] {
+    width: 100%;
+  }
+  [third] {
+    width: 100%;
+  }
+  [thirdtwo] {
+    width: 100%;
+  }
+  [mb1] {
+    margin-bottom: 0.6em !important;
+  }
+  [mr1] {
+    margin-right: 0.6em !important;
+  }
+  [mr2] {
+    margin-right: 1.2em !important;
+  }
+  [row-reverse-responsive] {
+    flex-direction: row-reverse;
+  }
+  [column-reverse-responsive] {
+    flex-direction: column-reverse;
+  }
+  [column] > svg {
+    width: 75%;
+    max-width: 75%;
+    object-fit: contain;
+    margin-top: 4.8em;
+  }
 }
 @media only screen and (max-width: 414px) {
   .container-parent {
@@ -301,11 +417,20 @@ svg {
     padding-bottom: 0;
   }
   h1 {
-    margin-bottom:0.6em;
+    margin-bottom: 0.6em;
   }
-  [mb2] { margin-bottom: 1.2em!important; }
-  [column] > svg { width: 100%; max-width: 100%; object-fit: contain; margin-top: 2.4em;}
-  [hide-mobile] { display: none; }
+  [mb2] {
+    margin-bottom: 1.2em !important;
+  }
+  [column] > svg {
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-top: 2.4em;
+  }
+  [hide-mobile] {
+    display: none;
+  }
 }
 </style>
 

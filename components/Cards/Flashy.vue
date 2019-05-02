@@ -2,7 +2,7 @@
   <section class="card" flex column justify-center align-center>
     <a target="blank" :href="link" :download="linkFileName" v-show-only-children="!link">
       <div class="picture" flex column justify-center align-center>
-        <img :src="thumbnail" :alt="thumbnailName"/>
+        <img :src="thumbnail" :alt="thumbnailName">
       </div>
       <div class="title" flex column justify-center align-center>
         <h3>{{ title }}</h3>
@@ -26,7 +26,7 @@ export default {
     link: String,
     linkFileName: String
   }
-}
+};
 </script>
 
 <style scoped>
@@ -58,7 +58,7 @@ img {
   height: 40%;
   padding: 1.2em;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
 }
 
 .card {
@@ -66,7 +66,7 @@ img {
   height: 300px;
   border-radius: 0.3em;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
   margin: 1.2em 1.2em 2.6em 1.2em;
 }
@@ -79,14 +79,12 @@ img {
 }
 
 .card:hover {
-  transition: calc(var(--animation-speed) * 0.1s) ease;
   box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.07);
 }
 
 .card:hover .picture {
-  transition: calc(var(--animation-speed) * 0.1s) ease;
   border-bottom: solid 16px #9452ff;
-  background-color: #5D28B2;
+  background-color: #5d28b2;
   background-color: var(--lighter-purple-hover);
 }
 
@@ -96,7 +94,7 @@ img {
   }
 
   img {
-    margin-bottom:1.4em;
+    margin-bottom: 1.4em;
   }
 }
 
@@ -110,7 +108,7 @@ img {
   .card {
     margin: 1.8em;
   }
-  
+
   img {
     width: 55%;
   }

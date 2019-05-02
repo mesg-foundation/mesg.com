@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Button from '~/components/Button'
+import Button from "~/components/Button";
 
 export default {
   components: {
@@ -41,7 +41,7 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -53,7 +53,7 @@ export default {
   border-radius: 0.3em;
   padding: 2.4em;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
 }
 

@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header
-      id="introduction" class="dark"
+      id="introduction"
+      class="dark"
       :schema="schema"
       :title="title"
       :description="description"
@@ -12,23 +13,24 @@
 </template>
 
 <script>
-import EngineStory from '~/components/EngineStory'
-import CTAMarket from '~/components/cta/Market'
-import Header from '~/components/Header'
-import SchemaEngine from '~/components/schema/Engine'
-import page from './page'
+import EngineStory from "~/components/EngineStory";
+import CTAMarket from "~/components/cta/Market";
+import Header from "~/components/Header";
+import SchemaEngine from "~/components/schema/Engine";
+import page from "./page";
 export default {
   components: {
     Header,
     EngineStory,
     CTAMarket
   },
-  mixins:[
+  mixins: [
     page({
       title: "MESG Engine",
-      description: "Connect and automate divergent tech with the MESG Engine. Now you can gain control over the flow of data and level of security between your whole stack of connected systems.",
+      description:
+        "Connect and automate divergent tech with the MESG Engine. Now you can gain control over the flow of data and level of security between your whole stack of connected systems.",
       schema: SchemaEngine
     })
   ]
-}
+};
 </script>

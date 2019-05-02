@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header
-      id="introduction" class="dark"
+      id="introduction"
+      class="dark"
       :schema="schema"
       :title="title"
       :description="description"
@@ -12,11 +13,11 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import FAQ from '~/components/schema/FAQ'
-import Faq from '~/components/Faq'
-import CTAContact from '~/components/cta/Contact'
-import page from './page'
+import Header from "~/components/Header";
+import FAQ from "~/components/schema/FAQ";
+import Faq from "~/components/Faq";
+import CTAContact from "~/components/cta/Contact";
+import page from "./page";
 export default {
   components: {
     Header,
@@ -25,10 +26,11 @@ export default {
   },
   mixins: [
     page({
-      title: 'Frequently Asked Questions',
-      description: 'Below are some common questions and answers about MESG and the MESG Network.',
+      title: "Frequently Asked Questions",
+      description:
+        "Below are some common questions and answers about MESG and the MESG Network.",
       schema: FAQ
     })
   ]
-}
+};
 </script>

@@ -1,17 +1,22 @@
 <template>
   <div v-if="usecase">
-    <Header :usecase="usecase" id="introduction" class="dark"
+    <Header
+      :usecase="usecase"
+      id="introduction"
+      class="dark"
       :title="title"
       :description="description"
-      :schema="schema" 
+      :schema="schema"
       backTitle="Back to showcase"
-      backLink="/showcases" />
+      backLink="/showcases"
+    />
     <Progress :usecase="usecase" id="progress" class="white"/>
     <CTANext id="next" class="dark"/>
   </div>
   <div v-else>
     <Header
-      id="introduction" class="dark"
+      id="introduction"
+      class="dark"
       :schema="schema404"
       title="Hey dude,"
       description="Looks like that page doesn't exist."
@@ -23,13 +28,13 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import Progress from '~/components/Progress'
-import CTANext from '~/components/cta/Next'
-import Header from '~/components/Header'
-import Schema404 from '~/components/schema/404'
-import SchemaNutshell from '~/components/schema/Nutshell'
-import page from '../page'
+import { mapState } from "vuex";
+import Progress from "~/components/Progress";
+import CTANext from "~/components/cta/Next";
+import Header from "~/components/Header";
+import Schema404 from "~/components/schema/404";
+import SchemaNutshell from "~/components/schema/Nutshell";
+import page from "../page";
 
 export default {
   components: {
@@ -45,16 +50,17 @@ export default {
       schema: SchemaNutshell
     }))
   ],
-  
-  computed: {
-    ...mapState([ 'usecases' ]),
 
-    usecase () {
-      return this.usecases
-        .filter(x => x.id === this.$route.params.id)[0]
+  computed: {
+    ...mapState(["usecases"]),
+
+    usecase() {
+      return this.usecases.filter(x => x.id === this.$route.params.id)[0];
     },
 
-    schema404 () { return Schema404 }
+    schema404() {
+      return Schema404;
+    }
   }
-}
+};
 </script>

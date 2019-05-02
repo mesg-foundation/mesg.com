@@ -4,9 +4,15 @@
       <div class="picture-hover">
         <nav class="social" flex row justify-center align-center>
           <a
-            v-for="network in socialNetworks" :key="network.link"
+            v-for="network in socialNetworks"
+            :key="network.link"
             class="social-networks"
-            :href="network.link" target="_blank" flex justify-center align-center>
+            :href="network.link"
+            target="_blank"
+            flex
+            justify-center
+            align-center
+          >
             <i class="fab" :class="`fa-${network.icon}`"></i>
           </a>
         </nav>
@@ -19,7 +25,9 @@
         <div class="Separator-dotted"></div>
       </div>
       <nav>
-        <a v-for="(company, i) in companies" :key="i"><img :src="company.src" class="logo"/></a>
+        <a v-for="(company, i) in companies" :key="i">
+          <img :src="company.src" class="logo">
+        </a>
       </nav>
     </div>
   </div>
@@ -35,14 +43,13 @@ export default {
     socialNetworks: Array
   },
   computed: {
-    style () {
+    style() {
       return {
         backgroundImage: `url(${this.pictureUrl})`
-      }
+      };
     }
-
   }
-}
+};
 </script>
 
 <style scoped>
@@ -51,11 +58,10 @@ export default {
   object-fit: contain;
   border-radius: 10px;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 .Rectangle-white:hover {
-  transition: calc(var(--animation-speed) * 0.1s) ease;
   box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.07);
 }
 
@@ -71,7 +77,7 @@ export default {
   border-radius: 10px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   border-top-right-radius: 20% 50%;
   border-bottom-right-radius: 20% 50%;
   overflow: hidden;
@@ -79,21 +85,20 @@ export default {
 
 .picture-hover {
   display: none;
-  background: rgba(73,30,140,0.8);
+  background: rgba(73, 30, 140, 0.8);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  animation: Opac calc(var(--animation-speed) * 0.1s) ease;
 }
 @keyframes Opac {
   from {
     opacity: 0;
-    }
+  }
   to {
     opacity: 1;
-    }
+  }
 }
 
 .logo {
@@ -106,7 +111,7 @@ export default {
   border: 0.5px #d6d0e7 dotted;
   width: 100%;
   height: 0.05em;
-  margin-top:0.6em;
+  margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
 
@@ -128,24 +133,22 @@ export default {
   height: 36px;
   width: 36px;
   background-color: #ffffff;
-  background-color: var(--white-content);
-  border-radius:50%;
-  animation: Bubble calc(var(--animation-speed) * 0.2s) ease-out;
+  background-color: var(--white);
+  border-radius: 50%;
 }
 @keyframes Bubble {
   from {
     opacity: 0;
     transform: scale(0);
-    }
+  }
   to {
     opacity: 1;
     transform: scale(1);
-    }
+  }
 }
 
 .social-networks:hover {
-  opacity:0.8;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 414px) {

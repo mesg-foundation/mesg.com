@@ -7,7 +7,9 @@
           <div class="separator-orange" mb2></div>
         </div>
         <nav flex row justify-center align-center>
-          <MiniCard v-for="feature in dotFeatures" :key="feature.id"
+          <MiniCard
+            v-for="feature in dotFeatures"
+            :key="feature.id"
             :title="feature.title"
             :thumbnail="feature.icon"
             :actionLink="feature.link"
@@ -19,16 +21,16 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import MiniCard from '~/components/Cards/Mini'
+import { mapState } from "vuex";
+import MiniCard from "~/components/Cards/Mini";
 
 export default {
   components: {
     MiniCard
   },
 
-  computed: mapState([ 'dotFeatures' ])
-}
+  computed: mapState(["dotFeatures"])
+};
 </script>
 
 <style scoped>

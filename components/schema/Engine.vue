@@ -1,3 +1,3 @@
 <template>
-  <img src="~/assets/svg-rework/engine.svg" alt="Engine"/>
+  <img src="~/assets/svg-rework/engine.svg" alt="Engine">
 </template>

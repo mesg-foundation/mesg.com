@@ -1,3 +1,3 @@
 <template>
-  <img src="~/assets/Algorithmic-token.svg" alt="MESG Token"/>
+  <img src="~/assets/Algorithmic-token.svg" alt="MESG Token">
 </template>

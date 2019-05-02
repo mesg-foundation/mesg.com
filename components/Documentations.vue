@@ -7,12 +7,15 @@
       </div>
       <div class="container-child" flex row justify-center spacebetween>
         <nav flex row justify-center align-center>
-          <FlashyCard v-for="(doc, index) in documentations" :key="index"
+          <FlashyCard
+            v-for="(doc, index) in documentations"
+            :key="index"
             :title="doc.title"
             :thumbnail="doc.thumbnail"
             :thumbnailName="doc.subName"
             :link="doc.url"
-            :linkFileName="doc.name" />
+            :linkFileName="doc.name"
+          />
         </nav>
       </div>
     </div>
@@ -20,16 +23,16 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import FlashyCard from '~/components/Cards/Flashy'
+import { mapState } from "vuex";
+import FlashyCard from "~/components/Cards/Flashy";
 
 export default {
   components: {
     FlashyCard
   },
 
-  computed: mapState([ 'documentations' ])
-}
+  computed: mapState(["documentations"])
+};
 </script>
 
 <style scoped>

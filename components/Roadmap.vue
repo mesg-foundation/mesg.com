@@ -9,16 +9,21 @@
             </div>
             <ul class="quarters" flex column justify-center>
               <li v-for="quarter in year.quarters" :key="quarter.name" class="list-quarter">
-                <p class="Q" flex column justify-center align-center mb05><strong>{{ quarter.name }}</strong></p>
+                <p class="Q" flex column justify-center align-center mb05>
+                  <strong>{{ quarter.name }}</strong>
+                </p>
                 <div class="timeline" flex column>
                   <div class="content" mb05>
                     <p class="user" flex column align-center>{{ quarter.users }}</p>
                     <div v-for="goal in quarter.goals" :key="goal.title">
                       <h4 mb05 mt1>{{ goal.title }}</h4>
                       <ul class="list">
-                        <li v-for="sub in goal.subgoals" :key="sub" mb05 class="list-content">
-                          {{ sub }}
-                        </li>
+                        <li
+                          v-for="sub in goal.subgoals"
+                          :key="sub"
+                          mb05
+                          class="list-content"
+                        >{{ sub }}</li>
                       </ul>
                     </div>
                   </div>
@@ -32,7 +37,9 @@
             <h4 mb05 class="titlefinal">MESG Enterprise Solutions</h4>
             <ul class="list">
               <li class="list-final" mb05>A profit-driven subsidiary of the MESG Foundation</li>
-              <li class="list-final">Delivering the global standard for the enterprise adoption of decentralized technology</li>
+              <li
+                class="list-final"
+              >Delivering the global standard for the enterprise adoption of decentralized technology</li>
             </ul>
           </div>
         </div>
@@ -42,26 +49,25 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex";
 
 export default {
-  computed: mapState([ 'roadmap' ])
-}
+  computed: mapState(["roadmap"])
+};
 </script>
 
 <style scoped>
-
 .container-parent {
-  padding-top:0;
+  padding-top: 0;
 }
 
 .content {
   position: relative;
-  margin-top:-64px;
-  padding-left:1.2em;
+  margin-top: -64px;
+  padding-left: 1.2em;
 }
 
-ul{
+ul {
   width: 100%;
   max-width: 600px;
   list-style: none;
@@ -78,11 +84,11 @@ li.list-quarter::before {
   height: 0;
 }
 ul.quarters {
-  padding-left:0;
+  padding-left: 0;
 }
 
 .timeline-years {
-  padding-left:0;
+  padding-left: 0;
 }
 
 h2 {
@@ -103,43 +109,43 @@ h2 {
 }
 
 .Q {
-  opacity:1;
-  font-family: 'QuickSand', sans-serif;
+  opacity: 1;
+  font-family: "QuickSand", sans-serif;
   font-style: medium;
   font-size: 1.6em;
-  color:#ffa744;
-  color:var(--Orange-cta);
+  color: #ffa744;
+  color: var(--Orange-cta);
   width: 60px;
   height: 60px;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  position:relative;
+  position: relative;
 }
 .list {
   padding-left: 1.2em;
 }
 .list-content {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   font-weight: normal;
   font-size: 1em;
-  opacity:0.65;
+  opacity: 0.65;
 }
 .list-final {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   font-weight: normal;
   font-size: 1em;
-  opacity:1;
-  color:#57577e;
+  opacity: 1;
+  color: #57577e;
   color: var(--dark-grey);
 }
 
@@ -149,19 +155,19 @@ h2 {
 }
 .arrival {
   border-radius: 1em;
-  padding:2.4em;
+  padding: 2.4em;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
 .titlefinal {
-  color:#ffa744;
-  color:var(--Orange-cta);
+  color: #ffa744;
+  color: var(--Orange-cta);
 }
 .user {
-  opacity:1;
-  color:#ffffff;
-  color:var(--white-content);
+  opacity: 1;
+  color: #ffffff;
+  color: var(--white);
   background-color: #ffa744;
   background-color: var(--Orange-cta);
   border-radius: 3em;
@@ -181,8 +187,8 @@ h2 {
   content: "";
   width: 15px;
   height: 15px;
-  left:-9px;
-  top:0;
+  left: -9px;
+  top: 0;
   border-radius: 100%;
   border: solid 2px #9452ff;
   position: absolute;
@@ -192,8 +198,8 @@ h2 {
   content: "";
   width: 15px;
   height: 15px;
-  left:-9px;
-  bottom:0px;
+  left: -9px;
+  bottom: 0px;
   border-radius: 100%;
   border: solid 2px #9452ff;
   position: absolute;
@@ -234,5 +240,4 @@ h2 {
     width: 100%;
   }
 }
-
 </style>

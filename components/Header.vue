@@ -6,11 +6,19 @@
         {{ backTitle }}
       </nuxt-link>
     </nav>
-    <section class="content" :class="{ fullHeight }" flex align-center  row space-between column-reverse-responsive>
+    <section
+      class="content"
+      :class="{ fullHeight }"
+      flex
+      align-center
+      row
+      space-between
+      column-reverse-responsive
+    >
       <div class="info">
         <h1 class="title" v-html="title"></h1>
         <div class="description">
-          <slot v-if="$slots.default" />
+          <slot v-if="$slots.default"/>
           <div v-else>
             <p v-html="description"></p>
             <p v-if="smallDescription" class="small" mt1>{{ smallDescription }}</p>
@@ -18,20 +26,31 @@
         </div>
         <nav v-if="actionTitle || $slots.action" flex mt2 class="actions">
           <slot name="action">
-            <Button v-if="actionLink" :href="actionLink" target="_blank" primary :icon="actionIcon">{{ actionTitle }}</Button>
-            <Button v-else @click="$emit('actionClicked')" primary :icon="actionIcon">{{ actionTitle }}</Button>
+            <Button
+              v-if="actionLink"
+              :href="actionLink"
+              target="_blank"
+              primary
+              :icon="actionIcon"
+            >{{ actionTitle }}</Button>
+            <Button
+              v-else
+              @click="$emit('actionClicked')"
+              primary
+              :icon="actionIcon"
+            >{{ actionTitle }}</Button>
           </slot>
         </nav>
       </div>
       <div class="schema">
-        <component column justify-center align-center :is="schema" />
+        <component column justify-center align-center :is="schema"/>
       </div>
     </section>
   </header>
 </template>
 
 <script>
-import Button from '~/components/Button'
+import Button from "~/components/Button";
 
 export default {
   components: {
@@ -72,7 +91,7 @@ export default {
       type: Boolean
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -87,14 +106,15 @@ export default {
       margin-right: 60px;
 
       h1.title {
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
         font-size: 38px;
         font-weight: 800;
         color: #0e061c;
       }
 
-      .description, .description p {
-        font-family: 'Open Sans';
+      .description,
+      .description p {
+        font-family: "Open Sans";
         font-size: 20px;
         font-weight: 400;
         color: #3c3940;
@@ -110,7 +130,6 @@ export default {
 .small {
   font-size: 1em;
 }
-
 
 // .schema {
 //   max-height: calc(30vh - 15em);
@@ -174,5 +193,4 @@ export default {
 //      padding-top: 0em;
 //    }
 //  }
-
 </style>

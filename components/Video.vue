@@ -5,8 +5,8 @@
     height="640"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+    allowfullscreen
+  ></iframe>
 </template>
 
 <script>
@@ -14,6 +14,6 @@ export default {
   props: {
     src: String
   }
-}
+};
 </script>
 

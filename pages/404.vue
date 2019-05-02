@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header
-      id="introduction" class="dark"
+      id="introduction"
+      class="dark"
       :schema="schema"
       title="Hey dude,"
       :description="description"
@@ -13,9 +14,9 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Schema404 from '~/components/schema/404'
-import page from './page'
+import Header from "~/components/Header";
+import Schema404 from "~/components/schema/404";
+import page from "./page";
 export default {
   components: { Header },
   mixins: [
@@ -25,5 +26,5 @@ export default {
       schema: Schema404
     })
   ]
-}
+};
 </script>

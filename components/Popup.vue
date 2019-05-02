@@ -11,10 +11,10 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('input', false)
+      this.$emit("input", false);
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -32,8 +32,8 @@ export default {
 }
 
 .popup::before {
-  content: '';
-  background-color: rgba(0,0,0,0.75);
+  content: "";
+  background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
   height: 100%;
   display: block;

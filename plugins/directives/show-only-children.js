@@ -3,7 +3,7 @@ import Vue from 'vue'
 const directive = {
   bind(el, bindings) {
     const showOnyChildren = bindings.value
-  
+
     if (showOnyChildren) {
       Vue.nextTick(() => {
         const parentElement = el.parentElement

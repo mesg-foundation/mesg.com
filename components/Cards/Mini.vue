@@ -22,7 +22,7 @@ export default {
     },
     actionLink: String
   }
-}
+};
 </script>
 
 <style scoped>
@@ -36,18 +36,17 @@ p {
 }
 
 .card {
-  border-radius:0.3em;
+  border-radius: 0.3em;
   text-decoration: none;
   width: 200px;
   height: 170px;
-  padding:1.8em;
+  padding: 1.8em;
 }
 
 .card:hover {
   position: relative;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
   background-color: #ffffff;
-  background-color: var(--white-content);
+  background-color: var(--white);
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.07);
 }
 

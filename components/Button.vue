@@ -1,25 +1,17 @@
 <template>
-  <button v-if="submit"
-    type="submit"
-    :class="classes">
+  <button v-if="submit" type="submit" :class="classes">
     <slot></slot>
     <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </button>
-  <a v-else-if="href"
-    :href="href"
-    :class="classes">
+  <a v-else-if="href" :href="href" :class="classes">
     <slot></slot>
     <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </a>
-  <nuxt-link v-else-if="to"
-    :to="to"
-    :class="classes">
+  <nuxt-link v-else-if="to" :to="to" :class="classes">
     <slot></slot>
     <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </nuxt-link>
-  <a v-else
-    @click="$emit('click')"
-    :class="classes">
+  <a v-else @click="$emit('click')" :class="classes">
     <slot></slot>
     <i v-if="icon" :class="`fa fa-${icon}`"></i>
   </a>
@@ -31,37 +23,41 @@ export default {
     href: String,
     to: [Object, String],
     submit: Boolean,
-    small: Boolean,
     primary: Boolean,
     secondary: Boolean,
     white: Boolean,
-    outline: Boolean,
-    icon: String
+    outline: Boolean
   },
   computed: {
-    classes () {
+    classes() {
       return {
-        'btn--small': this.small,
-        'btn--primary': this.primary,
-        'btn--secondary': this.secondary,
-        'btn--white': this.white,
-        'btn--outline': this.outline
-      }
+        "btn--primary": this.primary,
+        "btn--secondary": this.secondary,
+        "btn--white": this.white,
+        "btn--outline": this.outline
+      };
+    },
+    icon() {
+      return this.secondary ? "arrow-right" : null;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-a, button {
-  border-radius: 0.3em;
-  font-size: 1em;
+a,
+button {
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
   font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: center;
-  padding: 1em 2em;
+  padding: 11px;
   text-decoration: none;
-  cursor: pointer;
-  position: relative;
 }
 
 i {
@@ -70,55 +66,32 @@ i {
   text-align: center;
 }
 
-.btn--small {
-  border-radius: 0.3em;
-  padding: 0.1em 2em;
-}
-.btn--small:hover {
-  color: #ffffff;
-  color: var(--white-content);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+.btn--primary {
+  color: var(--white);
+  background-color: var(--purple);
 }
 
 .btn--secondary {
-  color: #fff;
-  background-color: var(--purple);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
-
-  &:hover {
-    background-color: var(--lighter-purple);
-  }
+  color: var(--purple);
 }
 
 .btn--white {
-  background-color: #ffffff;
-  background-color: var(--white-content);
-  border: solid 2px #ffffff;
-}
-.btn--white:hover {
-  opacity:0.90;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+  color: var(--purple);
+  background-color: var(--white);
 }
 
 .btn--outline {
-  color: #ffa744;
-  color: var(--Orange-cta);
-  border: solid 2px #ffa744;
-}
-.btn--outline:hover {
-  color: #ffffff;
-  color: var(--white-content);
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+  color: var(--purple);
+  border: solid 2px var(--purple);
 }
 
 @media only screen and (max-width: 768px) {
   a {
     font-size: 1em;
   }
-@media only screen and (max-width: 414px) {
-    a, button {
+  @media only screen and (max-width: 414px) {
+    a,
+    button {
       font-size: 0.8em;
     }
   }
