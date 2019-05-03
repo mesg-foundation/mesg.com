@@ -2,15 +2,8 @@
   <div>
     <style>
   :root {
-    --dark-purple: #251440;
     --purple: #491e8c;
-    --lighter-purple: #9452ff;
-    --lighter-purple-hover: #854ae5;
-    --Orange-cta: #ffa744;
-    --Orange-cta-hover: #e5963d;
-    --dark-grey: #57577e;
-    --lighter-grey: #d6d0e7;
-    --pale-white: #fafafe;
+    --light-purple: #bdafd6;
     --white: #ffffff;
     --title-color: #0e061c;
     --text-color: #3c3940;
@@ -105,7 +98,20 @@ li {
 }
 </style>
 
-<style>
+<style lang="scss">
+$margin: 20px;
+
+@function pow($base, $exponent) {
+  $result: 1;
+  @if $exponent == 0 {
+    @return $result;
+  }
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+
 /* Structure */
 [flex] {
   display: flex;
@@ -142,35 +148,38 @@ li {
 [half] {
   width: 50%;
 }
-[mt1] {
-  margin-top: 20px !important;
-}
-[mt2] {
-  margin-top: 40px !important;
-}
-[mb1] {
-  margin-bottom: 20px !important;
-}
-[mb2] {
-  margin-bottom: 40px !important;
-}
-[mr1] {
-  margin-right: 20px !important;
-}
-[mr2] {
-  margin-right: 40px !important;
-}
-[ml1] {
-  margin-left: 20px !important;
-}
-[ml2] {
-  margin-left: 40px !important;
-}
-[p1] {
-  padding: 20px !important;
-}
-[p2] {
-  padding: 40px !important;
+@for $i from 1 through 4 {
+  $val: $margin * pow(2, $i - 1);
+  [m#{$i}] {
+    margin: $val !important;
+  }
+  [mt#{$i}] {
+    margin-top: $val !important;
+  }
+  [mb#{$i}] {
+    margin-bottom: $val !important;
+  }
+  [mr#{$i}] {
+    margin-right: $val !important;
+  }
+  [ml#{$i}] {
+    margin-left: $val !important;
+  }
+  [p#{$i}] {
+    padding: $val !important;
+  }
+  [pt#{$i}] {
+    padding-top: $val !important;
+  }
+  [pb#{$i}] {
+    padding-bottom: $val !important;
+  }
+  [pr#{$i}] {
+    padding-right: $val !important;
+  }
+  [pl#{$i}] {
+    padding-left: $val !important;
+  }
 }
 </style>
 

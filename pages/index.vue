@@ -1,25 +1,25 @@
 <template>
   <div>
-    <Header :schema="schema" :title="title" :description="description">
+    <Header mb3 :picture="require('~/assets/home.png')" :title="title" :description="description">
       <div flex row>
-        <Button to="/token" primary>Enterprise Solutions</Button>
+        <Button mr2 to="/token" primary>Enterprise Solutions</Button>
         <Button to="/token" secondary>Get Started</Button>
       </div>
     </Header>
 
-    <section id="partners">
+    <section id="partners" mb3>
       <Container flex column align-center>
-        <div mb2 flex row space-around>
-          <img src alt>
-          <img src alt>
-          <img src alt>
-          <img src alt>
+        <div mb2>
+          <img mr2 src="~/assets/partners/windprotocol.png" alt="windprotocol">
+          <img mr2 src="~/assets/partners/yuser.png" alt="yuser">
+          <img mr2 src="~/assets/partners/beachhead.png" alt="beachhead">
+          <img src="~/assets/partners/yellow.png" alt="yellow">
         </div>
         <Button secondary>Our partners</Button>
       </Container>
     </section>
 
-    <section id="intro">
+    <section id="intro" mb3>
       <Container flex column align-center>
         <h2 mb2>How MESG accelerates app development</h2>
         <Card>
@@ -28,48 +28,27 @@
       </Container>
     </section>
 
-    <section id="products">
+    <section id="products" mb3>
       <Container flex column align-center>
         <h2 mb1>Our products</h2>
         <p
           mb2
           class="text-center"
         >MESG’s Engine and Marketplace work in tandem to offer an open economy of limitless app and workflow integrations that all work together right out of the box.</p>
-      </Container>
-      <Container>
         <div flex row space-between>
-          <Card p2 mb2 mr1 flex column space-between>
-            <img src alt>
-            <h3 mb1>MESG Engine</h3>
-            <p
-              mb2
-            >The MESG Engine powers connectivity between Modules and other devices and applications. Control the flow of data and level of security between your whole stack of connected technologies.</p>
-            <span flex></span>
-            <ul mb2>
-              <li mb1>Event-driven architecture</li>
-              <li mb1>Connect divergent tech</li>
-              <li mb1>Connect divergent tech</li>
-            </ul>
-            <Button outline>Connect divergent tech</Button>
-          </Card>
-          <Card p2 mb2 ml1 flex column space-between>
-            <img src alt>
-            <h3 mb1>MESG Marketplace</h3>
-            <p
-              mb2
-            >A decentralized marketplace to connect buyers looking to save time in development with sellers earning tokens for the reuse of their code.</p>
-            <span flex></span>
-            <ul mb2>
-              <li mb1>Reuse your work</li>
-              <li mb1>Earn while you sleep</li>
-              <li mb1>Economy of development</li>
-            </ul>
-            <Button outline>Discover the MESG Marketplace</Button>
+          <Card v-for="product in products" :key="product.id" :id="product.id" p2 mb2 flex column>
+            <img mb1 :src="product.img" :alt="product.title">
+            <h3 mb1>{{ product.title }}</h3>
+            <p mb2 v-html="product.description"/>
+            <List :items="product.features"/>
+            <Button outline>{{ product.action }}</Button>
           </Card>
         </div>
-        <Card p2>
+        <Card p2 id="token">
           <div flex row>
-            <img src alt>
+            <div>
+              <img src="~/assets/product/token/token.png" alt="token">
+            </div>
             <div>
               <h3 mb1>Build Modules, Earn Tokens</h3>
               <p>Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
@@ -81,31 +60,95 @@
         </Card>
       </Container>
     </section>
+
+    <section id="articles" mb3>
+      <Container flex column align-center>
+        <h2 mb2>In the news</h2>
+        <div flex row space-between>
+          <Card v-for="article in articles" :key="article.id" :id="article.id" p1 mb2 bordered>
+            <img mb1 :src="article.img" :alt="article.title">
+            <h4 mb1>{{ article.title }}</h4>
+          </Card>
+        </div>
+      </Container>
+    </section>
+
+    <section id="enterprise" mb3>
+      <Container>
+        <PrimaryCallToAction
+          title="Streamline your business with MESG"
+          description="Optimize processes and automate workflows between your whole stack of connected systems."
+          :links="[{ to: '/', title: 'Enterprise solutions' }]"
+        />
+      </Container>
+    </section>
   </div>
 </template>
 
 
 <script>
+import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Card from "~/components/Card";
+import List from "~/components/List";
+import PrimaryCallToAction from "~/components/callToAction/Primary";
 import page from "./page";
+
 export default {
   components: {
     Header,
     Container,
     Button,
     Video,
-    Card
+    Card,
+    List,
+    PrimaryCallToAction
   },
   mixins: [
     page({
       title: "The new economy of app development",
       description:
-        "Build applications connecting reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine. And get paid for it."
+        "Build apps or autonomous workflows with reusable, shareable integrations connecting any service, app, blockchain or decentralized network."
     })
-  ]
+  ],
+  computed: {
+    ...mapGetters({
+      products: "products",
+      articles: "articles"
+    })
+  }
 };
 </script>
+
+<style lang="scss" scoped>
+#partners img {
+  height: 40px;
+  width: auto;
+}
+
+#products .card > img {
+  height: 160px;
+  width: 160px;
+  max-width: 100%;
+}
+
+#token img {
+  width: 100px;
+  height: 100px;
+}
+
+#articles img {
+  height: 20px;
+  width: auto;
+}
+
+#articles .card {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+</style>

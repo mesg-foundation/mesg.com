@@ -74,6 +74,7 @@ i {
 
 .btn--secondary {
   color: var(--purple);
+  text-align: left;
 }
 
 .btn--white {

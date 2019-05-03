@@ -1,14 +1,14 @@
 <template>
-  <header>
+  <header p3>
     <Container>
-      <div flex row>
+      <div flex row align-center space-between>
         <div>
           <h1 mb1 v-html="title"></h1>
           <p mb2 v-html="description"></p>
           <slot v-if="$slots.default"/>
         </div>
-        <div>
-          <component column justify-center align-center :is="schema"/>
+        <div ml2 v-if="picture">
+          <img :src="picture" :alt="title">
         </div>
       </div>
     </Container>
@@ -30,8 +30,8 @@ export default {
       type: String,
       required: true
     },
-    schema: {
-      type: Object
+    picture: {
+      type: String
     }
   }
 };
@@ -44,5 +44,11 @@ header {
 }
 p {
   font-size: 20px;
+}
+img {
+  height: 490px;
+  width: 490px;
+  max-width: 100%;
+  max-height: 490px;
 }
 </style>

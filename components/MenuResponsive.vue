@@ -195,7 +195,7 @@ a {
 .menu-nav.nuxt-link-active {
   opacity: 1;
   border-bottom-color: #9452ff;
-  border-bottom-color: var(--lighter-purple);
+  border-bottom-color: var(--light-purple);
 }
 
 @media only screen and (max-width: 1023px) {

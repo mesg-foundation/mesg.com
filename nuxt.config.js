@@ -1,6 +1,7 @@
 const { UnusedFilesWebpackPlugin } = require("unused-files-webpack-plugin")
 
 module.exports = {
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -35,6 +36,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' }
     ]
   },
+  css: [
+    '@/assets/style/variables.scss'
+  ],
   /*
   ** Customize the progress bar color
   */
