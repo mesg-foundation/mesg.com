@@ -36,5 +36,22 @@ export const getters = {
       { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png") },
       { id: "finance", title: "What’s Holding Back Blockchain Adoption? The Answer is Simple – Connectivity", img: require("~/assets/press/finance-magnates.png") },
     ]
+  },
+
+  externalLinks() {
+    return {
+      documentation: { title: 'Documentation', to: 'https://docs.mesg.com/', icon: 'doc' },
+      marketplace: { title: 'Marketplace', to: 'https://marketplace.mesg.com/', icon: 'marketplace' },
+      github: { title: 'Github', to: 'https://github.com/mesg-foundation/', icon: 'github' }
+    }
+  },
+
+  links() {
+    return {
+      enterprise: '/',
+      marketplace: '/',
+      foundation: '/',
+      getStarted: '/'
+    }
   }
 }
