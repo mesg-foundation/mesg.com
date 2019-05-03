@@ -82,6 +82,32 @@
         />
       </Container>
     </section>
+
+    <section id="discover" mb3>
+      <Container>
+        <SecondaryCallToAction
+          title="Discover more about MESG"
+          :left="{ title: 'MESG Marketplace', description: 'Speed up application development and earn from sharing your code.', link: 'Access MESG Marketplace', to: '/' }"
+          :right="{ title: 'MESG Foundation', description: 'MESG is developed for the MESG Foundation, a nonprofit organization.', link: 'Visit MESG Foundation', to: '/' }"
+        />
+      </Container>
+    </section>
+
+    <section id="get-started" mb3>
+      <Container>
+        <CardCallToAction
+          title="Discover more about MESG"
+          description="MESG is free to start and only takes moments to install. Build more with less effort."
+          action="Get Started"
+          to="/"
+          :links="[
+            { title: 'Documentation', to: 'https://docs.mesg.com/', icon: 'doc' },
+            { title: 'Marketplace', to: 'https://marketplace.mesg.com/', icon: 'marketplace' },
+            { title: 'Github', to: 'https://github.com/mesg-foundation/', icon: 'github' }
+          ]"
+        />
+      </Container>
+    </section>
   </div>
 </template>
 
@@ -95,6 +121,8 @@ import Video from "~/components/Video";
 import Card from "~/components/Card";
 import List from "~/components/List";
 import PrimaryCallToAction from "~/components/callToAction/Primary";
+import SecondaryCallToAction from "~/components/callToAction/Secondary";
+import CardCallToAction from "~/components/callToAction/Card";
 import page from "./page";
 
 export default {
@@ -105,7 +133,9 @@ export default {
     Video,
     Card,
     List,
-    PrimaryCallToAction
+    PrimaryCallToAction,
+    SecondaryCallToAction,
+    CardCallToAction
   },
   mixins: [
     page({
