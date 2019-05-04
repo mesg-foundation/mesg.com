@@ -2,7 +2,7 @@
   <div>
     <Header mb3 :picture="require('~/assets/home.png')" :title="title" :description="description">
       <div flex row>
-        <Button mr2 :to="links.enterprise" primary>Enterprise Solutions</Button>
+        <Button :to="links.enterprise" primary>Enterprise Solutions</Button>
         <Button :to="links.getStarted" secondary>Get Started</Button>
       </div>
     </Header>
@@ -40,6 +40,7 @@
             <img mb1 :src="product.img" :alt="product.title">
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description"/>
+            <span spacer/>
             <List :items="product.features"/>
             <Button outline>{{ product.action }}</Button>
           </Card>

@@ -4,11 +4,11 @@
       <div>
         <h3 mb1>{{title}}</h3>
         <p mb1>{{description}}</p>
-        <nav>
-          <router-link v-for="(link, i) in links" :key="i" :to="link.to">
+        <nav flex row space-between>
+          <Button v-for="(link, i) in links" :key="i" :to="link.to">
             <span v-if="link.icon">{{ link.icon }}</span>
             {{link.title}}
-          </router-link>
+          </Button>
         </nav>
       </div>
       <div>

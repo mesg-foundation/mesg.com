@@ -2,12 +2,12 @@
   <header p3>
     <Container>
       <div flex row align-center space-between>
-        <div>
+        <div half>
           <h1 mb1 v-html="title"></h1>
           <p mb2 v-html="description"></p>
           <slot v-if="$slots.default"/>
         </div>
-        <div ml2 v-if="picture">
+        <div half v-if="picture">
           <img :src="picture" :alt="title">
         </div>
       </div>
@@ -39,7 +39,11 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-image: linear-gradient(to bottom, #fff, #f2f0f7);
+  background-image: linear-gradient(
+    to bottom,
+    var(--white),
+    var(--light-background)
+  );
   // clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 0);
 }
 p {

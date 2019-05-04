@@ -5,8 +5,11 @@
     --purple: #491e8c;
     --light-purple: #bdafd6;
     --white: #ffffff;
+    --light-background: #f2f0f7;
     --title-color: #0e061c;
     --text-color: #3c3940;
+    --margin: 20px;
+    --width: 1020px;
   }
     </style>
     <Menu class="menu-bar"/>
@@ -96,11 +99,12 @@ li {
   font-weight: 600;
   color: var(--text-color);
 }
+img {
+  max-width: 100%;
+}
 </style>
 
 <style lang="scss">
-$margin: 20px;
-
 @function pow($base, $exponent) {
   $result: 1;
   @if $exponent == 0 {
@@ -119,9 +123,18 @@ $margin: 20px;
 [flex] > * {
   flex: 1;
 }
+[spacer] {
+  flex: 2;
+}
 [row] {
   flex-direction: row;
   flex-wrap: wrap;
+}
+[row] > * {
+  margin-right: calc(2 * var(--margin));
+}
+[row] > *:last-child {
+  margin-right: 0;
 }
 [column] {
   flex-direction: column;
@@ -146,10 +159,11 @@ $margin: 20px;
 }
 
 [half] {
-  width: 50%;
+  min-width: calc((var(--width) - 2 * var(--margin)) / 2);
+  max-width: 100%;
 }
 @for $i from 1 through 4 {
-  $val: $margin * pow(2, $i - 1);
+  $val: calc(var(--margin) * #{pow(2, $i - 1)});
   [m#{$i}] {
     margin: $val !important;
   }
@@ -186,5 +200,18 @@ $margin: 20px;
 <style>
 .text-center {
   text-align: center;
+}
+.with-background {
+  position: relative;
+}
+.with-background::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--margin) * 4);
+  bottom: calc(var(--margin) * 4);
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--light-background);
 }
 </style>

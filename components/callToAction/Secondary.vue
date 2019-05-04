@@ -43,11 +43,8 @@ export default {
 h3 {
   margin-bottom: 14px;
 }
-.item:first-child {
-  padding-right: 40px;
-}
 .item:last-child {
-  padding-left: 40px;
+  padding-left: 2 * var(--margin);
   border-left: solid 1px var(--light-purple);
 }
 </style>
