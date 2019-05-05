@@ -1,15 +1,13 @@
 <template>
   <header p3>
-    <Container>
-      <div flex row align-center space-between>
-        <div half>
-          <h1 mb1 v-html="title"></h1>
-          <p mb2 v-html="description"></p>
-          <slot v-if="$slots.default"/>
-        </div>
-        <div half v-if="picture">
-          <img :src="picture" :alt="title">
-        </div>
+    <Container flex row align-center space-between>
+      <div half>
+        <h1 mb1 v-html="title"></h1>
+        <p mb2 v-html="description"></p>
+        <slot v-if="$slots.default"/>
+      </div>
+      <div half v-if="picture">
+        <img :src="picture" :alt="title">
       </div>
     </Container>
   </header>

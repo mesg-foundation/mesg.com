@@ -12,6 +12,12 @@ export const getters = {
           { src: require("~/assets/product/engine/divergent-tech.png"), title: "Connect divergent tech", description: "MESG Modules can connect to nearly anything, including APIs, decentralized networks or standalone services. Then the MESG Engine manages interaction between all Modules and Applications." },
           { src: require("~/assets/product/engine/optimize.png"), title: "Optimize development hours", description: "The MESG Engine makes development easy by managing communication between all Modules, applications and devices on your behalf, resulting a development and maintenance process that’s far less time consuming." }
         ],
+        usecase: [
+          { src: require("~/assets/product/engine/multi-language.png"), title: "Multi-language apps", description: "Language differences between products, features and teams can cause big setbacks when building and maintaining products. Luckily, Modules featuring any programming language or data format can be managed by the MESG Engine." },
+          { src: require("~/assets/product/engine/fast-feature.png"), title: "Fast feature integration", description: "Most apps today are complex and highly interconnected, making updates challenging and inefficient. The MESG Engine allows features to be added, removed or updated without affecting the other parts of the application." },
+          { src: require("~/assets/product/engine/workflow.png"), title: "Autonomous workflows", description: "Events on difficult-to-reach technologies can be easily combined into powerful workflows using the MESG Engine. React to Ethereum transactions being processed. Deploy and manage sidechains. Automate bookkeeping with QuickBooks. The possibilities are endless. " },
+          { src: require("~/assets/product/engine/scalable.png"), title: "Easily-scalable apps", description: "All servers and local networks have limited bandwidth, and maintaining your own servers can be a costly endeavor. Soon, MESG will be decentralized, so applications can be distributed in an autonomous, trustless way, giving your apps effortless scalability." }
+        ],
         action: "Discover the MESG Engine"
       },
       {
@@ -49,9 +55,13 @@ export const getters = {
   links() {
     return {
       enterprise: '/',
+      engine: '/engine',
       marketplace: '/',
+      token: '/',
       foundation: '/',
-      getStarted: '/'
+      getStarted: '/',
+      showcase: '/',
+      partners: '/'
     }
   }
 }

@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2 mb2>{{ title }}</h2>
-    <div flex row space-between>
-      <div v-for="(item, i) in items" :key="i" class="item">
+    <div flex row space-between class="items">
+      <div half v-for="(item, i) in items" :key="i" class="item">
         <h3>{{ item.title }}</h3>
         <p mb2>{{ item.description }}</p>
         <Button secondary :to="item.to">{{ item.link }}</Button>
@@ -43,8 +43,16 @@ export default {
 h3 {
   margin-bottom: 14px;
 }
-.item:last-child {
-  padding-left: 2 * var(--margin);
-  border-left: solid 1px var(--light-purple);
+.items {
+  position: relative;
+}
+.items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  background-color: var(--light-purple);
 }
 </style>

@@ -15,7 +15,7 @@
           <img mr2 src="~/assets/partners/beachhead.png" alt="beachhead">
           <img src="~/assets/partners/yellow.png" alt="yellow">
         </div>
-        <Button secondary>Our partners</Button>
+        <Button secondary :to="links.partners">Our partners</Button>
       </Container>
     </section>
 
@@ -42,7 +42,7 @@
             <p mb2 v-html="product.description"/>
             <span spacer/>
             <List :items="product.features"/>
-            <Button outline>{{ product.action }}</Button>
+            <Button outline :to="links[product.id]">{{ product.action }}</Button>
           </Card>
         </div>
         <Card p2 id="token">
@@ -55,7 +55,7 @@
               <p>Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
             </div>
             <div>
-              <Button outline>Discover the MESG Token</Button>
+              <Button outline :to="links.token">Discover the MESG Token</Button>
             </div>
           </div>
         </Card>
@@ -100,7 +100,7 @@
           title="Discover more about MESG"
           description="MESG is free to start and only takes moments to install. Build more with less effort."
           action="Get Started"
-          to="/"
+          :to="links.getStarted"
           :links="[externalLinks.documentation, externalLinks.marketplace, externalLinks.github]"
         />
       </Container>

@@ -14,11 +14,13 @@
 
     <section id="features" mb3>
       <Container flex row space-between>
-        <div v-for="(feature, i) in engine.features" :key="i">
-          <img mb1 :src="feature.src" :alt="feature.title">
-          <h4 mb1>{{ feature.title }}</h4>
-          <p>{{ feature.description }}</p>
-        </div>
+        <TextWithIcon
+          v-for="(feature, i) in engine.features"
+          :key="i"
+          :src="feature.src"
+          :title="feature.title"
+          :text="feature.description"
+        />
       </Container>
     </section>
 
@@ -69,6 +71,17 @@
     <section id="usecase">
       <Container>
         <h2 mb2>MESG Engine Use Cases</h2>
+        <div flex row wrap>
+          <TextWithIcon
+            half
+            v-for="(usecase, i) in engine.usecase"
+            :key="i"
+            :src="usecase.src"
+            :title="usecase.title"
+            :text="usecase.description"
+          />
+        </div>
+        <Button secondary :to="links.showcase">App Showcase</Button>
       </Container>
     </section>
 
@@ -98,7 +111,7 @@
           title="Discover more about MESG"
           description="MESG is free to start and only takes moments to install. Build more with less effort."
           action="Get Started"
-          to="/"
+          :to="links.getStarted"
           :links="[externalLinks.documentation, externalLinks.marketplace, externalLinks.github]"
         />
       </Container>
@@ -116,6 +129,7 @@ import Card from "~/components/Card";
 import PrimaryCallToAction from "~/components/callToAction/Primary";
 import SecondaryCallToAction from "~/components/callToAction/Secondary";
 import CardCallToAction from "~/components/callToAction/Card";
+import TextWithIcon from "~/components/TextWithIcon";
 import page from "./page";
 
 export default {
@@ -126,7 +140,8 @@ export default {
     Card,
     PrimaryCallToAction,
     SecondaryCallToAction,
-    CardCallToAction
+    CardCallToAction,
+    TextWithIcon
   },
   mixins: [
     page({
@@ -149,10 +164,6 @@ export default {
 </script>
 
 <style>
-#features img {
-  height: 50px;
-  width: 50px;
-}
 #interoperability .container > p {
   max-width: 680px;
   margin: auto;

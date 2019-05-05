@@ -128,6 +128,8 @@ img {
 }
 [row] {
   flex-direction: row;
+}
+[wrap] {
   flex-wrap: wrap;
 }
 [row] > * {
@@ -158,6 +160,9 @@ img {
   justify-content: space-around;
 }
 
+[row] > [half]:nth-child(2) {
+  margin-right: 0;
+}
 [half] {
   min-width: calc((var(--width) - 2 * var(--margin)) / 2);
   max-width: 100%;
