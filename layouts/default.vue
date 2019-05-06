@@ -129,6 +129,9 @@ img {
 [row] {
   flex-direction: row;
 }
+[row][reverse] {
+  flex-direction: row-reverse;
+}
 [wrap] {
   flex-wrap: wrap;
 }
@@ -137,6 +140,12 @@ img {
 }
 [row] > *:last-child {
   margin-right: 0;
+}
+[row][reverse] > * {
+  margin-left: calc(2 * var(--margin));
+}
+[row][reverse] > *:last-child {
+  margin-left: 0;
 }
 [column] {
   flex-direction: column;

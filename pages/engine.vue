@@ -15,7 +15,7 @@
     <section id="features" mb3>
       <Container flex row space-between>
         <TextWithIcon
-          v-for="(feature, i) in engine.features"
+          v-for="(feature, i) in engine.features.secondary"
           :key="i"
           :src="feature.src"
           :title="feature.title"
@@ -34,36 +34,13 @@
       </Container>
       <div class="with-background">
         <Container>
-          <div mb4 flex row space-between>
-            <div half>
-              <img src="~/assets/product/engine/mesg-tech.png">
-            </div>
-            <Card half p2 column flex space-between>
-              <h3 mb1>Integrate complicated tech easily</h3>
-              <p mb2>
-                Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.
-                <br>
-                <br>The Engine manages and forwards events between all components so each component can stand on its own, making it simple to add, remove or update any component.
-              </p>
-              <span spacer/>
-              <Button outline :to="links.getStarted">Quick start</Button>
-            </Card>
-          </div>
-          <div flex row space-between>
-            <Card half p2 column flex space-between>
-              <h3 mb1>No wasted development hours</h3>
-              <p mb2>
-                A fundamental principle at MESG is DRY: Don’t Repeat Yourself. Core allows you to reuse any app component; and not just from your apps, but from the community’s apps too.
-                <br>
-                <br>After components are built, either keep them private, or share them and earn in the Marketplace.
-              </p>
-              <span spacer/>
-              <Button outline :to="links.marketplace">Go to the Marketplace</Button>
-            </Card>
-            <div half>
-              <img src="~/assets/product/engine/mesg-development.png">
-            </div>
-          </div>
+          <Feature
+            v-for="(feature, i) in engine.features.primary"
+            :key="i"
+            v-bind="feature"
+            :reverse="i % 2 === 1"
+            mb3
+          />
         </Container>
       </div>
     </section>
@@ -151,6 +128,7 @@ import PrimaryCallToAction from "~/components/callToAction/Primary";
 import SecondaryCallToAction from "~/components/callToAction/Secondary";
 import CardCallToAction from "~/components/callToAction/Card";
 import TextWithIcon from "~/components/TextWithIcon";
+import Feature from "~/components/Feature";
 import page from "./page";
 
 export default {
@@ -162,7 +140,8 @@ export default {
     PrimaryCallToAction,
     SecondaryCallToAction,
     CardCallToAction,
-    TextWithIcon
+    TextWithIcon,
+    Feature
   },
   mixins: [
     page({

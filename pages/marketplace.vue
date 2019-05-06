@@ -15,7 +15,7 @@
     <section id="features" mb3>
       <Container flex row space-between>
         <TextWithIcon
-          v-for="(feature, i) in engine.features"
+          v-for="(feature, i) in marketplace.features.secondary"
           :key="i"
           :src="feature.src"
           :title="feature.title"
@@ -34,47 +34,24 @@
       </Container>
       <div class="with-background">
         <Container>
-          <div mb4 flex row space-between>
-            <div half>
-              <img src="~/assets/product/marketplace/marketengine.png">
-            </div>
-            <Card half p2 column flex space-between>
-              <h3 mb1>Marketplace and Engine</h3>
-              <p mb2>
-                Our Marketplace is built to be complementary to the free, open-source MESG Engine. All Modules in the Marketplace come automatically compatible with the Engine.
-                <br>
-                <br>No more installing libraries or learning data formats before adding new features. Plug any feature or component into any app.
-              </p>
-              <span spacer/>
-              <Button outline :to="links.marketplace">Go to the Marketplace</Button>
-            </Card>
-          </div>
-          <div flex row space-between>
-            <Card half p2 column flex space-between>
-              <h3 mb1>Decentralized executions</h3>
-              <p mb2>
-                The Marketplace will soon be decentralized, with all Modules and applications interacting in a variably decentralized way.
-                <br>
-                <br>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.
-              </p>
-              <span spacer/>
-              <Button outline :to="links.home">Our solutions</Button>
-            </Card>
-            <div half>
-              <img src="~/assets/product/marketplace/decentralized.png">
-            </div>
-          </div>
+          <Feature
+            v-for="(feature, i) in marketplace.features.primary"
+            :key="i"
+            v-bind="feature"
+            :reverse="i % 2 === 1"
+            mb3
+          />
         </Container>
       </div>
     </section>
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb2>MESG Marketplace Use Cases </h2>
+        <h2 mb2>MESG Marketplace Use Cases</h2>
         <div flex row wrap>
           <TextWithIcon
             half
-            v-for="(usecase, i) in engine.usecase"
+            v-for="(usecase, i) in marketplace.usecase"
             :key="i"
             :src="usecase.src"
             :title="usecase.title"
@@ -93,7 +70,10 @@
       <Container>
         <div flex row space-between align-center>
           <div>
-            <img src="~/assets/product/marketplace/token-marketplace.png" alt="The MESG Token and Marketplace">
+            <img
+              src="~/assets/product/marketplace/token-marketplace.png"
+              alt="The MESG Token and Marketplace"
+            >
           </div>
           <div>
             <h2 class="text-left" mb1>The MESG Token and Marketplace</h2>
@@ -146,11 +126,11 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
 import PrimaryCallToAction from "~/components/callToAction/Primary";
 import SecondaryCallToAction from "~/components/callToAction/Secondary";
 import CardCallToAction from "~/components/callToAction/Card";
 import TextWithIcon from "~/components/TextWithIcon";
+import Feature from "~/components/Feature";
 import page from "./page";
 
 export default {
@@ -158,11 +138,11 @@ export default {
     Header,
     Container,
     Button,
-    Card,
     PrimaryCallToAction,
     SecondaryCallToAction,
     CardCallToAction,
-    TextWithIcon
+    TextWithIcon,
+    Feature
   },
   mixins: [
     page({
@@ -177,7 +157,7 @@ export default {
       externalLinks: "externalLinks",
       links: "links"
     }),
-    engine() {
+    marketplace() {
       return this.products.find(x => x.id === "marketplace");
     }
   }
