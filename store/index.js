@@ -27,9 +27,15 @@ export const getters = {
         description:
           "A decentralized marketplace to connect buyers looking to save time in development with sellers earning tokens for the reuse of their code.",
         features: [
-          { src: require("~/assets/product/marketplace/reuse.png"), title: "Reuse your work" },
-          { src: require("~/assets/product/marketplace/earn.png"), title: "Earn while you sleep" },
-          { src: require("~/assets/product/marketplace/economy.png"), title: "Economy of development" }
+          { src: require("~/assets/product/marketplace/reuse.png"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
+          { src: require("~/assets/product/marketplace/earn.png"), title: "Earn while you sleep", description: "All modular app components listed on the Marketplace can earn MESG Tokens each time they are used within any application." },
+          { src: require("~/assets/product/marketplace/economy.png"), title: "Economy of development", description: "Earn tokens by building or hosting apps. Or, save time building, updating, or expanding apps using Modules from the Marketplace." }
+        ],
+        usecase: [
+          { src: require("~/assets/product/marketplace/build.png"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. Because the Engine allows interoperability between any system and feature, it’s a perfect solution to build and manage your own marketplace within your product." },
+          { src: require("~/assets/product/marketplace/hybrid.png"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, but others should be decentralized. This is why MESG gives builders complete control over centralization, even offering fully decentralized executions between decentralized networks." },
+          { src: require("~/assets/product/marketplace/workflow.png"), title: "Autonomous workflows", description: "Modules from the Marketplace be easily combined into powerful workflows and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. Automate bookkeeping with QuickBooks. The possibilities are endless." },
+          { src: require("~/assets/product/marketplace/open.png"), title: "Open marketplace", description: "The Marketplace is completely open, decentralized and self-regulating, so no single entity has control over participants or submissions. This gives all equal advantage to create the most useful and efficient Modules. The more Modules are used, the more they earn." }
         ],
         action: "Discover the MESG Marketplace"
       }
@@ -46,22 +52,22 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentation: { title: 'Documentation', to: 'https://docs.mesg.com/', icon: 'doc' },
-      marketplace: { title: 'Marketplace', to: 'https://marketplace.mesg.com/', icon: 'marketplace' },
-      github: { title: 'Github', to: 'https://github.com/mesg-foundation/', icon: 'github' }
+      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "doc" },
+      marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "marketplace" },
+      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "github" }
     }
   },
 
   links() {
     return {
-      enterprise: '/',
-      engine: '/engine',
-      marketplace: '/',
-      token: '/',
-      foundation: '/',
-      getStarted: '/',
-      showcase: '/',
-      partners: '/'
+      enterprise: "/",
+      engine: "/engine",
+      marketplace: "/marketplace",
+      token: "/",
+      foundation: "/",
+      getStarted: "/",
+      showcase: "/",
+      partners: "/"
     }
   }
 }
