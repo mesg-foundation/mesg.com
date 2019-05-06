@@ -28,16 +28,22 @@
       </Container>
     </section>
 
-    <section id="products" mb3>
+    <section id="product-intro" mb2>
       <Container flex column align-center>
         <h2 mb1>Our products</h2>
         <p
           mb2
           class="text-center"
         >MESG’s Engine and Marketplace work in tandem to offer an open economy of limitless app and workflow integrations that all work together right out of the box.</p>
+      </Container>
+    </section>
+    <section id="products" mb3 class="with-background">
+      <Container>
         <div flex row space-between>
           <Card v-for="product in products" :key="product.id" :id="product.id" p2 mb2 flex column>
-            <img mb1 :src="product.img" :alt="product.title">
+            <div>
+              <img class="product" mb1 :src="product.img" :alt="product.title">
+            </div>
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description"/>
             <span spacer/>
@@ -158,7 +164,7 @@ export default {
   width: auto;
 }
 
-#products .card > img {
+#products .card img.product {
   height: 160px;
   width: 160px;
   max-width: 100%;

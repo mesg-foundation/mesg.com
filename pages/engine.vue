@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section id="usecase">
+    <section id="usecase" mb3>
       <Container>
         <h2 mb2>MESG Engine Use Cases</h2>
         <div flex row wrap>
@@ -81,7 +81,28 @@
             :text="usecase.description"
           />
         </div>
-        <Button secondary :to="links.showcase">App Showcase</Button>
+        <div class="text-center">
+          <Button secondary :to="links.showcase">App Showcase</Button>
+        </div>
+      </Container>
+    </section>
+
+    <hr mb3>
+
+    <section id="token">
+      <Container>
+        <div flex row space-between align-center>
+          <div>
+            <img src="~/assets/product/engine/token-engine.png" alt="The MESG Token and Engine">
+          </div>
+          <div>
+            <h2 class="text-left" mb1>The MESG Token and Engine</h2>
+            <p
+              mb2
+            >The MESG Engine is free to use locally. For partially or fully decentralized apps, the Engine will use the MESG Token to reward network participants who manage and secure executions.</p>
+            <Button outline :to="links.token">Discover the MESG Token</Button>
+          </div>
+        </div>
       </Container>
     </section>
 

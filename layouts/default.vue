@@ -206,6 +206,9 @@ img {
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
 .with-background {
   position: relative;
 }
@@ -218,5 +221,11 @@ img {
   width: 100%;
   z-index: -1;
   background-color: var(--light-background);
+}
+hr {
+  max-width: var(--width);
+  margin: auto;
+  height: 1px;
+  color: var(--light-background);
 }
 </style>
