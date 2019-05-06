@@ -93,6 +93,12 @@ export const getters = {
         description: "Powering the new economy of streamlined application development.",
         action: "Access MESG Token",
         to: links.token
+      },
+      enterprise: {
+        title: "Enterprise solutions",
+        description: "Build applications confidently with advisory, technical and design support.",
+        action: "Access our solutions",
+        to: links.enterprise
       }
     }
   },
@@ -111,13 +117,13 @@ export const getters = {
       enterprise: "/enterprise",
       engine: "/engine",
       marketplace: "/marketplace",
-      token: "/",
+      token: "/token",
       foundation: "/",
       getStarted: "/",
       showcase: "/",
       partners: "/",
       demo: "/",
-      faq: ""
+      faq: "/"
     }
   }
 }
