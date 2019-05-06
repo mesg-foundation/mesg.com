@@ -24,7 +24,7 @@
       </Container>
     </section>
 
-    <section id="interoperability" mb3>
+    <section id="network-of-services" mb3>
       <Container>
         <h2 mb1>A decentralized network of services</h2>
         <p
@@ -86,15 +86,12 @@
       </Container>
     </section>
 
-    <section id="enterprise" mb3>
-      <Container>
-        <PrimaryCallToAction
-          title="Integrate complexities with confidence"
-          description="Receive priority technical support from a team of engineers dedicated to your project, day or night."
-          :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
-        />
-      </Container>
-    </section>
+    <CallToAction
+      mb3
+      title="Integrate complexities with confidence"
+      description="Receive priority technical support from a team of engineers dedicated to your project, day or night."
+      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    />
 
     <Discover mb3 left="engine" right="foundation"/>
 
@@ -108,7 +105,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
-import PrimaryCallToAction from "~/components/callToAction/Primary";
+import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -120,7 +117,7 @@ export default {
     Header,
     Container,
     Button,
-    PrimaryCallToAction,
+    CallToAction,
     Discover,
     GetStarted,
     TextWithIcon,
@@ -147,12 +144,8 @@ export default {
 </script>
 
 <style>
-#interoperability .container > p {
+#network-of-services .container > p {
   max-width: 680px;
   margin: auto;
-}
-#interoperability .card {
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 </style>

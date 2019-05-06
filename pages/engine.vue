@@ -83,15 +83,12 @@
       </Container>
     </section>
 
-    <section id="enterprise" mb3>
-      <Container>
-        <PrimaryCallToAction
-          title="Streamline your business with MESG"
-          description="Optimize processes and automate workflows between your whole stack of connected systems."
-          :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
-        />
-      </Container>
-    </section>
+    <CallToAction
+      mb3
+      title="Streamline your business with MESG"
+      description="Optimize processes and automate workflows between your whole stack of connected systems."
+      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    />
 
     <Discover mb3 left="marketplace" right="foundation"/>
 
@@ -106,7 +103,7 @@ import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import PrimaryCallToAction from "~/components/callToAction/Primary";
+import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -119,7 +116,7 @@ export default {
     Container,
     Button,
     Card,
-    PrimaryCallToAction,
+    CallToAction,
     Discover,
     GetStarted,
     TextWithIcon,
@@ -149,9 +146,5 @@ export default {
 #interoperability .container > p {
   max-width: 680px;
   margin: auto;
-}
-#interoperability .card {
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 </style>

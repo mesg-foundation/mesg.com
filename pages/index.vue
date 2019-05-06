@@ -80,15 +80,12 @@
       </Container>
     </section>
 
-    <section id="enterprise" mb3>
-      <Container>
-        <PrimaryCallToAction
-          title="Streamline your business with MESG"
-          description="Optimize processes and automate workflows between your whole stack of connected systems."
-          :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
-        />
-      </Container>
-    </section>
+    <CallToAction
+      mb3
+      title="Streamline your business with MESG"
+      description="Optimize processes and automate workflows between your whole stack of connected systems."
+      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    />
 
     <Discover mb3 left="showcase" right="foundation"/>
 
@@ -105,7 +102,7 @@ import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Card from "~/components/Card";
 import List from "~/components/List";
-import PrimaryCallToAction from "~/components/callToAction/Primary";
+import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import page from "./page";
@@ -118,7 +115,7 @@ export default {
     Video,
     Card,
     List,
-    PrimaryCallToAction,
+    CallToAction,
     Discover,
     GetStarted
   },

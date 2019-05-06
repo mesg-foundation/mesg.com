@@ -1,17 +1,23 @@
 <template>
-  <div pt3 pb3 mt4 mb4 class="primary-call-to-action">
-    <h3>{{ title }}</h3>
-    <p mb2>{{ description }}</p>
-    <nav>
-      <Button white v-for="(link, i) in links" :key="i" :to="link.to">{{ link.title }}</Button>
-    </nav>
-  </div>
+  <section>
+    <Container>
+      <div pt3 pb3 mt4 mb4 class="primary-call-to-action">
+        <h3>{{ title }}</h3>
+        <p mb2>{{ description }}</p>
+        <nav>
+          <Button white v-for="(link, i) in links" :key="i" :to="link.to">{{ link.title }}</Button>
+        </nav>
+      </div>
+    </Container>
+  </section>
 </template>
 
 <script>
+import Container from "~/components/Container";
 import Button from "~/components/Button";
 export default {
   components: {
+    Container,
     Button
   },
   props: {

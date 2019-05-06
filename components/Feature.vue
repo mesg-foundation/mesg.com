@@ -44,3 +44,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.card {
+  margin: 12px;
+}
+</style>
