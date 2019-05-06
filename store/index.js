@@ -72,6 +72,7 @@ export const getters = {
 
   links() {
     return {
+      home: "/",
       enterprise: "/",
       engine: "/engine",
       marketplace: "/marketplace",
