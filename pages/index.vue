@@ -42,14 +42,14 @@
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description"/>
             <span spacer/>
-            <List :items="product.features"/>
+            <List :items="product.features.secondary"/>
             <Button outline :to="links[product.id]">{{ product.action }}</Button>
           </Card>
         </div>
         <Card p2 id="token">
           <div flex row>
             <div>
-              <img src="~/assets/product/token/token.png" alt="token">
+              <img src="~/assets/token/token.png" alt="token">
             </div>
             <div>
               <h3 mb1>Build Modules, Earn Tokens</h3>
