@@ -106,17 +106,7 @@
       </Container>
     </section>
 
-    <section id="get-started" mb3>
-      <Container>
-        <CardCallToAction
-          title="Discover more about MESG"
-          description="MESG is free to start and only takes moments to install. Build more with less effort."
-          action="Get Started"
-          :to="links.getStarted"
-          :links="[externalLinks.documentation, externalLinks.marketplace, externalLinks.github]"
-        />
-      </Container>
-    </section>
+    <GetStarted mb3/>
   </div>
 </template>
 
@@ -128,7 +118,7 @@ import Button from "~/components/Button";
 import Container from "~/components/Container";
 import PrimaryCallToAction from "~/components/callToAction/Primary";
 import SecondaryCallToAction from "~/components/callToAction/Secondary";
-import CardCallToAction from "~/components/callToAction/Card";
+import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import page from "./page";
@@ -140,7 +130,7 @@ export default {
     Button,
     PrimaryCallToAction,
     SecondaryCallToAction,
-    CardCallToAction,
+    GetStarted,
     TextWithIcon,
     Feature
   },
