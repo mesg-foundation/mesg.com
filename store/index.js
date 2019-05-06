@@ -102,14 +102,15 @@ export const getters = {
   links() {
     return {
       home: "/",
-      enterprise: "/",
+      enterprise: "/enterprise",
       engine: "/engine",
       marketplace: "/marketplace",
       token: "/",
       foundation: "/",
       getStarted: "/",
       showcase: "/",
-      partners: "/"
+      partners: "/",
+      demo: "/"
     }
   }
 }

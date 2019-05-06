@@ -237,4 +237,8 @@ hr {
   height: 1px;
   color: var(--light-background);
 }
+.container > p {
+  max-width: 680px;
+  margin: auto;
+}
 </style>

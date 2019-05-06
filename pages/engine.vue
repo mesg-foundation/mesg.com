@@ -141,10 +141,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#interoperability .container > p {
-  max-width: 680px;
-  margin: auto;
-}
-</style>

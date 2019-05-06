@@ -142,10 +142,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#network-of-services .container > p {
-  max-width: 680px;
-  margin: auto;
-}
-</style>

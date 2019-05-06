@@ -2,7 +2,7 @@
   <div mb2>
     <img mb1 :src="src" :alt="title">
     <h4 mb1>{{ title }}</h4>
-    <p>{{ text }}</p>
+    <p v-html="text"></p>
   </div>
 </template>
 

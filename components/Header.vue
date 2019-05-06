@@ -48,7 +48,7 @@ p {
   font-size: 20px;
 }
 img {
-  height: 490px;
+  height: auto;
   width: 490px;
   max-width: 100%;
   max-height: 490px;
