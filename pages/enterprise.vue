@@ -64,7 +64,7 @@
       </Container>
     </section>
 
-    <section id="packages" mb3>
+    <section id="packages" mb2>
       <Container>
         <h2 mb1>Our packages</h2>
         <p
@@ -73,6 +73,57 @@
         >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project</p>
       </Container>
     </section>
+    <section id="packages-2" mb3 class="with-background">
+      <Container>
+        <!-- TODO packages here -->
+        Packages TODO
+      </Container>
+    </section>
+
+    <section id="partners" mb3>
+      <Container flex column align-center>
+        <h2 mb2>Already building on MESG</h2>
+        <Partners/>
+      </Container>
+    </section>
+
+    <section id="faq" mb3>
+      <Container>
+        <h2 mb2>Frequently Asked Questions</h2>
+        <div flex row space-between wrap>
+          <div half mb2>
+            <h4 mb1>Are apps dependent on MESG to run?</h4>
+            <p>No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralization network allows apps to execute without any centralized dependencies.</p>
+          </div>
+          <div half mb2>
+            <h4 mb1>How does MESG manage intellectual property?</h4>
+            <p>We take privacy seriously and set clear expectations with new clients. MESG keeps intellectual property secure through agreements signed with new clients, plus, services and apps can always be kept private, designed to function on your own private network and nowhere else.</p>
+          </div>
+          <div half mb2>
+            <h4 mb1>Who owns the apps that MESG builds for me?</h4>
+            <p>When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG.</p>
+          </div>
+          <div half mb2>
+            <h4 mb1>MESG is free, so why purchase advisory services?</h4>
+            <p>Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <Button secondary :to="links.faq">Access the FAQ</Button>
+        </div>
+      </Container>
+    </section>
+
+    <CallToAction
+      mb3
+      title="Have specific needs for your custom solution?"
+      description="Let MESG Enterprise guide you every step of the way to streamline processes between even the hardest-to-manage services."
+      :links="[{ title: 'Request a demo' , to: links.demo }]"
+    />
+
+    <Discover mb3 left="showcase" right="token"/>
+
+    <GetStarted mb3/>
   </div>
 </template>
 
@@ -82,6 +133,10 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "~/components/Button";
 import TextWithIcon from "~/components/TextWithIcon";
+import Partners from "~/components/Partners";
+import CallToAction from "~/components/CallToAction";
+import Discover from "~/components/Discover";
+import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
 export default {
@@ -89,7 +144,11 @@ export default {
     Header,
     Container,
     TextWithIcon,
-    Button
+    Button,
+    Partners,
+    CallToAction,
+    Discover,
+    GetStarted
   },
   mixins: [
     page({

@@ -58,6 +58,12 @@ export default {
   transform: skewY(-10deg);
   z-index: -1;
 }
+.primary-call-to-action > * {
+  width: var(--small-width);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 h3 {
   margin-bottom: 15px;
   color: var(--white);

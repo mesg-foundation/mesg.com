@@ -10,6 +10,7 @@
     --text-color: #3c3940;
     --margin: 20px;
     --width: 1020px;
+    --small-width: 680px;
   }
     </style>
     <Menu class="menu-bar"/>
@@ -238,7 +239,7 @@ hr {
   color: var(--light-background);
 }
 .container > p {
-  max-width: 680px;
+  max-width: var(--small-width);
   margin: auto;
 }
 </style>

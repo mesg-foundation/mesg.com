@@ -87,6 +87,12 @@ export const getters = {
         description: "Build feature-rich apps without needing to manage dependencies.",
         action: "Access MESG Engine",
         to: links.engine
+      },
+      token: {
+        title: "MESG Token",
+        description: "Powering the new economy of streamlined application development.",
+        action: "Access MESG Token",
+        to: links.token
       }
     }
   },
@@ -110,7 +116,8 @@ export const getters = {
       getStarted: "/",
       showcase: "/",
       partners: "/",
-      demo: "/"
+      demo: "/",
+      faq: ""
     }
   }
 }

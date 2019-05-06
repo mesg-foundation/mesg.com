@@ -9,12 +9,7 @@
 
     <section id="partners" mb3>
       <Container flex column align-center>
-        <div mb2>
-          <img mr2 src="~/assets/partners/windprotocol.png" alt="windprotocol">
-          <img mr2 src="~/assets/partners/yuser.png" alt="yuser">
-          <img mr2 src="~/assets/partners/beachhead.png" alt="beachhead">
-          <img src="~/assets/partners/yellow.png" alt="yellow">
-        </div>
+        <Partners mb2/>
         <Button secondary :to="links.partners">Our partners</Button>
       </Container>
     </section>
@@ -105,6 +100,7 @@ import List from "~/components/List";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
+import Partners from "~/components/Partners";
 import page from "./page";
 
 export default {
@@ -117,7 +113,8 @@ export default {
     List,
     CallToAction,
     Discover,
-    GetStarted
+    GetStarted,
+    Partners
   },
   mixins: [
     page({
@@ -138,11 +135,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#partners img {
-  height: 40px;
-  width: auto;
-}
-
 #products .card img.product {
   height: 160px;
   width: 160px;
