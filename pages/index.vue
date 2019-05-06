@@ -94,7 +94,7 @@
       <Container>
         <SecondaryCallToAction
           title="Discover more about MESG"
-          :left="{ title: 'MESG Marketplace', description: 'Speed up application development and earn from sharing your code.', link: 'Access MESG Marketplace', to: links.marketplace }"
+          :left="{ title: 'Showcase', description: 'Not sure what to build on MESG? Find your inspiration here.', link: 'Explore the showcase', to: links.showcase }"
           :right="{ title: 'MESG Foundation', description: 'MESG is developed for the MESG Foundation, a nonprofit organization.', link: 'Visit MESG Foundation', to: links.foundation }"
         />
       </Container>

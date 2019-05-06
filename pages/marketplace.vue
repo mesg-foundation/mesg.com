@@ -36,7 +36,7 @@
         <Container>
           <div mb4 flex row space-between>
             <div half>
-              <img src="~/assets/product/engine/mesg-tech.png">
+              <img src="~/assets/product/marketplace/marketengine.png">
             </div>
             <Card half p2 column flex space-between>
               <h3 mb1>Marketplace and Engine</h3>
@@ -61,7 +61,7 @@
               <Button outline :to="links.home">Our solutions</Button>
             </Card>
             <div half>
-              <img src="~/assets/product/engine/mesg-development.png">
+              <img src="~/assets/product/marketplace/decentralized.png">
             </div>
           </div>
         </Container>
@@ -93,7 +93,7 @@
       <Container>
         <div flex row space-between align-center>
           <div>
-            <img src="~/assets/product/engine/token-engine.png" alt="The MESG Token and Marketplace">
+            <img src="~/assets/product/marketplace/token-marketplace.png" alt="The MESG Token and Marketplace">
           </div>
           <div>
             <h2 class="text-left" mb1>The MESG Token and Marketplace</h2>
