@@ -93,15 +93,7 @@
       </Container>
     </section>
 
-    <section id="discover" mb3>
-      <Container>
-        <SecondaryCallToAction
-          title="Discover more about MESG"
-          :left="{ title: 'MESG Marketplace', description: 'Speed up application development and earn from sharing your code.', link: 'Access MESG Marketplace', to: links.marketplace }"
-          :right="{ title: 'MESG Foundation', description: 'MESG is developed for the MESG Foundation, a nonprofit organization.', link: 'Visit MESG Foundation', to: links.foundation }"
-        />
-      </Container>
-    </section>
+    <Discover mb3 left="marketplace" right="foundation"/>
 
     <GetStarted mb3/>
   </div>
@@ -115,7 +107,7 @@ import Button from "~/components/Button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import PrimaryCallToAction from "~/components/callToAction/Primary";
-import SecondaryCallToAction from "~/components/callToAction/Secondary";
+import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
@@ -128,7 +120,7 @@ export default {
     Button,
     Card,
     PrimaryCallToAction,
-    SecondaryCallToAction,
+    Discover,
     GetStarted,
     TextWithIcon,
     Feature

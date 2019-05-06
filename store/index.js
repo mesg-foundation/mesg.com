@@ -62,6 +62,35 @@ export const getters = {
     ]
   },
 
+  discover(_, { links }) {
+    return {
+      showcase: {
+        title: "Showcase",
+        description: "Not sure what to build on MESG? Find your inspiration here.",
+        action: "Explore the showcase",
+        to: links.showcase
+      },
+      foundation: {
+        title: "MESG Foundation",
+        description: "MESG is developed for the MESG Foundation, a nonprofit organization.",
+        action: "Visit MESG Foundation",
+        to: links.foundation
+      },
+      marketplace: {
+        title: "MESG Marketplace",
+        description: "Speed up application development and earn from sharing your code.",
+        action: "Access MESG Marketplace",
+        to: links.marketplace
+      },
+      engine: {
+        title: "MESG Engine",
+        description: "Build feature-rich apps without needing to manage dependencies.",
+        action: "Access MESG Engine",
+        to: links.engine
+      }
+    }
+  },
+
   externalLinks() {
     return {
       documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "doc" },

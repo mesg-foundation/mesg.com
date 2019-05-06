@@ -90,15 +90,7 @@
       </Container>
     </section>
 
-    <section id="discover" mb3>
-      <Container>
-        <SecondaryCallToAction
-          title="Discover more about MESG"
-          :left="{ title: 'Showcase', description: 'Not sure what to build on MESG? Find your inspiration here.', link: 'Explore the showcase', to: links.showcase }"
-          :right="{ title: 'MESG Foundation', description: 'MESG is developed for the MESG Foundation, a nonprofit organization.', link: 'Visit MESG Foundation', to: links.foundation }"
-        />
-      </Container>
-    </section>
+    <Discover mb3 left="showcase" right="foundation"/>
 
     <GetStarted mb3/>
   </div>
@@ -114,7 +106,7 @@ import Video from "~/components/Video";
 import Card from "~/components/Card";
 import List from "~/components/List";
 import PrimaryCallToAction from "~/components/callToAction/Primary";
-import SecondaryCallToAction from "~/components/callToAction/Secondary";
+import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
@@ -127,7 +119,7 @@ export default {
     Card,
     List,
     PrimaryCallToAction,
-    SecondaryCallToAction,
+    Discover,
     GetStarted
   },
   mixins: [

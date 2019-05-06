@@ -1,0 +1,62 @@
+<template>
+  <section id="discover">
+    <Container>
+      <h2 mb2>Discover more about MESG</h2>
+      <div flex row space-between class="items">
+        <div half v-for="(item, i) in items" :key="i" class="item">
+          <h3>{{ item.title }}</h3>
+          <p mb2>{{ item.description }}</p>
+          <Button secondary :to="item.to">{{ item.action }}</Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+</template>
+
+<script>
+import { mapGetters } from "vuex";
+import Container from "~/components/Container";
+import Button from "~/components/Button";
+export default {
+  components: {
+    Container,
+    Button
+  },
+  props: {
+    left: {
+      type: String,
+      required: true
+    },
+    right: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    ...mapGetters({
+      _discover: "discover"
+    }),
+    items() {
+      return [this._discover[this.left], this._discover[this.right]];
+    }
+  }
+};
+</script>
+
+<style scoped>
+h3 {
+  margin-bottom: 14px;
+}
+.items {
+  position: relative;
+}
+.items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  background-color: var(--light-purple);
+}
+</style>
