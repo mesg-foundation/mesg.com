@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 a,
 button {
   border-radius: 3px;
@@ -91,11 +91,11 @@ i {
   a {
     font-size: 1em;
   }
-  @media only screen and (max-width: 414px) {
-    a,
-    button {
-      font-size: 0.8em;
-    }
+}
+@media only screen and (max-width: 414px) {
+  a,
+  button {
+    font-size: 0.8em;
   }
 }
 </style>

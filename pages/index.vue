@@ -123,18 +123,16 @@ export default {
         "Build apps or autonomous workflows with reusable, shareable integrations connecting any service, app, blockchain or decentralized network."
     })
   ],
-  computed: {
-    ...mapGetters({
-      products: "products",
-      articles: "articles",
-      externalLinks: "externalLinks",
-      links: "links"
-    })
-  }
+  computed: mapGetters({
+    products: "products",
+    articles: "articles",
+    externalLinks: "externalLinks",
+    links: "links"
+  })
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 #products .card img.product {
   height: 160px;
   width: 160px;
@@ -153,8 +151,9 @@ export default {
 
 #articles .card {
   margin-right: 20px;
-  &:last-child {
-    margin-right: 0;
-  }
+}
+
+#articles .card:last-child {
+  margin-right: 0;
 }
 </style>

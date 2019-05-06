@@ -33,50 +33,38 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style scoped>
 nav {
   width: 100%;
   height: 80px;
   padding: 0 40px;
   z-index: 1;
   background-color: #fff;
+}
 
-  .logo {
-    line-height: 40px;
-    width: 153px;
-    height: 40px;
+.menu {
+  padding-right: 1.4em;
+}
+.menu a {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 40px;
+  text-decoration: none;
+  color: #0e061c;
+  padding: 0 20px;
+  box-sizing: content-box;
+  border-bottom: solid 2px transparent;
+}
+.menu a:hover {
+  color: #000;
+}
 
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-
-  .menu {
-    padding-right: 1.4em;
-
-    a {
-      font-family: "Open Sans";
-      font-size: 15px;
-      font-weight: 600;
-      line-height: 40px;
-      text-decoration: none;
-      color: #0e061c;
-      padding: 0 20px;
-      box-sizing: content-box;
-      border-bottom: solid 2px transparent;
-
-      &:hover {
-        color: #000;
-      }
-
-      &.enterpise {
-        font-weight: 700;
-        padding: 2px 34px;
-        margin-left: 20px;
-        color: #fff;
-      }
-    }
-  }
+.menu a.enterpise {
+  font-weight: 700;
+  padding: 2px 34px;
+  margin-left: 20px;
+  color: #fff;
 }
 
 .responsive {

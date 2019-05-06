@@ -35,14 +35,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 header {
   background-image: linear-gradient(
     to bottom,
     var(--white),
     var(--light-background)
   );
-  // clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 0);
+  /* clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 0); */
 }
 p {
   font-size: 20px;
