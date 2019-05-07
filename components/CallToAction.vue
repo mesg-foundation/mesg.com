@@ -54,7 +54,7 @@ export default {
   height: 100%;
   top: 0;
   left: 0;
-  transform: skewY(-10deg);
+  transform: skewY(-11deg);
   z-index: -1;
 }
 .primary-call-to-action > * {

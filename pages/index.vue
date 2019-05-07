@@ -32,7 +32,7 @@
         >MESG’s Engine and Marketplace work in tandem to offer an open economy of limitless app and workflow integrations that all work together right out of the box.</p>
       </Container>
     </section>
-    <section id="products" mb3 class="with-background">
+    <section id="products" mb3 class="inner-background">
       <Container>
         <div flex row space-between>
           <Card v-for="product in products" :key="product.id" :id="product.id" p2 mb2 flex column>

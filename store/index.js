@@ -123,7 +123,8 @@ export const getters = {
       showcase: "/",
       partners: "/",
       demo: "/",
-      faq: "/"
+      faq: "/",
+      roadmap: "/"
     }
   }
 }

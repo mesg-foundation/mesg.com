@@ -32,7 +32,7 @@
           class="text-center"
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
       </Container>
-      <div class="with-background">
+      <div class="inner-background">
         <Container>
           <Feature
             v-for="(feature, i) in marketplace.features.primary"

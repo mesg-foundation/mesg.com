@@ -1,14 +1,16 @@
 <template>
-  <div flex row space-between>
+  <div flex row space-between align-center>
     <div half>
       <img :src="src">
     </div>
-    <Card half p2 column flex space-between>
-      <h3 mb1>{{ title }}</h3>
-      <p mb2 v-html="description"></p>
-      <span spacer/>
-      <Button outline :to="to">{{ action }}</Button>
-    </Card>
+    <div half>
+      <Card p2 column flex space-between>
+        <h3 mb1>{{ title }}</h3>
+        <p v-if="description" mb2 v-html="description"></p>
+        <slot mb2></slot>
+        <Button outline :to="to">{{ action }}</Button>
+      </Card>
+    </div>
   </div>
 </template>
 
@@ -30,8 +32,7 @@ export default {
       required: true
     },
     description: {
-      type: String,
-      required: true
+      type: String
     },
     to: {
       type: [String, Object],

@@ -73,7 +73,7 @@
         >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project</p>
       </Container>
     </section>
-    <section id="packages-2" mb3 class="with-background">
+    <section id="packages-2" mb3 class="inner-background">
       <Container>
         <!-- TODO packages here -->
         Packages TODO

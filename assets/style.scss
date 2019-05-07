@@ -195,10 +195,10 @@ img {
 .text-left {
   text-align: left;
 }
-.with-background {
+.inner-background {
   position: relative;
 }
-.with-background::before {
+.inner-background::before {
   content: "";
   position: absolute;
   top: calc(var(--margin) * 4);
@@ -207,6 +207,9 @@ img {
   width: 100%;
   z-index: -1;
   background-color: var(--light-background);
+}
+.outer-background {
+  background: var(--light-background);
 }
 hr {
   max-width: var(--width);

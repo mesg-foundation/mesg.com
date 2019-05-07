@@ -68,6 +68,27 @@
       </Container>
     </section>
 
+    <section id="distribution" class="outer-background" pt3 pb3>
+      <Container>
+        <Feature
+          :src="require('~/assets/token/mesg-token-distribution.png')"
+          title="Token distribution"
+          action="Check out our roadmap"
+          :to="links.roadmap"
+        >
+          <h4 mb1>Total token supply 250MM</h4>
+          <ColoredList
+            :items="[
+              { color: '#e0d1ff', title: 'Sale Distribution 62.5%' },
+              { color: '#ffd4a3', title: 'Reserve 20%' },
+              { color: '#9777c7', title: 'Team and Founders 12.5%' },
+              { color: '#8ceda1', title: 'Partners & Bounties 5%' }
+            ]"
+          />
+        </Feature>
+      </Container>
+    </section>
+
     <CallToAction
       mb3
       title="Buy and trade MESG Token on"
@@ -92,6 +113,7 @@ import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
+import ColoredList from "~/components/ColoredList";
 import page from "./page";
 
 export default {
@@ -104,7 +126,8 @@ export default {
     Discover,
     GetStarted,
     TextWithIcon,
-    Feature
+    Feature,
+    ColoredList
   },
   mixins: [
     page({
@@ -118,3 +141,13 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+ul {
+  list-style: none;
+}
+
+li img {
+  vertical-align: middle;
+}
+</style>

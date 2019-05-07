@@ -32,7 +32,7 @@
           class="text-center"
         >The MESG Engine is built for efficient management of components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
-      <div class="with-background">
+      <div class="inner-background">
         <Container>
           <Feature
             v-for="(feature, i) in engine.features.primary"
