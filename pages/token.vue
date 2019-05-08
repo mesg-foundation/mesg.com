@@ -68,7 +68,7 @@
       </Container>
     </section>
 
-    <section id="distribution" class="outer-background" pt3 pb3>
+    <section id="distribution" class="outer-background" pt3 pb3 mb3>
       <Container>
         <Feature
           :src="require('~/assets/token/mesg-token-distribution.png')"
@@ -86,6 +86,15 @@
             ]"
           />
         </Feature>
+      </Container>
+    </section>
+
+    <section id="documents" mb3>
+      <Container>
+        <h2 mb2>MESG documents</h2>
+        <div flex row space-between wrap>
+          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2/>
+        </div>
       </Container>
     </section>
 
@@ -114,6 +123,7 @@ import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import ColoredList from "~/components/ColoredList";
+import Document from "~/components/Document";
 import page from "./page";
 
 export default {
@@ -127,7 +137,8 @@ export default {
     GetStarted,
     TextWithIcon,
     Feature,
-    ColoredList
+    ColoredList,
+    Document
   },
   mixins: [
     page({
@@ -137,7 +148,8 @@ export default {
     })
   ],
   computed: mapGetters({
-    links: "links"
+    links: "links",
+    documents: "documents"
   })
 };
 </script>

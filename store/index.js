@@ -103,6 +103,15 @@ export const getters = {
     }
   },
 
+  documents() {
+    return [
+      { title: "Whitepaper", img: require('~/assets/documents/todo.png'), link: '/documents/decentralized-network-of-services.pdf' },
+      { title: "Technical Implementation", img: require('~/assets/documents/todo.png'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
+      { title: "Two pager", img: require('~/assets/documents/todo.png'), link: '/documents/MESG-2-pager.pdf' },
+      { title: "Business Plan", img: require('~/assets/documents/todo.png'), link: '/documents/MESG-business-plan-summary.pdf' }
+    ]
+  },
+
   externalLinks() {
     return {
       documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "doc" },
