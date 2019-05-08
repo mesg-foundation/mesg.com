@@ -1,81 +1,45 @@
 <template>
-  <div>
-    <nav hide-responsive flex row space-between align-center>
-      <nuxt-link to="/">
-        <img src alt>
-      </nuxt-link>
-      <div class="menu" flex row space-between align-center>
-        <nuxt-link to="/products">Products</nuxt-link>
-        <nuxt-link to="/developers">Developers</nuxt-link>
-        <nuxt-link to="/foundation">Foundation</nuxt-link>
-        <nuxt-link to="/token">Token</nuxt-link>
-        <Button
-          class="enterpise"
-          href="https://docs.mesg.com/guide/start-here/quick-start-guide.html"
-          secondary
-          small
-        >Enterpise</Button>
-      </div>
-    </nav>
-    <MenuResponsive class="responsive"/>
-  </div>
+  <nav flex row space-between>
+    <nuxt-link :to="links.home">
+      <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
+    </nuxt-link>
+    <div class="actions">
+      <Button :to="links.engine">Products</Button>
+      <Button :to="links.getStarted">Developers</Button>
+      <Button :to="links.foundation">Foundation</Button>
+      <Button :to="links.token">Token</Button>
+      <Button primary :to="links.enterprise">Enterprise</Button>
+    </div>
+  </nav>
 </template>
 
 <script>
 import Button from "~/components/Button";
-import MenuResponsive from "~/components/MenuResponsive";
+import { mapGetters } from "vuex";
 export default {
   components: {
-    Button,
-    MenuResponsive
-  }
+    Button
+  },
+  computed: mapGetters({
+    links: "links"
+  })
 };
 </script>
 
 
 <style scoped>
 nav {
-  width: 100%;
   height: 80px;
-  padding: 0 40px;
-  z-index: 1;
-  background-color: #fff;
+  background-color: var(--white);
+  padding: 18px 40px;
 }
-
-.menu {
-  padding-right: 1.4em;
+img {
+  height: 100%;
 }
-.menu a {
-  font-family: "Open Sans";
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 40px;
-  text-decoration: none;
-  color: #0e061c;
-  padding: 0 20px;
-  box-sizing: content-box;
-  border-bottom: solid 2px transparent;
+.actions {
+  text-align: right;
 }
-.menu a:hover {
-  color: #000;
-}
-
-.menu a.enterpise {
-  font-weight: 700;
-  padding: 2px 34px;
-  margin-left: 20px;
-  color: #fff;
-}
-
-.responsive {
-  width: 100%;
-  display: none;
-  position: relative;
-}
-
-@media only screen and (max-width: 1023px) {
-  .responsive {
-    display: flex;
-  }
+.actions a:not(.btn--primary) {
+  color: var(--title-color);
 }
 </style>
