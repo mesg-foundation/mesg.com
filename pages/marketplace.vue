@@ -7,7 +7,7 @@
       :description="description"
       :schema="schema"
       actionLink="https://marketplace.mesg.com"
-      actionTitle="Checkout the MESG Marketplace"
+      actionTitle="Check out the MESG Marketplace"
     />
     <MarketStory id="market story" class="white"/>
     <CTAGetStarted id="get started" class="dark"/>
