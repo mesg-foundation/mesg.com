@@ -114,7 +114,7 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "doc" },
+      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "file-alt" },
       marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "marketplace" },
       github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "github" }
     }

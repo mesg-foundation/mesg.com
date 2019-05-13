@@ -23,7 +23,7 @@
       </Container>
     </section>
 
-    <section id="product-intro" mb2>
+    <section id="product-intro">
       <Container flex column align-center>
         <h2 mb1>Our products</h2>
         <p
@@ -47,15 +47,17 @@
           </Card>
         </div>
         <Card p2 id="token">
-          <div flex row>
-            <div>
-              <img src="~/assets/token/MESG-token.svg" alt="token">
+          <div flex row align-center>
+            <div flex two-third>
+              <div flex column one-quarter>
+                <img src="~/assets/token/MESG-token.svg" alt="token">
+              </div>
+              <div flex column three-quarter>
+                <h3 mb1>Build Modules, Earn Tokens</h3>
+                <p>Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
+              </div>
             </div>
-            <div>
-              <h3 mb1>Build Modules, Earn Tokens</h3>
-              <p>Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
-            </div>
-            <div>
+            <div flex one-third>
               <Button outline :to="links.token">Discover the MESG Token</Button>
             </div>
           </div>
@@ -70,6 +72,9 @@
           <Card v-for="article in articles" :key="article.id" :id="article.id" p1 mb2 bordered>
             <img mb1 :src="article.img" :alt="article.title">
             <h4 mb1>{{ article.title }}</h4>
+            <div class="icon">
+              <i class="far fa-external-link"></i>
+            </div>
           </Card>
         </div>
       </Container>
@@ -155,5 +160,10 @@ export default {
 
 #articles .card:last-child {
   margin-right: 0;
+}
+
+.icon {
+  font-size: 1em;
+  text-align: right;
 }
 </style>

@@ -65,6 +65,7 @@ i {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
+  padding-left:0.5em;
 }
 
 .btn--primary {
@@ -75,6 +76,10 @@ i {
 .btn--secondary {
   color: var(--purple);
   text-align: left;
+  border-radius:0;
+  padding-left:0;
+  padding-right:0;
+  border-bottom: solid 1px var(--purple);
 }
 
 .btn--white {

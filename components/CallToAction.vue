@@ -64,7 +64,7 @@ export default {
   margin-right: auto;
 }
 h3 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--white);
 }
 p {

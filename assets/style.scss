@@ -95,6 +95,12 @@ img {
   max-width: 100%;
 }
 
+link {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--purple);
+}
+
 /* Structure */
 [flex] {
   display: flex;
@@ -154,6 +160,18 @@ img {
 [half] {
   min-width: calc((var(--width) - 2 * var(--margin)) / 2);
   max-width: 100%;
+}
+[one-third] {
+  max-width: 33%;
+}
+[two-third] {
+  max-width: 66%;
+}
+[one-quarter] {
+  max-width: 25%;
+}
+[three-quarter] {
+  max-width: 75%;
 }
 @for $i from 1 through 4 {
   $val: calc(var(--margin) * #{pow(2, $i - 1)});

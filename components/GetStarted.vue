@@ -3,7 +3,7 @@
     <Container>
       <Card p2>
         <div flex row align-center space-between>
-          <div>
+          <div flex column two-third>
             <h3 mb1>{{title}}</h3>
             <p mb1>{{description}}</p>
             <nav flex row space-between>
@@ -13,7 +13,7 @@
               </Button>
             </nav>
           </div>
-          <div>
+          <div flex column one-third>
             <Button primary :to="to">{{action}}</Button>
           </div>
         </div>
