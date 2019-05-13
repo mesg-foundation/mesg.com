@@ -2,7 +2,7 @@
   <div>
     <Header
       mb3
-      :picture="require('~/assets/enterprise/mesg-enterprise.png')"
+      :picture="require('~/assets/enterprise/enterprise.svg')"
       :title="title"
       :description="description"
     >
@@ -15,17 +15,17 @@
     <section id="features" mb3>
       <Container flex row space-between>
         <TextWithIcon
-          :src="require('~/assets/enterprise/connect.png')"
+          :src="require('~/assets/enterprise/connect-systems.svg')"
           title="Connect systems"
           text="Build and share APIs and connections to blockchains to save time in development, or boost revenues. Managed by the free, open source MESG Engine."
         />
         <TextWithIcon
-          :src="require('~/assets/enterprise/automate.png')"
+          :src="require('~/assets/enterprise/automate-tasks.svg')"
           title="Automate tasks"
           text="Create autonomous reactive applications and workflows using any API, IoT device or blockchain, that can execute and function entirely from a decentralized cloud."
         />
         <TextWithIcon
-          :src="require('~/assets/enterprise/process.png')"
+          :src="require('~/assets/enterprise/process-data.svg')"
           title="Process data"
           text="By listening for digital events, data can be gathered and processed more efficiently than ever before. Use more blockchains and databases without the headache."
         />
@@ -38,25 +38,25 @@
         <div flex row wrap>
           <TextWithIcon
             half
-            :src="require('~/assets/enterprise/support.png')"
+            :src="require('~/assets/enterprise/engineering-support.svg')"
             title="Engineering support"
             text="Receive priority technical support from a team of engineers dedicated to your project, day or night."
           />
           <TextWithIcon
             half
-            :src="require('~/assets/enterprise/architecture.png')"
+            :src="require('~/assets/enterprise/architecture-advisory.svg')"
             title="Architecture advisory"
             text="Our advisors are committed to creating optimum efficiency between all of your connected systems."
           />
           <TextWithIcon
             half
-            :src="require('~/assets/enterprise/custom-build.png')"
+            :src="require('~/assets/enterprise/custom-built.svg')"
             title="Custom-built solutions"
             text="Don’t want to built it yourself? Let us build apps for you, enhancing legacy software with blockchains, IoT devices and more."
           />
           <TextWithIcon
             half
-            :src="require('~/assets/enterprise/community-support.png')"
+            :src="require('~/assets/enterprise/community-support.svg')"
             title="Custom-built solutions"
             text="MESG has a strong community and economy built to support development. Share app components, or get support on <a href='https://forum.mesg.com' target='_blank'>the forum</a>."
           />

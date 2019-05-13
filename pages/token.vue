@@ -2,7 +2,7 @@
   <div>
     <Header
       mb3
-      :picture="require('~/assets/token/mesg-token.png')"
+      :picture="require('~/assets/token/token.svg')"
       :title="title"
       :description="description"
     >
@@ -15,17 +15,17 @@
     <section id="features" mb3>
       <Container flex row space-between>
         <TextWithIcon
-          :src="require('~/assets/token/decentralized-executions.png')"
+          :src="require('~/assets/token/decentralize-executions.svg')"
           title="Decentralize executions"
           text="You can become a part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation."
         />
         <TextWithIcon
-          :src="require('~/assets/token/secure.png')"
+          :src="require('~/assets/token/secure-network.svg')"
           title="Secure the network"
           text="All participants stake MESG Tokens to commit to their availability and good behavior. Then, participants are rewarded for validating each execution."
         />
         <TextWithIcon
-          :src="require('~/assets/token/buy-sell.png')"
+          :src="require('~/assets/token/buy-sell.svg')"
           title="Buy and sell Modules"
           text="App components, called Modules, are bought and sold using the MESG Token. Then Modules can be used in any app, no complex coding required."
         />
@@ -42,25 +42,25 @@
         <div flex row space-between wrap>
           <TextWithIcon
             half
-            :src="require('~/assets/token/algorythm.png')"
+            :src="require('~/assets/token/algorithm.svg')"
             title="The algorithm"
             text="Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand."
           />
           <TextWithIcon
             half
-            :src="require('~/assets/token/transparency.png')"
+            :src="require('~/assets/token/transparency.svg')"
             title="Transparency"
             text="Metrics will be published daily to enhance transparency between the MESG Foundation and the community."
           />
           <TextWithIcon
             half
-            :src="require('~/assets/token/initial-supply.png')"
+            :src="require('~/assets/token/initial-supply.svg')"
             title="Initial supply"
             text="0.1% of the total supply was released on the first day of exchange listing to initiate the supply."
           />
           <TextWithIcon
             half
-            :src="require('~/assets/token/distribution.png')"
+            :src="require('~/assets/token/supply-distribution.svg')"
             title="Supply distribution"
             text="The supply distribution of 62.5% will be released in daily allotments."
           />
@@ -71,7 +71,7 @@
     <section id="distribution" class="outer-background" pt3 pb3 mb3>
       <Container>
         <Feature
-          :src="require('~/assets/token/mesg-token-distribution.png')"
+          :src="require('~/assets/token/token-distribution.svg')"
           title="Token distribution"
           action="Check out our roadmap"
           :to="links.roadmap"

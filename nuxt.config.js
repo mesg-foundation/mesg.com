@@ -33,7 +33,8 @@ module.exports = {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' },
+      { rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.8.2/css/all.css', integrity: 'sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF', crossorigin: 'anonymous'}
     ]
   },
   css: [

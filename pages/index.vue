@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header mb3 :picture="require('~/assets/home.png')" :title="title" :description="description">
+    <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
       <div flex row>
         <Button :to="links.enterprise" primary>Enterprise Solutions</Button>
         <Button :to="links.getStarted" secondary>Get Started</Button>
@@ -49,7 +49,7 @@
         <Card p2 id="token">
           <div flex row>
             <div>
-              <img src="~/assets/token/token.png" alt="token">
+              <img src="~/assets/token/MESG-token.svg" alt="token">
             </div>
             <div>
               <h3 mb1>Build Modules, Earn Tokens</h3>

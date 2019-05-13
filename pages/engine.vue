@@ -2,7 +2,7 @@
   <div>
     <Header
       mb3
-      :picture="require('~/assets/engine/engine.png')"
+      :picture="require('~/assets/engine/engine.svg')"
       :title="title"
       :description="description"
     >
@@ -70,7 +70,7 @@
       <Container>
         <div flex row space-between align-center>
           <div>
-            <img src="~/assets/engine/token-engine.png" alt="The MESG Token and Engine">
+            <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and Engine">
           </div>
           <div>
             <h2 class="text-left" mb1>The MESG Token and Engine</h2>

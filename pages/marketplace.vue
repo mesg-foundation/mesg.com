@@ -2,7 +2,7 @@
   <div>
     <Header
       mb3
-      :picture="require('~/assets/marketplace/marketplace.png')"
+      :picture="require('~/assets/marketplace/marketplace.svg')"
       :title="title"
       :description="description"
     >
@@ -71,7 +71,7 @@
         <div flex row space-between align-center>
           <div>
             <img
-              src="~/assets/marketplace/token-marketplace.png"
+              src="~/assets/marketplace/token-marketplace.svg"
               alt="The MESG Token and Marketplace"
             >
           </div>
