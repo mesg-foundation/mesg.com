@@ -1,6 +1,7 @@
 :root {
   --purple: #491e8c;
   --light-purple: #bdafd6;
+  --dark-purple: #210e41;
   --white: #ffffff;
   --light-background: #f2f0f7;
   --title-color: #0e061c;
@@ -95,10 +96,11 @@ img {
   max-width: 100%;
 }
 
-link {
+a {
   font-size: 17px;
   font-weight: bold;
   color: var(--purple);
+  text-decoration: none;
 }
 
 /* Structure */

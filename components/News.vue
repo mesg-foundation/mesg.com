@@ -1,11 +1,12 @@
 <template>
   <section id="articles">
     <Container flex column align-center>
-      <h2 mb2>In the news</h2>
+      <h2 mb2>{{title}}</h2>
       <div flex row space-between>
         <Card v-for="article in articles" :key="article.id" :id="article.id" p1 mb2 bordered>
           <img mb1 :src="article.img" :alt="article.title">
           <h4 mb1>{{ article.title }}</h4>
+          <i class="far fa-external-link"></i>
         </Card>
       </div>
     </Container>
@@ -21,18 +22,14 @@ export default {
     Card
   },
   props: {
-    id: {
-      type: String,
-      required: true
-    },
-    img: {
-      type: String,
+    articles: {
+      type: Array,
       required: true
     },
     title: {
       type: String,
-      required: true
-    },
+      default: "In the news"
+    }
   }
 };
 </script>
@@ -51,5 +48,11 @@ img {
 
 .card:last-child {
   margin-right: 0;
+}
+
+i {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: right;
 }
 </style>

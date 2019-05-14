@@ -54,11 +54,97 @@ export const getters = {
     ]
   },
 
+  enterprise() {
+    return [
+      {
+        features: {
+          primary: [
+            { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development, or boost revenues. Managed by the free, open source MESG Engine." },
+            { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Automate tasks", description: "Create autonomous reactive applications and workflows using any API, IoT device or blockchain, that can execute and function entirely from a decentralized cloud." },
+            { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening for digital events, data can be gathered and processed more efficiently than ever before. Use more blockchains and databases without the headache." }
+          ],
+          secondary: [
+            { src: require("~/assets/enterprise/engineering-support.svg"), title: "Engineering support", description: "Receive priority technical support from a team of engineers dedicated to your project, day or night." },
+            { src: require("~/assets/enterprise/architecture-advisory.svg"), title: "Architecture advisory", description: "Our advisors are committed to creating optimum efficiency between all of your connected systems." },
+            { src: require("~/assets/enterprise/custom-built.svg"), title: "Custom-built solutions", description: "Don’t want to built it yourself? Let us build apps for you, enhancing legacy software with blockchains, IoT devices and more." },
+            { src: require("~/assets/enterprise/community-support.svg"), title: "Community support", description: "MESG has a strong community and economy built to support development. Share app components, or get support on the forum." }
+          ]
+        },
+        faq: [
+          { title:"Are apps dependent on MESG to run?", description:"No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralization network allows apps to execute without any centralized dependencies." },
+          { title:"How does MESG manage intellectual property?", description:"We take privacy seriously and set clear expectations with new clients. MESG keeps intellectual property secure through agreements signed with new clients, plus, services and apps can always be kept private, designed to function on your own private network and nowhere else." },
+          { title:"Who owns the apps that MESG builds for me?", description:"When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG." },
+          { title:"MESG is free, so why purchase advisory services?", description:"Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture." }
+        ]
+      }
+    ]
+  },
+
+  token() {
+    return [
+      {
+        features: {
+          primary: [
+            { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "You can become a part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation." },
+            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants stake MESG Tokens to commit to their availability and good behavior. Then, participants are rewarded for validating each execution." },
+            { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell Modules", description: "App components, called Modules, are bought and sold using the MESG Token. Then Modules can be used in any app, no complex coding required." }
+          ],
+          secondary: [
+            { src: require("~/assets/token/algorithm.svg"), title: "The algorithm", description: "Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand." },
+            { src: require("~/assets/token/transparency.svg"), title: "Transparency", description: "Metrics will be published daily to enhance transparency between the MESG Foundation and the community." },
+            { src: require("~/assets/token/initial-supply.svg"), title: "Initial supply", description: "0.1% of the total supply was released on the first day of exchange listing to initiate the supply." },
+            { src: require("~/assets/token/supply-distribution.svg"), title: "Supply distribution", description: "The supply distribution of 62.5% will be released in daily allotments." }
+          ]
+        },
+        faq: [
+          { title:"How do you use the MESG Token?", description:"Today, the MESG Token can be used in the Marketplace to buy and sell application components. Purchasing them saves developers time, while providing new ways to earn from coding." },
+          { title:"What’s the future of the MESG Token?", description:"Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications. Plus, it will secure the network through a mandatory staking system." },
+          { title:"How does the ATD promote stability?", description:"The Algorithmic Token Distribution (ATD) limits daily Token releases to no more than 6% of the previous day’s total volume. This means gradual large payouts for all, plus limited sales to promote a stable volume of MESG Tokens entering the market." },
+          { title:"Where can I buy MESG Tokens?", description:"The MESG Tokens is available to purchase now on DigiFinex and IDEX, and soon, it will be listed BitForex. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
+        ]
+      }
+    ]
+  },
+
   articles() {
     return [
       { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.png") },
       { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png") },
       { id: "finance", title: "What’s Holding Back Blockchain Adoption? The Answer is Simple – Connectivity", img: require("~/assets/press/finance-magnates.png") },
+    ]
+  },
+
+  investors() {
+    return [
+      {
+        src: require("~/assets/partners/yellow.png"),
+        title: "Yellow Capital",
+        description:"Yellow is building the future of Blockchain with seed investments, mentorship, advisory (STOs, token economics, legal, banking, marketing, fundraising and listing) and software solutions. Yellow also enriches the Blockchain community through physical hubs, live events, and original news and entertainment.",
+        to: "https://yellow.com/"
+      }
+    ]
+  },
+
+  partners() {
+    return [
+      {
+        src: require("~/assets/partners/beachhead.png"),
+        title: "BeachHead",
+        description:"BeachHead is a decentralized platform, based on both Ethereum and Ripple blockchains, where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
+        to: "https://beachhead.com/",
+      },
+      {
+        src: require("~/assets/partners/windprotocol.png"),
+        title: "Wind Protocol",
+        description:"Wind Protocol matches startups with investors. Startups can grow their communities, get feedback and opportunity to receive funding. Investors access deals through a network of venture scouts and tech geeks from the world’s innovative companies and startup ecosystems.",
+        to: "https://windprotocol.com/",
+      },
+      {
+        src: require("~/assets/partners/yuser.png"),
+        title: "Yuser",
+        description:"Yuser is a next-gen social networking app that rewards you for your creativity and fame. It empowers you to be who you want to be online. Unlock features and earn tokens by creating engaging content and growing a large following. Create, grow, and thrive all in one place.",
+        to: "https://yuser.co/",
+      }
     ]
   },
 
@@ -114,9 +200,9 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "file-alt" },
-      marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "marketplace" },
-      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "github" }
+      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "fas fa-file-alt" },
+      marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "fas fa-store" },
+      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "fab fa-github" }
     }
   },
 
@@ -127,13 +213,13 @@ export const getters = {
       engine: "/engine",
       marketplace: "/marketplace",
       token: "/token",
-      foundation: "/",
+      foundation: "/overview",
       getStarted: "/",
-      showcase: "/",
-      partners: "/",
+      showcase: "/showcase",
+      partners: "/partners",
       demo: "/",
-      faq: "/",
-      roadmap: "/"
+      faq: "/faq",
+      roadmap: "/roadmap"
     }
   }
 }

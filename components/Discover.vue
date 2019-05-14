@@ -4,7 +4,7 @@
       <h2 mb2>Discover more about MESG</h2>
       <div flex row space-between class="items">
         <div half v-for="(item, i) in items" :key="i" class="item">
-          <h3>{{ item.title }}</h3>
+          <h3 mb1>{{ item.title }}</h3>
           <p mb2>{{ item.description }}</p>
           <Button secondary :to="item.to">{{ item.action }}</Button>
         </div>
@@ -44,9 +44,6 @@ export default {
 </script>
 
 <style scoped>
-h3 {
-  margin-bottom: 14px;
-}
 .items {
   position: relative;
 }
@@ -55,7 +52,7 @@ h3 {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 1px;
+  width: 0.1em;
   left: 50%;
   background-color: var(--light-purple);
 }
