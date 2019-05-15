@@ -6,7 +6,7 @@
           <div flex column two-third>
             <h3 mb1>{{title}}</h3>
             <p mb1>{{description}}</p>
-            <nav flex row space-between>
+            <nav flex row>
               <a v-for="(link, i) in links" :key="i" :href="link.to" target="_blank">
                 <i v-if="link.icon" :class="link.icon"></i>
                 {{link.title}}
@@ -20,7 +20,6 @@
       </Card>
     </Container>
     <div class="background"></div>
-    <div class="bg"></div>
   </section>
 </template>
 
@@ -64,30 +63,21 @@ export default {
 </script>
 
 <style scoped>
-
 i {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding-right:0.5em;
+  padding-right: 0.5em;
 }
 
 .background {
-  position: relative;
+  overflow: hidden;
+  position: absolute;
   width: 100%;
-  height: 300px;
-  bottom: 150px;
-  z-index: -1;
+  height: 290px;
+  bottom: 1;
   background: var(--light-background);
   transform: skewY(-11deg);
-  z-index: -2;
-}
-.bg {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  bottom: 300px;
   z-index: -1;
-  background: var(--light-background);
 }
 </style>
