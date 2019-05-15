@@ -7,8 +7,8 @@
       :description="description"
     >
       <div flex row>
-        <Button :to="links.enterprise" primary>Enterprise Solutions</Button>
-        <Button :to="links.getStarted" secondary>Get Started</Button>
+        <Button :to="links.enterprise" primary>Enterprise solutions</Button>
+        <Button :to="links.getStarted" secondary>Get started</Button>
       </div>
     </Header>
 
@@ -126,7 +126,7 @@ export default {
     page({
       title: "MESG Engine",
       description:
-        "An open event channel and CLI for building and hosting modular applications. Control the flow of data and level of security between your whole stack of connected systems."
+        "An open event channel and CLI for building and running modular applications. Control the flow of data and level of security between your whole stack of connected systems."
     })
   ],
   computed: {

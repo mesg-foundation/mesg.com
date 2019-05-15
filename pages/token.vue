@@ -15,19 +15,11 @@
     <section id="features" mb3>
       <Container flex row space-between>
         <TextWithIcon
-          :src="require('~/assets/token/decentralize-executions.svg')"
-          title="Decentralize executions"
-          text="You can become a part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation."
-        />
-        <TextWithIcon
-          :src="require('~/assets/token/secure-network.svg')"
-          title="Secure the network"
-          text="All participants stake MESG Tokens to commit to their availability and good behavior. Then, participants are rewarded for validating each execution."
-        />
-        <TextWithIcon
-          :src="require('~/assets/token/buy-sell.svg')"
-          title="Buy and sell Modules"
-          text="App components, called Modules, are bought and sold using the MESG Token. Then Modules can be used in any app, no complex coding required."
+          v-for="(feature, i) in token.features.primary"
+          :key="i"
+          :src="feature.src"
+          :title="feature.title"
+          :text="feature.description"
         />
       </Container>
     </section>
@@ -42,27 +34,11 @@
         <div flex row space-between wrap>
           <TextWithIcon
             half
-            :src="require('~/assets/token/algorithm.svg')"
-            title="The algorithm"
-            text="Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand."
-          />
-          <TextWithIcon
-            half
-            :src="require('~/assets/token/transparency.svg')"
-            title="Transparency"
-            text="Metrics will be published daily to enhance transparency between the MESG Foundation and the community."
-          />
-          <TextWithIcon
-            half
-            :src="require('~/assets/token/initial-supply.svg')"
-            title="Initial supply"
-            text="0.1% of the total supply was released on the first day of exchange listing to initiate the supply."
-          />
-          <TextWithIcon
-            half
-            :src="require('~/assets/token/supply-distribution.svg')"
-            title="Supply distribution"
-            text="The supply distribution of 62.5% will be released in daily allotments."
+            v-for="(feature, i) in token.features.secondary"
+            :key="i"
+            :src="feature.src"
+            :title="feature.title"
+            :text="feature.description"
           />
         </div>
       </Container>
@@ -98,6 +74,26 @@
       </Container>
     </section>
 
+    <section id="faq" mb3>
+      <Container>
+        <h2 mb2>Frequently Asked Questions</h2>
+        <div flex row space-between wrap>
+          <Titletext4
+            half
+            v-for="(faq, i) in token.faq"
+            :key="i"
+            :title="faq.title"
+            :text="faq.description"
+          />
+        </div>
+        <div class="text-center">
+          <Button secondary :to="links.faq">Access the FAQ</Button>
+        </div>
+      </Container>
+    </section>
+
+    <News :articles="articles"/>
+
     <CallToAction
       mb3
       title="Buy and trade MESG Token on"
@@ -117,6 +113,8 @@ import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
+import Titletext4 from "~/components/Titletext4";
+import News from "~/components/News";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
@@ -132,6 +130,8 @@ export default {
     Container,
     Button,
     Card,
+    Titletext4,
+    News,
     CallToAction,
     Discover,
     GetStarted,
@@ -147,10 +147,14 @@ export default {
         "Buy and sell app components in the new economy of app development. MESG Token available now."
     })
   ],
-  computed: mapGetters({
-    links: "links",
-    documents: "documents"
-  })
+  computed: {
+    ...mapGetters({
+      token: "token",
+      links: "links",
+      documents: "documents",
+      articles: "articles"
+    })
+  }
 };
 </script>
 

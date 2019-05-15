@@ -7,7 +7,7 @@
       :description="description"
     >
       <div flex row>
-        <Button :to="links.enterprise" primary>Enterprise Solutions</Button>
+        <Button :to="links.enterprise" primary>Enterprise solutions</Button>
         <Button :to="links.marketplace" secondary>The Marketplace</Button>
       </div>
     </Header>
@@ -79,7 +79,7 @@
             <h2 class="text-left" mb1>The MESG Token and Marketplace</h2>
             <p
               mb2
-            >The MESG Token can be used to purchase access to Modules in the Marketplace. Once decentralized, the Token will also be used to secure and power the network.</p>
+            >The MESG Token can be used to purchase access to services in the Marketplace. Once decentralized, the Token will also be used to secure and power the network.</p>
             <Button outline :to="links.token">Discover the MESG Token</Button>
           </div>
         </div>

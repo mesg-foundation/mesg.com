@@ -49,10 +49,10 @@
         <Card p2 id="token">
           <div flex row align-center>
             <div flex two-third>
-              <div flex column one-quarter>
+              <div one-quarter>
                 <img src="~/assets/token/MESG-token.svg" alt="token">
               </div>
-              <div flex column three-quarter>
+              <div three-quarter>
                 <h3 mb1>Build Modules, Earn Tokens</h3>
                 <p>Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
               </div>
@@ -65,20 +65,7 @@
       </Container>
     </section>
 
-    <section id="articles" mb3>
-      <Container flex column align-center>
-        <h2 mb2>In the news</h2>
-        <div flex row space-between>
-          <Card v-for="article in articles" :key="article.id" :id="article.id" p1 mb2 bordered>
-            <img mb1 :src="article.img" :alt="article.title">
-            <h4 mb1>{{ article.title }}</h4>
-            <div class="icon">
-              <i class="far fa-external-link"></i>
-            </div>
-          </Card>
-        </div>
-      </Container>
-    </section>
+    <News :articles="articles" />
 
     <CallToAction
       mb3
@@ -101,6 +88,7 @@ import Button from "~/components/Button";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Card from "~/components/Card";
+import News from "~/components/News";
 import List from "~/components/List";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
@@ -115,6 +103,7 @@ export default {
     Button,
     Video,
     Card,
+    News,
     List,
     CallToAction,
     Discover,
@@ -166,4 +155,5 @@ export default {
   font-size: 1em;
   text-align: right;
 }
+
 </style>
