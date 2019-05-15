@@ -1,9 +1,9 @@
 <template>
   <div>
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
-      <div flex row>
-        <Button :to="links.enterprise" primary>Enterprise Solutions</Button>
-        <Button :to="links.getStarted" secondary>Get Started</Button>
+      <div>
+        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
+        <Button :to="links.getStarted" secondary>Get started</Button>
       </div>
     </Header>
 
@@ -65,7 +65,7 @@
       </Container>
     </section>
 
-    <News :articles="articles" />
+    <News :articles="articles"/>
 
     <CallToAction
       mb3
@@ -155,5 +155,4 @@ export default {
   font-size: 1em;
   text-align: right;
 }
-
 </style>

@@ -94,12 +94,18 @@ export const getters = {
         ]
       },
       faq: [
-        { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the Marketplace to buy and sell application components. Purchasing them saves developers time, while providing new ways to earn from coding." },
+        { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ target=_blank>Marketplace</a> to buy and sell application components. Purchasing them saves developers time, while providing new ways to earn from coding." },
         { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications. Plus, it will secure the network through a mandatory staking system." },
         { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to no more than 6% of the previous day’s total volume. This means gradual large payouts for all, plus limited sales to promote a stable volume of MESG Tokens entering the market." },
-        { title: "Where can I buy MESG Tokens?", description: "The MESG Tokens is available to purchase now on DigiFinex and IDEX, and soon, it will be listed BitForex. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
+        { title: "Where can I buy MESG Tokens?", description: "The MESG Tokens is available to purchase now on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG target=_blank>DigiFinex</a> and <a href=https://idex.market/eth/mesg target=_blank>IDEX</a>, and soon, it will be listed BitForex. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
       ]
     }
+  },
+
+  Exchanges() {
+    return [
+      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" }
+    ]
   },
 
   articles() {

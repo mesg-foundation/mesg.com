@@ -6,7 +6,7 @@
       :title="title"
       :description="description"
     >
-      <div flex row>
+      <div>
         <Button :to="links.demo" primary>Request a demo</Button>
         <span spacer></span>
       </div>

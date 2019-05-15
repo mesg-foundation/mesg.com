@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header mb3 :picture="require('~/assets/team.svg')" :title="title" :description="description">
-      <div flex row>
+      <div>
         <Button :to="links.demo" primary>Get in touch</Button>
         <span spacer></span>
       </div>

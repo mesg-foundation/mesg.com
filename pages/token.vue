@@ -6,9 +6,17 @@
       :title="title"
       :description="description"
     >
-      <div flex row>
-        <!-- TODO: links -->
-        links
+      <div>
+        <p mb1>
+          <strong>Buy and trade on:</strong>
+        </p>
+        <a href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" mr2>
+          <img src="~assets/exchanges/digifinex.svg" alt="Digifinex">
+        </a>
+        <a href="https://idex.market/eth/mesg" target="_blank" mr2>
+          <img src="~assets/exchanges/idex.svg" alt="Idex">
+        </a>
+        <img src="~assets/exchanges/bitforex.svg" alt="DBitforex" class="soon">
       </div>
     </Header>
 
@@ -161,6 +169,14 @@ export default {
 <style scoped>
 ul {
   list-style: none;
+}
+
+.soon {
+  opacity: 0.3;
+}
+
+img {
+  height: 25px;
 }
 
 li img {

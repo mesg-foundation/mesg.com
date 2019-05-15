@@ -43,15 +43,17 @@ export default {
       };
     },
     isExternalLink() {
-      const link = this.href || this.to
-      return link.startsWith("http")
+      const link = this.href || this.to;
+      return link.startsWith("http");
     },
     posticon() {
-      if (!this.secondary) { return null }
-      if (this.isExternalLink) {
-        return "far fa-external-link"
+      if (!this.secondary) {
+        return null;
       }
-      return "fa fa-arrow-right"
+      if (this.isExternalLink) {
+        return "far fa-external-link";
+      }
+      return "fa fa-arrow-right";
     }
   }
 };
@@ -70,8 +72,8 @@ button {
   letter-spacing: normal;
   text-align: center;
   padding: 0.75em;
-  padding-left:2em;
-  padding-right:2em;
+  padding-left: 2em;
+  padding-right: 2em;
   text-decoration: none;
   display: inline-block;
 }
@@ -80,7 +82,7 @@ i {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  padding-left:0.5em;
+  padding-left: 0.5em;
 }
 
 .btn--primary {
@@ -91,9 +93,9 @@ i {
 .btn--secondary {
   color: var(--purple);
   text-align: left;
-  border-radius:0;
-  padding-left:0;
-  padding-right:0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
   border-bottom: solid 1px var(--purple);
 }
 

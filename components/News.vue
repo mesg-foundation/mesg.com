@@ -6,7 +6,9 @@
         <Card v-for="article in articles" :key="article.id" :id="article.id" p1 mb2 bordered>
           <img mb1 :src="article.img" :alt="article.title">
           <h4 mb1>{{ article.title }}</h4>
-          <i class="far fa-external-link"></i>
+          <div class="icon">
+            <i class="far fa-external-link"></i>
+          </div>
         </Card>
       </div>
     </Container>
@@ -36,10 +38,13 @@ export default {
 
 
 <style scoped>
-
 img {
   height: 20px;
   width: auto;
+}
+
+.icon {
+  text-align: right;
 }
 
 .card {

@@ -3,7 +3,7 @@
     <div flex column align-center>
       <img :src="src">
     </div>
-    <div flex column space-between>
+    <div>
       <h3 mb1>{{ title }}</h3>
       <p v-if="description" mb2 v-html="description"></p>
       <slot mb2></slot>

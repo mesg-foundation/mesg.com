@@ -47,6 +47,7 @@ export default {
 .items {
   position: relative;
 }
+
 .items::before {
   content: "";
   position: absolute;

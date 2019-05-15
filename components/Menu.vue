@@ -7,7 +7,7 @@
       <Button :to="links.engine">Products</Button>
       <Button :to="links.getStarted">Developers</Button>
       <Button :to="links.foundation">Foundation</Button>
-      <Button :to="links.token">Token</Button>
+      <Button :to="links.token" mr1>Token</Button>
       <Button primary :to="links.enterprise">Enterprise</Button>
     </div>
   </nav>

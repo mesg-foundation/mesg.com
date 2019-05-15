@@ -6,8 +6,8 @@
       :title="title"
       :description="description"
     >
-      <div flex row>
-        <Button :to="links.enterprise" primary>Enterprise solutions</Button>
+      <div>
+        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :to="links.getStarted" secondary>Get started</Button>
       </div>
     </Header>
