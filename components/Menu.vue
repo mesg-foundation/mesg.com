@@ -30,7 +30,6 @@ export default {
 <style scoped>
 nav {
   height: 80px;
-  background-color: var(--white);
   padding: 18px 40px;
 }
 img {

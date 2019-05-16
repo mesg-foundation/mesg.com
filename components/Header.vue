@@ -1,5 +1,5 @@
 <template>
-  <header p3>
+  <header id="header" pt3 pb3>
     <Container flex row align-center space-between>
       <div half>
         <h1 mb1 v-html="title"></h1>
@@ -36,14 +36,24 @@ export default {
 </script>
 
 <style scoped>
-header {
-  background-image: linear-gradient(
-    to bottom,
-    var(--white),
-    var(--light-background)
-  );
-  /* clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 0); */
+#header {
+  position: relative;
 }
+
+#header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 200px);
+  background-image: linear-gradient(
+    to top,
+    var(--light-background),
+    var(--white)
+  );
+  transform: translateY(-35%) skewY(-8deg);
+  z-index: -1;
+}
+
 p {
   font-size: 20px;
 }
