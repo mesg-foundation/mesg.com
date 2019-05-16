@@ -8,7 +8,7 @@
     >
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :to="links.marketplace" secondary>The Marketplace</Button>
+        <Button href="https://marketplace.mesg.com/" target="_blank" secondary>The Marketplace</Button>
       </div>
     </Header>
 
@@ -58,9 +58,11 @@
             :text="usecase.description"
           />
         </div>
+        <!--
         <div class="text-center">
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
+        -->
       </Container>
     </section>
 

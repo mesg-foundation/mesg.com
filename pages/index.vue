@@ -3,7 +3,11 @@
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :to="links.getStarted" secondary>Get started</Button>
+        <Button
+          href="https://docs.mesg.com/guide/quick-start-guide.html"
+          target="_blank"
+          secondary
+        >Get started</Button>
       </div>
     </Header>
 
@@ -120,7 +124,6 @@ export default {
   computed: mapGetters({
     products: "products",
     articles: "articles",
-    externalLinks: "externalLinks",
     links: "links"
   })
 };

@@ -8,7 +8,11 @@
     >
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :to="links.getStarted" secondary>Get started</Button>
+        <Button
+          href="https://docs.mesg.com/guide/quick-start-guide.html"
+          target="_blank"
+          secondary
+        >Get started</Button>
       </div>
     </Header>
 
@@ -58,9 +62,10 @@
             :text="usecase.description"
           />
         </div>
+        <!--
         <div class="text-center">
           <Button secondary :to="links.showcase">App Showcase</Button>
-        </div>
+        </div>-->
       </Container>
     </section>
 

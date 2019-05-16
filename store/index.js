@@ -9,8 +9,10 @@ export const getters = {
           "The MESG Engine powers connectivity between Modules and other devices and applications. Control the flow of data and level of security between your whole stack of connected technologies.",
         features: {
           primary: [
-            { src: require('~/assets/engine/tech.svg'), title: "Integrate complicated tech easily", description: "Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.<br/><br/>The Engine manages and forwards events between all components so each component can stand on its own, making it simple to add, remove or update any component.", to: links.getStarted, action: "Quick start" },
-            { src: require("~/assets/engine/development.svg"), title: "No wasted development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The Engine allows you to reuse any app component; and not just from your apps, but from the community’s apps too.<br/><br/>After components are built, either keep them private, or share them to earn in the Marketplace.", to: links.marketplace, action: "Go to the Marketplace" }
+            {
+              src: require('~/assets/engine/tech.svg'), title: "Integrate complicated tech easily", description: "Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.<br/><br/>The Engine manages and forwards events between all components so each component can stand on its own, making it simple to add, remove or update any component.", to: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
+            },
+            { src: require("~/assets/engine/development.svg"), title: "No wasted development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The Engine allows you to reuse any app component; and not just from your apps, but from the community’s apps too.<br/><br/>After components are built, either keep them private, or share them to earn in the Marketplace.", to: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
           ],
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building apps that react to real-world events is the efficient way to manage hard-to-reach technologies like blockchains or IoT devices. Your apps remain lightweight, reactive and easy to maintain." },
@@ -34,8 +36,8 @@ export const getters = {
           "A decentralized marketplace to connect buyers looking to save time in development with sellers earning tokens for the reuse of their code.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", to: links.marketplace, action: "Go to the Marketplace" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "The Marketplace will soon be decentralized, with all services and applications interacting in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.home, action: "Our solutions" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", to: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "The Marketplace will soon be decentralized, with all services and applications interacting in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.enterprise, action: "Our solutions" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
@@ -110,9 +112,9 @@ export const getters = {
 
   articles() {
     return [
-      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.png") },
-      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png") },
-      { id: "finance", title: "What’s Holding Back Blockchain Adoption? The Answer is Simple – Connectivity", img: require("~/assets/press/finance-magnates.png") },
+      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.png"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
+      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" },
+      { id: "finance", title: "What’s Holding Back Blockchain Adoption? The Answer is Simple – Connectivity", img: require("~/assets/press/finance-magnates.png"), to: "https://www.financemagnates.com/thought-leadership/whats-holding-back-blockchain-adoption-the-answer-is-simple-connectivity/" }
     ]
   },
 
@@ -123,7 +125,8 @@ export const getters = {
           src: require("~/assets/partners/yellow.png"),
           title: "Yellow Capital",
           description: "Yellow is building the future of Blockchain with seed investments, mentorship, advisory (STOs, token economics, legal, banking, marketing, fundraising and listing) and software solutions. Yellow also enriches the Blockchain community through physical hubs, live events, and original news and entertainment.",
-          to: "https://yellow.com/"
+          to: "https://yellow.com/",
+          action: "yellow.com"
         }
       ],
       secondary: [
@@ -132,18 +135,21 @@ export const getters = {
           title: "BeachHead",
           description: "BeachHead is a decentralized platform, based on both Ethereum and Ripple blockchains, where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
           to: "https://beachhead.com/",
+          action: "beachhead.com"
         },
         {
           src: require("~/assets/partners/windprotocol.png"),
           title: "Wind Protocol",
           description: "Wind Protocol matches startups with investors. Startups can grow their communities, get feedback and opportunity to receive funding. Investors access deals through a network of venture scouts and tech geeks from the world’s innovative companies and startup ecosystems.",
           to: "https://windprotocol.com/",
+          action: "windprotocol.com"
         },
         {
           src: require("~/assets/partners/yuser.png"),
           title: "Yuser",
           description: "Yuser is a next-gen social networking app that rewards you for your creativity and fame. It empowers you to be who you want to be online. Unlock features and earn tokens by creating engaging content and growing a large following. Create, grow, and thrive all in one place.",
           to: "https://yuser.co/",
+          action: "yuser.co"
         }
       ]
     }
@@ -174,18 +180,6 @@ export const getters = {
         ],
         secondary: [
           {
-            src: require("~/assets/team/Wayne.jpg"),
-            title: "Wayne Skeen",
-            description: "Head of Business",
-            company: ""
-          },
-          {
-            src: require("~/assets/team/Janie.jpg"),
-            title: "Janie Lim",
-            description: "Chief Evangelist",
-            company: ""
-          },
-          {
             src: require("~/assets/team/Will.jpg"),
             title: "Will Morgan",
             description: "Executive Brand Manager",
@@ -207,6 +201,18 @@ export const getters = {
             src: require("~/assets/team/Ilker.jpg"),
             title: "İlker Göktuğ Öztürk",
             description: "Core Developer",
+            company: ""
+          },
+          {
+            src: require("~/assets/team/Wayne.jpg"),
+            title: "Wayne Skeen",
+            description: "Advisor",
+            company: ""
+          },
+          {
+            src: require("~/assets/team/Janie.jpg"),
+            title: "Janie Lim",
+            description: "Evangelist",
             company: ""
           }
         ]
@@ -268,7 +274,7 @@ export const getters = {
     return {
       documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "fas fa-file-alt" },
       marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "fas fa-store" },
-      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "fab fa-github" }
+      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "fab fa-github" },
     }
   },
 
@@ -279,7 +285,7 @@ export const getters = {
       engine: "/engine",
       marketplace: "/marketplace",
       token: "/token",
-      foundation: "/overview",
+      foundation: "/foundation",
       getStarted: "/",
       showcase: "/showcase",
       partners: "/partners",

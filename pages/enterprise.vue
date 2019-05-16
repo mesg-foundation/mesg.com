@@ -7,7 +7,10 @@
       :description="description"
     >
       <div>
-        <Button :to="links.demo" primary>Request a demo</Button>
+        <Button
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform"
+          primary
+        >Request a demo</Button>
         <span spacer></span>
       </div>
     </Header>
@@ -79,9 +82,11 @@
             :text="faq.description"
           />
         </div>
+        <!--
         <div class="text-center">
           <Button secondary :to="links.faq">Access the FAQ</Button>
         </div>
+        -->
       </Container>
     </section>
 

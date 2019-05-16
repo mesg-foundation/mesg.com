@@ -14,7 +14,11 @@
             </nav>
           </div>
           <div flex column one-third>
-            <Button primary :to="to">{{action}}</Button>
+            <Button
+              primary
+              href="https://docs.mesg.com/guide/quick-start-guide.html"
+              target="_blank"
+            >Get started</Button>
           </div>
         </div>
       </Card>
@@ -51,12 +55,6 @@ export default {
         this.externalLinks.marketplace,
         this.externalLinks.github
       ];
-    },
-    action() {
-      return "Get Started";
-    },
-    to() {
-      return this.links.getStarted;
     }
   }
 };
@@ -70,14 +68,17 @@ i {
   padding-right: 0.5em;
 }
 
-.background {
-  overflow: hidden;
+#get-started {
+  position: relative;
+}
+
+#get-started::before {
+  content: "";
   position: absolute;
   width: 100%;
-  height: 290px;
-  bottom: 1;
+  height: calc(100% + 200px);
   background: var(--light-background);
-  transform: skewY(-11deg);
+  transform: translateY(30%) skewY(-8deg);
   z-index: -1;
 }
 </style>

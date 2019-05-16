@@ -16,7 +16,7 @@
         <a href="https://idex.market/eth/mesg" target="_blank" mr2>
           <img src="~assets/exchanges/idex.svg" alt="Idex">
         </a>
-        <img src="~assets/exchanges/bitforex.svg" alt="DBitforex" class="soon">
+        <img src="~assets/exchanges/bitforex.svg" alt="DBitforex">
       </div>
     </Header>
 
@@ -94,9 +94,11 @@
             :text="faq.description"
           />
         </div>
+        <!--
         <div class="text-center">
           <Button secondary :to="links.faq">Access the FAQ</Button>
         </div>
+        -->
       </Container>
     </section>
 
