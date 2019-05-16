@@ -178,9 +178,7 @@ export const getters = {
             title: "Alexis Sirkia",
             description: "Co-founder",
             company: ""
-          }
-        ],
-        secondary: [
+          },
           {
             src: require("~/assets/team/Will.jpg"),
             title: "Will Morgan",

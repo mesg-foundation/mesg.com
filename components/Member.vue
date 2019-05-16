@@ -1,13 +1,9 @@
 <template>
-  <div flex column class="card">
-    <div>
-      <img :src="src" :alt="title">
-    </div>
-    <div flex column class="details">
+  <div class="card" mb2>
+    <img :src="src" :alt="title">
+    <div class="text">
       <h4>{{ title }}</h4>
-      <p v-html="text" mb1>{{ description }}</p>
-      <hr v-if="company" mb1>
-      <img v-if="company" :src="src" :alt="title" :class="logo">
+      <p v-html="text"></p>
     </div>
   </div>
 </template>
@@ -34,6 +30,13 @@ export default {
 <style scoped>
 .card {
   border-radius: 6px;
+  width: 313px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  height: ;
+  border-radius: 6px;
+  background-color: var(--white);
 }
 
 img {
@@ -42,12 +45,7 @@ img {
   overflow: hidden;
 }
 
-.details {
+.text {
   padding: 20px;
-  background-color: var(--white);
-}
-
-.logo {
-  height: 20px;
 }
 </style>

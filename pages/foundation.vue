@@ -76,24 +76,10 @@
         <h2 mb2>The Core of the project</h2>
       </Container>
       <div class="inner-background" mb3>
-        <Container flex row space-between>
-          <Member
-            mb2
-            v-for="(member, i) in team.members.primary"
-            :key="i"
-            :src="member.src"
-            :title="member.title"
-            :text="member.description"
-          />
-        </Container>
-        <Container flex row space-between>
-          <Member
-            v-for="(member, i) in team.members.secondary"
-            :key="i"
-            :src="member.src"
-            :title="member.title"
-            :job="member.description"
-          />
+        <Container flex space-between wrap>
+          <div v-for="(member, i) in team.members.primary" :key="i">
+            <Member :src="member.src" :title="member.title" :text="member.description"/>
+          </div>
         </Container>
       </div>
     </section>
