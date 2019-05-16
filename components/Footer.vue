@@ -40,7 +40,9 @@
               <Button class="link" mb1>
                 <span>Showcase</span>
               </Button>
-              <Button :to="links.faq" class="link" mb1>FAQ</Button>
+              <Button class="link" mb1>
+                <span>FAQ</span>
+              </Button>
             </div>
             <div flex column one-quarter>
               <p class="category" mb1>Developers</p>
