@@ -76,7 +76,51 @@ export const getters = {
         { title: "How does MESG manage intellectual property?", description: "We take privacy seriously and set clear expectations with new clients. MESG keeps intellectual property secure through agreements signed with new clients, plus, services and apps can always be kept private, designed to function on your own private network and nowhere else." },
         { title: "Who owns the apps that MESG builds for me?", description: "When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG." },
         { title: "MESG is free, so why purchase advisory services?", description: "Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture." }
-      ]
+      ],
+      packages: {
+        premium: [
+          {
+            title: "Premium",
+            text: "Custom Pricing",
+            items: [
+              {
+                icon: "far fa-check", description: "Access to the Marketplace"
+              },
+              {
+                icon: "far fa-times", description: "Access to the Marketplace"
+              }
+            ],
+            to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
+            action: "Contact us"
+          }
+        ],
+        business: [
+          {
+            title: "Business",
+            text: "Custom Pricing",
+            items: [
+              {
+                icon: "", description: ""
+              }
+            ],
+            to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
+            action: "Contact us"
+          }
+        ],
+        essential: [
+          {
+            title: "Essential",
+            text: "Open Source - FREE",
+            items: [
+              {
+                icon: "", description: ""
+              }
+            ],
+            to: "https://docs.mesg.com/guide/quick-start-guide.html",
+            action: "Get started"
+          }
+        ]
+      }
     }
   },
 

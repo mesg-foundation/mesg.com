@@ -57,9 +57,14 @@
       </Container>
     </section>
     <section id="packages-2" mb3 class="inner-background">
-      <Container>
-        <!-- TODO packages here -->
-        Packages TODO
+      <Container flex wrap>
+        <Package v-for="(premium, i) in enterprise.packages.premium" :key="i" v-bind="premium"/>
+        <Package v-for="(business, i) in enterprise.packages.business" :key="i" v-bind="business"/>
+        <Package
+          v-for="(essential, i) in enterprise.packages.essential"
+          :key="i"
+          v-bind="essential"
+        />
       </Container>
     </section>
 
@@ -107,6 +112,7 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
+import Package from "~/components/Package";
 import Button from "~/components/Button";
 import TextWithIcon from "~/components/TextWithIcon";
 import Partners from "~/components/Partners";
@@ -120,6 +126,7 @@ export default {
   components: {
     Header,
     Container,
+    Package,
     TextWithIcon,
     Button,
     Partners,

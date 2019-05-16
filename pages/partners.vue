@@ -7,7 +7,10 @@
       :description="description"
     >
       <div>
-        <Button :to="links.demo" primary>Become a partner</Button>
+        <Button
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform"
+          primary
+        >Become a partner</Button>
         <span spacer></span>
       </div>
     </Header>
