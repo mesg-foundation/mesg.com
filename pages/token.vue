@@ -104,11 +104,7 @@
 
     <News :articles="articles"/>
 
-    <CallToAction
-      mb3
-      title="Buy and trade MESG Token on"
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
-    />
+    <CallToActionExchange mb3 title="Buy and trade MESG Token on"/>
 
     <Discover mb3 left="showcase" right="enterprise"/>
 
@@ -125,7 +121,7 @@ import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
-import CallToAction from "~/components/CallToAction";
+import CallToActionExchange from "~/components/CallToActionExchange";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -142,7 +138,7 @@ export default {
     Card,
     Titletext4,
     News,
-    CallToAction,
+    CallToActionExchange,
     Discover,
     GetStarted,
     TextWithIcon,
@@ -162,7 +158,8 @@ export default {
       token: "token",
       links: "links",
       documents: "documents",
-      articles: "articles"
+      articles: "articles",
+      exchanges: "exchanges"
     })
   }
 };

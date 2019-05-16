@@ -104,9 +104,11 @@ export const getters = {
     }
   },
 
-  Exchanges() {
+  exchanges() {
     return [
-      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" }
+      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
+      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
+      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" }
     ]
   },
 
@@ -263,10 +265,10 @@ export const getters = {
 
   documents() {
     return [
-      { title: "Whitepaper", img: require('~/assets/documents/todo.png'), link: '/documents/decentralized-network-of-services.pdf' },
-      { title: "Technical Implementation", img: require('~/assets/documents/todo.png'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
-      { title: "Two pager", img: require('~/assets/documents/todo.png'), link: '/documents/MESG-2-pager.pdf' },
-      { title: "Business Plan", img: require('~/assets/documents/todo.png'), link: '/documents/MESG-business-plan-summary.pdf' }
+      { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
+      { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
+      { title: "Two pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
+      { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
     ]
   },
 
