@@ -75,7 +75,7 @@
         </nav>
       </Container>
 
-      <hr class="separator" mb2>
+      <hr mb2>
 
       <section id="newsletter">
         <Container>
@@ -165,8 +165,7 @@ i {
   color: var(--white);
 }
 
-.separator {
-  height: 1px;
+hr {
   opacity: 0.5;
   color: var(--light-purple);
 }
@@ -187,7 +186,7 @@ nav {
 .newsletter {
   width: 300px;
   padding: 20px;
-  border: solid 2px var(--light-purple);
+  border: solid 1px var(--light-purple);
   border-radius: 3px;
   background-color: var(--dark-purple);
   color: var(--white);

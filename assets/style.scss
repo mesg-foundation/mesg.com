@@ -1,6 +1,7 @@
 :root {
   --purple: #491e8c;
   --light-purple: #bdafd6;
+  --deep-purple: #7e61ae;
   --dark-purple: #210e41;
   --white: #ffffff;
   --light-background: #f2f0f7;
@@ -235,7 +236,8 @@ hr {
   max-width: var(--width);
   margin: auto;
   height: 1px;
-  color: var(--light-purple);
+  border:0;
+  background-color: var(--light-purple);
 }
 .container > p {
   max-width: var(--small-width);
