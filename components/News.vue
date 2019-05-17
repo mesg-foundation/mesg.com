@@ -3,13 +3,22 @@
     <Container flex column align-center>
       <h2 mb2>{{title}}</h2>
       <div flex row space-between>
-        <Card v-for="article in articles" :key="article.id" :id="article.id" p1 mb2 bordered>
-          <img mb1 :src="article.img" :alt="article.title">
-          <h4 mb1>{{ article.title }}</h4>
-          <div class="icon">
+        <a
+          v-for="article in articles"
+          :key="article.id"
+          :href="article.to"
+          :id="article.id"
+          target="_blank"
+          third
+          fill-height
+          mb2
+        >
+          <Card p1 bordered>
+            <img mb1 :src="article.img" :alt="article.title">
+            <h4 mb1>{{ article.title }}</h4>
             <i class="far fa-external-link"></i>
-          </div>
-        </Card>
+          </Card>
+        </a>
       </div>
     </Container>
   </section>
@@ -38,24 +47,19 @@ export default {
 
 
 <style scoped>
+a {
+  position: relative;
+}
+
 img {
   height: 20px;
   width: auto;
 }
 
-.icon {
-  text-align: right;
-}
-
-.card {
-  margin-right: 20px;
-}
-
-.card:last-child {
-  margin-right: 0;
-}
-
 i {
+  position: absolute;
+  bottom: calc(var(--margin) + 6px);
+  right: var(--margin);
   font-size: 1em;
   font-weight: bold;
   text-align: right;
