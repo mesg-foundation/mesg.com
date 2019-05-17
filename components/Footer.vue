@@ -55,16 +55,16 @@
       <hr mb2>
 
       <section id="newsletter">
-        <Container>
-          <form flex row align-center>
-            <p class="category text-right" mr2>Sign up for our monthly newsletter</p>
-            <div class="newsletter" flex row space-between>
-              <input type="text" name="email" value="Your email adress">
-              <Button class="link submit" type="submit">
-                <i class="fas fa-arrow-right"></i>
-              </Button>
-            </div>
-          </form>
+        <Container flex row align-center>
+          <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
+          <div>
+            <form action>
+              <input type="email" name="email" placeholder="Your email address">
+              <button type="submit" class="submit-newsletter">
+                <i class="fas fa-arrow-right"/>
+              </button>
+            </form>
+          </div>
         </Container>
       </section>
     </div>
@@ -125,6 +125,7 @@ export default {
   line-height: normal;
   letter-spacing: normal;
   color: var(--deep-purple);
+  display: inline;
 }
 
 span {
@@ -173,28 +174,27 @@ nav {
   text-align: right;
 }
 
-.newsletter {
+form {
+  position: relative;
+}
+
+input[type="email"] {
+  font-size: 15px;
   width: 300px;
-  padding: 20px;
+  padding: 13px var(--margin);
   border: solid 1px var(--deep-purple);
   border-radius: 3px;
   background-color: var(--dark-purple);
   color: var(--white);
+  padding-right: calc(3 * var(--margin));
 }
 
-form {
-  width: 800px;
-  text-align: center;
-}
-
-input[type="text"] {
-  font-size: 15px;
-  color: var(--white);
-  background-color: var(--dark-purple);
+button[type="submit"] {
+  transform: translateX(-40px);
+  background: transparent;
   border: none;
-}
-
-.submit {
-  text-align: right;
+  font-size: 18px;
+  padding: 0;
+  color: var(--white);
 }
 </style>
