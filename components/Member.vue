@@ -34,7 +34,6 @@ export default {
   max-width: 100%;
   height: auto;
   max-height: 100%;
-  height: ;
   border-radius: 6px;
   background-color: var(--white);
 }
@@ -42,6 +41,8 @@ export default {
 img {
   width: 313px;
   height: 313px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   overflow: hidden;
 }
 
