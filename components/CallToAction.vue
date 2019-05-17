@@ -68,6 +68,6 @@ h3 {
   color: var(--white);
 }
 p {
-  color: var(--light-purple);
+  color: var(--white);
 }
 </style>

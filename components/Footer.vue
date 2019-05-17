@@ -123,7 +123,7 @@ export default {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--light-purple);
+  color: var(--deep-purple);
 }
 
 .category {
@@ -133,11 +133,11 @@ export default {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--light-purple);
+  color: var(--deep-purple);
 }
 
 span {
-  color: var(--light-purple);
+  color: var(--deep-purple);
 }
 
 i {
@@ -167,7 +167,7 @@ i {
 
 hr {
   opacity: 0.5;
-  color: var(--light-purple);
+  background-color: var(--deep-purple);
 }
 
 img {
@@ -186,7 +186,7 @@ nav {
 .newsletter {
   width: 300px;
   padding: 20px;
-  border: solid 1px var(--light-purple);
+  border: solid 1px var(--deep-purple);
   border-radius: 3px;
   background-color: var(--dark-purple);
   color: var(--white);
