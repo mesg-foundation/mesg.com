@@ -76,9 +76,16 @@
         <h2 mb2>The Core of the project</h2>
       </Container>
       <div class="inner-background" mb3>
-        <Container flex space-between wrap>
-          <div v-for="(member, i) in team.members.primary" :key="i">
-            <Member :src="member.src" :title="member.title" :text="member.description"/>
+        <Container>
+          <div flex row wrap>
+            <div v-for="(member, i) in team.members.founders" :key="i" third mb2 fill-height>
+              <Member :src="member.src" :title="member.title" :text="member.description"/>
+            </div>
+          </div>
+          <div flex row wrap>
+            <div v-for="(member, i) in team.members.other" :key="i" quarter mb2 fill-height>
+              <Member :src="member.src" :title="member.title" :text="member.description"/>
+            </div>
           </div>
         </Container>
       </div>

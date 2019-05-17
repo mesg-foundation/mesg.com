@@ -255,7 +255,7 @@ export const getters = {
   team() {
     return {
       members: {
-        primary: [
+        founders: [
           {
             src: require("~/assets/team/Anthony.jpg"),
             title: "Anthony Estebe",
@@ -273,7 +273,9 @@ export const getters = {
             title: "Alexis Sirkia",
             description: "Co-founder",
             company: ""
-          },
+          }
+        ],
+        other: [
           {
             src: require("~/assets/team/Will.jpg"),
             title: "Will Morgan",
