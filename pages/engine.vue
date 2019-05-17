@@ -74,10 +74,10 @@
     <section id="token">
       <Container>
         <div flex row space-between align-center>
-          <div>
+          <div half>
             <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and Engine">
           </div>
-          <div>
+          <div half>
             <h2 class="text-left" mb1>The MESG Token and Engine</h2>
             <p
               mb2

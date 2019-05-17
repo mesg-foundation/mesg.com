@@ -71,13 +71,13 @@
     <section id="token">
       <Container>
         <div flex row space-between align-center>
-          <div>
+          <div half>
             <img
               src="~/assets/marketplace/token-marketplace.svg"
               alt="The MESG Token and Marketplace"
             >
           </div>
-          <div>
+          <div half>
             <h2 class="text-left" mb1>The MESG Token and Marketplace</h2>
             <p
               mb2

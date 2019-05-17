@@ -39,7 +39,16 @@
     <section id="products" mb3 class="inner-background">
       <Container>
         <div flex row space-between>
-          <Card v-for="product in products" :key="product.id" :id="product.id" p2 mb2 flex column>
+          <Card
+            v-for="product in products"
+            :key="product.id"
+            :id="product.id"
+            p2
+            mb2
+            flex
+            column
+            half
+          >
             <div>
               <img class="product" mb1 :src="product.img" :alt="product.title">
             </div>

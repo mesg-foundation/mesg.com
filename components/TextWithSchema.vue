@@ -1,9 +1,9 @@
 <template>
   <div flex row space-between align-center>
-    <div flex column align-center>
+    <div half flex column align-center>
       <img :src="src">
     </div>
-    <div>
+    <div half>
       <h3 mb1>{{ title }}</h3>
       <p v-if="description" mb2 v-html="description"></p>
       <slot mb2></slot>

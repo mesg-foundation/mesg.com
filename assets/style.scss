@@ -107,9 +107,12 @@ a {
 /* Structure */
 [flex] {
   display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  min-width: 0;
 }
 [flex] > * {
-  flex: 1;
+  flex: 1 1 auto;
 }
 [spacer] {
   flex: 2;
@@ -162,7 +165,8 @@ a {
 }
 [half] {
   width: calc((var(--width) - (2 - 1) * 2 * var(--margin)) / 2);
-  max-width: 100%;
+  min-width: calc((var(--width) - (2 - 1) * 2 * var(--margin)) / 2);
+  max-width: calc((var(--width) - (2 - 1) * 2 * var(--margin)) / 2);
 }
 
 [row] > [third]:nth-child(3) {
@@ -170,15 +174,21 @@ a {
 }
 [third] {
   width: calc((var(--width) - (3 - 1) * 2 * var(--margin)) / 3);
-  max-width: 100%;
+  min-width: calc((var(--width) - (3 - 1) * 2 * var(--margin)) / 3);
+  max-width: calc((var(--width) - (3 - 1) * 2 * var(--margin)) / 3);
 }
 
 [row] > [quarter]:nth-child(4) {
   margin-right: 0;
 }
 [quarter] {
-  width: calc((var(--width) - (4 - 1) * 1 * var(--margin)) / 4);
-  max-width: 100%;
+  width: calc((var(--width) - (4 - 1) * 2 * var(--margin)) / 4);
+  min-width: calc((var(--width) - (4 - 1) * 2 * var(--margin)) / 4);
+  max-width: calc((var(--width) - (4 - 1) * 2 * var(--margin)) / 4);
+}
+
+[fill-height] > *:first-child {
+  height: 100%;
 }
 
 [one-third] {
