@@ -24,6 +24,7 @@
           :src="feature.src"
           :title="feature.title"
           :text="feature.description"
+          third
         />
       </Container>
     </section>
