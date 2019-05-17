@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :class="{ bordered, thin }">
+  <div class="card" :class="{ bordered, thin, shadow: !noShadow }">
     <slot/>
   </div>
 </template>
@@ -14,6 +14,10 @@ export default {
     thin: {
       type: Boolean,
       default: false
+    },
+    noShadow: {
+      type: Boolean,
+      default: false
     }
   }
 };
@@ -23,9 +27,12 @@ export default {
 <style scoped>
 .card {
   border-radius: 6px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--white);
   overflow: hidden;
+}
+
+.card.shadow {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card.bordered {
