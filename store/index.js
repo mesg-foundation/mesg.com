@@ -313,8 +313,8 @@ export const getters = {
       showcase: {
         title: "Showcase",
         description: "Not sure what to build on MESG? Find your inspiration here.",
-        action: "Explore the showcase",
-        to: links.showcase
+        action: "Coming soon",
+        to: ""
       },
       foundation: {
         title: "MESG Foundation",
