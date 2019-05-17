@@ -10,15 +10,17 @@
         <p mb1>
           <strong>Buy and trade on:</strong>
         </p>
-        <a href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" mr2>
-          <img src="~assets/exchanges/digifinex.svg" alt="Digifinex">
-        </a>
-        <a href target="_blank" mr2>
-          <img src="~assets/exchanges/bitforex.svg" alt="DBitforex">
-        </a>
-        <a href="https://idex.market/eth/mesg" target="_blank">
-          <img src="~assets/exchanges/idex.svg" alt="Idex">
-        </a>
+        <div flex row wrap>
+          <a
+            v-for="exchange in exchanges"
+            :key="exchange.id"
+            :href="exchange.to"
+            target="_blank"
+            third
+          >
+            <img :src="exchange.src" :alt="exchange.id">
+          </a>
+        </div>
       </div>
     </Header>
 
@@ -30,6 +32,7 @@
           :src="feature.src"
           :title="feature.title"
           :text="feature.description"
+          third
         />
       </Container>
     </section>
@@ -106,7 +109,20 @@
 
     <News :articles="articles"/>
 
-    <CallToActionExchange mb3 title="Buy and trade MESG Token on"/>
+    <CallToAction mb3 title="Buy and trade MESG Token on">
+      <div flex row wrap>
+        <Button
+          white
+          v-for="exchange in exchanges"
+          :key="exchange.id"
+          :href="exchange.to"
+          target="_blank"
+          third
+        >
+          <img :src="exchange.src" :alt="exchange.id">
+        </Button>
+      </div>
+    </CallToAction>
 
     <Discover mb3 left="showcase" right="enterprise"/>
 
@@ -123,7 +139,7 @@ import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
-import CallToActionExchange from "~/components/CallToActionExchange";
+import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -140,7 +156,7 @@ export default {
     Card,
     Titletext4,
     News,
-    CallToActionExchange,
+    CallToAction,
     Discover,
     GetStarted,
     TextWithIcon,
@@ -176,8 +192,13 @@ ul {
   opacity: 0.3;
 }
 
-img {
+a img {
   height: 25px;
+  display: block;
+}
+
+a.btn--white img {
+  margin: auto;
 }
 
 li img {

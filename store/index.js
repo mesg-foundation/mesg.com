@@ -10,9 +10,9 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Integrate complicated tech easily", description: "Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.<br/><br/>The Engine manages and forwards events between all components so each component can stand on its own, making it simple to add, remove or update any component.", to: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
+              src: require('~/assets/engine/tech.svg'), title: "Integrate complicated tech easily", description: "Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.<br/><br/>The Engine manages and forwards events between all components so each component can stand on its own, making it simple to add, remove or update any component.", href: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
             },
-            { src: require("~/assets/engine/development.svg"), title: "No wasted development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The Engine allows you to reuse any app component; and not just from your apps, but from the community’s apps too.<br/><br/>After components are built, either keep them private, or share them to earn in the Marketplace.", to: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
+            { src: require("~/assets/engine/development.svg"), title: "No wasted development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The Engine allows you to reuse any app component; and not just from your apps, but from the community’s apps too.<br/><br/>After components are built, either keep them private, or share them to earn in the Marketplace.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
           ],
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building apps that react to real-world events is the efficient way to manage hard-to-reach technologies like blockchains or IoT devices. Your apps remain lightweight, reactive and easy to maintain." },
@@ -36,7 +36,7 @@ export const getters = {
           "A decentralized marketplace to connect buyers looking to save time in development with sellers earning tokens for the reuse of their code.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", to: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
             { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "The Marketplace will soon be decentralized, with all services and applications interacting in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.enterprise, action: "Our solutions" }
           ],
           secondary: [
@@ -202,7 +202,7 @@ export const getters = {
   exchanges() {
     return [
       { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "" },
+      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/" },
       { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
     ]
   },
@@ -362,9 +362,18 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "fas fa-file-alt" },
-      marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "fas fa-store" },
-      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "fab fa-github" },
+      documentation: "https://docs.mesg.com/",
+      marketplace: "https://marketplace.mesg.com/",
+      github: "https://github.com/mesg-foundation/",
+      blog: "https://medium.com/mesg",
+      forum: "https://forum.mesg.com/",
+      discord: "https://discordapp.com/invite/SaZ5HcE",
+      twitter: "https://twitter.com/mesgfoundation",
+      linkedin: "https://www.linkedin.com/company/mesg",
+      facebook: "https://www.facebook.com/mesgfoundation",
+      getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
+      contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
+      video: "https://www.youtube.com/embed/VjPG51iE_fk"
     }
   },
 

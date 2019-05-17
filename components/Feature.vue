@@ -8,7 +8,7 @@
         <h3 mb1>{{ title }}</h3>
         <p v-if="description" mb2 v-html="description"></p>
         <slot mb2></slot>
-        <Button outline :to="to">{{ action }}</Button>
+        <Button outline :to="to" :href="href">{{ action }}</Button>
       </Card>
     </div>
   </div>
@@ -35,8 +35,10 @@ export default {
       type: String
     },
     to: {
-      type: [String, Object],
-      required: true
+      type: [String, Object]
+    },
+    href: {
+      type: String
     },
     action: {
       type: String,

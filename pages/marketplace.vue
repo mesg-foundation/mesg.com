@@ -8,7 +8,7 @@
     >
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button href="https://marketplace.mesg.com/" target="_blank" secondary>The Marketplace</Button>
+        <Button :href="externalLinks.marketplace" target="_blank" secondary>The Marketplace</Button>
       </div>
     </Header>
 
@@ -136,8 +136,8 @@ export default {
   computed: {
     ...mapGetters({
       products: "products",
-      externalLinks: "externalLinks",
-      links: "links"
+      links: "links",
+      externalLinks: "externalLinks"
     }),
     marketplace() {
       return this.products.find(x => x.id === "marketplace");

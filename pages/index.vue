@@ -4,7 +4,7 @@
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button
-          href="https://docs.mesg.com/guide/quick-start-guide.html"
+          :href="externalLinks.getStarted"
           target="_blank"
           secondary
         >Get started</Button>
@@ -22,7 +22,7 @@
       <Container flex column align-center>
         <h2 mb2>How MESG accelerates app development</h2>
         <Card>
-          <Video src="https://www.youtube.com/embed/VjPG51iE_fk"></Video>
+          <Video :src="externalLinks.video"></Video>
         </Card>
       </Container>
     </section>
@@ -133,7 +133,8 @@ export default {
   computed: mapGetters({
     products: "products",
     articles: "articles",
-    links: "links"
+    links: "links",
+    externalLinks: "externalLinks"
   })
 };
 </script>

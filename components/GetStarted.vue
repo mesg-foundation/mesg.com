@@ -16,7 +16,7 @@
           <div flex column one-third>
             <Button
               primary
-              href="https://docs.mesg.com/guide/quick-start-guide.html"
+              :href="externalLinks.getStarted"
               target="_blank"
             >Get started</Button>
           </div>
@@ -51,9 +51,21 @@ export default {
     },
     links() {
       return [
-        this.externalLinks.documentation,
-        this.externalLinks.marketplace,
-        this.externalLinks.github
+        {
+          title: "Documentation",
+          to: this.externalLinks.documentation,
+          icon: "fas fa-file-alt"
+        },
+        {
+          title: "Marketplace",
+          to: this.externalLinks.marketplace,
+          icon: "fas fa-store"
+        },
+        {
+          title: "Github",
+          to: this.externalLinks.github,
+          icon: "fab fa-github"
+        }
       ];
     }
   }

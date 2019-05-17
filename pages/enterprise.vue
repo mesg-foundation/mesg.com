@@ -7,10 +7,7 @@
       :description="description"
     >
       <div>
-        <Button
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform"
-          primary
-        >Request a demo</Button>
+        <Button :href="externalLinks.contact" primary target="_blank">Request a demo</Button>
         <span spacer></span>
       </div>
     </Header>
@@ -156,6 +153,7 @@ export default {
   ],
   computed: mapGetters({
     links: "links",
+    externalLinks: "externalLinks",
     enterprise: "enterprise"
   })
 };
