@@ -51,19 +51,31 @@
       <Container>
         <h2 mb1>Our packages</h2>
         <p
-          mb2
+          mb3
           class="text-center"
         >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
       </Container>
     </section>
-    <section id="packages-2" mb3 class="inner-background">
+    <section id="packages-2" mb4 class="inner-background">
       <Container flex wrap>
-        <Package v-for="(premium, i) in enterprise.packages.premium" :key="i" v-bind="premium"/>
-        <Package v-for="(business, i) in enterprise.packages.business" :key="i" v-bind="business"/>
+        <Package
+          v-for="(premium, i) in enterprise.packages.premium"
+          :key="i"
+          v-bind="premium"
+          class="white"
+        />
+        <Package
+          v-for="(business, i) in enterprise.packages.business"
+          :key="i"
+          featured
+          v-bind="business"
+          class="purple"
+        />
         <Package
           v-for="(essential, i) in enterprise.packages.essential"
           :key="i"
           v-bind="essential"
+          class="white"
         />
       </Container>
     </section>
@@ -148,3 +160,9 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+.title {
+  padding-bottom: 20px;
+}
+</style>

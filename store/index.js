@@ -80,14 +80,29 @@ export const getters = {
       packages: {
         premium: [
           {
-            title: "Premium",
+            title: "PREMIUM",
             text: "Custom Pricing",
             items: [
               {
-                icon: "far fa-check", description: "Access to the Marketplace"
+                valid: true, description: "Access to the Marketplace"
               },
               {
-                icon: "far fa-times", description: "Access to the Marketplace"
+                valid: true, description: "Access to the Engine"
+              },
+              {
+                valid: true, description: "Community support"
+              },
+              {
+                valid: true, description: "Direct support from the MESG team"
+              },
+              {
+                valid: true, description: "Advisory services on your architecture"
+              },
+              {
+                valid: true, description: "Priority support from a dedicated team of engineers"
+              },
+              {
+                valid: true, description: "Creation of Modules"
               }
             ],
             to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
@@ -96,11 +111,29 @@ export const getters = {
         ],
         business: [
           {
-            title: "Business",
+            title: "BUSINESS",
             text: "Custom Pricing",
             items: [
               {
-                icon: "", description: ""
+                valid: true, description: "Access to the Marketplace"
+              },
+              {
+                valid: true, description: "Access to the Engine"
+              },
+              {
+                valid: true, description: "Community support"
+              },
+              {
+                valid: true, description: "Direct support from the MESG team"
+              },
+              {
+                valid: true, description: "Advisory services on your architecture"
+              },
+              {
+                valid: false, description: "Priority support from a dedicated team of engineers"
+              },
+              {
+                valid: false, description: "Creation of Modules"
               }
             ],
             to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
@@ -109,11 +142,29 @@ export const getters = {
         ],
         essential: [
           {
-            title: "Essential",
+            title: "ESSENTIAL",
             text: "Open Source - FREE",
             items: [
               {
-                icon: "", description: ""
+                valid: true, description: "Access to the Marketplace"
+              },
+              {
+                valid: true, description: "Access to the Engine"
+              },
+              {
+                valid: true, description: "Community support"
+              },
+              {
+                valid: false, description: "Direct support from the MESG team"
+              },
+              {
+                valid: false, description: "Advisory services on your architecture"
+              },
+              {
+                valid: false, description: "Priority support from a dedicated team of engineers"
+              },
+              {
+                valid: false, description: "Creation of Modules"
               }
             ],
             to: "https://docs.mesg.com/guide/quick-start-guide.html",
