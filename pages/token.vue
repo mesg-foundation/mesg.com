@@ -10,15 +10,17 @@
         <p mb1>
           <strong>Buy and trade on:</strong>
         </p>
-        <a href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" mr2>
-          <img src="~assets/exchanges/digifinex.svg" alt="Digifinex">
-        </a>
-        <a href target="_blank" mr2>
-          <img src="~assets/exchanges/bitforex.svg" alt="DBitforex">
-        </a>
-        <a href="https://idex.market/eth/mesg" target="_blank">
-          <img src="~assets/exchanges/idex.svg" alt="Idex">
-        </a>
+        <div flex row wrap>
+          <a
+            v-for="exchange in exchanges"
+            :key="exchange.id"
+            :href="exchange.to"
+            target="_blank"
+            third
+          >
+            <img :src="exchange.src" :alt="exchange.id">
+          </a>
+        </div>
       </div>
     </Header>
 
@@ -115,7 +117,6 @@
           :key="exchange.id"
           :href="exchange.to"
           target="_blank"
-          class="text-center"
           third
         >
           <img :src="exchange.src" :alt="exchange.id">
@@ -191,9 +192,12 @@ ul {
   opacity: 0.3;
 }
 
-img {
+a img {
   height: 25px;
   display: block;
+}
+
+a.btn--white img {
   margin: auto;
 }
 
