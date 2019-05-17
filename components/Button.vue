@@ -90,7 +90,7 @@ i {
 .btn--white:hover,
 .btn--outline:hover {
   opacity: 0.85;
-  transition: 0.1s ease-in;
+  transition: 0.2s ease-in-out;
 }
 
 .btn--primary {
