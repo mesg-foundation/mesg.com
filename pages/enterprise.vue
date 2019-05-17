@@ -55,25 +55,7 @@
     </section>
     <section id="packages-2" mb4 class="inner-background">
       <Container flex wrap>
-        <Package
-          v-for="(premium, i) in enterprise.packages.premium"
-          :key="i"
-          v-bind="premium"
-          class="white"
-        />
-        <Package
-          v-for="(business, i) in enterprise.packages.business"
-          :key="i"
-          featured
-          v-bind="business"
-          class="purple"
-        />
-        <Package
-          v-for="(essential, i) in enterprise.packages.essential"
-          :key="i"
-          v-bind="essential"
-          class="white"
-        />
+        <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
       </Container>
     </section>
 

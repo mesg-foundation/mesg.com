@@ -77,101 +77,96 @@ export const getters = {
         { title: "Who owns the apps that MESG builds for me?", description: "When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG." },
         { title: "MESG is free, so why purchase advisory services?", description: "Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture." }
       ],
-      packages: {
-        premium: [
-          {
-            title: "PREMIUM",
-            text: "Custom Pricing",
-            items: [
-              {
-                valid: true, description: "Access to the Marketplace"
-              },
-              {
-                valid: true, description: "Access to the Engine"
-              },
-              {
-                valid: true, description: "Community support"
-              },
-              {
-                valid: true, description: "Direct support from the MESG team"
-              },
-              {
-                valid: true, description: "Advisory services on your architecture"
-              },
-              {
-                valid: true, description: "Priority support from a dedicated team of engineers"
-              },
-              {
-                valid: true, description: "Creation of Modules"
-              }
-            ],
-            to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-            action: "Contact us"
-          }
-        ],
-        business: [
-          {
-            title: "BUSINESS",
-            text: "Custom Pricing",
-            items: [
-              {
-                valid: true, description: "Access to the Marketplace"
-              },
-              {
-                valid: true, description: "Access to the Engine"
-              },
-              {
-                valid: true, description: "Community support"
-              },
-              {
-                valid: true, description: "Direct support from the MESG team"
-              },
-              {
-                valid: true, description: "Advisory services on your architecture"
-              },
-              {
-                valid: false, description: "Priority support from a dedicated team of engineers"
-              },
-              {
-                valid: false, description: "Creation of Modules"
-              }
-            ],
-            to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-            action: "Contact us"
-          }
-        ],
-        essential: [
-          {
-            title: "ESSENTIAL",
-            text: "Open Source - FREE",
-            items: [
-              {
-                valid: true, description: "Access to the Marketplace"
-              },
-              {
-                valid: true, description: "Access to the Engine"
-              },
-              {
-                valid: true, description: "Community support"
-              },
-              {
-                valid: false, description: "Direct support from the MESG team"
-              },
-              {
-                valid: false, description: "Advisory services on your architecture"
-              },
-              {
-                valid: false, description: "Priority support from a dedicated team of engineers"
-              },
-              {
-                valid: false, description: "Creation of Modules"
-              }
-            ],
-            to: "https://docs.mesg.com/guide/quick-start-guide.html",
-            action: "Get started"
-          }
-        ]
-      }
+      packages: [
+        {
+          title: "PREMIUM",
+          text: "Custom Pricing",
+          items: [
+            {
+              valid: true, description: "Access to the Marketplace"
+            },
+            {
+              valid: true, description: "Access to the Engine"
+            },
+            {
+              valid: true, description: "Community support"
+            },
+            {
+              valid: true, description: "Direct support from the MESG team"
+            },
+            {
+              valid: true, description: "Advisory services on your architecture"
+            },
+            {
+              valid: true, description: "Priority support from a dedicated team of engineers"
+            },
+            {
+              valid: true, description: "Creation of Modules"
+            }
+          ],
+          to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
+          action: "Contact us"
+        },
+        {
+          title: "BUSINESS",
+          text: "Custom Pricing",
+          featured: true,
+          items: [
+            {
+              valid: true, description: "Access to the Marketplace"
+            },
+            {
+              valid: true, description: "Access to the Engine"
+            },
+            {
+              valid: true, description: "Community support"
+            },
+            {
+              valid: true, description: "Direct support from the MESG team"
+            },
+            {
+              valid: true, description: "Advisory services on your architecture"
+            },
+            {
+              valid: false, description: "Priority support from a dedicated team of engineers"
+            },
+            {
+              valid: false, description: "Creation of Modules"
+            }
+          ],
+          to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
+          action: "Contact us"
+        },
+        {
+          title: "ESSENTIAL",
+          text: "Open Source - FREE",
+          items: [
+            {
+              valid: true, description: "Access to the Marketplace"
+            },
+            {
+              valid: true, description: "Access to the Engine"
+            },
+            {
+              valid: true, description: "Community support"
+            },
+            {
+              valid: false, description: "Direct support from the MESG team"
+            },
+            {
+              valid: false, description: "Advisory services on your architecture"
+            },
+            {
+              valid: false, description: "Priority support from a dedicated team of engineers"
+            },
+            {
+              valid: false, description: "Creation of Modules"
+            }
+          ],
+          to: "https://docs.mesg.com/guide/quick-start-guide.html",
+          action: "Get started"
+        }
+      ]
     }
   },
 
