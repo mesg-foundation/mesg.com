@@ -168,27 +168,27 @@ a:hover {
   margin-right: 0;
 }
 [half] {
-  width: calc((var(--width) - (2 - 1) * 2 * var(--margin)) / 2);
-  min-width: calc((var(--width) - (2 - 1) * 2 * var(--margin)) / 2);
-  max-width: calc((var(--width) - (2 - 1) * 2 * var(--margin)) / 2);
+  width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
+  min-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
+  max-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
 }
 
 [row] > [third]:nth-child(3) {
   margin-right: 0;
 }
 [third] {
-  width: calc((var(--width) - (3 - 1) * 2 * var(--margin)) / 3);
-  min-width: calc((var(--width) - (3 - 1) * 2 * var(--margin)) / 3);
-  max-width: calc((var(--width) - (3 - 1) * 2 * var(--margin)) / 3);
+  width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+  min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+  max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
 }
 
 [row] > [quarter]:nth-child(4) {
   margin-right: 0;
 }
 [quarter] {
-  width: calc((var(--width) - (4 - 1) * 2 * var(--margin)) / 4);
-  min-width: calc((var(--width) - (4 - 1) * 2 * var(--margin)) / 4);
-  max-width: calc((var(--width) - (4 - 1) * 2 * var(--margin)) / 4);
+  width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
+  min-width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
+  max-width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
 }
 
 [fill-height] > *:first-child {
