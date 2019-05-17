@@ -58,8 +58,8 @@
         <Container flex row align-center>
           <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
           <div>
-            <form action>
-              <input type="email" name="email" placeholder="Your email address">
+            <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit">
+              <input type="email" placeholder="Your email address" v-model="email" required>
               <button type="submit" class="submit-newsletter">
                 <i class="fas fa-arrow-right"/>
               </button>
@@ -80,6 +80,11 @@ export default {
     Button,
     Container
   },
+  data() {
+    return {
+      email: ""
+    };
+  },
   computed: {
     ...mapGetters({
       links: "links",
@@ -95,6 +100,32 @@ export default {
         { href: this.externalLinks.linkedin, icon: "fab fa-linkedin-in" },
         { href: this.externalLinks.facebook, icon: "fab fa-facebook-f" }
       ];
+    }
+  },
+  methods: {
+    async submit() {
+      const token = "32bdd13cbff3931061eb3eca01321d84";
+      const data = new FormData();
+      data.append("email", this.email);
+      data.append("token", token);
+      const req = window.XMLHttpRequest
+        ? new XMLHttpRequest()
+        : new ActiveXObject("Microsoft.XMLHTTP");
+      req.open(
+        "POST",
+        "https://app.sgwidget.com/v2/api/newsletter-signup",
+        false
+      );
+      req.onload = () => {
+        const res = JSON.parse(req.responseText);
+        if (req.status === 200) {
+          alert(res.message);
+          this.email = "";
+        } else {
+          alert(res.email[0]);
+        }
+      };
+      req.send(data);
     }
   }
 };
