@@ -166,8 +166,7 @@ i {
 }
 
 hr {
-  opacity: 0.5;
-  background-color: var(--deep-purple);
+  color: var(--deep-purple);
 }
 
 img {

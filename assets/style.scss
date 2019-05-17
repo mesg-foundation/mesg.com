@@ -233,11 +233,12 @@ a {
   background: var(--light-background);
 }
 hr {
+  width: var(--width);
   max-width: var(--width);
   margin: auto;
-  height: 1px;
-  border:0;
-  background-color: var(--light-purple);
+  height: 0;
+  border:solid 0.5px;
+  color: var(--light-purple);
 }
 .container > p {
   max-width: var(--small-width);
