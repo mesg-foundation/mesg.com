@@ -362,9 +362,18 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentation: { title: "Documentation", to: "https://docs.mesg.com/", icon: "fas fa-file-alt" },
-      marketplace: { title: "Marketplace", to: "https://marketplace.mesg.com/", icon: "fas fa-store" },
-      github: { title: "Github", to: "https://github.com/mesg-foundation/", icon: "fab fa-github" },
+      documentation: "https://docs.mesg.com/",
+      marketplace: "https://marketplace.mesg.com/",
+      github: "https://github.com/mesg-foundation/",
+      blog: "https://medium.com/mesg",
+      forum: "https://forum.mesg.com/",
+      discord: "https://discordapp.com/invite/SaZ5HcE",
+      twitter: "https://twitter.com/mesgfoundation",
+      linkedin: "https://www.linkedin.com/company/mesg",
+      facebook: "https://www.facebook.com/mesgfoundation",
+      getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
+      contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
+      video: "https://www.youtube.com/embed/VjPG51iE_fk"
     }
   },
 

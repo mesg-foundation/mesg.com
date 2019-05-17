@@ -15,7 +15,7 @@
           class="text-center"
         >The Engine and Marketplace are developed by a worldwide team of passionate developers for The MESG Foundation, a non-profit organization.</p>
         <Card>
-          <Video src="https://www.youtube.com/embed/VjPG51iE_fk"></Video>
+          <Video :src="externalLinks.video"></Video>
         </Card>
       </Container>
     </section>
@@ -155,6 +155,7 @@ export default {
   computed: mapGetters({
     team: "team",
     links: "links",
+    externalLinks: "externalLinks",
     articles: "articles"
   })
 };

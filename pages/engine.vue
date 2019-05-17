@@ -9,7 +9,7 @@
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button
-          href="https://docs.mesg.com/guide/quick-start-guide.html"
+          :href="externalLinks.getStarted"
           target="_blank"
           secondary
         >Get started</Button>
@@ -138,8 +138,8 @@ export default {
   computed: {
     ...mapGetters({
       products: "products",
-      externalLinks: "externalLinks",
-      links: "links"
+      links: "links",
+      externalLinks: "externalLinks"
     }),
     engine() {
       return this.products.find(x => x.id === "engine");

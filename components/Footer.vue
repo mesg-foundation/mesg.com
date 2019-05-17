@@ -9,26 +9,8 @@
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
             <div flex space-between>
-              <a href="https://medium.com/mesg" target="_blank" class="icon">
-                <i class="fab fa-medium"></i>
-              </a>
-              <a href="https://github.com/mesg-foundation" target="_blank" class="icon">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://forum.mesg.com/" target="_blank" class="icon">
-                <i class="fas fa-comments"></i>
-              </a>
-              <a href="https://discordapp.com/invite/SaZ5HcE" target="_blank" class="icon">
-                <i class="fab fa-discord"></i>
-              </a>
-              <a href="https://twitter.com/mesgfoundation" target="_blank" class="icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/mesg/" target="_blank" class="icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://www.facebook.com/mesgfoundation/" target="_blank" class="icon">
-                <i class="fab fa-facebook-f"></i>
+              <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
+                <i :class="icon.icon"></i>
               </a>
             </div>
           </div>
@@ -46,27 +28,22 @@
             </div>
             <div flex column one-quarter>
               <p class="category" mb1>Developers</p>
+              <Button :href="externalLinks.getStarted" target="_blank" class="link" mb1>Get started</Button>
+              <Button :href="externalLinks.marketplace" target="_blank" class="link" mb1>Marketplace</Button>
               <Button
-                href="https://docs.mesg.com/guide/quick-start-guide.html"
+                :href="externalLinks.documentation"
                 target="_blank"
                 class="link"
                 mb1
-              >Get started</Button>
-              <Button
-                href="https://marketplace.mesg.com/"
-                target="_blank"
-                class="link"
-                mb1
-              >Marketplace</Button>
-              <Button href="https://docs.mesg.com/" target="_blank" class="link" mb1>Documentation</Button>
-              <Button href="https://forum.mesg.com/" target="_blank" class="link" mb1>Forum</Button>
+              >Documentation</Button>
+              <Button :href="externalLinks.forum" target="_blank" class="link" mb1>Forum</Button>
             </div>
             <div flex column one-quarter>
               <p class="category" mb1>Foundation</p>
               <Button :to="links.foundation" class="link" mb1>Overview</Button>
               <Button :to="links.partners" class="link" mb1>Partners</Button>
               <Button :to="links.roadmap" class="link" mb1>Roadmap</Button>
-              <Button href="https://medium.com/mesg" target="_blank" class="link" mb1>Blog</Button>
+              <Button :href="externalLinks.blog" target="_blank" class="link" mb1>Blog</Button>
             </div>
             <div flex column one-quarter>
               <Button :to="links.token" class="link" mb1>Token</Button>
@@ -103,9 +80,23 @@ export default {
     Button,
     Container
   },
-  computed: mapGetters({
-    links: "links"
-  })
+  computed: {
+    ...mapGetters({
+      links: "links",
+      externalLinks: "externalLinks"
+    }),
+    icons() {
+      return [
+        { href: this.externalLinks.blog, icon: "fab fa-medium" },
+        { href: this.externalLinks.github, icon: "fab fa-github" },
+        { href: this.externalLinks.forum, icon: "fas fa-comments" },
+        { href: this.externalLinks.discord, icon: "fab fa-discord" },
+        { href: this.externalLinks.twitter, icon: "fab fa-twitter" },
+        { href: this.externalLinks.linkedin, icon: "fab fa-linkedin-in" },
+        { href: this.externalLinks.facebook, icon: "fab fa-facebook-f" }
+      ];
+    }
+  }
 };
 </script>
 
