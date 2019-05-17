@@ -6,6 +6,7 @@
         <p mb2>{{ description }}</p>
         <nav>
           <Button white v-for="(link, i) in links" :key="i" :to="link.to">{{ link.title }}</Button>
+          <slot/>
         </nav>
       </div>
     </Container>

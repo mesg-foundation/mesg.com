@@ -202,7 +202,7 @@ export const getters = {
   exchanges() {
     return [
       { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "" },
+      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/" },
       { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
     ]
   },

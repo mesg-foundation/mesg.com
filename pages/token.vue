@@ -30,6 +30,7 @@
           :src="feature.src"
           :title="feature.title"
           :text="feature.description"
+          third
         />
       </Container>
     </section>
@@ -106,7 +107,21 @@
 
     <News :articles="articles"/>
 
-    <CallToActionExchange mb3 title="Buy and trade MESG Token on"/>
+    <CallToAction mb3 title="Buy and trade MESG Token on">
+      <div flex row wrap>
+        <Button
+          white
+          v-for="exchange in exchanges"
+          :key="exchange.id"
+          :href="exchange.to"
+          target="_blank"
+          class="text-center"
+          third
+        >
+          <img :src="exchange.src" :alt="exchange.id">
+        </Button>
+      </div>
+    </CallToAction>
 
     <Discover mb3 left="showcase" right="enterprise"/>
 
@@ -123,7 +138,7 @@ import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
-import CallToActionExchange from "~/components/CallToActionExchange";
+import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -140,7 +155,7 @@ export default {
     Card,
     Titletext4,
     News,
-    CallToActionExchange,
+    CallToAction,
     Discover,
     GetStarted,
     TextWithIcon,
@@ -178,6 +193,8 @@ ul {
 
 img {
   height: 25px;
+  display: block;
+  margin: auto;
 }
 
 li img {
