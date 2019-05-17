@@ -202,8 +202,8 @@ export const getters = {
   exchanges() {
     return [
       { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" }
+      { id: "Bitforex", src: require("~/assets/exchanges/bitforex.svg"), to: "" },
+      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
     ]
   },
 
@@ -233,13 +233,6 @@ export const getters = {
           description: "BeachHead is a decentralized platform, based on both Ethereum and Ripple blockchains, where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
           to: "https://beachhead.com/",
           action: "beachhead.com"
-        },
-        {
-          src: require("~/assets/partners/windprotocol.png"),
-          title: "Wind Protocol",
-          description: "Wind Protocol matches startups with investors. Startups can grow their communities, get feedback and opportunity to receive funding. Investors access deals through a network of venture scouts and tech geeks from the world’s innovative companies and startup ecosystems.",
-          to: "https://windprotocol.com/",
-          action: "windprotocol.com"
         },
         {
           src: require("~/assets/partners/yuser.png"),
@@ -322,8 +315,8 @@ export const getters = {
       showcase: {
         title: "Showcase",
         description: "Not sure what to build on MESG? Find your inspiration here.",
-        action: "Explore the showcase",
-        to: links.showcase
+        action: "Coming soon",
+        to: ""
       },
       foundation: {
         title: "MESG Foundation",

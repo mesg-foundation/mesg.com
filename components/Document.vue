@@ -55,7 +55,7 @@ img {
 .preview {
   max-width: 100px;
   height: 100px;
-  border-radius: 6px;
+  overflow: hidden;
   border: solid 1px var(--light-purple);
   background-color: var(--light-purple);
 }

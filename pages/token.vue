@@ -13,10 +13,12 @@
         <a href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" mr2>
           <img src="~assets/exchanges/digifinex.svg" alt="Digifinex">
         </a>
-        <a href="https://idex.market/eth/mesg" target="_blank" mr2>
+        <a href target="_blank" mr2>
+          <img src="~assets/exchanges/bitforex.svg" alt="DBitforex">
+        </a>
+        <a href="https://idex.market/eth/mesg" target="_blank">
           <img src="~assets/exchanges/idex.svg" alt="Idex">
         </a>
-        <img src="~assets/exchanges/bitforex.svg" alt="DBitforex">
       </div>
     </Header>
 

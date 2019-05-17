@@ -103,6 +103,10 @@ a {
   color: var(--purple);
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.85;
+  transition: 0.1s ease-in;
+}
 
 /* Structure */
 [flex] {

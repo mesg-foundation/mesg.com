@@ -85,6 +85,14 @@ i {
   padding-left: 0.5em;
 }
 
+.btn--primary:hover,
+.btn--secondary:hover,
+.btn--white:hover,
+.btn--outline:hover {
+  opacity: 0.85;
+  transition: 0.1s ease-in;
+}
+
 .btn--primary {
   color: var(--white);
   background-color: var(--purple);
