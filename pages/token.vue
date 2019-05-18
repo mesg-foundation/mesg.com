@@ -110,7 +110,7 @@
     <News :articles="articles"/>
 
     <CallToAction mb3 title="Buy and trade MESG Token on">
-      <div flex row wrap>
+      <div flex row wrap mb1>
         <Button
           white
           v-for="exchange in exchanges"
