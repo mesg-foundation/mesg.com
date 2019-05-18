@@ -1,15 +1,17 @@
 <template>
-  <Card :download="document.title" :href="document.link" bordered thin>
-    <div flex row align-center>
-      <div class="preview" flex align-center justify-center>
-        <img :src="document.img" :alt="document.title">
+  <a :href="document.link" :download="document.title" :alt="document.title">
+    <Card bordered thin>
+      <div flex row align-center>
+        <div class="preview" flex align-center justify-center>
+          <img :src="document.img" :alt="document.title">
+        </div>
+        <div class="content" flex align-center>
+          <h4>{{ document.title }}</h4>
+          <i class="fas fa-download icon"></i>
+        </div>
       </div>
-      <div class="content" flex align-center>
-        <h4>{{ document.title }}</h4>
-        <i class="fas fa-download icon"></i>
-      </div>
-    </div>
-  </Card>
+    </Card>
+  </a>
 </template>
 
 <script>
@@ -53,7 +55,7 @@ img {
 }
 
 .preview {
-  max-width: 100px;
+  width: 140px;
   height: 100px;
   overflow: hidden;
   border: solid 1px var(--light-purple);
