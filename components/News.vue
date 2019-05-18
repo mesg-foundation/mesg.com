@@ -2,7 +2,7 @@
   <section id="articles">
     <Container flex column align-center>
       <h2 mb2>{{title}}</h2>
-      <div flex row space-between>
+      <div flex row space-between wrap>
         <a
           v-for="article in articles"
           :key="article.id"

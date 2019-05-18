@@ -1,6 +1,6 @@
 <template>
-  <div flex row space-between align-center>
-    <div half flex column align-center>
+  <div flex row space-between align-center wrap>
+    <div half p3>
       <img :src="src">
     </div>
     <div half>
@@ -41,10 +41,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.img {
-  max-width: 410px;
-  padding: 80px;
-}
-</style>

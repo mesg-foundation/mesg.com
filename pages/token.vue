@@ -25,7 +25,7 @@
     </Header>
 
     <section id="features" mb3>
-      <Container flex row space-between>
+      <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in token.features.primary"
           :key="i"

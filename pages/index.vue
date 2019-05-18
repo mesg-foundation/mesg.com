@@ -38,7 +38,7 @@
     </section>
     <section id="products" mb3 class="inner-background">
       <Container>
-        <div flex row space-between>
+        <div flex row space-between wrap>
           <Card
             v-for="product in products"
             :key="product.id"

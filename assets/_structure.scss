@@ -1,0 +1,148 @@
+/* Structure */
+[flex] {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+[flex] > * {
+  flex: 1 1 auto;
+}
+[spacer] {
+  flex: 2;
+}
+[row] {
+  flex-direction: row;
+}
+[row][reverse] {
+  flex-direction: row-reverse;
+}
+[wrap] {
+  flex-wrap: wrap;
+}
+[row] > * {
+  margin-right: calc(2 * var(--margin));
+}
+[row] > *:last-child {
+  margin-right: 0;
+}
+[row][reverse] > * {
+  margin-right: calc(2 * var(--margin));
+}
+[row][reverse] > *:first-child {
+  margin-right: 0;
+}
+[column] {
+  flex-direction: column;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  [mobile-column-reverse] {
+    flex-direction: column-reverse
+  }
+}
+
+[justify-center] {
+  justify-content: center;
+}
+[align-center] {
+  align-items: center;
+}
+[align-left] {
+  align-items: left;
+}
+[align-right] {
+  align-items: right;
+}
+[space-between] {
+  justify-content: space-between;
+}
+[space-around] {
+  justify-content: space-around;
+}
+
+[row] > [half]:nth-child(2) {
+  margin-right: 0;
+}
+[half] {
+  width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
+  min-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
+  max-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
+}
+
+[row] > [third]:nth-child(3) {
+  margin-right: 0;
+}
+[third] {
+  width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+  min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+  max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+}
+
+[row] > [quarter]:nth-child(4) {
+  margin-right: 0;
+}
+[quarter] {
+  width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
+  min-width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
+  max-width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  [half], [third], [quarter] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+  }
+}
+
+[fill-height] > *:first-child {
+  height: 100%;
+}
+
+[one-third] {
+  max-width: 33%;
+}
+[two-third] {
+  max-width: 66%;
+}
+[one-quarter] {
+  max-width: 25%;
+}
+[three-quarter] {
+  max-width: 75%;
+}
+@for $i from 1 through 4 {
+  $val: calc(var(--margin) * #{pow(2, $i - 1)});
+  [m#{$i}] {
+    margin: $val !important;
+  }
+  [mt#{$i}] {
+    margin-top: $val !important;
+  }
+  [mb#{$i}] {
+    margin-bottom: $val !important;
+  }
+  [mr#{$i}] {
+    margin-right: $val !important;
+  }
+  [ml#{$i}] {
+    margin-left: $val !important;
+  }
+  [p#{$i}] {
+    padding: $val !important;
+  }
+  [pt#{$i}] {
+    padding-top: $val !important;
+  }
+  [pb#{$i}] {
+    padding-bottom: $val !important;
+  }
+  [pr#{$i}] {
+    padding-right: $val !important;
+  }
+  [pl#{$i}] {
+    padding-left: $val !important;
+  }
+}
