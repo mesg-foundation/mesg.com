@@ -50,6 +50,7 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
+    '@nuxtjs/style-resources',
     process.env.GA_ID ? ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID
     }] : null,
@@ -68,6 +69,11 @@ module.exports = {
     gzip: true,
     generate: true, // Enable me when using nuxt generate
     exclude: ['showcases']
+  },
+  styleResources: {
+    scss: [
+      './assets/_variables.scss'
+    ]
   },
   /*
   ** Plugins
