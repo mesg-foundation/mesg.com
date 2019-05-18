@@ -1,0 +1,26 @@
+$purple: #491e8c;
+$light-purple: #bdafd6;
+$deep-purple: #7e61ae;
+$dark-purple: #210e41;
+$white: #ffffff;
+$light-background: #f2f0f7;
+$title-color: #0e061c;
+$text-color: #3c3940;
+$margin: 20px;
+$width: 1020px;
+$small-width: 680px;
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1024px;
+
+@function pow($base, $exponent) {
+  $result: 1;
+  @if $exponent == 0 {
+    @return $result;
+  }
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+
