@@ -20,5 +20,6 @@ export default {
 <style scoped>
 iframe {
   display: block;
+  max-width: 100%;
 }
 </style>

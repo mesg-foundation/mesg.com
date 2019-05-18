@@ -13,13 +13,14 @@
     </Header>
 
     <section id="features" mb3>
-      <Container flex row space-between>
+      <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in enterprise.features.primary"
           :key="i"
           :src="feature.src"
           :title="feature.title"
           :text="feature.description"
+          third
         />
       </Container>
     </section>
@@ -54,7 +55,7 @@
       </Container>
     </section>
     <section id="packages-2" mb4 class="inner-background">
-      <Container flex wrap>
+      <Container flex wrap justify-center>
         <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
       </Container>
     </section>

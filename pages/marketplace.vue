@@ -13,7 +13,7 @@
     </Header>
 
     <section id="features" mb3>
-      <Container flex row space-between>
+      <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in marketplace.features.secondary"
           :key="i"
@@ -71,7 +71,7 @@
 
     <section id="token">
       <Container>
-        <div flex row space-between align-center>
+        <div flex row space-between align-center wrap>
           <div half>
             <img
               src="~/assets/marketplace/token-marketplace.svg"

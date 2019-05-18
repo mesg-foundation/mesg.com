@@ -1,6 +1,6 @@
 <template>
   <header id="header" pt3 pb3>
-    <Container flex row align-center space-between>
+    <Container flex row mobile-column-reverse align-center space-between wrap>
       <div half>
         <h1 mb1 v-html="title"></h1>
         <p mb2 v-html="description"></p>
@@ -59,8 +59,6 @@ p {
 }
 img {
   height: auto;
-  width: 490px;
-  max-width: 100%;
-  max-height: 490px;
+  max-height: calc(var(--width) / 2);
 }
 </style>

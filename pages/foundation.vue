@@ -47,23 +47,23 @@
     </section>
     <section id="numbers">
       <Container>
-        <div flex row space-between>
-          <Card p2 mb3 flex column>
+        <div flex row space-between wrap>
+          <Card quarter p2 mb3 flex column>
             <h3 class="text-center">2017</h3>
             <p class="text-center">CREATION OF MESG</p>
           </Card>
 
-          <Card p2 mb3 flex column>
+          <Card quarter p2 mb3 flex column>
             <h3 class="text-center">2017</h3>
             <p class="text-center">CREATION OF MESG</p>
           </Card>
 
-          <Card p2 mb3 flex column>
+          <Card quarter p2 mb3 flex column>
             <h3 class="text-center">2017</h3>
             <p class="text-center">CREATION OF MESG</p>
           </Card>
 
-          <Card p2 mb3 flex column>
+          <Card quarter p2 mb3 flex column>
             <h3 class="text-center">2017</h3>
             <p class="text-center">CREATION OF MESG</p>
           </Card>

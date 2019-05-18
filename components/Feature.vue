@@ -1,5 +1,5 @@
 <template>
-  <div flex row space-between align-center>
+  <div flex row space-between align-center wrap>
     <div half>
       <img :src="src">
     </div>

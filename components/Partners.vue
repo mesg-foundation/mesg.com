@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div flex row >
     <img mr2 src="~/assets/partners/yuser.png" alt="yuser">
     <img mr2 src="~/assets/partners/beachhead.png" alt="beachhead">
     <img src="~/assets/partners/yellow.png" alt="yellow">
