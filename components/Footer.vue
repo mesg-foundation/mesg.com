@@ -27,7 +27,7 @@
             <a mr1 href="https://medium.com/mesg" target="_blank"><i class="fab fa-medium-m"></i></a>
             <a mr1 href="https://github.com/mesg-foundation" target="_blank"><i class="fab fa-github"></i></a>
             <a mr1 href="https://forum.mesg.com/" target="_blank"><i class="fas fa-comments"></i></a>
-            <a mr1 href="https://discordapp.com/invite/SaZ5HcE" target="_blank"><i class="fab fa-discord"></i></a>
+            <a mr1 href="https://discordapp.com/invite/5tVTHJC" target="_blank"><i class="fab fa-discord"></i></a>
             <a mr1 href="https://twitter.com/mesgfoundation" target="_blank"><i class="fab fa-twitter"></i></a>
             <a mr1 href="https://www.linkedin.com/company/mesg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a mr1 href="https://t.me/mesg_community/" target="_blank"><i class="fab fa-telegram-plane"></i></a>
