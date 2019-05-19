@@ -355,6 +355,100 @@ export const getters = {
     ]
   },
 
+  roadmap() {
+    return [{
+      year: 2019,
+      quarters: [{
+        quarter: "Q1",
+        goals: [{
+          title: "MESG Token ERC20",
+          list: [
+            "MESG Token release with a total supply of 250MM",
+            "Start Algorithmic Token Distribution",
+            "List on the first exchange"
+          ]
+        }]
+      }, {
+        quarter: "Q2",
+        goals: [{
+          title: "MESG Marketplace on Ethereum",
+          list: [
+            "Sell MESG Service on the MESG Marketplace",
+            "Buy MESG Services to integrate in application",
+            "Marketplace website to buy and sell MESG Services"
+          ]
+        }, {
+          title: "Algorithmic Token Distribution",
+          list: [
+            "List MESG Token on another exchange",
+            "Dashboard with all information to check the distribution"
+          ]
+        }]
+      }, {
+        quarter: "Q3",
+        goals: [{
+          title: "Workflows",
+          list: [
+            "Create applications based on workflow",
+            "Connect MESG Services together to build rich applications",
+            "Reduce drasticly application's codebase"
+          ]
+        }, {
+          title: "Decentralized executions",
+          list: [
+            "MESG Services Marketplace in the native network",
+            "Decentralization of the execution of services"
+          ]
+        }, {
+          title: "Testnet",
+          list: [
+            "Native MESG token",
+            "Proof of Stake consensus"
+          ]
+        }]
+      }, {
+        quarter: "Q4",
+        goals: [{
+          title: "MESG user interface",
+          list: [
+            "Visualize your executions",
+            "Manage your MESG Wallet",
+            "Synchronize the Decentralized Network of Services"
+          ]
+        }, {
+          title: "Exchange listing",
+          list: [
+            "Tiers-2 exchange"
+          ]
+        }]
+      }]
+    }, {
+      year: 2020,
+      quarters: [{
+        quarter: "Q1",
+        goals: [{
+          title: "Mainnet",
+          list: [
+            "Audited source code",
+            "MESG Economy stabilized",
+          ]
+        }]
+      }, {
+        quarter: "XX",
+        goals: [{
+          title: "Iterate over and over",
+          list: [
+            "Feature update based on the community feedback",
+            "More and more partners",
+            "New exchanges",
+            "Improve performances",
+            "..."
+          ]
+        }]
+      }]
+    }]
+  },
+
   externalLinks() {
     return {
       documentation: "https://docs.mesg.com/",
@@ -380,7 +474,6 @@ export const getters = {
       marketplace: "/marketplace",
       token: "/token",
       foundation: "/foundation",
-      getStarted: "/",
       showcase: "/showcase",
       partners: "/partners",
       demo: "/",

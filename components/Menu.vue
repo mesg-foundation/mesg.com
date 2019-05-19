@@ -38,10 +38,7 @@
           <div flex column class="sub-menu overview" p1 mt1>
             <Button :to="links.foundation" class="btn">Overview</Button>
             <Button :to="links.partners" class="btn">Partners</Button>
-            <Button class="btn soon">
-              Roadmap
-              <span>coming soon</span>
-            </Button>
+            <Button :to="links.roadmap" class="btn">Roadmap</Button>
             <Button href="https://medium.com/mesg" target="_blank" class="btn">Blog</Button>
           </div>
         </li>
