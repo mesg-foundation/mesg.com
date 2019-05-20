@@ -43,18 +43,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .items {
   position: relative;
 }
+@media only screen and (min-width: $tablet-breakpoint) {
+  .items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0.1em;
+    left: 50%;
+    background-color: var(--light-purple);
+  }
+}
 
-.items::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 0.1em;
-  left: 50%;
-  background-color: var(--light-purple);
+@media only screen and (max-width: $mobile-breakpoint) {
+  .item {
+    margin-bottom: 40px;
+  }
+  .container {
+    padding-bottom: 0;
+  }
 }
 </style>

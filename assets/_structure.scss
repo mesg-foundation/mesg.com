@@ -109,6 +109,7 @@
   }
 }
 
+
 [fill-height] > *:first-child {
   height: 100%;
 }
@@ -157,4 +158,11 @@
   [pl#{$i}] {
     padding-left: $val !important;
   }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  [p3], [pb3], [pt3], [pl3], [pr3] { padding: 0!important; }
+  [p4], [pb4], [pt4], [pl4], [pr4] { padding: 0!important; }
+  [m3], [mb3], [mt3], [ml3], [mr3] { margin: 0!important; }
+  [m4], [mb4], [mt4], [ml4], [mr4] { margin: 0!important; }
 }

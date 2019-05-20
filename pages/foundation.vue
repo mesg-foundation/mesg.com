@@ -40,6 +40,7 @@
       </Container>
     </section>
 
+    <!--
     <section id="numbers-intro">
       <Container flex column align-center>
         <h3 mb2>The Foundation in numbers</h3>
@@ -70,6 +71,7 @@
         </div>
       </Container>
     </section>
+    -->
 
     <section id="team">
       <Container flex column align-center>

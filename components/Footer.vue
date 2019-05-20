@@ -2,31 +2,31 @@
   <section id="footer">
     <div class="bg">
       <Container>
-        <nav flex row space-between mb2>
-          <div flex column one-quarter>
+        <nav flex row space-between wrap mobile-column-reverse mb2>
+          <div flex column third>
             <nuxt-link :to="links.home">
               <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG" mb1>
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
-            <div flex space-between>
+            <div flex space-between wrap>
               <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
                 <i :class="icon.icon"></i>
               </a>
             </div>
           </div>
-          <div flex row three-quarter>
-            <div flex column one-quarter>
+          <div flex row mobile-column class="menu">
+            <div flex column quarter>
               <p class="category" mb1>Products</p>
               <Button :to="links.engine" class="link" mb1>MESG Engine</Button>
               <Button :to="links.marketplace" class="link" mb1>MESG Marketplace</Button>
               <Button class="link" mb1>
                 <span>Showcase</span>
               </Button>
-              <Button class="link" mb1>
+              <Button class="link last" mb1>
                 <span>FAQ</span>
               </Button>
             </div>
-            <div flex column one-quarter>
+            <div flex column quarter>
               <p class="category" mb1>Developers</p>
               <Button :href="externalLinks.getStarted" target="_blank" class="link" mb1>Get started</Button>
               <Button :href="externalLinks.marketplace" target="_blank" class="link" mb1>Marketplace</Button>
@@ -36,17 +36,18 @@
                 class="link"
                 mb1
               >Documentation</Button>
-              <Button :href="externalLinks.forum" target="_blank" class="link" mb1>Forum</Button>
+              <Button :href="externalLinks.forum" target="_blank" class="link last" mb1>Forum</Button>
             </div>
-            <div flex column one-quarter>
+            <div flex column quarter>
               <p class="category" mb1>Foundation</p>
               <Button :to="links.foundation" class="link" mb1>Overview</Button>
               <Button :to="links.partners" class="link" mb1>Partners</Button>
               <Button :to="links.roadmap" class="link" mb1>Roadmap</Button>
-              <Button :href="externalLinks.blog" target="_blank" class="link" mb1>Blog</Button>
+              <Button :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</Button>
             </div>
-            <div flex column one-quarter>
-              <Button :to="links.token" class="link" mb1>Token</Button>
+            <div flex column quarter>
+              <Button :to="links.token" class="link">Token</Button>
+              <Button :to="links.enterprise" class="link">Enterprise</Button>
             </div>
           </div>
         </nav>
@@ -55,9 +56,9 @@
       <hr mb2>
 
       <section id="newsletter">
-        <Container flex row align-center>
+        <Container flex row mobile-column-reverse align-center>
           <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
-          <div>
+          <div class="form">
             <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit">
               <input type="email" placeholder="Your email address" v-model="email" required>
               <button type="submit" class="submit-newsletter">
@@ -131,7 +132,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .bg {
   padding: 40px;
   width: 100%;
@@ -227,5 +228,20 @@ button[type="submit"] {
   font-size: 18px;
   padding: 0;
   color: var(--white);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .container {
+    padding: 0;
+  }
+  .menu {
+    margin-bottom: 40px;
+  }
+  .last {
+    padding-bottom: 20px;
+  }
+  .form {
+    margin-bottom: 20px;
+  }
 }
 </style>

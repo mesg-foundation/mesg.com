@@ -2,23 +2,19 @@
   <section id="get-started">
     <Container>
       <Card p2>
-        <div flex row align-center space-between>
-          <div flex column two-third>
+        <div flex row align-center space-between mobile-column>
+          <div flex column>
             <h3 mb1>{{title}}</h3>
             <p mb1>{{description}}</p>
-            <nav flex row>
-              <a v-for="(link, i) in links" :key="i" :href="link.to" target="_blank">
+            <nav flex row wrap class="links">
+              <a v-for="(link, i) in links" :key="i" :href="link.to" target="_blank" class="link">
                 <i v-if="link.icon" :class="link.icon"></i>
                 {{link.title}}
               </a>
             </nav>
           </div>
-          <div flex column one-third>
-            <Button
-              primary
-              :href="externalLinks.getStarted"
-              target="_blank"
-            >Get started</Button>
+          <div flex column third>
+            <Button primary :href="externalLinks.getStarted" target="_blank">Get started</Button>
           </div>
         </div>
       </Card>
@@ -72,7 +68,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 i {
   font-size: 1em;
   font-weight: bold;
@@ -92,5 +88,14 @@ i {
   background: var(--light-background);
   transform: translateY(30%) skewY(-8deg);
   z-index: -1;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .links {
+    margin-bottom: 40px;
+  }
+  .link {
+    margin-bottom: 20px;
+  }
 }
 </style>

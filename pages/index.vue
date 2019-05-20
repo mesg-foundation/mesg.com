@@ -3,11 +3,7 @@
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button
-          :href="externalLinks.getStarted"
-          target="_blank"
-          secondary
-        >Get started</Button>
+        <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
       </div>
     </Header>
 
@@ -28,11 +24,11 @@
     </section>
 
     <section id="product-intro">
-      <Container flex column align-center>
+      <Container flex column align-center class="intro">
         <h2 mb1>Our products</h2>
         <p
           mb2
-          class="text-center"
+          class="text-center product-desc"
         >MESG’s Engine and Marketplace work in tandem to offer an open economy of limitless app and workflow integrations that all work together right out of the box.</p>
       </Container>
     </section>
@@ -60,17 +56,19 @@
           </Card>
         </div>
         <Card p2 id="token">
-          <div flex row align-center>
-            <div flex two-third>
-              <div one-quarter>
-                <img src="~/assets/token/MESG-token.svg" alt="token">
+          <div flex row mobile-column align-center>
+            <div flex mobile-column>
+              <div flex column quarter>
+                <img src="~/assets/token/MESG-token.svg" alt="token" class="token">
               </div>
-              <div three-quarter>
+              <div flex column>
                 <h3 mb1>Build Modules, Earn Tokens</h3>
-                <p>Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
+                <p
+                  class="token-desc"
+                >Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
               </div>
             </div>
-            <div flex one-third>
+            <div flex column third>
               <Button outline :to="links.token">Discover the MESG Token</Button>
             </div>
           </div>
@@ -139,7 +137,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #products .card img.product {
   height: 160px;
   width: 160px;
@@ -167,5 +165,20 @@ export default {
 .icon {
   font-size: 1em;
   text-align: right;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .intro {
+    padding-bottom: 0;
+  }
+  .product-desc {
+    margin-bottom: 0 !important;
+  }
+  .token {
+    margin-bottom: 20px;
+  }
+  .token-desc {
+    margin-bottom: 40px;
+  }
 }
 </style>
