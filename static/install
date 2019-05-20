@@ -26,7 +26,7 @@ else
 fi
 
 echo "Installing MESG..."
-link=$(curl -s https://api.github.com/repos/mesg-foundation/core/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
+link=$(curl -sL https://api.github.com/repos/mesg-foundation/engine/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
 
 mesgbin="/usr/local/bin/mesg-core"
 
