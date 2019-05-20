@@ -40,6 +40,18 @@
   [mobile-column-reverse] {
     flex-direction: column-reverse
   }
+  [mobile-column] {
+    flex-direction: column
+  }
+  [tablet-and-up] {
+    display: none!important;
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint + 1) {
+  [mobile-only] {
+    display: none!important;
+  }
 }
 
 [justify-center] {
