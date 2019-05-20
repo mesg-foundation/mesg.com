@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav>
-      <div flex row space-between>
+    <nav flex space-between>
+      <div flex space-between>
         <nuxt-link :to="links.home">
           <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
         </nuxt-link>
@@ -10,51 +10,49 @@
           <span v-else>☰</span>
         </a>
       </div>
-      <transition name="appear">
-        <div v-if="open" flex row mobile-column space-between class="actions" :class="{open}">
-          <ul @click="open = !open" flex row mobile-column>
-            <li class="products" flex column>
-              <Button class="btn main">Products</Button>
-              <div flex column class="sub-menu product" p1 mt1>
-                <Button :to="links.engine" class="btn">MESG Engine</Button>
-                <Button :to="links.marketplace" class="btn">MESG Marketplace</Button>
-                <Button class="btn soon">
-                  Showcase
-                  <span>coming soon</span>
-                </Button>
-                <Button class="btn soon">
-                  FAQ
-                  <span>coming soon</span>
-                </Button>
-              </div>
-            </li>
-            <li class="developers" flex column>
-              <Button class="btn main">Developers</Button>
-              <div flex column class="sub-menu developer" p1 mt1>
-                <Button
-                  href="https://docs.mesg.com/guide/quick-start-guide.html"
-                  target="_blank"
-                  class="btn"
-                >Get started</Button>
-                <Button href="https://marketplace.mesg.com/" target="_blank" class="btn">Marketplace</Button>
-                <Button href="https://docs.mesg.com/" target="_blank" class="btn">Documentation</Button>
-                <Button href="https://forum.mesg.com/" target="_blank" class="btn">Forum</Button>
-              </div>
-            </li>
-            <li class="foundation" flex column>
-              <Button class="btn main">Foundation</Button>
-              <div flex column class="sub-menu overview" p1 mt1>
-                <Button :to="links.foundation" class="btn">Overview</Button>
-                <Button :to="links.partners" class="btn">Partners</Button>
-                <Button :to="links.roadmap" class="btn">Roadmap</Button>
-                <Button href="https://medium.com/mesg" target="_blank" class="btn">Blog</Button>
-              </div>
-            </li>
-            <Button :to="links.token" class="btn main token" mr2>Token</Button>
-            <Button primary :to="links.enterprise" class="enterprise">Enterprise</Button>
-          </ul>
-        </div>
-      </transition>
+      <div flex row mobile-column space-between class="actions" :class="{open}">
+        <ul flex row mobile-column>
+          <li class="products" flex column>
+            <Button class="btn main">Products</Button>
+            <div flex column class="sub-menu product" p1 mt1>
+              <Button :to="links.engine" class="btn">MESG Engine</Button>
+              <Button :to="links.marketplace" class="btn">MESG Marketplace</Button>
+              <Button class="btn soon">
+                Showcase
+                <span>coming soon</span>
+              </Button>
+              <Button class="btn soon">
+                FAQ
+                <span>coming soon</span>
+              </Button>
+            </div>
+          </li>
+          <li class="developers" flex column>
+            <Button class="btn main">Developers</Button>
+            <div flex column class="sub-menu developer" p1 mt1>
+              <Button
+                href="https://docs.mesg.com/guide/quick-start-guide.html"
+                target="_blank"
+                class="btn"
+              >Get started</Button>
+              <Button href="https://marketplace.mesg.com/" target="_blank" class="btn">Marketplace</Button>
+              <Button href="https://docs.mesg.com/" target="_blank" class="btn">Documentation</Button>
+              <Button href="https://forum.mesg.com/" target="_blank" class="btn">Forum</Button>
+            </div>
+          </li>
+          <li class="foundation" flex column>
+            <Button class="btn main">Foundation</Button>
+            <div flex column class="sub-menu overview" p1 mt1>
+              <Button :to="links.foundation" class="btn">Overview</Button>
+              <Button :to="links.partners" class="btn">Partners</Button>
+              <Button :to="links.roadmap" class="btn">Roadmap</Button>
+              <Button href="https://medium.com/mesg" target="_blank" class="btn">Blog</Button>
+            </div>
+          </li>
+          <Button :to="links.token" class="btn main token" mr2>Token</Button>
+          <Button primary :to="links.enterprise" class="enterprise">Enterprise</Button>
+        </ul>
+      </div>
     </nav>
   </div>
 </template>
@@ -73,7 +71,13 @@ export default {
   },
   computed: mapGetters({
     links: "links"
-  })
+  }),
+  mounted() {
+    this.$router.beforeEach((to, from, next) => {
+      this.open = false;
+      next();
+    });
+  }
 };
 </script>
 
@@ -196,6 +200,7 @@ img {
   }
   .actions.open {
     display: block;
+    animation: appear-in 0.2s ease-in;
   }
   .burger {
     text-align: right;
