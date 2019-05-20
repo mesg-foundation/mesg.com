@@ -13,7 +13,10 @@
                 <h4>{{quarter.quarter}}</h4>
                 <ul class="goals">
                   <li v-for="(goal, k) in quarter.goals" :key="k">
-                    <h5>{{ goal.title }}</h5>
+                    <h5>
+                      {{ goal.title }}
+                      <a v-if="goal.link" :href="goal.link" target="_blank"><i class="far fa-external-link" /></a>
+                    </h5>
                     <ul class="items">
                       <li v-for="(item, l) in goal.list" :key="l">{{item}}</li>
                     </ul>
