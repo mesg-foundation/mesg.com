@@ -91,7 +91,7 @@
       mb3
       title="Have specific needs for your custom solution?"
       description="Let MESG Enterprise guide you every step of the way to streamline processes between even the hardest-to-manage services."
-      :links="[{ title: 'Request a demo' , to: links.demo }]"
+      :links="[{ title: 'Request a demo' , href: externalLinks.contact }]"
     />
 
     <Discover mb3 left="showcase" right="token"/>

@@ -2,7 +2,7 @@
   <div>
     <Header mb3 :picture="require('~/assets/team.svg')" :title="title" :description="description">
       <div>
-        <Button :to="links.demo" primary>Get in touch</Button>
+        <Button :href="externalLinks.contact" target="_blank" primary>Get in touch</Button>
         <span spacer></span>
       </div>
     </Header>
@@ -105,7 +105,7 @@
       mb3
       title="Aligned with our purpose?"
       description="Reach out! We love helping companies find new integrations to build powerful solutions."
-      :links="[{ title: 'Get in touch' , to: links.enterprise }]"
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
     />
 
     <Discover mb3 left="token" right="enterprise"/>

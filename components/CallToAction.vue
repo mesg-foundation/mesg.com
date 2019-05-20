@@ -5,7 +5,13 @@
         <h3>{{ title }}</h3>
         <p mb2>{{ description }}</p>
         <nav>
-          <Button white v-for="(link, i) in links" :key="i" :to="link.to">{{ link.title }}</Button>
+          <Button
+            white
+            v-for="(link, i) in links"
+            :key="i"
+            :to="link.to"
+            :href="link.href"
+          >{{ link.title }}</Button>
           <slot/>
         </nav>
       </div>
@@ -30,6 +36,10 @@ export default {
       type: String
     },
     links: {
+      type: Array,
+      default: () => []
+    },
+    externalLinks: {
       type: Array,
       default: () => []
     }

@@ -7,7 +7,7 @@
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.contact" primary>Become a partner</Button>
+        <Button :href="externalLinks.contact" target="_blank" primary>Become a partner</Button>
         <span spacer></span>
       </div>
     </Header>
@@ -48,7 +48,7 @@
       mb3
       title="Accelerate your business with MESG"
       description="MESG is built for efficiency and scalability. Create or share app integrations to adopt new features or even enter new industries, then scale limitlessly with a decentralized network."
-      :links="[{ title: 'Become a partner' , to: links.enterprise }]"
+      :links="[{ title: 'Become a partner' , href: externalLinks.contact }]"
     />
 
     <Discover mb3 left="token" right="enterprise"/>
