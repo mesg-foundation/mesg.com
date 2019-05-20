@@ -1,18 +1,13 @@
 <template>
   <div>
     <Header
-      mb3
       :picture="require('~/assets/engine/engine.svg')"
       :title="title"
       :description="description"
     >
       <div>
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button
-          :href="externalLinks.getStarted"
-          target="_blank"
-          secondary
-        >Get started</Button>
+        <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
       </div>
     </Header>
 

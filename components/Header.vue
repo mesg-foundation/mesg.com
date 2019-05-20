@@ -1,5 +1,5 @@
 <template>
-  <header id="header" pt3 pb3>
+  <header id="header" pt3 pb3 mb3>
     <Container flex row mobile-column-reverse align-center space-between wrap>
       <div half>
         <h1 mb1 v-html="title"></h1>

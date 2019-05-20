@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header
-      mb3
       :picture="require('~/assets/marketplace/marketplace.svg')"
       :title="title"
       :description="description"

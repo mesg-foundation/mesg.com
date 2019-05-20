@@ -1,11 +1,6 @@
 <template>
   <div>
-    <Header
-      mb3
-      :picture="require('~/assets/roadmap.svg')"
-      :title="title"
-      :description="description"
-    />
+    <Header :picture="require('~/assets/roadmap.svg')" :title="title" :description="description"/>
 
     <section id="roadmap" mb3>
       <Container>
@@ -184,10 +179,13 @@ h5 {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .quarters > li::after, .goals::after, .goals::before{
+  .quarters > li::after,
+  .goals::after,
+  .goals::before {
     display: none;
   }
-  li, ul {
+  li,
+  ul {
     margin: 0 !important;
     padding: 0 !important;
   }

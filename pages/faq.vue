@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header mb3 :picture="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
+    <Header :picture="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
 
     <CallToAction
       mb3

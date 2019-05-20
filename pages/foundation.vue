@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header mb3 :picture="require('~/assets/team.svg')" :title="title" :description="description">
+    <Header :picture="require('~/assets/team.svg')" :title="title" :description="description">
       <div>
         <Button :href="externalLinks.contact" target="_blank" primary>Get in touch</Button>
         <span spacer></span>

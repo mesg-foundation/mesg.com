@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header
-      mb3
       :picture="require('~/assets/enterprise/enterprise.svg')"
       :title="title"
       :description="description"
