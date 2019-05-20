@@ -361,6 +361,7 @@ export const getters = {
         quarter: "Q1",
         goals: [{
           title: "MESG Token ERC20",
+          link: "https://etherscan.io/address/0x420167d87d35c3a249b32ef6225872fbd9ab85d2",
           list: [
             "MESG Token release with a total supply of 250MM",
             "Start Algorithmic Token Distribution",
@@ -371,15 +372,17 @@ export const getters = {
         quarter: "Q2",
         goals: [{
           title: "MESG Marketplace on Ethereum",
+          link: "https://marketplace.mesg.com",
           list: [
-            "Sell MESG Service on the MESG Marketplace",
+            "Sell MESG Services on the MESG Marketplace",
             "Buy MESG Services to integrate in application",
             "Marketplace website to buy and sell MESG Services"
           ]
         }, {
           title: "Algorithmic Token Distribution",
+          link: "https://atd.mesg.com",
           list: [
-            "List MESG Token on another exchange",
+            "List MESG Token on a second exchange",
             "Dashboard with all information to check the distribution"
           ]
         }]
@@ -388,20 +391,20 @@ export const getters = {
         goals: [{
           title: "Workflows",
           list: [
-            "Create applications based on workflow",
+            "Create applications based on workflows",
             "Connect MESG Services together to build rich applications",
-            "Reduce drasticly application's codebase"
+            "Drastically reduce application's codebase"
           ]
         }, {
           title: "Decentralized executions",
           list: [
-            "MESG Services Marketplace in the native network",
+            "MESG Services Marketplace on the native network",
             "Decentralization of the execution of services"
           ]
         }, {
           title: "Testnet",
           list: [
-            "Native MESG token",
+            "Native MESG Token",
             "Proof of Stake consensus"
           ]
         }]
@@ -417,7 +420,7 @@ export const getters = {
         }, {
           title: "Exchange listing",
           list: [
-            "Tiers-2 exchange"
+            "Tier-2 exchange"
           ]
         }]
       }]
@@ -440,7 +443,7 @@ export const getters = {
             "Feature update based on the community feedback",
             "More and more partners",
             "New exchanges",
-            "Improve performances",
+            "Improve performance",
             "..."
           ]
         }]
