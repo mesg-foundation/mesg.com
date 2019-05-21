@@ -1,87 +1,206 @@
 <template>
   <div>
-    <Header id="introduction" class="dark token-header"
+    <Header
+      :picture="require('~/assets/token/token.svg')"
       :title="title"
       :description="description"
-      :schema="schema">
-      <p>{{ description }}</p>
-      <div class="listing">
-        <p mt2 mb1>You can buy and trade the MESG Token on:</p>
+    >
+      <div>
+        <p mb1>
+          <strong>Buy and trade on:</strong>
+        </p>
+        <div flex row wrap>
+          <a
+            v-for="exchange in exchanges"
+            :key="exchange.id"
+            :href="exchange.to"
+            target="_blank"
+            third
+          >
+            <img :src="exchange.src" :alt="exchange.id">
+          </a>
+        </div>
       </div>
-      <nav class="exchanges" flex row>
-        <Button href="https://www.digifinex.com/en-ww/trade/USDT/MESG" target="_blank" white flex column mr1 mt1><img src="~/assets/digifinex.svg" alt="Digifinex" class="logo"/></Button>
-        <Button href="https://idex.market/eth/mesg" target="_blank" white flex column mt1><img src="~/assets/IDEX.svg" alt="Idex" class="logo"/></Button>
-      </nav>
-    </header>
-    <div class="white">
-      <Tokenintro id="token introduction"/>
-      <TokenDesc id="token"/>
-      <Documentations id="documentations"/>
-      <Howtobuy id="how to buy on DigiFinex" />
-    </div>
-    <CTATokenUpdated id="token updated" class="dark"/>
+    </Header>
+
+    <section id="features" mb3>
+      <Container flex row space-between wrap>
+        <TextWithIcon
+          v-for="(feature, i) in token.features.primary"
+          :key="i"
+          :src="feature.src"
+          :title="feature.title"
+          :text="feature.description"
+          third
+        />
+      </Container>
+    </section>
+
+    <section id="atd" mb3>
+      <Container>
+        <h2 mb1>Algorithmic Token Distribution</h2>
+        <p
+          mb2
+          class="text-center"
+        >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limit release to only a fraction of the previous day’s total volume.</p>
+        <div flex row space-between wrap>
+          <TextWithIcon
+            half
+            v-for="(feature, i) in token.features.secondary"
+            :key="i"
+            :src="feature.src"
+            :title="feature.title"
+            :text="feature.description"
+          />
+        </div>
+      </Container>
+    </section>
+
+    <section id="distribution" class="outer-background" pt3 pb3 mb3>
+      <Container>
+        <Feature
+          :src="require('~/assets/token/token-distribution.svg')"
+          title="Token distribution"
+          action="Check out our roadmap"
+          :to="links.roadmap"
+        >
+          <h4 mb1>Total token supply 250MM</h4>
+          <ColoredList
+            :items="[
+              { color: '#e0d1ff', title: 'Sale Distribution 62.5%' },
+              { color: '#ffd4a3', title: 'Reserve 20%' },
+              { color: '#9777c7', title: 'Team and Founders 12.5%' },
+              { color: '#8ceda1', title: 'Partners & Bounties 5%' }
+            ]"
+          />
+        </Feature>
+      </Container>
+    </section>
+
+    <section id="documents" mb3>
+      <Container>
+        <h2 mb2>MESG documents</h2>
+        <div flex row space-between wrap>
+          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2/>
+        </div>
+      </Container>
+    </section>
+
+    <section id="faq" mb3>
+      <Container>
+        <h2 mb2>Frequently Asked Questions</h2>
+        <div flex row space-between wrap>
+          <Titletext4
+            half
+            v-for="(faq, i) in token.faq"
+            :key="i"
+            :title="faq.title"
+            :text="faq.description"
+          />
+        </div>
+        <!--
+        <div class="text-center">
+          <Button secondary :to="links.faq">Access the FAQ</Button>
+        </div>
+        -->
+      </Container>
+    </section>
+
+    <News :articles="articles"/>
+
+    <CallToAction mb3 title="Buy and trade MESG Token on">
+      <div flex row wrap mb2>
+        <Button
+          white
+          v-for="exchange in exchanges"
+          :key="exchange.id"
+          :href="exchange.to"
+          target="_blank"
+          third
+        >
+          <img :src="exchange.src" :alt="exchange.id">
+        </Button>
+      </div>
+    </CallToAction>
+
+    <Discover mb3 left="showcase" right="enterprise"/>
+
+    <GetStarted mb3/>
   </div>
 </template>
 
+
 <script>
-import Header from '~/components/Header'
-import Button from '~/components/Button'
-import Tokenintro from '~/components/Tokenintro'
-import TokenDesc from '~/components/TokenDesc'
-import Documentations from '~/components/Documentations'
-import Howtobuy from '~/components/Howtobuy'
-import CTATokenUpdated from '~/components/cta/TokenUpdated'
-import IconToken from '~/components/icon/Token'
-import page from './page'
+import { mapGetters } from "vuex";
+import Header from "~/components/Header";
+import Button from "~/components/Button";
+import Container from "~/components/Container";
+import Card from "~/components/Card";
+import Titletext4 from "~/components/Titletext4";
+import News from "~/components/News";
+import CallToAction from "~/components/CallToAction";
+import Discover from "~/components/Discover";
+import GetStarted from "~/components/GetStarted";
+import TextWithIcon from "~/components/TextWithIcon";
+import Feature from "~/components/Feature";
+import ColoredList from "~/components/ColoredList";
+import Document from "~/components/Document";
+import page from "./page";
+
 export default {
   components: {
     Header,
+    Container,
     Button,
-    Tokenintro,
-    TokenDesc,
-    Documentations,
-    Howtobuy,
-    CTATokenUpdated
-  },
-  computed: {
-    exchanges () {
-      return exchanges
-    }
+    Card,
+    Titletext4,
+    News,
+    CallToAction,
+    Discover,
+    GetStarted,
+    TextWithIcon,
+    Feature,
+    ColoredList,
+    Document
   },
   mixins: [
     page({
-      title: 'The MESG Token',
-      description: 'Buy and sell app components in the new economy of app development.',
-      schema: IconToken
+      title: "MESG Token",
+      description:
+        "Buy and sell app components in the new economy of app development. MESG Token available now."
     })
-  ]
-}
-
+  ],
+  computed: {
+    ...mapGetters({
+      token: "token",
+      links: "links",
+      documents: "documents",
+      articles: "articles",
+      exchanges: "exchanges"
+    })
+  }
+};
 </script>
 
 <style scoped>
-
-.listing p {
-  font-size: 1em;
+ul {
+  list-style: none;
 }
 
-.logo {
-  height: 20px;
-  text-decoration: none;
+.soon {
+  opacity: 0.3;
 }
 
-@media only screen and (max-width: 768px) {
-  .listing a {
-    justify-content: center;
-  }
-  [mr1]{ margin-right: 1.2em!important; }
+a img {
+  height: 25px;
+  display: block;
 }
 
-@media only screen and (max-width: 550px) {
-  .exchanges {
-    flex-direction: column;
-  }
-  [mr1]{ margin-right: 0em!important; }
+a.btn--white img {
+  margin: auto;
 }
 
+li img {
+  vertical-align: middle;
+}
 </style>

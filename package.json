@@ -10,16 +10,18 @@
     "start": "nuxt start",
     "generate": "GA_ID=UA-117583862-2 nuxt generate && cp _redirects dist",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "styleguide": "vue-styleguidist server",
+    "styleguide:build": "vue-styleguidist build"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/google-tag-manager": "^2.1.1",
     "@nuxtjs/pwa": "^2.5.0",
     "@nuxtjs/sitemap": "^0.2.0",
-    "nuxt": "^2.4.5",
-    "vue-sticky-directive": "0.0.7",
-    "vue-tree-halower": "^1.7.3"
+    "@nuxtjs/style-resources": "^0.1.2",
+    "nuxt": "^2.6.3",
+    "vue-sticky-directive": "0.0.7"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
@@ -27,9 +29,9 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.7.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "unused-files-webpack-plugin": "^3.4.0",
-    "vue": "^2.5.17"
+    "vue": "^2.6.10"
   }
 }

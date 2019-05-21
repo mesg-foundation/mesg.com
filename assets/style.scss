@@ -1,0 +1,135 @@
+:root {
+  --purple: #{$purple};
+  --light-purple: #{$light-purple};
+  --deep-purple: #{$deep-purple};
+  --dark-purple: #{$dark-purple};
+  --white: #{$white};
+  --light-background: #{$light-background};
+  --title-color: #{$title-color};
+  --text-color: #{$text-color};
+  --margin: #{$margin};
+  --width: #{$width};
+  --small-width: #{$small-width};
+}
+
+@import "structure";
+
+/* Reset */
+html {
+  font-size: 1em;
+  word-spacing: 0.1em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Text styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+ul,
+li,
+button,
+label,
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--title-color);
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--title-color);
+}
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--title-color);
+}
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--title-color);
+}
+p {
+  font-size: 17px;
+  color: var(--text-color);
+}
+li {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--purple);
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.85;
+  transition: 0.2s ease-in-out;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.inner-background {
+  position: relative;
+}
+.inner-background::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--margin) * 4);
+  bottom: calc(var(--margin) * 4);
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--light-background);
+}
+.outer-background {
+  background: var(--light-background);
+}
+hr {
+  width: var(--width);
+  max-width: 100%;
+  margin: auto;
+  height: 0;
+  border:solid 0.5px;
+  color: var(--light-purple);
+}
+.container > p {
+  max-width: var(--small-width);
+  margin: auto;
+}

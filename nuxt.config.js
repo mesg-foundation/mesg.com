@@ -1,6 +1,7 @@
 const { UnusedFilesWebpackPlugin } = require("unused-files-webpack-plugin")
 
 module.exports = {
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -32,11 +33,13 @@ module.exports = {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity: 'sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin: 'anonymous' }
+      { rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.8.2/css/all.css', integrity: 'sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF', crossorigin: 'anonymous' }
     ]
   },
+  css: [
+    '~/assets/style.scss'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -47,6 +50,7 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
+    '@nuxtjs/style-resources',
     process.env.GA_ID ? ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID
     }] : null,
@@ -66,6 +70,11 @@ module.exports = {
     generate: true, // Enable me when using nuxt generate
     exclude: ['showcases']
   },
+  styleResources: {
+    scss: [
+      './assets/_variables.scss'
+    ]
+  },
   /*
   ** Plugins
   */
@@ -80,7 +89,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev }) {
+    extend(config, { isDev }) {
       if (isDev && process.client) {
         config.module.rules.push({
           enforce: 'pre',
@@ -92,15 +101,15 @@ module.exports = {
     },
 
     plugins: [
-      new UnusedFilesWebpackPlugin({
-        patterns: [
-          '**/*.*',
-          '!*',
-          '!static/**',
-          '!assets/documents/**',
-          '!**/*.md'
-        ]
-      }),
+      // new UnusedFilesWebpackPlugin({
+      //   patterns: [
+      //     '**/*.*',
+      //     '!*',
+      //     '!static/**',
+      //     '!assets/documents/**',
+      //     '!**/*.md'
+      //   ]
+      // }),
     ],
   }
 }

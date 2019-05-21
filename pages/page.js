@@ -1,7 +1,7 @@
 export default x => {
   const dataFunc = typeof x === 'object' ? () => x : x
   return {
-    head () {
+    head() {
       const { title, description } = dataFunc(this)
       return {
         title: title,
@@ -13,15 +13,15 @@ export default x => {
       }
     },
     computed: {
-      title () {
+      title() {
         const { title } = dataFunc(this)
         return title
       },
-      description () {
+      description() {
         const { description } = dataFunc(this)
         return description
       },
-      schema () {
+      schema() {
         const { schema } = dataFunc(this)
         return schema
       }

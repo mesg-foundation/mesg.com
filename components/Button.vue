@@ -1,27 +1,23 @@
 <template>
-  <button v-if="submit"
-    type="submit"
-    :class="classes">
+  <button v-if="submit" type="submit" :class="classes">
+    <i v-if="icon" :class="icon"></i>
     <slot></slot>
-    <i v-if="icon" :class="`fa fa-${icon}`"></i>
+    <i v-if="posticon" :class="posticon"></i>
   </button>
-  <a v-else-if="href"
-    :href="href"
-    :class="classes">
+  <a v-else-if="href" :href="href" :class="classes">
+    <i v-if="icon" :class="icon"></i>
     <slot></slot>
-    <i v-if="icon" :class="`fa fa-${icon}`"></i>
+    <i v-if="posticon" :class="posticon"></i>
   </a>
-  <nuxt-link v-else-if="to"
-    :to="to"
-    :class="classes">
+  <nuxt-link v-else-if="to" :to="to" :class="classes">
+    <i v-if="icon" :class="icon"></i>
     <slot></slot>
-    <i v-if="icon" :class="`fa fa-${icon}`"></i>
+    <i v-if="posticon" :class="posticon"></i>
   </nuxt-link>
-  <a v-else
-    @click="$emit('click')"
-    :class="classes">
+  <a v-else @click="$emit('click')" :class="classes">
+    <i v-if="icon" :class="icon"></i>
     <slot></slot>
-    <i v-if="icon" :class="`fa fa-${icon}`"></i>
+    <i v-if="posticon" :class="posticon"></i>
   </a>
 </template>
 
@@ -31,98 +27,105 @@ export default {
     href: String,
     to: [Object, String],
     submit: Boolean,
-    small: Boolean,
     primary: Boolean,
+    secondary: Boolean,
     white: Boolean,
     outline: Boolean,
     icon: String
   },
   computed: {
-    classes () {
+    classes() {
       return {
-        'btn--small': this.small,
-        'btn--primary': this.primary,
-        'btn--white': this.white,
-        'btn--outline': this.outline
+        "btn--primary": this.primary,
+        "btn--secondary": this.secondary,
+        "btn--white": this.white,
+        "btn--outline": this.outline
+      };
+    },
+    isExternalLink() {
+      const link = this.href || this.to;
+      return link.startsWith("http");
+    },
+    posticon() {
+      if (!this.secondary) {
+        return null;
       }
+      if (this.isExternalLink) {
+        return "far fa-external-link";
+      }
+      return "fa fa-arrow-right";
     }
   }
-}
+};
 </script>
 
 <style scoped>
-a, button {
-  border-radius: 0.3em;
-  font-size: 1em;
+a,
+button {
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
   font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: center;
-  padding: 1em 2em;
+  padding: 0.75em;
+  padding-left: 2em;
+  padding-right: 2em;
   text-decoration: none;
-  cursor: pointer;
-  position: relative;
+  display: inline-block;
 }
 
 i {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
+  padding-left: 0.5em;
 }
 
-.btn--small {
-  border-radius: 0.3em;
-  padding: 0.1em 2em;
-}
-.btn--small:hover {
-  color: #ffffff;
-  color: var(--white-content);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+.btn--primary:hover,
+.btn--secondary:hover,
+.btn--white:hover,
+.btn--outline:hover {
+  opacity: 0.85;
+  transition: 0.2s ease-in-out;
 }
 
 .btn--primary {
-  color: #ffffff;
-  color: var(--white-content);
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
-  border: solid 2px #ffa744;
+  color: var(--white);
+  background-color: var(--purple);
 }
-.btn--primary:hover {
-  background-color: #E5963D;
-  background-color: var(--Orange-cta-hover);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
-  border: solid 2px #E5963D;
+
+.btn--secondary {
+  color: var(--purple);
+  text-align: left;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: solid 1px var(--purple);
 }
 
 .btn--white {
-  background-color: #ffffff;
-  background-color: var(--white-content);
-  border: solid 2px #ffffff;
-}
-.btn--white:hover {
-  opacity:0.90;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+  color: var(--purple);
+  background-color: var(--white);
 }
 
 .btn--outline {
-  color: #ffa744;
-  color: var(--Orange-cta);
-  border: solid 2px #ffa744;
-}
-.btn--outline:hover {
-  color: #ffffff;
-  color: var(--white-content);
-  background-color: #ffa744;
-  background-color: var(--Orange-cta);
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+  color: var(--purple);
+  border: solid 2px var(--purple);
 }
 
 @media only screen and (max-width: 768px) {
   a {
     font-size: 1em;
   }
+}
 @media only screen and (max-width: 414px) {
-    a, button {
-      font-size: 0.8em;
-    }
+  a,
+  button {
+    font-size: 0.8em;
   }
 }
 </style>

@@ -1,128 +1,255 @@
 <template>
-  <footer>
-    <div class="container-parent">
-      <div class="container-child" flex row space-between justify-center align-center>
-        <div class="logo" flex row space-between align-center>
-          <MESGLogoHorizontalPurple />
-          <div class="incubator">
-            <p>Incubated by</p>
-            <img src="~/assets/Partners/Yellow.png" alt="Yellow" class="yellow" mr1>
+  <section id="footer">
+    <div class="bg">
+      <Container>
+        <nav flex row space-between wrap mobile-column-reverse mb2>
+          <div flex column third>
+            <nuxt-link :to="links.home">
+              <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG" mb1>
+            </nuxt-link>
+            <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
+            <div flex space-between wrap>
+              <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
+                <i :class="icon.icon"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="container-nav" flex row align-center>
-          <nuxt-link to="/faq" class="nav" mr2>FAQ</nuxt-link>
-          <a href="https://forum.mesg.com" target="_blank" class="nav" mr2>Get Help</a>
-          <a href="https://docs.mesg.com" target="_blank" class="nav" mr2>Documentation</a>
-          <a href="https://github.com/mesg-foundation/awesome#readme" target="_blank" class="nav" mr2>Marketplace</a>
-          <a href="https://goo.gl/forms/ifXyNfaQn8VC7pfu1" target="_blank" class="nav">Get in touch</a>
-        </div>
-      </div>
-      <div class="container-child separator"  flex row space-between column-reverse-responsive>
-          <div flex row>
-            <p class="copyright">
-              Copyright © 2019 MESG Foundation, All rights reserved.
-            </p>
+          <div flex row mobile-column class="menu">
+            <div flex column quarter>
+              <p class="category" mb1>Products</p>
+              <Button :to="links.engine" class="link" mb1>MESG Engine</Button>
+              <Button :to="links.marketplace" class="link" mb1>MESG Marketplace</Button>
+              <Button class="link" mb1>
+                <span>Showcase</span>
+              </Button>
+              <Button class="link last" mb1>
+                <span>FAQ</span>
+              </Button>
+            </div>
+            <div flex column quarter>
+              <p class="category" mb1>Developers</p>
+              <Button :href="externalLinks.getStarted" target="_blank" class="link" mb1>Get started</Button>
+              <Button :href="externalLinks.marketplace" target="_blank" class="link" mb1>Marketplace</Button>
+              <Button
+                :href="externalLinks.documentation"
+                target="_blank"
+                class="link"
+                mb1
+              >Documentation</Button>
+              <Button :href="externalLinks.forum" target="_blank" class="link last" mb1>Forum</Button>
+            </div>
+            <div flex column quarter>
+              <p class="category" mb1>Foundation</p>
+              <Button :to="links.foundation" class="link" mb1>Overview</Button>
+              <Button :to="links.partners" class="link" mb1>Partners</Button>
+              <Button :to="links.roadmap" class="link" mb1>Roadmap</Button>
+              <Button :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</Button>
+            </div>
+            <div flex column quarter>
+              <Button :to="links.token" class="link">Token</Button>
+              <Button :to="links.enterprise" class="link">Enterprise</Button>
+            </div>
           </div>
-          <div class="social" flex row >
-            <a mr1 href="https://medium.com/mesg" target="_blank"><i class="fab fa-medium-m"></i></a>
-            <a mr1 href="https://github.com/mesg-foundation" target="_blank"><i class="fab fa-github"></i></a>
-            <a mr1 href="https://forum.mesg.com/" target="_blank"><i class="fas fa-comments"></i></a>
-            <a mr1 href="https://discordapp.com/invite/5tVTHJC" target="_blank"><i class="fab fa-discord"></i></a>
-            <a mr1 href="https://twitter.com/mesgfoundation" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a mr1 href="https://www.linkedin.com/company/mesg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a mr1 href="https://t.me/mesg_community/" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <a href="https://www.facebook.com/mesgfoundation/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </nav>
+      </Container>
+
+      <hr mb2>
+
+      <section id="newsletter">
+        <Container flex row mobile-column-reverse align-center>
+          <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
+          <div class="form">
+            <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit">
+              <input type="email" placeholder="Your email address" v-model="email" required>
+              <button type="submit" class="submit-newsletter">
+                <i class="fas fa-arrow-right"/>
+              </button>
+            </form>
           </div>
-        </div>
+        </Container>
+      </section>
     </div>
-  </footer>
+  </section>
 </template>
 
 <script>
-import MESGLogoHorizontalPurple from '~/components/MESGLogoHorizontalPurple'
+import Button from "~/components/Button";
+import Container from "~/components/Container";
+import { mapGetters } from "vuex";
 export default {
   components: {
-    MESGLogoHorizontalPurple
+    Button,
+    Container
+  },
+  data() {
+    return {
+      email: ""
+    };
+  },
+  computed: {
+    ...mapGetters({
+      links: "links",
+      externalLinks: "externalLinks"
+    }),
+    icons() {
+      return [
+        { href: this.externalLinks.blog, icon: "fab fa-medium" },
+        { href: this.externalLinks.github, icon: "fab fa-github" },
+        { href: this.externalLinks.forum, icon: "fas fa-comments" },
+        { href: this.externalLinks.discord, icon: "fab fa-discord" },
+        { href: this.externalLinks.twitter, icon: "fab fa-twitter" },
+        { href: this.externalLinks.linkedin, icon: "fab fa-linkedin-in" },
+        { href: this.externalLinks.facebook, icon: "fab fa-facebook-f" }
+      ];
+    }
+  },
+  methods: {
+    async submit() {
+      const token = "32bdd13cbff3931061eb3eca01321d84";
+      const data = new FormData();
+      data.append("email", this.email);
+      data.append("token", token);
+      const req = window.XMLHttpRequest
+        ? new XMLHttpRequest()
+        : new ActiveXObject("Microsoft.XMLHTTP");
+      req.open(
+        "POST",
+        "https://app.sgwidget.com/v2/api/newsletter-signup",
+        false
+      );
+      req.onload = () => {
+        const res = JSON.parse(req.responseText);
+        if (req.status === 200) {
+          alert(res.message);
+          this.email = "";
+        } else {
+          alert(res.email[0]);
+        }
+      };
+      req.send(data);
+    }
   }
-}
+};
 </script>
 
-<style scoped>
-
-.container-parent {
-  padding: 0;
-}
-
-footer {
-  position: relative;
-  background-color: #fafafe;
-  background-color: var(--pale-white);
-  border-top: solid 0.5px #d6d0e7;
-  border-top: solid 0.5px var(--lighter-grey);
-}
-
-svg {
-  width: 190px;
-  height: 50px;
-  padding-right:1.2em;
-}
-.yellow {
-  max-width: 80px;
-}
-.incubator {
-  font-size: 0.6em;
-  font-weight: bold;
-  padding-left: 1.2em;
-  border-left: solid 1px #d6d0e7;
-}
-
-.separator {
-  border-top: solid 0.5px #d6d0e7;
-  border-top: solid 0.5px var(--lighter-grey);
+<style lang="scss" scoped>
+.bg {
+  padding: 40px;
+  width: 100%;
+  background-color: var(--dark-purple);
 }
 
 .copyright {
-  font-size: 0.8em;
-  text-decoration: none;
-  color: #57577e;
-  color: var(--dark-grey);
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--deep-purple);
 }
 
-a {
-  opacity:1;
-  font-size: 1em;
-  font-weight: bold;
-  text-decoration: none;
-  color: #57577e;
-  color: var(--dark-grey);
-}
-a:hover {
-  opacity:0.8;
-  transition: calc(var(--animation-speed) * 0.1s) ease;
+.category {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--deep-purple);
+  display: inline;
 }
 
-@media only screen and (max-width: 812px) {
-  .container-nav {
-    padding-top:1.2em;
-  }
-}
-@media only screen and (max-width: 768px) {
-  [mr1] { margin-right: 1.2em!important; }
-  [column-reverse-responsive] { flex-direction: row; }
-}
-@media only screen and (max-width: 414px) {
-  .container-nav {
-    padding-top: 0em;
-  }
-  .social {
-    padding-bottom:1.2em;
-  }
-  .nav {
-    width: 100%;
-    height: auto;
-    padding-top: 1.2em;
-  }
-  [column-reverse-responsive] { flex-direction: column-reverse; }
+span {
+  color: var(--deep-purple);
 }
 
+i {
+  margin-right: 0;
+}
+
+.icon {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: var(--white);
+}
+
+.link {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  padding: 0;
+  color: var(--white);
+}
+
+hr {
+  color: var(--deep-purple);
+}
+
+img {
+  height: 40px;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--dark-purple);
+}
+
+.text-right {
+  text-align: right;
+}
+
+form {
+  position: relative;
+}
+
+input[type="email"] {
+  font-size: 15px;
+  width: 300px;
+  padding: 13px var(--margin);
+  border: solid 1px var(--deep-purple);
+  border-radius: 3px;
+  background-color: var(--dark-purple);
+  color: var(--white);
+  padding-right: calc(3 * var(--margin));
+}
+
+button[type="submit"] {
+  transform: translateX(-40px);
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  color: var(--white);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .container {
+    padding: 0;
+  }
+  .menu {
+    margin-bottom: 40px;
+  }
+  .last {
+    padding-bottom: 20px;
+  }
+  .form {
+    margin-bottom: 20px;
+  }
+  .form button {
+    position: absolute;
+    right: -20px;
+    top: 12px;
+  }
+  #newsletter p {
+    margin: auto !important;
+  }
+}
 </style>
