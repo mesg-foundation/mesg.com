@@ -116,7 +116,7 @@
           :key="exchange.id"
           :href="exchange.to"
           target="_blank"
-          half
+          third
         >
           <img :src="exchange.src" :alt="exchange.id">
         </Button>
