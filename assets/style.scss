@@ -123,7 +123,7 @@ a:hover {
 }
 hr {
   width: var(--width);
-  max-width: var(--width);
+  max-width: 100%;
   margin: auto;
   height: 0;
   border:solid 0.5px;

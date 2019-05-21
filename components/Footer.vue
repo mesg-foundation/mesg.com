@@ -243,5 +243,13 @@ button[type="submit"] {
   .form {
     margin-bottom: 20px;
   }
+  .form button {
+    position: absolute;
+    right: -20px;
+    top: 12px;
+  }
+  #newsletter p {
+    margin: auto !important;
+  }
 }
 </style>
