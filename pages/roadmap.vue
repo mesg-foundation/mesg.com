@@ -15,7 +15,9 @@
                   <li v-for="(goal, k) in quarter.goals" :key="k">
                     <h5>
                       {{ goal.title }}
-                      <a v-if="goal.link" :href="goal.link" target="_blank"><i class="far fa-external-link" /></a>
+                      <a v-if="goal.link" :href="goal.link" target="_blank">
+                        <i class="far fa-external-link"/>
+                      </a>
                     </h5>
                     <ul class="items">
                       <li v-for="(item, l) in goal.list" :key="l">{{item}}</li>
@@ -56,7 +58,7 @@ export default {
     page({
       title: "Roadmap",
       description:
-        "Check out our progress on completing our vision to become the universally-used platform for connecting traditional technologies to trustless systems"
+        "Check out our progress on completing our vision to become the universally-used platform for connecting traditional technologies to trustless systems."
     })
   ],
   computed: {

@@ -33,7 +33,7 @@ export const getters = {
         title: "MESG Marketplace",
         img: require("~/assets/marketplace/marketplace.svg"),
         description:
-          "A decentralized marketplace to connect buyers looking to save time in development with sellers earning tokens for the reuse of their code.",
+          "A decentralized marketplace to connect buyers looking to save time in development with sellers who earn tokens for the reuse of their code.",
         features: {
           primary: [
             { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
@@ -101,11 +101,11 @@ export const getters = {
               valid: true, description: "Priority support from a dedicated team of engineers"
             },
             {
-              valid: true, description: "Creation of Modules"
+              valid: true, description: "Creation of services"
             }
           ],
           to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Contact us"
+          action: "Contact Us"
         },
         {
           title: "BUSINESS",
@@ -131,11 +131,11 @@ export const getters = {
               valid: false, description: "Priority support from a dedicated team of engineers"
             },
             {
-              valid: false, description: "Creation of Modules"
+              valid: false, description: "Creation of services"
             }
           ],
           to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Contact us"
+          action: "Contact Us"
         },
         {
           title: "ESSENTIAL",
@@ -160,7 +160,7 @@ export const getters = {
               valid: false, description: "Priority support from a dedicated team of engineers"
             },
             {
-              valid: false, description: "Creation of Modules"
+              valid: false, description: "Creation of services"
             }
           ],
           to: "https://docs.mesg.com/guide/quick-start-guide.html",
@@ -176,7 +176,7 @@ export const getters = {
         primary: [
           { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "You can become a part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation." },
           { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants stake MESG Tokens to commit to their availability and good behavior. Then, participants are rewarded for validating each execution." },
-          { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell Modules", description: "App components, called Modules, are bought and sold using the MESG Token. Then Modules can be used in any app, no complex coding required." }
+          { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "App components, called services, are bought and sold using the MESG Token. Then services can be used in any app, no complex coding required." }
         ],
         secondary: [
           { src: require("~/assets/token/algorithm.svg"), title: "The algorithm", description: "Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand." },
@@ -189,7 +189,7 @@ export const getters = {
         { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ target=_blank>Marketplace</a> to buy and sell application components. Purchasing them saves developers time, while providing new ways to earn from coding." },
         { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications. Plus, it will secure the network through a mandatory staking system." },
         { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to no more than 6% of the previous day’s total volume. This means gradual large payouts for all, plus limited sales to promote a stable volume of MESG Tokens entering the market." },
-        { title: "Where can I buy MESG Tokens?", description: "The MESG Tokens is available to purchase now on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG target=_blank>DigiFinex</a> and <a href=https://idex.market/eth/mesg target=_blank>IDEX</a>, and soon, it will be listed BitForex. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
+        { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
       ]
     }
   },

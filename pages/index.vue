@@ -62,10 +62,10 @@
                 <img src="~/assets/token/MESG-token.svg" alt="token" class="token">
               </div>
               <div flex column>
-                <h3 mb1>Build Modules, Earn Tokens</h3>
+                <h3 mb1>Build services, earn tokens</h3>
                 <p
                   class="token-desc"
-                >Earn MESG Tokens by building reusable Modules in the decentralized economy of app development.</p>
+                >Earn MESG Tokens by building services in the decentralized economy of app development.</p>
               </div>
             </div>
             <div flex column third>
@@ -80,8 +80,8 @@
 
     <CallToAction
       mb3
-      title="Streamline your business with MESG"
-      description="Optimize processes and automate workflows between your whole stack of connected systems."
+      title="Accelerate your business with MESG"
+      description="MESG is built for efficiency and scalability. Create and share app components to add new features, or even enter new industries. Then scale limitlessly with a decentralized network."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
