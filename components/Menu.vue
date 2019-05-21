@@ -30,14 +30,10 @@
           <li class="developers" flex column>
             <Button class="btn main">Developers</Button>
             <div flex column class="sub-menu developer" p1 mt1>
-              <Button
-                href="https://docs.mesg.com/guide/quick-start-guide.html"
-                target="_blank"
-                class="btn"
-              >Get started</Button>
-              <Button href="https://marketplace.mesg.com/" target="_blank" class="btn">Marketplace</Button>
-              <Button href="https://docs.mesg.com/" target="_blank" class="btn">Documentation</Button>
-              <Button href="https://forum.mesg.com/" target="_blank" class="btn">Forum</Button>
+              <Button :href="externalLinks.getStarted" target="_blank" class="btn">Get started</Button>
+              <Button :href="externalLinks.marketplace" target="_blank" class="btn">Marketplace</Button>
+              <Button :href="externalLinks.documentation" target="_blank" class="btn">Documentation</Button>
+              <Button :href="externalLinks.forum" target="_blank" class="btn">Forum</Button>
             </div>
           </li>
           <li class="foundation" flex column>
@@ -46,7 +42,7 @@
               <Button :to="links.foundation" class="btn">Overview</Button>
               <Button :to="links.partners" class="btn">Partners</Button>
               <Button :to="links.roadmap" class="btn">Roadmap</Button>
-              <Button href="https://medium.com/mesg" target="_blank" class="btn">Blog</Button>
+              <Button :href="externalLinks.blog" target="_blank" class="btn">Blog</Button>
             </div>
           </li>
           <Button :to="links.token" class="btn main token" mr2>Token</Button>
@@ -70,7 +66,8 @@ export default {
     };
   },
   computed: mapGetters({
-    links: "links"
+    links: "links",
+    externalLinks: "externalLinks"
   }),
   mounted() {
     this.$router.beforeEach((to, from, next) => {
