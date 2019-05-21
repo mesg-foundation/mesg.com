@@ -5,13 +5,13 @@
         <nuxt-link :to="links.home">
           <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
         </nuxt-link>
-        <a @click="open = !open" class="burger" mobile-only>
+        <a @click="open = !open" class="burger" hidden-desktop>
           <span v-if="open">&times;</span>
           <span v-else>☰</span>
         </a>
       </div>
-      <div flex row mobile-column space-between class="actions" :class="{open}">
-        <ul flex row mobile-column>
+      <div flex row space-between class="actions" :class="{open}">
+        <ul flex row mobile-column tablet-column>
           <li class="products" flex column>
             <Button class="btn main">Products</Button>
             <div flex column class="sub-menu product" p1 mt1>
@@ -91,7 +91,7 @@ img {
   height: 100%;
 }
 
-@media only screen and (min-width: $tablet-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint + 1) {
   .actions {
     text-align: right;
     width: 300px;
@@ -186,7 +186,7 @@ img {
   }
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $tablet-breakpoint) {
   .actions {
     text-align: left;
     display: none;
