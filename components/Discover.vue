@@ -69,8 +69,5 @@ export default {
   p {
     margin-bottom: 20px !important;
   }
-  .btn--secondary {
-    margin-bottom: 0;
-  }
 }
 </style>

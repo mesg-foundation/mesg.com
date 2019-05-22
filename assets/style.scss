@@ -135,7 +135,10 @@ hr {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  header .btn--primary, .btn--secondary {
+  header .btn--primary {
+    margin-bottom: 20px;
+  }
+  header .btn--secondary {
     margin-bottom: 20px;
   }
 }
