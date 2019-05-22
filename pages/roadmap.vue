@@ -58,7 +58,7 @@ export default {
     page({
       title: "Roadmap",
       description:
-        "Check out our progress on completing our vision to become the universally-used platform for connecting traditional technologies to trustless systems."
+        "Check out our progress on becoming the universally-used platform for connecting traditional technologies to trustless systems."
     })
   ],
   computed: {
