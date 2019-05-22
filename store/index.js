@@ -179,10 +179,10 @@ export const getters = {
           { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "Access to app components, called services, are bought and sold using MESG Tokens. Then services can be used within any app, no complex coding required." }
         ],
         secondary: [
-          { src: require("~/assets/token/algorithm.svg"), title: "The algorithm", description: "Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand." },
-          { src: require("~/assets/token/transparency.svg"), title: "Transparency", description: "Metrics will be published daily to enhance transparency between the MESG Foundation and the community." },
-          { src: require("~/assets/token/initial-supply.svg"), title: "Initial supply", description: "0.1% of the total supply was released on the first day of exchange listing to initiate the supply." },
-          { src: require("~/assets/token/supply-distribution.svg"), title: "Supply distribution", description: "The supply distribution of 62.5% will be released in daily allotments." }
+          { src: require("~/assets/token/algorithm.svg"), title: "Algorithmic release", description: "Daily allotments are calculated from a percentage of the previous day’s trading volume, tying tokens released to actual demand." },
+          { src: require("~/assets/token/transparency.svg"), title: "Transparency", description: "Release metrics are being published daily to promote transparency between the MESG Foundation and the community." },
+          { src: require("~/assets/token/initial-supply.svg"), title: "Initial supply", description: "0.1% of the total token supply was released on the first day of exchange listings to initiate the supply." },
+          { src: require("~/assets/token/supply-distribution.svg"), title: "Supply distribution", description: "The total supply distribution of 62.5% will be released slowly over time in daily allotments." }
         ]
       },
       faq: [
