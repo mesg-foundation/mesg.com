@@ -72,7 +72,7 @@ export const getters = {
         ]
       },
       faq: [
-        { title: "Are apps dependent on MESG to run?", description: "No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralization network allows apps to execute without any centralized dependencies." },
+        { title: "Are apps dependent on MESG to run?", description: "No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralized network allows apps to execute without any centralized dependencies." },
         { title: "How does MESG manage intellectual property?", description: "We take privacy seriously and set clear expectations with new clients. MESG keeps intellectual property secure through agreements signed with new clients, plus, services and apps can always be kept private, designed to function on your own private network and nowhere else." },
         { title: "Who owns the apps that MESG builds for me?", description: "When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG." },
         { title: "MESG is free, so why purchase advisory services?", description: "Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture." }
@@ -186,9 +186,9 @@ export const getters = {
         ]
       },
       faq: [
-        { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ target=_blank>Marketplace</a> to buy and sell application components. Purchasing them saves developers time, while providing new ways to earn from coding." },
-        { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications. Plus, it will secure the network through a mandatory staking system." },
-        { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to no more than 6% of the previous day’s total volume. This means gradual large payouts for all, plus limited sales to promote a stable volume of MESG Tokens entering the market." },
+        { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access saves developers time, while providing new ways to earn royalties from coding." },
+        { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications, enabling decentralized execution. Plus, it will secure the network through a mandatory staking system." },
+        { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to small percentage of the previous day’s total volume. This means large payouts are distributed gradually for all, plus sales are limited to promote a stable volume of MESG Tokens entering the market." },
         { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
       ]
     }
