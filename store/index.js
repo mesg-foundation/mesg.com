@@ -60,15 +60,15 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development, or boost revenues. Managed by the free, open source MESG Engine." },
+          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development or boost revenues. Managed by the free, open-source MESG Engine." },
           { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Automate tasks", description: "Create autonomous reactive applications and workflows, using any API, IoT device or blockchain, that can execute and function entirely within a decentralized cloud." },
-          { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening for digital events, data can be gathered and processed more efficiently than ever before. Manage more blockchains without the headache." }
+          { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening to digital events, data can be gathered and processed more efficiently than ever before. Manage more blockchains without a bigger headache." }
         ],
         secondary: [
           { src: require("~/assets/enterprise/engineering-support.svg"), title: "Engineering support", description: "Receive priority technical support from a team of engineers dedicated to your project, day or night." },
           { src: require("~/assets/enterprise/architecture-advisory.svg"), title: "Architecture advisory", description: "Our advisors are committed to creating optimum efficiency between all of your connected systems." },
           { src: require("~/assets/enterprise/custom-built.svg"), title: "Custom-built solutions", description: "Don’t want to built it yourself? Let us build apps for you, enhancing legacy software with blockchains, IoT devices and more." },
-          { src: require("~/assets/enterprise/community-support.svg"), title: "Community support", description: "MESG has a strong community and economy built to support development. Share app components, or get support on the forum." }
+          { src: require("~/assets/enterprise/community-support.svg"), title: "Community support", description: "MESG has a strong community and economy built to support development. Share app components or get support on the forum." }
         ]
       },
       faq: [
