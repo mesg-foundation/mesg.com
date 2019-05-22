@@ -29,7 +29,7 @@
         <p
           mb2
           class="text-center product-desc"
-        >MESG’s Engine and Marketplace work in tandem to create an open economy of app and workflow components that can all work together straight out of the box.</p>
+        >MESG’s Engine and Marketplace work in tandem to create an open economy of application components that are all instantly compatible straight out of the box.</p>
       </Container>
     </section>
     <section id="products" mb3 class="inner-background">
