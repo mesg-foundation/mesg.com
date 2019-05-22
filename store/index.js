@@ -365,8 +365,8 @@ export const getters = {
           link: "https://etherscan.io/address/0x420167d87d35c3a249b32ef6225872fbd9ab85d2",
           list: [
             "MESG Token release with a total supply of 250MM",
-            "Start Algorithmic Token Distribution",
-            "List on the first exchange"
+            "Start the Algorithmic Token Distribution",
+            "List MESG Token on the first exchange"
           ]
         }]
       }, {
@@ -376,7 +376,7 @@ export const getters = {
           link: "https://marketplace.mesg.com",
           list: [
             "Sell MESG Services on the MESG Marketplace",
-            "Buy MESG Services to integrate in applications",
+            "Buy MESG Services to integrate into applications",
             "Marketplace to buy and sell access to MESG Services"
           ]
         }, {
@@ -384,7 +384,7 @@ export const getters = {
           link: "https://atd.mesg.com",
           list: [
             "List MESG Token on a second exchange",
-            "Dashboard with information to check on the distribution"
+            "Dashboard with information to check the distribution"
           ]
         }]
       }, {
@@ -399,8 +399,8 @@ export const getters = {
         }, {
           title: "Decentralized executions",
           list: [
-            "MESG Services Marketplace on the native network",
-            "Decentralization of the execution of services"
+            "MESG Marketplace on the native network",
+            "Decentralized execution of services"
           ]
         }, {
           title: "Testnet",
@@ -441,7 +441,7 @@ export const getters = {
         goals: [{
           title: "Iterate over and over",
           list: [
-            "Feature update based on the community feedback",
+            "Feature updates based on the community feedback",
             "More and more partners",
             "New exchanges",
             "Improve performance",
