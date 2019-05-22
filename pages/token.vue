@@ -17,7 +17,7 @@
             target="_blank"
             third
           >
-            <img :src="exchange.src" :alt="exchange.id">
+            <img :src="exchange.src" :alt="exchange.id" class="cta">
           </a>
         </div>
       </div>
@@ -182,7 +182,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
   list-style: none;
 }
@@ -202,5 +202,12 @@ a.btn--white img {
 
 li img {
   vertical-align: middle;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .cta,
+  .btn--white {
+    margin-bottom: 40px !important;
+  }
 }
 </style>

@@ -237,10 +237,15 @@ button[type="submit"] {
   .menu {
     margin-bottom: 40px;
   }
+  a.link {
+    min-height: auto;
+    margin-bottom: 0;
+  }
   .last {
     padding-bottom: 20px;
   }
   .form {
+    min-height: 50px;
     margin-bottom: 20px;
   }
   .form button {

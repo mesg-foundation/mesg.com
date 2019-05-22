@@ -41,3 +41,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  p {
+    margin-bottom: 20px !important;
+  }
+}
+</style>

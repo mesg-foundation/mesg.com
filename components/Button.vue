@@ -59,7 +59,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a,
 button {
   border-radius: 3px;
@@ -125,7 +125,14 @@ i {
 @media only screen and (max-width: 414px) {
   a,
   button {
+    min-height: 50px;
     font-size: 0.8em;
+    padding: 1.2em;
+  }
+  .btn--primary,
+  .btn--outline,
+  .btn--white {
+    width: 100%;
   }
 }
 </style>

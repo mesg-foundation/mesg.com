@@ -271,4 +271,9 @@ img {
     }
   }
 }
+@media only screen and (max-width: $mobile-breakpoint) {
+  .enterprise {
+    width: auto;
+  }
+}
 </style>

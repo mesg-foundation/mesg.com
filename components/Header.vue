@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #header {
   position: relative;
 }
@@ -60,5 +60,11 @@ p {
 img {
   height: auto;
   max-height: calc(var(--width) / 2);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  #header::before {
+    height: calc(100% + 400px);
+  }
 }
 </style>

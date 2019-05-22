@@ -133,3 +133,14 @@ hr {
   max-width: var(--small-width);
   margin: auto;
 }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  header .btn--primary, .btn--secondary {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  header .btn--primary, .btn--secondary {
+    margin-right: 0 !important;
+  }
+}

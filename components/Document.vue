@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 card {
   width: 490px;
   max-width: 100%;
@@ -60,5 +60,11 @@ img {
   overflow: hidden;
   border: solid 1px var(--light-purple);
   background-color: var(--light-purple);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  i {
+    display: none;
+  }
 }
 </style>
