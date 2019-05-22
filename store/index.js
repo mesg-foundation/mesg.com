@@ -309,31 +309,31 @@ export const getters = {
     return {
       showcase: {
         title: "Showcase",
-        description: "Not sure what to build on MESG? Find your inspiration here.",
+        description: "Not sure what to start building on MESG? Discover some inspiration here.",
         action: "Coming soon",
         to: ""
       },
       foundation: {
         title: "MESG Foundation",
-        description: "MESG is developed for the MESG Foundation, a nonprofit organization.",
+        description: "MESG is being developed for the MESG Foundation, a nonprofit organization.",
         action: "Visit MESG Foundation",
         to: links.foundation
       },
       marketplace: {
         title: "MESG Marketplace",
-        description: "Speed up application development and earn from sharing your code.",
+        description: "Speed up application development and earn tokens from sharing your code.",
         action: "Access MESG Marketplace",
         to: links.marketplace
       },
       engine: {
         title: "MESG Engine",
-        description: "Build feature-rich apps without needing to manage dependencies.",
+        description: "Create feature-rich applications without needing to manage dependencies.",
         action: "Access MESG Engine",
         to: links.engine
       },
       token: {
         title: "MESG Token",
-        description: "Powering the new economy of streamlined application development.",
+        description: "Powering the new economy of efficient, streamlined application development.",
         action: "Access MESG Token",
         to: links.token
       },
@@ -350,7 +350,7 @@ export const getters = {
     return [
       { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
       { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
-      { title: "Two pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
+      { title: "Two Pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
       { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
     ]
   },
@@ -376,15 +376,15 @@ export const getters = {
           link: "https://marketplace.mesg.com",
           list: [
             "Sell MESG Services on the MESG Marketplace",
-            "Buy MESG Services to integrate in application",
-            "Marketplace website to buy and sell MESG Services"
+            "Buy MESG Services to integrate in applications",
+            "Marketplace to buy and sell access to MESG Services"
           ]
         }, {
           title: "Algorithmic Token Distribution",
           link: "https://atd.mesg.com",
           list: [
             "List MESG Token on a second exchange",
-            "Dashboard with all information to check the distribution"
+            "Dashboard with information to check on the distribution"
           ]
         }]
       }, {
@@ -394,7 +394,7 @@ export const getters = {
           list: [
             "Create applications based on workflows",
             "Connect MESG Services together to build rich applications",
-            "Drastically reduce application's codebase"
+            "Drastically reduce applications' codebase"
           ]
         }, {
           title: "Decentralized executions",
