@@ -176,7 +176,7 @@
   }
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $tablet-breakpoint) {
   [p3], [pb3], [pt3], [pl3], [pr3] { padding: 0!important; }
   [p4], [pb4], [pt4], [pl4], [pr4] { padding: 0!important; }
   [m3], [mb3], [mt3], [ml3], [mr3] { margin: 0!important; }

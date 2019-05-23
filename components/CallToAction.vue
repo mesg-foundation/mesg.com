@@ -83,11 +83,17 @@ h3 {
 p {
   color: var(--white);
 }
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $tablet-breakpoint) {
   .primary-call-to-action {
     padding: 40px;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .primary-call-to-action {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
   }
 }
 </style>

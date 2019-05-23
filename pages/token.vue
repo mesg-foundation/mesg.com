@@ -17,7 +17,7 @@
             target="_blank"
             third
           >
-            <img :src="exchange.src" :alt="exchange.id" class="cta">
+            <img :src="exchange.src" :alt="exchange.id">
           </a>
         </div>
       </div>
@@ -109,7 +109,7 @@
     <News :articles="articles"/>
 
     <CallToAction mb3 title="Buy and trade MESG Token on">
-      <div flex row wrap mb2>
+      <div flex row wrap mb2 class="exchange">
         <Button
           white
           v-for="exchange in exchanges"
@@ -205,9 +205,11 @@ li img {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .cta,
   .btn--white {
     margin-bottom: 40px !important;
+  }
+  .exchange {
+    margin-bottom: 0 !important;
   }
 }
 </style>

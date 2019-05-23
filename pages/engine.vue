@@ -29,7 +29,7 @@
         <h2 mb1>Enabling effortless interoperability</h2>
         <p
           mb2
-          class="text-center"
+          class="text-center product-desc"
         >The MESG Engine is built for efficient management of components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
@@ -142,6 +142,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $tablet-breakpoint) {
+  .product-desc {
+    margin-bottom: 0 !important;
+  }
+}
+</style>
 
 
 
