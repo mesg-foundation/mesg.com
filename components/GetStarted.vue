@@ -3,7 +3,7 @@
     <Container>
       <Card p2>
         <div flex row align-center space-between mobile-column>
-          <div flex column>
+          <div class="content" flex column>
             <h3 mb1>{{title}}</h3>
             <p mb1>{{description}}</p>
             <nav flex row wrap class="links">
@@ -96,6 +96,9 @@ i {
   }
   .link {
     margin-bottom: 20px;
+  }
+  .content {
+    margin-right: 0;
   }
 }
 </style>

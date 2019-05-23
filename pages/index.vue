@@ -58,8 +58,8 @@
         <Card p2 id="token">
           <div flex row mobile-column align-center>
             <div flex mobile-column>
-              <div flex column quarter>
-                <img src="~/assets/token/MESG-token.svg" alt="token" class="token">
+              <div flex column quarter class="token">
+                <img src="~/assets/token/MESG-token.svg" alt="token">
               </div>
               <div flex column>
                 <h3 mb1>Build services, earn tokens</h3>
@@ -179,6 +179,11 @@ export default {
   }
   .token-desc {
     margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .token {
+    margin-right: 20px;
   }
 }
 </style>

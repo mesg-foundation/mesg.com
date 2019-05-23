@@ -53,8 +53,8 @@ export default {
   background: var(--light-purple);
   position: relative;
   z-index: 1;
-  padding-top: calc(3 * var(--margin));
-  padding-bottom: calc(3 * var(--margin));
+  padding-top: calc(4 * var(--margin));
+  padding-bottom: calc(4 * var(--margin));
 }
 
 .primary-call-to-action::after {
