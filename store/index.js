@@ -6,7 +6,7 @@ export const getters = {
         title: "MESG Engine",
         img: require("~/assets/engine/engine.svg"),
         description:
-          "The MESG Engine powers connectivity between Modules and other devices and applications. Control the flow of data and level of security between your whole stack of connected technologies.",
+          "The MESG Engine connects services and other devices and applications. Control the flow of data and level of security between your whole stack of connected technologies.",
         features: {
           primary: [
             {
@@ -17,7 +17,7 @@ export const getters = {
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building apps that react to real-world events is the efficient way to manage hard-to-reach technologies like blockchains or IoT devices. Your apps remain lightweight, reactive and easy to maintain." },
             { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the MESG Engine manages interaction between all services and applications." },
-            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The MESG Engine makes development easy by managing communication between all Modules, applications and devices on your behalf, resulting a development and maintenance process that’s far less time consuming." }
+            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The MESG Engine makes development easy by managing communication between all services, applications and devices on your behalf, resulting a development and maintenance process that’s far less time consuming." }
           ]
         },
         usecase: [
@@ -33,11 +33,11 @@ export const getters = {
         title: "MESG Marketplace",
         img: require("~/assets/marketplace/marketplace.svg"),
         description:
-          "A decentralized marketplace to connect buyers looking to save time in development with sellers who earn tokens for the reuse of their code.",
+          "A decentralized marketplace connecting buyers who want to save time in development with sellers looking to earn tokens for the reuse of their application components.",
         features: {
           primary: [
             { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "The Marketplace will soon be decentralized, with all services and applications interacting in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.enterprise, action: "Our solutions" }
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "The MESG Engine will soon be decentralized, allowing all services and applications to interact in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.enterprise, action: "Our solutions" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
@@ -46,10 +46,10 @@ export const getters = {
           ]
         },
         usecase: [
-          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. Because the Engine allows interoperability between any system and feature, it’s a perfect solution to build and manage your own marketplace within your product." },
+          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. Because the Engine allows interoperability between all systems and features, it’s a perfect solution to build and manage your own marketplace within your product." },
           { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, but others should be decentralized. This is why MESG gives builders complete control over centralization, even offering fully decentralized executions between decentralized networks." },
           { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous workflows", description: "Services from the Marketplace be easily combined into powerful workflows and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. Automate bookkeeping with QuickBooks. The possibilities are endless." },
-          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open marketplace", description: "The Marketplace is completely open, decentralized and self-regulating, so no single entity has control over participants or submissions. This gives all equal advantage to create the most useful and efficient application components. The more they are used, the more they earn." }
+          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open marketplace", description: "The Marketplace is completely open, decentralized and self-regulating, so no single entity has control over participants or submissions. This gives all equal advantage to create the most useful and efficient application components. The more they are used, the more tokens are earned." }
         ],
         action: "Discover the MESG Marketplace"
       }
@@ -60,19 +60,19 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development, or boost revenues. Managed by the free, open source MESG Engine." },
-          { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Automate tasks", description: "Create autonomous reactive applications and workflows using any API, IoT device or blockchain, that can execute and function entirely from a decentralized cloud." },
-          { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening for digital events, data can be gathered and processed more efficiently than ever before. Use more blockchains and databases without the headache." }
+          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development or boost revenues. Managed by the free, open-source MESG Engine." },
+          { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Automate tasks", description: "Create autonomous reactive applications and workflows, using any API, IoT device or blockchain, that can execute and function entirely within a decentralized cloud." },
+          { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening to digital events, data can be gathered and processed more efficiently than ever before. Manage more blockchains without a bigger headache." }
         ],
         secondary: [
           { src: require("~/assets/enterprise/engineering-support.svg"), title: "Engineering support", description: "Receive priority technical support from a team of engineers dedicated to your project, day or night." },
           { src: require("~/assets/enterprise/architecture-advisory.svg"), title: "Architecture advisory", description: "Our advisors are committed to creating optimum efficiency between all of your connected systems." },
           { src: require("~/assets/enterprise/custom-built.svg"), title: "Custom-built solutions", description: "Don’t want to built it yourself? Let us build apps for you, enhancing legacy software with blockchains, IoT devices and more." },
-          { src: require("~/assets/enterprise/community-support.svg"), title: "Community support", description: "MESG has a strong community and economy built to support development. Share app components, or get support on the forum." }
+          { src: require("~/assets/enterprise/community-support.svg"), title: "Community support", description: "MESG has a strong community and economy built to support development. Share app components or get support on the forum." }
         ]
       },
       faq: [
-        { title: "Are apps dependent on MESG to run?", description: "No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralization network allows apps to execute without any centralized dependencies." },
+        { title: "Are apps dependent on MESG to run?", description: "No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralized network allows apps to execute without any centralized dependencies." },
         { title: "How does MESG manage intellectual property?", description: "We take privacy seriously and set clear expectations with new clients. MESG keeps intellectual property secure through agreements signed with new clients, plus, services and apps can always be kept private, designed to function on your own private network and nowhere else." },
         { title: "Who owns the apps that MESG builds for me?", description: "When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG." },
         { title: "MESG is free, so why purchase advisory services?", description: "Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture." }
@@ -176,19 +176,19 @@ export const getters = {
         primary: [
           { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "You can become a part of the decentralized network by executing transactions for other applications, all while being rewarded for your participation." },
           { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants stake MESG Tokens to commit to their availability and good behavior. Then, participants are rewarded for validating each execution." },
-          { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "App components, called services, are bought and sold using the MESG Token. Then services can be used in any app, no complex coding required." }
+          { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "Access to app components, called services, are bought and sold using MESG Tokens. Then services can be used within any app, no complex coding required." }
         ],
         secondary: [
-          { src: require("~/assets/token/algorithm.svg"), title: "The algorithm", description: "Daily allotment will be calculated as a small percentage of the previous day’s trading volume, tying tokens released to actual demand." },
-          { src: require("~/assets/token/transparency.svg"), title: "Transparency", description: "Metrics will be published daily to enhance transparency between the MESG Foundation and the community." },
-          { src: require("~/assets/token/initial-supply.svg"), title: "Initial supply", description: "0.1% of the total supply was released on the first day of exchange listing to initiate the supply." },
-          { src: require("~/assets/token/supply-distribution.svg"), title: "Supply distribution", description: "The supply distribution of 62.5% will be released in daily allotments." }
+          { src: require("~/assets/token/algorithm.svg"), title: "Algorithmic release", description: "Daily allotments are calculated from a percentage of the previous day’s trading volume, tying tokens released to actual demand." },
+          { src: require("~/assets/token/transparency.svg"), title: "Transparency", description: "Release metrics are being published daily to promote transparency between the MESG Foundation and the community." },
+          { src: require("~/assets/token/initial-supply.svg"), title: "Initial supply", description: "0.1% of the total token supply was released on the first day of exchange listings to initiate the supply." },
+          { src: require("~/assets/token/supply-distribution.svg"), title: "Supply distribution", description: "The total supply distribution of 62.5% will be released slowly over time in daily allotments." }
         ]
       },
       faq: [
-        { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ target=_blank>Marketplace</a> to buy and sell application components. Purchasing them saves developers time, while providing new ways to earn from coding." },
-        { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications. Plus, it will secure the network through a mandatory staking system." },
-        { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to no more than 6% of the previous day’s total volume. This means gradual large payouts for all, plus limited sales to promote a stable volume of MESG Tokens entering the market." },
+        { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access saves developers time, while providing new ways to earn royalties from coding." },
+        { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications, enabling decentralized execution. Plus, it will secure the network through a mandatory staking system." },
+        { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to small percentage of the previous day’s total volume. This means large payouts are distributed gradually for all, plus sales are limited to promote a stable volume of MESG Tokens entering the market." },
         { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
       ]
     }
@@ -309,31 +309,31 @@ export const getters = {
     return {
       showcase: {
         title: "Showcase",
-        description: "Not sure what to build on MESG? Find your inspiration here.",
+        description: "Not sure what to start building on MESG? Discover some inspiration here.",
         action: "Coming soon",
         to: ""
       },
       foundation: {
         title: "MESG Foundation",
-        description: "MESG is developed for the MESG Foundation, a nonprofit organization.",
+        description: "MESG is being developed for the MESG Foundation, a nonprofit organization.",
         action: "Visit MESG Foundation",
         to: links.foundation
       },
       marketplace: {
         title: "MESG Marketplace",
-        description: "Speed up application development and earn from sharing your code.",
+        description: "Speed up application development and earn tokens from sharing your code.",
         action: "Access MESG Marketplace",
         to: links.marketplace
       },
       engine: {
         title: "MESG Engine",
-        description: "Build feature-rich apps without needing to manage dependencies.",
+        description: "Create feature-rich applications without needing to manage dependencies.",
         action: "Access MESG Engine",
         to: links.engine
       },
       token: {
         title: "MESG Token",
-        description: "Powering the new economy of streamlined application development.",
+        description: "Powering the new economy of efficient, streamlined application development.",
         action: "Access MESG Token",
         to: links.token
       },
@@ -350,7 +350,7 @@ export const getters = {
     return [
       { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
       { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
-      { title: "Two pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
+      { title: "Two Pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
       { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
     ]
   },
@@ -365,8 +365,8 @@ export const getters = {
           link: "https://etherscan.io/address/0x420167d87d35c3a249b32ef6225872fbd9ab85d2",
           list: [
             "MESG Token release with a total supply of 250MM",
-            "Start Algorithmic Token Distribution",
-            "List on the first exchange"
+            "Start the Algorithmic Token Distribution",
+            "List MESG Token on the first exchange"
           ]
         }]
       }, {
@@ -376,15 +376,15 @@ export const getters = {
           link: "https://marketplace.mesg.com",
           list: [
             "Sell MESG Services on the MESG Marketplace",
-            "Buy MESG Services to integrate in application",
-            "Marketplace website to buy and sell MESG Services"
+            "Buy MESG Services to integrate into applications",
+            "Marketplace to buy and sell access to MESG Services"
           ]
         }, {
           title: "Algorithmic Token Distribution",
           link: "https://atd.mesg.com",
           list: [
             "List MESG Token on a second exchange",
-            "Dashboard with all information to check the distribution"
+            "Dashboard with information to check the distribution"
           ]
         }]
       }, {
@@ -394,13 +394,13 @@ export const getters = {
           list: [
             "Create applications based on workflows",
             "Connect MESG Services together to build rich applications",
-            "Drastically reduce application's codebase"
+            "Drastically reduce applications' codebase"
           ]
         }, {
           title: "Decentralized executions",
           list: [
-            "MESG Services Marketplace on the native network",
-            "Decentralization of the execution of services"
+            "MESG Marketplace on the native network",
+            "Decentralized execution of services"
           ]
         }, {
           title: "Testnet",
@@ -441,7 +441,7 @@ export const getters = {
         goals: [{
           title: "Iterate over and over",
           list: [
-            "Feature update based on the community feedback",
+            "Feature updates based on the community feedback",
             "More and more partners",
             "New exchanges",
             "Improve performance",

@@ -106,7 +106,7 @@
     <CallToAction
       mb3
       title="Aligned with our purpose?"
-      description="Reach out! We love helping companies find new integrations to build powerful solutions."
+      description="Reach out! We love helping organizations find new ways to build powerful solutions."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
     />
 
