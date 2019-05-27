@@ -140,15 +140,15 @@ hr {
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
-  header .btn--primary {
+  Header .btn--primary {
     margin-bottom: 20px;
   }
-  header .btn--secondary {
+  Header .btn--secondary {
     margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 414px) {
-  header .btn--primary, .btn--secondary {
+  Header .btn--primary, .btn--secondary {
     margin-right: 0 !important;
   }
 }
