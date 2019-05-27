@@ -29,4 +29,13 @@ li {
     margin-right: 0 !important;
   }
 }
+@media only screen and (max-width: 414px) {
+  img,
+  li {
+    margin-right: 0 !important;
+  }
+  li {
+    padding: 10px;
+  }
+}
 </style>

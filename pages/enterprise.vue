@@ -44,19 +44,19 @@
       </Container>
     </section>
 
-    <section id="packages" mb2>
+    <section id="packages" mb4>
       <Container>
         <h2 mb1>Our packages</h2>
         <p
           mb3
-          class="text-center"
+          class="text-center description"
         >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
       </Container>
-    </section>
-    <section id="packages-2" mb4 class="inner-background">
-      <Container flex wrap justify-center>
-        <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
-      </Container>
+      <div class="inner-background">
+        <Container flex wrap justify-center>
+          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
+        </Container>
+      </div>
     </section>
 
     <section id="partners" mb3>
@@ -141,8 +141,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.title {
-  padding-bottom: 20px;
-}
-</style>

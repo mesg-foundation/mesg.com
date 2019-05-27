@@ -35,6 +35,7 @@
           v-bind="partner"
           :reverse="i % 2 === 1"
           mb3
+          class="partner"
         />
       </Container>
     </section>
@@ -89,5 +90,7 @@ export default {
   }
 };
 </script>
+
+
 
 

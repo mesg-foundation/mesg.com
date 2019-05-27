@@ -3,7 +3,7 @@
     <div half p3>
       <img :src="src">
     </div>
-    <div half>
+    <div class="content" half>
       <h3 mb1>{{ title }}</h3>
       <p v-if="description" mb2 v-html="description"></p>
       <slot mb2></slot>
@@ -46,6 +46,9 @@ export default {
 @media only screen and (max-width: $mobile-breakpoint) {
   p {
     margin-bottom: 20px !important;
+  }
+  img {
+    margin-bottom: 20px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div flex row space-between align-center wrap>
+  <div flex row space-between align-center wrap class="feature">
     <div half>
       <img :src="src">
     </div>
@@ -48,8 +48,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   margin: 12px;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  img {
+    margin-bottom: 20px;
+  }
 }
 </style>

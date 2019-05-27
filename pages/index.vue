@@ -168,6 +168,9 @@ export default {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
+  #token {
+    margin-top: 40px !important;
+  }
   .token {
     margin-bottom: 20px;
   }

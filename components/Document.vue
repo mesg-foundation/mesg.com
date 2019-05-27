@@ -30,8 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-card {
-  width: 490px;
+.card {
   max-width: 100%;
   height: 100px;
   max-height: 100%;

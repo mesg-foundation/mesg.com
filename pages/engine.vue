@@ -20,6 +20,7 @@
           :title="feature.title"
           :text="feature.description"
           third
+          class="feature"
         />
       </Container>
     </section>
@@ -29,7 +30,7 @@
         <h2 mb1>Enabling effortless interoperability</h2>
         <p
           mb2
-          class="text-center product-desc"
+          class="text-center description"
         >The MESG Engine is built for efficient management of components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
@@ -65,7 +66,7 @@
       </Container>
     </section>
 
-    <hr mb3>
+    <hr class="separator" mb3>
 
     <section id="token">
       <Container>
@@ -143,13 +144,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@media only screen and (max-width: $tablet-breakpoint) {
-  .product-desc {
-    margin-bottom: 0 !important;
-  }
-}
-</style>
+
 
 
 

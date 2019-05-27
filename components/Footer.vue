@@ -46,7 +46,7 @@
               <Button :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</Button>
             </div>
             <div flex column quarter>
-              <Button :to="links.token" class="link">Token</Button>
+              <Button :to="links.token" class="link token">Token</Button>
               <Button :to="links.enterprise" class="link">Enterprise</Button>
             </div>
           </div>
@@ -244,9 +244,15 @@ button[type="submit"] {
   .last {
     padding-bottom: 20px;
   }
+  img {
+    margin-top: 40px;
+  }
+  .token {
+    margin-bottom: 40px !important;
+  }
   .form {
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
   .form button {
     position: absolute;

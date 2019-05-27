@@ -29,7 +29,7 @@
         <h2 mb1>A decentralized network of services</h2>
         <p
           mb2
-          class="text-center"
+          class="text-center description"
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
       </Container>
       <div class="inner-background">
@@ -144,3 +144,4 @@ export default {
   }
 };
 </script>
+

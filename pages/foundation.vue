@@ -75,7 +75,7 @@
 
     <section id="team">
       <Container flex column align-center>
-        <h2 mb2>The Core of the project</h2>
+        <h2 class="description" mb2>The Core of the project</h2>
       </Container>
       <div class="inner-background" mb3>
         <Container>
@@ -84,7 +84,7 @@
               <Member :src="member.src" :title="member.title" :text="member.description"/>
             </div>
           </div>
-          <div flex row wrap>
+          <div class="team" flex row wrap>
             <div v-for="(member, i) in team.members.other" :key="i" quarter mb2 fill-height>
               <Member :src="member.src" :title="member.title" :text="member.description"/>
             </div>
@@ -162,5 +162,15 @@ export default {
   })
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  .team {
+    margin-top: 40px;
+  }
+}
+</style>
+
+
 
 

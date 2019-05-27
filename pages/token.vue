@@ -16,6 +16,7 @@
             :href="exchange.to"
             target="_blank"
             third
+            class="logo"
           >
             <img :src="exchange.src" :alt="exchange.id">
           </a>
@@ -210,6 +211,17 @@ li img {
   }
   .exchange {
     margin-bottom: 0 !important;
+  }
+  .logo {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .logo {
+    width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+    min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+    max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
   }
 }
 </style>
