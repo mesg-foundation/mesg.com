@@ -22,9 +22,7 @@
               <Button class="link" mb1>
                 <span>Showcase</span>
               </Button>
-              <Button class="link last" mb1>
-                <span>FAQ</span>
-              </Button>
+              <Button :to="links.faq" class="link last" mb1>FAQ</Button>
             </div>
             <div flex column quarter>
               <p class="category" mb1>Developers</p>

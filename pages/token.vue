@@ -98,11 +98,9 @@
             :text="faq.description"
           />
         </div>
-        <!--
         <div class="text-center">
           <Button secondary :to="links.faq">Access the FAQ</Button>
         </div>
-        -->
       </Container>
     </section>
 
