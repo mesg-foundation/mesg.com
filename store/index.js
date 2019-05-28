@@ -454,6 +454,7 @@ export const getters = {
 
   questions() {
     return [{
+      id: "general",
       category: "General",
       contents: [{
         title: "What is MESG?",
@@ -461,6 +462,7 @@ export const getters = {
       }],
     },
     {
+      id: "getting-started",
       category: "Getting Started",
       contents: [{
         title: "What does “connect any technology” mean?",
@@ -476,6 +478,7 @@ export const getters = {
       }]
     },
     {
+      id: "transactions",
       category: "Transactions",
       contents: [{
         title: "How much does MESG cost?",
@@ -487,6 +490,7 @@ export const getters = {
       }]
     },
     {
+      id: "compatibility",
       category: "Compatibility",
       contents: [{
         title: "Is MESG compatible with my business?",
@@ -494,6 +498,7 @@ export const getters = {
       }]
     },
     {
+      id: "community",
       category: "Community",
       contents: [{
         title: "What does “Open Source” mean?",
@@ -505,6 +510,7 @@ export const getters = {
       }]
     },
     {
+      id: "business-and-strategy",
       category: "Business and Strategy",
       contents: [{
         title: "How can decentralization help my business?",
@@ -516,6 +522,7 @@ export const getters = {
       }]
     },
     {
+      id: "development",
       category: "Development",
       contents: [{
         title: "How much time can I save by using MESG?",

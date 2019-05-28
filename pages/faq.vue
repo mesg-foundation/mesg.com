@@ -5,12 +5,12 @@
     <section id="faq" mb3>
       <Container>
         <div flex row mobile-column space-between>
-          <div flex column quarter>
-            <p>menu</p>
+          <div flex column quarter tablet-and-up>
+            <SideMenu/>
           </div>
           <ul flex column>
             <li v-for="(category, i) in questions" :key="i">
-              <h2 mb2>{{category.category}}</h2>
+              <h2 :id="category.id" mb2>{{category.category}}</h2>
               <ul>
                 <li v-for="(content, j) in category.contents" :key="j">
                   <h3 mb1>{{content.title }}</h3>
@@ -19,7 +19,7 @@
               </ul>
               <hr mb2>
             </li>
-            <p>
+            <p class="infos">
               * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
               <a
                 href="https://github.com/mesg-foundation/"
@@ -49,6 +49,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "~/components/Button";
+import SideMenu from "~/components/SideMenu";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
@@ -59,6 +60,7 @@ export default {
     Header,
     Container,
     Button,
+    SideMenu,
     CallToAction,
     Discover,
     GetStarted
@@ -88,5 +90,8 @@ ul {
 }
 h2 {
   text-align: left;
+}
+.infos {
+  font-size: 14px;
 }
 </style>
