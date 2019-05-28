@@ -194,22 +194,6 @@ export const getters = {
     }
   },
 
-  exchanges() {
-    return [
-      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT" },
-      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
-    ]
-  },
-
-  articles() {
-    return [
-      { id: "yahoo", title: "New Token Release Methods Signal the Death of the ICO", img: require("~/assets/press/yahoo.svg"), to: "https://finance.yahoo.com/news/token-release-methods-signal-death-030000717.html" },
-      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.svg"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
-      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" }
-    ]
-  },
-
   partners() {
     return {
       primary: [
@@ -303,56 +287,6 @@ export const getters = {
         ]
       },
     }
-  },
-
-  discover(_, { links }) {
-    return {
-      showcase: {
-        title: "Showcase",
-        description: "Not sure what to start building on MESG? Discover some inspiration here.",
-        action: "Coming soon",
-        to: ""
-      },
-      foundation: {
-        title: "MESG Foundation",
-        description: "MESG is being developed for the MESG Foundation, a nonprofit organization.",
-        action: "Visit MESG Foundation",
-        to: links.foundation
-      },
-      marketplace: {
-        title: "MESG Marketplace",
-        description: "Speed up application development and earn tokens from sharing your code.",
-        action: "Access MESG Marketplace",
-        to: links.marketplace
-      },
-      engine: {
-        title: "MESG Engine",
-        description: "Create feature-rich applications without needing to manage dependencies.",
-        action: "Access MESG Engine",
-        to: links.engine
-      },
-      token: {
-        title: "MESG Token",
-        description: "Powering the new economy of efficient, streamlined application development.",
-        action: "Access MESG Token",
-        to: links.token
-      },
-      enterprise: {
-        title: "Enterprise solutions",
-        description: "Build applications confidently with advisory, technical and design support.",
-        action: "Access our solutions",
-        to: links.enterprise
-      }
-    }
-  },
-
-  documents() {
-    return [
-      { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
-      { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
-      { title: "Two Pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
-      { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
-    ]
   },
 
   roadmap() {
@@ -533,6 +467,110 @@ export const getters = {
         description: "With MESG’s currently-available functionalities, yes. Development skills are required to make initial connections to technologies, and to combine those connections into applications.<br/><br/>However, in a future update, we will debut a feature called Workflow File functionality. This feature will allow anyone to write a simple text file (likely no more than 20 lines of text), listing the desired Services, events and tasks to be executed.<br/><br/>As long as the desired Services have been previously built and are available on the MESG Network, the <a href='/engine' target='_blank'>MESG Engine</a> software will read the Workflow File and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
       }]
     }]
+  },
+
+  usecases(_, { links }) {
+    return [
+      {
+        id: "opennode-blockstream",
+        to: links.engine,
+        logos: [
+          { src: require("~/assets/showcase/zapier.svg"), alt: "logo" },
+          { src: require("~/assets/showcase/mesg.svg"), alt: "logo" }
+        ],
+        category: "OpenNode - Blockstream",
+        title: "Send messages from a satellite",
+        description: "A showcase of MESG’s sheer versatility: send messages from outer space using the MESG Token, the Lightning Network, a satellite, and a web-based UI."
+      },
+      {
+        id: "zapier-mesg",
+        to: links.engine,
+        logos: [
+          { src: require("~/assets/showcase/zapier.svg"), alt: "logo" },
+          { src: require("~/assets/showcase/mesg.svg"), alt: "logo" }
+        ],
+        category: "Zapier - MESG",
+        title: "Enhance Zapier workflows",
+        description: "Centralized workflow builders are easy to use, but have a limited set of feature integrations. Expand Zapier’s workflows to include blockchains, custom software or IoT device integration."
+      },
+      {
+        id: "erc20-grafana",
+        to: links.engine,
+        logos: [
+          { src: require("~/assets/showcase/zapier.svg"), alt: "logo" },
+          { src: require("~/assets/showcase/mesg.svg"), alt: "logo" }
+        ],
+        category: "ERC20 - Grafana",
+        title: "Monitor ERC20 transactions",
+        description: "There’s immense power in data. New analytics tools allow for the creation of massive efficiencies, avenues of income, or new businesses altogether."
+      }
+    ]
+  },
+
+  exchanges() {
+    return [
+      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
+      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT" },
+      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
+    ]
+  },
+
+  articles() {
+    return [
+      { id: "yahoo", title: "New Token Release Methods Signal the Death of the ICO", img: require("~/assets/press/yahoo.svg"), to: "https://finance.yahoo.com/news/token-release-methods-signal-death-030000717.html" },
+      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.svg"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
+      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" }
+    ]
+  },
+
+  discover(_, { links }) {
+    return {
+      showcase: {
+        title: "Showcase",
+        description: "Not sure what to start building on MESG? Discover some inspiration here.",
+        action: "Coming soon",
+        to: ""
+      },
+      foundation: {
+        title: "MESG Foundation",
+        description: "MESG is being developed for the MESG Foundation, a nonprofit organization.",
+        action: "Visit MESG Foundation",
+        to: links.foundation
+      },
+      marketplace: {
+        title: "MESG Marketplace",
+        description: "Speed up application development and earn tokens from sharing your code.",
+        action: "Access MESG Marketplace",
+        to: links.marketplace
+      },
+      engine: {
+        title: "MESG Engine",
+        description: "Create feature-rich applications without needing to manage dependencies.",
+        action: "Access MESG Engine",
+        to: links.engine
+      },
+      token: {
+        title: "MESG Token",
+        description: "Powering the new economy of efficient, streamlined application development.",
+        action: "Access MESG Token",
+        to: links.token
+      },
+      enterprise: {
+        title: "Enterprise solutions",
+        description: "Build applications confidently with advisory, technical and design support.",
+        action: "Access our solutions",
+        to: links.enterprise
+      }
+    }
+  },
+
+  documents() {
+    return [
+      { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
+      { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
+      { title: "Two Pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
+      { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
+    ]
   },
 
   externalLinks() {
