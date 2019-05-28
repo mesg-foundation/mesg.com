@@ -79,10 +79,25 @@ p {
   font-size: 17px;
   color: var(--text-color);
 }
+ul {
+  list-style: none;
+}
 li {
   font-size: 17px;
   font-weight: 600;
   color: var(--text-color);
+}
+.list::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-right: 15px;
+  background-color: var(--deep-purple);
+  border-radius: 100%;
+  display: inline-block;
+}
+.list p {
+  margin-left:22px;
 }
 img {
   max-width: 100%;

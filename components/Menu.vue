@@ -21,10 +21,7 @@
                 Showcase
                 <span>coming soon</span>
               </Button>
-              <Button class="btn soon">
-                FAQ
-                <span>coming soon</span>
-              </Button>
+              <Button :to="links.faq" class="btn">FAQ</Button>
             </div>
           </li>
           <li class="developers" flex column>

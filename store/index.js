@@ -452,6 +452,89 @@ export const getters = {
     }]
   },
 
+  questions() {
+    return [{
+      id: "general",
+      category: "General",
+      contents: [{
+        title: "What is MESG?",
+        description: "MESG is a decentralized building platform for apps and workflows where developers can build from a <a href='https://marketplace.mesg.com/' target='_blank'>Marketplace</a> of pre-built app components to give your app powerful features without the busy work.<br/><br/>Much of the code that is written in today’s applications is identical and must be repeated unnecessarily, but with MESG, code can be shared or reused in an open economy.<br/><br/>Sharing code allows developers to quickly combine, automate or streamline processes, or build businesses that were previously difficult or costly to create.<br/><br/>Developers simply combine feature-packed app components together, and allow the <a href='/engine' target='_blank'>MESG Engine</a> to manage the interaction between all features and your business."
+      }],
+    },
+    {
+      id: "getting-started",
+      category: "Getting Started",
+      contents: [{
+        title: "What does “connect any technology” mean?",
+        description: "Anything that can be connected to the internet, meaning anything that can send or receive data can be used on MESG.<br/><br/>This includes blockchains, databases, web services, smartphones, wearables, corporate software, biometric devices, vehicles, video games, thermostats, medical devices, or any IoT device.<br/><br/>It’s the features and events on these technologies, however, which are most useful to combine and automate. These features (or events) could look like a transaction completed on a blockchain, a button clicked on a website, a location reached on a GPS, the opening of a garage door, a full charge on an electric car, or even weather conditions that reach a certain threshold.<br/><br/>All of the above technologies and features, plus many more, can be connected, decentralized, and automated using MESG, regardless of the programming language."
+      },
+      {
+        title: "What is “Event Driven Architecture”?",
+        description: "Event Driven Architecture (EDA) is a programming style based on real-world events that MESG supports and recommends.<br/><br/>Real-world events could be anything happening on a technology, but might look like a transaction posted on a blockchain, a button clicked on a website, a location reached on a GPS, the opening of a garage door, a full charge on an electric car, or even weather conditions that reach a certain threshold.<br/><br/>The EDA style consists of independent connections to technologies, unified by a communications manager called a “message broker”. These connections to technologies are configured to react to events and execute tasks.<br/><br/>Rather than applications being responsible for the cooperation of other technologies and features, each technology stands on its own without a direct connection to anything. Instead, each element (or feature) is set up to listen for a command by any other element. When that command is heard, the microservice reacts by executing its respective task.<br/><br/>This setup allows all elements of applications to function in an independent way, without direct connections to any other feature, so adding, removing or updating features doesn’t affect the other parts of the application.<br/><br/>The effect that developers are left with is an application that is easy to update, runs autonomously and works automatically.<br/><br/>While MESG itself uses EDA, any application, regardless of the programming style, is compatible with MESG."
+      },
+      {
+        title: "What problems does MESG solve?",
+        description: "MESG solves major issues in the tech and business industries.<br/><br/>These problems are as follows:<br/><br/><ul><li class='list'>There is no common channel for blockchains to communicate with business technologies.</li><br/><li class='list'>Business IT infrastructures require inefficient and costly updates to maintain old features, or accommodate new features.</li><br/><li class='list'>As new technologies and devices enter the market, interoperability between these devices increasingly becomes an issue.</li><br/><li class='list'>Prototyping products or features, particularly those based in blockchain, requires immense overhead and a large resource commitment, simply to test out a single technology.</li></ul><br/>We see opportunity in these issues. To solve them, we are tackling three large challenges within the business and tech industries simultaneously:<br/><br/><ul><li class='list'>Interoperability<br/><br/><p>Free communication between any combination of blockchains, web and IoT.</p></li><br/><li class='list'>Scalability<br/><br/><p>A single infrastructure from startup to multi-national corporation.</p></li><br/><li class='list'>Efficiency<br/><br/><p>Streamline business functions with truly set-and-forget automation.</p></li></ul>"
+      }]
+    },
+    {
+      id: "transactions",
+      category: "Transactions",
+      contents: [{
+        title: "How much does MESG cost?",
+        description: "Anyone can use MESG for free to build maintainable, efficient applications on their local computer. However, not all actions done on MESG will always be free.<br/><br/>If developers want to use MESG’s decentralized network to find and plug in new features, or want their apps to run on the decentralized network, they must first pay <a href='/token' target='_blank'>MESG Tokens</a> to network participants who run and secure their applications.<br/><br/>Developers and participants can also get paid to use MESG, depending on their desired level of involvement. Developers who build services, or help execute, validate events and tasks in applications will earn MESG Tokens for their participation."
+      },
+      {
+        title: "How can I make money with MESG?",
+        description: "A self-regulating economy is a major part of the MESG Network. It will allow participants to generate income by building connections, or by running their computer to participate in the Network.<br/><br/>Firstly, each time a new connection (MESG Service) is built to a technology, it can be shared and reused. The creators of these connections are free to choose the price in <a href='/token' target='_blank'>MESG Tokens</a> that MESG participants will pay to use the connection. As part of this, creators also decide how much each network participant (emitters, validators and executors) who helps them make that connection is paid for their help.<br/><br/>Secondly, participants who commit to running their computers to support the processing of data in the Network are paid for their participation. The amount each of these participants is paid is determined by the Service’s creator, so participants can choose which processes will be most lucrative for them."
+      }]
+    },
+    {
+      id: "compatibility",
+      category: "Compatibility",
+      contents: [{
+        title: "Is MESG compatible with my business?",
+        description: "Short answer: <strong>yes</strong><br/><br/>MESG’s nearly infinite compatibility means that it works with any software that’s accessible through the internet, including legacy software suites or even custom-built solutions. Only a single component must be built to connect your software to MESG, then it can be reused for any new feature or update made henceforth. This can drastically reduce development time after the initial connection is made."
+      }]
+    },
+    {
+      id: "community",
+      category: "Community",
+      contents: [{
+        title: "What does “Open Source” mean?",
+        description: "MESG’s software is not patented but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone can help improve features or <a href='https://docs.mesg.com/' target='_blank'>the documentation</a> or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
+      },
+      {
+        title: "Who can benefit from MESG?",
+        description: "We’ve identified a few target markets who are immediately in need of our solution:<br/><br/><ul><li class='list'>Blockchain DApp builders<br/><br/><p>MESG connects blockchains to any external technology, giving DApp builders the ability to add features like notifications or fiat payment processing to their blockchain-based apps. Increased usability directly results in greater user adoption and revenue.</p></li><br/><li class='list'>Legacy companies interested in moving to a decentralized system<br/><br/><p>MESG can connect to any legacy company’s tech infrastructure. By connecting to MESG, companies can easily adopt any level of decentralization into current practices, allowing for improved security and unrestricted growth.</p></li><br/><li class='list'>Entrepreneurs looking to cut costs by optimizing their infrastructures<br/><br/><p>Connecting previously-incompatible technologies means entrepreneurs can streamline business processes that weren’t previously able to be streamlined through autonomous, event-driven applications.</p></li><br/><li class='list'>Innovators wanting to push the boundaries of what’s possible with technology<br/><br/><p>With many reusable and interchangeable connections to any technologies available to build	with, innovators can shift their focus from implementation to creativity.</p></li></ul>"
+      }]
+    },
+    {
+      id: "business-and-strategy",
+      category: "Business and Strategy",
+      contents: [{
+        title: "How can decentralization help my business?",
+        description: "Today, many large internet corporations store and own your data and can share it with other large corporations or even governmental agencies. Their sole control of data creates a single point of failure if something were to go wrong.<br/><br/>For example, in recent years, there have been highly-publicized cases of data breaches where login information and identities have been leaked (e.g.Yahoo!, Ashley Madison), in addition to corporations being reprimanded for their misuse of customer data (e.g.Facebook).<br/><br/>Decentralized networks, on the other hand, have no central, regulated hub in which all data runs through. This means that no single entity or corporation can hold, control and profit off of your data, and it also means that there is no single point of failure if something were to go wrong.<br/><br/>If one server, or even a group of servers, fails, data will still be available because it’s shared throughout the network. And because all data is distributed rather than centralized, no entity (including MESG itself) can have ownership over your data.<br/><br/>In addition to improved trust and reliability for users and customers, the ability to avoid purchasing, managing, and maintaining servers entirely can cut costs drastically for many types of businesses."
+      },
+      {
+        title: "How is MESG more efficient than our competitors?",
+        description: "MESG is all about reusing bridges to technologies (MESG Services). This essentially means: no more busy work in development.<br/><br/>When an app or business makes an initial connection to the MESG Infrastructure (at industry-average development times), they can reuse the connection and will not need to write that connection again until major changes are made to their software. This translates to a major reduction of development time for all development work after any app or company’s first connection.<br/><br/>If developers want to update their apps with a desired feature that has already been implemented by another developer (for example, a previously- built connection to Spotify’s track playback), you can simply plug in this shared connection. When using entirely shared or repurposed connections to features, development time can become a small fraction of what it was before.<br/><br/>The MESG Network adds additional efficiency. Developers and companies can utilize the decentralized network in lieu of running and maintaining their own servers. This provides easier scalability, with more potential processing power available at any given time."
+      }]
+    },
+    {
+      id: "development",
+      category: "Development",
+      contents: [{
+        title: "How much time can I save by using MESG?",
+        description: "MESG is all about the sharing and reuse of code. This translates into significant time savings for the builders of applications and the writers of business logic.<br/><br/>We’ve determined that on average, developers who are adding new features or updating existing features spend around ⅓ of their time building a bridge (a service) to the desired technology, ⅓ of the time connecting to their application, and the remaining ⅓ getting the two bridges to connect to and cooperate with each other.<br/><br/>After a developer uses MESG once, they will have built a bridge (Service) to their app or software, which will be reusable. This means that this work can be saved each time henceforth. Additionally, since the software, <a href='/engine' target='_blank'>MESG Engine</a>, handles all communication between connected features, the final portion of time spent getting the two bridges to connect and cooperate with each other, is done automatically.<br/><br/>These significant time savings saved can increase even more than if the desired technology (or Service) has already been connected to MESG. In these cases, when all Services in an Application are being reused, development time can decrease to a meer fraction of what it was before."
+      },
+      {
+        title: "Do I need to be a developer to use MESG?",
+        description: "With MESG’s currently-available functionalities, yes. Development skills are required to make initial connections to technologies, and to combine those connections into applications.<br/><br/>However, in a future update, we will debut a feature called Workflow File functionality. This feature will allow anyone to write a simple text file (likely no more than 20 lines of text), listing the desired Services, events and tasks to be executed.<br/><br/>As long as the desired Services have been previously built and are available on the MESG Network, the <a href='/engine' target='_blank'>MESG Engine</a> software will read the Workflow File and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
+      }]
+    }]
+  },
+
   externalLinks() {
     return {
       documentation: "https://docs.mesg.com/",

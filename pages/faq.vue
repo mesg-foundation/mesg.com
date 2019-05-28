@@ -2,6 +2,35 @@
   <div>
     <Header :picture="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
 
+    <section id="faq" mb3>
+      <Container>
+        <div flex row mobile-column space-between>
+          <div flex column quarter tablet-and-up>
+            <SideMenu/>
+          </div>
+          <ul flex column>
+            <li v-for="(category, i) in questions" :key="i">
+              <h2 :id="category.id" mb2>{{category.category}}</h2>
+              <ul>
+                <li v-for="(content, j) in category.contents" :key="j">
+                  <h3 mb1>{{content.title }}</h3>
+                  <p v-html="content.description" mb2></p>
+                </li>
+              </ul>
+              <hr mb2>
+            </li>
+            <p class="infos">
+              * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
+              <a
+                href="https://github.com/mesg-foundation/"
+                target="_blank"
+              >GitHub</a> and other resources for additional details.
+            </p>
+          </ul>
+        </div>
+      </Container>
+    </section>
+
     <CallToAction
       mb3
       title="Still have questions?"
@@ -20,6 +49,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "~/components/Button";
+import SideMenu from "~/components/SideMenu";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
@@ -30,6 +60,7 @@ export default {
     Header,
     Container,
     Button,
+    SideMenu,
     CallToAction,
     Discover,
     GetStarted
@@ -42,7 +73,25 @@ export default {
     })
   ],
   computed: mapGetters({
-    links: "links"
-  })
+    links: "links",
+    questions: "questions"
+  }),
+  props: {
+    text: {
+      type: String
+    }
+  }
 };
 </script>
+
+<style scoped>
+ul {
+  list-style: none;
+}
+h2 {
+  text-align: left;
+}
+.infos {
+  font-size: 14px;
+}
+</style>
