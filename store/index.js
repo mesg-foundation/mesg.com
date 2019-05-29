@@ -3,41 +3,41 @@ export const getters = {
     return [
       {
         id: "engine",
-        title: "MESG Engine",
+        title: "MESG SDK",
         img: require("~/assets/engine/engine.svg"),
         description:
-          "The MESG Engine connects services and other devices and applications. Control the flow of data and level of security between your whole stack of connected technologies.",
+          "A suite of tools to connect together services and other devices and applications. Control the flow of data and level of security between your whole stack of technologies.",
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Integrate complicated tech easily", description: "Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.<br/><br/>The Engine manages and forwards events between all components so each component can stand on its own, making it simple to add, remove or update any component.", href: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
+              src: require('~/assets/engine/tech.svg'), title: "Integrate complicated tech easily", description: "Any API or microservice can be connected to any app or workflow. Even connect apps to hard-to-reach technologies like blockchains, IoT devices, or custom software.<br/><br/>The suite of tools in the SDK manage and forward events between all components so each component can stand on its own, making updates simple.", href: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
             },
-            { src: require("~/assets/engine/development.svg"), title: "No wasted development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The Engine allows you to reuse any app component; and not just from your apps, but from the community’s apps too.<br/><br/>After components are built, either keep them private, or share them to earn in the Marketplace.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
+            { src: require("~/assets/engine/development.svg"), title: "No wasted development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The tools in the SDK allow you to reuse any app component; and not just from your apps, but from the community’s apps too.<br/><br/>After components are built, either keep them private, or share them to earn in the Marketplace.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
           ],
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building apps that react to real-world events is the efficient way to manage hard-to-reach technologies like blockchains or IoT devices. Your apps remain lightweight, reactive and easy to maintain." },
-            { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the MESG Engine manages interaction between all services and applications." },
-            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The MESG Engine makes development easy by managing communication between all services, applications and devices on your behalf, resulting a development and maintenance process that’s far less time consuming." }
+            { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine, a tool in the SDK, manages the interaction between all services and applications." },
+            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services, apps and devices on your behalf, resulting a development and maintenance process that’s far less time consuming." }
           ]
         },
         usecase: [
-          { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language apps", description: "Language differences between products, features and teams can cause big setbacks when building and maintaining products. Luckily, services featuring any programming language or data format can be managed by the MESG Engine." },
-          { src: require("~/assets/engine/fast-feature.svg"), title: "Fast feature integration", description: "Most apps today are complex and highly interconnected, making updates challenging and inefficient. The MESG Engine allows features to be added, removed or updated without affecting the other parts of the application." },
-          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous workflows", description: "Events on difficult-to-reach technologies can be easily combined into powerful workflows using the MESG Engine. React to Ethereum transactions being processed. Deploy and manage sidechains. Automate bookkeeping with QuickBooks. The possibilities are endless." },
+          { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language apps", description: "Language differences between products and teams can cause setbacks when building and maintaining products. Luckily, services featuring any programming language or data format can be managed using the MESG SDK." },
+          { src: require("~/assets/engine/fast-feature.svg"), title: "Fast feature integration", description: "Most apps today are complex and highly interconnected, making updates challenging and inefficient. The MESG SDK allows features to be added, removed or updated without affecting the other parts of the application." },
+          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous workflows", description: "Events on difficult-to-reach technologies can be combined into powerful workflows. React to Ethereum transactions. Deploy and manage sidechains. Automate bookkeeping with QuickBooks. The possibilities are endless." },
           { src: require("~/assets/engine/scalable-apps.svg"), title: "Easily-scalable apps", description: "All servers and local networks have limited bandwidth, and maintaining your own servers can be costly. MESG will soon be decentralized, so applications can be distributed in an autonomous, trustless way, giving apps scalability." }
         ],
-        action: "Discover the MESG Engine"
+        action: "Discover the MESG SDK"
       },
       {
         id: "marketplace",
         title: "MESG Marketplace",
         img: require("~/assets/marketplace/marketplace.svg"),
         description:
-          "A decentralized marketplace connecting buyers who want to save time in development with sellers looking to earn tokens for the reuse of their application components.",
+          "A decentralized marketplace connecting buyers wanting to save time in development with sellers looking to earn tokens for the reuse of their application components.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and Engine", description: "Our Marketplace is built to be complementary to the free, open-source MESG Engine. All services in the Marketplace come automatically compatible with the Engine.<br/><br/>No more installing libraries or learning data formats before adding new features.Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "The MESG Engine will soon be decentralized, allowing all services and applications to interact in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.enterprise, action: "Our solutions" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and SDK", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before adding new features. Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "A major tool in the SDK, the Engine, will soon be decentralized, allowing all services and applications to interact in a variably decentralized way.<br/><br/>When executions are not dependent on a single server or machine, apps can become unstoppable, distributed, and always available.", to: links.enterprise, action: "Our solutions" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
@@ -46,8 +46,8 @@ export const getters = {
           ]
         },
         usecase: [
-          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. Because the Engine allows interoperability between all systems and features, it’s a perfect solution to build and manage your own marketplace within your product." },
-          { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, but others should be decentralized. This is why MESG gives builders complete control over centralization, even offering fully decentralized executions between decentralized networks." },
+          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. The SDK enables interoperability between all systems and features, so it’s a perfect solution to build and manage your own marketplace within your product." },
+          { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, while others are best decentralized. This is why MESG gives builders complete control over centralization, even offering fully decentralized executions between decentralized networks." },
           { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous workflows", description: "Services from the Marketplace be easily combined into powerful workflows and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. Automate bookkeeping with QuickBooks. The possibilities are endless." },
           { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open marketplace", description: "The Marketplace is completely open, decentralized and self-regulating, so no single entity has control over participants or submissions. This gives all equal advantage to create the most useful and efficient application components. The more they are used, the more tokens are earned." }
         ],
@@ -60,7 +60,7 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development or boost revenues. Managed by the free, open-source MESG Engine." },
+          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development or boost revenues. Managed by the free, open-source tools of the MESG SDK." },
           { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Automate tasks", description: "Create autonomous reactive applications and workflows, using any API, IoT device or blockchain, that can execute and function entirely within a decentralized cloud." },
           { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening to digital events, data can be gathered and processed more efficiently than ever before. Manage more blockchains without a bigger headache." }
         ],
@@ -72,7 +72,7 @@ export const getters = {
         ]
       },
       faq: [
-        { title: "Are apps dependent on MESG to run?", description: "No, MESG’s software is free and open-source, so apps will always be accessible regardless of MESG’s status. You retain ownership over the application components you build, plus the decentralized network allows apps to execute without any centralized dependencies." },
+        { title: "Are apps dependent on MESG to run?", description: "No, MESG’s software is free and open-source, so apps will always be accessible regardless of the MESG Foundation’s status. You retain ownership over the application components you build, plus the decentralized network allows apps to execute without any centralized dependencies." },
         { title: "How does MESG manage intellectual property?", description: "We take privacy seriously and set clear expectations with new clients. MESG keeps intellectual property secure through agreements signed with new clients, plus, services and apps can always be kept private, designed to function on your own private network and nowhere else." },
         { title: "Who owns the apps that MESG builds for me?", description: "When our team of dedicated engineers build apps and components for our enterprise clients, the full ownership of will remain in the client’s hands. We provide additional integration options as well, such as the ability to rent services from MESG." },
         { title: "MESG is free, so why purchase advisory services?", description: "Apps and components on MESG can be created for free and will always remain free, but great app architectures are hard to come by. Our architects and engineers help you save time throughout the life of the app by designing a strong, efficient architecture." }
@@ -86,7 +86,7 @@ export const getters = {
               valid: true, description: "Access to the Marketplace"
             },
             {
-              valid: true, description: "Access to the Engine"
+              valid: true, description: "Access to the SDK"
             },
             {
               valid: true, description: "Community support"
@@ -116,7 +116,7 @@ export const getters = {
               valid: true, description: "Access to the Marketplace"
             },
             {
-              valid: true, description: "Access to the Engine"
+              valid: true, description: "Access to the SDK"
             },
             {
               valid: true, description: "Community support"
@@ -145,7 +145,7 @@ export const getters = {
               valid: true, description: "Access to the Marketplace"
             },
             {
-              valid: true, description: "Access to the Engine"
+              valid: true, description: "Access to the SDK"
             },
             {
               valid: true, description: "Community support"
@@ -225,7 +225,7 @@ export const getters = {
         {
           src: require("~/assets/partners/beachhead.png"),
           title: "BeachHead",
-          description: "BeachHead is a decentralized platform, based on both Ethereum and Ripple blockchains, where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
+          description: "BeachHead is a decentralized platform based on both Ethereum and Ripple blockchains where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
           to: "https://beachhead.com/",
           action: "beachhead.com"
         },
