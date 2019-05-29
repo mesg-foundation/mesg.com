@@ -4,8 +4,8 @@
 
     <section id="use cases">
       <Container flex column align-center>
-        <h2 mb2>Use Cases</h2>
-        <div flex row space-between wrap>
+        <h2 mb2>MESG Use Cases</h2>
+        <div flex row wrap>
           <nuxt-link
             v-for="usecase in usecases"
             :key="usecase.id"
@@ -88,8 +88,10 @@ a {
 }
 
 img {
-  height: 80px;
-  width: auto;
+  min-width: 10%;
+  max-width: 100%;
+  min-height: 10%;
+  max-height: 80px;
 }
 .logos::before {
   content: "";

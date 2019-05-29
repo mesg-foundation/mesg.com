@@ -475,8 +475,8 @@ export const getters = {
         id: "opennode-blockstream",
         to: links.engine,
         logos: [
-          { src: require("~/assets/showcase/zapier.svg"), alt: "logo" },
-          { src: require("~/assets/showcase/mesg.svg"), alt: "logo" }
+          { src: require("~/assets/showcase/opennode.svg"), alt: "OpenNode logo" },
+          { src: require("~/assets/showcase/blockstream.svg"), alt: "Blockstream logo" }
         ],
         category: "OpenNode - Blockstream",
         title: "Send messages from a satellite",
@@ -486,8 +486,8 @@ export const getters = {
         id: "zapier-mesg",
         to: links.engine,
         logos: [
-          { src: require("~/assets/showcase/zapier.svg"), alt: "logo" },
-          { src: require("~/assets/showcase/mesg.svg"), alt: "logo" }
+          { src: require("~/assets/showcase/zapier.svg"), alt: "Zapier logo" },
+          { src: require("~/assets/showcase/mesg.svg"), alt: "MESG logo" }
         ],
         category: "Zapier - MESG",
         title: "Enhance Zapier workflows",
@@ -497,12 +497,34 @@ export const getters = {
         id: "erc20-grafana",
         to: links.engine,
         logos: [
-          { src: require("~/assets/showcase/zapier.svg"), alt: "logo" },
-          { src: require("~/assets/showcase/mesg.svg"), alt: "logo" }
+          { src: require("~/assets/showcase/ethereum.svg"), alt: "Ethereum logo" },
+          { src: require("~/assets/showcase/grafana.svg"), alt: "Grafana logo" }
         ],
         category: "ERC20 - Grafana",
         title: "Monitor ERC20 transactions",
         description: "There’s immense power in data. New analytics tools allow for the creation of massive efficiencies, avenues of income, or new businesses altogether."
+      },
+      {
+        id: "ethereum-sendgrid",
+        to: links.engine,
+        logos: [
+          { src: require("~/assets/showcase/ethereum.svg"), alt: "Ethereum logo" },
+          { src: require("~/assets/showcase/sendgrid.svg"), alt: "Sendgrid logo" }
+        ],
+        category: "Ethereum - Sendgrid",
+        title: "Replace subscriptions with on-demand payments",
+        description: "Innovations allowing for new monetization avenues could be the start the transition away from one-size-fits-all subscription plans."
+      },
+      {
+        id: "stripe-erc20",
+        to: links.engine,
+        logos: [
+          { src: require("~/assets/showcase/stripe.svg"), alt: "Stripe logo" },
+          { src: require("~/assets/showcase/ethereum.svg"), alt: "Ethereum logo" }
+        ],
+        category: "Stripe - ERC20",
+        title: "Directly buy crypto with fiat",
+        description: "Connect a payment processor to any blockchain to finally accept fiat for your tokens, or to improve your user experience."
       }
     ]
   },
@@ -528,8 +550,8 @@ export const getters = {
       showcase: {
         title: "Showcase",
         description: "Not sure what to start building on MESG? Discover some inspiration here.",
-        action: "Coming soon",
-        to: ""
+        action: "Explore the showcase",
+        to: links.showcase
       },
       foundation: {
         title: "MESG Foundation",
