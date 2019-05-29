@@ -17,7 +17,7 @@
           >
             <Card p1 bordered>
               <div mb2 flex row space-between class="logos">
-                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo.src" :alt="logo.alt">
+                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo">
               </div>
               <p class="category" mb1>{{ usecase.category}}</p>
               <h4 mb1>{{ usecase.title }}</h4>
@@ -51,7 +51,7 @@ import Card from "~/components/Card";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
-import page from "./page";
+import page from "../page";
 
 export default {
   components: {
