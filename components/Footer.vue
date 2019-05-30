@@ -17,7 +17,7 @@
           <div flex row mobile-column class="menu">
             <div flex column quarter>
               <p class="category" mb1>Products</p>
-              <Button :to="links.engine" class="link" mb1>MESG Engine</Button>
+              <Button :to="links.engine" class="link" mb1>MESG SDK</Button>
               <Button :to="links.marketplace" class="link" mb1>MESG Marketplace</Button>
               <Button class="link" mb1>
                 <span>Showcase</span>
