@@ -65,7 +65,7 @@
       <Container>
         <div flex row wrap>
           <nuxt-link
-            v-for="usecase in usecases"
+            v-for="usecase in nextUsecases"
             :key="usecase.id"
             :to="usecase.to"
             :id="usecase.id"
@@ -140,6 +140,18 @@ export default {
     }),
     usecase() {
       return this.usecases.find(x => x.id === this.$route.params.id);
+    },
+    nextUsecases() {
+      const index = this.usecases.findIndex(x => x.id === this.usecase.id) + 1;
+      const end = index + 3;
+      if (end > this.usecases.length) {
+        return [
+          ...this.usecases.slice(index),
+          ...this.usecases.slice(0, end % this.usecases.length)
+        ];
+      } else {
+        return this.usecases.slice(index, end);
+      }
     }
   }
 };
