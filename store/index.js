@@ -326,9 +326,9 @@ export const getters = {
         to: links.marketplace
       },
       engine: {
-        title: "MESG Engine",
+        title: "MESG SDK",
         description: "Create feature-rich applications without needing to manage dependencies.",
-        action: "Access MESG Engine",
+        action: "Access MESG SDK",
         to: links.engine
       },
       token: {
@@ -458,7 +458,7 @@ export const getters = {
       category: "General",
       contents: [{
         title: "What is MESG?",
-        description: "MESG is a decentralized building platform for apps and workflows where developers can build from a <a href='https://marketplace.mesg.com/' target='_blank'>Marketplace</a> of pre-built app components, known as services, to give your app powerful features without the busy work.<br/><br/>Much of the code that is written in today’s applications is identical and must be repeated unnecessarily, but with MESG, code can be shared or reused in an open economy.<br/><br/>Sharing code allows developers to quickly combine, automate or streamline processes, or build businesses that were previously difficult or costly to create.<br/><br/>Developers simply combine feature-packed app components together, and allow tools in the <a href='/engine' target='_blank'>MESG SDK</a> to manage the interaction between all components.<br/><br/>Once the tools in the SDK are decentralized, applications will be able to run and execute in a decentralized way, unifying application development and hosting into a single tool."
+        description: "MESG is a decentralized building platform for apps and workflows where developers can build from a <a href='https://marketplace.mesg.com/' target='_blank'>Marketplace</a> of pre-built app components, known as services, to give your app powerful features without the busy work.<br/><br/>Much of the code that is written in today’s applications is identical and must be repeated unnecessarily, but with MESG, code can be shared or reused in an open economy.<br/><br/>Sharing code allows developers to quickly combine, automate or streamline processes, or build businesses that were previously difficult or costly to create.<br/><br/>Developers simply combine feature-packed app components together, and allow tools in the <a href='/mesg-sdk' target='_blank'>MESG SDK</a> to manage the interaction between all components.<br/><br/>Once the tools in the SDK are decentralized, applications will be able to run and execute in a decentralized way, unifying application development and hosting into a single tool."
       }],
     },
     {
@@ -526,11 +526,11 @@ export const getters = {
       category: "Development",
       contents: [{
         title: "How much time can I save by using MESG?",
-        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>We’ve determined that on average, developers who are adding new features or updating existing features spend around ⅓ of their time building a bridge (a service) to the desired technology, ⅓ of the time connecting to their application, and the remaining ⅓ getting the two bridges to connect to and cooperate with each other.<br/><br/>After a developer uses MESG once, they will have built a bridge (Service) to their app or software, which will be reusable. This means that this work can be saved each time henceforth. Additionally, since the tools in the <a href='/engine' target='_blank'>MESG SDK</a> handle all communication between connected features, the final portion of time spent getting the two bridges to connect and cooperate with each other is done automatically.<br/><br/>These significant time savings saved can increase even more than if the desired technology (or Service) has already been connected to MESG. In these cases, when all Services in an Application are being reused, development time can decrease to a meer fraction of what it was before."
+        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>We’ve determined that on average, developers who are adding new features or updating existing features spend around ⅓ of their time building a bridge (a service) to the desired technology, ⅓ of the time connecting to their application, and the remaining ⅓ getting the two bridges to connect to and cooperate with each other.<br/><br/>After a developer uses MESG once, they will have built a bridge (Service) to their app or software, which will be reusable. This means that this work can be saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' target='_blank'>MESG SDK</a> handle all communication between connected features, the final portion of time spent getting the two bridges to connect and cooperate with each other is done automatically.<br/><br/>These significant time savings saved can increase even more than if the desired technology (or Service) has already been connected to MESG. In these cases, when all Services in an Application are being reused, development time can decrease to a meer fraction of what it was before."
       },
       {
         title: "Do I need to be a developer to use MESG?",
-        description: "With MESG’s currently-available functionalities, yes. Development skills are required to make initial connections to technologies, and to combine those connections into applications.<br/><br/>However, in a future update, we will debut a feature called Workflow File functionality. This feature will allow anyone to write a simple text file (likely no more than 20 lines of text), listing the desired Services, events and tasks to be executed.<br/><br/>As long as the desired Services have been previously built and are available on the MESG Network, the <a href='/engine' target='_blank'>MESG Engine</a> software will read the Workflow File and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
+        description: "With MESG’s currently-available functionalities, yes. Development skills are required to make initial connections to technologies, and to combine those connections into applications.<br/><br/>However, in a future update, we will debut a feature called Workflow File functionality. This feature will allow anyone to write a simple text file (likely no more than 20 lines of text), listing the desired Services, events and tasks to be executed.<br/><br/>As long as the desired Services have been previously built and are available on the MESG Network, the <a href='/mesg-sdk' target='_blank'>MESG SDK</a> software will read the Workflow File and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
       }]
     }]
   },
@@ -556,8 +556,8 @@ export const getters = {
     return {
       home: "/",
       enterprise: "/enterprise",
-      engine: "/engine",
-      marketplace: "/marketplace",
+      engine: "/mesg-sdk",
+      marketplace: "/mesg-marketplace",
       token: "/token",
       foundation: "/foundation",
       showcase: "/showcase",
