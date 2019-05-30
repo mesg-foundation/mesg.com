@@ -13,7 +13,7 @@
         <p
           mb2
           class="text-center"
-        >The Engine and Marketplace are developed by a worldwide team of passionate developers for The MESG Foundation, a non-profit organization.</p>
+        >The SDK and Marketplace are developed by a worldwide team of passionate developers for The MESG Foundation, a non-profit organization.</p>
         <Card>
           <Video :src="externalLinks.video"></Video>
         </Card>

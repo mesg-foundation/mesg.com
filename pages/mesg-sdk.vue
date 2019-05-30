@@ -30,7 +30,7 @@
         <p
           mb2
           class="text-center"
-        >The MESG Engine is built for efficient management of components within modular applications. Add nearly any feature to any app without the headache.</p>
+        >The MESG SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
         <Container>
@@ -47,7 +47,7 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb2>MESG Engine Use Cases</h2>
+        <h2 mb2>MESG SDK Use Cases</h2>
         <div flex row wrap>
           <TextWithIcon
             half
@@ -71,13 +71,13 @@
       <Container>
         <div flex row space-between align-center wrap>
           <div half>
-            <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and Engine">
+            <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and SDK">
           </div>
           <div half>
-            <h2 class="text-left" mb1>The MESG Token and Engine</h2>
+            <h2 class="text-left" mb1>The MESG Token and SDK</h2>
             <p
               mb2
-            >The MESG Engine is free to use locally. For partially or fully decentralized apps, the Engine will use the MESG Token to reward network participants who manage and secure executions.</p>
+            >The tools of the MESG SDK are free to use locally. However, in order to build variably decentralized apps, MESG Tokens will be required to reward network participants who manage and secure executions.</p>
             <Button outline :to="links.token">Discover the MESG Token</Button>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default {
   },
   mixins: [
     page({
-      title: "MESG Engine",
+      title: "MESG SDK",
       description:
         "An open event channel and CLI for building and running modular applications. Control the flow of data and level of security between your whole stack of connected systems."
     })

@@ -128,7 +128,7 @@ export default {
     page({
       title: "MESG Marketplace",
       description:
-        "The new economy for buying and selling access to modular app components. Easily implement new application features, or earn royalties off the ones you create."
+        "The new economy for buying and selling access to modular app components. Easily implement new application features, or earn royalties from the services you create."
     })
   ],
   computed: {
