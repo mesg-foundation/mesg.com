@@ -232,19 +232,16 @@ export const getters = {
             src: require("~/assets/team/Anthony.jpg"),
             title: "Anthony Estebe",
             description: "CEO, Co-founder",
-            company: ""
           },
           {
             src: require("~/assets/team/Nicolas.jpg"),
             title: "Nicolas Mahe",
             description: "CTO, Co-founder",
-            company: ""
           },
           {
             src: require("~/assets/team/Alexis.jpg"),
             title: "Alexis Sirkia",
             description: "Co-founder",
-            company: ""
           }
         ],
         other: [
@@ -252,37 +249,31 @@ export const getters = {
             src: require("~/assets/team/Will.jpg"),
             title: "Will Morgan",
             description: "Brand Manager",
-            company: ""
           },
           {
             src: require("~/assets/team/Emmanuel.jpg"),
             title: "Emmanuel Drouin",
             description: "UI / UX Designer",
-            company: ""
           },
           {
             src: require("~/assets/team/Hubert.jpg"),
             title: "Hubert Krauze",
             description: "Core Developer",
-            company: ""
           },
           {
             src: require("~/assets/team/Ilker.jpg"),
             title: "İlker Göktuğ Öztürk",
             description: "Core Developer",
-            company: ""
           },
           {
             src: require("~/assets/team/Wayne.jpg"),
             title: "Wayne Skeen",
             description: "Advisor",
-            company: ""
           },
           {
             src: require("~/assets/team/Janie.jpg"),
             title: "Janie Lim",
             description: "Evangelist",
-            company: ""
           }
         ]
       },
@@ -294,8 +285,8 @@ export const getters = {
       showcase: {
         title: "Showcase",
         description: "Not sure what to start building on MESG? Discover some inspiration here.",
-        action: "Coming soon",
-        to: ""
+        action: "Explore the showcase",
+        to: links.showcase
       },
       foundation: {
         title: "MESG Foundation",
@@ -546,8 +537,12 @@ export const getters = {
           "Integrate front-end apps and user interfaces to provide users with excellent user experiences.",
           "Execute blockchain transactions on behalf of your users."
         ],
-        information: "Want a deeper look at how MESG can be used to send messages from space? Head on over to our blog for the full story.",
-        article: "https://medium.com/mesg/use-case-send-messages-from-space-6a02a353df7d"
+        video: "https://www.youtube.com/embed/PNoWKxU6WSk",
+        information: "Want a deeper look at how MESG can be used to send messages from space? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/use-case-send-messages-from-space-6a02a353df7d" },
+          { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
+        ]
       },
       {
         id: "enhance-zapier-workflows",
@@ -574,8 +569,12 @@ export const getters = {
           "Use pre-built integrations from Zapier instead of needing to build new ones for your MESG applications.",
           "Easy transition for Zapier users to start earning tokens for building MESG applications."
         ],
-        information: "Want a more in-depth look at how MESG and Zapier can be used together? Head on over to our blog for the full story.",
-        article: "https://medium.com/mesg/use-case-connecting-zapier-and-mesg-a9a661526ff0"
+        video: "https://www.youtube.com/embed/RVMg9VBhhUI",
+        information: "Want a more in-depth look at how MESG and Zapier can be used together? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/use-case-connecting-zapier-and-mesg-a9a661526ff0" },
+          { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
+        ]
       },
       {
         id: "monitor-erc20-transactions",
@@ -602,8 +601,19 @@ export const getters = {
           "Connecting extracted data to AI systems to be able to predict future transfers and token prices.",
           "Easily expand to ERC721 to monitor the performance of digital collectables."
         ],
-        information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story.",
-        article: "https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c"
+        picture: "https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png",
+        companies: [
+          require("~/assets/showcase/coinbase.svg"),
+          require("~/assets/showcase/kraken.svg"),
+          require("~/assets/showcase/bitstamp.svg"),
+          require("~/assets/showcase/binance.svg")
+        ],
+        information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c" },
+          { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
+          { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
+        ]
       },
       {
         id: "replace-subscriptions-with-on-demand-payments",
@@ -628,11 +638,23 @@ export const getters = {
         ],
         opportunities: [
           "Create new innovative business models.",
-          "HR reductions (no need to manage a payment system development team.",
+          "HR reductions (no need to manage a payment system development team).",
           "Reduce friction for users (pay as you go, rather than needing to purchase big packages first)."
         ],
-        information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story.",
-        article: "https://medium.com/mesg/the-death-of-the-subscription-plan-2ffbcbf521b4"
+        picture: "https://forum.mesg.com/uploads/default/original/1X/b1c56391ac876b910262718c070822f6aeefd25b.jpeg",
+        companies: [
+          require("~/assets/showcase/sendgrid-logo.svg"),
+          require("~/assets/showcase/heroku.svg"),
+          require("~/assets/showcase/firebase.svg"),
+          require("~/assets/showcase/twilio.svg")
+        ],
+        information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/the-death-of-the-subscription-plan-2ffbcbf521b4" },
+          { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
+          { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
+          { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
+        ]
       },
       {
         id: "directly-buy-crypto-with-fiat",
@@ -660,8 +682,19 @@ export const getters = {
           "Extend these functionalities to other tokens, such as ERC721.",
           "Simultaneously support many different native blockchain-based tokens."
         ],
-        information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story.",
-        article: "https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7"
+        video: "https://drive.google.com/file/d/1WfZZ9tcNJAEdKms9LKynR1rlle4rS_Ix/preview",
+        companies: [
+          require("~/assets/showcase/coinbase.svg"),
+          require("~/assets/showcase/kraken.svg"),
+          require("~/assets/showcase/bitstamp.svg"),
+          require("~/assets/showcase/binance.svg")
+        ],
+        information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7" },
+          { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
+          { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
+        ]
       }
     ]
   },

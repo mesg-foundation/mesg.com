@@ -2,7 +2,7 @@
   <div>
     <Header :picture="usecase.headerimage" :title="title" :description="description"></Header>
 
-    <section id="usecase">
+    <section id="usecase-intro">
       <Container flex column align-center class="intro">
         <h2 mb1>{{ usecase.technology }}</h2>
         <p mb2 class="text-center product-desc">{{ usecase.paragraphe }}</p>
@@ -12,18 +12,20 @@
           <div half>
             <img :src="usecase.image">
           </div>
-          <div half>
-            <Card p2 column flex space-between>
-              <h3 mb1>Challenges</h3>
-              <p mb2>{{ usecase.challenges }}</p>
-              <h3 mb1>Goals</h3>
-              <p>{{ usecase.goals}}</p>
-            </Card>
+          <div half column flex space-between>
+            <h3 mb1>Challenges</h3>
+            <p mb2>{{ usecase.challenges }}</p>
+            <h3 mb1>Goals</h3>
+            <p>{{ usecase.goals}}</p>
           </div>
         </div>
+      </Container>
+    </section>
+    <section id="usecase-description" class="inner-background" mb3>
+      <Container>
         <div flex row space-between align-center mobile-column-reverse wrap>
           <div half>
-            <Card p2 column flex space-between>
+            <Card p2 flex column space-between>
               <h3 mb1>Benefits</h3>
               <ul mb1>
                 <li v-for="(benefit, i) in usecase.benefits" :key="i" mb1>{{ benefit }}</li>
@@ -40,9 +42,21 @@
             </Card>
           </div>
           <div half>
-            <img :src="usecase.image">
+            <Video v-if="usecase.video" :src="usecase.video"></Video>
+            <img v-else :src="usecase.picture">
           </div>
         </div>
+      </Container>
+    </section>
+
+    <section v-if="usecase.companies" id="who">
+      <Container flex column align-center mb3>
+        <h3 class="text-center" mb2>Who could benefit from this?</h3>
+        <ul flex row mobile-column class="companies">
+          <li v-for="(company, i) in usecase.companies" :key="i">
+            <img :src="company" class="company">
+          </li>
+        </ul>
       </Container>
     </section>
 
@@ -50,7 +64,15 @@
       <Container flex column align-center mb3>
         <h3 mb1>More information</h3>
         <p class="text-center" mb2>{{usecase.information}}</p>
-        <Button secondary :href="usecase.article" target="_blank">Read the full article</Button>
+        <div row wrap>
+          <Button
+            secondary
+            v-for="(resource, i) in usecase.resources"
+            :key="i"
+            :href="resource.to"
+            target="_blank"
+          >{{resource.title}}</Button>
+        </div>
       </Container>
     </section>
 
@@ -61,7 +83,7 @@
         <h2 mb2>More use cases</h2>
       </Container>
     </section>
-    <section class="inner-background usecase" id="next">
+    <section class="usecase" id="next">
       <Container>
         <div flex row wrap>
           <nuxt-link
@@ -104,6 +126,7 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
+import Video from "~/components/Video";
 import Button from "~/components/Button";
 import Card from "~/components/Card";
 import CallToAction from "~/components/CallToAction";
@@ -115,6 +138,7 @@ export default {
   components: {
     Header,
     Container,
+    Video,
     Button,
     Card,
     CallToAction,
@@ -157,7 +181,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   margin: 12px;
 }
@@ -180,14 +204,20 @@ li::before {
 li.opportunitie:last-child {
   margin-bottom: 0 !important;
 }
+.companies li::before {
+  display: none;
+}
+.companies li {
+  text-align: center;
+}
+.company {
+  height: 30px;
+  width: auto;
+}
 
 /*next use case*/
 .usecase .card {
   margin: 0;
-  border: solid 0 var(--light-purple);
-  border-bottom-width: 6px;
-  border-bottom-color: var(--purple);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .usecase a {
   position: relative;
@@ -222,5 +252,15 @@ li.opportunitie:last-child {
   font-size: 1em;
   font-weight: bold;
   text-align: right;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .companies li {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  .companies li:last-child {
+    margin-bottom: 0;
+  }
 }
 </style>
