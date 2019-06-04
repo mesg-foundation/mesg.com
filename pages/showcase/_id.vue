@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description"></Header>
+    <Header :picture="usecase.headerimage" :title="title" :description="description"></Header>
 
     <section id="usecase">
       <Container flex column align-center class="intro">
@@ -21,7 +21,7 @@
             </Card>
           </div>
         </div>
-        <div flex row space-between align-center wrap>
+        <div flex row space-between align-center mobile-column-reverse wrap>
           <div half>
             <Card p2 column flex space-between>
               <h3 mb1>Benefits</h3>
