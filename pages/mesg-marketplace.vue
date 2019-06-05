@@ -58,11 +58,10 @@
             :text="usecase.description"
           />
         </div>
-        <!--
+
         <div class="text-center">
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
-        -->
       </Container>
     </section>
 

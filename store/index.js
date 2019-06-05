@@ -194,22 +194,6 @@ export const getters = {
     }
   },
 
-  exchanges() {
-    return [
-      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT" },
-      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
-    ]
-  },
-
-  articles() {
-    return [
-      { id: "yahoo", title: "New Token Release Methods Signal the Death of the ICO", img: require("~/assets/press/yahoo.svg"), to: "https://finance.yahoo.com/news/token-release-methods-signal-death-030000717.html" },
-      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.svg"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
-      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" }
-    ]
-  },
-
   partners() {
     return {
       primary: [
@@ -248,19 +232,16 @@ export const getters = {
             src: require("~/assets/team/Anthony.jpg"),
             title: "Anthony Estebe",
             description: "CEO, Co-founder",
-            company: ""
           },
           {
             src: require("~/assets/team/Nicolas.jpg"),
             title: "Nicolas Mahe",
             description: "CTO, Co-founder",
-            company: ""
           },
           {
             src: require("~/assets/team/Alexis.jpg"),
             title: "Alexis Sirkia",
             description: "Co-founder",
-            company: ""
           }
         ],
         other: [
@@ -268,37 +249,31 @@ export const getters = {
             src: require("~/assets/team/Will.jpg"),
             title: "Will Morgan",
             description: "Brand Manager",
-            company: ""
           },
           {
             src: require("~/assets/team/Emmanuel.jpg"),
             title: "Emmanuel Drouin",
             description: "UI / UX Designer",
-            company: ""
           },
           {
             src: require("~/assets/team/Hubert.jpg"),
             title: "Hubert Krauze",
             description: "Core Developer",
-            company: ""
           },
           {
             src: require("~/assets/team/Ilker.jpg"),
             title: "İlker Göktuğ Öztürk",
             description: "Core Developer",
-            company: ""
           },
           {
             src: require("~/assets/team/Wayne.jpg"),
             title: "Wayne Skeen",
             description: "Advisor",
-            company: ""
           },
           {
             src: require("~/assets/team/Janie.jpg"),
             title: "Janie Lim",
             description: "Evangelist",
-            company: ""
           }
         ]
       },
@@ -310,8 +285,8 @@ export const getters = {
       showcase: {
         title: "Showcase",
         description: "Not sure what to start building on MESG? Discover some inspiration here.",
-        action: "Coming soon",
-        to: ""
+        action: "Explore the showcase",
+        to: links.showcase
       },
       foundation: {
         title: "MESG Foundation",
@@ -535,6 +510,211 @@ export const getters = {
     }]
   },
 
+  usecases(_, { links }) {
+    return [
+      {
+        id: "send-messages-from-a-satellite",
+        to: `${links.showcase}/send-messages-from-a-satellite`,
+        logos: [
+          require("~/assets/showcase/opennode.svg"),
+          require("~/assets/showcase/blockstream.svg")
+        ],
+        headerimage: require("~/assets/showcase/satellite.svg"),
+        category: "OpenNode - Blockstream",
+        title: "Send messages from a satellite",
+        description: "A showcase of MESG’s sheer versatility: send messages from outer space using the MESG Token, the Lightning Network, a satellite, and a web-based UI.",
+        technology: "OpenNode - MESG Token - Blockstream",
+        paragraphe: "Connect multiple cryptocurrencies with other technologies to securely send a message from space.",
+        image: require("~/assets/showcase/opennode-blockstream.svg"),
+        challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC20 token payment.",
+        goals: "To build a business with a MESG App which accepts MESG Tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
+        benefits: [
+          "Integrate multiple cryptocurrencies within a single application.",
+          "Automatically react to blockchain transactions in real time."
+        ],
+        opportunities: [
+          "Manage the flow of live data between an unlimited number of connected blockchains and IoT devices.",
+          "Integrate front-end apps and user interfaces to provide users with excellent user experiences.",
+          "Execute blockchain transactions on behalf of your users."
+        ],
+        video: "https://www.youtube.com/embed/PNoWKxU6WSk",
+        information: "Want a deeper look at how MESG can be used to send messages from space? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/use-case-send-messages-from-space-6a02a353df7d" },
+          { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
+        ]
+      },
+      {
+        id: "enhance-zapier-workflows",
+        to: `${links.showcase}/enhance-zapier-workflows`,
+        logos: [
+          require("~/assets/showcase/zapier.svg"),
+          require("~/assets/showcase/mesg.svg")
+        ],
+        headerimage: require("~/assets/showcase/zapier-workflow.svg"),
+        category: "Zapier - MESG",
+        title: "Enhance Zapier workflows",
+        description: "Centralized workflow builders are easy to use, but have a limited set of feature integrations. Expand Zapier’s workflows to include blockchains, custom software or IoT device integration.",
+        technology: "Zapier - MESG - Slack",
+        paragraphe: "Integrate Zapier’s library of 1000+ useful connections with apps developed on MESG, or expand Zapier workflows to include hard-to-reach technologies like blockchains.",
+        image: require("~/assets/showcase/zapier-mesg.svg"),
+        challenges: "Centralized workflow builders like Zapier are very useful for completing specific tasks, but can be worthless when it comes to integrating complex applications or technologies.",
+        goals: "Build efficient MESG apps that utilize the thousands of connectors in Zapier’s ecosystem. Alternatively, enhance Zapier workflows with the difficult-to-reach integrations found on MESG.",
+        benefits: [
+          "Instantly access 1000+ additional integrations for MESG applications.",
+          "Enhance Zapier workflows by using features from complex technologies like blockchains."
+        ],
+        opportunities: [
+          "Integrate blockchain or cryptocurrency management features into Zapier.",
+          "Use pre-built integrations from Zapier instead of needing to build new ones for your MESG applications.",
+          "Easy transition for Zapier users to start earning tokens for building MESG applications."
+        ],
+        video: "https://www.youtube.com/embed/RVMg9VBhhUI",
+        information: "Want a more in-depth look at how MESG and Zapier can be used together? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/use-case-connecting-zapier-and-mesg-a9a661526ff0" },
+          { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
+        ]
+      },
+      {
+        id: "monitor-erc20-transactions",
+        to: `${links.showcase}/monitor-erc20-transactions`,
+        logos: [
+          require("~/assets/showcase/ethereum.svg"),
+          require("~/assets/showcase/grafana.svg")
+        ],
+        headerimage: require("~/assets/showcase/monitor.svg"),
+        category: "ERC20 - Grafana",
+        title: "Monitor ERC20 transactions",
+        description: "There’s immense power in data. New analytics tools allow for the creation of massive efficiencies, avenues of income, or new businesses altogether.",
+        technology: "ERC20 - InfluxDB - Grafana",
+        paragraphe: "Read, analyze and react to blockchain transactions happening in real time to optimize ICOs, predict transfers or manage digital collectables.",
+        image: require("~/assets/showcase/erc20-grafana.svg"),
+        challenges: "ICOs, tokenized development and cryptocurrency-integrated businesses are on the rise. This fast-evolving ecosystem needs tools to provide metrics about what is happening on the blockchain.",
+        goals: "Build applications that can listen and react to any or all token transfers, collect and manage token transfer information, or visualize transaction data.",
+        benefits: [
+          "All useful metrics related to your token become accessible.",
+          "Extract patterns by looking at the data output in graphs. For example, high transfer volume may indicate a bot being used."
+        ],
+        opportunities: [
+          "Companies launching ICOs can have easy access to monitoring actual token volume.",
+          "Connecting extracted data to AI systems to be able to predict future transfers and token prices.",
+          "Easily expand to ERC721 to monitor the performance of digital collectables."
+        ],
+        picture: "https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png",
+        companies: [
+          require("~/assets/showcase/coinbase.svg"),
+          require("~/assets/showcase/kraken.svg"),
+          require("~/assets/showcase/bitstamp.svg"),
+          require("~/assets/showcase/binance.svg")
+        ],
+        information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c" },
+          { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
+          { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
+        ]
+      },
+      {
+        id: "replace-subscriptions-with-on-demand-payments",
+        to: `${links.showcase}/replace-subscriptions-with-on-demand-payments`,
+        logos: [
+          require("~/assets/showcase/ethereum.svg"),
+          require("~/assets/showcase/sendgrid.svg")
+        ],
+        headerimage: require("~/assets/showcase/payments.svg"),
+        category: "Ethereum - SendGrid",
+        title: "Replace subscriptions with on-demand payments",
+        description: "Innovations allowing for new monetization avenues could be the start the transition away from one-size-fits-all subscription plans.",
+        technology: "Ethereum - MESG - SendGrid",
+        paragraphe: "Lower the barrier to entry for customers by charging cryptocurrency micropayments in exchange for the exact features or resources used.",
+        image: require("~/assets/showcase/sendgrid-erc20.svg"),
+        challenges: "Today, businesses like SaaS products use complex recurrent billing systems to accept payments for the features they deliver. Instead, cryptocurrencies could be used to let users pay for only the features they want to expose.",
+        goals: "Build apps that accept payments with blockchain technology, trigger a certain task when a payment has been made, or submit a proof of execution to the user with actual execution results.",
+        benefits: [
+          "New models of monetization can open up the competition, allowing users to try and adopt more solutions.",
+          "Businesses can focus on their key value propositions rather than worrying about monetization management.",
+          "Reducing the complexity of products while increasing potential reusability of them."
+        ],
+        opportunities: [
+          "Create new innovative business models.",
+          "HR reductions (no need to manage a payment system development team).",
+          "Reduce friction for users (pay as you go, rather than needing to purchase big packages first)."
+        ],
+        picture: "https://forum.mesg.com/uploads/default/original/1X/b1c56391ac876b910262718c070822f6aeefd25b.jpeg",
+        companies: [
+          require("~/assets/showcase/sendgrid-logo.svg"),
+          require("~/assets/showcase/heroku.svg"),
+          require("~/assets/showcase/firebase.svg"),
+          require("~/assets/showcase/twilio.svg")
+        ],
+        information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/the-death-of-the-subscription-plan-2ffbcbf521b4" },
+          { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
+          { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
+          { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
+        ]
+      },
+      {
+        id: "directly-buy-crypto-with-fiat",
+        to: `${links.showcase}/directly-buy-crypto-with-fiat`,
+        logos: [
+          require("~/assets/showcase/stripe.svg"),
+          require("~/assets/showcase/ethereum.svg")
+        ],
+        headerimage: require("~/assets/showcase/crypto.svg"),
+        category: "Stripe - ERC20",
+        title: "Directly buy crypto with fiat",
+        description: "Connect a payment processor to any blockchain to finally accept fiat for your tokens, or to improve your user experience.",
+        technology: "Stripe - ERC20 - SendGrid",
+        paragraphe: "Buy crypto without the complicated user experience. Now your users can forget juggling multiple third-party apps like Metamask just to execute a single function in a DApp.",
+        image: require("~/assets/showcase/stripe-erc20.svg"),
+        challenges: "Buying crypto, either for investment or to use a product, is often a complicated process with lots of friction for users, resulting in massive user adoption hurdles.",
+        goals: "Create an application that can accept payments from fiat gateways like banks, or payment providers like Stripe to deliver tokens directly to buyers.",
+        benefits: [
+          "Any project, new or old, can now use the benefits of blockchains to tokenize anything without the steep barrier to entry that blockchains currently have.",
+          "Create new ways of offering and distributing tokens.",
+          "Those in the gaming industry can create in-game currencies that are actually ERC20 Tokens. Game makers can also generate and sell unique digital collectibles based on ERC721 smart contracts.",
+          "Retail shops can manage inventory on the blockchain while continuing to sell collectables or currencies with simple credit card payment systems."
+        ],
+        opportunities: [
+          "Extend these functionalities to other tokens, such as ERC721.",
+          "Simultaneously support many different native blockchain-based tokens."
+        ],
+        video: "https://drive.google.com/file/d/1WfZZ9tcNJAEdKms9LKynR1rlle4rS_Ix/preview",
+        companies: [
+          require("~/assets/showcase/coinbase.svg"),
+          require("~/assets/showcase/kraken.svg"),
+          require("~/assets/showcase/bitstamp.svg"),
+          require("~/assets/showcase/binance.svg")
+        ],
+        information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7" },
+          { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
+          { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
+        ]
+      }
+    ]
+  },
+
+  exchanges() {
+    return [
+      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
+      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT" },
+      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
+    ]
+  },
+
+  articles() {
+    return [
+      { id: "yahoo", title: "New Token Release Methods Signal the Death of the ICO", img: require("~/assets/press/yahoo.svg"), to: "https://finance.yahoo.com/news/token-release-methods-signal-death-030000717.html" },
+      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.svg"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
+      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" }
+    ]
+  },
+
   externalLinks() {
     return {
       documentation: "https://docs.mesg.com/",
@@ -563,7 +743,8 @@ export const getters = {
       showcase: "/showcase",
       partners: "/partners",
       faq: "/faq",
-      roadmap: "/roadmap"
+      roadmap: "/roadmap",
+      usecase: "/usecase"
     }
   }
 }
