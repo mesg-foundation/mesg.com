@@ -82,6 +82,15 @@ module.exports = {
     { src: '~/plugins/directives/sticky', ssr: false },
     { src: '~/plugins/directives/show-only-children' },
   ],
+  generate: {
+    routes: [
+      'send-messages-from-a-satellite',
+      'enhance-zapier-workflows',
+      'monitor-erc20-transactions',
+      'replace-subscriptions-with-on-demand-payments',
+      'directly-buy-crypto-with-fiat'
+    ].map(x => `/showcase/${x}`)
+  },
   /*
   ** Build configuration
   */
