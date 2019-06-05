@@ -19,9 +19,7 @@
               <p class="category" mb1>Products</p>
               <Button :to="links.engine" class="link" mb1>MESG SDK</Button>
               <Button :to="links.marketplace" class="link" mb1>MESG Marketplace</Button>
-              <Button class="link" mb1>
-                <span>Showcase</span>
-              </Button>
+              <Button :to="links.showcase" class="link" mb1>Showcase</Button>
               <Button :to="links.faq" class="link last" mb1>FAQ</Button>
             </div>
             <div flex column quarter>

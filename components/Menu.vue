@@ -17,10 +17,7 @@
             <div flex column class="sub-menu product" p1 mt1>
               <Button :to="links.engine" class="btn">MESG SDK</Button>
               <Button :to="links.marketplace" class="btn">MESG Marketplace</Button>
-              <Button class="btn soon">
-                Showcase
-                <span>coming soon</span>
-              </Button>
+              <Button :to="links.showcase" class="btn">Showcase</Button>
               <Button :to="links.faq" class="btn">FAQ</Button>
             </div>
           </li>
