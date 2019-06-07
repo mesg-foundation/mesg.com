@@ -1,46 +1,52 @@
 <template>
   <div>
-    <nav flex space-between>
-      <div flex space-between>
-        <nuxt-link :to="links.home">
-          <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
-        </nuxt-link>
+    <nav flex space-between align-center>
+      <div flex row space-between align-center>
+        <div>
+          <nuxt-link :to="links.home">
+            <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
+          </nuxt-link>
+        </div>
         <a @click="open = !open" class="burger" hidden-desktop>
           <span v-if="open">&times;</span>
           <span v-else>☰</span>
         </a>
       </div>
       <div flex row space-between class="actions" :class="{open}">
-        <ul flex row mobile-column tablet-column>
-          <li class="products" flex column>
-            <Button class="btn main">Products</Button>
-            <div flex column class="sub-menu product" p1 mt1>
-              <Button :to="links.engine" class="btn">MESG SDK</Button>
-              <Button :to="links.marketplace" class="btn">MESG Marketplace</Button>
-              <Button :to="links.showcase" class="btn">Showcase</Button>
-              <Button :to="links.faq" class="btn">FAQ</Button>
+        <ul flex row mobile-column>
+          <li class="drop-down" flex column align-center>
+            <a href="#" class="title">Products</a>
+            <div flex column class="sub-menu" p1 mt1>
+              <nuxt-link :to="links.engine" class="btn">MESG SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace" class="btn">MESG Marketplace</nuxt-link>
+              <nuxt-link :to="links.showcase" class="btn">Showcase</nuxt-link>
+              <nuxt-link :to="links.faq" class="btn">FAQ</nuxt-link>
             </div>
           </li>
-          <li class="developers" flex column>
-            <Button class="btn main">Developers</Button>
-            <div flex column class="sub-menu developer" p1 mt1>
-              <Button :href="externalLinks.getStarted" target="_blank" class="btn">Get started</Button>
-              <Button :href="externalLinks.marketplace" target="_blank" class="btn">Marketplace</Button>
-              <Button :href="externalLinks.documentation" target="_blank" class="btn">Documentation</Button>
-              <Button :href="externalLinks.forum" target="_blank" class="btn">Forum</Button>
+          <li class="drop-down" flex column align-center>
+            <a href="#" class="title">Developers</a>
+            <div flex column class="sub-menu" p1 mt1>
+              <a :href="externalLinks.getStarted" target="_blank" class="btn">Get started</a>
+              <a :href="externalLinks.marketplace" target="_blank" class="btn">Marketplace</a>
+              <a :href="externalLinks.documentation" target="_blank" class="btn">Documentation</a>
+              <a :href="externalLinks.forum" target="_blank" class="btn">Forum</a>
             </div>
           </li>
-          <li class="foundation" flex column>
-            <Button class="btn main">Foundation</Button>
-            <div flex column class="sub-menu overview" p1 mt1>
-              <Button :to="links.foundation" class="btn">Overview</Button>
-              <Button :to="links.partners" class="btn">Partners</Button>
-              <Button :to="links.roadmap" class="btn">Roadmap</Button>
-              <Button :href="externalLinks.blog" target="_blank" class="btn">Blog</Button>
+          <li class="drop-down" flex column align-center>
+            <a href="#" class="title">Foundation</a>
+            <div flex column class="sub-menu" p1 mt1>
+              <nuxt-link :to="links.foundation" class="btn">Overview</nuxt-link>
+              <nuxt-link :to="links.partners" class="btn">Partners</nuxt-link>
+              <nuxt-link :to="links.roadmap" class="btn">Roadmap</nuxt-link>
+              <a :href="externalLinks.blog" target="_blank" class="btn">Blog</a>
             </div>
           </li>
-          <Button :to="links.token" class="btn main token" mr2>Token</Button>
-          <Button primary :to="links.enterprise" class="enterprise">Enterprise</Button>
+          <li flex align-center>
+            <nuxt-link :to="links.token" class="token">Token</nuxt-link>
+          </li>
+          <li flex align-center>
+            <Button primary :to="links.enterprise" class="enterprise">Enterprise</Button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -79,12 +85,23 @@ nav {
   padding: 18px 40px;
 }
 img {
-  height: 100%;
+  max-width: 153px;
+  max-height: 40px;
+}
+.enterprise {
+  width: 100%;
+}
+li {
+  height: 80px;
+}
+li > a:not(.btn--primary) {
+  line-height: 80px;
+  display: block;
 }
 
+//drop-down menu//
 @media only screen and (min-width: $tablet-breakpoint + 1) {
   .actions {
-    text-align: right;
     width: 300px;
     max-width: 100%;
     display: inline-block;
@@ -94,16 +111,17 @@ img {
   }
   ul {
     list-style: none;
-    line-height: 40px;
-    list-style-position: outside;
   }
-  li:hover {
-    cursor: pointer;
+  li {
+    text-align: center;
+  }
+  .btn {
+    padding: 0.75em 2em;
   }
   .sub-menu {
     position: absolute;
     display: none;
-    top: 50px;
+    top: 47px;
     min-width: 200px;
     opacity: 0;
     z-index: 1;
@@ -136,32 +154,7 @@ img {
     font-weight: 600;
     transition: 0.1s ease-in;
   }
-  .sub-menu:hover {
-    cursor: default;
-  }
-  .sub-menu .soon {
-    opacity: 0.5;
-  }
-  .sub-menu .soon:hover {
-    opacity: 0.5;
-    font-weight: normal;
-    color: var(--title-color);
-  }
-  .sub-menu span {
-    font-size: 10px;
-  }
-  li {
-    align-items: center;
-  }
-  .products:hover .product {
-    opacity: 1;
-    display: block;
-  }
-  .developers:hover .developer {
-    opacity: 1;
-    display: block;
-  }
-  .foundation:hover .overview {
+  .drop-down:hover .sub-menu {
     opacity: 1;
     display: block;
   }
@@ -177,13 +170,14 @@ img {
   }
 }
 
+//menu responsive//
 @media only screen and (max-width: $tablet-breakpoint) {
   .actions {
-    text-align: left;
+    border-radius: 6px;
     display: none;
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: 2.5%;
+    width: 95%;
     top: 80px;
     z-index: 1;
     background-color: var(--white);
@@ -193,6 +187,14 @@ img {
     display: block;
     animation: appear-in 0.2s ease-in;
   }
+  .sub-menu a {
+    font-weight: normal;
+    display: block;
+    color: var(--title-color);
+  }
+  .token {
+    color: var(--title-color);
+  }
   .burger {
     text-align: right;
     display: inline-block;
@@ -200,29 +202,26 @@ img {
     height: 44px;
     font-size: 2em;
   }
-  .main {
-    font-size: 1em;
+  .btn {
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .title {
+    width: 100%;
     font-weight: bold;
     color: var(--light-purple);
   }
-  .token {
-    color: var(--purple);
-  }
   .sub-menu {
-    color: var(--purple);
+    width: 100%;
     padding: 0 !important;
     margin-top: 0 !important;
   }
-  .sub-menu a {
-    padding-left: 50px;
-  }
-  .btn {
-    text-align: left;
-  }
   ul {
-    border-top: solid 4px var(--purple);
+    padding: 40px;
+    border-top: solid 6px var(--purple);
     list-style: none;
-    line-height: 40px;
+    border-radius: 6px;
   }
   ul::before {
     content: "";
@@ -230,23 +229,16 @@ img {
     width: 0;
     height: 0;
     bottom: 100%;
-    left: 50%;
+    right: 20px;
     border-bottom: 10px solid var(--purple);
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
   }
   li {
-    margin-right: 0 !important;
+    height: auto;
   }
-  .soon {
-    color: var(--light-purple);
-    opacity: 1;
-  }
-  .enterprise {
-    margin: 40px;
-  }
-  .sub-menu span {
-    font-size: 0.6em;
+  li > a:not(.btn--primary) {
+    line-height: 40px;
   }
   .appear-enter-active {
     animation: appear-in 0.2s ease-in;
@@ -263,6 +255,26 @@ img {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+//menu mobile//
+@media only screen and (max-width: $mobile-breakpoint) {
+  ul {
+    align-items: left !important;
+    padding-top: 20px;
+  }
+  li {
+    margin-right: 0 !important;
+  }
+  li > a:not(.btn--primary) {
+    line-height: 60px;
+  }
+  .btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .btn--primary {
+    margin-top: 20px;
   }
 }
 </style>
