@@ -229,7 +229,7 @@ li > a:not(.btn--primary) {
     width: 0;
     height: 0;
     bottom: 100%;
-    right: 13px;
+    right: 20px;
     border-bottom: 10px solid var(--purple);
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
@@ -262,9 +262,6 @@ li > a:not(.btn--primary) {
   ul {
     align-items: left !important;
     padding-top: 20px;
-  }
-  ul::before {
-    right: 20px;
   }
   li {
     margin-right: 0 !important;
