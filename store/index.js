@@ -719,6 +719,7 @@ export const getters = {
     return {
       documentation: "https://docs.mesg.com/",
       marketplace: "https://marketplace.mesg.com/",
+      atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
       blog: "https://medium.com/mesg",
       forum: "https://forum.mesg.com/",

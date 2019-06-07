@@ -61,16 +61,16 @@
         <Feature
           :src="require('~/assets/token/token-distribution.svg')"
           title="Token distribution"
-          action="Check out our roadmap"
-          :to="links.roadmap"
+          action="Go to the ATD dashboard"
+          :href="externalLinks.atd"
         >
-          <h4 mb1>Total token supply 250MM</h4>
+          <h4 mb2>Total token supply 250MM</h4>
           <ColoredList
             :items="[
-              { color: '#e0d1ff', title: 'Sale Distribution 62.5%' },
-              { color: '#ffd4a3', title: 'Reserve 20%' },
-              { color: '#9777c7', title: 'Team and Founders 12.5%' },
-              { color: '#8ceda1', title: 'Partners & Bounties 5%' }
+              { color: '#e0d1ff', title: 'Sale Distribution 62.5%'},
+              { color: '#ffd4a3', title: 'Reserve 20%'},
+              { color: '#9777c7', title: 'Team and Founders 12.5%'},
+              { color: '#8ceda1', title: 'Partners & Bounties 5%'}
             ]"
           />
         </Feature>
@@ -172,6 +172,7 @@ export default {
     ...mapGetters({
       token: "token",
       links: "links",
+      externalLinks: "externalLinks",
       documents: "documents",
       articles: "articles",
       exchanges: "exchanges"
@@ -185,10 +186,6 @@ ul {
   list-style: none;
 }
 
-.soon {
-  opacity: 0.3;
-}
-
 a img {
   height: 25px;
   display: block;
@@ -197,7 +194,6 @@ a img {
 a.btn--white img {
   margin: auto;
 }
-
 li img {
   vertical-align: middle;
 }
