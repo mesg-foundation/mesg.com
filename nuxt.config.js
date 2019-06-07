@@ -14,12 +14,12 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine.' },
+      { hid: 'description', name: 'description', content: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG SDK.' },
       { hid: 'og:image:height', property: 'og:image:height', content: '1257' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2400' },
       { hid: 'og:image', property: 'og:image', content: 'https://mesg.com/og-image.jpg' },
       { hid: 'og:title', property: 'og:title', content: 'MESG - The new economy of app development' },
-      { hid: 'og:description', property: 'og:description', content: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG Engine.' },
+      { hid: 'og:description', property: 'og:description', content: 'Connect reusable, shareable integrations from any API or decentralized network, managed by the MESG SDK.' },
       { hid: 'og:url', property: 'og:url', content: 'https://mesg.com/' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'MESG' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -82,6 +82,15 @@ module.exports = {
     { src: '~/plugins/directives/sticky', ssr: false },
     { src: '~/plugins/directives/show-only-children' },
   ],
+  generate: {
+    routes: [
+      'send-messages-from-a-satellite',
+      'enhance-zapier-workflows',
+      'monitor-erc20-transactions',
+      'replace-subscriptions-with-on-demand-payments',
+      'directly-buy-crypto-with-fiat'
+    ].map(x => `/showcase/${x}`)
+  },
   /*
   ** Build configuration
   */

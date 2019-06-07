@@ -29,7 +29,7 @@
         <p
           mb2
           class="text-center product-desc"
-        >MESG’s Engine and Marketplace work in tandem to create an open economy of application components that are all instantly compatible straight out of the box.</p>
+        >MESG’s SDK and Marketplace work in tandem to create an open economy of flexible app components that can all work together right out of the box.</p>
       </Container>
     </section>
     <section id="products" mb3 class="inner-background">
@@ -81,7 +81,7 @@
     <CallToAction
       mb3
       title="Accelerate your business with MESG"
-      description="MESG is built for efficiency and scalability. Create and share app components to add new features or even enter new industries. Then scale limitlessly with a decentralized network."
+      description="MESG is built for efficiency and scalability. Create or reuse components to add new features or even enter new industries. Then scale limitlessly with a decentralized network."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
