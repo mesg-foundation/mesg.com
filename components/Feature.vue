@@ -49,11 +49,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  margin: 12px;
+@media only screen and (max-width: $tablet-breakpoint) {
+  .feature {
+    margin-bottom: 80px !important;
+  }
+  .feature:last-child {
+    margin-bottom: 0 !important;
+  }
 }
-
 @media only screen and (max-width: $mobile-breakpoint) {
+  .feature {
+    margin-bottom: 40px !important;
+  }
   img {
     margin-bottom: 20px;
   }

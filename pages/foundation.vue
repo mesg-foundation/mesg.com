@@ -20,19 +20,17 @@
       </Container>
     </section>
 
-    <section id="story vision">
+    <section id="story vision" mb3>
       <Container>
         <div flex row space-between wrap>
           <Titletext3
             half
-            mb3
             title="Our story"
             text="The MESG Foundation was built to promote and support blockchain technology through the improvement of its accessibility and use in the real world."
           />
 
           <Titletext3
             half
-            mb3
             title="Our vision"
             text="To be the first universal infrastructure to bridge legacy companies moving into a trustless landscape. The future of business is decentralized."
           />
@@ -74,12 +72,12 @@
     -->
 
     <section id="team">
-      <Container flex column align-center>
+      <Container flex column align-center class="title">
         <h2 class="description" mb2>The Core of the project</h2>
       </Container>
       <div class="inner-background" mb3>
         <Container>
-          <div flex row wrap>
+          <div flex row wrap class="founders">
             <div v-for="(member, i) in team.members.founders" :key="i" third mb2 fill-height>
               <Member :src="member.src" :title="member.title" :text="member.description"/>
             </div>
@@ -164,12 +162,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media only screen and (max-width: $tablet-breakpoint) {
+  .content {
+    margin-bottom: 0 !important;
+  }
+  .title {
+    padding-bottom: 0;
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
-  .team {
-    margin-top: 40px;
+  .content {
+    margin-bottom: 40px !important;
+  }
+  .founders {
+    margin-bottom: 40px;
   }
 }
 </style>
+
+
 
 
 

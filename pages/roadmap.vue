@@ -4,7 +4,7 @@
 
     <section id="roadmap" mb3>
       <Container>
-        <h2 mb3>Our next goals</h2>
+        <h2 class="title" mb3>Our next goals</h2>
         <ul class="years">
           <li v-for="(year, i) in roadmap" :key="i">
             <h3>{{year.year}}</h3>
@@ -95,7 +95,6 @@ h4 {
 }
 
 h5 {
-  height: 27px;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 12px;
@@ -183,6 +182,11 @@ h5 {
   display: inline-block;
 }
 
+@media only screen and (max-width: $tablet-breakpoint) {
+  .title {
+    margin-bottom: 40px !important;
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
   .quarters > li::after,
   .goals::after,

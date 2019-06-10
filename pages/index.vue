@@ -167,17 +167,6 @@ export default {
   text-align: right;
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
-  #token {
-    margin-top: 40px !important;
-  }
-  .token {
-    margin-bottom: 20px;
-  }
-  .token-desc {
-    margin-bottom: 40px;
-  }
-}
 @media only screen and (max-width: $tablet-breakpoint) {
   .intro {
     padding-bottom: 0;
@@ -187,6 +176,17 @@ export default {
   }
   .token {
     margin-right: 20px;
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  #token {
+    margin-top: 40px !important;
+  }
+  .token {
+    margin-bottom: 20px;
+  }
+  .token-desc {
+    margin-bottom: 40px;
   }
 }
 </style>

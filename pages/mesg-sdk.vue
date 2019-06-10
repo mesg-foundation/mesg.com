@@ -30,7 +30,7 @@
         <h2 mb1>Enabling effortless interoperability</h2>
         <p
           mb2
-          class="text-center"
+          class="text-center description"
         >The MESG SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
@@ -143,6 +143,7 @@ export default {
   }
 };
 </script>
+
 
 
 

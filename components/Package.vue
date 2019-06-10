@@ -80,7 +80,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   max-width: 340px;
 }
@@ -146,5 +146,29 @@ li:last-child {
 
 i {
   max-width: 18px;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .card {
+    max-width: 100%;
+  }
+  hr {
+    max-width: 100%;
+  }
+  i {
+    margin-bottom: 0;
+  }
+  li > p {
+    margin-bottom: 0;
+  }
+  li:last-child {
+    margin-bottom: 40px !important;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
 }
 </style>

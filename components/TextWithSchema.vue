@@ -1,5 +1,5 @@
 <template>
-  <div flex row space-between align-center wrap>
+  <div flex row space-between align-center wrap class="section">
     <div half p3>
       <img :src="src">
     </div>
@@ -45,10 +45,16 @@ export default {
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
   p {
-    margin-bottom: 20px !important;
+    margin-bottom: 0 !important;
   }
   img {
     margin-bottom: 20px;
   }
+}
+.section {
+  margin-bottom: 40px !important;
+}
+.section:last-child {
+  margin-bottom: 0 !important;
 }
 </style>

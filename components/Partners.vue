@@ -25,11 +25,6 @@ li {
   text-align: center;
 }
 @media only screen and (max-width: $mobile-breakpoint) {
-  img {
-    margin-right: 0 !important;
-  }
-}
-@media only screen and (max-width: 414px) {
   img,
   li {
     margin-right: 0 !important;

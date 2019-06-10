@@ -30,6 +30,10 @@
   [row] > *:last-child {
   margin-bottom: 0!important;
   }
+  [row] > * {
+  margin-right:0;
+  margin-bottom: 20px;
+  }
 }
 [row][reverse] > * {
   margin-right: calc(2 * var(--margin));

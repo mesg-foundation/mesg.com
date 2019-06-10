@@ -65,5 +65,11 @@ img {
   i {
     display: none;
   }
+  .preview {
+    margin-bottom: 0;
+  }
+  .content {
+    padding-left: 20px;
+  }
 }
 </style>

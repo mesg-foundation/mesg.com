@@ -231,7 +231,7 @@ button[type="submit"] {
     padding: 0;
   }
   .menu {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
   a.link {
     min-height: auto;
@@ -240,14 +240,10 @@ button[type="submit"] {
   .last {
     padding-bottom: 20px;
   }
-  img {
-    margin-top: 40px;
-  }
   .token {
     margin-bottom: 40px !important;
   }
   .form {
-    min-height: 50px;
     margin-bottom: 20px !important;
   }
   .form button {

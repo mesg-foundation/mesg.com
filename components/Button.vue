@@ -117,16 +117,15 @@ i {
   border: solid 2px var(--purple);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile-breakpoint) {
   a {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: $mobile-only) {
   a,
   button {
     min-height: 50px;
-    font-size: 0.8em;
     padding: 1.2em;
   }
   .btn--primary,

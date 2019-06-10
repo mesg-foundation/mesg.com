@@ -53,7 +53,7 @@
         >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
       </Container>
       <div class="inner-background">
-        <Container flex wrap justify-center>
+        <Container flex mobile-column justify-center>
           <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
         </Container>
       </div>

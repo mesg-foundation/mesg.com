@@ -64,7 +64,7 @@ export default {
     margin-bottom: 40px;
   }
   p {
-    margin-bottom: 20px !important;
+    margin-bottom: 0 !important;
   }
 }
 </style>

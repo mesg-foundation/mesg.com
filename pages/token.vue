@@ -203,6 +203,9 @@ li img {
   .btn--white {
     margin-bottom: 40px !important;
   }
+  .btn--white:last-child {
+    margin-bottom: 0 !important;
+  }
   .exchange {
     margin-bottom: 0 !important;
   }

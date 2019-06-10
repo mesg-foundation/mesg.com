@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 i {
   font-size: 1em;
   font-weight: bold;
@@ -88,17 +88,5 @@ i {
   background: var(--light-background);
   transform: translateY(30%) skewY(-8deg);
   z-index: -1;
-}
-
-@media only screen and (max-width: $mobile-breakpoint) {
-  .links {
-    margin-bottom: 40px;
-  }
-  .link {
-    margin-bottom: 20px;
-  }
-  .content {
-    margin-right: 0;
-  }
 }
 </style>
