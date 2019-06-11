@@ -85,20 +85,18 @@ i {
   padding-left: 0.5em;
 }
 
-.btn--primary:hover,
-.btn--secondary:hover,
-.btn--white:hover,
-.btn--outline:hover {
-  opacity: 0.85;
-  transition: 0.2s ease-in-out;
-}
-
 .btn--primary {
   color: var(--white);
   background-color: var(--purple);
 }
+.btn--primary:hover {
+  background-color: var(--purple-shadow);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
 
 .btn--secondary {
+  position: relative;
   color: var(--purple);
   text-align: left;
   border-radius: 0;
@@ -106,15 +104,40 @@ i {
   padding-right: 0;
   border-bottom: solid 1px var(--purple);
 }
+.btn--secondary::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--purple);
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.btn--secondary:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
 
 .btn--white {
   color: var(--purple);
   background-color: var(--white);
 }
+.btn--white:hover {
+  transition: 0.2s ease;
+  background-color: var(--light-background);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
+}
 
 .btn--outline {
   color: var(--purple);
-  border: solid 2px var(--purple);
+  border: solid 1px var(--purple);
+}
+.btn--outline:hover {
+  transition: 0.2s ease;
+  box-shadow: 0 0 0 1px var(--purple) inset;
 }
 
 @media only screen and (max-width: 768px) {

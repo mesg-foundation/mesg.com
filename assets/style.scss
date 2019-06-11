@@ -1,5 +1,6 @@
 :root {
   --purple: #{$purple};
+  --purple-shadow: #{$purple-shadow};
   --light-purple: #{$light-purple};
   --deep-purple: #{$deep-purple};
   --dark-purple: #{$dark-purple};
@@ -108,10 +109,6 @@ a {
   font-weight: bold;
   color: var(--purple);
   text-decoration: none;
-}
-a:hover {
-  opacity: 0.85;
-  transition: 0.2s ease-in-out;
 }
 
 .text-center {
