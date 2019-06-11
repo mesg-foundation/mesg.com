@@ -12,9 +12,9 @@ export default {
   },
   mixins: [
     page({
-      title: "Oops! Looks like something went wrong",
+      title: "ROOOAAARRR!!!",
       description:
-        "Our best men are taking care of it. Meanwhile click on the button below to go back to Home, let's act like nothing happened."
+        "The page you are looking for does not exist anymore. Hurry up, you shouldn't be here any longer. Go back to safety now!"
     })
   ],
   props: ["error"]

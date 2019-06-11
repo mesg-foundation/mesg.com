@@ -1,7 +1,7 @@
 <template>
   <Header :picture="require('~/assets/404.svg')" :title="title" :description="description">
     <div>
-      <Button :to="links.home" primary>Return to Homepage</Button>
+      <Button :to="links.home" primary mr>MESG Home</Button>
       <span spacer></span>
     </div>
   </Header>
