@@ -84,12 +84,16 @@ module.exports = {
   ],
   generate: {
     routes: [
-      'send-messages-from-a-satellite',
-      'enhance-zapier-workflows',
-      'monitor-erc20-transactions',
-      'replace-subscriptions-with-on-demand-payments',
-      'directly-buy-crypto-with-fiat'
-    ].map(x => `/showcase/${x}`)
+      ...[
+        'send-messages-from-a-satellite',
+        'enhance-zapier-workflows',
+        'monitor-erc20-transactions',
+        'replace-subscriptions-with-on-demand-payments',
+        'directly-buy-crypto-with-fiat',
+        '404'
+      ].map(x => `/showcase/${x}`),
+      '404'
+    ]
   },
   /*
   ** Build configuration
