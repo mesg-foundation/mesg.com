@@ -8,19 +8,11 @@
               <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG">
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
-            <ul flex space-between wrap>
-              <li>
-                <a
-                  v-for="(icon, i) in icons"
-                  :key="i"
-                  :href="icon.href"
-                  target="_blank"
-                  class="icon"
-                >
-                  <i :class="icon.icon" mr1></i>
-                </a>
-              </li>
-            </ul>
+            <div flex space-between wrap>
+              <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
+                <i :class="icon.icon"></i>
+              </a>
+            </div>
           </div>
           <ul flex row mobile-column class="menu">
             <li flex column quarter>
