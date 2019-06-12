@@ -5,47 +5,50 @@
         <nav flex row space-between wrap mobile-column-reverse mb2>
           <div flex column third>
             <nuxt-link :to="links.home">
-              <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG" mb1>
+              <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG">
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
-            <div flex space-between wrap>
-              <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
-                <i :class="icon.icon"></i>
-              </a>
-            </div>
+            <ul flex space-between wrap>
+              <li>
+                <a
+                  v-for="(icon, i) in icons"
+                  :key="i"
+                  :href="icon.href"
+                  target="_blank"
+                  class="icon"
+                >
+                  <i :class="icon.icon" mr1></i>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div flex row mobile-column class="menu">
-            <div flex column quarter>
-              <p class="category" mb1>Products</p>
-              <Button :to="links.engine" class="link" mb1>MESG SDK</Button>
-              <Button :to="links.marketplace" class="link" mb1>MESG Marketplace</Button>
-              <Button :to="links.showcase" class="link" mb1>Showcase</Button>
-              <Button :to="links.faq" class="link last" mb1>FAQ</Button>
-            </div>
-            <div flex column quarter>
-              <p class="category" mb1>Developers</p>
-              <Button :href="externalLinks.getStarted" target="_blank" class="link" mb1>Get started</Button>
-              <Button :href="externalLinks.marketplace" target="_blank" class="link" mb1>Marketplace</Button>
-              <Button
-                :href="externalLinks.documentation"
-                target="_blank"
-                class="link"
-                mb1
-              >Documentation</Button>
-              <Button :href="externalLinks.forum" target="_blank" class="link last" mb1>Forum</Button>
-            </div>
-            <div flex column quarter>
-              <p class="category" mb1>Foundation</p>
-              <Button :to="links.foundation" class="link" mb1>Overview</Button>
-              <Button :to="links.partners" class="link" mb1>Partners</Button>
-              <Button :to="links.roadmap" class="link" mb1>Roadmap</Button>
-              <Button :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</Button>
-            </div>
-            <div flex column quarter>
-              <Button :to="links.token" class="link">Token</Button>
-              <Button :to="links.enterprise" class="link">Enterprise</Button>
-            </div>
-          </div>
+          <ul flex row mobile-column class="menu">
+            <li flex column quarter>
+              <a href="#" class="category" mb1>Products</a>
+              <nuxt-link :to="links.engine" class="link" mb1>MESG SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace" class="link" mb1>MESG Marketplace</nuxt-link>
+              <nuxt-link :to="links.showcase" class="link" mb1>Showcase</nuxt-link>
+              <nuxt-link :to="links.faq" class="link last" mb1>FAQ</nuxt-link>
+            </li>
+            <li flex column quarter>
+              <a href="#" class="category" mb1>Developers</a>
+              <a :href="externalLinks.getStarted" target="_blank" class="link" mb1>Get started</a>
+              <a :href="externalLinks.marketplace" target="_blank" class="link" mb1>Marketplace</a>
+              <a :href="externalLinks.documentation" target="_blank" class="link" mb1>Documentation</a>
+              <a :href="externalLinks.forum" target="_blank" class="link last" mb1>Forum</a>
+            </li>
+            <li flex column quarter>
+              <a href="#" class="category" mb1>Foundation</a>
+              <nuxt-link :to="links.foundation" class="link" mb1>Overview</nuxt-link>
+              <nuxt-link :to="links.partners" class="link" mb1>Partners</nuxt-link>
+              <nuxt-link :to="links.roadmap" class="link" mb1>Roadmap</nuxt-link>
+              <a :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</a>
+            </li>
+            <li flex column quarter>
+              <nuxt-link :to="links.token" class="link">Token</nuxt-link>
+              <nuxt-link :to="links.enterprise" class="link">Enterprise</nuxt-link>
+            </li>
+          </ul>
         </nav>
       </Container>
 
