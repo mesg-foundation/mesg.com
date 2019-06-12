@@ -108,8 +108,8 @@ i {
   margin-left: 0.4em;
   margin-right: 0.4em;
   color: var(--purple);
-  height: 36px;
-  max-width: 36px;
+  height: 50px;
+  max-width: 50px;
   background-color: var(--white);
   border-radius: 100%;
   animation: Bubble 0.2s ease-in;
