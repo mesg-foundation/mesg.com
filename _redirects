@@ -4,3 +4,5 @@ https://mesg.netlify.com/* https://mesg.com/:splat 301!
 
 /engine /mesg-sdk 301!
 /marketplace /mesg-marketplace 301!
+
+* /404.html 404

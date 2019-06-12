@@ -145,6 +145,13 @@ export default {
     Discover,
     GetStarted
   },
+  asyncData({ store, params, error }) {
+    const usecase = store.getters.usecases.find(x => x.id === params.id);
+    if (!usecase) {
+      return error({ statusCode: 404, message: "Usecase not found" });
+    }
+    return { usecase };
+  },
   mixins: [
     page(x => ({
       title: x.usecase.title,
@@ -162,9 +169,6 @@ export default {
       usecases: "usecases",
       externalLinks: "externalLinks"
     }),
-    usecase() {
-      return this.usecases.find(x => x.id === this.$route.params.id);
-    },
     nextUsecases() {
       const index = this.usecases.findIndex(x => x.id === this.usecase.id) + 1;
       const end = index + 3;
