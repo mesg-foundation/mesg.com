@@ -232,16 +232,19 @@ export const getters = {
             src: require("~/assets/team/Anthony.jpg"),
             title: "Anthony Estebe",
             description: "CEO, Co-founder",
+            linkedin: "https://www.linkedin.com/in/anthony-estebe-aab18831/"
           },
           {
             src: require("~/assets/team/Nicolas.jpg"),
             title: "Nicolas Mahe",
             description: "CTO, Co-founder",
+            linkedin: "https://www.linkedin.com/in/nicolas-mahe/"
           },
           {
             src: require("~/assets/team/Alexis.jpg"),
             title: "Alexis Sirkia",
             description: "Co-founder",
+            linkedin: "https://www.linkedin.com/in/sirkia/"
           }
         ],
         other: [
@@ -249,31 +252,37 @@ export const getters = {
             src: require("~/assets/team/Will.jpg"),
             title: "Will Morgan",
             description: "Brand Manager",
+            linkedin: "https://www.linkedin.com/in/will-morgan-02a18326/"
           },
           {
             src: require("~/assets/team/Emmanuel.jpg"),
             title: "Emmanuel Drouin",
             description: "UI / UX Designer",
+            linkedin: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/"
           },
           {
             src: require("~/assets/team/Hubert.jpg"),
             title: "Hubert Krauze",
             description: "Core Developer",
+            linkedin: "https://www.linkedin.com/in/hubert-krauze-67a6389b/"
           },
           {
             src: require("~/assets/team/Ilker.jpg"),
             title: "İlker Göktuğ Öztürk",
             description: "Core Developer",
+            linkedin: "https://www.linkedin.com/in/ilker-goktug-ozturk/"
           },
           {
             src: require("~/assets/team/Wayne.jpg"),
             title: "Wayne Skeen",
             description: "Advisor",
+            linkedin: "https://www.linkedin.com/in/wayneskeen/"
           },
           {
             src: require("~/assets/team/Janie.jpg"),
             title: "Janie Lim",
             description: "Evangelist",
+            linkedin: "https://www.linkedin.com/in/janie-lim-135968b5/"
           }
         ]
       },
