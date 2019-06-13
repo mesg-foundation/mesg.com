@@ -58,7 +58,7 @@
               <a :href="externalLinks.blog" target="_blank" class="link-secondary last" mb1>Blog</a>
             </li>
             <li flex column quarter>
-              <nuxt-link :to="links.token" class="link-secondary">Token</nuxt-link>
+              <nuxt-link :to="links.token" class="link-secondary last">Token</nuxt-link>
               <nuxt-link :to="links.enterprise" class="link-secondary">Enterprise</nuxt-link>
             </li>
           </ul>

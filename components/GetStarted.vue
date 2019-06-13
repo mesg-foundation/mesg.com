@@ -97,7 +97,7 @@ i {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .link {
+  .link-secondary {
     margin-bottom: 20px;
   }
   .content {

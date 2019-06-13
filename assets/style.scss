@@ -158,6 +158,9 @@ hr {
   .description {
     margin-bottom: 0 !important;
   }
+  .separator {
+    margin-bottom:40px!important;
+  }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   header .btn--primary {

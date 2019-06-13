@@ -66,10 +66,9 @@
       </Container>
     </section>
 
-    <hr class="separator" mb3>
-
     <section id="token">
       <Container>
+        <hr class="separator" mb3>
         <div flex row space-between align-center wrap>
           <div half>
             <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and SDK">

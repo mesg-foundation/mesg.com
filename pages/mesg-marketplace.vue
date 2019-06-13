@@ -65,10 +65,9 @@
       </Container>
     </section>
 
-    <hr mb3>
-
     <section id="token">
       <Container>
+        <hr class="separator" mb3>
         <div flex row space-between align-center wrap>
           <div half>
             <img
