@@ -41,8 +41,21 @@ export default {
   border-bottom-color: var(--purple);
   box-shadow: none;
 }
+.card.bordered:hover {
+  transition: 0.2s ease;
+  border: solid 1px var(--purple);
+  border-bottom-width: 6px;
+  border-bottom-color: var(--purple);
+  box-shadow: 0 0 0 1px var(--purple) inset;
+}
 
 .card.bordered.thin {
-  border: solid 1px var(--light-purple);
+  border: solid 2px transparent;
+  box-shadow: 0 0 0 1px var(--light-purple) inset;
+}
+.card.bordered.thin:hover {
+  transition: 0.2s ease;
+  border-color: var(--purple);
+  box-shadow: none;
 }
 </style>

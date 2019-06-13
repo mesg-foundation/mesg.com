@@ -14,9 +14,9 @@
             v-for="exchange in exchanges"
             :key="exchange.id"
             :href="exchange.to"
+            class="logo link-secondary"
             target="_blank"
             third
-            class="logo"
           >
             <img :src="exchange.src" :alt="exchange.id">
           </a>

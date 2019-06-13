@@ -9,7 +9,13 @@
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
             <div flex space-between wrap>
-              <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
+              <a
+                v-for="(icon, i) in icons"
+                :key="i"
+                :href="icon.href"
+                target="_blank"
+                class="icon link-secondary"
+              >
                 <i :class="icon.icon"></i>
               </a>
             </div>
@@ -17,28 +23,43 @@
           <ul flex row mobile-column class="menu">
             <li flex column quarter>
               <a href="#" class="category" mb1>Products</a>
-              <nuxt-link :to="links.engine" class="link" mb1>MESG SDK</nuxt-link>
-              <nuxt-link :to="links.marketplace" class="link" mb1>MESG Marketplace</nuxt-link>
-              <nuxt-link :to="links.showcase" class="link" mb1>Showcase</nuxt-link>
-              <nuxt-link :to="links.faq" class="link last" mb1>FAQ</nuxt-link>
+              <nuxt-link :to="links.engine" class="link-secondary" mb1>MESG SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace" class="link-secondary" mb1>MESG Marketplace</nuxt-link>
+              <nuxt-link :to="links.showcase" class="link-secondary" mb1>Showcase</nuxt-link>
+              <nuxt-link :to="links.faq" class="link-secondary last" mb1>FAQ</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
-              <a :href="externalLinks.getStarted" target="_blank" class="link" mb1>Get started</a>
-              <a :href="externalLinks.marketplace" target="_blank" class="link" mb1>Marketplace</a>
-              <a :href="externalLinks.documentation" target="_blank" class="link" mb1>Documentation</a>
-              <a :href="externalLinks.forum" target="_blank" class="link last" mb1>Forum</a>
+              <a
+                :href="externalLinks.getStarted"
+                target="_blank"
+                class="link-secondary"
+                mb1
+              >Get started</a>
+              <a
+                :href="externalLinks.marketplace"
+                target="_blank"
+                class="link-secondary"
+                mb1
+              >Marketplace</a>
+              <a
+                :href="externalLinks.documentation"
+                target="_blank"
+                class="link-secondary"
+                mb1
+              >Documentation</a>
+              <a :href="externalLinks.forum" target="_blank" class="link-secondary last" mb1>Forum</a>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Foundation</a>
-              <nuxt-link :to="links.foundation" class="link" mb1>Overview</nuxt-link>
-              <nuxt-link :to="links.partners" class="link" mb1>Partners</nuxt-link>
-              <nuxt-link :to="links.roadmap" class="link" mb1>Roadmap</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</a>
+              <nuxt-link :to="links.foundation" class="link-secondary" mb1>Overview</nuxt-link>
+              <nuxt-link :to="links.partners" class="link-secondary" mb1>Partners</nuxt-link>
+              <nuxt-link :to="links.roadmap" class="link-secondary" mb1>Roadmap</nuxt-link>
+              <a :href="externalLinks.blog" target="_blank" class="link-secondary last" mb1>Blog</a>
             </li>
             <li flex column quarter>
-              <nuxt-link :to="links.token" class="link last">Token</nuxt-link>
-              <nuxt-link :to="links.enterprise" class="link">Enterprise</nuxt-link>
+              <nuxt-link :to="links.token" class="link-secondary">Token</nuxt-link>
+              <nuxt-link :to="links.enterprise" class="link-secondary">Enterprise</nuxt-link>
             </li>
           </ul>
         </nav>
@@ -164,7 +185,7 @@ i {
   color: var(--white);
 }
 
-.link {
+.link-secondary {
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
@@ -182,6 +203,10 @@ hr {
 
 img {
   height: 40px;
+}
+img:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
 }
 
 nav {

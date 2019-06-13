@@ -57,7 +57,6 @@ img {
   width: 140px;
   height: 100px;
   overflow: hidden;
-  border: solid 1px var(--light-purple);
   background-color: var(--light-purple);
 }
 
