@@ -79,12 +79,22 @@
         <Container>
           <div flex row wrap class="founders">
             <div v-for="(member, i) in team.members.founders" :key="i" third mb2 fill-height>
-              <Member :src="member.src" :title="member.title" :text="member.description"/>
+              <Member
+                :src="member.src"
+                :to="member.linkedin"
+                :title="member.title"
+                :text="member.description"
+              />
             </div>
           </div>
           <div class="team" flex row wrap>
             <div v-for="(member, i) in team.members.other" :key="i" quarter mb2 fill-height>
-              <Member :src="member.src" :title="member.title" :text="member.description"/>
+              <Member
+                :src="member.src"
+                :to="member.linkedin"
+                :title="member.title"
+                :text="member.description"
+              />
             </div>
           </div>
         </Container>
