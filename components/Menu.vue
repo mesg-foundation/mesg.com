@@ -88,12 +88,21 @@ img {
   max-width: 153px;
   max-height: 40px;
 }
+img:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
+}
 .enterprise {
   width: 100%;
 }
 li {
   height: 80px;
 }
+.token:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
+}
+
 li > a:not(.btn--primary) {
   line-height: 80px;
   display: block;
@@ -152,11 +161,15 @@ li > a:not(.btn--primary) {
     color: var(--purple);
     opacity: 1;
     font-weight: 600;
-    transition: 0.1s ease-in;
+    transition: 0.1s ease;
   }
   .drop-down:hover .sub-menu {
     opacity: 1;
     display: block;
+  }
+  .drop-down:hover .title {
+    opacity: 0.7;
+    transition: 0.1s ease;
   }
   @keyframes appear-in {
     from {

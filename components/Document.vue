@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped>
-card {
+.card {
   width: 490px;
   max-width: 100%;
   height: 100px;
@@ -58,7 +58,6 @@ img {
   width: 140px;
   height: 100px;
   overflow: hidden;
-  border: solid 1px var(--light-purple);
   background-color: var(--light-purple);
 }
 </style>
