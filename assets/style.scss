@@ -110,6 +110,14 @@ a {
   color: var(--purple);
   text-decoration: none;
 }
+.link:hover {
+  text-decoration: underline;
+  transition: 0.1s ease;
+}
+.link-secondary:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
+}
 
 .text-center {
   text-align: center;

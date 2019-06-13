@@ -14,6 +14,7 @@
             v-for="exchange in exchanges"
             :key="exchange.id"
             :href="exchange.to"
+            class="link-secondary"
             target="_blank"
             third
           >

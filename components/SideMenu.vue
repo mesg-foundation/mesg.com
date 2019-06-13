@@ -2,7 +2,12 @@
   <div>
     <nav flex column class="sidebar">
       <p mb1>All categories</p>
-      <a v-for="question in questions" :key="question.id" :href="`#${question.id}`">
+      <a
+        v-for="question in questions"
+        :key="question.id"
+        :href="`#${question.id}`"
+        class="link-secondary"
+      >
         <i class="far fa-chevron-right"></i>
         {{question.category}}
       </a>

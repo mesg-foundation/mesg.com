@@ -88,6 +88,10 @@ img {
   max-width: 153px;
   max-height: 40px;
 }
+img:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
+}
 .enterprise {
   width: 100%;
 }

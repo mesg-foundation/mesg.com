@@ -23,6 +23,7 @@
               * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
               <a
                 href="https://github.com/mesg-foundation/"
+                class="link"
                 target="_blank"
               >GitHub</a> and other resources for additional details.
             </p>

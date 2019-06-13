@@ -7,7 +7,13 @@
             <h3 mb1>{{title}}</h3>
             <p mb1>{{description}}</p>
             <nav flex row wrap class="links">
-              <a v-for="(link, i) in links" :key="i" :href="link.to" target="_blank" class="link">
+              <a
+                v-for="(link, i) in links"
+                :key="i"
+                :href="link.to"
+                target="_blank"
+                class="link-secondary"
+              >
                 <i v-if="link.icon" :class="link.icon"></i>
                 {{link.title}}
               </a>
