@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
-      <div>
+      <div class="btn-center">
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
       </div>
@@ -57,7 +57,7 @@
         </div>
         <Card p2 id="token">
           <div flex row mobile-column align-center>
-            <div flex mobile-column>
+            <div flex mobile-column class="content">
               <div flex column quarter class="token">
                 <img src="~/assets/token/MESG-token.svg" alt="token">
               </div>
@@ -182,11 +182,11 @@ export default {
   #token {
     margin-top: 40px !important;
   }
+  #token .content {
+    margin-bottom: 40px;
+  }
   .token {
     margin-bottom: 20px;
-  }
-  .token-desc {
-    margin-bottom: 40px;
   }
 }
 </style>

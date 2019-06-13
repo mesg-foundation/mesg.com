@@ -64,22 +64,22 @@
       <Container flex column align-center mb3>
         <h3 mb1>More information</h3>
         <p class="text-center" mb2>{{usecase.information}}</p>
-        <div flex row wrap mobile-column>
+        <div class="button" mobile-column>
           <Button
             secondary
             v-for="(resource, i) in usecase.resources"
             :key="i"
             :href="resource.to"
             target="_blank"
+            mr2
           >{{resource.title}}</Button>
         </div>
       </Container>
     </section>
 
-    <hr mb3>
-
     <section id="title-next">
       <Container>
+        <hr mb3>
         <h2 mb2>More use cases</h2>
       </Container>
     </section>
@@ -262,8 +262,14 @@ li.opportunitie:last-child {
   #title-next .container {
     padding-bottom: 0 !important;
   }
+  hr {
+    margin-bottom: 40px !important;
+  }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
+  .intro {
+    padding-bottom: 0;
+  }
   #usecase-description iframe,
   img {
     margin-bottom: 20px;
@@ -280,6 +286,12 @@ li.opportunitie:last-child {
   }
   #next img {
     margin-bottom: 0;
+  }
+  #information .button {
+    text-align: center;
+  }
+  #information .btn--secondary:last-child {
+    margin-bottom: 20px !important;
   }
 }
 </style>

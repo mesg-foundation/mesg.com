@@ -13,7 +13,7 @@
               </a>
             </nav>
           </div>
-          <div flex column third>
+          <div flex column third class="button">
             <Button primary :href="externalLinks.getStarted" target="_blank">Get started</Button>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 i {
   font-size: 1em;
   font-weight: bold;
@@ -88,5 +88,14 @@ i {
   background: var(--light-background);
   transform: translateY(30%) skewY(-8deg);
   z-index: -1;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .link {
+    margin-bottom: 20px;
+  }
+  .content {
+    margin-bottom: 20px;
+  }
 }
 </style>

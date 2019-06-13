@@ -161,9 +161,13 @@ hr {
   header .btn--secondary {
     margin-bottom: 20px;
   }
-}
-@media only screen and (max-width: 414px) {
-  header .btn--primary, .btn--secondary {
-    margin-right: 0 !important;
+  header .btn-center {
+    text-align: center;
+  }
+  #usecase .button {
+    margin-top:20px;
+  }
+  #faq .button {
+    margin-top:20px;
   }
 }

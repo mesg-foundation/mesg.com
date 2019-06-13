@@ -181,8 +181,14 @@ export default {
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
+  #intro .container {
+    padding-bottom: 0;
+  }
   .content {
     margin-bottom: 40px !important;
+  }
+  .content:last-child {
+    margin-bottom: 0 !important;
   }
   .founders {
     margin-bottom: 40px;

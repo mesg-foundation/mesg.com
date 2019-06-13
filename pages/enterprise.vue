@@ -45,7 +45,7 @@
     </section>
 
     <section id="packages" mb4>
-      <Container>
+      <Container class="intro">
         <h2 mb1>Our packages</h2>
         <p
           mb3
@@ -78,7 +78,7 @@
             :text="faq.description"
           />
         </div>
-        <div class="text-center">
+        <div class="text-center button">
           <Button secondary :to="links.faq">Access the FAQ</Button>
         </div>
       </Container>
@@ -138,4 +138,5 @@ export default {
   })
 };
 </script>
+
 

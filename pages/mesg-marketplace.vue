@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div>
+      <div class="btn-center">
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :href="externalLinks.marketplace" target="_blank" secondary>The Marketplace</Button>
       </div>
@@ -59,7 +59,7 @@
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center button">
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>

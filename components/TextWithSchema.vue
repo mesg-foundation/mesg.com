@@ -52,7 +52,7 @@ export default {
   }
 }
 .section {
-  margin-bottom: 40px !important;
+  margin-bottom: 80px !important;
 }
 .section:last-child {
   margin-bottom: 0 !important;

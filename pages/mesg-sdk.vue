@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div>
+      <div class="btn-center">
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
       </div>
@@ -26,7 +26,7 @@
     </section>
 
     <section id="interoperability" mb3>
-      <Container>
+      <Container class="intro">
         <h2 mb1>Enabling effortless interoperability</h2>
         <p
           mb2
@@ -60,7 +60,7 @@
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center button">
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
@@ -143,6 +143,7 @@ export default {
   }
 };
 </script>
+
 
 
 

@@ -37,7 +37,7 @@
               <a :href="externalLinks.blog" target="_blank" class="link last" mb1>Blog</a>
             </li>
             <li flex column quarter>
-              <nuxt-link :to="links.token" class="link">Token</nuxt-link>
+              <nuxt-link :to="links.token" class="link last">Token</nuxt-link>
               <nuxt-link :to="links.enterprise" class="link">Enterprise</nuxt-link>
             </li>
           </ul>
@@ -151,10 +151,6 @@ export default {
   display: inline;
 }
 
-span {
-  color: var(--deep-purple);
-}
-
 i {
   margin-right: 0;
 }
@@ -235,8 +231,8 @@ button[type="submit"] {
   .last {
     padding-bottom: 20px;
   }
-  .token {
-    margin-bottom: 40px !important;
+  img {
+    margin-bottom: 20px;
   }
   .form {
     margin-bottom: 20px !important;
