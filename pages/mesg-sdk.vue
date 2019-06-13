@@ -143,6 +143,14 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  #interoperability .intro {
+    padding-bottom: 0;
+  }
+}
+</style>
+
 
 
 

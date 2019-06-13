@@ -25,7 +25,7 @@
     </section>
 
     <section id="network-of-services" mb3>
-      <Container>
+      <Container class="intro">
         <h2 mb1>A decentralized network of services</h2>
         <p
           mb2
@@ -142,4 +142,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  #network-of-services .intro {
+    padding-bottom: 0;
+  }
+}
+</style>
 
