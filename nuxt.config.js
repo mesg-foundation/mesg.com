@@ -54,10 +54,8 @@ module.exports = {
     process.env.GA_ID ? ['@nuxtjs/google-analytics', {
       id: process.env.GA_ID
     }] : null,
-    process.env.GA_ID ? ['@nuxtjs/google-tag-manager', {
-      id: process.env.GA_ID,
-      layer: 'dataLayer',
-      pageTracking: true
+    process.env.GTM_ID ? ['@nuxtjs/google-tag-manager', {
+      id: process.env.GTM_ID
     }] : null
   ].filter(x => x),
   router: {
