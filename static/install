@@ -1,59 +1,19 @@
 #!/bin/bash
 
-command_exists() {
-	command -v "$@" > /dev/null 2>&1
-}
-
-get_swarm_state() {
-  echo $(docker info --format  '{{.Swarm.LocalNodeState}}')
-}
-
-if command_exists docker; then
-  version=$(docker -v)
-  echo "Docker already installed, using $version"
-else
-  echo "Installing Docker..."
-  bash <(curl -fsSL https://get.docker.com)
-  sudo usermod -aG docker $(whoami)
-fi
-
-system=$(uname -s | tr A-Z a-z)
-machine=$(uname -m)
-if [ $machine == "x86_64" ]; then
-  machine="amd64"
-else
-  machine="386"
-fi
-
-echo "Installing MESG..."
-link=$(curl -sL https://api.github.com/repos/mesg-foundation/engine/releases/latest | grep "browser_download_url.*$system.*$machine" | cut -d : -f 2,3 | tr -d \")
-
-mesgbin="/usr/local/bin/mesg-core"
-
-sudo curl --progress -L $link -o $mesgbin
-sudo chmod +x $mesgbin
-echo "Done"
-
-if [[ $(get_swarm_state) != "active" ]]; then
-  docker swarm init
-fi
-
-# check if swarm initialized without error
-if [[ $(get_swarm_state) != "active" ]]; then
-  echo "It seems that docker swarm is not active"
-	echo "Please init docker swarm with the following command:"
-  echo "docker swarm init"
-  echo "And start mesg by executing:"
-	echo "mesg-core start"
-	exit 1
-fi
-
-if [[ ! -S /var/run/docker.sock ]]; then
-  echo "It seems that docker daemon is not running"
-	echo "Please start docker, and then execute:"
-	echo "mesg-core start"
-	exit 1
-fi
-
-mesg-core stop
-mesg-core start
+echo
+echo "███╗   ███╗███████╗███████╗ ██████╗ "
+echo "████╗ ████║██╔════╝██╔════╝██╔════╝ "
+echo "██╔████╔██║█████╗  ███████╗██║  ███╗"
+echo "██║╚██╔╝██║██╔══╝  ╚════██║██║   ██║"
+echo "██║ ╚═╝ ██║███████╗███████║╚██████╔╝"
+echo "╚═╝     ╚═╝╚══════╝╚══════╝ ╚═════╝ "
+echo
+echo "Website:        https://mesg.com"
+echo "Forum:          https://forum.mesg.com"
+echo "Documentation:  https://docs.mesg.com"
+echo "Github:         https://github.com/mesg-foundation"
+echo "Marketplace:    https://marketplace.mesg.com"
+echo
+echo "Installation:"
+echo "npm install -g mesg-cli"
+echo
