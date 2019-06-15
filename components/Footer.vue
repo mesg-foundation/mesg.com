@@ -58,7 +58,7 @@
               <a :href="externalLinks.blog" target="_blank" class="link-secondary last" mb1>Blog</a>
             </li>
             <li flex column quarter>
-              <nuxt-link :to="links.token" class="link-secondary">Token</nuxt-link>
+              <nuxt-link :to="links.token" class="link-secondary last">Token</nuxt-link>
               <nuxt-link :to="links.enterprise" class="link-secondary">Enterprise</nuxt-link>
             </li>
           </ul>
@@ -172,10 +172,6 @@ export default {
   display: inline;
 }
 
-span {
-  color: var(--deep-purple);
-}
-
 i {
   margin-right: 0;
 }
@@ -251,13 +247,20 @@ button[type="submit"] {
     padding: 0;
   }
   .menu {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
+  }
+  a.link {
+    min-height: auto;
+    margin-bottom: 0;
   }
   .last {
     padding-bottom: 20px;
   }
-  .form {
+  img {
     margin-bottom: 20px;
+  }
+  .form {
+    margin-bottom: 20px !important;
   }
   .form button {
     position: absolute;

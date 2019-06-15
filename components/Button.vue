@@ -59,7 +59,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a,
 button {
   border-radius: 3px;
@@ -139,15 +139,21 @@ i {
   box-shadow: 0 0 0 1px var(--purple) inset;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile-breakpoint) {
   a {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: $mobile-only) {
   a,
   button {
-    font-size: 0.8em;
+    min-height: 50px;
+    padding: 1.2em;
+  }
+  .btn--primary,
+  .btn--outline,
+  .btn--white {
+    width: 100%;
   }
 }
 </style>

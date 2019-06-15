@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div>
+      <div class="btn-center">
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
       </div>
@@ -20,16 +20,17 @@
           :title="feature.title"
           :text="feature.description"
           third
+          class="feature"
         />
       </Container>
     </section>
 
     <section id="interoperability" mb3>
-      <Container>
+      <Container class="intro">
         <h2 mb1>Enabling effortless interoperability</h2>
         <p
           mb2
-          class="text-center"
+          class="text-center description"
         >The MESG SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
@@ -59,16 +60,15 @@
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center button">
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
     </section>
 
-    <hr mb3>
-
     <section id="token">
       <Container>
+        <hr class="separator" mb3>
         <div flex row space-between align-center wrap>
           <div half>
             <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and SDK">
@@ -142,5 +142,18 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  #interoperability .intro {
+    padding-bottom: 0;
+  }
+}
+</style>
+
+
+
+
+
 
 

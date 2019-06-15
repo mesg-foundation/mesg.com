@@ -63,8 +63,8 @@ export default {
   .item {
     margin-bottom: 40px;
   }
-  .container {
-    padding-bottom: 0;
+  p {
+    margin-bottom: 0 !important;
   }
 }
 </style>

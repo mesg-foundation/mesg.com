@@ -153,3 +153,29 @@ hr {
   max-width: var(--small-width);
   margin: auto;
 }
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .description {
+    margin-bottom: 0 !important;
+  }
+  .separator {
+    margin-bottom:40px!important;
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  header .btn--primary {
+    margin-bottom: 20px;
+  }
+  header .btn--secondary {
+    margin-bottom: 20px;
+  }
+  header .btn-center {
+    text-align: center;
+  }
+  #usecase .button {
+    margin-top:20px;
+  }
+  #faq .button {
+    margin-top:20px;
+  }
+}

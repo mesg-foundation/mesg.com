@@ -46,7 +46,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 a {
   position: relative;
 }
@@ -63,5 +63,11 @@ i {
   font-size: 1em;
   font-weight: bold;
   text-align: right;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  a:last-child {
+    margin-bottom: 40px !important;
+  }
 }
 </style>

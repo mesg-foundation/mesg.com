@@ -14,7 +14,7 @@
             v-for="exchange in exchanges"
             :key="exchange.id"
             :href="exchange.to"
-            class="link-secondary"
+            class="logo link-secondary"
             target="_blank"
             third
           >
@@ -99,7 +99,7 @@
             :text="faq.description"
           />
         </div>
-        <div class="text-center">
+        <div class="text-center button">
           <Button secondary :to="links.faq">Access the FAQ</Button>
         </div>
       </Container>
@@ -108,7 +108,7 @@
     <News :articles="articles"/>
 
     <CallToAction mb3 title="Buy and trade MESG Token on">
-      <div flex row wrap mb2>
+      <div flex row wrap mb2 class="exchange">
         <Button
           white
           v-for="exchange in exchanges"
@@ -182,7 +182,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
   list-style: none;
 }
@@ -197,5 +197,28 @@ a.btn--white img {
 }
 li img {
   vertical-align: middle;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .btn--white {
+    margin-bottom: 40px !important;
+  }
+  .btn--white:last-child {
+    margin-bottom: 0 !important;
+  }
+  .exchange {
+    margin-bottom: 0 !important;
+  }
+  .logo {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .logo {
+    width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+    min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+    max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+  }
 }
 </style>

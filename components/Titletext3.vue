@@ -1,5 +1,5 @@
 <template>
-  <div mb2>
+  <div class="content" mb2>
     <h3 mb1>{{ title }}</h3>
     <p v-html="text"></p>
   </div>
@@ -18,3 +18,4 @@ export default {
   }
 };
 </script>
+

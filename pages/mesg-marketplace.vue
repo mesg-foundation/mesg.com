@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div>
+      <div class="btn-center">
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :href="externalLinks.marketplace" target="_blank" secondary>The Marketplace</Button>
       </div>
@@ -25,11 +25,11 @@
     </section>
 
     <section id="network-of-services" mb3>
-      <Container>
+      <Container class="intro">
         <h2 mb1>A decentralized network of services</h2>
         <p
           mb2
-          class="text-center"
+          class="text-center description"
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
       </Container>
       <div class="inner-background">
@@ -59,16 +59,15 @@
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center button">
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
     </section>
 
-    <hr mb3>
-
     <section id="token">
       <Container>
+        <hr class="separator" mb3>
         <div flex row space-between align-center wrap>
           <div half>
             <img
@@ -143,3 +142,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  #network-of-services .intro {
+    padding-bottom: 0;
+  }
+}
+</style>
+

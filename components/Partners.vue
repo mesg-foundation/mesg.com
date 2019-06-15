@@ -25,8 +25,12 @@ li {
   text-align: center;
 }
 @media only screen and (max-width: $mobile-breakpoint) {
-  img {
+  img,
+  li {
     margin-right: 0 !important;
+  }
+  li {
+    padding: 10px;
   }
 }
 </style>

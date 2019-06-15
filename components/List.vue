@@ -14,11 +14,11 @@ export default {
       type: Array,
       required: true
     }
-  },
+  }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
   list-style: none;
 }

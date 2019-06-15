@@ -22,10 +22,9 @@
       </Container>
     </section>
 
-    <hr mb3>
-
     <section id="partners" mb3>
-      <Container>
+      <Container class="title">
+        <hr class="separator" mb3>
         <h2 mb3>Our trusted partners</h2>
       </Container>
       <Container>
@@ -35,6 +34,7 @@
           v-bind="partner"
           :reverse="i % 2 === 1"
           mb3
+          class="partner"
         />
       </Container>
     </section>
@@ -89,3 +89,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $tablet-breakpoint) {
+  #partners .title {
+    padding-top: 0 !important;
+  }
+}
+</style>
+
+
+

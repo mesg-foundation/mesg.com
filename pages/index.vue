@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
-      <div>
+      <div class="btn-center">
         <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
         <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
       </div>
@@ -57,9 +57,9 @@
         </div>
         <Card p2 id="token">
           <div flex row mobile-column align-center>
-            <div flex mobile-column>
-              <div flex column quarter>
-                <img src="~/assets/token/MESG-token.svg" alt="token" class="token">
+            <div flex mobile-column class="content">
+              <div flex column quarter class="token">
+                <img src="~/assets/token/MESG-token.svg" alt="token">
               </div>
               <div flex column>
                 <h3 mb1>Build services, earn tokens</h3>
@@ -167,7 +167,7 @@ export default {
   text-align: right;
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $tablet-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
@@ -175,10 +175,18 @@ export default {
     margin-bottom: 0 !important;
   }
   .token {
-    margin-bottom: 20px;
+    margin-right: 20px;
   }
-  .token-desc {
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  #token {
+    margin-top: 40px !important;
+  }
+  #token .content {
     margin-bottom: 40px;
+  }
+  .token {
+    margin-bottom: 20px;
   }
 }
 </style>

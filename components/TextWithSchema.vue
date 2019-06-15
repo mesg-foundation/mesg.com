@@ -1,9 +1,9 @@
 <template>
-  <div flex row space-between align-center wrap>
+  <div flex row space-between align-center wrap class="section">
     <div half p3>
       <img :src="src">
     </div>
-    <div half>
+    <div class="content" half>
       <h3 mb1>{{ title }}</h3>
       <p v-if="description" mb2 v-html="description"></p>
       <slot mb2></slot>
@@ -41,3 +41,20 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  p {
+    margin-bottom: 0 !important;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+}
+.section {
+  margin-bottom: 80px !important;
+}
+.section:last-child {
+  margin-bottom: 0 !important;
+}
+</style>

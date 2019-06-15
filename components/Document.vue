@@ -29,9 +29,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
-  width: 490px;
   max-width: 100%;
   height: 100px;
   max-height: 100%;
@@ -59,5 +58,17 @@ img {
   height: 100px;
   overflow: hidden;
   background-color: var(--light-purple);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  i {
+    display: none;
+  }
+  .preview {
+    margin-bottom: 0;
+  }
+  .content {
+    padding-left: 20px;
+  }
 }
 </style>

@@ -5,7 +5,7 @@
     <section id="usecase-intro">
       <Container flex column align-center class="intro">
         <h2 mb1>{{ usecase.technology }}</h2>
-        <p mb2 class="text-center product-desc">{{ usecase.paragraphe }}</p>
+        <p mb2 class="text-center product-desc description">{{ usecase.paragraphe }}</p>
       </Container>
       <Container mb3>
         <div flex row space-between align-center wrap mb3>
@@ -64,22 +64,22 @@
       <Container flex column align-center mb3>
         <h3 mb1>More information</h3>
         <p class="text-center" mb2>{{usecase.information}}</p>
-        <div row wrap>
+        <div class="button" flex row mobile-column>
           <Button
             secondary
             v-for="(resource, i) in usecase.resources"
             :key="i"
             :href="resource.to"
             target="_blank"
+            mr2
           >{{resource.title}}</Button>
         </div>
       </Container>
     </section>
 
-    <hr mb3>
-
     <section id="title-next">
       <Container>
+        <hr class="separator" mb3>
         <h2 mb2>More use cases</h2>
       </Container>
     </section>
@@ -186,9 +186,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  margin: 12px;
-}
 ul {
   list-style: none;
 }
@@ -258,13 +255,45 @@ li.opportunitie:last-child {
   text-align: right;
 }
 
+@media only screen and (max-width: $tablet-breakpoint) {
+  #title-next h2 {
+    margin-bottom: 0 !important;
+  }
+  #title-next .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
+  .intro {
+    padding-bottom: 0;
+  }
+  #usecase-description iframe,
+  img {
+    margin-bottom: 20px;
+  }
+  #usecase-description ul:last-child {
+    margin-bottom: 0 !important;
+  }
   .companies li {
     margin-right: 0 !important;
     margin-bottom: 20px;
   }
-  .companies li:last-child {
+  .companies li:last-child img:last-child {
     margin-bottom: 0;
+  }
+  #next img {
+    margin-bottom: 0;
+  }
+  #information a {
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  #information p {
+    margin-bottom: 20px !important;
+  }
+  #information .container {
+    margin-bottom: 20px !important;
   }
 }
 </style>

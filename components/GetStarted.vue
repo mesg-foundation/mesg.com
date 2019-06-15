@@ -3,7 +3,7 @@
     <Container>
       <Card p2>
         <div flex row align-center space-between mobile-column>
-          <div flex column>
+          <div class="content" flex column>
             <h3 mb1>{{title}}</h3>
             <p mb1>{{description}}</p>
             <nav flex row wrap class="links">
@@ -19,7 +19,7 @@
               </a>
             </nav>
           </div>
-          <div flex column third>
+          <div flex column third class="button">
             <Button primary :href="externalLinks.getStarted" target="_blank">Get started</Button>
           </div>
         </div>
@@ -97,10 +97,10 @@ i {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .links {
-    margin-bottom: 40px;
+  .link-secondary {
+    margin-bottom: 20px;
   }
-  .link {
+  .content {
     margin-bottom: 20px;
   }
 }

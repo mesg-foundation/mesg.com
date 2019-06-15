@@ -53,8 +53,8 @@ export default {
   background: var(--light-purple);
   position: relative;
   z-index: 1;
-  padding-top: calc(3 * var(--margin));
-  padding-bottom: calc(3 * var(--margin));
+  padding-top: calc(4 * var(--margin));
+  padding-bottom: calc(4 * var(--margin));
 }
 
 .primary-call-to-action::after {
@@ -83,11 +83,17 @@ h3 {
 p {
   color: var(--white);
 }
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $tablet-breakpoint) {
   .primary-call-to-action {
     padding: 40px;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .primary-call-to-action {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
   }
 }
 </style>
