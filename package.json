@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "GA_ID=UA-117583862-2 nuxt build",
+    "build": "GA_ID=UA-117583862-2 GTM_ID=GTM-N7D8M2M nuxt build",
     "start": "nuxt start",
-    "generate": "GA_ID=UA-117583862-2 nuxt generate && cp _redirects dist",
+    "generate": "GA_ID=UA-117583862-2 GTM_ID=GTM-N7D8M2M nuxt generate && cp _redirects dist",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "styleguide": "vue-styleguidist server",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/google-tag-manager": "^2.1.1",
+    "@nuxtjs/google-tag-manager": "^2.2.0",
     "@nuxtjs/pwa": "^2.5.0",
     "@nuxtjs/sitemap": "^0.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
