@@ -522,6 +522,44 @@ export const getters = {
   usecases(_, { links }) {
     return [
       {
+        id: "plasma-exit-challenge",
+        to: `${links.showcase}/plasma-exit-challenge`,
+        logos: [
+          require("~/assets/showcase/opennode.svg"),
+          require("~/assets/showcase/blockstream.svg")
+        ],
+        headerimage: require("~/assets/showcase/satellite.svg"),
+        title: "Plasma Guard",
+        category: "Plasma - Network security",
+        description: "Ensure that your funds in a Plasma network are secure and automatically exit or challenge any invalid exit or any byzantine event.",
+        technology: "Plasma - OmiseGo - Ethereum",
+        paragraphe: "Secure your funds on an Plasma network by ensuring that every invalid exit or byzantine events from the operator are correctly challenged/exited.",
+        image: require("~/assets/showcase/opennode-blockstream.svg"),
+        challenges: "Plasma is a great layer 2 solution for Ethereum with high security of your funds as long as you monitor the network yourself which can be hard",
+        goals: "Create a tool that user can run and watch the Plasma network and automatically challenge invalid exits and exit when a Plasma operator goes byzantine",
+        benefits: [
+          "Security of the blockchain with scalability",
+          "Ensure your funds can safely be exited",
+          "React immediately when an error occurs"
+        ],
+        opportunities: [
+          "Reduce friction for adoption and increase the use of layer two solutions like Plasma",
+          "Creation of businesses that have the responsibility to secure your funds by watching the network",
+        ],
+        video: "https://www.youtube.com/embed/tj9kqiylObk",
+        information: "Want a more in-depth look at how MESG can help you secure your Plasma network. Head over to the different resources.",
+        companies: [
+          require("~/assets/showcase/coinbase.svg"),
+          require("~/assets/showcase/kraken.svg"),
+          require("~/assets/showcase/bitstamp.svg"),
+          require("~/assets/showcase/binance.svg")
+        ],
+        resources: [
+          { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
+          { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
+        ]
+      },
+      {
         id: "send-messages-from-a-satellite",
         to: `${links.showcase}/send-messages-from-a-satellite`,
         logos: [

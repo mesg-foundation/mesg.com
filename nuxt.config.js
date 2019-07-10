@@ -83,6 +83,7 @@ module.exports = {
   generate: {
     routes: [
       ...[
+        'plasma-exit-challenge',
         'send-messages-from-a-satellite',
         'enhance-zapier-workflows',
         'monitor-erc20-transactions',
