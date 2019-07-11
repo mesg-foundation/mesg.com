@@ -549,10 +549,10 @@ export const getters = {
         video: "https://www.youtube.com/embed/tj9kqiylObk",
         information: "Want a more in-depth look at how MESG can help you secure your Plasma framework? Check out the following resources.",
         companies: [
-          require("~/assets/showcase/coinbase.svg"),
-          require("~/assets/showcase/kraken.svg"),
-          require("~/assets/showcase/bitstamp.svg"),
-          require("~/assets/showcase/binance.svg")
+          require("~/assets/showcase/omisego.svg"),
+          require("~/assets/showcase/loom-network.svg"),
+          require("~/assets/showcase/hoard.svg"),
+          require("~/assets/showcase/cryptokitty.svg")
         ],
         resources: [
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
