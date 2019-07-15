@@ -87,7 +87,7 @@
     <CallToAction
       mb3
       title="Have specific needs for your custom solution?"
-      description="Let MESG Enterprise guide you every step of the way to streamline processes between even the hardest-to-manage services."
+      description="Let MESG Enterprise guide you every step of the way to build powerful, streamlined applications using even the hardest-to-manage services."
       :links="[{ title: 'Request a demo' , href: externalLinks.contact }]"
     />
 
