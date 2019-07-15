@@ -36,7 +36,7 @@
       mb3
       title="Still have questions?"
       description="If you didn’t find the answer you were looking for above, reach out! The MESG team is here to help and to answer any questions you might have about our development tool and economy."
-      :links="[{ title: 'Contact us' , to: links.demo }]"
+      :links="[{ title: 'Contact us' , href: externalLinks.contact }]"
     />
 
     <Discover mb3 left="token" right="enterprise"/>
@@ -75,7 +75,8 @@ export default {
   ],
   computed: mapGetters({
     links: "links",
-    questions: "questions"
+    questions: "questions",
+    externalLinks: "externalLinks"
   }),
   props: {
     text: {

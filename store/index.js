@@ -650,10 +650,10 @@ export const getters = {
         ],
         picture: "https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png",
         companies: [
-          require("~/assets/showcase/coinbase.svg"),
-          require("~/assets/showcase/kraken.svg"),
-          require("~/assets/showcase/bitstamp.svg"),
-          require("~/assets/showcase/binance.svg")
+          { src: require("~/assets/showcase/coinbase.svg"), to: "https://www.coinbase.com/" },
+          { src: require("~/assets/showcase/kraken.svg"), to: "https://www.kraken.com/" },
+          { src: require("~/assets/showcase/bitstamp.svg"), to: "https://www.bitstamp.net/" },
+          { src: require("~/assets/showcase/binance.svg"), to: "https://www.binance.com/" }
         ],
         information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
@@ -690,10 +690,10 @@ export const getters = {
         ],
         picture: "https://forum.mesg.com/uploads/default/original/1X/b1c56391ac876b910262718c070822f6aeefd25b.jpeg",
         companies: [
-          require("~/assets/showcase/sendgrid-logo.svg"),
-          require("~/assets/showcase/heroku.svg"),
-          require("~/assets/showcase/firebase.svg"),
-          require("~/assets/showcase/twilio.svg")
+          { src: require("~/assets/showcase/sendgrid-logo.svg"), to: "https://sendgrid.com/" },
+          { src: require("~/assets/showcase/heroku.svg"), to: "https://www.heroku.com/" },
+          { src: require("~/assets/showcase/firebase.svg"), to: "https://firebase.google.com/" },
+          { src: require("~/assets/showcase/twilio.svg"), to: "https://www.twilio.com/" }
         ],
         information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
@@ -731,10 +731,10 @@ export const getters = {
         ],
         video: "https://drive.google.com/file/d/1WfZZ9tcNJAEdKms9LKynR1rlle4rS_Ix/preview",
         companies: [
-          require("~/assets/showcase/coinbase.svg"),
-          require("~/assets/showcase/kraken.svg"),
-          require("~/assets/showcase/bitstamp.svg"),
-          require("~/assets/showcase/binance.svg")
+          { src: require("~/assets/showcase/coinbase.svg"), to: "https://www.coinbase.com/" },
+          { src: require("~/assets/showcase/kraken.svg"), to: "https://www.kraken.com/" },
+          { src: require("~/assets/showcase/bitstamp.svg"), to: "https://www.bitstamp.net/" },
+          { src: require("~/assets/showcase/binance.svg"), to: "https://www.binance.com/" }
         ],
         information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
