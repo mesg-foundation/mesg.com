@@ -10,7 +10,7 @@
       <Container mb3>
         <div flex row space-between align-center wrap mb3>
           <div half>
-            <img :src="usecase.image">
+            <img :src="usecase.image" />
           </div>
           <div half column flex space-between>
             <h3 mb1>Challenges</h3>
@@ -43,7 +43,7 @@
           </div>
           <div half>
             <Video v-if="usecase.video" :src="usecase.video"></Video>
-            <img v-else :src="usecase.picture">
+            <img v-else :src="usecase.picture" />
           </div>
         </div>
       </Container>
@@ -54,7 +54,9 @@
         <h3 class="text-center" mb2>Who could benefit from this?</h3>
         <ul flex row mobile-column class="companies">
           <li v-for="(company, i) in usecase.companies" :key="i">
-            <img :src="company" class="company">
+            <a :href="company.to" class="link-secondary" target="_blank">
+              <img :src="company.src" class="company" />
+            </a>
           </li>
         </ul>
       </Container>
@@ -79,7 +81,7 @@
 
     <section id="title-next">
       <Container>
-        <hr class="separator" mb3>
+        <hr class="separator" mb3 />
         <h2 mb2>More use cases</h2>
       </Container>
     </section>
@@ -97,7 +99,7 @@
           >
             <Card p1 bordered>
               <div mb2 flex row space-between class="logos">
-                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo">
+                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
               </div>
               <p class="category" mb1>{{ usecase.category}}</p>
               <h4 mb1>{{ usecase.title }}</h4>
@@ -116,9 +118,9 @@
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
-    <Discover mb3 left="engine" right="marketplace"/>
+    <Discover mb3 left="engine" right="marketplace" />
 
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
