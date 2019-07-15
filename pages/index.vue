@@ -81,7 +81,7 @@
     <CallToAction
       mb3
       title="Accelerate your business with MESG"
-      description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Or scale limitlessly with a decentralized network."
+      description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Then scale limitlessly with a decentralized network."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
