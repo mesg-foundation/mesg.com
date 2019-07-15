@@ -189,7 +189,7 @@ export const getters = {
         { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ class=link target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access saves developers time, while providing new ways to earn royalties from coding." },
         { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications, enabling decentralized execution. Plus, it will secure the network through a mandatory staking system." },
         { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to small percentage of the previous day’s total volume. This means large payouts are distributed gradually for all, plus sales are limited to promote a stable volume of MESG Tokens entering the market." },
-        { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG class=link target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT class=link target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg class=link target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
+        { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG class=link target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/spot/mesg_usdt class=link target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg class=link target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
       ]
     }
   },
@@ -711,7 +711,7 @@ export const getters = {
   exchanges() {
     return [
       { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/trade/spotTrading?commodityCode=MESG&currencyCode=USDT" },
+      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/spot/mesg_usdt" },
       { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
     ]
   },
