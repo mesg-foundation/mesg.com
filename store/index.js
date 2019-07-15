@@ -6,7 +6,7 @@ export const getters = {
         title: "MESG SDK",
         img: require("~/assets/engine/engine.svg"),
         description:
-          "A suite of tools to connect together services and other devices and applications. Control the flow of data and level of security between your whole stack of technologies.",
+          "A suite of tools to connect together services with other devices and applications. Control the flow of data and level of security between your whole stack of technologies.",
         features: {
           primary: [
             {
@@ -33,7 +33,7 @@ export const getters = {
         title: "MESG Marketplace",
         img: require("~/assets/marketplace/marketplace.svg"),
         description:
-          "A decentralized marketplace connecting buyers wanting to save time in development with sellers looking to earn tokens for the reuse of their application components.",
+          "A decentralized marketplace built to save time in development. Reuse intercompatible application components and earn tokens when your work is reused by others.",
         features: {
           primary: [
             { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and SDK", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before adding new features. Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
