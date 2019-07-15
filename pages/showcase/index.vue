@@ -67,7 +67,7 @@ export default {
     page({
       title: "Showcase",
       description:
-        "Not sure what to build? Get inspired by some examples showing the wide range of possibilities offered."
+        "Not sure what to build? Get inspired by examples showing the wide range of possibilities."
     })
   ],
   props: {
