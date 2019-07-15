@@ -65,7 +65,7 @@
                 <h3 mb1>Build services, earn tokens</h3>
                 <p
                   class="token-desc"
-                >Earn MESG Tokens by building modular application components in a decentralized economy of app development.</p>
+                >Earn MESG Tokens by building and sharing application components in the decentralized MESG Marketplace.</p>
               </div>
             </div>
             <div flex column third>
