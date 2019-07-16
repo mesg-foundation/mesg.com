@@ -535,7 +535,7 @@ export const getters = {
         technology: "OpenNode - MESG Token - Blockstream",
         paragraphe: "Connect multiple cryptocurrencies with other technologies to securely send a message from space.",
         image: require("~/assets/showcase/opennode-blockstream.svg"),
-        challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC20 token payment.",
+        challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC-20 token payment.",
         goals: "To build a business with a MESG App which accepts MESG Tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
         benefits: [
           "Integrate multiple cryptocurrencies within a single application.",
