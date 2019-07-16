@@ -555,6 +555,7 @@ export const getters = {
           { src: require("~/assets/showcase/cryptokitties.svg"), to: "https://www.cryptokitties.co/" }
         ],
         resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/plasma-is-not-secure-unless-you-watch-it-196d23130367" },
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
           { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
         ]
