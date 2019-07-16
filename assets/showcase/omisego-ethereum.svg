@@ -78,7 +78,7 @@
 	.st72{fill:url(#XMLID_21_);}
 	.st73{opacity:0.43;fill:url(#XMLID_22_);}
 	.st74{clip-path:url(#SVGID_2_);}
-	.st75{opacity:0.85;fill:url(#SVGID_3_);}
+	.st75{fill:url(#SVGID_3_);}
 	.st76{fill:url(#SVGID_4_);}
 	.st77{fill:none;stroke:#7E44D8;stroke-width:0.1401;stroke-miterlimit:10;}
 	.st78{fill:none;stroke:#C2A3FF;stroke-width:0.1401;stroke-miterlimit:10;}
@@ -106,13 +106,14 @@
 	.st100{fill:url(#SVGID_25_);}
 	.st101{fill:url(#SVGID_26_);}
 	.st102{fill:url(#SVGID_27_);}
-	.st103{opacity:0.85;fill:url(#SVGID_28_);}
-	.st104{fill:#1A53F0;}
-	.st105{fill:#343434;}
-	.st106{fill:#8C8C8C;}
-	.st107{fill:#3C3C3B;}
-	.st108{fill:#141414;}
-	.st109{fill:#393939;}
+	.st103{opacity:0.7;fill:url(#SVGID_28_);}
+	.st104{fill:url(#SVGID_29_);}
+	.st105{fill:#1A53F0;}
+	.st106{fill:#343434;}
+	.st107{fill:#8C8C8C;}
+	.st108{fill:#3C3C3B;}
+	.st109{fill:#141414;}
+	.st110{fill:#393939;}
 </style>
 <g>
 	<g>
@@ -624,16 +625,16 @@
 				</clipPath>
 				<g class="st74">
 					<radialGradient id="SVGID_3_" cx="245.0333" cy="209.6343" r="35.0002" gradientUnits="userSpaceOnUse">
-						<stop  offset="0" style="stop-color:#FFEBD1"/>
-						<stop  offset="7.507909e-02" style="stop-color:#FDE9D0"/>
-						<stop  offset="0.1021" style="stop-color:#F7E2CC"/>
-						<stop  offset="0.1214" style="stop-color:#EBD6C6"/>
-						<stop  offset="0.137" style="stop-color:#DBC6BC"/>
-						<stop  offset="0.1504" style="stop-color:#C6B0B0"/>
-						<stop  offset="0.1622" style="stop-color:#AC94A1"/>
-						<stop  offset="0.1729" style="stop-color:#8C748F"/>
-						<stop  offset="0.1827" style="stop-color:#684E7A"/>
-						<stop  offset="0.1915" style="stop-color:#402563"/>
+						<stop  offset="0" style="stop-color:#F0E7FF"/>
+						<stop  offset="7.536148e-02" style="stop-color:#EEE5FE"/>
+						<stop  offset="0.1025" style="stop-color:#E8DEF8"/>
+						<stop  offset="0.1219" style="stop-color:#DDD3EF"/>
+						<stop  offset="0.1375" style="stop-color:#CEC2E2"/>
+						<stop  offset="0.1509" style="stop-color:#BAACD0"/>
+						<stop  offset="0.1628" style="stop-color:#A190BB"/>
+						<stop  offset="0.1735" style="stop-color:#8470A2"/>
+						<stop  offset="0.1834" style="stop-color:#614A84"/>
+						<stop  offset="0.1922" style="stop-color:#3C2164"/>
 						<stop  offset="0.1949" style="stop-color:#2F1359"/>
 						<stop  offset="0.3217" style="stop-color:#32155E"/>
 						<stop  offset="0.4693" style="stop-color:#3B1A6C"/>
@@ -1300,56 +1301,53 @@
 					<circle class="st101" cx="244.3" cy="214.1" r="1.2"/>
 					<radialGradient id="SVGID_27_" cx="245.0333" cy="209.6343" r="5.8077" gradientUnits="userSpaceOnUse">
 						<stop  offset="0" style="stop-color:#7E44D8;stop-opacity:0.8"/>
-						<stop  offset="0.3413" style="stop-color:#7F46D8;stop-opacity:0.8397"/>
-						<stop  offset="0.4643" style="stop-color:#844DDA;stop-opacity:0.8539"/>
-						<stop  offset="0.5519" style="stop-color:#8C58DC;stop-opacity:0.8641"/>
-						<stop  offset="0.6228" style="stop-color:#9869E0;stop-opacity:0.8724"/>
-						<stop  offset="0.6835" style="stop-color:#A77FE4;stop-opacity:0.8794"/>
-						<stop  offset="0.7373" style="stop-color:#BA9BEA;stop-opacity:0.8857"/>
-						<stop  offset="0.7859" style="stop-color:#D0BBF1;stop-opacity:0.8913"/>
-						<stop  offset="0.8291" style="stop-color:#E9DFF8;stop-opacity:0.8963"/>
-						<stop  offset="0.8606" style="stop-color:#FFFFFF;stop-opacity:0.9"/>
+						<stop  offset="0.3966" style="stop-color:#7F46D8;stop-opacity:0.8397"/>
+						<stop  offset="0.5394" style="stop-color:#844DDA;stop-opacity:0.8539"/>
+						<stop  offset="0.6413" style="stop-color:#8C58DC;stop-opacity:0.8641"/>
+						<stop  offset="0.7237" style="stop-color:#9869E0;stop-opacity:0.8724"/>
+						<stop  offset="0.7942" style="stop-color:#A77FE4;stop-opacity:0.8794"/>
+						<stop  offset="0.8567" style="stop-color:#BA9BEA;stop-opacity:0.8857"/>
+						<stop  offset="0.9132" style="stop-color:#D0BBF1;stop-opacity:0.8913"/>
+						<stop  offset="0.9634" style="stop-color:#E9DFF8;stop-opacity:0.8963"/>
+						<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.9"/>
 					</radialGradient>
 					<circle class="st102" cx="245" cy="209.6" r="5.8"/>
 					<radialGradient id="SVGID_28_" cx="245.0333" cy="209.6343" r="35.0002" gradientUnits="userSpaceOnUse">
-						<stop  offset="0" style="stop-color:#C3BBCF;stop-opacity:0"/>
-						<stop  offset="0.4374" style="stop-color:#C5BDD0;stop-opacity:0.486"/>
-						<stop  offset="0.5949" style="stop-color:#CBC4D5;stop-opacity:0.661"/>
-						<stop  offset="0.7072" style="stop-color:#D5CFDD;stop-opacity:0.7858"/>
-						<stop  offset="0.798" style="stop-color:#E4E0E9;stop-opacity:0.8866"/>
-						<stop  offset="0.8748" style="stop-color:#F7F6F9;stop-opacity:0.972"/>
-						<stop  offset="0.9" style="stop-color:#FFFFFF"/>
-						<stop  offset="0.9185" style="stop-color:#FDFCFE"/>
-						<stop  offset="0.9333" style="stop-color:#F6F2FC"/>
-						<stop  offset="0.9469" style="stop-color:#EAE1F9"/>
-						<stop  offset="0.9597" style="stop-color:#DAC9F4"/>
-						<stop  offset="0.972" style="stop-color:#C5AAED"/>
-						<stop  offset="0.9839" style="stop-color:#AB85E5"/>
-						<stop  offset="0.9953" style="stop-color:#8C59DC"/>
-						<stop  offset="1" style="stop-color:#7E44D8"/>
+						<stop  offset="0.85" style="stop-color:#FFFFFF;stop-opacity:0"/>
+						<stop  offset="0.9866" style="stop-color:#FFFFFF;stop-opacity:0.9104"/>
+						<stop  offset="1" style="stop-color:#FFFFFF"/>
 					</radialGradient>
 					<circle class="st103" cx="245" cy="209.6" r="35"/>
+					<g>
+						<linearGradient id="SVGID_29_" gradientUnits="userSpaceOnUse" x1="210.0329" y1="209.6343" x2="280.0336" y2="209.6343">
+							<stop  offset="0" style="stop-color:#2F1359"/>
+							<stop  offset="1" style="stop-color:#7E44D8;stop-opacity:0"/>
+						</linearGradient>
+						<path class="st104" d="M245,176.6c18.2,0,33,14.8,33,33c0,18.2-14.8,33-33,33c-18.2,0-33-14.8-33-33
+							C212,191.4,226.8,176.6,245,176.6 M245,174.6c-19.3,0-35,15.7-35,35c0,19.3,15.7,35,35,35c19.3,0,35-15.7,35-35
+							C280,190.3,264.4,174.6,245,174.6L245,174.6z"/>
+					</g>
 				</g>
 			</g>
 		</g>
 		<g id="Group_4_" transform="translate(77.987179, 6.689781)">
-			<path id="Shape_12_" class="st104" d="M20.6,110.6c-6.1,3.5-11.1,12.2-11.1,19.3c0,7.1,5,10,11.1,6.5s11.1-12.2,11.1-19.3
+			<path id="Shape_12_" class="st105" d="M20.6,110.6c-6.1,3.5-11.1,12.2-11.1,19.3c0,7.1,5,10,11.1,6.5s11.1-12.2,11.1-19.3
 				C31.7,109.9,26.7,107,20.6,110.6z M20.6,132.5c-4.3,2.5-7.7,0.4-7.7-4.5s3.5-11,7.7-13.5c4.3-2.5,7.7-0.4,7.7,4.5
 				C28.3,124,24.9,130,20.6,132.5L20.6,132.5z"/>
-			<path id="Shape_11_" class="st104" d="M44.3,69.4C39.8,72,35.8,77.4,34,83.2c-1.7,5.8-0.8,10.8,2.4,12.7
+			<path id="Shape_11_" class="st105" d="M44.3,69.4C39.8,72,35.8,77.4,34,83.2c-1.7,5.8-0.8,10.8,2.4,12.7
 				c3.2,1.9,7.9,0.2,12.1-4.2s6.8-10.7,6.8-15.9C55.3,68.8,50.4,65.8,44.3,69.4L44.3,69.4z M44.3,91.3c-4.3,2.5-7.7,0.4-7.7-4.5
 				s3.5-11,7.7-13.5c4.3-2.5,7.7-0.4,7.7,4.5C52,82.8,48.5,88.8,44.3,91.3L44.3,91.3z"/>
-			<path id="Shape_10_" class="st104" d="M20.6,83L20.6,83c-5.3,3-9.8,10-10.9,16.6c-1.1,6.6,1.7,11.1,6.5,10.7
+			<path id="Shape_10_" class="st105" d="M20.6,83L20.6,83c-5.3,3-9.8,10-10.9,16.6c-1.1,6.6,1.7,11.1,6.5,10.7
 				c4.8-0.4,10.5-5.6,13.5-12.4s2.5-13.3-1.2-15.6l3.1-1.8v-3.9L20.6,83z M28.3,91.5c0,5-3.5,11-7.7,13.5s-7.7,0.4-7.7-4.5
 				c0-5,3.5-11,7.7-13.5C24.9,84.5,28.3,86.5,28.3,91.5L28.3,91.5z"/>
 		</g>
 		<g>
-			<polygon class="st105" points="379.4,47.8 378.9,49.4 378.9,95.9 379.4,96.4 401,83.7 			"/>
-			<polygon class="st106" points="379.4,47.8 357.8,83.7 379.4,96.4 379.4,73.8 			"/>
-			<polygon class="st107" points="379.4,100.5 379.1,100.8 379.1,117.4 379.4,118.2 401,87.7 			"/>
-			<polygon class="st106" points="379.4,118.2 379.4,100.5 357.8,87.7 			"/>
-			<polygon class="st108" points="379.4,96.4 401,83.7 379.4,73.8 			"/>
-			<polygon class="st109" points="357.8,83.7 379.4,96.4 379.4,73.8 			"/>
+			<polygon class="st106" points="379.4,47.8 378.9,49.4 378.9,95.9 379.4,96.4 401,83.7 			"/>
+			<polygon class="st107" points="379.4,47.8 357.8,83.7 379.4,96.4 379.4,73.8 			"/>
+			<polygon class="st108" points="379.4,100.5 379.1,100.8 379.1,117.4 379.4,118.2 401,87.7 			"/>
+			<polygon class="st107" points="379.4,118.2 379.4,100.5 357.8,87.7 			"/>
+			<polygon class="st109" points="379.4,96.4 401,83.7 379.4,73.8 			"/>
+			<polygon class="st110" points="357.8,83.7 379.4,96.4 379.4,73.8 			"/>
 		</g>
 	</g>
 </g>

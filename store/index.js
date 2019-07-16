@@ -528,23 +528,23 @@ export const getters = {
           require("~/assets/showcase/omisego.svg"),
           require("~/assets/showcase/ethereum.svg")
         ],
-        headerimage: require("~/assets/showcase/satellite.svg"),
+        headerimage: require("~/assets/showcase/plasma-guard.svg"),
         title: "Plasma Guard",
         category: "OmiseGo - Ethereum",
         description: "Ensure that your funds in the Plasma framework are secure and automatically exit, or challenge any invalid exit or byzantine event.",
         technology: "OmiseGo - Plasma - Ethereum",
-        paragraphe: "Secure your funds on Plasma chains by ensuring that each invalid exit or byzantine event from the operator is correctly challenged and exited.",
+        paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
         image: require("~/assets/showcase/omisego-ethereum.svg"),
-        challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge",
-        goals: "To create a tool that watches Plasma chains and automatically challengees invalid exits and exits when a Plasma operator goes byzantine",
+        challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge.",
+        goals: "To create a tool that watches Plasma chains and automatically challengees invalid exits and exits when a Plasma operator goes byzantine.",
         benefits: [
-          "Security of the blockchain, with scalability",
-          "Ensure your funds can safely be exited",
-          "React immediately when an error occurs"
+          "Security of the blockchain, with scalability.",
+          "Ensure your funds can safely be exited.",
+          "React immediately when an error occurs."
         ],
         opportunities: [
-          "To reduce friction for adoption and increase the use of layer-2 solutions like Plasma",
-          "The creation of products and businesses that secure your funds by watching the network",
+          "To reduce friction for adoption and increase the use of layer-2 solutions like Plasma.",
+          "The creation of products and businesses that secure your funds by watching the network.",
         ],
         video: "https://www.youtube.com/embed/tj9kqiylObk",
         information: "Want a more in-depth look at how MESG can help you secure your Plasma framework? Check out the following resources.",
