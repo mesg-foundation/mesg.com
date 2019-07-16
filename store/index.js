@@ -522,6 +522,45 @@ export const getters = {
   usecases(_, { links }) {
     return [
       {
+        id: "plasma-exit-challenge",
+        to: `${links.showcase}/plasma-exit-challenge`,
+        logos: [
+          require("~/assets/showcase/omisego.svg"),
+          require("~/assets/showcase/ethereum.svg")
+        ],
+        headerimage: require("~/assets/showcase/plasma-guard.svg"),
+        title: "Plasma Guard",
+        category: "OmiseGo - Ethereum",
+        description: "Ensure that your funds in the Plasma framework are secure and automatically exit, or challenge any invalid exit or byzantine event.",
+        technology: "OmiseGo - Plasma - Ethereum",
+        paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
+        image: require("~/assets/showcase/omisego-ethereum.svg"),
+        challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge.",
+        goals: "To create a tool that watches Plasma chains and automatically challengees invalid exits and exits when a Plasma operator goes byzantine.",
+        benefits: [
+          "Security of the blockchain, with scalability.",
+          "Ensure your funds can safely be exited.",
+          "React immediately when an error occurs."
+        ],
+        opportunities: [
+          "To reduce friction for adoption and increase the use of layer-2 solutions like Plasma.",
+          "The creation of products and businesses that secure your funds by watching the network.",
+        ],
+        video: "https://www.youtube.com/embed/tj9kqiylObk",
+        information: "Want a more in-depth look at how MESG can help you secure your Plasma framework? Check out the following resources.",
+        companies: [
+          { src: require("~/assets/showcase/omisego-logo.svg"), to: "https://omisego.network/" },
+          { src: require("~/assets/showcase/loom-network.svg"), to: "https://loomx.io/" },
+          { src: require("~/assets/showcase/hoard.svg"), to: "https://hoard.exchange/" },
+          { src: require("~/assets/showcase/cryptokitties.svg"), to: "https://www.cryptokitties.co/" }
+        ],
+        resources: [
+          { title: "Read the full article", to: "https://medium.com/mesg/plasma-is-not-secure-unless-you-watch-it-196d23130367" },
+          { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
+          { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
+        ]
+      },
+      {
         id: "send-messages-from-a-satellite",
         to: `${links.showcase}/send-messages-from-a-satellite`,
         logos: [
@@ -612,10 +651,10 @@ export const getters = {
         ],
         picture: "https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png",
         companies: [
-          require("~/assets/showcase/coinbase.svg"),
-          require("~/assets/showcase/kraken.svg"),
-          require("~/assets/showcase/bitstamp.svg"),
-          require("~/assets/showcase/binance.svg")
+          { src: require("~/assets/showcase/coinbase.svg"), to: "https://www.coinbase.com/" },
+          { src: require("~/assets/showcase/kraken.svg"), to: "https://www.kraken.com/" },
+          { src: require("~/assets/showcase/bitstamp.svg"), to: "https://www.bitstamp.net/" },
+          { src: require("~/assets/showcase/binance.svg"), to: "https://www.binance.com/" }
         ],
         information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
@@ -652,10 +691,10 @@ export const getters = {
         ],
         picture: "https://forum.mesg.com/uploads/default/original/1X/b1c56391ac876b910262718c070822f6aeefd25b.jpeg",
         companies: [
-          require("~/assets/showcase/sendgrid-logo.svg"),
-          require("~/assets/showcase/heroku.svg"),
-          require("~/assets/showcase/firebase.svg"),
-          require("~/assets/showcase/twilio.svg")
+          { src: require("~/assets/showcase/sendgrid-logo.svg"), to: "https://sendgrid.com/" },
+          { src: require("~/assets/showcase/heroku.svg"), to: "https://www.heroku.com/" },
+          { src: require("~/assets/showcase/firebase.svg"), to: "https://firebase.google.com/" },
+          { src: require("~/assets/showcase/twilio.svg"), to: "https://www.twilio.com/" }
         ],
         information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
@@ -693,10 +732,10 @@ export const getters = {
         ],
         video: "https://drive.google.com/file/d/1WfZZ9tcNJAEdKms9LKynR1rlle4rS_Ix/preview",
         companies: [
-          require("~/assets/showcase/coinbase.svg"),
-          require("~/assets/showcase/kraken.svg"),
-          require("~/assets/showcase/bitstamp.svg"),
-          require("~/assets/showcase/binance.svg")
+          { src: require("~/assets/showcase/coinbase.svg"), to: "https://www.coinbase.com/" },
+          { src: require("~/assets/showcase/kraken.svg"), to: "https://www.kraken.com/" },
+          { src: require("~/assets/showcase/bitstamp.svg"), to: "https://www.bitstamp.net/" },
+          { src: require("~/assets/showcase/binance.svg"), to: "https://www.binance.com/" }
         ],
         information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
