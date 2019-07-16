@@ -522,6 +522,44 @@ export const getters = {
   usecases(_, { links }) {
     return [
       {
+        id: "plasma-exit-challenge",
+        to: `${links.showcase}/plasma-exit-challenge`,
+        logos: [
+          require("~/assets/showcase/omisego.svg"),
+          require("~/assets/showcase/ethereum.svg")
+        ],
+        headerimage: require("~/assets/showcase/plasma-guard.svg"),
+        title: "Plasma Guard",
+        category: "OmiseGo - Ethereum",
+        description: "Ensure that your funds in the Plasma framework are secure and automatically exit, or challenge any invalid exit or byzantine event.",
+        technology: "OmiseGo - Plasma - Ethereum",
+        paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
+        image: require("~/assets/showcase/omisego-ethereum.svg"),
+        challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge.",
+        goals: "To create a tool that watches Plasma chains and automatically challengees invalid exits and exits when a Plasma operator goes byzantine.",
+        benefits: [
+          "Security of the blockchain, with scalability.",
+          "Ensure your funds can safely be exited.",
+          "React immediately when an error occurs."
+        ],
+        opportunities: [
+          "To reduce friction for adoption and increase the use of layer-2 solutions like Plasma.",
+          "The creation of products and businesses that secure your funds by watching the network.",
+        ],
+        video: "https://www.youtube.com/embed/tj9kqiylObk",
+        information: "Want a more in-depth look at how MESG can help you secure your Plasma framework? Check out the following resources.",
+        companies: [
+          { src: require("~/assets/showcase/omisego-logo.svg"), to: "https://omisego.network/" },
+          { src: require("~/assets/showcase/loom-network.svg"), to: "https://loomx.io/" },
+          { src: require("~/assets/showcase/hoard.svg"), to: "https://hoard.exchange/" },
+          { src: require("~/assets/showcase/cryptokitties.svg"), to: "https://www.cryptokitties.co/" }
+        ],
+        resources: [
+          { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
+          { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
+        ]
+      },
+      {
         id: "send-messages-from-a-satellite",
         to: `${links.showcase}/send-messages-from-a-satellite`,
         logos: [
