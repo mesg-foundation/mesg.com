@@ -6,7 +6,7 @@ export const getters = {
         title: "MESG SDK",
         img: require("~/assets/engine/engine.svg"),
         description:
-          "A suite of tools to connect together services and other devices and applications. Control the flow of data and level of security between your whole stack of technologies.",
+          "A suite of tools to connect together services with other devices and applications. Control the flow of data and level of security between your whole stack of technologies.",
         features: {
           primary: [
             {
@@ -33,7 +33,7 @@ export const getters = {
         title: "MESG Marketplace",
         img: require("~/assets/marketplace/marketplace.svg"),
         description:
-          "A decentralized marketplace connecting buyers wanting to save time in development with sellers looking to earn tokens for the reuse of their application components.",
+          "A decentralized marketplace built to save time in development. Reuse intercompatible application components and earn tokens when your work is reused by others.",
         features: {
           primary: [
             { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Marketplace and SDK", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before adding new features. Plug any feature or component into any app.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
@@ -345,7 +345,7 @@ export const getters = {
       quarters: [{
         quarter: "Q1",
         goals: [{
-          title: "MESG Token ERC20",
+          title: "MESG Token ERC-20",
           link: "https://etherscan.io/address/0x420167d87d35c3a249b32ef6225872fbd9ab85d2",
           list: [
             "MESG Token release with a total supply of 250MM",
@@ -574,7 +574,7 @@ export const getters = {
         technology: "OpenNode - MESG Token - Blockstream",
         paragraphe: "Connect multiple cryptocurrencies with other technologies to securely send a message from space.",
         image: require("~/assets/showcase/opennode-blockstream.svg"),
-        challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC20 token payment.",
+        challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC-20 token payment.",
         goals: "To build a business with a MESG App which accepts MESG Tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
         benefits: [
           "Integrate multiple cryptocurrencies within a single application.",
@@ -633,9 +633,9 @@ export const getters = {
         ],
         headerimage: require("~/assets/showcase/monitor.svg"),
         category: "ERC20 - Grafana",
-        title: "Monitor ERC20 transactions",
+        title: "Monitor ERC-20 transactions",
         description: "There’s immense power in data. New analytics tools allow for the creation of massive efficiencies, avenues of income, or new businesses altogether.",
-        technology: "ERC20 - InfluxDB - Grafana",
+        technology: "ERC-20 - InfluxDB - Grafana",
         paragraphe: "Read, analyze and react to blockchain transactions happening in real time to optimize ICOs, predict transfers or manage digital collectables.",
         image: require("~/assets/showcase/erc20-grafana.svg"),
         challenges: "ICOs, tokenized development and cryptocurrency-integrated businesses are on the rise. This fast-evolving ecosystem needs tools to provide metrics about what is happening on the blockchain.",
@@ -647,7 +647,7 @@ export const getters = {
         opportunities: [
           "Companies launching ICOs can have easy access to monitoring actual token volume.",
           "Connecting extracted data to AI systems to be able to predict future transfers and token prices.",
-          "Easily expand to ERC721 to monitor the performance of digital collectables."
+          "Easily expand to ERC-721 to monitor the performance of digital collectables."
         ],
         picture: "https://forum.mesg.com/uploads/default/original/1X/dd3e09715411d90152680d614d77abd9bce19a37.png",
         companies: [
