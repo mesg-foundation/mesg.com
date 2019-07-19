@@ -536,7 +536,7 @@ export const getters = {
         paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
         image: require("~/assets/showcase/omisego-ethereum.svg"),
         challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge.",
-        goals: "To create a tool that watches Plasma chains and automatically challengees invalid exits and exits when a Plasma operator goes byzantine.",
+        goals: "To create a tool that watches Plasma chains and automatically challenges invalid exits and exits when a Plasma operator goes byzantine.",
         benefits: [
           "Security of the blockchain, with scalability.",
           "Ensure your funds can safely be exited.",
@@ -773,6 +773,7 @@ export const getters = {
       forum: "https://forum.mesg.com/",
       discord: "https://discordapp.com/invite/5tVTHJC",
       twitter: "https://twitter.com/mesgfoundation",
+      telegram: "https://t.me/mesg_community",
       linkedin: "https://www.linkedin.com/company/mesg",
       facebook: "https://www.facebook.com/mesgfoundation",
       getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",

@@ -5,7 +5,7 @@
         <nav flex row space-between wrap mobile-column-reverse mb2>
           <div flex column third>
             <nuxt-link :to="links.home">
-              <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG">
+              <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG" />
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
             <div flex space-between wrap>
@@ -65,16 +65,16 @@
         </nav>
       </Container>
 
-      <hr mb2>
+      <hr mb2 />
 
       <section id="newsletter">
         <Container flex row mobile-column-reverse align-center>
           <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
           <div class="form">
             <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit">
-              <input type="email" placeholder="Your email address" v-model="email" required>
+              <input type="email" placeholder="Your email address" v-model="email" required />
               <button type="submit" class="submit-newsletter">
-                <i class="fas fa-arrow-right"/>
+                <i class="fas fa-arrow-right" />
               </button>
             </form>
           </div>
@@ -110,6 +110,7 @@ export default {
         { href: this.externalLinks.forum, icon: "fas fa-comments" },
         { href: this.externalLinks.discord, icon: "fab fa-discord" },
         { href: this.externalLinks.twitter, icon: "fab fa-twitter" },
+        { href: this.externalLinks.telegram, icon: "fab fa-telegram" },
         { href: this.externalLinks.linkedin, icon: "fab fa-linkedin-in" },
         { href: this.externalLinks.facebook, icon: "fab fa-facebook-f" }
       ];
