@@ -9,7 +9,7 @@
 
     <section id="investors" mb3>
       <Container>
-        <h2 mb3>Invested in and incubated by</h2>
+        <h2 mb3>Incubated by</h2>
       </Container>
       <Container>
         <TextWithSchema
@@ -77,7 +77,7 @@ export default {
     page({
       title: "Investors and Partners",
       description:
-        "Generous investments by Yellow Capital have enabled MESG to provide top service to our partners across various industries."
+        "Generous investments by Yellow Capital have enabled MESG to provide top-shelf service to our partners across various industries."
     })
   ],
   computed: {
