@@ -46,7 +46,7 @@ export default {
       links: "links"
     }),
     title() {
-      return "Ready to get started?";
+      return "Ready to build?";
     },
     description() {
       return "MESG is free to start and only takes moments to install. Build more with less effort.";
