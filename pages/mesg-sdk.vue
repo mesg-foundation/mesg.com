@@ -48,7 +48,7 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb2>MESG SDK Use Cases</h2>
+        <h2 mb2>Use Cases</h2>
         <div flex row wrap>
           <TextWithIcon
             half
@@ -86,7 +86,7 @@
 
     <CallToAction
       mb3
-      title="Streamline your business with MESG"
+      title="Streamline your business"
       description="Optimize processes and automate workflows between your whole stack of connected systems."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
