@@ -25,7 +25,7 @@
 
     <section id="product-intro">
       <Container flex column align-center class="intro">
-        <h2 mb1>Our products</h2>
+        <h2 mb1>Products</h2>
         <p
           mb2
           class="text-center product-desc"
@@ -125,7 +125,7 @@ export default {
     page({
       title: "The new economy of app development",
       description:
-        "Build apps or autonomous workflows with reusable, shareable integrations connecting any service, app, blockchain or decentralized network."
+        "Build applications and workflows using shareable integrations from any service, app, blockchain or decentralized network."
     })
   ],
   computed: mapGetters({
