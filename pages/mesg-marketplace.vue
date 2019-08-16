@@ -47,7 +47,7 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb2>MESG Marketplace Use Cases</h2>
+        <h2 mb2>Use Cases</h2>
         <div flex row wrap>
           <TextWithIcon
             half
