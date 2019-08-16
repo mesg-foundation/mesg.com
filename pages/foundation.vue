@@ -105,7 +105,7 @@
       <Container flex column align-center>
         <h2 mb2>Trusted by fantastic brands</h2>
         <Partners mb2/>
-        <Button secondary :to="links.partners">Our partners</Button>
+        <Button secondary :to="links.partners">Partners</Button>
       </Container>
     </section>
 
