@@ -41,7 +41,7 @@
 
     <CallToAction
       mb3
-      title="Accelerate your business with MESG"
+      title="Accelerate your business"
       description="MESG is built for efficiency and scalability. Create or share app integrations to adopt new features or even enter new industries, then scale limitlessly with a decentralized network."
       :links="[{ title: 'Become a partner' , href: externalLinks.contact }]"
     />
