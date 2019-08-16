@@ -76,7 +76,7 @@
             >
           </div>
           <div half>
-            <h2 class="text-left" mb1>The MESG Token and Marketplace</h2>
+            <h2 class="text-left" mb1>MESG Token + Marketplace</h2>
             <p
               mb2
             >The MESG Token can be used to purchase access to services in the Marketplace. Once decentralized, the Token will also be used to secure and power the network.</p>
