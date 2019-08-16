@@ -159,7 +159,7 @@ export default {
     page({
       title: "MESG Foundation",
       description:
-        "The MESG Foundation is a group of passionate individuals dedicated to the creation of a new economy for developers."
+        "The MESG Foundation is a group of passionate individuals dedicated to promoting blockchain usability in the real world."
     })
   ],
   computed: mapGetters({
