@@ -17,8 +17,8 @@
           <li class="drop-down" flex column align-center>
             <a href="#" class="title">Products</a>
             <div flex column class="sub-menu" p1 mt1>
-              <nuxt-link :to="links.engine" class="btn">MESG SDK</nuxt-link>
-              <nuxt-link :to="links.marketplace" class="btn">MESG Marketplace</nuxt-link>
+              <nuxt-link :to="links.engine" class="btn">SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace" class="btn">Marketplace</nuxt-link>
               <nuxt-link :to="links.showcase" class="btn">Showcase</nuxt-link>
               <nuxt-link :to="links.faq" class="btn">FAQ</nuxt-link>
             </div>
