@@ -4,7 +4,7 @@
 
     <section id="use cases">
       <Container flex column align-center>
-        <h2 mb2>MESG Use Cases</h2>
+        <h2 mb2>Use Cases</h2>
         <div flex row wrap>
           <nuxt-link
             v-for="usecase in usecases"
