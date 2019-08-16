@@ -9,7 +9,7 @@
 
     <section id="intro" mb3>
       <Container flex column align-center>
-        <h2 mb1>About the MESG Foundation</h2>
+        <h2 mb1>About the Foundation</h2>
         <p
           mb2
           class="text-center"
