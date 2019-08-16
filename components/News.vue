@@ -39,7 +39,7 @@ export default {
     },
     title: {
       type: String,
-      default: "In the news"
+      default: "News"
     }
   }
 };
