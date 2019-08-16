@@ -27,11 +27,11 @@
 
     <section id="interoperability" mb3>
       <Container class="intro">
-        <h2 mb1>Enabling effortless interoperability</h2>
+        <h2 mb1>Effortless interoperability</h2>
         <p
           mb2
           class="text-center description"
-        >The MESG SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
+        >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
         <Container>
