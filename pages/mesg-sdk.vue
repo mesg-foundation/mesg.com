@@ -74,10 +74,10 @@
             <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and SDK">
           </div>
           <div half>
-            <h2 class="text-left" mb1>The MESG Token and SDK</h2>
+            <h2 class="text-left" mb1>MESG Token + SDK</h2>
             <p
               mb2
-            >The tools of the MESG SDK are free to use locally. However, in order to build variably decentralized apps, MESG Tokens will be required to reward network participants who manage and secure executions.</p>
+            >The tools of the MESG SDK are free to use locally. However, in order to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.</p>
             <Button outline :to="links.token">Discover the MESG Token</Button>
           </div>
         </div>
