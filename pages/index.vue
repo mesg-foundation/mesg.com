@@ -65,7 +65,7 @@
                 <h3 mb1>Build services, earn tokens</h3>
                 <p
                   class="token-desc"
-                >Earn MESG Tokens by building and sharing application components in the decentralized MESG Marketplace.</p>
+                >Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
               </div>
             </div>
             <div flex column third>
@@ -80,8 +80,8 @@
 
     <CallToAction
       mb3
-      title="Accelerate your business with MESG"
-      description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Then scale limitlessly with a decentralized network."
+      title="Accelerate your business"
+      description="Add features to your custom software stack to expand to new industries. Then scale limitlessly with the decentralized network."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
