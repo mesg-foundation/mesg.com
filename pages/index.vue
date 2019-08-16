@@ -10,7 +10,7 @@
     <section id="partners" mb3>
       <Container flex column align-center>
         <Partners mb2/>
-        <Button secondary :to="links.partners">Our partners</Button>
+        <Button secondary :to="links.partners">Partners</Button>
       </Container>
     </section>
 
