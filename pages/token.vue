@@ -43,7 +43,7 @@
         <p
           mb2
           class="text-center"
-        >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s total volume.</p>
+        >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
         <div flex row space-between wrap>
           <TextWithIcon
             half

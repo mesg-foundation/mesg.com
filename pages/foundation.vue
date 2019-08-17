@@ -9,11 +9,11 @@
 
     <section id="intro" mb3>
       <Container flex column align-center>
-        <h2 mb1>About the MESG Foundation</h2>
+        <h2 mb1>About the Foundation</h2>
         <p
           mb2
           class="text-center"
-        >The SDK and Marketplace are developed by a worldwide team of passionate developers for The MESG Foundation, a non-profit organization.</p>
+        >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
         <Card>
           <Video :src="externalLinks.video"></Video>
         </Card>
@@ -25,13 +25,13 @@
         <div flex row space-between wrap>
           <Titletext3
             half
-            title="Our story"
+            title="Story"
             text="The MESG Foundation was built to promote and support blockchain technology through the improvement of its accessibility and use in the real world."
           />
 
           <Titletext3
             half
-            title="Our vision"
+            title="Vision"
             text="To be the first universal infrastructure to bridge legacy companies moving into a trustless landscape. The future of business is decentralized."
           />
         </div>
@@ -73,7 +73,7 @@
 
     <section id="team">
       <Container flex column align-center class="title">
-        <h2 class="description" mb2>The Core of the project</h2>
+        <h2 class="description" mb2>The team behind MESG</h2>
       </Container>
       <div class="inner-background" mb3>
         <Container>
@@ -105,7 +105,7 @@
       <Container flex column align-center>
         <h2 mb2>Trusted by fantastic brands</h2>
         <Partners mb2/>
-        <Button secondary :to="links.partners">Our partners</Button>
+        <Button secondary :to="links.partners">Partners</Button>
       </Container>
     </section>
 
@@ -114,7 +114,7 @@
     <CallToAction
       mb3
       title="Aligned with our purpose?"
-      description="Reach out! We love helping organizations find new ways to build powerful solutions."
+      description="Reach out! We love helping the community find new ways to build powerful solutions."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
     />
 
@@ -159,7 +159,7 @@ export default {
     page({
       title: "MESG Foundation",
       description:
-        "The MESG Foundation is a group of passionate individuals dedicated to the creation of a new economy for developers."
+        "The MESG Foundation is a group of passionate individuals dedicated to promoting blockchain usability in the real world."
     })
   ],
   computed: mapGetters({

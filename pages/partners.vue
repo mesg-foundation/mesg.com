@@ -9,7 +9,7 @@
 
     <section id="investors" mb3>
       <Container>
-        <h2 mb3>Invested in and incubated by</h2>
+        <h2 mb3>Incubated by</h2>
       </Container>
       <Container>
         <TextWithSchema
@@ -41,7 +41,7 @@
 
     <CallToAction
       mb3
-      title="Accelerate your business with MESG"
+      title="Accelerate your business"
       description="MESG is built for efficiency and scalability. Create or share app integrations to adopt new features or even enter new industries, then scale limitlessly with a decentralized network."
       :links="[{ title: 'Become a partner' , href: externalLinks.contact }]"
     />
@@ -77,7 +77,7 @@ export default {
     page({
       title: "Investors and Partners",
       description:
-        "Generous investments by Yellow Capital have enabled MESG to provide top service to our partners across various industries."
+        "Generous investments by Yellow Capital have enabled MESG to provide top-shelf service to our partners across various industries."
     })
   ],
   computed: {

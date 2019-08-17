@@ -4,7 +4,7 @@
 
     <section id="use cases">
       <Container flex column align-center>
-        <h2 mb2>MESG Use Cases</h2>
+        <h2 mb2>Use Cases</h2>
         <div flex row wrap>
           <nuxt-link
             v-for="usecase in usecases"
@@ -31,7 +31,7 @@
 
     <CallToAction
       mb3
-      title="Accelerate your business with MESG"
+      title="Accelerate your business"
       description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Then scale limitlessly with a decentralized network."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />

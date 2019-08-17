@@ -27,11 +27,11 @@
 
     <section id="interoperability" mb3>
       <Container class="intro">
-        <h2 mb1>Enabling effortless interoperability</h2>
+        <h2 mb1>Effortless interoperability</h2>
         <p
           mb2
           class="text-center description"
-        >The MESG SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
+        >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
       </Container>
       <div class="inner-background">
         <Container>
@@ -48,7 +48,7 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb2>MESG SDK Use Cases</h2>
+        <h2 mb2>Use Cases</h2>
         <div flex row wrap>
           <TextWithIcon
             half
@@ -74,10 +74,10 @@
             <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and SDK">
           </div>
           <div half>
-            <h2 class="text-left" mb1>The MESG Token and SDK</h2>
+            <h2 class="text-left" mb1>MESG Token + SDK</h2>
             <p
               mb2
-            >The tools of the MESG SDK are free to use locally. However, in order to build variably decentralized apps, MESG Tokens will be required to reward network participants who manage and secure executions.</p>
+            >The tools of the MESG SDK are free to use locally. However, in order to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.</p>
             <Button outline :to="links.token">Discover the MESG Token</Button>
           </div>
         </div>
@@ -86,7 +86,7 @@
 
     <CallToAction
       mb3
-      title="Streamline your business with MESG"
+      title="Streamline your business"
       description="Optimize processes and automate workflows between your whole stack of connected systems."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />

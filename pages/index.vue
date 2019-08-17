@@ -10,7 +10,7 @@
     <section id="partners" mb3>
       <Container flex column align-center>
         <Partners mb2/>
-        <Button secondary :to="links.partners">Our partners</Button>
+        <Button secondary :to="links.partners">Partners</Button>
       </Container>
     </section>
 
@@ -25,7 +25,7 @@
 
     <section id="product-intro">
       <Container flex column align-center class="intro">
-        <h2 mb1>Our products</h2>
+        <h2 mb1>Products</h2>
         <p
           mb2
           class="text-center product-desc"
@@ -65,7 +65,7 @@
                 <h3 mb1>Build services, earn tokens</h3>
                 <p
                   class="token-desc"
-                >Earn MESG Tokens by building and sharing application components in the decentralized MESG Marketplace.</p>
+                >Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
               </div>
             </div>
             <div flex column third>
@@ -80,8 +80,8 @@
 
     <CallToAction
       mb3
-      title="Accelerate your business with MESG"
-      description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Then scale limitlessly with a decentralized network."
+      title="Accelerate your business"
+      description="Add features to your custom software stack to expand to new industries. Then scale limitlessly with the decentralized network."
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
@@ -125,7 +125,7 @@ export default {
     page({
       title: "The new economy of app development",
       description:
-        "Build apps or autonomous workflows with reusable, shareable integrations connecting any service, app, blockchain or decentralized network."
+        "Build applications and workflows using shareable integrations from any service, app, blockchain or decentralized network."
     })
   ],
   computed: mapGetters({
