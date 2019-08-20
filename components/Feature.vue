@@ -1,14 +1,14 @@
 <template>
   <div flex row space-between align-center wrap class="feature">
     <div half>
-      <img :src="src">
+      <img :src="src" />
     </div>
     <div half>
       <Card p2 column flex space-between>
         <h3 mb1>{{ title }}</h3>
-        <p v-if="description" mb2 v-html="description"></p>
+        <p v-if="description" v-html="description"></p>
         <slot mb2></slot>
-        <Button outline :to="to" :href="href">{{ action }}</Button>
+        <Button outline v-if="action" :to="to" :href="href" mt2>{{ action }}</Button>
       </Card>
     </div>
   </div>

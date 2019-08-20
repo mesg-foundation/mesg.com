@@ -23,6 +23,7 @@
           <ul flex row mobile-column class="menu">
             <li flex column quarter>
               <a href="#" class="category" mb1>Products</a>
+              <nuxt-link :to="links.workflows" class="link-secondary" mb1>MESG Workflows</nuxt-link>
               <nuxt-link :to="links.engine" class="link-secondary" mb1>MESG SDK</nuxt-link>
               <nuxt-link :to="links.marketplace" class="link-secondary" mb1>MESG Marketplace</nuxt-link>
               <nuxt-link :to="links.showcase" class="link-secondary" mb1>Showcase</nuxt-link>

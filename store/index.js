@@ -56,6 +56,23 @@ export const getters = {
     ]
   },
 
+  workflows() {
+    return {
+      features: {
+        primary: [
+          {
+            src: require('~/assets/workflows/workflows-2.svg'), title: "Automate complexities", description: "Build your own development workflow by connecting the events and tasks from any service through a simple config file. You can apply complex technologies like blockchains without managing complexities like server instances and data consensuses.<br/><br/>Any services from the Marketplace can be used in workflows, or users can write their own featuring any language or data format."
+          }
+        ],
+        secondary: [
+          { src: require("~/assets/marketplace/reuse-work.svg"), title: "Orchestration", description: "Write the components you need and let the Engine manage everything else, from downloading sources to testing and deployment." },
+          { src: require("~/assets/engine/event-driven.svg"), title: "Simplification", description: "Stop accruing technical debt by managing your own DevOps. Just configure actions for the community-built services you use." },
+          { src: require("~/assets/engine/scalable-apps.svg"), title: "Scalability", description: "Automating communication between components allows apps to ship more often while making them more maintainable and scalable." }
+        ]
+      }
+    }
+  },
+
   enterprise() {
     return {
       features: {
@@ -786,6 +803,7 @@ export const getters = {
     return {
       home: "/",
       enterprise: "/enterprise",
+      workflows: "/mesg-workflows",
       engine: "/mesg-sdk",
       marketplace: "/mesg-marketplace",
       token: "/token",
