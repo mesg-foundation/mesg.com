@@ -65,7 +65,7 @@ export const getters = {
           }
         ],
         secondary: [
-          { src: require("~/assets/marketplace/reuse-work.svg"), title: "Orchestration", description: "Write the components you need and let the Engine manage everything else, from downloading sources to testing and deployment." },
+          { src: require("~/assets/marketplace/reuse-work.svg"), title: "Orchestration", description: "Write the components you need and let the Engine manage everything else, from the interaction between components to testing and deployment." },
           { src: require("~/assets/engine/event-driven.svg"), title: "Simplification", description: "Stop accruing technical debt by managing your own DevOps. Just configure actions for the community-built services you use." },
           { src: require("~/assets/engine/scalable-apps.svg"), title: "Scalability", description: "Automating communication between components allows apps to ship more often while making them more maintainable and scalable." }
         ]
