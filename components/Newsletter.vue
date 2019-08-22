@@ -1,54 +1,23 @@
 <template>
-  <Card>
-    <Container p2>
-      <slot />
-      <h2 mb1>{{ title }}</h2>
-      <p mb2>{{ description }}</p>
-      <div class="form">
-        <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit" flex row wrap>
-          <div flex column>
-            <input type="email" placeholder="Your email address" v-model="email" required />
-          </div>
-          <div flex column third>
-            <button type="submit" class="submit-newsletter">Sign up</button>
-          </div>
-        </form>
-      </div>
-    </Container>
-    <Container class="bottom" p2>
-      <p class="infos">
-        By submitting this form you agree to receive email updates. Find out how we process
-        <a
-          href="/privacy-cookie-policy"
-          class="link"
-          target="_blank"
-        >your data</a>.
-      </p>
-    </Container>
-  </Card>
+  <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit" flex row wrap>
+    <div flex column>
+      <input type="email" placeholder="Your email address" v-model="email" required />
+    </div>
+    <div flex column third>
+      <Button submit primary>Sign up</Button>
+    </div>
+  </form>
 </template>
 
 <script>
-import Card from "~/components/Card";
-import Container from "~/components/Container";
+import Button from "~/components/Button";
 export default {
   components: {
-    Card,
-    Container
-  },
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String
-    }
+    Button
   },
   data() {
     return {
-      email: "",
-      popup: true
+      email: ""
     };
   },
   methods: {
@@ -86,6 +55,7 @@ form {
 }
 
 input[type="email"] {
+  max-height: 50px;
   font-size: 15px;
   padding: 13px var(--margin);
   border: solid 1px var(--light-purple);
@@ -99,16 +69,11 @@ input[type="email"]:focus {
   box-shadow: 0 0 0 1px var(--light-purple) inset;
 }
 
-.submit-newsletter:hover {
+button {
+  border: none;
+}
+button:hover {
   cursor: pointer;
-}
-
-h2 {
-  text-align: left;
-}
-
-.bottom {
-  background-color: var(--light-background);
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {

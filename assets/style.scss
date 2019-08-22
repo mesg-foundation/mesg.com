@@ -44,6 +44,7 @@ a,
 p,
 ul,
 li,
+button,
 label,
 input,
 textarea {
@@ -127,33 +128,6 @@ a {
 }
 
 /* Design styles */
-button {
-  border-radius: 3px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  padding: 0.75em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-decoration: none;
-  border:none;
-  display: inline-block;
-  color: var(--white);
-  background-color: var(--purple);
-}
-button:focus {
-  outline:none;
-}
-button:hover {
-  background-color: var(--purple-shadow);
-  transition: 0.2s ease;
-}
-
 img {
   max-width: 100%;
 }

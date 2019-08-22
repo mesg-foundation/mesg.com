@@ -13,7 +13,7 @@
     <div id="popup-newsletter" v-if="popup">
       <div class="background" @click="popup = false" />
       <div class="content">
-        <Newsletter
+        <NewsletterPopup
           class="newsletter"
           title="Keep in touch"
           description="Stay connected with us and receive a notification on September 4th for the launch of MESG Orchestrator."
@@ -21,7 +21,7 @@
           <button class="btn-close" @click="popup = false">
             <i class="fas fa-times"></i>
           </button>
-        </Newsletter>
+        </NewsletterPopup>
       </div>
     </div>
 
@@ -86,7 +86,7 @@ import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
-import Newsletter from "~/components/Newsletter";
+import NewsletterPopup from "~/components/NewsletterPopup";
 import page from "./page";
 
 export default {
@@ -100,7 +100,7 @@ export default {
     GetStarted,
     TextWithIcon,
     Feature,
-    Newsletter
+    NewsletterPopup
   },
   mixins: [
     page({
@@ -165,7 +165,8 @@ export default {
   font-size: 18px;
   position: absolute;
   color: var(--light-purple);
-  background-color: transparent;
+  background-color: var(--light-background);
+  border-bottom-left-radius: 6px;
 }
 .btn-close:focus {
   outline: none;
@@ -173,6 +174,12 @@ export default {
 .btn-close:hover {
   cursor: pointer;
   color: var(--purple);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .btn-cta {
+    margin-right: 0 !important;
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {

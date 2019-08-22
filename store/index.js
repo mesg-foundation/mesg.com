@@ -640,9 +640,9 @@ export const getters = {
       description: "You acknowledge that you have read this Policy and agree to all its terms and conditions. By using the Website or its Services you agree to be bound by this Policy. If you do not agree to abide by the terms of this Policy, you are not authorized to use or access the Website and its Services."
     },
     {
-      id: "contacting-us",
-      category: "Contacting us",
-      title: "Contacting us",
+      id: "contact-us",
+      category: "Contact us",
+      title: "Contact us",
       description: "If you have any questions about this Policy, please contact us by email at <a href='mailto:contact@mesg.com' class='link'>contact@mesg.com</a> or by mail using the details provided below:<br/><br/><strong>MESG Foundation</strong><br/><br/>Willow House,<br/>Cricket Square,<br/>PO Box 709,<br/>Grand Cayman KY1- 1107,<br/>Cayman Islands"
     }
     ]

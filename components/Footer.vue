@@ -66,19 +66,27 @@
         </nav>
       </Container>
 
-      <hr mb2 />
-
       <section id="newsletter">
-        <Container flex row mobile-column-reverse align-center>
-          <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
-          <div class="form">
-            <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit">
-              <input type="email" placeholder="Your email address" v-model="email" required />
-              <button type="submit" class="submit-newsletter">
-                <i class="fas fa-arrow-right" />
-              </button>
-            </form>
-          </div>
+        <Container class="newsletter">
+          <Card class="outline" p1>
+            <div flex row mobile-column align-center>
+              <div third>
+                <p
+                  class="category"
+                >Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more.</p>
+              </div>
+              <Newsletter class="form" />
+            </div>
+            <hr mt1 mb1 />
+            <p class="infos purple">
+              By submitting this form you agree to receive email updates. Find out how we process
+              <a
+                href="/privacy-cookie-policy"
+                class="link white"
+                target="_blank"
+              >your data</a>.
+            </p>
+          </Card>
         </Container>
       </section>
     </div>
@@ -88,16 +96,15 @@
 <script>
 import Button from "~/components/Button";
 import Container from "~/components/Container";
+import Card from "~/components/Card";
+import Newsletter from "~/components/Newsletter";
 import { mapGetters } from "vuex";
 export default {
   components: {
     Button,
-    Container
-  },
-  data() {
-    return {
-      email: ""
-    };
+    Container,
+    Newsletter,
+    Card
   },
   computed: {
     ...mapGetters({
@@ -116,32 +123,6 @@ export default {
         { href: this.externalLinks.facebook, icon: "fab fa-facebook-f" }
       ];
     }
-  },
-  methods: {
-    async submit() {
-      const token = "32bdd13cbff3931061eb3eca01321d84";
-      const data = new FormData();
-      data.append("email", this.email);
-      data.append("token", token);
-      const req = window.XMLHttpRequest
-        ? new XMLHttpRequest()
-        : new ActiveXObject("Microsoft.XMLHTTP");
-      req.open(
-        "POST",
-        "https://app.sgwidget.com/v2/api/newsletter-signup",
-        false
-      );
-      req.onload = () => {
-        const res = JSON.parse(req.responseText);
-        if (req.status === 200) {
-          alert(res.message);
-          this.email = "";
-        } else {
-          alert(res.email[0]);
-        }
-      };
-      req.send(data);
-    }
   }
 };
 </script>
@@ -151,6 +132,18 @@ export default {
   padding: 40px;
   width: 100%;
   background-color: var(--dark-purple);
+}
+
+.outline {
+  border: solid 1px var(--deep-purple);
+  background-color: var(--dark-purple);
+}
+
+.purple {
+  color: var(--deep-purple);
+}
+.white {
+  color: var(--white);
 }
 
 .copyright {
@@ -235,28 +228,10 @@ nav {
   text-align: right;
 }
 
-form {
-  position: relative;
-}
-
-input[type="email"] {
-  font-size: 15px;
-  width: 300px;
-  padding: 13px var(--margin);
-  border: solid 1px var(--deep-purple);
-  border-radius: 3px;
-  background-color: var(--dark-purple);
-  color: var(--white);
-  padding-right: calc(3 * var(--margin));
-}
-
-button[type="submit"] {
-  transform: translateX(-40px);
-  background: transparent;
-  border: none;
-  font-size: 18px;
-  padding: 0;
-  color: var(--white);
+@media only screen and (max-width: $tablet-breakpoint) {
+  .newsletter {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -277,15 +252,8 @@ button[type="submit"] {
     margin-bottom: 20px;
   }
   .form {
+    margin-top: 40px;
     margin-bottom: 20px !important;
-  }
-  .form button {
-    position: absolute;
-    right: -20px;
-    top: 12px;
-  }
-  #newsletter p {
-    margin: auto !important;
   }
 }
 </style>
