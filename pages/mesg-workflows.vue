@@ -6,24 +6,26 @@
       :description="description"
     >
       <div class="btn-center">
-        <Button @click="popup = true" class="btn-cta" primary mr2>Stay Updated</Button>
+        <Button @click="popup = !popup" class="btn-cta" primary mr2>Stay Updated</Button>
       </div>
     </Header>
 
-    <div id="popup-newsletter" v-if="popup">
-      <div class="background" @click="popup = false" />
-      <div class="content">
-        <NewsletterPopup
-          class="newsletter"
-          title="Keep in touch"
-          description="Stay connected with us and receive a notification on September 4th for the launch of MESG Orchestrator."
-        >
-          <button class="btn-close" @click="popup = false">
-            <i class="fas fa-times"></i>
-          </button>
-        </NewsletterPopup>
+    <transition name="fade">
+      <div id="popup-newsletter" v-if="popup">
+        <div class="background" @click="popup = false" />
+        <div class="content">
+          <NewsletterPopup
+            class="newsletter"
+            title="Keep in touch"
+            description="Stay connected with us and receive a notification on September 4th for the launch of MESG Orchestrator."
+          >
+            <button class="btn-close" @click="popup = false">
+              <i class="fas fa-times"></i>
+            </button>
+          </NewsletterPopup>
+        </div>
       </div>
-    </div>
+    </transition>
 
     <section id="features" mb3>
       <Container flex row space-between wrap>
@@ -65,7 +67,7 @@
       title="Launching September 4th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
     >
-      <Button @click="popup = true" class="btn-cta" white mr2>Stay Updated</Button>
+      <Button @click="popup = !popup" class="btn-cta" white mr2>Stay Updated</Button>
     </CallToAction>
 
     <Discover mb3 left="engine" right="marketplace" />
@@ -125,6 +127,15 @@ export default {
 <style lang="scss" scoped>
 .btn-cta:hover {
   cursor: pointer;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 
 #popup-newsletter {
