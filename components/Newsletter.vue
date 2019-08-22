@@ -1,40 +1,39 @@
 <template>
-  <section id="newsletter">
-    <Container>
-      <Card p2>
-        <slot />
-        <h2 mb1>{{ title }}</h2>
-        <p mb2>{{ description }}</p>
-        <div class="form">
-          <form
-            data-token="32bdd13cbff3931061eb3eca01321d84"
-            @submit.prevent="submit"
-            flex
-            row
-            wrap
-          >
-            <div flex column>
-              <input type="email" placeholder="Your email address" v-model="email" required />
-            </div>
-            <div flex column third>
-              <button type="submit" class="submit-newsletter">Sign up</button>
-            </div>
-          </form>
-        </div>
-      </Card>
+  <Card>
+    <Container p2>
+      <slot />
+      <h2 mb1>{{ title }}</h2>
+      <p mb2>{{ description }}</p>
+      <div class="form">
+        <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit" flex row wrap>
+          <div flex column>
+            <input type="email" placeholder="Your email address" v-model="email" required />
+          </div>
+          <div flex column third>
+            <button type="submit" class="submit-newsletter">Sign up</button>
+          </div>
+        </form>
+      </div>
     </Container>
-  </section>
+    <Container class="bottom" p2>
+      <p class="infos">
+        By submitting this form you agree to receive email updates. Find out how we process
+        <a
+          href="/privacy-cookie-policy"
+          target="_blank"
+        >your data</a>.
+      </p>
+    </Container>
+  </Card>
 </template>
 
 <script>
 import Card from "~/components/Card";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
 export default {
   components: {
     Card,
-    Container,
-    Button
+    Container
   },
   props: {
     title: {
@@ -93,28 +92,6 @@ input[type="email"] {
   background-color: var(--white);
   color: var(--dark-purple);
 }
-button[type="submit"] {
-  border-radius: 3px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  padding: 0.75em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-decoration: none;
-  display: inline-block;
-  color: var(--white);
-  background-color: var(--purple);
-}
-button[type="submit"]:hover {
-  background-color: var(--purple-shadow);
-  transition: 0.2s ease;
-}
 
 input[type="email"]:focus {
   outline: none;
@@ -129,24 +106,17 @@ h2 {
   text-align: left;
 }
 
-.close {
-  top: 20px;
-  right: 20px;
-  position: absolute;
-  color: var(--light-purple);
-}
-.close:hover {
-  cursor: pointer;
-  color: var(--purple);
+.infos {
+  font-size: 14px;
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
-  input[type="email"] {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  button[type="submit"] {
-    width: 100%;
+.bottom {
+  background-color: var(--light-background);
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  button {
+    margin-top: 20px;
   }
 }
 </style>

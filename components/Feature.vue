@@ -41,8 +41,7 @@ export default {
       type: String
     },
     action: {
-      type: String,
-      required: true
+      type: String
     }
   }
 };

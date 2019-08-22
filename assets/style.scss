@@ -44,7 +44,6 @@ a,
 p,
 ul,
 li,
-button,
 label,
 input,
 textarea {
@@ -80,6 +79,7 @@ p {
   font-size: 17px;
   color: var(--text-color);
 }
+
 ul {
   list-style: none;
 }
@@ -100,12 +100,8 @@ li {
 .list p {
   margin-left:22px;
 }
-img {
-  max-width: 100%;
-}
 
 a {
-  font-size: 17px;
   font-weight: bold;
   color: var(--purple);
   text-decoration: none;
@@ -125,6 +121,39 @@ a {
 .text-left {
   text-align: left;
 }
+
+/* Design styles */
+button {
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  padding: 0.75em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+  border:none;
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--purple);
+}
+button:focus {
+  outline:none;
+}
+button:hover {
+  background-color: var(--purple-shadow);
+  transition: 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
 .inner-background {
   position: relative;
 }
@@ -141,6 +170,7 @@ a {
 .outer-background {
   background: var(--light-background);
 }
+
 hr {
   width: var(--width);
   max-width: 100%;
@@ -149,6 +179,7 @@ hr {
   border:solid 0.5px;
   color: var(--light-purple);
 }
+
 .container > p {
   max-width: var(--small-width);
   margin: auto;

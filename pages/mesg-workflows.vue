@@ -6,21 +6,23 @@
       :description="description"
     >
       <div class="btn-center">
-        <Button @click="popup = true" class="btn-popup" primary mr2>Stay Updated</Button>
+        <Button @click="popup = true" class="btn-cta" primary mr2>Stay Updated</Button>
       </div>
     </Header>
 
     <div id="popup-newsletter" v-if="popup">
       <div class="background" @click="popup = false" />
-      <Newsletter
-        class="content"
-        title="Keep in touch"
-        description="Stay connected with us and receive a notification on September 4th for the launch of MESG Orchestrator."
-      >
-        <button class="close" @click="popup = false">
-          <i class="fas fa-times"></i>
-        </button>
-      </Newsletter>
+      <div class="content">
+        <Newsletter
+          class="newsletter"
+          title="Keep in touch"
+          description="Stay connected with us and receive a notification on September 4th for the launch of MESG Orchestrator."
+        >
+          <button class="btn-close" @click="popup = false">
+            <i class="fas fa-times"></i>
+          </button>
+        </Newsletter>
+      </div>
     </div>
 
     <section id="features" mb3>
@@ -43,7 +45,7 @@
         <p
           mb2
           class="text-center description"
-        >Build workflows using an open-source decentralized system built upon a global economy where every user is a cloud provider.</p>
+        >Build apps with workflows through an open-source decentralized economy where every user is a cloud provider.</p>
       </Container>
       <div class="inner-background">
         <Container>
@@ -63,7 +65,7 @@
       title="Launching September 4th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
     >
-      <Button @click="popup = true" class="btn-popup" white mr2>Stay Updated</Button>
+      <Button @click="popup = true" class="btn-cta" white mr2>Stay Updated</Button>
     </CallToAction>
 
     <Discover mb3 left="engine" right="marketplace" />
@@ -104,7 +106,7 @@ export default {
     page({
       title: "MESG Orchestrator",
       description:
-        "A distributed service-orchestration system for automated app testing, deployment, scaling and management."
+        "A service-orchestration system for automated deployment, interaction, testing and scaling."
     })
   ],
   data() {
@@ -121,7 +123,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn-popup:hover {
+.btn-cta:hover {
   cursor: pointer;
 }
 
@@ -133,7 +135,6 @@ export default {
   bottom: 0;
   z-index: 10;
 }
-
 #popup-newsletter > .background {
   position: absolute;
   top: 0;
@@ -142,15 +143,19 @@ export default {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.32);
 }
-
 #popup-newsletter > .content {
+  width: 680px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
-.close {
+.newsletter {
+  position: relative;
+}
+
+.btn-close {
   top: 0;
   right: 0;
   width: 40px;
@@ -162,15 +167,18 @@ export default {
   color: var(--light-purple);
   background-color: transparent;
 }
-.close:focus {
+.btn-close:focus {
   outline: none;
 }
-.close:hover {
+.btn-close:hover {
   cursor: pointer;
   color: var(--purple);
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
+  #popup-newsletter > .content {
+    width: auto;
+  }
   #community .intro {
     padding-bottom: 0;
   }
