@@ -6,7 +6,7 @@
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu/>
+            <SideMenu :items="questions" />
           </div>
           <ul flex column>
             <li v-for="(category, i) in questions" :key="i">
@@ -17,7 +17,7 @@
                   <p v-html="content.description" mb2></p>
                 </li>
               </ul>
-              <hr mb2>
+              <hr mb2 />
             </li>
             <p class="infos">
               * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
@@ -39,9 +39,9 @@
       :links="[{ title: 'Contact us' , href: externalLinks.contact }]"
     />
 
-    <Discover mb3 left="token" right="enterprise"/>
+    <Discover mb3 left="token" right="enterprise" />
 
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -77,12 +77,7 @@ export default {
     links: "links",
     questions: "questions",
     externalLinks: "externalLinks"
-  }),
-  props: {
-    text: {
-      type: String
-    }
-  }
+  })
 };
 </script>
 

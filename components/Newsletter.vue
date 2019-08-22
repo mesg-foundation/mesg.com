@@ -20,6 +20,7 @@
         By submitting this form you agree to receive email updates. Find out how we process
         <a
           href="/privacy-cookie-policy"
+          class="link"
           target="_blank"
         >your data</a>.
       </p>
@@ -104,10 +105,6 @@ input[type="email"]:focus {
 
 h2 {
   text-align: left;
-}
-
-.infos {
-  font-size: 14px;
 }
 
 .bottom {

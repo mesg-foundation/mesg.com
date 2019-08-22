@@ -2,14 +2,9 @@
   <div>
     <nav flex column class="sidebar">
       <p mb1>All categories</p>
-      <a
-        v-for="question in questions"
-        :key="question.id"
-        :href="`#${question.id}`"
-        class="link-secondary"
-      >
+      <a v-for="item in items" :key="item.id" :href="`#${item.id}`" class="link-secondary">
         <i class="far fa-chevron-right"></i>
-        {{question.category}}
+        {{ item.category }}
       </a>
     </nav>
   </div>
@@ -19,14 +14,11 @@
 import { mapGetters } from "vuex";
 export default {
   props: {
-    text: {
+    items: {
       type: Array,
       required: true
     }
-  },
-  computed: mapGetters({
-    questions: "questions"
-  })
+  }
 };
 </script>
 
