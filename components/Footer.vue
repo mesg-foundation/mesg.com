@@ -7,7 +7,8 @@
             <nuxt-link :to="links.home">
               <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG" />
             </nuxt-link>
-            <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
+            <p class="copyright">© 2019 MESG Foundation, All rights reserved.</p>
+            <nuxt-link :to="links.policy" class="policy" mb2>Privacy & Cookie Policy</nuxt-link>
             <div flex space-between wrap>
               <a
                 v-for="(icon, i) in icons"
@@ -23,7 +24,6 @@
           <ul flex row mobile-column class="menu">
             <li flex column quarter>
               <a href="#" class="category" mb1>Products</a>
-              <nuxt-link :to="links.workflows" class="link-secondary" mb1>MESG Workflows</nuxt-link>
               <nuxt-link :to="links.engine" class="link-secondary" mb1>MESG SDK</nuxt-link>
               <nuxt-link :to="links.marketplace" class="link-secondary" mb1>MESG Marketplace</nuxt-link>
               <nuxt-link :to="links.showcase" class="link-secondary" mb1>Showcase</nuxt-link>
@@ -161,6 +161,21 @@ export default {
   line-height: normal;
   letter-spacing: normal;
   color: var(--deep-purple);
+}
+
+.policy {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--deep-purple);
+}
+.policy:hover {
+  color: var(--white);
+  text-decoration: underline;
+  transition: 0.1s ease;
 }
 
 .category {
