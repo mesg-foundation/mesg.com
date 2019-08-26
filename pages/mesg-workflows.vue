@@ -57,7 +57,11 @@
             v-bind="feature"
             :reverse="i % 2 === 1"
             mb3
-          />
+          >
+            <template v-slot:left>
+              <Code />
+            </template>
+          </Feature>
         </Container>
       </div>
     </section>
@@ -88,6 +92,7 @@ import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
+import Code from "~/components/Code";
 import NewsletterPopup from "~/components/NewsletterPopup";
 import page from "./page";
 
@@ -102,6 +107,7 @@ export default {
     GetStarted,
     TextWithIcon,
     Feature,
+    Code,
     NewsletterPopup
   },
   mixins: [

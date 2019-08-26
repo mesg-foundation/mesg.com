@@ -1,13 +1,14 @@
 <template>
   <div flex row space-between align-center wrap class="feature">
     <div half>
-      <img :src="src" />
+      <img v-if="src" :src="src" />
+      <slot name="left"></slot>
     </div>
     <div half>
       <Card p2 column flex space-between>
         <h3 mb1>{{ title }}</h3>
         <p v-if="description" v-html="description"></p>
-        <slot mb2></slot>
+        <slot name="right"></slot>
         <Button outline v-if="action" :to="to" :href="href" mt2>{{ action }}</Button>
       </Card>
     </div>
@@ -24,8 +25,7 @@ export default {
   },
   props: {
     src: {
-      type: String,
-      required: true
+      type: String
     },
     title: {
       type: String,

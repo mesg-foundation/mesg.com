@@ -61,7 +61,7 @@ export const getters = {
       features: {
         primary: [
           {
-            src: require('~/assets/workflows/workflows-2.svg'), title: "Automate complexities", description: "Build your own development workflow by connecting the events and tasks from any service through a simple config file. Implement complex technologies like blockchains without managing the complexities like server instances and data consensuses.<br/><br/>Any services from the Marketplace can be immediately reused within workflows, or users can write new services using any language or data format."
+            title: "Automate complexities", description: "Build your own development workflow by connecting the events and tasks from any service through a simple config file. Implement complex technologies like blockchains without managing the complexities like server instances and data consensuses.<br/><br/>Any services from the Marketplace can be immediately reused within workflows, or users can write new services using any language or data format."
           }
         ],
         secondary: [

@@ -1,7 +1,7 @@
 <template>
   <ul mb2>
     <li mb1 v-for="(item, i) in items" :key="i">
-      <img mr1 v-if="item.src" :src="item.src" :alt="item.title">
+      <img mr1 v-if="item.src" :src="item.src" :alt="item.title" />
       {{ item.title }}
     </li>
   </ul>
