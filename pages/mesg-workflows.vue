@@ -49,17 +49,16 @@
           class="text-center description"
         >Build apps with workflows through an open-source decentralized economy where every user is a cloud provider.</p>
       </Container>
-      <div class="inner-background">
+      <div class="outer-background" pt3 pb3>
         <Container>
           <Feature
             v-for="(feature, i) in workflows.features.primary"
             :key="i"
             v-bind="feature"
             :reverse="i % 2 === 1"
-            mb3
           >
             <template v-slot:left>
-              <Code />
+              <Code class="code" />
             </template>
           </Feature>
         </Container>
@@ -197,14 +196,17 @@ export default {
   .btn-cta {
     margin-right: 0 !important;
   }
-}
-
-@media only screen and (max-width: $mobile-breakpoint) {
+  .code {
+    margin-bottom: 40px;
+  }
   #popup-newsletter > .content {
     width: auto;
   }
-  #community .intro {
-    padding-bottom: 0;
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .outer-background {
+    margin-bottom: 40px;
   }
 }
 </style>

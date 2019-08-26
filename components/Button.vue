@@ -145,10 +145,6 @@ i {
   }
 }
 @media only screen and (max-width: $mobile-only) {
-  a,
-  button {
-    max-height: 50px;
-  }
   .btn--primary,
   .btn--outline,
   .btn--white {

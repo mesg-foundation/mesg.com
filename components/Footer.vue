@@ -255,5 +255,8 @@ nav {
     margin-top: 40px;
     margin-bottom: 20px !important;
   }
+  .policy {
+    margin-top: 20px;
+  }
 }
 </style>

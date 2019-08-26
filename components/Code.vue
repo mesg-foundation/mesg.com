@@ -1,5 +1,10 @@
 <template>
   <Card p1>
+    <div class="circles" mb1 flex row space-between>
+      <span class="circle" flex column></span>
+      <span class="circle" flex column></span>
+      <span class="circle" flex column></span>
+    </div>
     <VueEmbedGist :gist-id="id" />
   </Card>
 </template>
@@ -33,5 +38,16 @@ export default {
 .gist .gist-data {
   border: transparent;
   max-height: 600px;
+}
+
+.circles {
+  max-width: 50px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--light-background);
+  margin-right: 10px;
 }
 </style>
