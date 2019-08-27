@@ -1,21 +1,27 @@
 <template>
-  <Card p1>
-    <div class="circles" mb1 flex row space-between>
-      <span class="circle" flex column></span>
-      <span class="circle" flex column></span>
-      <span class="circle" flex column></span>
-    </div>
-    <VueEmbedGist :gist-id="id" />
+  <Card>
+    <Container class="tab" p1>
+      <div flex row>
+        <span class="circle close" flex column></span>
+        <span class="circle reduce" flex column></span>
+        <span class="circle extend" flex column></span>
+      </div>
+    </Container>
+    <Container p1>
+      <VueEmbedGist :gist-id="id" />
+    </Container>
   </Card>
 </template>
 
 <script>
 import VueEmbedGist from "vue-embed-gist";
+import Container from "~/components/Container";
 import Card from "~/components/Card";
 export default {
   components: {
     VueEmbedGist,
-    Card
+    Card,
+    Container
   },
   props: {
     id: {
@@ -40,14 +46,26 @@ export default {
   max-height: 600px;
 }
 
-.circles {
-  max-width: 50px;
+.tab {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: var(--light-background);
 }
 .circle {
   width: 10px;
   height: 10px;
+  max-width: 10px;
+  max-height: 10px;
   border-radius: 100%;
-  background-color: var(--light-background);
   margin-right: 10px;
+}
+.close {
+  background-color: #fc5b57;
+}
+.reduce {
+  background-color: #e5bf3c;
+}
+.extend {
+  background-color: #57c038;
 }
 </style>

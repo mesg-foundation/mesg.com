@@ -27,12 +27,14 @@
             half
             title="Story"
             text="The MESG Foundation was built to promote and support blockchain technology through the improvement of its accessibility and use in the real world."
+            mb2
           />
 
           <Titletext3
             half
             title="Vision"
             text="To be the first universal infrastructure to bridge legacy companies moving into a trustless landscape. The future of business is decentralized."
+            mb2
           />
         </div>
       </Container>
@@ -104,12 +106,12 @@
     <section id="partners" mb3>
       <Container flex column align-center>
         <h2 mb2>Trusted by fantastic brands</h2>
-        <Partners mb2/>
+        <Partners mb2 />
         <Button secondary :to="links.partners">Partners</Button>
       </Container>
     </section>
 
-    <News :articles="articles"/>
+    <News :articles="articles" />
 
     <CallToAction
       mb3
@@ -118,9 +120,9 @@
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
     />
 
-    <Discover mb3 left="token" right="enterprise"/>
+    <Discover mb3 left="token" right="enterprise" />
 
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 

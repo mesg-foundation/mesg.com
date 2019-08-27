@@ -51,16 +51,17 @@
       </Container>
       <div class="outer-background" pt3 pb3>
         <Container>
-          <Feature
-            v-for="(feature, i) in workflows.features.primary"
-            :key="i"
-            v-bind="feature"
-            :reverse="i % 2 === 1"
-          >
-            <template v-slot:left>
+          <div flex row space-between align-center wrap>
+            <div half>
               <Code class="code" />
-            </template>
-          </Feature>
+            </div>
+            <div half>
+              <Titletext3
+                title="Automate complexities"
+                text="Build your own development workflow by connecting the events and tasks from any service through a simple config file. Implement complex technologies like blockchains without managing the complexities like server instances and data consensuses.</br></br>Any services from the Marketplace can be immediately reused within workflows, or users can write new services using any language or data format."
+              />
+            </div>
+          </div>
         </Container>
       </div>
     </section>
@@ -90,7 +91,7 @@ import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
-import Feature from "~/components/Feature";
+import Titletext3 from "~/components/Titletext3";
 import Code from "~/components/Code";
 import NewsletterPopup from "~/components/NewsletterPopup";
 import page from "./page";
@@ -105,7 +106,7 @@ export default {
     Discover,
     GetStarted,
     TextWithIcon,
-    Feature,
+    Titletext3,
     Code,
     NewsletterPopup
   },
@@ -190,6 +191,15 @@ export default {
 .btn-close:hover {
   cursor: pointer;
   color: var(--purple);
+}
+
+.outer-background {
+  padding-top: 0;
+  background-image: linear-gradient(
+    to top,
+    var(--light-background),
+    var(--white)
+  );
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
