@@ -10,9 +10,10 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, or IoT device can be connected to any app or workflow. Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, or IoT device can be connected to any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
             },
-            { src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The tools in the SDK allow for the reuse of app components, whether custom built or shared from the community", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
+            { src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK allow for the reuse of app components, whether custom built or shared from the community", to: links.marketplace, action: "MESG Marketplace" },
+            { src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The tools of the MESG SDK are free to use locally.</br></br>However, in order to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token" }
           ],
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "An efficient way to manage hard-to-reach technologies like blockchains or IoT devices is to build modular apps simply react to real-world events. Your apps remain lightweight, reactive and easy to maintain." },
@@ -36,8 +37,9 @@ export const getters = {
           "A decentralized marketplace built to save time in development. Reuse intercompatible application components and earn tokens when your work is reused by others.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatability", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.enterprise, action: "Our solutions" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatability", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/guide/marketplace/", action: "Create a service" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "MESG SDK" },
+            { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Marketplace", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
@@ -54,6 +56,18 @@ export const getters = {
         action: "Check out the Marketplace"
       }
     ]
+  },
+
+  home() {
+    return {
+      features: {
+        primary: [
+          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Value 1", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit. Sed ullamcorper nulla vitae ex elementum condimentum. Aliquam nisl massa." },
+          { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Value 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit. Sed ullamcorper nulla vitae ex elementum condimentum. Aliquam nisl massa." },
+          { src: require("~/assets/enterprise/process-data.svg"), title: "Value 3", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit. Sed ullamcorper nulla vitae ex elementum condimentum. Aliquam nisl massa." }
+        ],
+      }
+    }
   },
 
   enterprise() {
@@ -267,22 +281,10 @@ export const getters = {
             linkedin: "https://www.linkedin.com/in/hubert-krauze-67a6389b/"
           },
           {
-            src: require("~/assets/team/Ilker.jpg"),
-            title: "İlker Göktuğ Öztürk",
-            description: "Core Developer",
-            linkedin: "https://www.linkedin.com/in/ilker-goktug-ozturk/"
-          },
-          {
-            src: require("~/assets/team/Wayne.jpg"),
-            title: "Wayne Skeen",
-            description: "Advisor",
-            linkedin: "https://www.linkedin.com/in/wayneskeen/"
-          },
-          {
-            src: require("~/assets/team/Janie.jpg"),
-            title: "Janie Lim",
-            description: "Evangelist",
-            linkedin: "https://www.linkedin.com/in/janie-lim-135968b5/"
+            src: require("~/assets/team/Benz.jpg"),
+            title: "Thotsaphon Ruthamnong",
+            description: "Developer",
+            linkedin: "https://www.linkedin.com/in/thotsaphon-ruthamnong-a5889b111/"
           }
         ]
       },
@@ -767,6 +769,7 @@ export const getters = {
     return {
       documentation: "https://docs.mesg.com/",
       marketplace: "https://marketplace.mesg.com/",
+      service: "https://docs.mesg.com/guide/marketplace/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
       blog: "https://medium.com/mesg",

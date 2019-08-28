@@ -3,7 +3,6 @@
     <Header :picture="require('~/assets/team.svg')" :title="title" :description="description">
       <div>
         <Button :href="externalLinks.contact" target="_blank" primary>Get in touch</Button>
-        <span spacer></span>
       </div>
     </Header>
 
@@ -11,7 +10,7 @@
       <Container flex column align-center>
         <h2 mb1>About the Foundation</h2>
         <p
-          mb2
+          mb3
           class="text-center"
         >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
         <Card>
@@ -38,44 +37,21 @@
       </Container>
     </section>
 
-    <!--
-    <section id="numbers-intro">
-      <Container flex column align-center>
-        <h3 mb2>The Foundation in numbers</h3>
-      </Container>
-    </section>
-    <section id="numbers">
+    <hr mb3 />
+    <section id="documents" mb2>
       <Container>
         <div flex row space-between wrap>
-          <Card quarter p2 mb3 flex column>
-            <h3 class="text-center">2017</h3>
-            <p class="text-center">CREATION OF MESG</p>
-          </Card>
-
-          <Card quarter p2 mb3 flex column>
-            <h3 class="text-center">2017</h3>
-            <p class="text-center">CREATION OF MESG</p>
-          </Card>
-
-          <Card quarter p2 mb3 flex column>
-            <h3 class="text-center">2017</h3>
-            <p class="text-center">CREATION OF MESG</p>
-          </Card>
-
-          <Card quarter p2 mb3 flex column>
-            <h3 class="text-center">2017</h3>
-            <p class="text-center">CREATION OF MESG</p>
-          </Card>
+          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2 />
         </div>
       </Container>
     </section>
-    -->
+    <hr mb3 />
 
     <section id="team">
       <Container flex column align-center class="title">
-        <h2 class="description" mb2>The team behind MESG</h2>
+        <h2 class="description">The team behind MESG</h2>
       </Container>
-      <div class="inner-background" mb3>
+      <div class="outer-background" mb3>
         <Container>
           <div flex row wrap class="founders">
             <div v-for="(member, i) in team.members.founders" :key="i" third mb2 fill-height>
@@ -103,13 +79,12 @@
 
     <section id="partners" mb3>
       <Container flex column align-center>
-        <h2 mb2>Trusted by fantastic brands</h2>
-        <Partners mb2/>
-        <Button secondary :to="links.partners">Partners</Button>
+        <h2 mb3>Trusted by fantastic brands</h2>
+        <Partners />
       </Container>
     </section>
 
-    <News :articles="articles"/>
+    <News :articles="articles" />
 
     <CallToAction
       mb3
@@ -118,9 +93,7 @@
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
     />
 
-    <Discover mb3 left="token" right="enterprise"/>
-
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -131,12 +104,12 @@ import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Button from "~/components/Button";
 import Card from "~/components/Card";
+import Document from "~/components/Document";
 import Member from "~/components/Member";
 import Partners from "~/components/Partners";
 import News from "~/components/News";
 import Titletext3 from "~/components/Titletext3";
 import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
@@ -148,11 +121,11 @@ export default {
     Member,
     Button,
     Card,
+    Document,
     Partners,
     News,
     Titletext3,
     CallToAction,
-    Discover,
     GetStarted
   },
   mixins: [
@@ -164,6 +137,7 @@ export default {
   ],
   computed: mapGetters({
     team: "team",
+    documents: "documents",
     links: "links",
     externalLinks: "externalLinks",
     articles: "articles"

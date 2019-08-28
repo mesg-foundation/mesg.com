@@ -1,5 +1,5 @@
 <template>
-  <Card no-shadow>
+  <Card>
     <div class="picture" flex column>
       <div class="picture-hover">
         <nav class="social" flex row justify-center align-center>
@@ -8,7 +8,7 @@
           </a>
         </nav>
       </div>
-      <img :src="src" :alt="title">
+      <img :src="src" :alt="title" />
     </div>
     <div class="text">
       <h4>{{ title }}</h4>
