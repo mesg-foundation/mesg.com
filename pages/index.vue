@@ -2,24 +2,20 @@
   <div>
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
       <div class="btn-center">
-        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
+        <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
       </div>
     </Header>
 
-    <section id="partners" mb3>
-      <Container flex column align-center>
-        <Partners mb2/>
-        <Button secondary :to="links.partners">Partners</Button>
-      </Container>
-    </section>
-
-    <section id="intro" mb3>
-      <Container flex column align-center>
-        <h2 mb2>How MESG accelerates app development:</h2>
-        <Card>
-          <Video :src="externalLinks.video"></Video>
-        </Card>
+    <section id="features" mb3>
+      <Container flex row space-between wrap>
+        <TextWithIcon
+          v-for="(feature, i) in home.features.primary"
+          :key="i"
+          :src="feature.src"
+          :title="feature.title"
+          :text="feature.description"
+          third
+        />
       </Container>
     </section>
 
@@ -27,12 +23,11 @@
       <Container flex column align-center class="intro">
         <h2 mb1>Products</h2>
         <p
-          mb2
           class="text-center product-desc"
         >Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
       </Container>
     </section>
-    <section id="products" mb3 class="inner-background">
+    <section id="products" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
           <Card
@@ -46,12 +41,12 @@
             half
           >
             <div>
-              <img class="product" mb1 :src="product.img" :alt="product.title">
+              <img class="product" mb1 :src="product.img" :alt="product.title" />
             </div>
             <h3 mb1>{{ product.title }}</h3>
-            <p mb2 v-html="product.description"/>
-            <span spacer/>
-            <List :items="product.features.secondary"/>
+            <p mb2 v-html="product.description" />
+            <span spacer />
+            <List :items="product.features.secondary" />
             <Button outline :to="links[product.id]">{{ product.action }}</Button>
           </Card>
         </div>
@@ -59,7 +54,7 @@
           <div flex row mobile-column align-center>
             <div flex mobile-column class="content">
               <div flex column quarter class="token">
-                <img src="~/assets/token/MESG-token.svg" alt="token">
+                <img src="~/assets/token/MESG-token.svg" alt="token" />
               </div>
               <div flex column>
                 <h3 mb1>Build services, earn tokens</h3>
@@ -76,8 +71,6 @@
       </Container>
     </section>
 
-    <News :articles="articles"/>
-
     <CallToAction
       mb3
       title="Accelerate your business"
@@ -85,9 +78,7 @@
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
-    <Discover mb3 left="showcase" right="foundation"/>
-
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -97,14 +88,11 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
-import Video from "~/components/Video";
+import TextWithIcon from "~/components/TextWithIcon";
 import Card from "~/components/Card";
-import News from "~/components/News";
 import List from "~/components/List";
 import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
-import Partners from "~/components/Partners";
 import page from "./page";
 
 export default {
@@ -112,14 +100,11 @@ export default {
     Header,
     Container,
     Button,
-    Video,
+    TextWithIcon,
     Card,
-    News,
     List,
     CallToAction,
-    Discover,
-    GetStarted,
-    Partners
+    GetStarted
   },
   mixins: [
     page({
@@ -130,7 +115,8 @@ export default {
   ],
   computed: mapGetters({
     products: "products",
-    articles: "articles",
+    home: "home",
+    usecases: "usecases",
     links: "links",
     externalLinks: "externalLinks"
   })

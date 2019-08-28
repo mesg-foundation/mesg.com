@@ -139,11 +139,17 @@ a {
   background-color: var(--light-background);
 }
 .outer-background {
-  background: var(--light-background);
+  padding-top: calc(var(--margin) * 4);
+  padding-bottom:calc(var(--margin) * 4);
+  background-image: linear-gradient(
+    to top,
+    var(--light-background),
+    var(--white)
+  );
 }
 hr {
-  width: var(--width);
-  max-width: 100%;
+  width: calc(var(--width) / 2);
+  max-width: calc(var(--width) / 2);
   margin: auto;
   height: 0;
   border:solid 0.5px;
@@ -164,9 +170,6 @@ hr {
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   header .btn--primary {
-    margin-bottom: 20px;
-  }
-  header .btn--secondary {
     margin-bottom: 20px;
   }
   header .btn-center {

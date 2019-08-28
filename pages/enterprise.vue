@@ -6,8 +6,7 @@
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.contact" primary target="_blank">Request a demo</Button>
-        <span spacer></span>
+        <Button :href="externalLinks.contact" primary target="_blank">Get in touch</Button>
       </div>
     </Header>
 
@@ -28,7 +27,7 @@
       <Container>
         <h2 mb1>MESG Enterprise features</h2>
         <p
-          mb2
+          mb3
           class="text-center"
         >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich workflows that optimize processes across the board.</p>
         <div flex row wrap>
@@ -54,21 +53,21 @@
       </Container>
       <div class="inner-background">
         <Container flex mobile-column justify-center>
-          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
+          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p" />
         </Container>
       </div>
     </section>
 
     <section id="partners" mb3>
       <Container flex column align-center>
-        <h2 mb2>Already building on MESG</h2>
-        <Partners/>
+        <h2 mb3>Already building on MESG</h2>
+        <Partners />
       </Container>
     </section>
 
     <section id="faq" mb3>
       <Container>
-        <h2 mb2>Frequently Asked Questions</h2>
+        <h2 mb3>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -77,9 +76,6 @@
             :title="faq.title"
             :text="faq.description"
           />
-        </div>
-        <div class="text-center button">
-          <Button secondary :to="links.faq">Access the FAQ</Button>
         </div>
       </Container>
     </section>
@@ -91,9 +87,7 @@
       :links="[{ title: 'Request a demo' , href: externalLinks.contact }]"
     />
 
-    <Discover mb3 left="showcase" right="token"/>
-
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -107,7 +101,6 @@ import TextWithIcon from "~/components/TextWithIcon";
 import Partners from "~/components/Partners";
 import Titletext4 from "~/components/Titletext4";
 import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
@@ -121,7 +114,6 @@ export default {
     Partners,
     Titletext4,
     CallToAction,
-    Discover,
     GetStarted
   },
   mixins: [

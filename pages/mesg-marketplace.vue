@@ -6,8 +6,7 @@
       :description="description"
     >
       <div class="btn-center">
-        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :href="externalLinks.marketplace" target="_blank" secondary>The Marketplace</Button>
+        <Button :href="externalLinks.marketplace" target="_blank" primary>MESG Marketplace</Button>
       </div>
     </Header>
 
@@ -25,21 +24,25 @@
     </section>
 
     <section id="network-of-services" mb3>
-      <Container class="intro">
+      <Container class="intro text-center">
         <h2 mb1>A decentralized network of services</h2>
         <p
           mb2
-          class="text-center description"
+          class="description"
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
+        <a mb2 href="/documents/decentralized-network-of-services.pdf" download>
+          Whitepaper
+          <i class="fas fa-download icon" ml1></i>
+        </a>
       </Container>
-      <div class="inner-background">
+      <div class="outer-background">
         <Container>
           <Feature
             v-for="(feature, i) in marketplace.features.primary"
             :key="i"
             v-bind="feature"
             :reverse="i % 2 === 1"
-            mb3
+            mb2
           />
         </Container>
       </div>
@@ -47,8 +50,8 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb2>Use Cases</h2>
-        <div flex row wrap>
+        <h2 mb3>Use Cases</h2>
+        <div flex row wrap mb1>
           <TextWithIcon
             half
             v-for="(usecase, i) in marketplace.usecase"
@@ -59,32 +62,13 @@
           />
         </div>
 
-        <div class="text-center button">
+        <div class="text-center button" mb3>
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
     </section>
 
-    <section id="token">
-      <Container>
-        <hr class="separator" mb3>
-        <div flex row space-between align-center wrap>
-          <div half>
-            <img
-              src="~/assets/marketplace/token-marketplace.svg"
-              alt="The MESG Token and Marketplace"
-            >
-          </div>
-          <div half>
-            <h2 class="text-left" mb1>MESG Token + Marketplace</h2>
-            <p
-              mb2
-            >The MESG Token can be used to purchase access to services in the Marketplace. Once decentralized, the Token will also be used to secure and power the network.</p>
-            <Button outline :to="links.token">Discover the MESG Token</Button>
-          </div>
-        </div>
-      </Container>
-    </section>
+    <hr mb3 />
 
     <CallToAction
       mb3
@@ -93,9 +77,7 @@
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
-    <Discover mb3 left="engine" right="foundation"/>
-
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -106,7 +88,6 @@ import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
 import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
@@ -118,7 +99,6 @@ export default {
     Container,
     Button,
     CallToAction,
-    Discover,
     GetStarted,
     TextWithIcon,
     Feature

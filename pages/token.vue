@@ -18,7 +18,7 @@
             target="_blank"
             third
           >
-            <img :src="exchange.src" :alt="exchange.id">
+            <img :src="exchange.src" :alt="exchange.id" />
           </a>
         </div>
       </div>
@@ -37,11 +37,11 @@
       </Container>
     </section>
 
-    <section id="atd" mb3>
+    <section id="atd">
       <Container>
         <h2 mb1>Algorithmic Token Distribution</h2>
         <p
-          mb2
+          mb3
           class="text-center"
         >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
         <div flex row space-between wrap>
@@ -57,7 +57,7 @@
       </Container>
     </section>
 
-    <section id="distribution" class="outer-background" pt3 pb3 mb3>
+    <section id="distribution" class="outer-background" mb3>
       <Container>
         <Feature
           :src="require('~/assets/token/token-distribution.svg')"
@@ -68,10 +68,10 @@
           <h4 mb2>Total token supply 250MM</h4>
           <ColoredList
             :items="[
-              { color: '#e0d1ff', title: 'Sale Distribution 62.5%'},
-              { color: '#ffd4a3', title: 'Reserve 20%'},
-              { color: '#9777c7', title: 'Team and Founders 12.5%'},
-              { color: '#8ceda1', title: 'Partners & Bounties 5%'}
+              { color: '#2E1359', title: 'Sale Distribution 62.5%'},
+              { color: '#7E44D8', title: 'Partners & Bounties 5%'},
+              { color: '#C2A3FF', title: 'Team and Founders 12.5%'},
+              { color: '#DFCDF7', title: 'Reserve 20%'}
             ]"
           />
         </Feature>
@@ -80,16 +80,16 @@
 
     <section id="documents" mb3>
       <Container>
-        <h2 mb2>MESG documents</h2>
+        <h2 mb3>MESG documents</h2>
         <div flex row space-between wrap>
-          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2/>
+          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2 />
         </div>
       </Container>
     </section>
 
     <section id="faq" mb3>
       <Container>
-        <h2 mb2>Frequently Asked Questions</h2>
+        <h2 mb3>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -99,13 +99,19 @@
             :text="faq.description"
           />
         </div>
-        <div class="text-center button">
-          <Button secondary :to="links.faq">Access the FAQ</Button>
-        </div>
       </Container>
     </section>
 
-    <News :articles="articles"/>
+    <section id="partners" mb3>
+      <Container flex column align-center>
+        <h2 mb3>Already building on MESG</h2>
+        <Partners />
+      </Container>
+    </section>
+
+    <News :articles="articles" mb3 />
+
+    <hr mb3 />
 
     <CallToAction mb3 title="Buy and trade MESG Token on">
       <div flex row wrap mb2 class="exchange">
@@ -117,14 +123,12 @@
           target="_blank"
           third
         >
-          <img :src="exchange.src" :alt="exchange.id">
+          <img :src="exchange.src" :alt="exchange.id" />
         </Button>
       </div>
     </CallToAction>
 
-    <Discover mb3 left="showcase" right="enterprise"/>
-
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -137,8 +141,8 @@ import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
+import Partners from "~/components/Partners";
 import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
@@ -154,8 +158,8 @@ export default {
     Card,
     Titletext4,
     News,
+    Partners,
     CallToAction,
-    Discover,
     GetStarted,
     TextWithIcon,
     Feature,
