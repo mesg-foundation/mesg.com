@@ -291,6 +291,47 @@ export const getters = {
     }
   },
 
+  icons(_, { externalLinks }) {
+    return {
+      twitter: {
+        to: externalLinks.twitter,
+        icon: "fab fa-twitter",
+        color: "twitter",
+        description: "Community Chat"
+      },
+      github: {
+        to: externalLinks.github,
+        icon: "fab fa-github",
+        color: "github",
+        description: "Contribute"
+      },
+      telegram: {
+        to: externalLinks.telegram,
+        icon: "fab fa-telegram-plane",
+        color: "telegram",
+        description: "Community Chat"
+      },
+      forum: {
+        to: externalLinks.forum,
+        icon: "fas fa-comments",
+        color: "forum",
+        description: "Help & Guidance"
+      },
+      discord: {
+        to: externalLinks.discord,
+        icon: "fab fa-discord",
+        color: "discord",
+        description: "Chat with us"
+      },
+      reddit: {
+        to: externalLinks.reddit,
+        icon: "fab fa-reddit-alien",
+        color: "reddit",
+        description: "General news"
+      }
+    }
+  },
+
   discover(_, { links }) {
     return {
       showcase: {

@@ -107,6 +107,10 @@ img {
   font-size: 14px;
 }
 
+i {
+  font-size: 18px;
+}
+
 a {
   font-weight: bold;
   color: var(--purple);
@@ -127,6 +131,34 @@ a {
 .text-left {
   text-align: left;
 }
+
+/*Social*/
+.twitter {
+  color: #1da1f2;
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.github {
+  color: #24292e;
+  background-color: rgba(36, 41, 46, 0.1);
+}
+.telegram {
+  color: #0088cc;
+  background-color: rgba(0, 136, 204, 0.1);
+}
+.forum {
+  color: #491e8c;
+  background-color: rgba(73, 30, 140, 0.1);
+}
+.discord {
+  color: #7289da;
+  background-color: rgba(114, 137, 218, 0.1);
+}
+.reddit {
+  color: #ff4500;
+  background-color: rgba(255, 69, 0, 0.1);
+}
+
+
 .inner-background {
   position: relative;
 }

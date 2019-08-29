@@ -73,11 +73,20 @@
 
     <section mb3>
       <Container>
-        <CardNewsletter
-          title="Newsletter"
-          description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
-          half
-        />
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half>
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            <ListSN one="telegram" two="forum" />
+          </div>
+        </div>
       </Container>
     </section>
 
@@ -101,6 +110,7 @@ import TextWithIcon from "~/components/TextWithIcon";
 import Card from "~/components/Card";
 import List from "~/components/List";
 import CardNewsletter from "~/components/CardNewsletter";
+import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
 import page from "./page";
 
@@ -113,6 +123,7 @@ export default {
     Card,
     List,
     CardNewsletter,
+    ListSN,
     CTA
   },
   mixins: [
