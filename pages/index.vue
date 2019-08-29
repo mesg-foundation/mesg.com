@@ -71,6 +71,16 @@
       </Container>
     </section>
 
+    <section mb3>
+      <Container>
+        <CardNewsletter
+          title="Newsletter"
+          description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+          half
+        />
+      </Container>
+    </section>
+
     <CTA
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
@@ -90,6 +100,7 @@ import Container from "~/components/Container";
 import TextWithIcon from "~/components/TextWithIcon";
 import Card from "~/components/Card";
 import List from "~/components/List";
+import CardNewsletter from "~/components/CardNewsletter";
 import CTA from "~/components/CTA";
 import page from "./page";
 
@@ -101,6 +112,7 @@ export default {
     TextWithIcon,
     Card,
     List,
+    CardNewsletter,
     CTA
   },
   mixins: [
