@@ -2,20 +2,14 @@
   <section id="footer">
     <div class="bg">
       <Container>
-        <nav flex row space-between wrap mobile-column-reverse mb2>
+        <nav flex row space-between wrap mobile-column-reverse>
           <div flex column third>
             <nuxt-link :to="links.home">
-              <img src="~/assets/MESG-logo-horizontal-white.svg" alt="MESG" />
+              <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG" />
             </nuxt-link>
             <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
             <div flex space-between wrap>
-              <a
-                v-for="(icon, i) in icons"
-                :key="i"
-                :href="icon.href"
-                target="_blank"
-                class="icon link-secondary"
-              >
+              <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
                 <i :class="icon.icon"></i>
               </a>
             </div>
@@ -26,7 +20,7 @@
               <nuxt-link :to="links.engine" class="link-secondary" mb1>MESG SDK</nuxt-link>
               <nuxt-link :to="links.marketplace" class="link-secondary" mb1>MESG Marketplace</nuxt-link>
               <nuxt-link :to="links.showcase" class="link-secondary" mb1>Showcase</nuxt-link>
-              <nuxt-link :to="links.faq" class="link-secondary last" mb1>FAQ</nuxt-link>
+              <nuxt-link :to="links.faq" class="link-secondary last">FAQ</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
@@ -48,14 +42,14 @@
                 class="link-secondary"
                 mb1
               >Documentation</a>
-              <a :href="externalLinks.forum" target="_blank" class="link-secondary last" mb1>Forum</a>
+              <a :href="externalLinks.forum" target="_blank" class="link-secondary last">Forum</a>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Foundation</a>
               <nuxt-link :to="links.foundation" class="link-secondary" mb1>Overview</nuxt-link>
               <nuxt-link :to="links.partners" class="link-secondary" mb1>Partners</nuxt-link>
               <nuxt-link :to="links.roadmap" class="link-secondary" mb1>Roadmap</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank" class="link-secondary last" mb1>Blog</a>
+              <a :href="externalLinks.blog" target="_blank" class="link-secondary last">Blog</a>
             </li>
             <li flex column quarter>
               <nuxt-link :to="links.token" class="link-secondary last">Token</nuxt-link>
@@ -64,22 +58,6 @@
           </ul>
         </nav>
       </Container>
-
-      <hr mb2 />
-
-      <section id="newsletter">
-        <Container flex row mobile-column-reverse align-center>
-          <p class="category text-right" mr1>Sign up for our monthly newsletter</p>
-          <div class="form">
-            <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit">
-              <input type="email" placeholder="Your email address" v-model="email" required />
-              <button type="submit" class="submit-newsletter">
-                <i class="fas fa-arrow-right" />
-              </button>
-            </form>
-          </div>
-        </Container>
-      </section>
     </div>
   </section>
 </template>
@@ -93,11 +71,6 @@ export default {
     Button,
     Container
   },
-  data() {
-    return {
-      email: ""
-    };
-  },
   computed: {
     ...mapGetters({
       links: "links",
@@ -110,46 +83,21 @@ export default {
         { href: this.externalLinks.forum, icon: "fas fa-comments" },
         { href: this.externalLinks.discord, icon: "fab fa-discord" },
         { href: this.externalLinks.twitter, icon: "fab fa-twitter" },
-        { href: this.externalLinks.telegram, icon: "fab fa-telegram" },
+        { href: this.externalLinks.telegram, icon: "fab fa-telegram-plane" },
         { href: this.externalLinks.linkedin, icon: "fab fa-linkedin-in" },
-        { href: this.externalLinks.facebook, icon: "fab fa-facebook-f" }
+        { href: this.externalLinks.facebook, icon: "fab fa-facebook" },
+        { href: this.externalLinks.reddit, icon: "fab fa-reddit-alien" }
       ];
-    }
-  },
-  methods: {
-    async submit() {
-      const token = "32bdd13cbff3931061eb3eca01321d84";
-      const data = new FormData();
-      data.append("email", this.email);
-      data.append("token", token);
-      const req = window.XMLHttpRequest
-        ? new XMLHttpRequest()
-        : new ActiveXObject("Microsoft.XMLHTTP");
-      req.open(
-        "POST",
-        "https://app.sgwidget.com/v2/api/newsletter-signup",
-        false
-      );
-      req.onload = () => {
-        const res = JSON.parse(req.responseText);
-        if (req.status === 200) {
-          alert(res.message);
-          this.email = "";
-        } else {
-          alert(res.email[0]);
-        }
-      };
-      req.send(data);
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.bg {
-  padding: 40px;
+#footer {
+  padding: calc(var(--margin) * 3);
   width: 100%;
-  background-color: var(--dark-purple);
+  background-color: var(--light-background);
 }
 
 .copyright {
@@ -159,22 +107,18 @@ export default {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--deep-purple);
+  color: var(--text-color);
 }
 
 .category {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--deep-purple);
+  color: var(--title-color);
   display: inline;
-}
-
-i {
-  margin-right: 0;
 }
 
 .icon {
@@ -183,7 +127,11 @@ i {
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  color: var(--white);
+  color: var(--text-color);
+}
+.icon:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
 }
 
 .link-secondary {
@@ -195,11 +143,7 @@ i {
   letter-spacing: normal;
   text-align: left;
   padding: 0;
-  color: var(--white);
-}
-
-hr {
-  color: var(--deep-purple);
+  color: var(--text-color);
 }
 
 img {
@@ -210,66 +154,20 @@ img:hover {
   transition: 0.1s ease;
 }
 
-nav {
-  width: 100%;
-  background-color: var(--dark-purple);
-}
-
-.text-right {
-  text-align: right;
-}
-
-form {
-  position: relative;
-}
-
-input[type="email"] {
-  font-size: 15px;
-  width: 300px;
-  padding: 13px var(--margin);
-  border: solid 1px var(--deep-purple);
-  border-radius: 3px;
-  background-color: var(--dark-purple);
-  color: var(--white);
-  padding-right: calc(3 * var(--margin));
-}
-
-button[type="submit"] {
-  transform: translateX(-40px);
-  background: transparent;
-  border: none;
-  font-size: 18px;
-  padding: 0;
-  color: var(--white);
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
   .container {
     padding: 0;
-  }
-  .menu {
-    margin-bottom: 40px !important;
   }
   a.link {
     min-height: auto;
     margin-bottom: 0;
   }
   .last {
-    padding-bottom: 20px;
+    padding-bottom: calc(var(--margin) * 2);
   }
   img {
-    margin-bottom: 20px;
-  }
-  .form {
-    margin-bottom: 20px !important;
-  }
-  .form button {
-    position: absolute;
-    right: -20px;
-    top: 12px;
-  }
-  #newsletter p {
-    margin: auto !important;
+    margin-top: calc(var(--margin) * 2);
+    margin-bottom: calc(var(--margin) * 1);
   }
 }
 </style>

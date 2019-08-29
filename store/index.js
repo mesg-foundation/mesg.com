@@ -779,6 +779,7 @@ export const getters = {
       telegram: "https://t.me/mesg_community",
       linkedin: "https://www.linkedin.com/company/mesg",
       facebook: "https://www.facebook.com/mesgfoundation",
+      reddit: "https://www.reddit.com/r/MESG/",
       getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk"

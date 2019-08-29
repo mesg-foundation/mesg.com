@@ -78,7 +78,7 @@
       :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
     />
 
-    <GetStarted mb3 />
+    <GetStarted />
   </div>
 </template>
 
