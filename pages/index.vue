@@ -71,14 +71,13 @@
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Accelerate your business"
-      description="Add features to your custom software stack to expand to new industries. Then scale limitlessly with the decentralized network."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      href="https://docs.mesg.com/guide/quick-start-guide.html"
+      action="Get started"
+      mb1
     />
-
-    <GetStarted />
   </div>
 </template>
 
@@ -91,8 +90,7 @@ import Container from "~/components/Container";
 import TextWithIcon from "~/components/TextWithIcon";
 import Card from "~/components/Card";
 import List from "~/components/List";
-import CallToAction from "~/components/CallToAction";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
 import page from "./page";
 
 export default {
@@ -103,8 +101,7 @@ export default {
     TextWithIcon,
     Card,
     List,
-    CallToAction,
-    GetStarted
+    CTA
   },
   mixins: [
     page({
@@ -146,11 +143,6 @@ export default {
 
 #articles .card:last-child {
   margin-right: 0;
-}
-
-.icon {
-  font-size: 1em;
-  text-align: right;
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
