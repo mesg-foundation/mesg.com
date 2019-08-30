@@ -20,11 +20,9 @@
     </section>
 
     <section id="product-intro">
-      <Container flex column align-center class="intro">
+      <Container flex column class="intro text-center">
         <h2 mb1>Products</h2>
-        <p
-          class="text-center product-desc"
-        >Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
+        <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
       </Container>
     </section>
     <section id="products" mb3 class="outer-background">
@@ -54,7 +52,7 @@
           <div flex row mobile-column align-center>
             <div flex mobile-column class="content">
               <div flex column quarter class="token">
-                <img src="~/assets/token/MESG-token.svg" alt="token" />
+                <img src="~/assets/token/MESG-token.svg" alt="MESG Token" />
               </div>
               <div flex column>
                 <h3 mb1>Build services, earn tokens</h3>
@@ -84,7 +82,7 @@
             <Button secondary :href="externalLinks.blog">Read our blog</Button>
           </div>
           <div half p1>
-            <img src="~/assets/token/MESG-token.svg" alt="token" />
+            <img src="~/assets/token/MESG-token.svg" alt="Blog" />
           </div>
         </div>
       </Container>
@@ -121,8 +119,7 @@
     <CTA
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
-      href="https://docs.mesg.com/guide/quick-start-guide.html"
-      action="Get started"
+      :links="[{ title: 'Get started' , href: externalLinks.getStarted }]"
       mb1
     />
   </div>
@@ -164,7 +161,6 @@ export default {
   computed: mapGetters({
     products: "products",
     home: "home",
-    usecases: "usecases",
     links: "links",
     externalLinks: "externalLinks"
   })
@@ -199,9 +195,6 @@ export default {
 @media only screen and (max-width: $tablet-breakpoint) {
   .intro {
     padding-bottom: 0;
-  }
-  .product-desc {
-    margin-bottom: 0 !important;
   }
   .token {
     margin-right: 20px;

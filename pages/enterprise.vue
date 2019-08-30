@@ -25,7 +25,7 @@
 
     <section id="features-2" mb3>
       <Container>
-        <h2 mb1>MESG Enterprise features</h2>
+        <h2 class="text-center" mb1>MESG Enterprise features</h2>
         <p
           mb3
           class="text-center"
@@ -44,11 +44,11 @@
     </section>
 
     <section id="packages" mb4>
-      <Container class="intro">
+      <Container class="intro text-center">
         <h2 mb1>Our packages</h2>
         <p
           mb3
-          class="text-center description"
+          class="description"
         >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
       </Container>
       <div class="inner-background">
@@ -67,7 +67,7 @@
 
     <section id="faq" mb3>
       <Container>
-        <h2 mb3>Frequently Asked Questions</h2>
+        <h2 class="text-center" mb3>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -80,14 +80,12 @@
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Have specific needs for your custom solution?"
+    <CTA
+      title="Custom solution"
       description="Let MESG Enterprise guide you every step of the way to build powerful, streamlined applications using even the hardest-to-manage services."
-      :links="[{ title: 'Request a demo' , href: externalLinks.contact }]"
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
     />
-
-    <GetStarted mb3 />
   </div>
 </template>
 
@@ -100,8 +98,7 @@ import Button from "~/components/Button";
 import TextWithIcon from "~/components/TextWithIcon";
 import Partners from "~/components/Partners";
 import Titletext4 from "~/components/Titletext4";
-import CallToAction from "~/components/CallToAction";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
 import page from "./page";
 
 export default {
@@ -113,8 +110,7 @@ export default {
     Button,
     Partners,
     Titletext4,
-    CallToAction,
-    GetStarted
+    CTA
   },
   mixins: [
     page({

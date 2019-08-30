@@ -28,7 +28,6 @@
         <h2 mb1>Effortless interoperability</h2>
         <p
           mb2
-          class="description"
         >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
         <a
           mb2
@@ -66,7 +65,7 @@
           />
         </div>
 
-        <div class="text-center button" mb3>
+        <div class="text-center" mb3>
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
@@ -97,13 +96,13 @@
       <Container>
         <div flex row mobile-column align-center>
           <div half>
-            <h3 mb1>Community</h3>
+            <h3 mb1>Help & Guidance</h3>
             <p
               mb2
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
           </div>
           <div half>
-            <ListSN one="telegram" two="forum" three four five six/>
+            <ListSN one="telegram" two="forum" />
           </div>
         </div>
       </Container>
@@ -112,8 +111,7 @@
     <CTA
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
-      href="https://docs.mesg.com/guide/quick-start-guide.html"
-      action="Get started"
+      :links="[{ title: 'Get started' , href: externalLinks.getStarted }]"
       mb1
     />
   </div>
@@ -165,7 +163,7 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
-  #interoperability .intro {
+  .intro {
     padding-bottom: 0;
   }
 }

@@ -39,7 +39,7 @@
 
     <section id="atd">
       <Container>
-        <h2 mb1>Algorithmic Token Distribution</h2>
+        <h2 class="text-center" mb1>Algorithmic Token Distribution</h2>
         <p
           mb3
           class="text-center"
@@ -62,7 +62,7 @@
         <Feature
           :src="require('~/assets/token/token-distribution.svg')"
           title="Token distribution"
-          action="Go to the ATD dashboard"
+          action="ATD dashboard"
           :href="externalLinks.atd"
         >
           <h4 mb2>Total token supply 250MM</h4>
@@ -80,16 +80,16 @@
 
     <section id="documents" mb3>
       <Container>
-        <h2 mb3>MESG documents</h2>
+        <h2 class="text-center" mb3>MESG documents</h2>
         <div flex row space-between wrap>
-          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2 />
+          <Document v-for="(document, i) in documents" :key="i" :document="document" half mb2 />
         </div>
       </Container>
     </section>
 
     <section id="faq" mb3>
       <Container>
-        <h2 mb3>Frequently Asked Questions</h2>
+        <h2 class="text-center" mb3>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -113,22 +113,43 @@
 
     <hr mb3 />
 
-    <CallToAction mb3 title="Buy and trade MESG Token on">
-      <div flex row wrap mb2 class="exchange">
-        <Button
-          white
-          v-for="exchange in exchanges"
-          :key="exchange.id"
-          :href="exchange.to"
-          target="_blank"
-          third
-        >
-          <img :src="exchange.src" :alt="exchange.id" />
-        </Button>
-      </div>
-    </CallToAction>
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half>
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            <ListSN one="twitter" two="github" />
+          </div>
+        </div>
+      </Container>
+    </section>
 
-    <GetStarted mb3 />
+    <section id="cta" mb1>
+      <Container>
+        <Card purple p2>
+          <h2 class="text-center" mb2>Buy and Trade</h2>
+          <div flex row mobile-column class="exchange">
+            <Button
+              white
+              v-for="exchange in exchanges"
+              :key="exchange.id"
+              :href="exchange.to"
+              target="_blank"
+            >
+              <img :src="exchange.src" :alt="exchange.id" />
+            </Button>
+          </div>
+        </Card>
+      </Container>
+    </section>
   </div>
 </template>
 
@@ -142,8 +163,9 @@ import Card from "~/components/Card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
 import Partners from "~/components/Partners";
+import CardNewsletter from "~/components/CardNewsletter";
+import ListSN from "~/components/ListSN";
 import CallToAction from "~/components/CallToAction";
-import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import ColoredList from "~/components/ColoredList";
@@ -159,8 +181,9 @@ export default {
     Titletext4,
     News,
     Partners,
+    CardNewsletter,
+    ListSN,
     CallToAction,
-    GetStarted,
     TextWithIcon,
     Feature,
     ColoredList,
@@ -187,6 +210,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#cta {
+  position: relative;
+}
+
+#cta::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 100px);
+  background: var(--light-background);
+  transform: translateY(30%) skewY(-8deg);
+  z-index: -1;
+}
+#cta h2 {
+  color: var(--white);
+}
+
 ul {
   list-style: none;
 }

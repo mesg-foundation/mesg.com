@@ -4,12 +4,20 @@
       <Card purple p2>
         <div flex row align-center space-between mobile-column>
           <div class="content" flex column>
-            <h2 mb1>{{ title }}</h2>
-            <p>{{ description }}</p>
+            <h2>{{ title }}</h2>
+            <p v-if="description" mt1>{{ description }}</p>
           </div>
-          <div flex column third>
-            <Button white :href="href" target="_blank">{{ action }}</Button>
-          </div>
+          <nav flex column third>
+            <Button
+              white
+              v-for="(link, i) in links"
+              :key="i"
+              :to="link.to"
+              :href="link.href"
+              target="_blank"
+            >{{ link.title }}</Button>
+            <slot />
+          </nav>
         </div>
       </Card>
     </Container>
@@ -36,22 +44,14 @@ export default {
     description: {
       type: String
     },
-    to: {
-      type: [String, Object]
+    links: {
+      type: Array,
+      default: () => []
     },
-    href: {
-      type: String
-    },
-    action: {
-      type: String,
-      required: true
+    externalLinks: {
+      type: Array,
+      default: () => []
     }
-  },
-  computed: {
-    ...mapGetters({
-      externalLinks: "externalLinks",
-      links: "links"
-    })
   }
 };
 </script>

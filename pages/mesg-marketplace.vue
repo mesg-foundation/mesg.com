@@ -28,7 +28,6 @@
         <h2 mb1>A decentralized network of services</h2>
         <p
           mb2
-          class="description"
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
         <a mb2 href="/documents/decentralized-network-of-services.pdf" download>
           Whitepaper
@@ -50,7 +49,7 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb3>Use Cases</h2>
+        <h2 class="text-center" mb3>Use Cases</h2>
         <div flex row wrap mb1>
           <TextWithIcon
             half
@@ -62,7 +61,7 @@
           />
         </div>
 
-        <div class="text-center button" mb3>
+        <div class="text-center" mb3>
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
@@ -70,14 +69,28 @@
 
     <hr mb3 />
 
-    <CallToAction
-      mb3
-      title="Integrate complexities with confidence"
-      description="Receive priority technical support from a team of engineers dedicated to your project, day or night."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
-    />
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Help & Guidance</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+          </div>
+          <div half>
+            <ListSN one="telegram" two="forum" />
+          </div>
+        </div>
+      </Container>
+    </section>
 
-    <GetStarted mb3 />
+    <CTA
+      title="Marketplace"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit."
+      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplace }]"
+      mb1
+    />
   </div>
 </template>
 
@@ -87,8 +100,8 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
-import CallToAction from "~/components/CallToAction";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import page from "./page";
@@ -98,8 +111,8 @@ export default {
     Header,
     Container,
     Button,
-    CallToAction,
-    GetStarted,
+    CTA,
+    ListSN,
     TextWithIcon,
     Feature
   },
@@ -125,7 +138,7 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
-  #network-of-services .intro {
+  .intro {
     padding-bottom: 0;
   }
 }
