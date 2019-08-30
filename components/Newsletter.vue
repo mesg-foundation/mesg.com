@@ -1,9 +1,16 @@
 <template>
-  <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit" flex row wrap>
-    <div flex column>
+  <form
+    data-token="32bdd13cbff3931061eb3eca01321d84"
+    @submit.prevent="submit"
+    flex
+    row
+    tablet-column
+    wrap
+  >
+    <div flex column class="email">
       <input type="email" placeholder="Your email address" v-model="email" required />
     </div>
-    <div flex column third>
+    <div flex column third class="btn">
       <Button submit primary>Sign up</Button>
     </div>
   </form>
@@ -69,15 +76,26 @@ input[type="email"]:focus {
   box-shadow: 0 0 0 1px var(--light-purple) inset;
 }
 
+.email {
+  margin-right: calc(var(--margin) * 1);
+}
+
 button {
+  padding-left: calc(var(--margin) * 1);
+  padding-right: calc(var(--margin) * 1);
   border: none;
 }
 button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
-  button {
+@media only screen and (max-width: $tablet-breakpoint) {
+  .email {
+    margin-right: 0;
+  }
+  .btn {
+    width: 100%;
+    max-width: 100%;
     margin-top: 20px;
   }
 }
