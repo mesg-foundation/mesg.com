@@ -54,7 +54,7 @@
 
     <section id="usecase" mb3>
       <Container>
-        <h2 mb3>Use Cases</h2>
+        <h2 class="text-center" mb3>Use Cases</h2>
         <div flex row wrap mb1>
           <TextWithIcon
             half
@@ -74,14 +74,48 @@
 
     <hr mb3 />
 
-    <CallToAction
-      mb3
-      title="Streamline your business"
-      description="Optimize processes and automate workflows between your whole stack of connected systems."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
-    />
+    <section mb3>
+      <Container>
+        <div flex row mobile-column-reverse align-center>
+          <div half>
+            <h2 mb1>Github</h2>
+            <p
+              mb1
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            <Button secondary :href="externalLinks.github">Explore our Github</Button>
+          </div>
+          <div half p1>
+            <img src="~/assets/token/MESG-token.svg" alt="token" />
+          </div>
+        </div>
+      </Container>
+    </section>
 
-    <GetStarted mb3 />
+    <hr mb3 />
+
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+          </div>
+          <div half>
+            <ListSN one="telegram" two="forum" three four five six/>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      href="https://docs.mesg.com/guide/quick-start-guide.html"
+      action="Get started"
+      mb1
+    />
   </div>
 </template>
 
@@ -92,8 +126,8 @@ import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import page from "./page";
@@ -104,8 +138,8 @@ export default {
     Container,
     Button,
     Card,
-    CallToAction,
-    GetStarted,
+    CTA,
+    ListSN,
     TextWithIcon,
     Feature
   },
