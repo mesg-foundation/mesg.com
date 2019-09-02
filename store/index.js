@@ -212,7 +212,7 @@ export const getters = {
     return {
       primary: [
         {
-          src: require("~/assets/partners/yellow.png"),
+          src: require("~/assets/partners/yellow.svg"),
           title: "Yellow Capital",
           description: "Yellow is building the future of Blockchain with seed investments, mentorship, advisory (STOs, token economics, legal, banking, marketing, fundraising and listing) and software solutions. Yellow also enriches the Blockchain community through physical hubs, live events, and original news and entertainment.",
           to: "https://yellow.com/",
@@ -221,18 +221,18 @@ export const getters = {
       ],
       secondary: [
         {
-          src: require("~/assets/partners/beachhead.png"),
+          src: require("~/assets/partners/beachhead.svg"),
           title: "BeachHead",
           description: "BeachHead is a decentralized platform based on both Ethereum and Ripple blockchains where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
           to: "https://beachhead.com/",
           action: "beachhead.com"
         },
         {
-          src: require("~/assets/partners/yuser.png"),
-          title: "Yuser",
-          description: "Yuser is a next-gen social networking app that rewards you for your creativity and fame. It empowers you to be who you want to be online. Unlock features and earn tokens by creating engaging content and growing a large following. Create, grow, and thrive all in one place.",
-          to: "https://yuser.co/",
-          action: "yuser.co"
+          src: require("~/assets/partners/omisego.svg"),
+          title: "OmiseGO",
+          description: "OmiseGO enables businesses and individuals to securely offer and access a wide range of financial services, and invest, exchange and spend digital assets anytime, anywhere.",
+          to: "https://omisego.co/",
+          action: "omisego.co"
         }
       ]
     }

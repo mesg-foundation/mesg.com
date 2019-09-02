@@ -1,13 +1,13 @@
 <template>
   <ul flex row wrap>
     <li>
-      <img mr2 src="~/assets/partners/yuser.png" alt="yuser">
+      <img mr2 src="~/assets/partners/omisego.svg" alt="omisego" />
     </li>
     <li>
-      <img mr2 src="~/assets/partners/beachhead.png" alt="beachhead">
+      <img mr2 src="~/assets/partners/beachhead.svg" alt="beachhead" />
     </li>
     <li>
-      <img src="~/assets/partners/yellow.png" alt="yellow">
+      <img src="~/assets/partners/yellow.svg" alt="yellow" />
     </li>
   </ul>
 </template>
