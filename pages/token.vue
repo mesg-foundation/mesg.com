@@ -62,7 +62,7 @@
         <Feature
           :src="require('~/assets/token/token-distribution.svg')"
           title="Token distribution"
-          action="ATD dashboard"
+          action="ATD website"
           :href="externalLinks.atd"
         >
           <h4 mb2>Total token supply 250MM</h4>
