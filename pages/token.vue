@@ -126,7 +126,7 @@
             <p
               mb2
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
-            <ListSN one="twitter" two="github" />
+            <ListSN :list="['telegram', 'discord']" />
           </div>
         </div>
       </Container>

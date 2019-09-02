@@ -22,23 +22,8 @@
 import { mapGetters } from "vuex";
 export default {
   props: {
-    one: {
-      type: String
-    },
-    two: {
-      type: String
-    },
-    three: {
-      type: String
-    },
-    four: {
-      type: String
-    },
-    five: {
-      type: String
-    },
-    six: {
-      type: String
+    list: {
+      type: Array
     }
   },
   computed: {
@@ -46,24 +31,7 @@ export default {
       _icons: "icons"
     }),
     items() {
-      if (this.one) {
-        return [this._icons[this.one]];
-      }
-      if (this.two) {
-        return [this._icons[this.two]];
-      }
-      if (this.three) {
-        return [this._icons[this.three]];
-      }
-      if (this.four) {
-        return [this._icons[this.four]];
-      }
-      if (this.five) {
-        return [this._icons[this.five]];
-      }
-      if (this.six) {
-        return [this._icons[this.six]];
-      }
+      return this.list.map(x => this._icons[x]);
     }
   }
 };

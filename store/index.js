@@ -291,47 +291,6 @@ export const getters = {
     }
   },
 
-  icons(_, { externalLinks }) {
-    return {
-      twitter: {
-        to: externalLinks.twitter,
-        icon: "fab fa-twitter",
-        color: "twitter",
-        description: "Community Chat"
-      },
-      github: {
-        to: externalLinks.github,
-        icon: "fab fa-github",
-        color: "github",
-        description: "Contribute"
-      },
-      telegram: {
-        to: externalLinks.telegram,
-        icon: "fab fa-telegram-plane",
-        color: "telegram",
-        description: "Community Chat"
-      },
-      forum: {
-        to: externalLinks.forum,
-        icon: "fas fa-comments",
-        color: "forum",
-        description: "Help & Guidance"
-      },
-      discord: {
-        to: externalLinks.discord,
-        icon: "fab fa-discord",
-        color: "discord",
-        description: "Chat with us"
-      },
-      reddit: {
-        to: externalLinks.reddit,
-        icon: "fab fa-reddit-alien",
-        color: "reddit",
-        description: "General news"
-      }
-    }
-  },
-
   discover(_, { links }) {
     return {
       showcase: {
@@ -804,6 +763,54 @@ export const getters = {
       { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.svg"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
       { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.png"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" }
     ]
+  },
+
+
+  icons(_, { externalLinks }) {
+    return {
+      twitter: {
+        to: externalLinks.twitter,
+        icon: "fab fa-twitter",
+        color: "twitter",
+        description: "Community Chat"
+      },
+      github: {
+        to: externalLinks.github,
+        icon: "fab fa-github",
+        color: "github",
+        description: "Contribute"
+      },
+      telegram: {
+        to: externalLinks.telegram,
+        icon: "fab fa-telegram-plane",
+        color: "telegram",
+        description: "Community Chat"
+      },
+      forum: {
+        to: externalLinks.forum,
+        icon: "fas fa-comments",
+        color: "forum",
+        description: "Help & Guidance"
+      },
+      discord: {
+        to: externalLinks.discord,
+        icon: "fab fa-discord",
+        color: "discord",
+        description: "Chat with us"
+      },
+      reddit: {
+        to: externalLinks.reddit,
+        icon: "fab fa-reddit-alien",
+        color: "reddit",
+        description: "General news"
+      },
+      blog: {
+        to: externalLinks.blog,
+        icon: "fab fa-medium",
+        color: "blog",
+        description: "Blog"
+      }
+    }
   },
 
   externalLinks() {

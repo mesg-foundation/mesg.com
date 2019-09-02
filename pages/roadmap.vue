@@ -46,14 +46,7 @@
             <p
               mb2
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
-            <ListSN
-              one="twitter"
-              two="github"
-              three="telegram"
-              four="forum"
-              five="discord"
-              six="reddit"
-            />
+            <ListSN :list="['twitter', 'telegram', 'github', 'blog']" />
           </div>
         </div>
       </Container>

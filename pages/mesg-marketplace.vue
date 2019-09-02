@@ -79,7 +79,7 @@
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
           </div>
           <div half>
-            <ListSN one="telegram" two="forum" />
+            <ListSN :list="['discord', 'forum']" />
           </div>
         </div>
       </Container>
