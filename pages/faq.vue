@@ -6,7 +6,7 @@
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu/>
+            <SideMenu />
           </div>
           <ul flex column>
             <li v-for="(category, i) in questions" :key="i">
@@ -17,7 +17,7 @@
                   <p v-html="content.description" mb2></p>
                 </li>
               </ul>
-              <hr mb2>
+              <hr mb2 />
             </li>
             <p class="infos">
               * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
@@ -32,16 +32,30 @@
       </Container>
     </section>
 
-    <CallToAction
-      mb3
+    <hr mb3 />
+
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Chat with us</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+          </div>
+          <div half>
+            <ListSN one="telegram" two="forum" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
       title="Still have questions?"
-      description="If you didn’t find the answer you were looking for above, reach out! The MESG team is here to help and to answer any questions you might have about our development tool and economy."
-      :links="[{ title: 'Contact us' , href: externalLinks.contact }]"
+      description="If you didn’t find the answer you were looking for above, reach out! The MESG team is here to help and to answer any questions you might have."
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
     />
-
-    <Discover mb3 left="token" right="enterprise"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
@@ -51,9 +65,8 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "~/components/Button";
 import SideMenu from "~/components/SideMenu";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import page from "./page";
 
 export default {
@@ -62,9 +75,8 @@ export default {
     Container,
     Button,
     SideMenu,
-    CallToAction,
-    Discover,
-    GetStarted
+    CTA,
+    ListSN
   },
   mixins: [
     page({

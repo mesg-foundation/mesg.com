@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/roadmap.svg')" :title="title" :description="description"/>
+    <Header :picture="require('~/assets/roadmap.svg')" :title="title" :description="description" />
 
     <section id="roadmap" mb3>
       <Container>
-        <h2 class="title" mb3>Our next goals</h2>
+        <h2 class="title text-center" mb3>Our next goals</h2>
         <ul class="years">
           <li v-for="(year, i) in roadmap" :key="i">
             <h3>{{year.year}}</h3>
@@ -16,7 +16,7 @@
                     <h5>
                       {{ goal.title }}
                       <a v-if="goal.link" :href="goal.link" target="_blank">
-                        <i class="far fa-external-link"/>
+                        <i class="far fa-external-link" />
                       </a>
                     </h5>
                     <ul class="items">
@@ -31,27 +31,58 @@
       </Container>
     </section>
 
-    <hr mb3>
+    <hr mb3 />
 
-    <Discover mb3 left="token" right="enterprise"/>
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half>
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            <ListSN
+              one="twitter"
+              two="github"
+              three="telegram"
+              four="forum"
+              five="discord"
+              six="reddit"
+            />
+          </div>
+        </div>
+      </Container>
+    </section>
 
-    <GetStarted mb3/>
+    <CTA
+      title="Contact us"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
+    />
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import ListSN from "~/components/ListSN";
+import CTA from "~/components/CTA";
+import CardNewsletter from "~/components/CardNewsletter";
 import Container from "~/components/Container";
 import page from "./page";
 
 export default {
   components: {
     Header,
-    Discover,
-    GetStarted,
+    ListSN,
+    CTA,
+    CardNewsletter,
     Container
   },
   mixins: [

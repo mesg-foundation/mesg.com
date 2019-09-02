@@ -84,16 +84,32 @@
       </Container>
     </section>
 
-    <News :articles="articles" />
+    <News :articles="articles" mb3 />
 
-    <CallToAction
-      mb3
+    <hr mb3 />
+
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Connect with us</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+          </div>
+          <div half>
+            <ListSN one="telegram" two="forum" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
       title="Aligned with our purpose?"
       description="Reach out! We love helping the community find new ways to build powerful solutions."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
     />
-
-    <GetStarted mb3 />
   </div>
 </template>
 
@@ -109,7 +125,8 @@ import Member from "~/components/Member";
 import Partners from "~/components/Partners";
 import News from "~/components/News";
 import Titletext3 from "~/components/Titletext3";
-import CallToAction from "~/components/CallToAction";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
@@ -125,7 +142,8 @@ export default {
     Partners,
     News,
     Titletext3,
-    CallToAction,
+    CTA,
+    ListSN,
     GetStarted
   },
   mixins: [
