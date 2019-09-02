@@ -4,7 +4,7 @@
       <div flex row space-between align-center>
         <div>
           <nuxt-link :to="links.home">
-            <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
+            <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG" />
           </nuxt-link>
         </div>
         <a @click="open = !open" class="burger" hidden-desktop>
@@ -36,7 +36,6 @@
             <a href="#" class="title">Foundation</a>
             <div flex column class="sub-menu" p1 mt1>
               <nuxt-link :to="links.foundation" class="btn">Overview</nuxt-link>
-              <nuxt-link :to="links.partners" class="btn">Partners</nuxt-link>
               <nuxt-link :to="links.roadmap" class="btn">Roadmap</nuxt-link>
               <a :href="externalLinks.blog" target="_blank" class="btn">Blog</a>
             </div>

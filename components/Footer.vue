@@ -47,7 +47,6 @@
             <li flex column quarter>
               <a href="#" class="category" mb1>Foundation</a>
               <nuxt-link :to="links.foundation" class="link-secondary" mb1>Overview</nuxt-link>
-              <nuxt-link :to="links.partners" class="link-secondary" mb1>Partners</nuxt-link>
               <nuxt-link :to="links.roadmap" class="link-secondary" mb1>Roadmap</nuxt-link>
               <a :href="externalLinks.blog" target="_blank" class="link-secondary last">Blog</a>
             </li>
