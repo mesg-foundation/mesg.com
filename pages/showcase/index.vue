@@ -1,11 +1,15 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description"></Header>
+    <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description">
+      <div class="btn-center">
+        <Button :href="externalLinks.getStarted" target="_blank" primary>Start building</Button>
+      </div>
+    </Header>
 
-    <section id="use cases">
+    <section id="use cases" mb3>
       <Container flex column align-center>
-        <h2 mb2>Use Cases</h2>
-        <div flex row wrap>
+        <h2 mb3>Use Cases</h2>
+        <div flex row wrap mb2>
           <nuxt-link
             v-for="usecase in usecases"
             :key="usecase.id"
@@ -17,7 +21,7 @@
           >
             <Card p1 bordered>
               <div mb2 flex row space-between class="logos">
-                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo">
+                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
               </div>
               <p class="category" mb1>{{ usecase.category}}</p>
               <h4 mb1>{{ usecase.title }}</h4>
@@ -26,19 +30,60 @@
             </Card>
           </nuxt-link>
         </div>
+        <Button primary :href="externalLinks.contact" target="_blank">Submit my project</Button>
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Accelerate your business"
-      description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Then scale limitlessly with a decentralized network."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <hr />
+
+    <section class="outer-background" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <img
+              src="~/assets/marketplace/marketplace.svg"
+              alt="MESG Marketplace"
+              class="marketplace"
+            />
+          </div>
+          <div half>
+            <h2 mb1>Get inspired</h2>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            <Button secondary :href="externalLinks.marketplace" target="_blank">MESG Marketplace</Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <hr mb3 />
+
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half>
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            <ListSN :list="['forum', 'discord']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      :links="[{ title: 'Start building' , href: externalLinks.getStarted }]"
+      mb1
     />
-
-    <Discover mb3 left="engine" right="marketplace"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
@@ -48,9 +93,9 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "~/components/Button";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
+import CardNewsletter from "~/components/CardNewsletter";
 import page from "../page";
 
 export default {
@@ -59,9 +104,9 @@ export default {
     Container,
     Button,
     Card,
-    CallToAction,
-    Discover,
-    GetStarted
+    CTA,
+    ListSN,
+    CardNewsletter
   },
   mixins: [
     page({
@@ -77,7 +122,8 @@ export default {
   },
   computed: mapGetters({
     links: "links",
-    usecases: "usecases"
+    usecases: "usecases",
+    externalLinks: "externalLinks"
   })
 };
 </script>
@@ -85,6 +131,14 @@ export default {
 <style lang="scss" scoped>
 a {
   position: relative;
+}
+
+.marketplace {
+  padding: calc(var(--margin) * 1);
+  width: 100%;
+  max-width: 490px;
+  height: 100%;
+  max-height: 490px;
 }
 
 img {

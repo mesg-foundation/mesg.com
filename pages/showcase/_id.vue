@@ -1,13 +1,17 @@
 <template>
   <div>
-    <Header :picture="usecase.headerimage" :title="title" :description="description"></Header>
+    <Header :picture="usecase.headerimage" :title="title" :description="description">
+      <div class="btn-center">
+        <Button :href="externalLinks.getStarted" target="_blank" primary>Discover the project</Button>
+      </div>
+    </Header>
 
-    <section id="usecase-intro">
-      <Container flex column align-center class="intro">
+    <section>
+      <Container flex column align-center class="intro" mb3>
         <h2 mb1>{{ usecase.technology }}</h2>
-        <p mb2 class="text-center product-desc description">{{ usecase.paragraphe }}</p>
+        <p class="text-center">{{ usecase.paragraphe }}</p>
       </Container>
-      <Container mb3>
+      <Container mb2>
         <div flex row space-between align-center wrap mb3>
           <div half>
             <img :src="usecase.image" />
@@ -20,26 +24,22 @@
           </div>
         </div>
       </Container>
-    </section>
-    <section id="usecase-description" class="inner-background" mb3>
-      <Container>
+      <Container id="usecase-description" mb3>
         <div flex row space-between align-center mobile-column-reverse wrap>
           <div half>
-            <Card p2 flex column space-between>
-              <h3 mb1>Benefits</h3>
-              <ul mb1>
-                <li v-for="(benefit, i) in usecase.benefits" :key="i" mb1>{{ benefit }}</li>
-              </ul>
-              <h3 mb1>Opportunities</h3>
-              <ul mb1>
-                <li
-                  v-for="(opportunitie, i) in usecase.opportunities"
-                  :key="i"
-                  mb1
-                  class="opportunitie"
-                >{{ opportunitie }}</li>
-              </ul>
-            </Card>
+            <h3 mb1>Benefits</h3>
+            <ul mb2>
+              <li v-for="(benefit, i) in usecase.benefits" :key="i" mb1>{{ benefit }}</li>
+            </ul>
+            <h3 mb1>Opportunities</h3>
+            <ul>
+              <li
+                v-for="(opportunitie, i) in usecase.opportunities"
+                :key="i"
+                mb1
+                class="opportunitie"
+              >{{ opportunitie }}</li>
+            </ul>
           </div>
           <div half>
             <Video v-if="usecase.video" :src="usecase.video"></Video>
@@ -49,9 +49,9 @@
       </Container>
     </section>
 
-    <section v-if="usecase.companies" id="who">
-      <Container flex column align-center mb3>
-        <h3 class="text-center" mb2>Who could benefit from this?</h3>
+    <section class="outer-background" mb3>
+      <Container v-if="usecase.companies" id="who" flex column align-center mb3>
+        <h3 class="text-center" mb3>Who could benefit from this?</h3>
         <ul flex row mobile-column class="companies">
           <li v-for="(company, i) in usecase.companies" :key="i">
             <a :href="company.to" class="link-secondary" target="_blank">
@@ -60,10 +60,7 @@
           </li>
         </ul>
       </Container>
-    </section>
-
-    <section id="information">
-      <Container flex column align-center mb3>
+      <Container id="information" flex column align-center mb3>
         <h3 mb1>More information</h3>
         <p class="text-center" mb2>{{usecase.information}}</p>
         <div class="button" flex row mobile-column>
@@ -81,11 +78,10 @@
 
     <section id="title-next">
       <Container>
-        <hr class="separator" mb3 />
-        <h2 mb2>More use cases</h2>
+        <h2 class="text-center" mb3>More use cases</h2>
       </Container>
     </section>
-    <section class="usecase" id="next">
+    <section class="usecase" id="next" mb3>
       <Container>
         <div flex row wrap>
           <nuxt-link
@@ -111,16 +107,33 @@
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Integrate complexities with confidence"
-      description="Receive priority technical support from a team of engineers dedicated to your project, day or night."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <hr mb3 />
+
+    <section mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half>
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            <ListSN :list="['forum', 'discord']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      :links="[{ title: 'Start building' , href: externalLinks.getStarted }]"
+      mb1
     />
-
-    <Discover mb3 left="engine" right="marketplace" />
-
-    <GetStarted mb3 />
   </div>
 </template>
 
@@ -131,9 +144,9 @@ import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Button from "~/components/Button";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
+import CardNewsletter from "~/components/CardNewsletter";
 import page from "../page";
 
 export default {
@@ -143,9 +156,9 @@ export default {
     Video,
     Button,
     Card,
-    CallToAction,
-    Discover,
-    GetStarted
+    CTA,
+    ListSN,
+    CardNewsletter
   },
   asyncData({ store, params, error }) {
     const usecase = store.getters.usecases.find(x => x.id === params.id);
