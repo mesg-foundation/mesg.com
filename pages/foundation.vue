@@ -8,14 +8,14 @@
 
     <section id="intro" mb3>
       <Container flex column align-center>
-        <h2 mb1>About the Foundation</h2>
-        <p
-          mb3
-          class="text-center"
-        >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
-        <Card>
+        <div class="xxx">
+          <h2 mb1>About the Foundation</h2>
+          <p
+            mb3
+            class="text-center"
+          >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
           <Video :src="externalLinks.video"></Video>
-        </Card>
+        </div>
       </Container>
     </section>
 
@@ -119,7 +119,6 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Button from "~/components/Button";
-import Card from "~/components/Card";
 import Document from "~/components/Document";
 import Member from "~/components/Member";
 import Partners from "~/components/Partners";
@@ -137,7 +136,6 @@ export default {
     Video,
     Member,
     Button,
-    Card,
     Document,
     Partners,
     News,
@@ -164,12 +162,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.xxx {
+  text-align: center;
+  width: 60%;
+  max-width: 100%;
+  min-width: 60%;
+}
+
 @media only screen and (max-width: $tablet-breakpoint) {
   .content {
     margin-bottom: 0 !important;
   }
   .title {
     padding-bottom: 0;
+  }
+  .xxx {
+    width: 80%;
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -185,11 +193,8 @@ export default {
   .founders {
     margin-bottom: 40px;
   }
+  .xxx {
+    width: 100%;
+  }
 }
 </style>
-
-
-
-
-
-
