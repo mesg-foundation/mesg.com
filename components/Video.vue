@@ -1,14 +1,13 @@
 <template>
   <Card>
-    <div class="video-container">
+    <div class="videoWrapper">
       <iframe
         :src="src"
         width="680"
-        height="382,5"
+        height="382"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        class="video"
       ></iframe>
     </div>
   </Card>
@@ -27,17 +26,13 @@ export default {
 </script>
 
 <style scoped>
-.video-container {
+.videoWrapper {
   position: relative;
-  display: block;
-  width: 100%;
-  height: 0;
   padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
 }
-
-iframe {
-  display: block;
-  max-width: 100%;
+.videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;

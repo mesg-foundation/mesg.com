@@ -43,7 +43,7 @@
           </div>
           <div half>
             <Video v-if="usecase.video" :src="usecase.video"></Video>
-            <img v-else :src="usecase.picture" />
+            <img v-else :src="usecase.picture" class="image" />
           </div>
         </div>
       </Container>
@@ -201,6 +201,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.image {
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 ul {
   list-style: none;
 }

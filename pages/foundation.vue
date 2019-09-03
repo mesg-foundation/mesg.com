@@ -7,13 +7,12 @@
     </Header>
 
     <section id="intro" mb3>
-      <Container flex column align-center>
-        <div class="xxx">
-          <h2 mb1>About the Foundation</h2>
-          <p
-            mb3
-            class="text-center"
-          >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
+      <Container flex column align-center class="text-center">
+        <h2 mb1>About the Foundation</h2>
+        <p
+          mb3
+        >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
+        <div class="mesg-presentation">
           <Video :src="externalLinks.video"></Video>
         </div>
       </Container>
@@ -162,11 +161,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.xxx {
-  text-align: center;
-  width: 60%;
-  max-width: 100%;
-  min-width: 60%;
+.mesg-presentation {
+  width: 66%;
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
@@ -176,11 +172,11 @@ export default {
   .title {
     padding-bottom: 0;
   }
-  .xxx {
-    width: 80%;
-  }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
+  .mesg-presentation {
+    width: 100%;
+  }
   #intro .container {
     padding-bottom: 0;
   }
@@ -192,9 +188,6 @@ export default {
   }
   .founders {
     margin-bottom: 40px;
-  }
-  .xxx {
-    width: 100%;
   }
 }
 </style>
