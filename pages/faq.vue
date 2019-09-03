@@ -44,7 +44,7 @@
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
           </div>
           <div half>
-            <ListSN one="telegram" two="forum" />
+            <ListSN :list="['forum', 'twitter', 'discord', 'telegram']" />
           </div>
         </div>
       </Container>
@@ -101,11 +101,5 @@ export default {
 <style scoped>
 ul {
   list-style: none;
-}
-h2 {
-  text-align: left;
-}
-.infos {
-  font-size: 14px;
 }
 </style>

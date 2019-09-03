@@ -18,12 +18,6 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  props: {
-    text: {
-      type: Array,
-      required: true
-    }
-  },
   computed: mapGetters({
     questions: "questions"
   })

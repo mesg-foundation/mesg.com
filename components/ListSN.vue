@@ -23,7 +23,8 @@ import { mapGetters } from "vuex";
 export default {
   props: {
     list: {
-      type: Array
+      type: Array,
+      required: true
     }
   },
   computed: {
