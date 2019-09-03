@@ -61,13 +61,15 @@ export const getters = {
       features: {
         primary: [
           {
-            title: "Automate complexities", description: "Build your own development workflow by connecting the events and tasks from any service through a simple config file. Implement complex technologies like blockchains without managing the complexities like server instances and data consensuses.<br/><br/>Any services from the Marketplace can be immediately reused within workflows, or users can write new services using any language or data format."
+            title: "Describe your feature", description: "Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed through a config file, and soon, other formats will become available like a UI and turing- complete programming languages."
           }
         ],
         secondary: [
-          { src: require("~/assets/marketplace/reuse-work.svg"), title: "Orchestration", description: "Write the components you need and let the Engine manage everything else, from the interaction between components to testing and deployment." },
-          { src: require("~/assets/engine/event-driven.svg"), title: "Simplification", description: "Reduce your codebase and technical debt by decoupling app components. Then, connect all independent components with a lightweight workflow." },
-          { src: require("~/assets/engine/scalable-apps.svg"), title: "Scalability", description: "With each component decoupled and standing on its own, applications can be built, updated, and scaled more efficiently than ever before." }
+          {
+            src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file that automatically manages the relationships between your services through events and tasks."
+          },
+          { src: require("~/assets/engine/event-driven.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features." },
+          { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization easy. Distribute or scale any service, feature or app on the upcoming decentralized network." }
         ]
       }
     }

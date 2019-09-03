@@ -17,7 +17,7 @@
           <NewsletterPopup
             class="newsletter"
             title="Keep in touch"
-            description="Stay connected with us and receive a notification on September 4th for the launch of MESG Orchestrator."
+            description="Stay connected with us and receive a notification on September 12th for the launch of MESG Orchestrator."
           >
             <button class="btn-close" @click="popup = false">
               <i class="fas fa-times"></i>
@@ -43,11 +43,11 @@
 
     <section id="community" mb3>
       <Container class="intro">
-        <h2 mb1>Community-driven workflows</h2>
+        <h2 mb1>Feature-based applications</h2>
         <p
           mb2
           class="text-center description"
-        >Build apps with workflows through an open-source decentralized economy where every user is a cloud provider.</p>
+        >Build apps using any feature. After all, what is an application but a collection of features?</p>
       </Container>
       <div class="outer-background" pt3 pb3>
         <Container>
@@ -57,8 +57,8 @@
             </div>
             <div half>
               <Titletext3
-                title="Automate complexities"
-                text="Build your own development workflow by connecting the events and tasks from any service through a simple config file. Implement complex technologies like blockchains without managing the complexities like server instances and data consensuses.</br></br>Any services from the Marketplace can be immediately reused within workflows, or users can write new services using any language or data format."
+                title="Describe your feature"
+                text="Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed through a config file, and soon, other formats will become available like a UI and turing-complete programming languages."
               />
             </div>
           </div>
@@ -68,7 +68,7 @@
 
     <CallToAction
       mb3
-      title="Launching September 4th"
+      title="Launching September 12th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
     >
       <Button @click="popup = !popup" class="btn-cta" white mr2>Stay Updated</Button>
@@ -114,7 +114,7 @@ export default {
     page({
       title: "MESG Orchestrator",
       description:
-        "A service-orchestration system for automated deployment, interaction, testing and scaling."
+        "Build feature-based applications through the orchestration of MESG services."
     })
   ],
   data() {
