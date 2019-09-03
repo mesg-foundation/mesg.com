@@ -1,6 +1,6 @@
 <template>
   <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit" flex row wrap>
-    <div flex column>
+    <div flex column class="email">
       <input type="email" placeholder="Your email address" v-model="email" required />
     </div>
     <div flex column third>
@@ -69,6 +69,10 @@ input[type="email"]:focus {
   box-shadow: 0 0 0 1px var(--light-purple) inset;
 }
 
+.email {
+  margin-right: calc(var(--margin) * 1);
+}
+
 button {
   border: none;
 }
@@ -78,7 +82,10 @@ button:hover {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   button {
-    margin-top: 20px;
+    margin-top: calc(var(--margin) * 1);
+  }
+  .email {
+    margin-right: 0;
   }
 }
 </style>
