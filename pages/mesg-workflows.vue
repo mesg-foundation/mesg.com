@@ -45,7 +45,6 @@
       <Container class="intro">
         <h2 mb1>Feature-based applications</h2>
         <p
-          mb2
           class="text-center description"
         >Build apps using any feature. After all, what is an application but a collection of features?</p>
       </Container>
