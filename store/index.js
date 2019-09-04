@@ -156,7 +156,7 @@ export const getters = {
           src: require("~/assets/partners/yellow.svg"),
           title: "Yellow Capital",
           description: "Yellow is building the future of Blockchain with seed investments, mentorship, advisory (STOs, token economics, legal, banking, marketing, fundraising and listing) and software solutions. Yellow also enriches the Blockchain community through physical hubs, live events, and original news and entertainment.",
-          to: "https://yellow.com/",
+          to: "https://www.yellow.com/",
           action: "yellow.com"
         }
       ],

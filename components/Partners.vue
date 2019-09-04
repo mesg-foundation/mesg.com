@@ -11,7 +11,7 @@
       </a>
     </li>
     <li>
-      <a href="https://yellow.com/" target="_blank" class="link-secondary">
+      <a href="https://www.yellow.com/" target="_blank" class="link-secondary">
         <img src="~/assets/partners/yellow.svg" alt="yellow" />
       </a>
     </li>
