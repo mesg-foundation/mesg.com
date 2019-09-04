@@ -82,7 +82,7 @@
       <Container>
         <h2 class="text-center" mb3>MESG documents</h2>
         <div flex row space-between wrap>
-          <Document v-for="(document, i) in documents" :key="i" :document="document" half mb2 />
+          <Document :list="['whitepaper', 'implementation', 'twopager', 'business']" />
         </div>
       </Container>
     </section>
@@ -201,7 +201,6 @@ export default {
       token: "token",
       links: "links",
       externalLinks: "externalLinks",
-      documents: "documents",
       articles: "articles",
       exchanges: "exchanges"
     })

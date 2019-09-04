@@ -333,12 +333,20 @@ export const getters = {
   },
 
   documents() {
-    return [
-      { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
-      { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
-      { title: "Two-Pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
-      { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
-    ]
+    return {
+      whitepaper: {
+        title: "Whitepaper", img: require("~/assets/documents/Decentralized-Network-of-Services.jpg"), link: "/documents/decentralized-network-of-services.pdf"
+      },
+      implementation: {
+        title: "Technical Implementation", img: require("~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg"), link: "/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
+      },
+      twopager: {
+        title: "Two-Pager", img: require("~/assets/documents/MESG-Two-Pager.jpg"), link: "/documents/MESG-2-pager.pdf"
+      },
+      business: {
+        title: "Business Plan", img: require("~/assets/documents/MESG-Business-Plan-Summary.jpg"), link: "/documents/MESG-business-plan-summary.pdf"
+      }
+    }
   },
 
   roadmap() {

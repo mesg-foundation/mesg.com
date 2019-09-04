@@ -40,7 +40,7 @@
     <section id="documents" mb2>
       <Container>
         <div flex row space-between wrap>
-          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2 />
+          <Document :list="['twopager', 'business']" />
         </div>
       </Container>
     </section>
@@ -152,7 +152,6 @@ export default {
   ],
   computed: mapGetters({
     team: "team",
-    documents: "documents",
     links: "links",
     externalLinks: "externalLinks",
     articles: "articles"
