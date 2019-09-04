@@ -1,13 +1,19 @@
 <template>
   <ul flex row wrap>
     <li>
-      <img mr2 src="~/assets/partners/omisego.svg" alt="omisego" />
+      <a href="https://omisego.co/" target="_blank" class="link-secondary">
+        <img mr2 src="~/assets/partners/omisego.svg" alt="omisego" />
+      </a>
     </li>
     <li>
-      <img mr2 src="~/assets/partners/beachhead.svg" alt="beachhead" />
+      <a href="https://beachhead.com/" target="_blank" class="link-secondary">
+        <img mr2 src="~/assets/partners/beachhead.svg" alt="beachhead" />
+      </a>
     </li>
     <li>
-      <img src="~/assets/partners/yellow.svg" alt="yellow" />
+      <a href="https://yellow.com/" target="_blank" class="link-secondary">
+        <img src="~/assets/partners/yellow.svg" alt="yellow" />
+      </a>
     </li>
   </ul>
 </template>
