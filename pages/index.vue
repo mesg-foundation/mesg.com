@@ -69,6 +69,13 @@
       </Container>
     </section>
 
+    <section mb3>
+      <Container>
+        <h2 class="text-center" mb3>Use Cases</h2>
+        <UseCase />
+      </Container>
+    </section>
+
     <hr mb3 />
 
     <section mb3>
@@ -124,6 +131,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "~/components/Button";
 import Container from "~/components/Container";
+import UseCase from "~/components/UseCase";
 import TextWithIcon from "~/components/TextWithIcon";
 import Card from "~/components/Card";
 import List from "~/components/List";
@@ -136,6 +144,7 @@ export default {
   components: {
     Header,
     Container,
+    UseCase,
     Button,
     TextWithIcon,
     Card,

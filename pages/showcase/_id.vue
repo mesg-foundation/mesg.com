@@ -83,27 +83,7 @@
     </section>
     <section class="usecase" id="next" mb3>
       <Container>
-        <div flex row wrap>
-          <nuxt-link
-            v-for="usecase in nextUsecases"
-            :key="usecase.id"
-            :to="usecase.to"
-            :id="usecase.id"
-            third
-            fill-height
-            mb2
-          >
-            <Card p1 bordered>
-              <div mb2 flex row space-between class="logos">
-                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
-              </div>
-              <p class="category" mb1>{{ usecase.category}}</p>
-              <h4 mb1>{{ usecase.title }}</h4>
-              <p mb1>{{ usecase.description}}</p>
-              <i class="fa fa-arrow-right"></i>
-            </Card>
-          </nuxt-link>
-        </div>
+        <UseCase />
       </Container>
     </section>
 
@@ -141,6 +121,7 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
+import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";
 import Button from "~/components/Button";
 import Card from "~/components/Card";
@@ -153,6 +134,7 @@ export default {
   components: {
     Header,
     Container,
+    UseCase,
     Video,
     Button,
     Card,
