@@ -93,92 +93,33 @@ export const getters = {
       ],
       packages: [
         {
-          title: "PREMIUM",
+          title: "Create your package",
           text: "Custom Pricing",
           items: [
             {
               valid: true, description: "Access to the Marketplace"
             },
             {
-              valid: true, description: "Access to the SDK"
-            },
-            {
-              valid: true, description: "Community support"
-            },
-            {
-              valid: true, description: "Direct support from the MESG team"
-            },
-            {
               valid: true, description: "Advisory services on your architecture"
+            },
+            {
+              valid: true, description: "Access to the SDK"
             },
             {
               valid: true, description: "Priority support from a dedicated team of engineers"
             },
             {
-              valid: true, description: "Creation of services"
-            }
-          ],
-          to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Contact Us"
-        },
-        {
-          title: "BUSINESS",
-          text: "Custom Pricing",
-          featured: true,
-          items: [
-            {
-              valid: true, description: "Access to the Marketplace"
-            },
-            {
-              valid: true, description: "Access to the SDK"
-            },
-            {
               valid: true, description: "Community support"
+            },
+            {
+              valid: true, description: "Creation of services"
             },
             {
               valid: true, description: "Direct support from the MESG team"
-            },
-            {
-              valid: true, description: "Advisory services on your architecture"
-            },
-            {
-              valid: false, description: "Priority support from a dedicated team of engineers"
-            },
-            {
-              valid: false, description: "Creation of services"
             }
           ],
           to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Contact Us"
-        },
-        {
-          title: "ESSENTIAL",
-          text: "Open Source - FREE",
-          items: [
-            {
-              valid: true, description: "Access to the Marketplace"
-            },
-            {
-              valid: true, description: "Access to the SDK"
-            },
-            {
-              valid: true, description: "Community support"
-            },
-            {
-              valid: false, description: "Direct support from the MESG team"
-            },
-            {
-              valid: false, description: "Advisory services on your architecture"
-            },
-            {
-              valid: false, description: "Priority support from a dedicated team of engineers"
-            },
-            {
-              valid: false, description: "Creation of services"
-            }
-          ],
-          to: "https://docs.mesg.com/guide/quick-start-guide.html",
-          action: "Get started"
+          action: "Get in touch"
         }
       ]
     }

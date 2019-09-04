@@ -23,6 +23,18 @@
       </Container>
     </section>
 
+    <section id="packages" mb3>
+      <Container class="intro text-center">
+        <h2 mb1>Custom solutions</h2>
+        <p>Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
+      </Container>
+      <div class="outer-background">
+        <Container flex mobile-column justify-center>
+          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p" />
+        </Container>
+      </div>
+    </section>
+
     <section id="features-2" mb3>
       <Container>
         <h2 class="text-center" mb1>MESG Enterprise features</h2>
@@ -41,21 +53,6 @@
           />
         </div>
       </Container>
-    </section>
-
-    <section id="packages" mb4>
-      <Container class="intro text-center">
-        <h2 mb1>Our packages</h2>
-        <p
-          mb3
-          class="description"
-        >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
-      </Container>
-      <div class="inner-background">
-        <Container flex mobile-column justify-center>
-          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p" />
-        </Container>
-      </div>
     </section>
 
     <section id="partners" mb3>
