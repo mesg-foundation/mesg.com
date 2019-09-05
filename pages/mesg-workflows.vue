@@ -57,7 +57,7 @@
             <div half>
               <Titletext3
                 title="Describe your feature"
-                text="Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed by creating a process through a config file, and soon, other formats will become available like a UI and turing-complete programming languages."
+                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed by creating a process through a config file, and soon, other formats will become available like a UI and turing-complete programming languages."
               />
             </div>
           </div>
