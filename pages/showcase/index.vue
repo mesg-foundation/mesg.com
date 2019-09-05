@@ -37,6 +37,23 @@
       </Container>
     </section>
 
+    <section mb3>
+      <Container>
+        <div flex row mobile-column-reverse align-center>
+          <div half>
+            <h2 mb1>Blog</h2>
+            <p
+              mb1
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            <Button secondary :href="externalLinks.blog">Read our blog</Button>
+          </div>
+          <div half p1>
+            <img src="~/assets/blog.svg" alt="Blog" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
     <hr mb3 />
 
     <section mb3>

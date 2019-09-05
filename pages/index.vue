@@ -89,7 +89,7 @@
             <Button secondary :href="externalLinks.blog">Read our blog</Button>
           </div>
           <div half p1>
-            <img src="~/assets/token/MESG-token.svg" alt="Blog" />
+            <img src="~/assets/blog.svg" alt="Blog" />
           </div>
         </div>
       </Container>
