@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/workflows/workflows.svg')"
+      :picture="require('~/assets/orchestrator.svg')"
       :title="title"
       :description="description"
     >
@@ -30,7 +30,7 @@
     <section id="features" mb3>
       <Container flex row space-between wrap>
         <TextWithIcon
-          v-for="(feature, i) in workflows.features.secondary"
+          v-for="(feature, i) in orchestrator.features.secondary"
           :key="i"
           :src="feature.src"
           :title="feature.title"
@@ -124,7 +124,7 @@ export default {
   computed: mapGetters({
     links: "links",
     externalLinks: "externalLinks",
-    workflows: "workflows"
+    orchestrator: "orchestrator"
   })
 };
 </script>

@@ -56,7 +56,7 @@ export const getters = {
     ]
   },
 
-  workflows() {
+  orchestrator() {
     return {
       features: {
         primary: [
@@ -917,7 +917,7 @@ export const getters = {
     return {
       home: "/",
       enterprise: "/enterprise",
-      workflows: "/mesg-workflows",
+      orchestrator: "/mesg-orchestrator",
       engine: "/mesg-sdk",
       marketplace: "/mesg-marketplace",
       token: "/token",
