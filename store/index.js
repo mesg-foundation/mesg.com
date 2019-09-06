@@ -265,6 +265,12 @@ export const getters = {
             title: "Hubert Krauze",
             description: "Core Developer",
             linkedin: "https://www.linkedin.com/in/hubert-krauze-67a6389b/"
+          },
+          {
+            src: require("~/assets/team/Benz.jpg"),
+            title: "Thotsaphon Ruthamnong",
+            description: "Developer",
+            linkedin: "https://www.linkedin.com/in/thotsaphon-ruthamnong-a5889b111/"
           }
         ]
       },
