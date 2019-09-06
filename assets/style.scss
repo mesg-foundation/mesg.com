@@ -13,6 +13,21 @@
   --small-width: #{$small-width};
 }
 
+:root {
+  --primary: #{$purple};
+  --primary-dark: #{$title-color};
+  --primary-light: #{$deep-purple};
+  --primary-very-light: #{$light-purple};
+  --light-grey: #{$light-background};
+  --secondary: #{$purple-shadow};
+  --dark-grey: #{$text-color};
+  --Black: #000000;
+  --White: #{$white};
+  --Error: #f44336;
+  --Success: #4bb543;
+  --Info: #1e88e5;
+}
+
 @import "structure";
 
 /* Reset */
