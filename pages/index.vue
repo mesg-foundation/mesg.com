@@ -73,7 +73,7 @@
       <Container>
         <h2 class="text-center" mb3>Use Cases</h2>
         <div flex row wrap>
-          <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase"/>
+          <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
       </Container>
     </section>
@@ -162,13 +162,18 @@ export default {
         "Build applications and workflows using shareable integrations from any service, app, blockchain or decentralized network."
     })
   ],
-  computed: mapGetters({
-    products: "products",
-    home: "home",
-    links: "links",
-    externalLinks: "externalLinks",
-    usecases: "usecases"
-  })
+  computed: {
+    ...mapGetters({
+      products: "products",
+      home: "home",
+      links: "links",
+      externalLinks: "externalLinks",
+      allusecases: "usecases"
+    }),
+    usecases() {
+      return this.allusecases.slice(0, 3);
+    }
+  }
 };
 </script>
 

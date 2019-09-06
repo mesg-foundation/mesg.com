@@ -84,7 +84,7 @@
     <section class="usecase" id="next" mb3>
       <Container>
         <div flex row wrap>
-          <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase"/>
+          <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase"/>
         </div>
       </Container>
     </section>
@@ -166,8 +166,7 @@ export default {
     ...mapGetters({
       links: "links",
       usecases: "usecases",
-      externalLinks: "externalLinks",
-      usecases: "usecases"
+      externalLinks: "externalLinks"
     }),
     nextUsecases() {
       const index = this.usecases.findIndex(x => x.id === this.usecase.id) + 1;
