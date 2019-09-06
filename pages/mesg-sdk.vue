@@ -84,7 +84,7 @@
             <Button secondary :href="externalLinks.github">Explore our Github</Button>
           </div>
           <div half p1>
-            <img src="~/assets/token/MESG-token.svg" alt="token" />
+            <img src="~/assets/github.svg" alt="github" />
           </div>
         </div>
       </Container>
