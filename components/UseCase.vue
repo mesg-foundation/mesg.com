@@ -1,26 +1,15 @@
 <template>
-  <div flex row wrap>
-    <nuxt-link
-      v-for="usecase in usecases"
-      :key="usecase.id"
-      :to="usecase.to"
-      :id="usecase.id"
-      flex
-      column
-      third
-      mb2
-    >
-      <Card p1 bordered>
-        <div mb2 flex row space-between class="logos">
-          <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
-        </div>
-        <p class="category" mb1>{{ usecase.category}}</p>
-        <h4 mb1>{{ usecase.title }}</h4>
-        <p mb1>{{ usecase.description}}</p>
-        <i class="fa fa-arrow-right"></i>
-      </Card>
-    </nuxt-link>
-  </div>
+  <nuxt-link :to="usecase.to" :id="usecase.id" flex column third mb2>
+    <Card p1 bordered>
+      <div mb2 flex row space-between class="logos">
+        <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
+      </div>
+      <p class="category" mb1>{{ usecase.category}}</p>
+      <h4 mb1>{{ usecase.title }}</h4>
+      <p mb1>{{ usecase.description}}</p>
+      <i class="fa fa-arrow-right"></i>
+    </Card>
+  </nuxt-link>
 </template>
 
 <script>
@@ -31,13 +20,13 @@ export default {
     Card
   },
   props: {
-    src: {
-      type: String
+    usecase: {
+      type: Object,
+      required: true
     }
   },
   computed: mapGetters({
-    links: "links",
-    usecases: "usecases"
+    links: "links"
   })
 };
 </script>

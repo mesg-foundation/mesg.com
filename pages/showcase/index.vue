@@ -9,7 +9,9 @@
     <section id="use cases" mb3>
       <Container flex column align-center>
         <h2 mb3>Use Cases</h2>
-        <UseCase mb2 />
+        <div flex row wrap>
+          <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
+        </div>
         <Button primary :href="externalLinks.contact" target="_blank">Submit my project</Button>
       </Container>
     </section>
@@ -116,7 +118,8 @@ export default {
   ],
   computed: mapGetters({
     links: "links",
-    externalLinks: "externalLinks"
+    externalLinks: "externalLinks",
+    usecases: "usecases"
   })
 };
 </script>

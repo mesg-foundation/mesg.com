@@ -72,7 +72,9 @@
     <section mb3>
       <Container>
         <h2 class="text-center" mb3>Use Cases</h2>
-        <UseCase />
+        <div flex row wrap>
+          <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase"/>
+        </div>
       </Container>
     </section>
 
@@ -164,7 +166,8 @@ export default {
     products: "products",
     home: "home",
     links: "links",
-    externalLinks: "externalLinks"
+    externalLinks: "externalLinks",
+    usecases: "usecases"
   })
 };
 </script>
