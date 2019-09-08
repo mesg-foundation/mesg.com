@@ -4,10 +4,15 @@
       <div mb2 flex row space-between class="logos">
         <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
       </div>
-      <p class="category" mb1>{{ usecase.category}}</p>
+      <p class="category" mb1>{{ usecase.category }}</p>
       <h4 mb1>{{ usecase.title }}</h4>
       <p mb1>{{ usecase.description}}</p>
-      <i class="fa fa-arrow-right"></i>
+      <div flex row space-between align-center>
+        <div v-if="usecase.label" :class="{ partner, community }" class="label">
+          <p ml1>{{ usecase.label }}</p>
+        </div>
+        <i class="fa fa-arrow-right"></i>
+      </div>
     </Card>
   </nuxt-link>
 </template>
@@ -23,11 +28,21 @@ export default {
     usecase: {
       type: Object,
       required: true
+    },
+    label: {
+      type: Boolean,
+      default: false
     }
   },
   computed: mapGetters({
     links: "links"
-  })
+  }),
+  partner() {
+    return !this.label;
+  },
+  community() {
+    return this.label;
+  }
 };
 </script>
 
@@ -49,6 +64,18 @@ img {
   width: 0.1em;
   left: 50%;
   background-color: var(--light-purple);
+}
+
+.label {
+  padding: calc(var(--margin) * 0.2);
+}
+.partner {
+  border-left: solid 2px var(--orange);
+  background-color: var(--light-orange);
+}
+.community {
+  border-left: solid 2px var(--text-color);
+  background-color: var(--light-background);
 }
 
 .category {
