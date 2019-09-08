@@ -9,7 +9,7 @@
     <section id="use cases" mb3>
       <Container flex column align-center>
         <h2 mb3>Use Cases</h2>
-        <div flex row wrap>
+        <div flex row wrap mb2>
           <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
         <Button primary :href="externalLinks.contact" target="_blank">Submit my project</Button>

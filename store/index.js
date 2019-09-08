@@ -474,8 +474,10 @@ export const getters = {
     return [
       {
         id: "plasma-exit-challenge",
-        label: "MESG Partner",
-        class: "partner",
+        label: {
+          title: "MESG Partner",
+          type: "partner"
+        },
         to: `${links.showcase}/plasma-exit-challenge`,
         logos: [
           require("~/assets/showcase/omisego.svg"),
@@ -516,7 +518,6 @@ export const getters = {
       {
         id: "send-messages-from-a-satellite",
         label: "Community",
-        class: "community",
         to: `${links.showcase}/send-messages-from-a-satellite`,
         logos: [
           require("~/assets/showcase/opennode.svg"),

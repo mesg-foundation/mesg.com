@@ -6,10 +6,15 @@
       </div>
       <p class="category" mb1>{{ usecase.category }}</p>
       <h4 mb1>{{ usecase.title }}</h4>
-      <p mb1>{{ usecase.description}}</p>
-      <div flex row space-between align-center>
-        <div v-if="usecase.label" :class="{ partner, community }" class="label">
-          <p ml1>{{ usecase.label }}</p>
+      <p mb2>{{ usecase.description}}</p>
+      <div flex row space-between align-center class="label-icon">
+        <div v-if="usecase.label">
+          <div v-if="usecase.label.type" class="label partner" flex column align-center>
+            <p>{{ usecase.label.title }}</p>
+          </div>
+          <div v-else class="label community" flex column align-center>
+            <p>{{ usecase.label }}</p>
+          </div>
         </div>
         <i class="fa fa-arrow-right"></i>
       </div>
@@ -36,17 +41,11 @@ export default {
   },
   computed: mapGetters({
     links: "links"
-  }),
-  partner() {
-    return !this.label;
-  },
-  community() {
-    return this.label;
-  }
+  })
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a {
   position: relative;
 }
@@ -66,15 +65,19 @@ img {
   background-color: var(--light-purple);
 }
 
+.label-icon {
+  width: calc(100% - var(--margin) * 2);
+  position: absolute;
+  bottom: calc(var(--margin) + 6px);
+}
 .label {
+  border-radius: 3px;
   padding: calc(var(--margin) * 0.2);
 }
 .partner {
-  border-left: solid 2px var(--orange);
   background-color: var(--light-orange);
 }
 .community {
-  border-left: solid 2px var(--text-color);
   background-color: var(--light-background);
 }
 
@@ -88,9 +91,6 @@ img {
 }
 
 i {
-  position: absolute;
-  bottom: calc(var(--margin) + 6px);
-  right: var(--margin);
   font-size: 1em;
   font-weight: bold;
   text-align: right;
