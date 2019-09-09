@@ -46,7 +46,7 @@
         <h2 mb1>Feature-based applications</h2>
         <p
           class="text-center description"
-        >Build apps using any feature. After all, what is an application but a collection of features?</p>
+        >Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
       </Container>
       <div class="outer-background" pt3 pb3>
         <Container>
