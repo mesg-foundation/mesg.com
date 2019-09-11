@@ -67,7 +67,7 @@
 
     <CallToAction
       mb3
-      title="Launching September 12th"
+      title="Launching September 19th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
     >
       <Button @click="popup = !popup" class="btn-cta" white mr2>Stay Updated</Button>
