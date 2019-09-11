@@ -286,22 +286,10 @@ export const getters = {
             linkedin: "https://www.linkedin.com/in/hubert-krauze-67a6389b/"
           },
           {
-            src: require("~/assets/team/Ilker.jpg"),
-            title: "İlker Göktuğ Öztürk",
-            description: "Core Developer",
-            linkedin: "https://www.linkedin.com/in/ilker-goktug-ozturk/"
-          },
-          {
-            src: require("~/assets/team/Wayne.jpg"),
-            title: "Wayne Skeen",
-            description: "Advisor",
-            linkedin: "https://www.linkedin.com/in/wayneskeen/"
-          },
-          {
-            src: require("~/assets/team/Janie.jpg"),
-            title: "Janie Lim",
-            description: "Evangelist",
-            linkedin: "https://www.linkedin.com/in/janie-lim-135968b5/"
+            src: require("~/assets/team/Benz.jpg"),
+            title: "Thotsaphon Ruthamnong",
+            description: "Developer",
+            linkedin: "https://www.linkedin.com/in/thotsaphon-ruthamnong-a5889b111/"
           }
         ]
       },
