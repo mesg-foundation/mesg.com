@@ -4,7 +4,7 @@
       <div flex row space-between align-center>
         <div>
           <nuxt-link :to="links.home">
-            <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG">
+            <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG" />
           </nuxt-link>
         </div>
         <a @click="open = !open" class="burger" hidden-desktop>

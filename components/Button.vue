@@ -145,11 +145,6 @@ i {
   }
 }
 @media only screen and (max-width: $mobile-only) {
-  a,
-  button {
-    min-height: 50px;
-    padding: 1.2em;
-  }
   .btn--primary,
   .btn--outline,
   .btn--white {

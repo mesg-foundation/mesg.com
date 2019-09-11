@@ -80,6 +80,7 @@ p {
   font-size: 17px;
   color: var(--text-color);
 }
+
 ul {
   list-style: none;
 }
@@ -100,12 +101,8 @@ li {
 .list p {
   margin-left:22px;
 }
-img {
-  max-width: 100%;
-}
 
 a {
-  font-size: 17px;
   font-weight: bold;
   color: var(--purple);
   text-decoration: none;
@@ -125,6 +122,16 @@ a {
 .text-left {
   text-align: left;
 }
+
+.infos {
+  font-size: 14px;
+}
+
+/* Design styles */
+img {
+  max-width: 100%;
+}
+
 .inner-background {
   position: relative;
 }
@@ -141,6 +148,7 @@ a {
 .outer-background {
   background: var(--light-background);
 }
+
 hr {
   width: var(--width);
   max-width: 100%;
@@ -149,6 +157,7 @@ hr {
   border:solid 0.5px;
   color: var(--light-purple);
 }
+
 .container > p {
   max-width: var(--small-width);
   margin: auto;

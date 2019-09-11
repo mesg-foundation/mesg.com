@@ -1,6 +1,6 @@
 <template>
   <div class="card" :class="{ bordered, thin, shadow: !noShadow }">
-    <slot/>
+    <slot />
   </div>
 </template>
 
