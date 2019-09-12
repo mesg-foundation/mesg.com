@@ -25,7 +25,7 @@
     <section class="outer-background" mb3>
       <Container>
         <div flex row mobile-column align-center>
-          <div half>
+          <div half p1>
             <img
               src="~/assets/marketplace/marketplace.svg"
               alt="MESG Marketplace"
@@ -132,12 +132,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.marketplace {
-  padding: calc(var(--margin) * 1);
-  width: 100%;
-  max-width: 490px;
-  height: 100%;
-  max-height: 490px;
-}
-</style>

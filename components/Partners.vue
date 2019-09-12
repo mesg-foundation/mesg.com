@@ -30,13 +30,15 @@ ul {
 li {
   text-align: center;
 }
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $mobile-only) {
   img,
   li {
+    width: 100%;
     margin-right: 0 !important;
+    margin-bottom: calc(var(--margin) * 1);
   }
-  li {
-    padding: 10px;
+  img:last-child {
+    margin-bottom: 0;
   }
 }
 </style>

@@ -13,7 +13,7 @@
       </Container>
       <Container mb2>
         <div flex row space-between align-center wrap mb3>
-          <div half>
+          <div half p1>
             <img :src="usecase.image" />
           </div>
           <div half column flex space-between>
@@ -42,7 +42,7 @@
             </ul>
           </div>
           <div half>
-            <Video v-if="usecase.video" :src="usecase.video"></Video>
+            <Video v-if="usecase.video" :src="usecase.video" class="video"></Video>
             <img v-else :src="usecase.picture" class="image" />
           </div>
         </div>
@@ -81,7 +81,7 @@
         <h2 class="text-center" mb3>More use cases</h2>
       </Container>
     </section>
-    <section class="usecase" id="next" mb3>
+    <section class="usecase" mb3>
       <Container>
         <div flex row wrap>
           <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
@@ -276,32 +276,24 @@ li.opportunitie:last-child {
   .intro {
     padding-bottom: 0;
   }
-  #usecase-description iframe,
-  img {
-    margin-bottom: 20px;
+  #usecase-description .video {
+    margin-bottom: calc(var(--margin) * 1);
   }
   #usecase-description ul:last-child {
     margin-bottom: 0 !important;
   }
   .companies li {
-    margin-right: 0 !important;
-    margin-bottom: 20px;
-  }
-  .companies li:last-child img:last-child {
-    margin-bottom: 0;
-  }
-  #next img {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--margin) * 1);
   }
   #information a {
     text-align: center;
     margin-right: 0 !important;
   }
   #information p {
-    margin-bottom: 20px !important;
+    margin-bottom: calc(var(--margin) * 1) !important;
   }
   #information .container {
-    margin-bottom: 20px !important;
+    margin-bottom: calc(var(--margin) * 1) !important;
   }
 }
 </style>

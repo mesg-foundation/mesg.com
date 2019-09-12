@@ -5,10 +5,10 @@
       <slot name="left"></slot>
     </div>
     <div half>
-        <h3 mb1>{{ title }}</h3>
-        <p v-if="description" v-html="description"></p>
-        <slot name="right"></slot>
-        <Button secondary v-if="action" :to="to" :href="href">{{ action }}</Button>
+      <h3 mb1>{{ title }}</h3>
+      <p v-if="description" v-html="description"></p>
+      <slot name="right"></slot>
+      <Button secondary v-if="action" :to="to" :href="href" mt1>{{ action }}</Button>
     </div>
   </div>
 </template>
@@ -43,22 +43,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .feature:last-child {
   margin-bottom: 0 !important;
-}
-
-@media only screen and (max-width: $tablet-breakpoint) {
-  .feature {
-    margin-bottom: 80px !important;
-  }
-}
-@media only screen and (max-width: $mobile-breakpoint) {
-  .feature {
-    margin-bottom: 40px !important;
-  }
-  img {
-    margin-bottom: 20px;
-  }
 }
 </style>
