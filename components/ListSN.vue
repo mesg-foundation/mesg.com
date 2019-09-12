@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a {
   margin-right: calc(var(--margin) * 1);
 }
