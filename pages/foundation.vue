@@ -38,7 +38,12 @@
       </Container>
     </section>
 
-    <hr mb3 />
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
     <section id="documents" mb2>
       <Container>
         <div flex row space-between wrap>
@@ -46,7 +51,12 @@
         </div>
       </Container>
     </section>
-    <hr mb3 />
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
     <section id="team">
       <Container flex column align-center class="title">
@@ -87,7 +97,11 @@
 
     <News :articles="articles" mb3 />
 
-    <hr mb3 />
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
     <section mb3>
       <Container>

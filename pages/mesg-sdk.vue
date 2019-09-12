@@ -71,7 +71,11 @@
       </Container>
     </section>
 
-    <hr mb3 />
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
     <section mb3>
       <Container>
@@ -90,7 +94,11 @@
       </Container>
     </section>
 
-    <hr mb3 />
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
     <section mb3>
       <Container>

@@ -217,7 +217,6 @@ hr {
   width: calc(var(--width) / 2);
   max-width: calc(var(--width) / 2);
   margin: auto;
-  height: 0;
   border:solid 0.5px;
   color: var(--light-purple);
 }
@@ -247,5 +246,10 @@ hr {
   }
   #faq .button {
     margin-top:20px;
+  }
+}
+@media only screen and (max-width: $mobile-only) {
+  hr {
+    width: calc(var(--width) / 4);
   }
 }

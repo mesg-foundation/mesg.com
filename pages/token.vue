@@ -69,10 +69,10 @@
             <h4 mb2>Total token supply 250MM</h4>
             <ColoredList
               :items="[
-              { color: '#e0d1ff', title: 'Sale Distribution 62.5%'},
-              { color: '#ffd4a3', title: 'Reserve 20%'},
-              { color: '#9777c7', title: 'Team and Founders 12.5%'},
-              { color: '#8ceda1', title: 'Partners & Bounties 5%'}
+              { color: '#2e1359', title: 'Sale Distribution 62.5%'},
+              { color: '#7e44d8', title: 'Reserve 20%'},
+              { color: '#c2a3ff', title: 'Team and Founders 12.5%'},
+              { color: '#dfcdf7', title: 'Partners & Bounties 5%'}
             ]"
             />
           </template>
@@ -113,7 +113,11 @@
 
     <News :articles="articles" mb3 />
 
-    <hr mb3 />
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
     <section mb3>
       <Container>

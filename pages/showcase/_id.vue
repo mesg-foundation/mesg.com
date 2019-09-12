@@ -84,12 +84,16 @@
     <section class="usecase" id="next" mb3>
       <Container>
         <div flex row wrap>
-          <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase"/>
+          <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
         </div>
       </Container>
     </section>
 
-    <hr mb3 />
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
     <section mb3>
       <Container>
