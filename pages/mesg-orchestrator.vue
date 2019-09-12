@@ -17,7 +17,7 @@
           <NewsletterPopup
             class="newsletter"
             title="Keep in touch"
-            description="Stay connected with us and receive a notification on September 19th for the launch of MESG Orchestrator."
+            description="Stay connected with us and receive a notification on September 24th for the launch of MESG Orchestrator."
           >
             <button class="btn-close" @click="popup = false">
               <i class="fas fa-times"></i>
@@ -67,7 +67,7 @@
 
     <CallToAction
       mb3
-      title="Launching September 19th"
+      title="Launching September 24th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
     >
       <Button @click="popup = !popup" class="btn-cta" white mr2>Stay Updated</Button>
