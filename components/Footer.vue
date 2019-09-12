@@ -7,7 +7,8 @@
             <nuxt-link :to="links.home">
               <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG" />
             </nuxt-link>
-            <p class="copyright" mb2>© 2019 MESG Foundation, All rights reserved.</p>
+            <p class="copyright">© 2019 MESG Foundation, All rights reserved.</p>
+            <nuxt-link :to="links.policy" class="policy" mb2>Privacy & Cookie Policy</nuxt-link>
             <div flex space-between wrap>
               <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
                 <i :class="icon.icon"></i>
@@ -64,6 +65,8 @@
 <script>
 import Button from "~/components/Button";
 import Container from "~/components/Container";
+import Card from "~/components/Card";
+import Newsletter from "~/components/Newsletter";
 import { mapGetters } from "vuex";
 export default {
   components: {
@@ -99,6 +102,18 @@ export default {
   background-color: var(--light-background);
 }
 
+.outline {
+  border: solid 1px var(--deep-purple);
+  background-color: var(--dark-purple);
+}
+
+.purple {
+  color: var(--deep-purple);
+}
+.white {
+  color: var(--white);
+}
+
 .copyright {
   font-size: 12px;
   font-weight: normal;
@@ -107,6 +122,21 @@ export default {
   line-height: normal;
   letter-spacing: normal;
   color: var(--text-color);
+}
+
+.policy {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--deep-purple);
+}
+.policy:hover {
+  color: var(--white);
+  text-decoration: underline;
+  transition: 0.1s ease;
 }
 
 .category {

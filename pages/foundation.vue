@@ -25,12 +25,14 @@
             half
             title="Story"
             text="The MESG Foundation was built to promote and support blockchain technology through the improvement of its accessibility and use in the real world."
+            mb2
           />
 
           <Titletext3
             half
             title="Vision"
             text="To be the first universal infrastructure to bridge legacy companies moving into a trustless landscape. The future of business is decentralized."
+            mb2
           />
         </div>
       </Container>

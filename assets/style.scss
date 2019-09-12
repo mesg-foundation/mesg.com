@@ -96,6 +96,7 @@ p {
   font-size: 17px;
   color: var(--text-color);
 }
+
 ul {
   list-style: none;
 }
@@ -115,9 +116,6 @@ li {
 }
 .list p {
   margin-left:22px;
-}
-img {
-  max-width: 100%;
 }
 
 .infos {
@@ -183,6 +181,15 @@ a {
 }
 
 
+.infos {
+  font-size: 14px;
+}
+
+/* Design styles */
+img {
+  max-width: 100%;
+}
+
 .inner-background {
   position: relative;
 }
@@ -205,6 +212,7 @@ a {
     var(--white)
   );
 }
+
 hr {
   width: calc(var(--width) / 2);
   max-width: calc(var(--width) / 2);
@@ -213,6 +221,7 @@ hr {
   border:solid 0.5px;
   color: var(--light-purple);
 }
+
 .container > p {
   max-width: var(--small-width);
   margin: auto;

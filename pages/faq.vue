@@ -6,7 +6,7 @@
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu />
+            <SideMenu :items="questions" />
           </div>
           <ul flex column>
             <li v-for="(category, i) in questions" :key="i">
@@ -89,12 +89,7 @@ export default {
     links: "links",
     questions: "questions",
     externalLinks: "externalLinks"
-  }),
-  props: {
-    text: {
-      type: String
-    }
-  }
+  })
 };
 </script>
 

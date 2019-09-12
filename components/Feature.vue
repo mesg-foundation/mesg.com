@@ -1,13 +1,14 @@
 <template>
   <div flex row space-between align-center wrap class="feature">
     <div half p1>
-      <img :src="src" />
+      <img v-if="src" :src="src" />
+      <slot name="left"></slot>
     </div>
     <div half>
-      <h3 mb1>{{ title }}</h3>
-      <p v-if="description" mb1 v-html="description"></p>
-      <slot mb1></slot>
-      <Button secondary :to="to" :href="href">{{ action }}</Button>
+        <h3 mb1>{{ title }}</h3>
+        <p v-if="description" v-html="description"></p>
+        <slot name="right"></slot>
+        <Button secondary v-if="action" :to="to" :href="href">{{ action }}</Button>
     </div>
   </div>
 </template>
@@ -20,8 +21,7 @@ export default {
   },
   props: {
     src: {
-      type: String,
-      required: true
+      type: String
     },
     title: {
       type: String,
@@ -37,8 +37,7 @@ export default {
       type: String
     },
     action: {
-      type: String,
-      required: true
+      type: String
     }
   }
 };

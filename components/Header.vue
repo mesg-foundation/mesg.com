@@ -1,13 +1,19 @@
 <template>
   <header id="header" pt3 pb3 mb3>
-    <Container flex row mobile-column-reverse align-center space-between wrap>
+    <Container v-if="picture" flex row mobile-column-reverse align-center space-between wrap>
       <div half>
         <h1 mb1 v-html="title"></h1>
         <p mb2 v-html="description"></p>
-        <slot v-if="$slots.default"/>
+        <slot v-if="$slots.default" />
       </div>
-      <div half v-if="picture">
-        <img :src="picture" :alt="title">
+      <div half>
+        <img :src="picture" :alt="title" />
+      </div>
+    </Container>
+    <Container v-else>
+      <div>
+        <h1 mb1 v-html="title"></h1>
+        <p v-html="description"></p>
       </div>
     </Container>
   </header>

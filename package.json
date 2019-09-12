@@ -21,7 +21,10 @@
     "@nuxtjs/pwa": "^2.5.0",
     "@nuxtjs/sitemap": "^0.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
+    "codemirror": "^5.48.4",
     "nuxt": "^2.6.3",
+    "vue-codemirror": "^4.0.6",
+    "vue-embed-gist": "^1.0.2",
     "vue-sticky-directive": "0.0.7"
   },
   "devDependencies": {
