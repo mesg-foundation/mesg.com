@@ -681,6 +681,7 @@ export const getters = {
       },
       {
         id: "enhance-zapier-workflows",
+        label: "Community",
         to: `${links.showcase}/enhance-zapier-workflows`,
         logos: [
           require("~/assets/showcase/zapier.svg"),
