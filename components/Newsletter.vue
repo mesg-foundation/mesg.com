@@ -77,12 +77,12 @@ input[type="email"]:focus {
 }
 
 .email {
-  margin-right: calc(var(--margin) * 1);
+  margin-right: var(--margin);
 }
 
 button {
-  padding-left: calc(var(--margin) * 1);
-  padding-right: calc(var(--margin) * 1);
+  padding-left: var(--margin);
+  padding-right: var(--margin);
   border: none;
 }
 button:hover {
@@ -96,7 +96,7 @@ button:hover {
   .btn {
     width: 100%;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: var(--margin);
   }
 }
 </style>

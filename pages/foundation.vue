@@ -44,7 +44,7 @@
       </Container>
     </section>
 
-    <section id="documents">
+    <section id="documents" mb3>
       <Container>
         <div flex row space-between wrap>
           <Document :list="['twopager', 'business']" />

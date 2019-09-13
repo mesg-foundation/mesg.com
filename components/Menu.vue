@@ -230,7 +230,7 @@ li > a:not(.btn--primary) {
     margin-top: 0 !important;
   }
   ul {
-    padding: 40px;
+    padding: calc(var(--margin) * 2);
     border-top: solid 6px var(--purple);
     list-style: none;
     border-radius: 6px;
@@ -241,7 +241,7 @@ li > a:not(.btn--primary) {
     width: 0;
     height: 0;
     bottom: 100%;
-    right: 20px;
+    right: var(--margin);
     border-bottom: 10px solid var(--purple);
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
@@ -273,7 +273,7 @@ li > a:not(.btn--primary) {
 @media only screen and (max-width: $mobile-breakpoint) {
   ul {
     align-items: left !important;
-    padding-top: 20px;
+    padding-top: var(--margin);
   }
   li {
     margin-right: 0 !important;
@@ -286,7 +286,7 @@ li > a:not(.btn--primary) {
     padding-bottom: 5px;
   }
   .btn--primary {
-    margin-top: 20px;
+    margin-top: var(--margin);
   }
 }
 </style>

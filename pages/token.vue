@@ -248,7 +248,7 @@ li img {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .btn--white {
-    margin-bottom: 40px !important;
+    margin-bottom: calc(var(--margin) * 2) !important;
   }
   .btn--white:last-child {
     margin-bottom: 0 !important;
@@ -257,7 +257,7 @@ li img {
     margin-bottom: 0 !important;
   }
   .logo {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
   #atd .container {
     padding-bottom: 0;

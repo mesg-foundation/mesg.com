@@ -191,7 +191,7 @@ img:hover {
   }
   img {
     margin-top: calc(var(--margin) * 2);
-    margin-bottom: calc(var(--margin) * 1);
+    margin-bottom: var(--margin);
   }
 }
 </style>

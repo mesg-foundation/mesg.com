@@ -98,10 +98,10 @@ i {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .link-secondary {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
   .content {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
 }
 </style>

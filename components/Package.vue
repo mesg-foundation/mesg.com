@@ -89,7 +89,7 @@ ul {
 }
 
 li {
-  margin-right: calc(var(--margin) * 1);
+  margin-right: var(--margin);
 }
 li:last-child {
   margin-bottom: 0 !important;

@@ -64,11 +64,11 @@ img {
 
 .icon {
   text-align: right;
-  margin-right: 20px;
+  margin-right: var(--margin);
 }
 
 .content {
-  padding: 20px;
+  padding: var(--margin);
   padding-left: 0;
   width: 100%;
 }
@@ -88,7 +88,7 @@ img {
     margin-bottom: 0;
   }
   .content {
-    padding-left: 20px;
+    padding-left: var(--margin);
   }
 }
 </style>

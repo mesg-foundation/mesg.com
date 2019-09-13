@@ -231,7 +231,7 @@ li.opportunitie:last-child {
     margin-bottom: 0 !important;
   }
   .companies li {
-    margin-bottom: calc(var(--margin) * 1);
+    margin-bottom: var(--margin);
   }
   #information a {
     text-align: center;

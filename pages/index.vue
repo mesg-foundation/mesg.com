@@ -202,7 +202,7 @@ export default {
     padding-bottom: 0;
   }
   .token {
-    margin-right: calc(var(--margin) * 1);
+    margin-right: var(--margin);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -214,7 +214,7 @@ export default {
   }
   .token {
     margin-right: 0;
-    margin-bottom: calc(var(--margin) * 1);
+    margin-bottom: var(--margin);
   }
   .community {
     margin-top: calc(var(--margin) * 3);

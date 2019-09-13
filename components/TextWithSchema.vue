@@ -1,7 +1,7 @@
 <template>
   <div flex row space-between align-center wrap class="section">
     <div half p3>
-      <img :src="src">
+      <img :src="src" />
     </div>
     <div class="content" half>
       <h3 mb1>{{ title }}</h3>
@@ -48,11 +48,11 @@ export default {
     margin-bottom: 0 !important;
   }
   img {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
 }
 .section {
-  margin-bottom: 80px !important;
+  margin-bottom: calc(var(--margin) * 3) !important;
 }
 .section:last-child {
   margin-bottom: 0 !important;

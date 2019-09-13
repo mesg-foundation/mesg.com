@@ -45,7 +45,7 @@ li {
   li {
     width: 100%;
     margin-right: 0 !important;
-    margin-bottom: calc(var(--margin) * 1);
+    margin-bottom: var(--margin);
   }
   img:last-child {
     margin-bottom: 0;

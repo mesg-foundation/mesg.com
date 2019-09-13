@@ -52,7 +52,7 @@ img {
 }
 
 .text {
-  padding: 20px;
+  padding: var(--margin);
 }
 
 .picture {

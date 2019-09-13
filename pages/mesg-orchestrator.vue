@@ -206,7 +206,7 @@ export default {
     margin-right: 0 !important;
   }
   .code {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
   #popup-newsletter > .content {
     width: auto;
@@ -215,7 +215,7 @@ export default {
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .outer-background {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
 }
 </style>
