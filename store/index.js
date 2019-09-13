@@ -344,9 +344,9 @@ export const getters = {
       }, {
         quarter: "Q3",
         goals: [{
-          title: "Workflows",
+          title: "MESG Orchestrator",
           list: [
-            "Create applications based on workflows",
+            "Create applications based on the MESG Orchestrator",
             "Connect MESG Services together to build rich applications",
             "Drastically reduce applications' codebase"
           ]
