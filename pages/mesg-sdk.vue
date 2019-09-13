@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div class="btn-center">
+      <div>
         <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
       </div>
     </Header>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header :picture="usecase.headerimage" :title="title" :description="description">
-      <div class="btn-center">
+      <div>
         <Button :href="externalLinks.getStarted" target="_blank" primary>Discover the project</Button>
       </div>
     </Header>

@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div class="btn-center">
+      <div>
         <Button :href="externalLinks.marketplace" target="_blank" primary>MESG Marketplace</Button>
       </div>
     </Header>

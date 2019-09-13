@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description">
-      <div class="btn-center">
+      <div>
         <Button :href="externalLinks.getStarted" target="_blank" primary>Start building</Button>
       </div>
     </Header>

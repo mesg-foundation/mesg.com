@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div class="btn-center">
+      <div>
         <Button @click="popup = !popup" class="btn-cta" primary mr2>Stay Updated</Button>
       </div>
     </Header>

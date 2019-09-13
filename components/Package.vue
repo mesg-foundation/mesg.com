@@ -25,7 +25,7 @@
       </div>
       <hr mb2 />
     </div>
-    <div class="text-center">
+    <div class="text-center btn-action">
       <Button v-if="featured" white :href="to" target="_blank">{{ action }}</Button>
       <Button v-else primary :href="to" target="_blank">{{ action }}</Button>
     </div>
@@ -155,6 +155,9 @@ hr {
 @media only screen and (max-width: $mobile-breakpoint) {
   li {
     margin-right: 0;
+  }
+  a {
+    width: 100%;
   }
 }
 @media only screen and (max-width: $mobile-only) {

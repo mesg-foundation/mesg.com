@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
-      <div class="btn-center">
+      <div>
         <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
       </div>
     </Header>
