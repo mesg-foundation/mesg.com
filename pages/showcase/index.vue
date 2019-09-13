@@ -9,14 +9,14 @@
     <section id="use cases" mb3>
       <Container flex column align-center>
         <h2 mb2>Use Cases</h2>
-        <div flex row wrap mb2>
+        <div flex row wrap mb2 class="usecases">
           <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
         <Button primary :href="externalLinks.contact" target="_blank">Submit my project</Button>
       </Container>
     </section>
 
-    <section>
+    <section id="separator">
       <Container flex column align-center>
         <hr mb3 />
       </Container>
@@ -134,8 +134,14 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
+  .usecases {
+    margin-bottom: calc(var(--margin) * 3) !important;
+  }
   .community {
     margin-top: calc(var(--margin) * 3);
+  }
+  #separator .container {
+    padding-bottom: 0;
   }
 }
 </style>

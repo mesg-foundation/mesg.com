@@ -12,7 +12,7 @@
             <li v-for="(policy, i) in policies" :key="i">
               <h2 :id="policy.id" mb1>{{ policy.title }}</h2>
               <p v-html="policy.description" mb2></p>
-              <hr mb2 />
+              <hr mb2 class="separator" />
             </li>
             <p class="infos">
               This document was last updated on August 12, 2019
@@ -71,5 +71,9 @@ h2 {
 }
 .infos {
   font-size: 14px;
+}
+.separator {
+  width: 100%;
+  min-width: 100%;
 }
 </style>

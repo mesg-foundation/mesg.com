@@ -50,7 +50,7 @@
     <section mb3>
       <Container>
         <h2 class="text-center" mb2>Use Cases</h2>
-        <div flex row wrap mb1>
+        <div flex row wrap mb1 class="usecases">
           <TextWithIcon
             half
             v-for="(usecase, i) in marketplace.usecase"
@@ -144,6 +144,9 @@ export default {
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
+  }
+  .usecases {
+    margin-bottom: calc(var(--margin) * 2) !important;
   }
 }
 </style>

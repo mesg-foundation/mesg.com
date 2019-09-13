@@ -230,30 +230,30 @@ hr {
   .description {
     margin-bottom: 0 !important;
   }
-  .separator {
-    margin-bottom:40px!important;
+  .outer-background {
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   header .btn--primary {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
   header .btn-center {
     text-align: center;
   }
   #usecase .button {
-    margin-top:20px;
+    margin-top:var(--margin);
   }
   #faq .button {
-    margin-top:20px;
+    margin-top:var(--margin);
   }
   .outer-background {
-  padding-top: calc(var(--margin) * 1);
-  padding-bottom:calc(var(--margin) * 1);
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
   }
-}
-@media only screen and (max-width: $mobile-only) {
-  hr {
-    width: calc(var(--width) / 4);
+    hr {
+    width: 100%;
+    min-width: 100%;
   }
 }

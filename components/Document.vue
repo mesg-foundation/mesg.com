@@ -81,14 +81,19 @@ img {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  i {
-    display: none;
-  }
   .preview {
     margin-bottom: 0;
   }
   .content {
     padding-left: var(--margin);
+  }
+  a {
+    margin-bottom: calc(var(--margin) * 2) !important;
+  }
+}
+@media only screen and (max-width: $mobile-only) {
+  i {
+    display: none;
   }
 }
 </style>

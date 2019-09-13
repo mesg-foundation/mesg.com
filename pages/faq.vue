@@ -17,7 +17,7 @@
                   <p v-html="content.description" mb2></p>
                 </li>
               </ul>
-              <hr mb2 />
+              <hr mb2 class="separator" />
             </li>
             <p class="infos">
               * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
@@ -100,5 +100,10 @@ export default {
 <style scoped>
 ul {
   list-style: none;
+}
+
+.separator {
+  width: 100%;
+  min-width: 100%;
 }
 </style>
