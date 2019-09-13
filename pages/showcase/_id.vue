@@ -8,6 +8,14 @@
 
     <section>
       <Container flex column align-center class="intro text-center" mb3>
+        <div v-if="usecase.label" mb2>
+          <div v-if="usecase.label.type" class="label partner" flex column align-center>
+            <p>{{ usecase.label.title }}</p>
+          </div>
+          <div v-else class="label community" flex column align-center>
+            <p>{{ usecase.label }}</p>
+          </div>
+        </div>
         <h2 mb1>{{ usecase.technology }}</h2>
         <p>{{ usecase.paragraphe }}</p>
       </Container>
@@ -218,6 +226,17 @@ li.opportunitie:last-child {
 .company {
   height: 30px;
   width: auto;
+}
+
+.label {
+  border-radius: 3px;
+  padding: calc(var(--margin) / 2);
+}
+.partner {
+  background-color: var(--light-orange);
+}
+.community {
+  background-color: var(--light-background);
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
