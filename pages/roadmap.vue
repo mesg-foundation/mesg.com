@@ -37,7 +37,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <CardNewsletter
@@ -113,7 +113,7 @@ ul {
 #roadmap h4 {
   width: 60px;
   height: 60px;
-  padding: 10px;
+  padding: calc(var(--margin) / 2);
   font-size: 26px;
   font-weight: 600;
   color: var(--deep-purple);
@@ -125,7 +125,7 @@ ul {
 #roadmap h5 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: calc(var(--margin) - 8px);
 }
 
 .years {
@@ -135,7 +135,7 @@ ul {
 }
 
 .years > li {
-  margin-bottom: 55px;
+  margin-bottom: calc(var(--margin) + 35px);
 }
 
 .quarters {
@@ -144,7 +144,7 @@ ul {
 }
 
 .quarters > li {
-  margin-bottom: 45px;
+  margin-bottom: calc(var(--margin) + 25px);
   position: relative;
 }
 
@@ -192,7 +192,7 @@ ul {
 }
 
 .goals > li {
-  margin-bottom: 32px;
+  margin-bottom: calc(var(--margin) + 12px);
 }
 
 .items li {
@@ -204,7 +204,7 @@ ul {
   content: "";
   width: 7px;
   height: 7px;
-  margin-right: 15px;
+  margin-right: calc(var(--margin) - 5px);
   background-color: var(--deep-purple);
   border-radius: 100%;
   display: inline-block;

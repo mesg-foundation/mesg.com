@@ -10,7 +10,7 @@
       </div>
     </Header>
 
-    <section mb3>
+    <section id="features" mb3>
       <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in marketplace.features.secondary"
@@ -23,7 +23,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="presentation" mb3>
       <Container class="intro text-center">
         <h2 mb1>A decentralized network of services</h2>
         <p
@@ -47,7 +47,7 @@
       </div>
     </section>
 
-    <section mb3>
+    <section id="use-cases" mb3>
       <Container>
         <h2 class="text-center" mb2>Use Cases</h2>
         <div flex row wrap mb1 class="usecases">
@@ -60,7 +60,6 @@
             :text="usecase.description"
           />
         </div>
-
         <div class="text-center" mb3>
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
@@ -73,7 +72,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <div half>

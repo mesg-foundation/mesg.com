@@ -22,7 +22,7 @@
       </Container>
     </section>
 
-    <section class="outer-background" mb3>
+    <section id="marketplace" class="outer-background" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <div half p1>
@@ -43,7 +43,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="blog" mb3>
       <Container>
         <div flex row mobile-column-reverse align-center>
           <div half>
@@ -66,7 +66,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <CardNewsletter

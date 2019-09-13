@@ -29,7 +29,7 @@ export default {
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 25px;
+  padding-top: calc(var(--margin) + 5px);
   height: 0;
 }
 .videoWrapper iframe {

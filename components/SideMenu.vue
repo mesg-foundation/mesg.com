@@ -37,7 +37,7 @@ export default {
   letter-spacing: normal;
 }
 i {
-  margin-right: 10px;
+  margin-right: calc(var(--margin) / 2);
   font-size: 12px;
 }
 </style>

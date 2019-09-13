@@ -6,8 +6,8 @@
       </div>
     </Header>
 
-    <section>
-      <Container flex column align-center class="intro text-center" mb3>
+    <section id="use-case">
+      <Container id="intro" flex column align-center class="intro text-center" mb3>
         <div v-if="usecase.label" mb2>
           <div v-if="usecase.label.type" class="label partner" flex column align-center>
             <p>{{ usecase.label.title }}</p>
@@ -19,7 +19,7 @@
         <h2 mb1>{{ usecase.technology }}</h2>
         <p>{{ usecase.paragraphe }}</p>
       </Container>
-      <Container>
+      <Container id="challenges-goals">
         <div flex row space-between align-center wrap mb3>
           <div half p1>
             <img :src="usecase.image" />
@@ -49,7 +49,7 @@
               >{{ opportunitie }}</li>
             </ul>
           </div>
-          <div half>
+          <div half class="illus">
             <Video v-if="usecase.video" :src="usecase.video" class="video"></Video>
             <img v-else :src="usecase.picture" class="image" />
           </div>
@@ -84,7 +84,7 @@
       </Container>
     </section>
 
-    <section class="usecase" mb3>
+    <section id="use-cases" class="usecase" mb3>
       <Container>
         <h2 class="text-center" mb2>More use cases</h2>
         <div flex row wrap>
@@ -99,7 +99,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <CardNewsletter
@@ -107,7 +107,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div half class="community">
+          <div id="community" half class="social">
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -208,7 +208,7 @@ li::before {
   content: "";
   width: 7px;
   height: 7px;
-  margin-right: 15px;
+  margin-right: calc(var(--margin) - 5px);
   background-color: var(--deep-purple);
   border-radius: 100%;
   display: inline-block;
@@ -243,8 +243,8 @@ li.opportunitie:last-child {
   .intro {
     padding-bottom: 0;
   }
-  #usecase-description .video {
-    margin-bottom: calc(var(--margin) * 2);
+  #usecase-description .illus {
+    margin-bottom: calc(var(--margin) * 2) !important;
   }
   #usecase-description ul:last-child {
     margin-bottom: 0 !important;
@@ -256,7 +256,7 @@ li.opportunitie:last-child {
     text-align: center;
     margin-right: 0 !important;
   }
-  .community {
+  .social {
     margin-top: calc(var(--margin) * 3);
   }
 }

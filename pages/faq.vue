@@ -38,7 +38,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <div half>

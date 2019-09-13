@@ -41,7 +41,7 @@
       </Container>
     </section>
 
-    <section id="community" mb3>
+    <section id="config" mb3>
       <Container class="intro">
         <h2 mb1>Feature-based applications</h2>
         <p

@@ -6,7 +6,7 @@
       </div>
     </Header>
 
-    <section mb3>
+    <section id="features" mb3>
       <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in home.features.primary"
@@ -19,12 +19,13 @@
       </Container>
     </section>
 
-    <section>
+    <section id="presentation">
       <Container flex column class="intro text-center">
         <h2 mb1>Products</h2>
         <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
       </Container>
     </section>
+
     <section id="products" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
@@ -69,7 +70,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="use-cases" mb3>
       <Container>
         <h2 class="text-center" mb2>Use Cases</h2>
         <div flex row wrap>
@@ -84,7 +85,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="blog" mb3>
       <Container>
         <div flex row mobile-column-reverse align-center>
           <div half>
@@ -107,7 +108,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <CardNewsletter

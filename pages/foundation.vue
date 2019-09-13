@@ -6,7 +6,7 @@
       </div>
     </Header>
 
-    <section id="intro" mb3>
+    <section id="presentation" mb3>
       <Container flex column align-center class="text-center">
         <h2 mb1>About the Foundation</h2>
         <p
@@ -18,7 +18,7 @@
       </Container>
     </section>
 
-    <section id="story vision" mb3>
+    <section id="story-vision" mb3>
       <Container>
         <div flex row space-between wrap>
           <Titletext3
@@ -100,7 +100,7 @@
       </Container>
     </section>
 
-    <section mb3>
+    <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
           <div half>
@@ -181,7 +181,7 @@ export default {
   .mesg-presentation {
     width: 100%;
   }
-  #intro .container {
+  #presentation .container {
     padding-bottom: 0;
   }
   #team .title {

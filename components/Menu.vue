@@ -215,7 +215,7 @@ li > a:not(.btn--primary) {
     font-size: 2em;
   }
   .btn {
-    padding: 10px;
+    padding: calc(var(--margin) / 2);
     padding-left: 0;
     padding-right: 0;
   }
@@ -282,8 +282,8 @@ li > a:not(.btn--primary) {
     line-height: 60px;
   }
   .btn {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: calc(var(--margin) - 15px);
+    padding-bottom: calc(var(--margin) - 15px);
   }
   .btn--primary {
     margin-top: var(--margin);
