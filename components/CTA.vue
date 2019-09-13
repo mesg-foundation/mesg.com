@@ -76,6 +76,11 @@ p {
   z-index: -1;
 }
 
+@media only screen and (max-width: $tablet-breakpoint) {
+  #cta::before {
+    height: calc(100% + 80px);
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
   .content {
     margin-bottom: calc(var(--margin) * 2);

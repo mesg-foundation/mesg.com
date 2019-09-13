@@ -1,6 +1,6 @@
 <template>
   <section id="footer">
-    <div class="bg">
+    <div>
       <Container>
         <nav flex row space-between wrap mobile-column-reverse>
           <div flex column third>
@@ -178,10 +178,17 @@ img:hover {
   transition: 0.1s ease;
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: $tablet-breakpoint) {
+  #footer {
+    padding: calc(var(--margin) * 2);
+    padding-top: 0;
+  }
   .container {
     padding: 0;
   }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
   a.link {
     min-height: auto;
     margin-bottom: 0;
