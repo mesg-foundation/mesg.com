@@ -8,7 +8,7 @@
 
     <section id="use cases" mb3>
       <Container flex column align-center>
-        <h2 mb3>Use Cases</h2>
+        <h2 mb2>Use Cases</h2>
         <div flex row wrap mb2>
           <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
@@ -74,7 +74,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div half>
+          <div half class="community">
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -131,4 +131,12 @@ export default {
   })
 };
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: $mobile-breakpoint) {
+  .community {
+    margin-top: calc(var(--margin) * 3);
+  }
+}
+</style>
 

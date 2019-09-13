@@ -6,7 +6,7 @@
       </div>
     </Header>
 
-    <section id="features" mb3>
+    <section mb3>
       <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in home.features.primary"
@@ -19,7 +19,7 @@
       </Container>
     </section>
 
-    <section id="product-intro">
+    <section>
       <Container flex column class="intro text-center">
         <h2 mb1>Products</h2>
         <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
@@ -71,7 +71,7 @@
 
     <section mb3>
       <Container>
-        <h2 class="text-center" mb3>Use Cases</h2>
+        <h2 class="text-center" mb2>Use Cases</h2>
         <div flex row wrap>
           <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
@@ -115,7 +115,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div half>
+          <div half class="community">
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -197,36 +197,27 @@ export default {
   height: 100px;
 }
 
-#articles img {
-  height: 20px;
-  width: auto;
-}
-
-#articles .card {
-  margin-right: 20px;
-}
-
-#articles .card:last-child {
-  margin-right: 0;
-}
-
 @media only screen and (max-width: $tablet-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
   .token {
-    margin-right: 20px;
+    margin-right: calc(var(--margin) * 1);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   #token {
-    margin-top: 40px !important;
+    margin-top: calc(var(--margin) * 2);
   }
   #token .content {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
   .token {
-    margin-bottom: 20px;
+    margin-right: 0;
+    margin-bottom: calc(var(--margin) * 1);
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 </style>

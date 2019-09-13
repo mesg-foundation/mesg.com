@@ -10,7 +10,7 @@
       <Container flex column align-center class="text-center">
         <h2 mb1>About the Foundation</h2>
         <p
-          mb3
+          mb2
         >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
         <div class="mesg-presentation">
           <Video :src="externalLinks.video"></Video>
@@ -44,7 +44,7 @@
       </Container>
     </section>
 
-    <section id="documents" mb2>
+    <section id="documents">
       <Container>
         <div flex row space-between wrap>
           <Document :list="['twopager', 'business']" />
@@ -59,8 +59,8 @@
     </section>
 
     <section id="team">
-      <Container flex column align-center class="title">
-        <h2 class="description">The team behind MESG</h2>
+      <Container flex column align-center class="title text-center">
+        <h2>The team behind MESG</h2>
       </Container>
       <div class="outer-background" mb3>
         <Container>
@@ -89,10 +89,7 @@
     </section>
 
     <section id="partners" mb3>
-      <Container flex column align-center>
-        <h2 mb3>Trusted by fantastic brands</h2>
-        <Partners />
-      </Container>
+      <Partners />
     </section>
 
     <News :articles="articles" mb3 />
@@ -180,14 +177,6 @@ export default {
   width: 66%;
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
-  .content {
-    margin-bottom: 0 !important;
-  }
-  .title {
-    padding-bottom: 0;
-  }
-}
 @media only screen and (max-width: $mobile-breakpoint) {
   .mesg-presentation {
     width: 100%;
@@ -195,14 +184,11 @@ export default {
   #intro .container {
     padding-bottom: 0;
   }
-  .content {
-    margin-bottom: 40px !important;
-  }
-  .content:last-child {
-    margin-bottom: 0 !important;
+  #team .title {
+    padding-bottom: 0;
   }
   .founders {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
 }
 </style>

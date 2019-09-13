@@ -41,7 +41,7 @@
       <Container>
         <h2 class="text-center" mb1>Algorithmic Token Distribution</h2>
         <p
-          mb3
+          mb2
           class="text-center"
         >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
         <div flex row space-between wrap>
@@ -82,7 +82,7 @@
 
     <section id="documents" mb3>
       <Container>
-        <h2 class="text-center" mb3>MESG documents</h2>
+        <h2 class="text-center" mb2>MESG documents</h2>
         <div flex row space-between wrap>
           <Document :list="['whitepaper', 'implementation', 'twopager', 'business']" />
         </div>
@@ -91,7 +91,7 @@
 
     <section id="faq" mb3>
       <Container>
-        <h2 class="text-center" mb3>Frequently Asked Questions</h2>
+        <h2 class="text-center" mb2>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -104,11 +104,8 @@
       </Container>
     </section>
 
-    <section id="partners" mb3>
-      <Container flex column align-center>
-        <h2 mb3>Already building on MESG</h2>
-        <Partners />
-      </Container>
+    <section mb3>
+      <Partners />
     </section>
 
     <News :articles="articles" mb3 />
@@ -127,7 +124,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div half>
+          <div half class="community">
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -261,6 +258,12 @@ li img {
   }
   .logo {
     margin-bottom: 40px;
+  }
+  #atd .container {
+    padding-bottom: 0;
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 

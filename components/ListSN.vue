@@ -50,4 +50,10 @@ a {
   max-height: 50px;
   border-radius: 100%;
 }
+
+@media only screen and (max-width: $mobile-only) {
+  a {
+    margin-right: 0;
+  }
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section id="articles">
     <Container flex column align-center>
-      <h2 mb3>{{title}}</h2>
+      <h2 mb2>{{title}}</h2>
       <div flex row space-between wrap>
         <a
           v-for="article in articles"
@@ -63,11 +63,5 @@ i {
   font-size: 1em;
   font-weight: bold;
   text-align: right;
-}
-
-@media only screen and (max-width: $mobile-breakpoint) {
-  a:last-child {
-    margin-bottom: 40px !important;
-  }
 }
 </style>

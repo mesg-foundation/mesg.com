@@ -45,7 +45,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div half>
+          <div half class="community">
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -104,13 +104,13 @@ ul {
   list-style: none;
 }
 
-h3 {
+#roadmap h3 {
   width: 80px;
   height: 42px;
   font-size: 32px;
 }
 
-h4 {
+#roadmap h4 {
   width: 60px;
   height: 60px;
   padding: 10px;
@@ -122,7 +122,7 @@ h4 {
   text-align: center;
 }
 
-h5 {
+#roadmap h5 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 12px;
@@ -212,7 +212,7 @@ h5 {
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .title {
-    margin-bottom: 40px !important;
+    margin-bottom: calc(var(--margin) * 2);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -226,14 +226,17 @@ h5 {
     margin: 0 !important;
     padding: 0 !important;
   }
-  h3 {
+  #roadmap h3 {
     margin-top: calc(2 * var(--margin));
   }
-  h4 {
+  #roadmap h4 {
     margin-top: var(--margin);
   }
-  h5 {
+  #roadmap h5 {
     margin-top: var(--margin);
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 </style>

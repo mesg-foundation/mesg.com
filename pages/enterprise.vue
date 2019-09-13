@@ -39,7 +39,7 @@
       <Container>
         <h2 class="text-center" mb1>MESG Enterprise features</h2>
         <p
-          mb3
+          mb2
           class="text-center"
         >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich workflows that optimize processes across the board.</p>
         <div flex row wrap>
@@ -55,16 +55,13 @@
       </Container>
     </section>
 
-    <section id="partners" mb3>
-      <Container flex column align-center>
-        <h2 mb3>Already building on MESG</h2>
-        <Partners />
-      </Container>
+    <section mb3>
+      <Partners />
     </section>
 
     <section id="faq" mb3>
       <Container>
-        <h2 class="text-center" mb3>Frequently Asked Questions</h2>
+        <h2 class="text-center" mb2>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half

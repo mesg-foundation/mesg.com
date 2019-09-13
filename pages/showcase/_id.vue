@@ -7,11 +7,11 @@
     </Header>
 
     <section>
-      <Container flex column align-center class="intro" mb3>
+      <Container flex column align-center class="intro text-center" mb3>
         <h2 mb1>{{ usecase.technology }}</h2>
-        <p class="text-center">{{ usecase.paragraphe }}</p>
+        <p>{{ usecase.paragraphe }}</p>
       </Container>
-      <Container mb2>
+      <Container>
         <div flex row space-between align-center wrap mb3>
           <div half p1>
             <img :src="usecase.image" />
@@ -50,8 +50,8 @@
     </section>
 
     <section class="outer-background" mb3>
-      <Container v-if="usecase.companies" id="who" flex column align-center mb3>
-        <h3 class="text-center" mb3>Who could benefit from this?</h3>
+      <Container v-if="usecase.companies" flex column align-center mb3>
+        <h3 class="text-center" mb2>Who could benefit from this?</h3>
         <ul flex row mobile-column class="companies">
           <li v-for="(company, i) in usecase.companies" :key="i">
             <a :href="company.to" class="link-secondary" target="_blank">
@@ -63,7 +63,7 @@
       <Container id="information" flex column align-center mb3>
         <h3 mb1>More information</h3>
         <p class="text-center" mb2>{{usecase.information}}</p>
-        <div class="button" flex row mobile-column>
+        <div flex row mobile-column>
           <Button
             secondary
             v-for="(resource, i) in usecase.resources"
@@ -76,13 +76,9 @@
       </Container>
     </section>
 
-    <section id="title-next">
-      <Container>
-        <h2 class="text-center" mb3>More use cases</h2>
-      </Container>
-    </section>
     <section class="usecase" mb3>
       <Container>
+        <h2 class="text-center" mb2>More use cases</h2>
         <div flex row wrap>
           <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
         </div>
@@ -103,7 +99,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div half>
+          <div half class="community">
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -224,60 +220,12 @@ li.opportunitie:last-child {
   width: auto;
 }
 
-/*next use case*/
-.usecase .card {
-  margin: 0;
-}
-.usecase a {
-  position: relative;
-}
-.usecase img {
-  min-width: 10%;
-  max-width: 100%;
-  min-height: 10%;
-  max-height: 80px;
-}
-.usecase .logos::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  height: 80px;
-  width: 0.1em;
-  left: 50%;
-  background-color: var(--light-purple);
-}
-.usecase .category {
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--purple);
-}
-.usecase i {
-  position: absolute;
-  bottom: calc(var(--margin) + 6px);
-  right: var(--margin);
-  font-size: 1em;
-  font-weight: bold;
-  text-align: right;
-}
-
-@media only screen and (max-width: $tablet-breakpoint) {
-  #title-next h2 {
-    margin-bottom: 0 !important;
-  }
-  #title-next .container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
   #usecase-description .video {
-    margin-bottom: calc(var(--margin) * 1);
+    margin-bottom: calc(var(--margin) * 2);
   }
   #usecase-description ul:last-child {
     margin-bottom: 0 !important;
@@ -289,11 +237,8 @@ li.opportunitie:last-child {
     text-align: center;
     margin-right: 0 !important;
   }
-  #information p {
-    margin-bottom: calc(var(--margin) * 1) !important;
-  }
-  #information .container {
-    margin-bottom: calc(var(--margin) * 1) !important;
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 </style>

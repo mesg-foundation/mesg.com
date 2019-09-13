@@ -247,6 +247,10 @@ hr {
   #faq .button {
     margin-top:20px;
   }
+  .outer-background {
+  padding-top: calc(var(--margin) * 1);
+  padding-bottom:calc(var(--margin) * 1);
+  }
 }
 @media only screen and (max-width: $mobile-only) {
   hr {

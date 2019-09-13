@@ -10,7 +10,7 @@
       </div>
     </Header>
 
-    <section id="features" mb3>
+    <section mb3>
       <Container flex row space-between wrap>
         <TextWithIcon
           v-for="(feature, i) in marketplace.features.secondary"
@@ -23,7 +23,7 @@
       </Container>
     </section>
 
-    <section id="network-of-services" mb3>
+    <section mb3>
       <Container class="intro text-center">
         <h2 mb1>A decentralized network of services</h2>
         <p
@@ -47,9 +47,9 @@
       </div>
     </section>
 
-    <section id="usecase" mb3>
+    <section mb3>
       <Container>
-        <h2 class="text-center" mb3>Use Cases</h2>
+        <h2 class="text-center" mb2>Use Cases</h2>
         <div flex row wrap mb1>
           <TextWithIcon
             half
