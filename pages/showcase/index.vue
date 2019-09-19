@@ -36,7 +36,7 @@
             <h2 mb1>Get inspired</h2>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            >Find new services to implement in your applications. Any service from the Marketplace featuring any technology or language and can be added to any process or application.</p>
             <Button secondary :href="externalLinks.marketplace" target="_blank">MESG Marketplace</Button>
           </div>
         </div>
@@ -50,7 +50,7 @@
             <h2 mb1>Blog</h2>
             <p
               mb1
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            >Discover even more ways to use MESG on our blog, plus stay up to date about what we are building and why we are building it.</p>
             <Button secondary :href="externalLinks.blog">Read our blog</Button>
           </div>
           <div half p1>
@@ -78,7 +78,7 @@
             <h3 mb1>Community</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >MESG is open-source and is community-driven. Join us in building the bridge between legacy and emerging technologies.</p>
             <ListSN :list="['forum', 'discord']" />
           </div>
         </div>

@@ -79,7 +79,7 @@
             <h3 mb1>Help & Guidance</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >Have questions or not sure where to start? Head over to Discord to chat with the team, or browse the forum.</p>
           </div>
           <div half>
             <ListSN :list="['discord', 'forum']" />
@@ -90,7 +90,7 @@
 
     <CTA
       title="Marketplace"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit."
+      description="MESG Marketplace beta is out now. Earn tokens your services are used or save time by purchasing access to services."
       :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplace }]"
       mb1
     />

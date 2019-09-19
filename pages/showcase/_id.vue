@@ -111,7 +111,7 @@
             <h3 mb1>Community</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >MESG is open-source and is community-driven. Join us in building the bridges between legacy and emerging technologies.</p>
             <ListSN :list="['forum', 'discord']" />
           </div>
         </div>

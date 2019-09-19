@@ -10,10 +10,14 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, or IoT device can be connected to any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be connected to any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
             },
-            { src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK allow for the reuse of app components, whether custom built or shared from the community", to: links.marketplace, action: "MESG Marketplace" },
-            { src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The tools of the MESG SDK are free to use locally.</br></br>However, in order to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token" }
+            {
+              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "MESG Marketplace"
+            },
+            {
+              src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The tools of the MESG SDK will always be free to use on a centralized computer.</br></br>However, to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token"
+            }
           ],
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "An efficient way to manage hard-to-reach technologies like blockchains or IoT devices is to build modular apps simply react to real-world events. Your apps remain lightweight, reactive and easy to maintain." },
@@ -62,9 +66,11 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Value 1", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit. Sed ullamcorper nulla vitae ex elementum condimentum. Aliquam nisl massa." },
-          { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Value 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit. Sed ullamcorper nulla vitae ex elementum condimentum. Aliquam nisl massa." },
-          { src: require("~/assets/enterprise/process-data.svg"), title: "Value 3", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit. Sed ullamcorper nulla vitae ex elementum condimentum. Aliquam nisl massa." }
+          {
+            src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy for every step in the lifecycle of your software."
+          },
+          { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Save time by reusing and orchestrating services featuring complex emerging technologies from the Marketplace." },
+          { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software composed of services running on any combination of decentralized nodes, centralized providers, or even your own private servers." }
         ]
       },
     }

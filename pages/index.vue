@@ -92,7 +92,7 @@
             <h2 mb1>Blog</h2>
             <p
               mb1
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            >Stay up to date with the MESG Foundation on our blog. Check out in-depth features about what we are building and why we are building it.</p>
             <Button secondary :href="externalLinks.blog">Read our blog</Button>
           </div>
           <div half p1>
@@ -120,7 +120,7 @@
             <h3 mb1>Community</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >MESG is open-source and is community-driven. Join us in building the bridge between legacy and emerging technologies.</p>
             <ListSN :list="['twitter', 'github', 'telegram', 'forum', 'discord', 'reddit']" />
           </div>
         </div>
@@ -166,9 +166,9 @@ export default {
   },
   mixins: [
     page({
-      title: "The new economy of app development",
+      title: "The builders’ open economy",
       description:
-        "Build applications and workflows using shareable integrations from any service, app, blockchain or decentralized network."
+        "A decentralized event-driven task-orchestration system based on an open market of pay-per-use services."
     })
   ],
   computed: {

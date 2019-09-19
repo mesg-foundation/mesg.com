@@ -107,7 +107,7 @@
             <h3 mb1>Connect with us</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >Join us and the global community of builders on our mission to bridge the gaps between legacy and emerging technologies.</p>
           </div>
           <div half>
             <ListSN :list="['twitter', 'discord', 'telegram', 'forum']" />

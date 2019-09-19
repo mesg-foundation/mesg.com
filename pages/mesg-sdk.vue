@@ -84,7 +84,7 @@
             <h2 mb1>Github</h2>
             <p
               mb1
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat. Curabitur ac sodales elit.Lorem ipsum dolor sit amet, consectetur.</p>
+            >Devs, join in on the fun! Everyone has free and open access to all assets, repos and docs. MESG is open source and is built by contributors from all over the world.</p>
             <Button secondary :href="externalLinks.github">Explore our Github</Button>
           </div>
           <div half p1>
@@ -107,7 +107,7 @@
             <h3 mb1>Help & Guidance</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
           </div>
           <div half>
             <ListSN :list="['github', 'forum']" />
