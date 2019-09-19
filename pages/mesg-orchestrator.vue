@@ -5,8 +5,20 @@
       :title="title"
       :description="description"
     >
-      <div class="btn-center">
+      <div flex row align-center class="btn-center">
         <Button @click="popup = !popup" class="btn-cta" primary mr2>Stay Updated</Button>
+        <a
+          href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
+            alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
+            style="width: 250px; height: 54px;"
+            width="250px"
+            height="54px"
+          />
+        </a>
       </div>
     </Header>
 
@@ -63,6 +75,26 @@
           </div>
         </Container>
       </div>
+    </section>
+
+    <section>
+      <Container>
+        <div flex column align-center>
+          <h2 mb2>Upvote the Orchestrator on Product Hunt</h2>
+          <a
+            href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
+            target="_blank"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
+              alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
+              style="width: 250px; height: 54px;"
+              width="250px"
+              height="54px"
+            />
+          </a>
+        </div>
+      </Container>
     </section>
 
     <CallToAction
