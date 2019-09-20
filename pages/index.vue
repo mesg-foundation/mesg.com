@@ -93,7 +93,7 @@
             <p
               mb1
             >Stay up to date with the MESG Foundation on our blog. Check out in-depth features about what we are building and why we are building it.</p>
-            <Button secondary :href="externalLinks.blog">Read our blog</Button>
+            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
           </div>
           <div half p1>
             <img src="~/assets/blog.svg" alt="Blog" />

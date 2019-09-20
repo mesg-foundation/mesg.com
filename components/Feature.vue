@@ -8,7 +8,8 @@
       <h3 mb1>{{ title }}</h3>
       <p v-if="description" v-html="description"></p>
       <slot name="right"></slot>
-      <Button secondary v-if="action" :to="to" :href="href" mt1>{{ action }}</Button>
+      <Button secondary v-if="to" :to="to" mt1>{{ action }}</Button>
+      <Button secondary v-if="href" :href="href" target="_blank" mt1>{{ action }}</Button>
     </div>
   </div>
 </template>

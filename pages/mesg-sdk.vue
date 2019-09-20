@@ -29,14 +29,15 @@
         <p
           mb2
         >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
-        <a
+        <Button
+          secondary
           mb2
           href="/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
           download
         >
+          <i class="fas fa-download"></i>
           Technical implementation
-          <i class="fas fa-download icon" ml1></i>
-        </a>
+        </Button>
       </Container>
       <div class="outer-background">
         <Container>
@@ -85,7 +86,7 @@
             <p
               mb1
             >Devs, join in on the fun! Everyone has free and open access to all assets, repos and docs. MESG is open source and is built by contributors from all over the world.</p>
-            <Button secondary :href="externalLinks.github">Explore our Github</Button>
+            <Button secondary :href="externalLinks.github" target="_blank">Explore our Github</Button>
           </div>
           <div half p1>
             <img src="~/assets/github.svg" alt="github" />

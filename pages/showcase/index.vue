@@ -51,7 +51,7 @@
             <p
               mb1
             >Discover even more ways to use MESG on our blog, plus stay up to date about what we are building and why we are building it.</p>
-            <Button secondary :href="externalLinks.blog">Read our blog</Button>
+            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
           </div>
           <div half p1>
             <img src="~/assets/blog.svg" alt="Blog" />
