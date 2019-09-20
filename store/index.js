@@ -870,7 +870,7 @@ export const getters = {
         to: externalLinks.twitter,
         icon: "fab fa-twitter",
         color: "twitter",
-        description: "Community Chat"
+        description: "Engage with us"
       },
       github: {
         to: externalLinks.github,
@@ -906,7 +906,7 @@ export const getters = {
         to: externalLinks.blog,
         icon: "fab fa-medium",
         color: "blog",
-        description: "Blog"
+        description: "Check out the news"
       }
     }
   },
