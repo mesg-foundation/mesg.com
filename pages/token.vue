@@ -128,7 +128,7 @@
             <h3 mb1>Community</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >Join the community of builders and traders in our Telegram group, or head over to Discord to chat with the team.</p>
             <ListSN :list="['telegram', 'discord']" />
           </div>
         </div>
@@ -196,7 +196,7 @@ export default {
     page({
       title: "MESG Token",
       description:
-        "Buy and sell access to app components in the new economy of app development. The MESG Token is available now."
+        "Buy and sell access to services in the new economy of app development. The MESG Token is available now."
     })
   ],
   computed: {

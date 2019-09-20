@@ -46,10 +46,10 @@
             half
           />
           <div half class="community">
-            <h3 mb1>Community</h3>
+            <h3 mb1>Stay connected</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >MESG is built for and by the community. Join our chats, learn more on our blog, or help us build on Github.</p>
             <ListSN :list="['twitter', 'telegram', 'github', 'blog']" />
           </div>
         </div>
@@ -58,7 +58,7 @@
 
     <CTA
       title="Contact us"
-      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      description="Aligned with our vision and goals? We’d love to connect. Drop us a line and we’ll get back to you."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
     />
@@ -86,7 +86,7 @@ export default {
     page({
       title: "Roadmap",
       description:
-        "Check out our progress on becoming the universally-used platform for connecting traditional technologies to trustless systems."
+        "Follow our progress on building the universal platform for connecting traditional technologies to trustless systems."
     })
   ],
   computed: {

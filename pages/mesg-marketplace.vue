@@ -90,7 +90,7 @@
 
     <CTA
       title="Marketplace"
-      description="MESG Marketplace beta is out now. Earn tokens your services are used or save time by purchasing access to services."
+      description="MESG Marketplace beta is out now. Earn tokens when your services are used or save time by purchasing access to services."
       :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplace }]"
       mb1
     />

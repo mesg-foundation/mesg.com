@@ -10,13 +10,13 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be connected to any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
             },
             {
               src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "MESG Marketplace"
             },
             {
-              src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The tools of the MESG SDK will always be free to use on a centralized computer.</br></br>However, to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token"
+              src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The SDK’s tools are, and will always be, free to use on a centralized computer.</br></br>However, when building decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token"
             }
           ],
           secondary: [
@@ -67,10 +67,10 @@ export const getters = {
       features: {
         primary: [
           {
-            src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy for every step in the lifecycle of your software."
+            src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy built for each iteration of your product lifecycle."
           },
-          { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Save time by reusing and orchestrating services featuring complex emerging technologies from the Marketplace." },
-          { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software composed of services running on any combination of decentralized nodes, centralized providers, or even your own private servers." }
+          { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
+          { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
         ]
       },
     }

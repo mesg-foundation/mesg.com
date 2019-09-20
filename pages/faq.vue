@@ -42,10 +42,10 @@
       <Container>
         <div flex row mobile-column align-center>
           <div half>
-            <h3 mb1>Chat with us</h3>
+            <h3 mb1>Connect with us</h3>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus id nunc suscipit volutpat.</p>
+            >MESG is built by our global community. Join us on our forum and chats, or connect with us on social media.</p>
           </div>
           <div half>
             <ListSN :list="['forum', 'twitter', 'discord', 'telegram']" />
@@ -56,7 +56,7 @@
 
     <CTA
       title="Still have questions?"
-      description="If you didn’t find the answer you were looking for above, reach out! The MESG team is here to help and to answer any questions you might have."
+      description="If you didn’t find the answer you were looking for, reach out to us! The MESG team is here to help."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
     />
@@ -86,7 +86,7 @@ export default {
     page({
       title: "Frequently Asked Questions",
       description:
-        "Below are some common questions and answers about MESG and the MESG Network."
+        "Find answers to common questions about MESG’s products and the MESG Foundation."
     })
   ],
   computed: mapGetters({

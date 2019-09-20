@@ -26,7 +26,7 @@
     <section id="packages" mb3>
       <Container class="intro text-center">
         <h2 mb1>Custom solutions</h2>
-        <p>Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
+        <p>Sit back with confidence and receive expert guidance tailored to your needs from a team of engineers dedicated to your project.</p>
       </Container>
       <div class="outer-background">
         <Container flex mobile-column justify-center>
@@ -41,7 +41,7 @@
         <p
           mb2
           class="text-center"
-        >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich workflows that optimize processes across the board.</p>
+        >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich solutions to optimize processes across your stack.</p>
         <div flex row wrap class="features">
           <TextWithIcon
             half
@@ -75,8 +75,8 @@
     </section>
 
     <CTA
-      title="Custom solution"
-      description="Let MESG Enterprise guide you every step of the way to build powerful, streamlined applications using even the hardest-to-manage services."
+      title="Custom solutions"
+      description="MESG offers high levels of customizability and control. We can create custom solutions for you regardless of what’s in your software stack."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
     />

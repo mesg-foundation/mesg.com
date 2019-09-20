@@ -83,7 +83,7 @@
             <h2 mb1>Github</h2>
             <p
               mb1
-            >Devs, join in on the fun! Everyone has free and open access to all assets, repos and docs. MESG is open source and is built by contributors from all over the world.</p>
+            >Devs, join in on the fun! Everyone has free and open access to all assets, repos and docs. MESG is open-source and is built by contributors from all over the world.</p>
             <Button secondary :href="externalLinks.github" target="_blank">Explore our Github</Button>
           </div>
           <div half p1>
