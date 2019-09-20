@@ -2,7 +2,7 @@
   <div>
     <Header :picture="usecase.headerimage" :title="title" :description="description">
       <div>
-        <Button :href="externalLinks.getStarted" target="_blank" primary>Discover the project</Button>
+        <Button :href="usecase.cta" target="_blank" primary>Discover the project</Button>
       </div>
     </Header>
 

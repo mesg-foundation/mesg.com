@@ -622,9 +622,9 @@ export const getters = {
         ],
         headerimage: require("~/assets/showcase/plasma-guard.svg"),
         title: "Plasma Guard",
-        category: "OmiseGo - Ethereum",
+        category: "OmiseGO - Ethereum",
         description: "Ensure that your funds in the Plasma framework are secure and automatically exit, or challenge any invalid exit or byzantine event.",
-        technology: "OmiseGo - Plasma - Ethereum",
+        technology: "OmiseGO - Plasma - Ethereum",
         paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
         image: require("~/assets/showcase/omisego-ethereum.svg"),
         challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge.",
@@ -650,7 +650,8 @@ export const getters = {
           { title: "Read the full article", to: "https://medium.com/mesg/plasma-is-not-secure-unless-you-watch-it-196d23130367" },
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
           { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
-        ]
+        ],
+        cta: "https://github.com/mesg-foundation/application-plasma-exit"
       },
       {
         id: "send-messages-from-a-satellite",
@@ -683,7 +684,8 @@ export const getters = {
         resources: [
           { title: "Read the full article", to: "https://medium.com/mesg/use-case-send-messages-from-space-6a02a353df7d" },
           { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
-        ]
+        ],
+        cta: "https://github.com/RyanMilb/spaceforce-mesg-app"
       },
       {
         id: "enhance-zapier-workflows",
@@ -716,7 +718,8 @@ export const getters = {
         resources: [
           { title: "Read the full article", to: "https://medium.com/mesg/use-case-connecting-zapier-and-mesg-a9a661526ff0" },
           { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
-        ]
+        ],
+        cta: "https://github.com/JBarna/MESG-Z"
       },
       {
         id: "monitor-erc20-transactions",
@@ -755,7 +758,8 @@ export const getters = {
           { title: "Read the full article", to: "https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c" },
           { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
           { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
-        ]
+        ],
+        cta: "https://github.com/antho1404/application-erc20-analytics"
       },
       {
         id: "replace-subscriptions-with-on-demand-payments",
@@ -796,7 +800,8 @@ export const getters = {
           { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
           { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
           { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
-        ]
+        ],
+        cta: "https://github.com/antho1404/pegasys-hackathon"
       },
       {
         id: "directly-buy-crypto-with-fiat",
@@ -836,7 +841,8 @@ export const getters = {
           { title: "Read the full article", to: "https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7" },
           { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
           { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
-        ]
+        ],
+        cta: "https://github.com/mesg-foundation/application-stripe-to-erc20"
       }
     ]
   },
