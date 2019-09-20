@@ -42,6 +42,10 @@ export default {
 a {
   margin-right: var(--margin);
 }
+a:hover {
+  opacity: 0.7;
+  transition: 0.1s ease;
+}
 
 .circle {
   min-width: 50px;
