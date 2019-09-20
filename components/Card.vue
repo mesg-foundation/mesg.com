@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :class="{ bordered, thin, shadow: !noShadow }">
+  <div class="card" :class="{ bordered, thin, purple, shadow: !noShadow }">
     <slot />
   </div>
 </template>
@@ -7,6 +7,10 @@
 <script>
 export default {
   props: {
+    purple: {
+      type: Boolean,
+      default: false
+    },
     bordered: {
       type: Boolean,
       default: false
@@ -29,6 +33,10 @@ export default {
   border-radius: 6px;
   background-color: var(--white);
   overflow: hidden;
+}
+
+.card.purple {
+  background-color: var(--purple);
 }
 
 .card.shadow {

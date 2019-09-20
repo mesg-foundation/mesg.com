@@ -1,38 +1,32 @@
 <template>
   <div>
     <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
-      <div class="btn-center">
-        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
+      <div>
+        <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
       </div>
     </Header>
 
-    <section id="partners" mb3>
-      <Container flex column align-center>
-        <Partners mb2/>
-        <Button secondary :to="links.partners">Partners</Button>
+    <section id="features" mb3>
+      <Container flex row space-between wrap>
+        <TextWithIcon
+          v-for="(feature, i) in home.features.primary"
+          :key="i"
+          :src="feature.src"
+          :title="feature.title"
+          :text="feature.description"
+          third
+        />
       </Container>
     </section>
 
-    <section id="intro" mb3>
-      <Container flex column align-center>
-        <h2 mb2>How MESG accelerates app development:</h2>
-        <Card>
-          <Video :src="externalLinks.video"></Video>
-        </Card>
-      </Container>
-    </section>
-
-    <section id="product-intro">
-      <Container flex column align-center class="intro">
+    <section id="presentation">
+      <Container flex column class="intro text-center">
         <h2 mb1>Products</h2>
-        <p
-          mb2
-          class="text-center product-desc"
-        >Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
+        <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
       </Container>
     </section>
-    <section id="products" mb3 class="inner-background">
+
+    <section id="products" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
           <Card
@@ -46,12 +40,12 @@
             half
           >
             <div>
-              <img class="product" mb1 :src="product.img" :alt="product.title">
+              <img class="product" mb1 :src="product.img" :alt="product.title" />
             </div>
             <h3 mb1>{{ product.title }}</h3>
-            <p mb2 v-html="product.description"/>
-            <span spacer/>
-            <List :items="product.features.secondary"/>
+            <p mb2 v-html="product.description" />
+            <span spacer />
+            <List :items="product.features.secondary" />
             <Button outline :to="links[product.id]">{{ product.action }}</Button>
           </Card>
         </div>
@@ -59,7 +53,7 @@
           <div flex row mobile-column align-center>
             <div flex mobile-column class="content">
               <div flex column quarter class="token">
-                <img src="~/assets/token/MESG-token.svg" alt="token">
+                <img src="~/assets/token/MESG-token.svg" alt="MESG Token" />
               </div>
               <div flex column>
                 <h3 mb1>Build services, earn tokens</h3>
@@ -76,18 +70,69 @@
       </Container>
     </section>
 
-    <News :articles="articles"/>
+    <section id="use-cases" mb3>
+      <Container>
+        <h2 class="text-center" mb2>Use Cases</h2>
+        <div flex row wrap>
+          <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
+        </div>
+      </Container>
+    </section>
 
-    <CallToAction
-      mb3
-      title="Accelerate your business"
-      description="Add features to your custom software stack to expand to new industries. Then scale limitlessly with the decentralized network."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="blog" mb3>
+      <Container>
+        <div flex row mobile-column-reverse align-center>
+          <div half>
+            <h2 mb1>Blog</h2>
+            <p
+              mb1
+            >Stay up to date with the MESG Foundation on our blog. Check out in-depth features about what we are building and why we are building it.</p>
+            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+          </div>
+          <div half p1>
+            <img src="~/assets/blog.svg" alt="Blog" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half class="community">
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >MESG is open-source and is community-driven. Join us in building the bridges between legacy and emerging technologies.</p>
+            <ListSN :list="['twitter', 'github', 'telegram', 'forum', 'discord', 'reddit']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      :links="[{ title: 'Get started' , href: externalLinks.getStarted }]"
+      mb1
     />
-
-    <Discover mb3 left="showcase" right="foundation"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
@@ -95,45 +140,49 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Video from "~/components/Video";
+import UseCase from "~/components/UseCase";
+import TextWithIcon from "~/components/TextWithIcon";
 import Card from "~/components/Card";
-import News from "~/components/News";
 import List from "~/components/List";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
-import Partners from "~/components/Partners";
+import CardNewsletter from "~/components/CardNewsletter";
+import ListSN from "~/components/ListSN";
+import CTA from "~/components/CTA";
 import page from "./page";
 
 export default {
   components: {
     Header,
     Container,
+    UseCase,
     Button,
-    Video,
+    TextWithIcon,
     Card,
-    News,
     List,
-    CallToAction,
-    Discover,
-    GetStarted,
-    Partners
+    CardNewsletter,
+    ListSN,
+    CTA
   },
   mixins: [
     page({
-      title: "The new economy of app development",
+      title: "The builders’ open economy",
       description:
-        "Build applications and workflows using shareable integrations from any service, app, blockchain or decentralized network."
+        "A decentralized event-driven task-orchestration system based on an open market of pay-per-use services."
     })
   ],
-  computed: mapGetters({
-    products: "products",
-    articles: "articles",
-    links: "links",
-    externalLinks: "externalLinks"
-  })
+  computed: {
+    ...mapGetters({
+      products: "products",
+      home: "home",
+      links: "links",
+      externalLinks: "externalLinks",
+      allusecases: "usecases"
+    }),
+    usecases() {
+      return this.allusecases.slice(0, 3);
+    }
+  }
 };
 </script>
 
@@ -149,44 +198,27 @@ export default {
   height: 100px;
 }
 
-#articles img {
-  height: 20px;
-  width: auto;
-}
-
-#articles .card {
-  margin-right: 20px;
-}
-
-#articles .card:last-child {
-  margin-right: 0;
-}
-
-.icon {
-  font-size: 1em;
-  text-align: right;
-}
-
 @media only screen and (max-width: $tablet-breakpoint) {
-  .intro {
-    padding-bottom: 0;
-  }
-  .product-desc {
-    margin-bottom: 0 !important;
-  }
   .token {
-    margin-right: 20px;
+    margin-right: var(--margin);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
+  .intro {
+    padding-bottom: 0;
+  }
   #token {
-    margin-top: 40px !important;
+    margin-top: calc(var(--margin) * 2);
   }
   #token .content {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
   .token {
-    margin-bottom: 20px;
+    margin-right: 0;
+    margin-bottom: var(--margin);
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 </style>

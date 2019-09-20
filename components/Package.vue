@@ -1,28 +1,31 @@
 <template>
   <Card class="card" :class="{ white, purple }" p2>
     <div flex column>
-      <h3 class="text-center" mb1>{{ title }}</h3>
-      <hr mb1>
-      <p class="pricing text-center" mb1>{{ text }}</p>
-      <hr mb2>
-      <div flex row>
-        <ul mb2>
+      <div flex row space-between align-center wrap mb2>
+        <h3>{{ title }}</h3>
+        <p class="pricing text-right">{{ text }}</p>
+      </div>
+      <hr mb2 />
+      <div>
+        <ul flex row wrap mb2>
           <li
             mb1
             v-for="(item, i) in items"
             :key="i"
             flex
-            row
+            half
             align-center
             :class="{ invalid: !item.valid }"
           >
             <i v-if="item.valid" class="far fa-check" mr1></i>
             <i v-else class="far fa-times" mr1></i>
-
             <p>{{ item.description }}</p>
           </li>
         </ul>
       </div>
+      <hr mb2 />
+    </div>
+    <div class="text-center btn-action">
       <Button v-if="featured" white :href="to" target="_blank">{{ action }}</Button>
       <Button v-else primary :href="to" target="_blank">{{ action }}</Button>
     </div>
@@ -31,7 +34,7 @@
 
 <script>
 import Card from "~/components/Card";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 export default {
   components: {
     Card,
@@ -81,10 +84,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  max-width: 340px;
+ul {
+  list-style: none;
 }
 
+li {
+  margin-right: var(--margin);
+}
+li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.pricing {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+i {
+  max-width: 18px;
+}
+
+hr {
+  min-width: 100%;
+  width: 100%;
+}
+
+/*white*/
 .white {
   background-color: var(--white);
 }
@@ -95,11 +124,7 @@ export default {
   color: var(--light-purple);
 }
 
-hr {
-  max-width: var(--width);
-  width: 260px;
-}
-
+/*purple*/
 .purple {
   transform: scale(1.05);
   background-color: var(--purple);
@@ -127,48 +152,18 @@ hr {
   background-color: var(--white);
 }
 
-ul {
-  list-style: none;
-}
-
-li:last-child {
-  margin-bottom: 0 !important;
-}
-
-.pricing {
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-
-i {
-  max-width: 18px;
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
-  .card {
-    max-width: 100%;
+  li {
+    margin-right: 0;
   }
-  hr {
-    max-width: 100%;
+  a {
+    width: 100%;
   }
-  i {
-    margin-bottom: 0;
-  }
-  li > p {
-    margin-bottom: 0;
-  }
-  li:last-child {
-    margin-bottom: 40px !important;
-  }
-  .card {
-    margin-bottom: 40px;
-  }
-  .card:last-child {
-    margin-bottom: 0;
+}
+@media only screen and (max-width: $mobile-only) {
+  .pricing {
+    margin-top: calc(var(--margin) * 2);
+    text-align: left;
   }
 }
 </style>

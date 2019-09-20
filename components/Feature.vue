@@ -1,26 +1,23 @@
 <template>
   <div flex row space-between align-center wrap class="feature">
-    <div half>
+    <div half p1>
       <img v-if="src" :src="src" />
       <slot name="left"></slot>
     </div>
     <div half>
-      <Card p2 column flex space-between>
-        <h3 mb1>{{ title }}</h3>
-        <p v-if="description" v-html="description"></p>
-        <slot name="right"></slot>
-        <Button outline v-if="action" :to="to" :href="href" mt2>{{ action }}</Button>
-      </Card>
+      <h3 mb1>{{ title }}</h3>
+      <p v-if="description" v-html="description"></p>
+      <slot name="right"></slot>
+      <Button secondary v-if="to" :to="to" mt1>{{ action }}</Button>
+      <Button secondary v-if="href" :href="href" target="_blank" mt1>{{ action }}</Button>
     </div>
   </div>
 </template>
 
 <script>
-import Card from "~/components/Card";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 export default {
   components: {
-    Card,
     Button
   },
   props: {
@@ -47,21 +44,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@media only screen and (max-width: $tablet-breakpoint) {
-  .feature {
-    margin-bottom: 80px !important;
-  }
-  .feature:last-child {
-    margin-bottom: 0 !important;
-  }
-}
-@media only screen and (max-width: $mobile-breakpoint) {
-  .feature {
-    margin-bottom: 40px !important;
-  }
-  img {
-    margin-bottom: 20px;
-  }
+<style scoped>
+.feature:last-child {
+  margin-bottom: 0 !important;
 }
 </style>

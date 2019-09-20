@@ -5,9 +5,8 @@
       :title="title"
       :description="description"
     >
-      <div class="btn-center">
-        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :href="externalLinks.marketplace" target="_blank" secondary>The Marketplace</Button>
+      <div>
+        <Button :href="externalLinks.marketplace" target="_blank" primary>MESG Marketplace</Button>
       </div>
     </Header>
 
@@ -24,31 +23,33 @@
       </Container>
     </section>
 
-    <section id="network-of-services" mb3>
-      <Container class="intro">
+    <section id="presentation" mb3>
+      <Container class="intro text-center">
         <h2 mb1>A decentralized network of services</h2>
         <p
           mb2
-          class="text-center description"
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
+        <Button secondary mb2 href="/documents/decentralized-network-of-services.pdf" download icon="fas fa-download">
+          Whitepaper
+        </Button>
       </Container>
-      <div class="inner-background">
+      <div class="outer-background">
         <Container>
           <Feature
             v-for="(feature, i) in marketplace.features.primary"
             :key="i"
             v-bind="feature"
             :reverse="i % 2 === 1"
-            mb3
+            mb2
           />
         </Container>
       </div>
     </section>
 
-    <section id="usecase" mb3>
+    <section id="use-cases" mb3>
       <Container>
-        <h2 mb2>Use Cases</h2>
-        <div flex row wrap>
+        <h2 class="text-center" mb2>Use Cases</h2>
+        <div flex row wrap mb1 class="usecases">
           <TextWithIcon
             half
             v-for="(usecase, i) in marketplace.usecase"
@@ -58,44 +59,40 @@
             :text="usecase.description"
           />
         </div>
-
-        <div class="text-center button">
+        <div class="text-center" mb3>
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
     </section>
 
-    <section id="token">
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
       <Container>
-        <hr class="separator" mb3>
-        <div flex row space-between align-center wrap>
+        <div flex row mobile-column align-center>
           <div half>
-            <img
-              src="~/assets/marketplace/token-marketplace.svg"
-              alt="The MESG Token and Marketplace"
-            >
-          </div>
-          <div half>
-            <h2 class="text-left" mb1>MESG Token + Marketplace</h2>
+            <h3 mb1>Help & Guidance</h3>
             <p
               mb2
-            >The MESG Token can be used to purchase access to services in the Marketplace. Once decentralized, the Token will also be used to secure and power the network.</p>
-            <Button outline :to="links.token">Discover the MESG Token</Button>
+            >Have questions or not sure where to start? Head over to Discord to chat with the team, or browse the forum.</p>
+          </div>
+          <div half>
+            <ListSN :list="['discord', 'forum']" />
           </div>
         </div>
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Integrate complexities with confidence"
-      description="Receive priority technical support from a team of engineers dedicated to your project, day or night."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <CTA
+      title="Marketplace"
+      description="MESG Marketplace beta is out now. Earn tokens when your services are used or save time by purchasing access to services."
+      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplace }]"
+      mb1
     />
-
-    <Discover mb3 left="engine" right="foundation"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
@@ -103,11 +100,10 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import page from "./page";
@@ -117,9 +113,8 @@ export default {
     Header,
     Container,
     Button,
-    CallToAction,
-    Discover,
-    GetStarted,
+    CTA,
+    ListSN,
     TextWithIcon,
     Feature
   },
@@ -145,8 +140,11 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
-  #network-of-services .intro {
+  .intro {
     padding-bottom: 0;
+  }
+  .usecases {
+    margin-bottom: calc(var(--margin) * 2) !important;
   }
 }
 </style>

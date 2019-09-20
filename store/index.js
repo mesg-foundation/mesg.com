@@ -10,9 +10,14 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, or IoT device can be connected to any app or workflow. Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/guide/quick-start-guide.html", action: "Quick start"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
             },
-            { src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself. The tools in the SDK allow for the reuse of app components, whether custom built or shared from the community", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" }
+            {
+              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "MESG Marketplace"
+            },
+            {
+              src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The SDK’s tools are, and will always be, free to use on a centralized computer.</br></br>However, when building decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token"
+            }
           ],
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "An efficient way to manage hard-to-reach technologies like blockchains or IoT devices is to build modular apps simply react to real-world events. Your apps remain lightweight, reactive and easy to maintain." },
@@ -36,8 +41,9 @@ export const getters = {
           "A decentralized marketplace built to save time in development. Reuse intercompatible application components and earn tokens when your work is reused by others.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatability", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://marketplace.mesg.com/", action: "Go to the Marketplace" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.enterprise, action: "Our solutions" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatability", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/guide/marketplace/", action: "Create a service" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "MESG SDK" },
+            { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Marketplace", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
@@ -54,6 +60,20 @@ export const getters = {
         action: "Check out the Marketplace"
       }
     ]
+  },
+
+  home() {
+    return {
+      features: {
+        primary: [
+          {
+            src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy built for each iteration of your product lifecycle."
+          },
+          { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
+          { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
+        ]
+      },
+    }
   },
 
   orchestrator() {
@@ -98,92 +118,33 @@ export const getters = {
       ],
       packages: [
         {
-          title: "PREMIUM",
+          title: "Create your package",
           text: "Custom Pricing",
           items: [
             {
               valid: true, description: "Access to the Marketplace"
             },
             {
-              valid: true, description: "Access to the SDK"
-            },
-            {
-              valid: true, description: "Community support"
-            },
-            {
-              valid: true, description: "Direct support from the MESG team"
-            },
-            {
               valid: true, description: "Advisory services on your architecture"
+            },
+            {
+              valid: true, description: "Access to the SDK"
             },
             {
               valid: true, description: "Priority support from a dedicated team of engineers"
             },
             {
-              valid: true, description: "Creation of services"
-            }
-          ],
-          to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Contact Us"
-        },
-        {
-          title: "BUSINESS",
-          text: "Custom Pricing",
-          featured: true,
-          items: [
-            {
-              valid: true, description: "Access to the Marketplace"
-            },
-            {
-              valid: true, description: "Access to the SDK"
-            },
-            {
               valid: true, description: "Community support"
+            },
+            {
+              valid: true, description: "Creation of services"
             },
             {
               valid: true, description: "Direct support from the MESG team"
-            },
-            {
-              valid: true, description: "Advisory services on your architecture"
-            },
-            {
-              valid: false, description: "Priority support from a dedicated team of engineers"
-            },
-            {
-              valid: false, description: "Creation of services"
             }
           ],
           to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Contact Us"
-        },
-        {
-          title: "ESSENTIAL",
-          text: "Open Source - FREE",
-          items: [
-            {
-              valid: true, description: "Access to the Marketplace"
-            },
-            {
-              valid: true, description: "Access to the SDK"
-            },
-            {
-              valid: true, description: "Community support"
-            },
-            {
-              valid: false, description: "Direct support from the MESG team"
-            },
-            {
-              valid: false, description: "Advisory services on your architecture"
-            },
-            {
-              valid: false, description: "Priority support from a dedicated team of engineers"
-            },
-            {
-              valid: false, description: "Creation of services"
-            }
-          ],
-          to: "https://docs.mesg.com/guide/quick-start-guide.html",
-          action: "Get started"
+          action: "Get in touch"
         }
       ]
     }
@@ -217,27 +178,27 @@ export const getters = {
     return {
       primary: [
         {
-          src: require("~/assets/partners/yellow.png"),
+          src: require("~/assets/partners/yellow.svg"),
           title: "Yellow Capital",
           description: "Yellow is building the future of Blockchain with seed investments, mentorship, advisory (STOs, token economics, legal, banking, marketing, fundraising and listing) and software solutions. Yellow also enriches the Blockchain community through physical hubs, live events, and original news and entertainment.",
-          to: "https://yellow.com/",
+          to: "https://www.yellow.com/",
           action: "yellow.com"
         }
       ],
       secondary: [
         {
-          src: require("~/assets/partners/beachhead.png"),
+          src: require("~/assets/partners/beachhead.svg"),
           title: "BeachHead",
           description: "BeachHead is a decentralized platform based on both Ethereum and Ripple blockchains where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
           to: "https://beachhead.com/",
           action: "beachhead.com"
         },
         {
-          src: require("~/assets/partners/yuser.png"),
-          title: "Yuser",
-          description: "Yuser is a next-gen social networking app that rewards you for your creativity and fame. It empowers you to be who you want to be online. Unlock features and earn tokens by creating engaging content and growing a large following. Create, grow, and thrive all in one place.",
-          to: "https://yuser.co/",
-          action: "yuser.co"
+          src: require("~/assets/partners/omisego.svg"),
+          title: "OmiseGO",
+          description: "OmiseGO enables businesses and individuals to securely offer and access a wide range of financial services, and invest, exchange and spend digital assets anytime, anywhere.",
+          to: "https://omisego.co/",
+          action: "omisego.co"
         }
       ]
     }
@@ -338,12 +299,20 @@ export const getters = {
   },
 
   documents() {
-    return [
-      { title: "Whitepaper", img: require('~/assets/documents/Decentralized-Network-of-Services.jpg'), link: '/documents/decentralized-network-of-services.pdf' },
-      { title: "Technical Implementation", img: require('~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg'), link: '/documents/MESG-application-of-the-decentralized-network-of-services.pdf' },
-      { title: "Two-Pager", img: require('~/assets/documents/MESG-Two-Pager.jpg'), link: '/documents/MESG-2-pager.pdf' },
-      { title: "Business Plan", img: require('~/assets/documents/MESG-Business-Plan-Summary.jpg'), link: '/documents/MESG-business-plan-summary.pdf' }
-    ]
+    return {
+      whitepaper: {
+        title: "Whitepaper", img: require("~/assets/documents/Decentralized-Network-of-Services.jpg"), link: "/documents/decentralized-network-of-services.pdf"
+      },
+      implementation: {
+        title: "Technical Implementation", img: require("~/assets/documents/MESG-Application-of-the-Decentralized-Network-of-Services.jpg"), link: "/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
+      },
+      twopager: {
+        title: "Two-Pager", img: require("~/assets/documents/MESG-Two-Pager.jpg"), link: "/documents/MESG-2-pager.pdf"
+      },
+      business: {
+        title: "Business Plan", img: require("~/assets/documents/MESG-Business-Plan-Summary.jpg"), link: "/documents/MESG-business-plan-summary.pdf"
+      }
+    }
   },
 
   roadmap() {
@@ -642,6 +611,10 @@ export const getters = {
     return [
       {
         id: "plasma-exit-challenge",
+        label: {
+          title: "MESG Partner",
+          type: "partner"
+        },
         to: `${links.showcase}/plasma-exit-challenge`,
         logos: [
           require("~/assets/showcase/omisego.svg"),
@@ -649,9 +622,9 @@ export const getters = {
         ],
         headerimage: require("~/assets/showcase/plasma-guard.svg"),
         title: "Plasma Guard",
-        category: "OmiseGo - Ethereum",
+        category: "OmiseGO - Ethereum",
         description: "Ensure that your funds in the Plasma framework are secure and automatically exit, or challenge any invalid exit or byzantine event.",
-        technology: "OmiseGo - Plasma - Ethereum",
+        technology: "OmiseGO - Plasma - Ethereum",
         paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
         image: require("~/assets/showcase/omisego-ethereum.svg"),
         challenges: "Plasma is a great layer-2 solution for Ethereum with a high level of security for your funds, as long as you monitor the network yourself which can be a challenge.",
@@ -677,10 +650,12 @@ export const getters = {
           { title: "Read the full article", to: "https://medium.com/mesg/plasma-is-not-secure-unless-you-watch-it-196d23130367" },
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
           { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
-        ]
+        ],
+        cta: "https://github.com/mesg-foundation/application-plasma-exit"
       },
       {
         id: "send-messages-from-a-satellite",
+        label: "Community",
         to: `${links.showcase}/send-messages-from-a-satellite`,
         logos: [
           require("~/assets/showcase/opennode.svg"),
@@ -709,10 +684,12 @@ export const getters = {
         resources: [
           { title: "Read the full article", to: "https://medium.com/mesg/use-case-send-messages-from-space-6a02a353df7d" },
           { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
-        ]
+        ],
+        cta: "https://github.com/RyanMilb/spaceforce-mesg-app"
       },
       {
         id: "enhance-zapier-workflows",
+        label: "Community",
         to: `${links.showcase}/enhance-zapier-workflows`,
         logos: [
           require("~/assets/showcase/zapier.svg"),
@@ -741,7 +718,8 @@ export const getters = {
         resources: [
           { title: "Read the full article", to: "https://medium.com/mesg/use-case-connecting-zapier-and-mesg-a9a661526ff0" },
           { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
-        ]
+        ],
+        cta: "https://github.com/JBarna/MESG-Z"
       },
       {
         id: "monitor-erc20-transactions",
@@ -780,7 +758,8 @@ export const getters = {
           { title: "Read the full article", to: "https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c" },
           { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
           { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
-        ]
+        ],
+        cta: "https://github.com/antho1404/application-erc20-analytics"
       },
       {
         id: "replace-subscriptions-with-on-demand-payments",
@@ -821,7 +800,8 @@ export const getters = {
           { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
           { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
           { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
-        ]
+        ],
+        cta: "https://github.com/antho1404/pegasys-hackathon"
       },
       {
         id: "directly-buy-crypto-with-fiat",
@@ -861,7 +841,8 @@ export const getters = {
           { title: "Read the full article", to: "https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7" },
           { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
           { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
-        ]
+        ],
+        cta: "https://github.com/mesg-foundation/application-stripe-to-erc20"
       }
     ]
   },
@@ -882,10 +863,59 @@ export const getters = {
     ]
   },
 
+
+  icons(_, { externalLinks }) {
+    return {
+      twitter: {
+        to: externalLinks.twitter,
+        icon: "fab fa-twitter",
+        color: "twitter",
+        description: "Engage with us"
+      },
+      github: {
+        to: externalLinks.github,
+        icon: "fab fa-github",
+        color: "github",
+        description: "Contribute"
+      },
+      telegram: {
+        to: externalLinks.telegram,
+        icon: "fab fa-telegram-plane",
+        color: "telegram",
+        description: "Community Chat"
+      },
+      forum: {
+        to: externalLinks.forum,
+        icon: "fas fa-comments",
+        color: "forum",
+        description: "Help & Guidance"
+      },
+      discord: {
+        to: externalLinks.discord,
+        icon: "fab fa-discord",
+        color: "discord",
+        description: "Chat with us"
+      },
+      reddit: {
+        to: externalLinks.reddit,
+        icon: "fab fa-reddit-alien",
+        color: "reddit",
+        description: "General news"
+      },
+      blog: {
+        to: externalLinks.blog,
+        icon: "fab fa-medium",
+        color: "blog",
+        description: "Check out the news"
+      }
+    }
+  },
+
   externalLinks() {
     return {
       documentation: "https://docs.mesg.com/",
       marketplace: "https://marketplace.mesg.com/",
+      service: "https://docs.mesg.com/guide/marketplace/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
       blog: "https://medium.com/mesg",
@@ -895,6 +925,7 @@ export const getters = {
       telegram: "https://t.me/mesg_community",
       linkedin: "https://www.linkedin.com/company/mesg",
       facebook: "https://www.facebook.com/mesgfoundation",
+      reddit: "https://www.reddit.com/r/MESG/",
       getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk"

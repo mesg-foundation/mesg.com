@@ -4,6 +4,8 @@
   --light-purple: #{$light-purple};
   --deep-purple: #{$deep-purple};
   --dark-purple: #{$dark-purple};
+  --orange: #{$orange};
+  --light-orange: #{$light-orange};
   --white: #{$white};
   --light-background: #{$light-background};
   --title-color: #{$title-color};
@@ -11,6 +13,25 @@
   --margin: #{$margin};
   --width: #{$width};
   --small-width: #{$small-width};
+}
+
+:root {
+  --primary: #{$purple};
+  --primary-dark: #{$title-color};
+  --primary-light: #{$deep-purple};
+  --primary-very-light: #{$light-purple};
+  --light-grey: #{$light-background};
+  --secondary: #{$purple-shadow};
+  --dark-grey: #{$text-color};
+  --Black: #000000;
+  --White: #{$white};
+  --Error: #f44336;
+  --Success: #4bb543;
+  --Info: #1e88e5;
+  --mobile-only: #{$mobile-only};
+  --mobile-breakpoint: #{$mobile-breakpoint};
+  --tablet-breakpoint: #{$tablet-breakpoint};
+  --huge-breakpoint: #{$huge-breakpoint};
 }
 
 @import "structure";
@@ -63,7 +84,6 @@ h1 {
 h2 {
   font-size: 32px;
   font-weight: bold;
-  text-align: center;
   color: var(--title-color);
 }
 h3 {
@@ -102,6 +122,14 @@ li {
   margin-left:22px;
 }
 
+.infos {
+  font-size: 14px;
+}
+
+i {
+  font-size: 18px;
+}
+
 a {
   font-weight: bold;
   color: var(--purple);
@@ -122,6 +150,40 @@ a {
 .text-left {
   text-align: left;
 }
+.text-right {
+  text-align: right;
+}
+
+/*Social*/
+.twitter {
+  color: #1da1f2;
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.github {
+  color: #24292e;
+  background-color: rgba(36, 41, 46, 0.1);
+}
+.telegram {
+  color: #0088cc;
+  background-color: rgba(0, 136, 204, 0.1);
+}
+.forum {
+  color: #491e8c;
+  background-color: rgba(73, 30, 140, 0.1);
+}
+.discord {
+  color: #7289da;
+  background-color: rgba(114, 137, 218, 0.1);
+}
+.reddit {
+  color: #ff4500;
+  background-color: rgba(255, 69, 0, 0.1);
+}
+.blog {
+  color: #12100E;
+  background-color: rgba(18, 16, 14, 0.1);
+}
+
 
 .infos {
   font-size: 14px;
@@ -146,14 +208,19 @@ img {
   background-color: var(--light-background);
 }
 .outer-background {
-  background: var(--light-background);
+  padding-top: calc(var(--margin) * 4);
+  padding-bottom:calc(var(--margin) * 4);
+  background-image: linear-gradient(
+    to top,
+    var(--light-background),
+    var(--white)
+  );
 }
 
 hr {
-  width: var(--width);
-  max-width: 100%;
+  width: calc(var(--width) / 2);
+  max-width: calc(var(--width) / 2);
   margin: auto;
-  height: 0;
   border:solid 0.5px;
   color: var(--light-purple);
 }
@@ -167,24 +234,30 @@ hr {
   .description {
     margin-bottom: 0 !important;
   }
-  .separator {
-    margin-bottom:40px!important;
+  .outer-background {
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   header .btn--primary {
-    margin-bottom: 20px;
-  }
-  header .btn--secondary {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
   header .btn-center {
     text-align: center;
   }
   #usecase .button {
-    margin-top:20px;
+    margin-top:var(--margin);
   }
   #faq .button {
-    margin-top:20px;
+    margin-top:var(--margin);
+  }
+  .outer-background {
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
+  }
+    hr {
+    width: 100%;
+    min-width: 100%;
   }
 }

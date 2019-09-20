@@ -1,16 +1,24 @@
 <template>
-  <iframe
-    :src="src"
-    width="680"
-    height="380"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
+  <Card>
+    <div class="videoWrapper">
+      <iframe
+        :src="src"
+        width="680"
+        height="382"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </Card>
 </template>
 
 <script>
+import Card from "~/components/Card";
 export default {
+  components: {
+    Card
+  },
   props: {
     src: String
   }
@@ -18,8 +26,17 @@ export default {
 </script>
 
 <style scoped>
-iframe {
-  display: block;
-  max-width: 100%;
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: calc(var(--margin) + 5px);
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

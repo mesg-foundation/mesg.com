@@ -37,14 +37,14 @@
       </Container>
     </section>
 
-    <section id="atd" mb3>
+    <section id="atd">
       <Container>
-        <h2 mb1>Algorithmic Token Distribution</h2>
+        <h2 class="text-center" mb1>Algorithmic Token Distribution</h2>
         <p
           mb2
           class="text-center"
         >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
-        <div flex row space-between wrap>
+        <div flex row space-between wrap class="features">
           <TextWithIcon
             half
             v-for="(feature, i) in token.features.secondary"
@@ -57,22 +57,22 @@
       </Container>
     </section>
 
-    <section id="distribution" class="outer-background" pt3 pb3 mb3>
+    <section id="distribution" class="outer-background" mb3>
       <Container>
         <Feature
           :src="require('~/assets/token/token-distribution.svg')"
           title="Token distribution"
-          action="Go to the ATD dashboard"
+          action="ATD website"
           :href="externalLinks.atd"
         >
           <template v-slot:right>
             <h4 mb2>Total token supply 250MM</h4>
             <ColoredList
               :items="[
-              { color: '#e0d1ff', title: 'Sale Distribution 62.5%'},
-              { color: '#ffd4a3', title: 'Reserve 20%'},
-              { color: '#9777c7', title: 'Team and Founders 12.5%'},
-              { color: '#8ceda1', title: 'Partners & Bounties 5%'}
+              { color: '#2e1359', title: 'Sale Distribution 62.5%'},
+              { color: '#7e44d8', title: 'Partners & Bounties 5%'},
+              { color: '#c2a3ff', title: 'Team and Founders 12.5%'},
+              { color: '#dfcdf7', title: 'Reserve 20%'}
             ]"
             />
           </template>
@@ -82,16 +82,16 @@
 
     <section id="documents" mb3>
       <Container>
-        <h2 mb2>MESG documents</h2>
+        <h2 class="text-center" mb2>MESG documents</h2>
         <div flex row space-between wrap>
-          <Document v-for="(document, i) in documents" :key="i" half :document="document" mb2 />
+          <Document :list="['whitepaper', 'implementation', 'twopager', 'business']" />
         </div>
       </Container>
     </section>
 
     <section id="faq" mb3>
       <Container>
-        <h2 mb2>Frequently Asked Questions</h2>
+        <h2 class="text-center" mb2>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -101,32 +101,58 @@
             :text="faq.description"
           />
         </div>
-        <div class="text-center button">
-          <Button secondary :to="links.faq">Access the FAQ</Button>
+      </Container>
+    </section>
+
+    <section id="partners" mb3>
+      <Partners />
+    </section>
+
+    <News :articles="articles" mb3 />
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half class="community">
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >Join the community of builders and traders in our Telegram group, or head over to Discord to chat with the team.</p>
+            <ListSN :list="['telegram', 'discord']" />
+          </div>
         </div>
       </Container>
     </section>
 
-    <News :articles="articles" />
-
-    <CallToAction mb3 title="Buy and trade MESG Token on">
-      <div flex row wrap mb2 class="exchange">
-        <Button
-          white
-          v-for="exchange in exchanges"
-          :key="exchange.id"
-          :href="exchange.to"
-          target="_blank"
-          third
-        >
-          <img :src="exchange.src" :alt="exchange.id" />
-        </Button>
-      </div>
-    </CallToAction>
-
-    <Discover mb3 left="showcase" right="enterprise" />
-
-    <GetStarted mb3 />
+    <section id="cta" mb1>
+      <Container>
+        <Card purple p2>
+          <h2 class="text-center" mb2>Buy and Trade</h2>
+          <div flex row mobile-column class="exchange">
+            <Button
+              white
+              v-for="exchange in exchanges"
+              :key="exchange.id"
+              :href="exchange.to"
+              target="_blank"
+            >
+              <img :src="exchange.src" :alt="exchange.id" />
+            </Button>
+          </div>
+        </Card>
+      </Container>
+    </section>
   </div>
 </template>
 
@@ -134,14 +160,15 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
+import Partners from "~/components/Partners";
+import CardNewsletter from "~/components/CardNewsletter";
+import ListSN from "~/components/ListSN";
 import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import ColoredList from "~/components/ColoredList";
@@ -156,9 +183,10 @@ export default {
     Card,
     Titletext4,
     News,
+    Partners,
+    CardNewsletter,
+    ListSN,
     CallToAction,
-    Discover,
-    GetStarted,
     TextWithIcon,
     Feature,
     ColoredList,
@@ -168,7 +196,7 @@ export default {
     page({
       title: "MESG Token",
       description:
-        "Buy and sell access to app components in the new economy of app development. The MESG Token is available now."
+        "Buy and sell access to services in the new economy of app development. The MESG Token is available now."
     })
   ],
   computed: {
@@ -176,7 +204,6 @@ export default {
       token: "token",
       links: "links",
       externalLinks: "externalLinks",
-      documents: "documents",
       articles: "articles",
       exchanges: "exchanges"
     })
@@ -185,6 +212,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#cta {
+  position: relative;
+}
+
+#cta::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 100px);
+  background: var(--light-background);
+  transform: translateY(30%) skewY(-8deg);
+  z-index: -1;
+}
+#cta h2 {
+  color: var(--white);
+}
+
 ul {
   list-style: none;
   margin-bottom: 0 !important;
@@ -202,9 +246,18 @@ li img {
   vertical-align: middle;
 }
 
+.features {
+  padding-top: calc(var(--margin) * 2);
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .features {
+    padding-top: 0;
+  }
+}
+
 @media only screen and (max-width: $mobile-breakpoint) {
   .btn--white {
-    margin-bottom: 40px !important;
+    margin-bottom: calc(var(--margin) * 2) !important;
   }
   .btn--white:last-child {
     margin-bottom: 0 !important;
@@ -213,7 +266,13 @@ li img {
     margin-bottom: 0 !important;
   }
   .logo {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
+  }
+  #atd .container {
+    padding-bottom: 0;
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 
