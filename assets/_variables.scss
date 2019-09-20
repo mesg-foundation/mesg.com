@@ -16,6 +16,7 @@ $small-width: 680px;
 $mobile-only: 414px;
 $mobile-breakpoint: 768px;
 $tablet-breakpoint: 1024px;
+$huge-breakpoint: 1700px;
 
 @function pow($base, $exponent) {
   $result: 1;

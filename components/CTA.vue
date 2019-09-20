@@ -76,6 +76,12 @@ p {
   z-index: -1;
 }
 
+@media only screen and (min-width: $huge-breakpoint) {
+  #cta::before {
+    transform: translateY(30%) skewY(-5deg);
+  }
+}
+
 @media only screen and (max-width: $tablet-breakpoint) {
   #cta::before {
     height: calc(100% + 80px);
