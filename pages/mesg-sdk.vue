@@ -34,10 +34,8 @@
           mb2
           href="/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
           download
-        >
-          <i class="fas fa-download"></i>
-          Technical implementation
-        </Button>
+          icon="fas fa-download"
+        >Technical implementation</Button>
       </Container>
       <div class="outer-background">
         <Container>
@@ -130,7 +128,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import CTA from "~/components/CTA";

@@ -55,7 +55,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";

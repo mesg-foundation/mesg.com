@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Newsletter from "~/components/Newsletter";

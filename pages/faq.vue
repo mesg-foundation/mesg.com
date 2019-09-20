@@ -67,7 +67,7 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import SideMenu from "~/components/SideMenu";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";

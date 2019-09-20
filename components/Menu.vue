@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import { mapGetters } from "vuex";
 export default {
   components: {

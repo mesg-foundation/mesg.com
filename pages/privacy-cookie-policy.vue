@@ -30,7 +30,7 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import SideMenu from "~/components/SideMenu";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";

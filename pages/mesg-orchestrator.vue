@@ -42,11 +42,9 @@
     </section>
 
     <section id="config" mb3>
-      <Container class="intro">
+      <Container class="intro text-center">
         <h2 mb1>Feature-based applications</h2>
-        <p
-          class="text-center description"
-        >Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
+        <p>Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
       </Container>
       <div class="outer-background" pt3 pb3>
         <Container>
@@ -57,7 +55,7 @@
             <div half>
               <Titletext3
                 title="Describe your feature"
-                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and turing-complete programming languages."
+                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and Turing-complete programming languages."
               />
             </div>
           </div>
@@ -70,7 +68,7 @@
       title="Launching September 24th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
     >
-      <Button @click="popup = !popup" class="btn-cta" white mr2>Stay Updated</Button>
+      <Button @click="popup = !popup" class="btn-cta" white>Stay Updated</Button>
     </CallToAction>
 
     <Discover mb3 left="engine" right="marketplace" />
@@ -83,7 +81,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import CallToAction from "~/components/CallToAction";
@@ -192,15 +190,6 @@ export default {
   color: var(--purple);
 }
 
-.outer-background {
-  padding-top: 0;
-  background-image: linear-gradient(
-    to top,
-    var(--light-background),
-    var(--white)
-  );
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
   .btn-cta {
     margin-right: 0 !important;
@@ -210,12 +199,6 @@ export default {
   }
   #popup-newsletter > .content {
     width: auto;
-  }
-}
-
-@media only screen and (max-width: $tablet-breakpoint) {
-  .outer-background {
-    margin-bottom: calc(var(--margin) * 2);
   }
 }
 </style>

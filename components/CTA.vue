@@ -27,9 +27,9 @@
 
 <script>
 import { mapGetters } from "vuex";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import Button from "~/components/Button";
 export default {
   components: {
     Container,

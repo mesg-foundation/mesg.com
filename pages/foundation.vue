@@ -130,7 +130,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Document from "~/components/Document";
 import Member from "~/components/Member";
 import Partners from "~/components/Partners";

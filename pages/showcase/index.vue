@@ -99,7 +99,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Card from "~/components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";

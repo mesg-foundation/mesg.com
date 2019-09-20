@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 export default {
   components: {
     Button

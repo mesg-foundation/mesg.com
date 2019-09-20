@@ -34,7 +34,7 @@
 
 <script>
 import Card from "~/components/Card";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 export default {
   components: {
     Card,

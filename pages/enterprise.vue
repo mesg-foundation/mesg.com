@@ -85,10 +85,10 @@
 
 <script>
 import { mapGetters } from "vuex";
+import Button from "@mesg-components/button";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Package from "~/components/Package";
-import Button from "~/components/Button";
 import TextWithIcon from "~/components/TextWithIcon";
 import Partners from "~/components/Partners";
 import Titletext4 from "~/components/Titletext4";
