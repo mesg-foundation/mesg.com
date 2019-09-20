@@ -6,7 +6,7 @@
       :description="description"
     >
       <div>
-        <Button @click="popup = !popup" class="btn-cta" primary mr2>Stay Updated</Button>
+        <Button @click="popup = !popup" class="btn-cta" primary>Stay Updated</Button>
       </div>
     </Header>
 
@@ -63,17 +63,29 @@
       </div>
     </section>
 
-    <CallToAction
-      mb3
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Help & Guidance</h3>
+            <p
+              mb2
+            >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
+          </div>
+          <div half>
+            <ListSN :list="['github', 'forum']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
       title="Launching September 24th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
+      mb1
     >
       <Button @click="popup = !popup" class="btn-cta" white>Stay Updated</Button>
-    </CallToAction>
-
-    <Discover mb3 left="engine" right="marketplace" />
-
-    <GetStarted mb3 />
+    </CTA>
   </div>
 </template>
 
@@ -84,9 +96,8 @@ import Header from "~/components/Header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Titletext3 from "~/components/Titletext3";
 import Code from "~/components/Code";
@@ -99,9 +110,8 @@ export default {
     Container,
     Button,
     Card,
-    CallToAction,
-    Discover,
-    GetStarted,
+    CTA,
+    ListSN,
     TextWithIcon,
     Titletext3,
     Code,
