@@ -44,7 +44,7 @@
             <nuxt-link :to="links.token" class="token">Token</nuxt-link>
           </li>
           <li flex align-center>
-            <Button primary :to="links.enterprise" class="enterprise">Enterprise</Button>
+            <Button primary small :to="links.enterprise" class="enterprise">Enterprise</Button>
           </li>
         </ul>
       </div>
