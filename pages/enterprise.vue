@@ -42,7 +42,7 @@
           mb2
           class="text-center"
         >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich workflows that optimize processes across the board.</p>
-        <div flex row wrap>
+        <div flex row wrap class="features">
           <TextWithIcon
             half
             v-for="(feature, i) in enterprise.features.secondary"
@@ -122,6 +122,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.features {
+  padding-top: calc(var(--margin) * 2);
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .features {
+    padding-top: 0;
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
   #packages .intro {
     padding-bottom: 0;

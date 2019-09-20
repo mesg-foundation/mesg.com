@@ -44,7 +44,7 @@
           mb2
           class="text-center"
         >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
-        <div flex row space-between wrap>
+        <div flex row space-between wrap class="features">
           <TextWithIcon
             half
             v-for="(feature, i) in token.features.secondary"
@@ -70,9 +70,9 @@
             <ColoredList
               :items="[
               { color: '#2e1359', title: 'Sale Distribution 62.5%'},
-              { color: '#7e44d8', title: 'Reserve 20%'},
+              { color: '#7e44d8', title: 'Partners & Bounties 5%'},
               { color: '#c2a3ff', title: 'Team and Founders 12.5%'},
-              { color: '#dfcdf7', title: 'Partners & Bounties 5%'}
+              { color: '#dfcdf7', title: 'Reserve 20%'}
             ]"
             />
           </template>
@@ -244,6 +244,15 @@ a.btn--white img {
 }
 li img {
   vertical-align: middle;
+}
+
+.features {
+  padding-top: calc(var(--margin) * 2);
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .features {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {

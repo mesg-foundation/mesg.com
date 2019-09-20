@@ -199,14 +199,14 @@ export default {
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  .intro {
-    padding-bottom: 0;
-  }
   .token {
     margin-right: var(--margin);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
+  .intro {
+    padding-bottom: 0;
+  }
   #token {
     margin-top: calc(var(--margin) * 2);
   }
