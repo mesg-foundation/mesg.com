@@ -28,6 +28,10 @@
   --Error: #f44336;
   --Success: #4bb543;
   --Info: #1e88e5;
+  --mobile-only: #{$mobile-only};
+  --mobile-breakpoint: #{$mobile-breakpoint};
+  --tablet-breakpoint: #{$tablet-breakpoint};
+  --huge-breakpoint: #{$huge-breakpoint};
 }
 
 @import "structure";
