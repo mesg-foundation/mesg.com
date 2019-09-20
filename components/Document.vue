@@ -8,7 +8,7 @@
       flex
       align-center
       half
-      mb1
+      mb2
     >
       <Card bordered thin>
         <div flex row align-center>

@@ -44,7 +44,7 @@
       </Container>
     </section>
 
-    <section id="documents" mb3>
+    <section id="documents" mb2>
       <Container>
         <div flex row space-between wrap>
           <Document :list="['twopager', 'business']" />
@@ -177,6 +177,14 @@ export default {
   width: 66%;
 }
 
+@media only screen and (max-width: $tablet-breakpoint) {
+  #documents {
+    margin-bottom: 0 !important;
+  }
+  #documents .container {
+    padding-bottom: 0;
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
   .mesg-presentation {
     width: 100%;
@@ -189,6 +197,12 @@ export default {
   }
   .founders {
     margin-bottom: calc(var(--margin) * 2);
+  }
+  #documents {
+    margin-bottom: 0 !important;
+  }
+  #documents .container {
+    padding-bottom: calc(var(--margin) * 2);
   }
 }
 </style>
