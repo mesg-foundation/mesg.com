@@ -29,8 +29,7 @@
         <p
           mb2
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
-        <Button secondary mb2 href="/documents/decentralized-network-of-services.pdf" download>
-          <i class="fas fa-download"></i>
+        <Button secondary mb2 href="/documents/decentralized-network-of-services.pdf" download icon="fas fa-download">
           Whitepaper
         </Button>
       </Container>
