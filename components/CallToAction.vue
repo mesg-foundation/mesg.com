@@ -12,7 +12,7 @@
             :to="link.to"
             :href="link.href"
           >{{ link.title }}</Button>
-          <slot/>
+          <slot />
         </nav>
       </div>
     </Container>
@@ -20,8 +20,8 @@
 </template>
 
 <script>
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
 export default {
   components: {
     Container,
@@ -77,7 +77,7 @@ export default {
   margin-right: auto;
 }
 h3 {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin);
   color: var(--white);
 }
 p {
@@ -85,15 +85,15 @@ p {
 }
 @media only screen and (max-width: $tablet-breakpoint) {
   .primary-call-to-action {
-    padding: 40px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: calc(var(--margin) * 2);
+    padding-top: calc(var(--margin) * 3);
+    padding-bottom: calc(var(--margin) * 3);
   }
 }
 @media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .primary-call-to-action {
-    margin-top: 40px !important;
-    margin-bottom: 40px !important;
+    margin-top: calc(var(--margin) * 2);
+    margin-bottom: calc(var(--margin) * 2);
   }
 }
 </style>

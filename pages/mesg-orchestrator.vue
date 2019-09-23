@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div flex row align-center class="btn-center">
+      <div flex row mobile-column align-center>
         <Button @click="popup = !popup" class="btn-cta" primary mr2>Stay Updated</Button>
         <a
           href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
@@ -53,12 +53,10 @@
       </Container>
     </section>
 
-    <section id="community" mb3>
-      <Container class="intro">
+    <section id="config" mb3>
+      <Container class="intro text-center">
         <h2 mb1>Feature-based applications</h2>
-        <p
-          class="text-center description"
-        >Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
+        <p>Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
       </Container>
       <div class="outer-background" pt3 pb3>
         <Container>
@@ -69,7 +67,7 @@
             <div half>
               <Titletext3
                 title="Describe your feature"
-                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and turing-complete programming languages."
+                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and Turing-complete programming languages."
               />
             </div>
           </div>
@@ -77,10 +75,10 @@
       </div>
     </section>
 
-    <section>
+    <section mb3>
       <Container>
         <div flex column align-center>
-          <h2 mb2>Upvote the Orchestrator on Product Hunt</h2>
+          <h2 mb2 class="text-center">Upvote the Orchestrator on Product Hunt</h2>
           <a
             href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
             target="_blank"
@@ -97,17 +95,35 @@
       </Container>
     </section>
 
-    <CallToAction
-      mb3
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Help & Guidance</h3>
+            <p
+              mb2
+            >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
+          </div>
+          <div half>
+            <ListSN :list="['github', 'forum']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
       title="Launching September 24th"
       description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
+      mb1
     >
-      <Button @click="popup = !popup" class="btn-cta" white mr2>Stay Updated</Button>
-    </CallToAction>
-
-    <Discover mb3 left="engine" right="marketplace" />
-
-    <GetStarted mb3 />
+      <Button @click="popup = !popup" class="btn-cta" white>Stay Updated</Button>
+    </CTA>
   </div>
 </template>
 
@@ -115,12 +131,11 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Titletext3 from "~/components/Titletext3";
 import Code from "~/components/Code";
@@ -133,9 +148,8 @@ export default {
     Container,
     Button,
     Card,
-    CallToAction,
-    Discover,
-    GetStarted,
+    CTA,
+    ListSN,
     TextWithIcon,
     Titletext3,
     Code,
@@ -224,30 +238,15 @@ export default {
   color: var(--purple);
 }
 
-.outer-background {
-  padding-top: 0;
-  background-image: linear-gradient(
-    to top,
-    var(--light-background),
-    var(--white)
-  );
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
   .btn-cta {
     margin-right: 0 !important;
   }
   .code {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
   #popup-newsletter > .content {
     width: auto;
-  }
-}
-
-@media only screen and (max-width: $tablet-breakpoint) {
-  .outer-background {
-    margin-bottom: 40px;
   }
 }
 </style>

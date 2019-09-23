@@ -9,8 +9,8 @@
 
 <script>
 import { mapGetters } from "vuex";
+import Button from "@mesg-components/button";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
 export default {
   components: {
     Header,

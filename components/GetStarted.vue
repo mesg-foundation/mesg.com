@@ -33,7 +33,7 @@
 import { mapGetters } from "vuex";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 export default {
   components: {
     Container,
@@ -98,10 +98,10 @@ i {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .link-secondary {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
   .content {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
   }
 }
 </style>

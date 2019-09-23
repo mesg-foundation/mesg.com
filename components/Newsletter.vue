@@ -1,16 +1,23 @@
 <template>
-  <form data-token="32bdd13cbff3931061eb3eca01321d84" @submit.prevent="submit" flex row wrap>
+  <form
+    data-token="32bdd13cbff3931061eb3eca01321d84"
+    @submit.prevent="submit"
+    flex
+    row
+    tablet-column
+    wrap
+  >
     <div flex column class="email">
       <input type="email" placeholder="Your email address" v-model="email" required />
     </div>
-    <div flex column third>
+    <div flex column third class="btn">
       <Button submit primary>Sign up</Button>
     </div>
   </form>
 </template>
 
 <script>
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 export default {
   components: {
     Button
@@ -70,22 +77,26 @@ input[type="email"]:focus {
 }
 
 .email {
-  margin-right: calc(var(--margin) * 1);
+  margin-right: var(--margin);
 }
 
 button {
+  padding-left: var(--margin);
+  padding-right: var(--margin);
   border: none;
 }
 button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
-  button {
-    margin-top: calc(var(--margin) * 1);
-  }
+@media only screen and (max-width: $tablet-breakpoint) {
   .email {
     margin-right: 0;
+  }
+  .btn {
+    width: 100%;
+    max-width: 100%;
+    margin-top: var(--margin);
   }
 }
 </style>

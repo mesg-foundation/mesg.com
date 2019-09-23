@@ -1,29 +1,49 @@
 <template>
-  <a :href="document.link" :download="document.title" :alt="document.title">
-    <Card bordered thin>
-      <div flex row align-center>
-        <div class="preview" flex align-center justify-center>
-          <img :src="document.img" :alt="document.title">
+  <div flex row wrap>
+    <a
+      v-for="(item, i) in items"
+      :key="i"
+      :href="item.link"
+      :download="item.title"
+      flex
+      align-center
+      half
+      mb2
+    >
+      <Card bordered thin>
+        <div flex row align-center>
+          <div class="preview" flex align-center justify-center>
+            <img :src="item.img" :alt="item.title" />
+          </div>
+          <div class="content" flex align-center>
+            <h4>{{ item.title }}</h4>
+            <i class="fas fa-download icon"></i>
+          </div>
         </div>
-        <div class="content" flex align-center>
-          <h4>{{ document.title }}</h4>
-          <i class="fas fa-download icon"></i>
-        </div>
-      </div>
-    </Card>
-  </a>
+      </Card>
+    </a>
+  </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Card from "~/components/Card";
 export default {
   components: {
     Card
   },
   props: {
-    document: {
-      type: Object,
+    list: {
+      type: Array,
       required: true
+    }
+  },
+  computed: {
+    ...mapGetters({
+      _documents: "documents"
+    }),
+    items() {
+      return this.list.map(x => this._documents[x]);
     }
   }
 };
@@ -44,11 +64,11 @@ img {
 
 .icon {
   text-align: right;
-  margin-right: 20px;
+  margin-right: var(--margin);
 }
 
 .content {
-  padding: 20px;
+  padding: var(--margin);
   padding-left: 0;
   width: 100%;
 }
@@ -61,14 +81,19 @@ img {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  i {
-    display: none;
-  }
   .preview {
     margin-bottom: 0;
   }
   .content {
-    padding-left: 20px;
+    padding-left: var(--margin);
+  }
+  a {
+    margin-bottom: calc(var(--margin) * 2) !important;
+  }
+}
+@media only screen and (max-width: $mobile-only) {
+  i {
+    display: none;
   }
 }
 </style>

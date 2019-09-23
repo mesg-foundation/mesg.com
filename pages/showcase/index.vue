@@ -1,44 +1,96 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description"></Header>
+    <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description">
+      <div>
+        <Button :href="externalLinks.getStarted" target="_blank" primary>Start building</Button>
+      </div>
+    </Header>
 
-    <section id="use cases">
+    <section id="use cases" mb3>
       <Container flex column align-center>
         <h2 mb2>Use Cases</h2>
-        <div flex row wrap>
-          <nuxt-link
-            v-for="usecase in usecases"
-            :key="usecase.id"
-            :to="usecase.to"
-            :id="usecase.id"
-            third
-            fill-height
-            mb2
-          >
-            <Card p1 bordered>
-              <div mb2 flex row space-between class="logos">
-                <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo">
-              </div>
-              <p class="category" mb1>{{ usecase.category}}</p>
-              <h4 mb1>{{ usecase.title }}</h4>
-              <p mb1>{{ usecase.description}}</p>
-              <i class="fa fa-arrow-right"></i>
-            </Card>
-          </nuxt-link>
+        <div flex row wrap mb2 class="usecases">
+          <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
+        </div>
+        <Button primary :href="externalLinks.contact" target="_blank">Submit my project</Button>
+      </Container>
+    </section>
+
+    <section id="separator">
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="marketplace" class="outer-background" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half p1>
+            <img
+              src="~/assets/marketplace/marketplace.svg"
+              alt="MESG Marketplace"
+              class="marketplace"
+            />
+          </div>
+          <div half>
+            <h2 mb1>Get inspired</h2>
+            <p
+              mb2
+            >Find new services to implement in your applications. Any service from the Marketplace featuring any technology or language and can be added to any process or application.</p>
+            <Button secondary :href="externalLinks.marketplace" target="_blank">MESG Marketplace</Button>
+          </div>
         </div>
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Accelerate your business"
-      description="MESG is built for enhanced efficiency and scalability. Add intercompatible app components to boost functionalities or expand to new industries. Then scale limitlessly with a decentralized network."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <section id="blog" mb3>
+      <Container>
+        <div flex row mobile-column-reverse align-center>
+          <div half>
+            <h2 mb1>Blog</h2>
+            <p
+              mb1
+            >Discover even more ways to use MESG on our blog, plus stay up to date about what we are building and why we are building it.</p>
+            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+          </div>
+          <div half p1>
+            <img src="~/assets/blog.svg" alt="Blog" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half class="community">
+            <h3 mb1>Community</h3>
+            <p
+              mb2
+            >MESG is open-source and is community-driven. Join us in building the bridge between legacy and emerging technologies.</p>
+            <ListSN :list="['forum', 'discord']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      :links="[{ title: 'Start building' , href: externalLinks.getStarted }]"
+      mb1
     />
-
-    <Discover mb3 left="engine" right="marketplace"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
@@ -46,22 +98,24 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
+import UseCase from "~/components/UseCase";
+import Button from "@mesg-components/button";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
+import CardNewsletter from "~/components/CardNewsletter";
 import page from "../page";
 
 export default {
   components: {
     Header,
     Container,
+    UseCase,
     Button,
     Card,
-    CallToAction,
-    Discover,
-    GetStarted
+    CTA,
+    ListSN,
+    CardNewsletter
   },
   mixins: [
     page({
@@ -70,60 +124,25 @@ export default {
         "Not sure what to build? Get inspired by examples showing the wide range of possibilities."
     })
   ],
-  props: {
-    src: {
-      type: String
-    }
-  },
   computed: mapGetters({
     links: "links",
+    externalLinks: "externalLinks",
     usecases: "usecases"
   })
 };
 </script>
 
 <style lang="scss" scoped>
-a {
-  position: relative;
-}
-
-img {
-  min-width: 10%;
-  max-width: 100%;
-  min-height: 10%;
-  max-height: 80px;
-}
-.logos::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  height: 80px;
-  width: 0.1em;
-  left: 50%;
-  background-color: var(--light-purple);
-}
-
-.category {
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--purple);
-}
-
-i {
-  position: absolute;
-  bottom: calc(var(--margin) + 6px);
-  right: var(--margin);
-  font-size: 1em;
-  font-weight: bold;
-  text-align: right;
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
-  img {
-    margin-bottom: 0;
+  .usecases {
+    margin-bottom: calc(var(--margin) * 3) !important;
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
+  }
+  #separator .container {
+    padding-bottom: 0;
   }
 }
 </style>
+

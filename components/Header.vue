@@ -72,5 +72,8 @@ img {
   #header::before {
     height: calc(100% + 400px);
   }
+  img {
+    margin-bottom: calc(var(--margin) * 2);
+  }
 }
 </style>

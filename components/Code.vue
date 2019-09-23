@@ -57,7 +57,7 @@ export default {
   max-width: 10px;
   max-height: 10px;
   border-radius: 100%;
-  margin-right: 10px;
+  margin-right: calc(var(--margin) / 2);
 }
 .close {
   background-color: #fc5b57;

@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
 export default {
   props: {
     items: {
@@ -28,8 +27,8 @@ export default {
   top: 40px;
 }
 .sidebar a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -38,7 +37,7 @@ export default {
   letter-spacing: normal;
 }
 i {
-  margin-right: 10px;
+  margin-right: calc(var(--margin) / 2);
   font-size: 12px;
 }
 </style>

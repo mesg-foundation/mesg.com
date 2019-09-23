@@ -5,9 +5,8 @@
       :title="title"
       :description="description"
     >
-      <div class="btn-center">
-        <Button :to="links.enterprise" primary mr2>Enterprise solutions</Button>
-        <Button :href="externalLinks.getStarted" target="_blank" secondary>Get started</Button>
+      <div>
+        <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
       </div>
     </Header>
 
@@ -20,36 +19,41 @@
           :title="feature.title"
           :text="feature.description"
           third
-          class="feature"
         />
       </Container>
     </section>
 
-    <section id="interoperability" mb3>
-      <Container class="intro">
+    <section id="presentation" mb3>
+      <Container class="intro text-center">
         <h2 mb1>Effortless interoperability</h2>
         <p
           mb2
-          class="text-center description"
         >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
+        <Button
+          secondary
+          mb2
+          href="/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
+          download
+          icon="fas fa-download"
+        >Technical implementation</Button>
       </Container>
-      <div class="inner-background">
+      <div class="outer-background">
         <Container>
           <Feature
             v-for="(feature, i) in engine.features.primary"
             :key="i"
             v-bind="feature"
             :reverse="i % 2 === 1"
-            mb3
+            mb2
           />
         </Container>
       </div>
     </section>
 
-    <section id="usecase" mb3>
+    <section id="use-cases" mb3>
       <Container>
-        <h2 mb2>Use Cases</h2>
-        <div flex row wrap>
+        <h2 class="text-center" mb2>Use Cases</h2>
+        <div flex row wrap mb1 class="usecases">
           <TextWithIcon
             half
             v-for="(usecase, i) in engine.usecase"
@@ -60,40 +64,63 @@
           />
         </div>
 
-        <div class="text-center button">
+        <div class="text-center" mb3>
           <Button secondary :to="links.showcase">App Showcase</Button>
         </div>
       </Container>
     </section>
 
-    <section id="token">
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="github" mb3>
       <Container>
-        <hr class="separator" mb3>
-        <div flex row space-between align-center wrap>
+        <div flex row mobile-column-reverse align-center>
           <div half>
-            <img src="~/assets/engine/token-engine.svg" alt="The MESG Token and SDK">
-          </div>
-          <div half>
-            <h2 class="text-left" mb1>MESG Token + SDK</h2>
+            <h2 mb1>Github</h2>
             <p
-              mb2
-            >The tools of the MESG SDK are free to use locally. However, in order to build decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.</p>
-            <Button outline :to="links.token">Discover the MESG Token</Button>
+              mb1
+            >Devs, join in on the fun! Everyone has free and open access to all assets, repos and docs. MESG is open-source and is built by contributors from all over the world.</p>
+            <Button secondary :href="externalLinks.github" target="_blank">Explore our Github</Button>
+          </div>
+          <div half p1>
+            <img src="~/assets/github.svg" alt="github" />
           </div>
         </div>
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Streamline your business"
-      description="Optimize processes and automate workflows between your whole stack of connected systems."
-      :links="[{ title: 'Enterprise solutions' , to: links.enterprise }]"
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Help & Guidance</h3>
+            <p
+              mb2
+            >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
+          </div>
+          <div half>
+            <ListSN :list="['github', 'forum']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
+      title="Get started"
+      description="MESG is free to start and only takes moments to install. Build more with less effort."
+      :links="[{ title: 'Get started' , href: externalLinks.getStarted }]"
+      mb1
     />
-
-    <Discover mb3 left="marketplace" right="foundation"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
@@ -101,12 +128,11 @@
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import page from "./page";
@@ -117,9 +143,8 @@ export default {
     Container,
     Button,
     Card,
-    CallToAction,
-    Discover,
-    GetStarted,
+    CTA,
+    ListSN,
     TextWithIcon,
     Feature
   },
@@ -145,8 +170,11 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
-  #interoperability .intro {
+  .intro {
     padding-bottom: 0;
+  }
+  .usecases {
+    margin-bottom: calc(var(--margin) * 2) !important;
   }
 }
 </style>

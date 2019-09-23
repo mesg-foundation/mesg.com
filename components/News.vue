@@ -14,7 +14,7 @@
           mb2
         >
           <Card p1 bordered>
-            <img mb1 :src="article.img" :alt="article.title">
+            <img mb1 :src="article.img" :alt="article.title" />
             <h4 mb1>{{ article.title }}</h4>
             <i class="far fa-external-link"></i>
           </Card>
@@ -63,11 +63,5 @@ i {
   font-size: 1em;
   font-weight: bold;
   text-align: right;
-}
-
-@media only screen and (max-width: $mobile-breakpoint) {
-  a:last-child {
-    margin-bottom: 40px !important;
-  }
 }
 </style>

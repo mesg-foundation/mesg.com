@@ -17,7 +17,7 @@
                   <p v-html="content.description" mb2></p>
                 </li>
               </ul>
-              <hr mb2 />
+              <hr mb2 class="separator" />
             </li>
             <p class="infos">
               * These FAQs are intended only for informational purposes and shouldn’t be relied upon exclusively or considered as warranties. Please refer to
@@ -32,16 +32,34 @@
       </Container>
     </section>
 
-    <CallToAction
-      mb3
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <div half>
+            <h3 mb1>Connect with us</h3>
+            <p
+              mb2
+            >MESG is built by our global community. Join us on our forum and chats, or connect with us on social media.</p>
+          </div>
+          <div half>
+            <ListSN :list="['forum', 'twitter', 'discord', 'telegram']" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <CTA
       title="Still have questions?"
-      description="If you didn’t find the answer you were looking for above, reach out! The MESG team is here to help and to answer any questions you might have about our development tool and economy."
-      :links="[{ title: 'Contact us' , href: externalLinks.contact }]"
+      description="If you didn’t find the answer you were looking for, reach out to us! The MESG team is here to help."
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
     />
-
-    <Discover mb3 left="token" right="enterprise" />
-
-    <GetStarted mb3 />
   </div>
 </template>
 
@@ -49,11 +67,10 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import SideMenu from "~/components/SideMenu";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
+import ListSN from "~/components/ListSN";
 import page from "./page";
 
 export default {
@@ -62,15 +79,14 @@ export default {
     Container,
     Button,
     SideMenu,
-    CallToAction,
-    Discover,
-    GetStarted
+    CTA,
+    ListSN
   },
   mixins: [
     page({
       title: "Frequently Asked Questions",
       description:
-        "Below are some common questions and answers about MESG and the MESG Network."
+        "Find answers to common questions about MESG’s products and the MESG Foundation."
     })
   ],
   computed: mapGetters({
@@ -85,10 +101,9 @@ export default {
 ul {
   list-style: none;
 }
-h2 {
-  text-align: left;
-}
-.infos {
-  font-size: 14px;
+
+.separator {
+  width: 100%;
+  min-width: 100%;
 }
 </style>

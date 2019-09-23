@@ -15,8 +15,8 @@
 
 <script>
 import { mapGetters } from "vuex";
+import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Button from "~/components/Button";
 export default {
   components: {
     Container,
@@ -61,7 +61,7 @@ export default {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .item {
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--margin) * 2);
   }
   p {
     margin-bottom: 0 !important;

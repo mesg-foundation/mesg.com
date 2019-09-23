@@ -6,8 +6,7 @@
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.contact" primary target="_blank">Request a demo</Button>
-        <span spacer></span>
+        <Button :href="externalLinks.contact" primary target="_blank">Get in touch</Button>
       </div>
     </Header>
 
@@ -24,14 +23,26 @@
       </Container>
     </section>
 
+    <section id="packages" mb3>
+      <Container class="intro text-center">
+        <h2 mb1>Custom solutions</h2>
+        <p>Sit back with confidence and receive expert guidance tailored to your needs from a team of engineers dedicated to your project.</p>
+      </Container>
+      <div class="outer-background">
+        <Container flex mobile-column justify-center>
+          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p" />
+        </Container>
+      </div>
+    </section>
+
     <section id="features-2" mb3>
       <Container>
-        <h2 mb1>MESG Enterprise features</h2>
+        <h2 class="text-center" mb1>MESG Enterprise features</h2>
         <p
           mb2
           class="text-center"
-        >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich workflows that optimize processes across the board.</p>
-        <div flex row wrap>
+        >We know businesses rely on well-functioning systems, which is why our engineers to help you build and design feature-rich solutions to optimize processes across your stack.</p>
+        <div flex row wrap class="features">
           <TextWithIcon
             half
             v-for="(feature, i) in enterprise.features.secondary"
@@ -44,31 +55,13 @@
       </Container>
     </section>
 
-    <section id="packages" mb4>
-      <Container class="intro">
-        <h2 mb1>Our packages</h2>
-        <p
-          mb3
-          class="text-center description"
-        >Use MESG’s powerful functionality locally for free, or sit back and receive expert guidance from a team of engineers dedicated to your project.</p>
-      </Container>
-      <div class="inner-background">
-        <Container flex mobile-column justify-center>
-          <Package v-for="p in enterprise.packages" :key="p.title" v-bind="p"/>
-        </Container>
-      </div>
-    </section>
-
-    <section id="partners" mb3>
-      <Container flex column align-center>
-        <h2 mb2>Already building on MESG</h2>
-        <Partners/>
-      </Container>
+    <section mb3>
+      <Partners />
     </section>
 
     <section id="faq" mb3>
       <Container>
-        <h2 mb2>Frequently Asked Questions</h2>
+        <h2 class="text-center" mb2>Frequently Asked Questions</h2>
         <div flex row space-between wrap>
           <Titletext4
             half
@@ -78,37 +71,28 @@
             :text="faq.description"
           />
         </div>
-        <div class="text-center button">
-          <Button secondary :to="links.faq">Access the FAQ</Button>
-        </div>
       </Container>
     </section>
 
-    <CallToAction
-      mb3
-      title="Have specific needs for your custom solution?"
-      description="Let MESG Enterprise guide you every step of the way to build powerful, streamlined applications using even the hardest-to-manage services."
-      :links="[{ title: 'Request a demo' , href: externalLinks.contact }]"
+    <CTA
+      title="Custom solutions"
+      description="MESG offers high levels of customizability and control. We can create custom solutions for you regardless of what’s in your software stack."
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
     />
-
-    <Discover mb3 left="showcase" right="token"/>
-
-    <GetStarted mb3/>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
+import Button from "@mesg-components/button";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Package from "~/components/Package";
-import Button from "~/components/Button";
 import TextWithIcon from "~/components/TextWithIcon";
 import Partners from "~/components/Partners";
 import Titletext4 from "~/components/Titletext4";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import CTA from "~/components/CTA";
 import page from "./page";
 
 export default {
@@ -120,9 +104,7 @@ export default {
     Button,
     Partners,
     Titletext4,
-    CallToAction,
-    Discover,
-    GetStarted
+    CTA
   },
   mixins: [
     page({
@@ -140,6 +122,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.features {
+  padding-top: calc(var(--margin) * 2);
+}
+@media only screen and (max-width: $tablet-breakpoint) {
+  .features {
+    padding-top: 0;
+  }
+}
 @media only screen and (max-width: $mobile-breakpoint) {
   #packages .intro {
     padding-bottom: 0;

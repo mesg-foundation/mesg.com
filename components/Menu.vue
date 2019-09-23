@@ -36,7 +36,6 @@
             <a href="#" class="title">Foundation</a>
             <div flex column class="sub-menu" p1 mt1>
               <nuxt-link :to="links.foundation" class="btn">Overview</nuxt-link>
-              <nuxt-link :to="links.partners" class="btn">Partners</nuxt-link>
               <nuxt-link :to="links.roadmap" class="btn">Roadmap</nuxt-link>
               <a :href="externalLinks.blog" target="_blank" class="btn">Blog</a>
             </div>
@@ -45,7 +44,7 @@
             <nuxt-link :to="links.token" class="token">Token</nuxt-link>
           </li>
           <li flex align-center>
-            <Button primary :to="links.enterprise" class="enterprise">Enterprise</Button>
+            <Button primary small :to="links.enterprise" class="enterprise">Enterprise</Button>
           </li>
         </ul>
       </div>
@@ -54,7 +53,7 @@
 </template>
 
 <script>
-import Button from "~/components/Button";
+import Button from "@mesg-components/button";
 import { mapGetters } from "vuex";
 export default {
   components: {
@@ -216,7 +215,7 @@ li > a:not(.btn--primary) {
     font-size: 2em;
   }
   .btn {
-    padding: 10px;
+    padding: calc(var(--margin) / 2);
     padding-left: 0;
     padding-right: 0;
   }
@@ -231,7 +230,7 @@ li > a:not(.btn--primary) {
     margin-top: 0 !important;
   }
   ul {
-    padding: 40px;
+    padding: calc(var(--margin) * 2);
     border-top: solid 6px var(--purple);
     list-style: none;
     border-radius: 6px;
@@ -242,7 +241,7 @@ li > a:not(.btn--primary) {
     width: 0;
     height: 0;
     bottom: 100%;
-    right: 20px;
+    right: var(--margin);
     border-bottom: 10px solid var(--purple);
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
@@ -274,7 +273,7 @@ li > a:not(.btn--primary) {
 @media only screen and (max-width: $mobile-breakpoint) {
   ul {
     align-items: left !important;
-    padding-top: 20px;
+    padding-top: var(--margin);
   }
   li {
     margin-right: 0 !important;
@@ -283,11 +282,11 @@ li > a:not(.btn--primary) {
     line-height: 60px;
   }
   .btn {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: calc(var(--margin) - 15px);
+    padding-bottom: calc(var(--margin) - 15px);
   }
   .btn--primary {
-    margin-top: 20px;
+    margin-top: var(--margin);
   }
 }
 </style>

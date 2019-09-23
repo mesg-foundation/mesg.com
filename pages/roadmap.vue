@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/roadmap.svg')" :title="title" :description="description"/>
+    <Header :picture="require('~/assets/roadmap.svg')" :title="title" :description="description" />
 
     <section id="roadmap" mb3>
       <Container>
-        <h2 class="title" mb3>Our next goals</h2>
+        <h2 class="text-center" mb2>Our next goals</h2>
         <ul class="years">
           <li v-for="(year, i) in roadmap" :key="i">
             <h3>{{year.year}}</h3>
@@ -16,7 +16,7 @@
                     <h5>
                       {{ goal.title }}
                       <a v-if="goal.link" :href="goal.link" target="_blank">
-                        <i class="far fa-external-link"/>
+                        <i class="far fa-external-link" />
                       </a>
                     </h5>
                     <ul class="items">
@@ -31,34 +31,62 @@
       </Container>
     </section>
 
-    <hr mb3>
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
 
-    <Discover mb3 left="token" right="enterprise"/>
+    <section id="more-infos" mb3>
+      <Container>
+        <div flex row mobile-column align-center>
+          <CardNewsletter
+            title="Newsletter"
+            description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
+            half
+          />
+          <div half class="community">
+            <h3 mb1>Stay connected</h3>
+            <p
+              mb2
+            >MESG is built for and by the community. Join our chats, learn more on our blog, or help us build on Github.</p>
+            <ListSN :list="['twitter', 'telegram', 'github', 'blog']" />
+          </div>
+        </div>
+      </Container>
+    </section>
 
-    <GetStarted mb3/>
+    <CTA
+      title="Contact us"
+      description="Aligned with our vision and goals? We’d love to connect. Drop us a line and we’ll get back to you."
+      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
+      mb1
+    />
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import ListSN from "~/components/ListSN";
+import CTA from "~/components/CTA";
+import CardNewsletter from "~/components/CardNewsletter";
 import Container from "~/components/Container";
 import page from "./page";
 
 export default {
   components: {
     Header,
-    Discover,
-    GetStarted,
+    ListSN,
+    CTA,
+    CardNewsletter,
     Container
   },
   mixins: [
     page({
       title: "Roadmap",
       description:
-        "Check out our progress on becoming the universally-used platform for connecting traditional technologies to trustless systems."
+        "Follow our progress on building the universal platform for connecting traditional technologies to trustless systems."
     })
   ],
   computed: {
@@ -76,16 +104,16 @@ ul {
   list-style: none;
 }
 
-h3 {
+#roadmap h3 {
   width: 80px;
   height: 42px;
   font-size: 32px;
 }
 
-h4 {
+#roadmap h4 {
   width: 60px;
   height: 60px;
-  padding: 10px;
+  padding: calc(var(--margin) / 2);
   font-size: 26px;
   font-weight: 600;
   color: var(--deep-purple);
@@ -94,10 +122,10 @@ h4 {
   text-align: center;
 }
 
-h5 {
+#roadmap h5 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: calc(var(--margin) - 8px);
 }
 
 .years {
@@ -107,7 +135,7 @@ h5 {
 }
 
 .years > li {
-  margin-bottom: 55px;
+  margin-bottom: calc(var(--margin) + 35px);
 }
 
 .quarters {
@@ -116,7 +144,7 @@ h5 {
 }
 
 .quarters > li {
-  margin-bottom: 45px;
+  margin-bottom: calc(var(--margin) + 25px);
   position: relative;
 }
 
@@ -164,7 +192,7 @@ h5 {
 }
 
 .goals > li {
-  margin-bottom: 32px;
+  margin-bottom: calc(var(--margin) + 12px);
 }
 
 .items li {
@@ -176,17 +204,12 @@ h5 {
   content: "";
   width: 7px;
   height: 7px;
-  margin-right: 15px;
+  margin-right: calc(var(--margin) - 5px);
   background-color: var(--deep-purple);
   border-radius: 100%;
   display: inline-block;
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
-  .title {
-    margin-bottom: 40px !important;
-  }
-}
 @media only screen and (max-width: $mobile-breakpoint) {
   .quarters > li::after,
   .goals::after,
@@ -198,14 +221,17 @@ h5 {
     margin: 0 !important;
     padding: 0 !important;
   }
-  h3 {
+  #roadmap h3 {
     margin-top: calc(2 * var(--margin));
   }
-  h4 {
+  #roadmap h4 {
     margin-top: var(--margin);
   }
-  h5 {
+  #roadmap h5 {
     margin-top: var(--margin);
+  }
+  .community {
+    margin-top: calc(var(--margin) * 3);
   }
 }
 </style>
