@@ -6,7 +6,7 @@
       :description="description"
     >
       <div flex row mobile-column align-center>
-        <Button @click="popup = !popup" class="btn-cta" primary mr2>Stay Updated</Button>
+        <Button :href="externalLinks.process" primary target="_blank" mr2>Start building</Button>
         <a
           href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
           target="_blank"
@@ -21,23 +21,6 @@
         </a>
       </div>
     </Header>
-
-    <transition name="fade">
-      <div id="popup-newsletter" v-if="popup">
-        <div class="background" @click="popup = false" />
-        <div class="content">
-          <NewsletterPopup
-            class="newsletter"
-            title="Keep in touch"
-            description="Stay connected with us and receive a notification on September 24th for the launch of MESG Orchestrator."
-          >
-            <button class="btn-close" @click="popup = false">
-              <i class="fas fa-times"></i>
-            </button>
-          </NewsletterPopup>
-        </div>
-      </div>
-    </transition>
 
     <section id="features" mb3>
       <Container flex row space-between wrap>
@@ -78,7 +61,7 @@
     <section mb3>
       <Container>
         <div flex column align-center>
-          <h2 mb2 class="text-center">Upvote the Orchestrator on Product Hunt</h2>
+          <h2 mb2 class="text-center">Check out Orchestrator on Product Hunt</h2>
           <a
             href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
             target="_blank"
@@ -118,11 +101,11 @@
     </section>
 
     <CTA
-      title="Launching September 24th"
-      description="Orchestrator will launch on ProductHunt soon! Get notified when it’s time to vote."
+      title="Build faster with Orchestrator"
+      description="Start creating feature-rich software today with a simple process file."
       mb1
     >
-      <Button @click="popup = !popup" class="btn-cta" white>Stay Updated</Button>
+      <Button :href="externalLinks.process" target="_blank" white>Start building</Button>
     </CTA>
   </div>
 </template>
@@ -139,7 +122,6 @@ import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
 import Titletext3 from "~/components/Titletext3";
 import Code from "~/components/Code";
-import NewsletterPopup from "~/components/NewsletterPopup";
 import page from "./page";
 
 export default {
@@ -152,8 +134,7 @@ export default {
     ListSN,
     TextWithIcon,
     Titletext3,
-    Code,
-    NewsletterPopup
+    Code
   },
   mixins: [
     page({
@@ -162,11 +143,6 @@ export default {
         "Build feature-based applications through the orchestration of MESG services."
     })
   ],
-  data() {
-    return {
-      popup: false
-    };
-  },
   computed: mapGetters({
     links: "links",
     externalLinks: "externalLinks",
@@ -176,77 +152,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn-cta:hover {
-  cursor: pointer;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-#popup-newsletter {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-}
-#popup-newsletter > .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.32);
-}
-#popup-newsletter > .content {
-  width: 680px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.newsletter {
-  position: relative;
-}
-
-.btn-close {
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  border: none;
-  text-decoration: none;
-  font-size: 18px;
-  position: absolute;
-  color: var(--light-purple);
-  background-color: var(--light-background);
-  border-bottom-left-radius: 6px;
-}
-.btn-close:focus {
-  outline: none;
-}
-.btn-close:hover {
-  cursor: pointer;
-  color: var(--purple);
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
-  .btn-cta {
-    margin-right: 0 !important;
-  }
   .code {
     margin-bottom: calc(var(--margin) * 2);
-  }
-  #popup-newsletter > .content {
-    width: auto;
   }
 }
 </style>
