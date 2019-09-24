@@ -6,7 +6,13 @@
       :description="description"
     >
       <div flex row mobile-column align-center>
-        <Button :href="externalLinks.process" primary target="_blank" mr2>Start building</Button>
+        <Button
+          :href="externalLinks.process"
+          primary
+          target="_blank"
+          mr2
+          class="btn-cta"
+        >Start building</Button>
         <a
           href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
           target="_blank"
@@ -153,6 +159,9 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
+  .btn-cta {
+    margin-right: 0 !important;
+  }
   .code {
     margin-bottom: calc(var(--margin) * 2);
   }
