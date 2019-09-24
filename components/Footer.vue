@@ -18,10 +18,10 @@
           <ul flex row mobile-column class="menu">
             <li flex column quarter>
               <a href="#" class="category" mb1>Products</a>
+              <nuxt-link :to="links.orchestrator" class="link-secondary" mb1>MESG Orchestrator</nuxt-link>
               <nuxt-link :to="links.engine" class="link-secondary" mb1>MESG SDK</nuxt-link>
               <nuxt-link :to="links.marketplace" class="link-secondary" mb1>MESG Marketplace</nuxt-link>
-              <nuxt-link :to="links.showcase" class="link-secondary" mb1>Showcase</nuxt-link>
-              <nuxt-link :to="links.faq" class="link-secondary last">FAQ</nuxt-link>
+              <nuxt-link :to="links.showcase" class="link-secondary last">Showcase</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
@@ -49,6 +49,7 @@
               <a href="#" class="category" mb1>Foundation</a>
               <nuxt-link :to="links.foundation" class="link-secondary" mb1>Overview</nuxt-link>
               <nuxt-link :to="links.roadmap" class="link-secondary" mb1>Roadmap</nuxt-link>
+              <nuxt-link :to="links.faq" class="link-secondary" mb1>FAQ</nuxt-link>
               <a :href="externalLinks.blog" target="_blank" class="link-secondary last">Blog</a>
             </li>
             <li flex column quarter>

@@ -17,10 +17,10 @@
           <li class="drop-down" flex column align-center>
             <a href="#" class="title">Products</a>
             <div flex column class="sub-menu" p1 mt1>
+              <nuxt-link :to="links.orchestrator" class="btn">Orchestrator</nuxt-link>
               <nuxt-link :to="links.engine" class="btn">SDK</nuxt-link>
               <nuxt-link :to="links.marketplace" class="btn">Marketplace</nuxt-link>
               <nuxt-link :to="links.showcase" class="btn">Showcase</nuxt-link>
-              <nuxt-link :to="links.faq" class="btn">FAQ</nuxt-link>
             </div>
           </li>
           <li class="drop-down" flex column align-center>
@@ -37,6 +37,7 @@
             <div flex column class="sub-menu" p1 mt1>
               <nuxt-link :to="links.foundation" class="btn">Overview</nuxt-link>
               <nuxt-link :to="links.roadmap" class="btn">Roadmap</nuxt-link>
+              <nuxt-link :to="links.faq" class="btn">FAQ</nuxt-link>
               <a :href="externalLinks.blog" target="_blank" class="btn">Blog</a>
             </div>
           </li>
@@ -213,6 +214,9 @@ li > a:not(.btn--primary) {
     line-height: 44px;
     height: 44px;
     font-size: 2em;
+  }
+  .burger:hover {
+    cursor: pointer;
   }
   .btn {
     padding: calc(var(--margin) / 2);
