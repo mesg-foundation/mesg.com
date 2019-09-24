@@ -914,6 +914,7 @@ export const getters = {
   externalLinks() {
     return {
       documentation: "https://docs.mesg.com/",
+      process: "https://docs.mesg.com/guide/process/",
       marketplace: "https://marketplace.mesg.com/",
       service: "https://docs.mesg.com/guide/marketplace/",
       atd: "https://atd.mesg.com/",
