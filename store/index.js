@@ -22,7 +22,7 @@ export const getters = {
           secondary: [
             { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "An efficient way to manage hard-to-reach technologies like blockchains or IoT devices is to build modular apps simply react to real-world events. Your apps remain lightweight, reactive and easy to maintain." },
             { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine, a tool in the SDK, manages the interaction between all services and applications." },
-            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services, apps and devices on your behalf, resulting a development and maintenance process that’s far less time consuming." }
+            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services, apps and devices on your behalf, resulting in a development and maintenance process that’s far less time consuming." }
           ]
         },
         usecase: [
