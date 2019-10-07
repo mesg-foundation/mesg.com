@@ -5,27 +5,7 @@
       :title="title"
       :description="description"
     >
-      <div flex row mobile-column align-center>
-        <Button
-          :href="externalLinks.process"
-          primary
-          target="_blank"
-          mr2
-          class="btn-cta"
-        >Start building</Button>
-        <a
-          href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
-          target="_blank"
-        >
-          <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
-            alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
-            style="width: 250px; height: 54px;"
-            width="250px"
-            height="54px"
-          />
-        </a>
-      </div>
+      <Button :href="externalLinks.process" primary target="_blank">Start building</Button>
     </Header>
 
     <section id="features" mb3>
@@ -62,32 +42,6 @@
           </div>
         </Container>
       </div>
-    </section>
-
-    <section mb3>
-      <Container>
-        <div flex column align-center>
-          <h2 mb2 class="text-center">Check out Orchestrator on Product Hunt</h2>
-          <a
-            href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
-            target="_blank"
-          >
-            <img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
-              alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
-              style="width: 250px; height: 54px;"
-              width="250px"
-              height="54px"
-            />
-          </a>
-        </div>
-      </Container>
-    </section>
-
-    <section>
-      <Container flex column align-center>
-        <hr mb3 />
-      </Container>
     </section>
 
     <section id="more-infos" mb3>
@@ -159,9 +113,6 @@ export default {
 
 <style lang="scss" scoped>
 @media only screen and (max-width: $mobile-breakpoint) {
-  .btn-cta {
-    margin-right: 0 !important;
-  }
   .code {
     margin-bottom: calc(var(--margin) * 2);
   }
