@@ -54,7 +54,8 @@
             </li>
             <li flex column quarter>
               <nuxt-link :to="links.token" class="link-secondary last">Token</nuxt-link>
-              <nuxt-link :to="links.enterprise" class="link-secondary">Enterprise</nuxt-link>
+              <nuxt-link :to="links.enterprise" class="link-secondary last">Enterprise</nuxt-link>
+              <a :href="externalLinks.press" target="_blank" class="link-secondary">Press & Media</a>
             </li>
           </ul>
         </nav>
@@ -196,6 +197,9 @@ img:hover {
   }
   .last {
     padding-bottom: calc(var(--margin) * 2);
+  }
+  .copyright {
+    padding-bottom: var(--margin);
   }
   img {
     margin-top: calc(var(--margin) * 2);
