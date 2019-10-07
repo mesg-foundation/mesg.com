@@ -929,7 +929,8 @@ export const getters = {
       reddit: "https://www.reddit.com/r/MESG/",
       getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-      video: "https://www.youtube.com/embed/VjPG51iE_fk"
+      video: "https://www.youtube.com/embed/VjPG51iE_fk",
+      press: "https://handbook.mesg.com/assets/",
     }
   },
 
