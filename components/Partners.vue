@@ -3,13 +3,13 @@
     <h2 class="text-center" mb2>Already building on MESG</h2>
     <ul flex row wrap>
       <li>
-        <a href="https://projecthydro.org/" target="_blank" class="link-secondary">
-          <img mr2 src="~/assets/partners/hydro.svg" alt="Hydro logo" />
+        <a href="https://omisego.co/" target="_blank" class="link-secondary">
+          <img mr2 src="~/assets/partners/omisego.svg" alt="OmiseGO logo" />
         </a>
       </li>
       <li>
-        <a href="https://omisego.co/" target="_blank" class="link-secondary">
-          <img mr2 src="~/assets/partners/omisego.svg" alt="OmiseGO logo" />
+        <a href="https://projecthydro.org/" target="_blank" class="link-secondary">
+          <img mr2 src="~/assets/partners/hydro.svg" alt="Hydro logo" />
         </a>
       </li>
       <li>
