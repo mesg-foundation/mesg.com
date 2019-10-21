@@ -1,3 +1,5 @@
+import { vuexfireMutations } from 'vuexfire'
+
 export const getters = {
   products(_, { links }) {
     return [
@@ -951,4 +953,8 @@ export const getters = {
       policy: "/privacy-cookie-policy"
     }
   }
+}
+
+export const mutations = {
+  ...vuexfireMutations
 }
