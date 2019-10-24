@@ -13,7 +13,8 @@
       <span class="circle" :class="item.color" flex align-center mr1>
         <i class="text-center" :class="item.icon"></i>
       </span>
-      <p>{{ item.description }}</p>
+      <p v-if="displayTitle">{{ item.title }}</p>
+      <p v-else>{{ item.description }}</p>
     </a>
   </nav>
 </template>
@@ -25,6 +26,10 @@ export default {
     list: {
       type: Array,
       required: true
+    },
+    displayTitle: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
