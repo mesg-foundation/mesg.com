@@ -50,7 +50,7 @@
             <p
               mb2
             >MESG is built for and by the community. Join our chats, learn more on our blog, or help us build on Github.</p>
-            <ListSN :list="['twitter', 'telegram', 'github', 'blog']" />
+            <ListSN :list="['twitter', 'telegram', 'github', 'medium']" />
           </div>
         </div>
       </Container>
