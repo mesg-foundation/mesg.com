@@ -20,6 +20,10 @@ export const states = () => ({
 
 export const getters = {
   all: (state) => state.list
+    .map((x) => ({
+      ...x,
+      createdAt: x.createdAt.toDate()
+    }))
 }
 
 export const actions = {
