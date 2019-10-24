@@ -97,7 +97,7 @@
   justify-content: space-around;
 }
 
-[row] > [half]:nth-child(2) {
+[row] > [half]:nth-child(2n) {
   margin-right: 0;
 }
 [half] {
@@ -106,7 +106,7 @@
   max-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
 }
 
-[row] > [third]:nth-child(3) {
+[row] > [third]:nth-child(3n) {
   margin-right: 0;
 }
 [third] {
@@ -115,7 +115,7 @@
   max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
 }
 
-[row] > [quarter]:nth-child(4) {
+[row] > [quarter]:nth-child(4n) {
   margin-right: 0;
 }
 [quarter] {
