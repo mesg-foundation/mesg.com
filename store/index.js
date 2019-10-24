@@ -849,6 +849,91 @@ export const getters = {
     ]
   },
 
+  community() {
+    return [
+      {
+        icon: "fas fa-code",
+        category: "Development",
+        list: [
+          "Improve the Engine (1) & (2)",
+          "Feedback on PRs & forum",
+          "Build apps with MESG",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-layer-plus",
+        category: "Dev UX",
+        list: [
+          "Improve the documentation",
+          "Create tutorials",
+          "Improve the CLI",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-comment-alt-edit",
+        category: "Communication",
+        list: [
+          "Write articles about MESG",
+          "Create informative schemas",
+          "Improve the documentation",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-pencil-ruler",
+        category: "Design",
+        list: [
+          "Create MESG illustrations",
+          "Create GIF",
+          "Create graphic concepts",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-bullhorn",
+        category: "Marketing",
+        list: [
+          "Share on social media",
+          "Create advertisements",
+          "Add us to product sites",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-coins",
+        category: "Token",
+        list: [
+          "Update info on exchanges",
+          "Submit logo on apps",
+          "List $MESG on a DEX",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-handshake-alt",
+        category: "Partnerships",
+        list: [
+          "Introduce projects to MESG",
+          "Test or use partner projects",
+          "Send a collaboration idea",
+          "..."
+        ]
+      },
+      {
+        icon: "fas fa-user-headset",
+        category: "Support",
+        list: [
+          "Answer community questions",
+          "Contribute on the forum",
+          "Suggest best practices",
+          "..."
+        ]
+      }
+    ]
+  },
+
   exchanges() {
     return [
       { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
@@ -872,43 +957,50 @@ export const getters = {
         to: externalLinks.twitter,
         icon: "fab fa-twitter",
         color: "twitter",
-        description: "Engage with us"
+        description: "Engage with us",
+        title: "Twitter"
       },
       github: {
         to: externalLinks.github,
         icon: "fab fa-github",
         color: "github",
-        description: "Contribute"
+        description: "Contribute",
+        title: "Github"
       },
       telegram: {
         to: externalLinks.telegram,
         icon: "fab fa-telegram-plane",
         color: "telegram",
-        description: "Community Chat"
+        description: "Community Chat",
+        title: "Telegram"
       },
       forum: {
         to: externalLinks.forum,
         icon: "fas fa-comments",
         color: "forum",
-        description: "Help & Guidance"
+        description: "Help & Guidance",
+        title: "Forum"
       },
       discord: {
         to: externalLinks.discord,
         icon: "fab fa-discord",
         color: "discord",
-        description: "Chat with us"
+        description: "Chat with us",
+        title: "Discord"
       },
       reddit: {
         to: externalLinks.reddit,
         icon: "fab fa-reddit-alien",
         color: "reddit",
-        description: "General news"
+        description: "General news",
+        title: "Reddit"
       },
-      blog: {
+      medium: {
         to: externalLinks.blog,
         icon: "fab fa-medium",
-        color: "blog",
-        description: "Check out the news"
+        color: "medium",
+        description: "Check out the news",
+        title: "Medium"
       }
     }
   },
