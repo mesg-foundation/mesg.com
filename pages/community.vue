@@ -26,20 +26,21 @@
                   <i class="fas fa-award rewardwhite"></i>
                 </div>
                 <div flex column align-center>
-                  <p mb1>Telegram support</p>
+                  <p mb1>{{ latestReward.description}}</p>
                   <p>
-                    <i class="fas fa-user-circle"></i>Sonny
+                    <i class="fas fa-user-circle"></i>
+                    {{ latestReward.name}}
                   </p>
                 </div>
               </div>
               <div class="preview" p2>
                 <div class="embedCard" flex space-between align-center mb1>
-                  <span class="label">Support</span>
+                  <span class="label">{{ latestReward.category}}</span>
                   <div class="tweet">
                     <a
                       href="https://twitter.com/intent/tweet?button_hashtag=MESGRewards&ref_src=twsrc%5Etfw"
                       class="twitter-hashtag-button"
-                      data-text="Check out the latest rewarded contribution to the @MESGfoundation by [Name]. #MESGRewards"
+                      :data-text="`Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}.`"
                       data-url="https://mesg.com/community"
                       data-related="mesgfoundation"
                       data-show-count="false"
@@ -51,7 +52,7 @@
                   <a
                     class="embedly-card"
                     data-card-controls="0"
-                    href="https://t.me/mesg_community"
+                    :href="latestReward.urlContribution"
                   >Card</a>
                   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
                 </div>
@@ -71,7 +72,8 @@
               :items="contributions"
             >
               <template v-slot:item_reward="{item}">
-                <i class="fas fa-award rewardgold">{{item.reward}}</i>
+                <i class="fas fa-award rewardgold" v-if="item.reward"></i>
+                <span v-else></span>
               </template>
               <template v-slot:item_description="{item}">
                 <nuxt-link to>{{item.description}}</nuxt-link>
@@ -251,7 +253,7 @@ export default {
       community: "community"
     }),
     latestReward() {
-      return this.contributions.filter(x => x.rewarded)[0];
+      return this.contributions.find(x => x.reward);
     }
   },
   methods: {
@@ -327,7 +329,7 @@ export default {
 }
 .preview {
   max-height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: var(--light-background);
 }
 
