@@ -77,6 +77,9 @@ module.exports = {
   ** Plugins
   */
   plugins: [
+    {
+      src: '~/plugins/date.js'
+    },
     { src: '~/plugins/directives/sticky', ssr: false },
     { src: '~/plugins/directives/show-only-children' },
   ],
