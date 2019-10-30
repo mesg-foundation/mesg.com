@@ -26,7 +26,7 @@
                   <i class="fas fa-award rewardwhite"></i>
                 </div>
                 <div flex column align-center>
-                  <p mb1>{{ latestReward.description}}</p>
+                  <p class="text-center" mb1>{{ latestReward.title}}</p>
                   <p>
                     <i class="fas fa-user-circle"></i>
                     {{ latestReward.name}}
@@ -34,8 +34,8 @@
                 </div>
               </div>
               <div class="preview" p2>
-                <div class="embedCard" flex space-between align-center mb1>
-                  <span class="label">{{ latestReward.category}}</span>
+                <div class="embedCard" mb1>
+                  <Tag>{{ latestReward.category}}</Tag>
                   <div class="tweet">
                     <a
                       href="https://twitter.com/intent/tweet?button_hashtag=MESGRewards&ref_src=twsrc%5Etfw"
@@ -64,12 +64,14 @@
             <Table
               :headers="[
               { key: 'reward', text: 'Reward', value: 'reward' },
-              { key: 'description', text: 'Description', value: 'description' },
+              { key: 'title', text: 'Title', value: 'title' },
               { key: 'category', text: 'Category', value: 'category' },
               { key: 'name', text: 'Name', value: 'name' },
               { key: 'createdAt', text: 'createdAt', value: 'createdAt' },
             ]"
               :items="contributions"
+              hideHeader
+              compact
             >
               <template v-slot:item_reward="{item}">
                 <i class="fas fa-award rewardgold" v-if="item.reward"></i>
@@ -79,7 +81,7 @@
                 <nuxt-link to>{{item.description}}</nuxt-link>
               </template>
               <template v-slot:item_category="{item}">
-                <span class="label">{{ item.category }}</span>
+                <Tag>{{ item.category }}</Tag>
               </template>
               <template v-slot:item_name="{item}">
                 <p>
@@ -214,6 +216,7 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import Button from "@mesg-components/button";
+import Tag from "@mesg-components/tag-label";
 import Table from "@mesg-components/table";
 import Titletext4 from "~/components/Titletext4";
 import ListSN from "~/components/ListSN";
@@ -227,6 +230,7 @@ export default {
     Card,
     Button,
     Table,
+    Tag,
     Titletext4,
     ListSN,
     CTA
@@ -323,6 +327,7 @@ export default {
 }
 
 .embedCard {
+  align-items: center;
   border-radius: 6px;
   padding: var(--margin);
   background-color: var(--white);
