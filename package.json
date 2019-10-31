@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@mesg-components/button": "^1.1.2",
+    "@mesg-components/embed-card": "^1.0.0",
+    "@mesg-components/social-network": "^1.0.0",
     "@mesg-components/table": "^1.1.0",
     "@mesg-components/tag-label": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.0.2",
