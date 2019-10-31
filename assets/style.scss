@@ -11,6 +11,10 @@
   --title-color: #{$title-color};
   --text-color: #{$text-color};
   --gold: #{$gold};
+  --error: #{$error};
+  --success: #{$success};
+  --info: #{$info};
+  --warning: #{$warning};
   --margin: #{$margin};
   --width: #{$width};
   --small-width: #{$small-width};
@@ -26,9 +30,10 @@
   --dark-grey: #{$text-color};
   --Black: #000000;
   --White: #{$white};
-  --Error: #f44336;
-  --Success: #4bb543;
-  --Info: #1e88e5;
+  --Error: #911A26;
+  --Success: #20771D;
+  --Info: #1457E8;
+  --Warning: #C1A100;
   --mobile-only: #{$mobile-only};
   --mobile-breakpoint: #{$mobile-breakpoint};
   --tablet-breakpoint: #{$tablet-breakpoint};
@@ -151,6 +156,9 @@ a {
 }
 .gold {
   color: var(--gold)!important;
+}
+.success {
+  color: var(--success)!important;
 }
 
 .text-center {
