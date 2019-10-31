@@ -17,99 +17,83 @@
           class="text-center"
           mb2
         >Here, we feature all contributors to the MESG ecosystem. Rewards are dependent on utility, creativity and impact.</p>
-        <div class="table-contributors" flex column mb3>
-          <div class="inner-background-purple" p2>
-            <h3 class="head-reward" mb2>Latest reward</h3>
-            <Card flex row align-center>
-              <div class="user-rewarded" flex column align-center third p2>
-                <div class="reward" flex align-center mb1>
-                  <i class="fas fa-award rewardwhite"></i>
-                </div>
-                <div flex column align-center>
-                  <p class="text-center" mb1>{{ latestReward.title}}</p>
-                  <p>
-                    <i class="fas fa-user-circle"></i>
-                    {{ latestReward.name}}
-                  </p>
-                </div>
+        <Card class="contributors-table" bordered thin flex column p2 mb3>
+          <h3 class="white" mb2>Latest reward</h3>
+          <Card flex row mobile-column align-center mb2>
+            <div class="user-rewarded" flex column align-center third p2>
+              <div class="reward" flex align-center mb1>
+                <i class="fas fa-award"></i>
               </div>
-              <div class="preview" p2>
-                <div class="embedCard" mb1>
-                  <Tag>{{ latestReward.category}}</Tag>
-                  <div class="tweet">
-                    <a
-                      href="https://twitter.com/intent/tweet?button_hashtag=MESGRewards&ref_src=twsrc%5Etfw"
-                      class="twitter-hashtag-button"
-                      :data-text="`Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}.`"
-                      data-url="https://mesg.com/community"
-                      data-related="mesgfoundation"
-                      data-show-count="false"
-                    >Tweet #MESGRewards</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </div>
-                </div>
-                <div class="embedCard">
+              <div flex column align-center>
+                <p class="text-center" mb1>{{ latestReward.title}}</p>
+                <Tag mb1>{{ latestReward.category}}</Tag>
+                <p>
+                  <i class="fas fa-user-circle"></i>
+                  {{ latestReward.name}}
+                </p>
+              </div>
+            </div>
+            <div class="preview" p2>
+              <Card no-shadow flex row space-between align-center mb1 p1>
+                <p class="infos">Share this contribution</p>
+                <div flex align-center>
                   <a
-                    class="embedly-card"
-                    data-card-controls="0"
-                    :href="latestReward.urlContribution"
-                  >Card</a>
-                  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+                    href="https://twitter.com/intent/tweet?button_hashtag=MESGRewards&ref_src=twsrc%5Etfw"
+                    class="twitter-hashtag-button"
+                    :data-text="`Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}.`"
+                    data-url="https://mesg.com/community"
+                    data-related="mesgfoundation"
+                    data-show-count="false"
+                  >Tweet #MESGRewards</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
-              </div>
-            </Card>
-          </div>
-          <div p2>
-            <h3 mb2>Live feed</h3>
-            <Table
-              :headers="[
-              { key: 'reward', text: 'Reward', value: 'reward' },
+              </Card>
+              <Card no-shadow p1>
+                <a
+                  class="embedly-card"
+                  data-card-controls="0"
+                  :href="latestReward.urlContribution"
+                >Card</a>
+                <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+              </Card>
+            </div>
+          </Card>
+          <h3 mb1>Live feed</h3>
+          <Table
+            :headers="[
+              { key: 'reward', text: 'r', value: 'reward' },
               { key: 'title', text: 'Title', value: 'title' },
               { key: 'category', text: 'Category', value: 'category' },
               { key: 'name', text: 'Name', value: 'name' },
-              { key: 'createdAt', text: 'createdAt', value: 'createdAt' },
+              { key: 'createdAt', text: 'createdAt', value: 'createdAt', align: 'right' },
             ]"
-              :items="contributions"
-              hideHeader
-              compact
-            >
-              <template v-slot:item_reward="{item}">
-                <i class="fas fa-award rewardgold" v-if="item.reward"></i>
-                <span v-else></span>
-              </template>
-              <template v-slot:item_description="{item}">
-                <nuxt-link to>{{item.description}}</nuxt-link>
-              </template>
-              <template v-slot:item_category="{item}">
-                <Tag>{{ item.category }}</Tag>
-              </template>
-              <template v-slot:item_name="{item}">
-                <p>
-                  <i class="fas fa-user-circle"></i>
-                  {{item.name}}
-                </p>
-              </template>
-              <template v-slot:item_description="{item}">
-                <a :href="item.urlContribution" target="_blank">{{item.description}}</a>
-              </template>
-            </Table>
-            <form @submit.prevent="submit">
-              <label>
-                Username
-                <input type="text" v-model="contribution.username" />
-              </label>
-              <label>
-                Link
-                <input type="url" v-model="contribution.url" />
-              </label>
-              <label>
-                Description
-                <input type="description" v-model="contribution.description" />
-              </label>
-              <input type="submit" value="submit" />
-            </form>
-          </div>
-        </div>
+            :items="contributions"
+            hideHeader
+            compact
+          >
+            <template v-slot:item_reward="{item}">
+              <i class="fas fa-award gold" v-if="item.reward"></i>
+              <span v-else></span>
+            </template>
+            <template v-slot:item_title="{item}">
+              <nuxt-link to="https://google.com">
+                <p>{{item.title}}</p>
+              </nuxt-link>
+            </template>
+            <template v-slot:item_category="{item}">
+              <Tag>{{ item.category }}</Tag>
+            </template>
+            <template v-slot:item_name="{item}">
+              <p>
+                <i class="fas fa-user-circle"></i>
+                {{item.name}}
+              </p>
+            </template>
+            <template v-slot:item_createdAt="{item}">
+              <p class="date">{{item.createdAt | relativeDate}}</p>
+            </template>
+          </Table>
+        </Card>
 
         <div flex row space-between wrap mb2>
           <Titletext4
@@ -135,7 +119,7 @@
     </section>
 
     <section id="help">
-      <Container flex column align-center>
+      <Container class="ideas" flex column align-center>
         <h2 mb1>Ways to help</h2>
         <p
           class="text-center"
@@ -173,10 +157,15 @@
             mb2
           >We use Bounties Network and Gitcoin to manage specific payable tasks we need help with. Tasks for developers are found on Gitcoin, while all other tasks are found on Bounties Network.</p>
           <div flex row align-center>
-            <a href="https://www.bounties.network" target="_blank" class="link-secondary" mr2>
+            <a
+              href="https://explorer.bounties.network/profile/0x59d47550bfc7905aa52044610eeda530d780329b/"
+              target="_blank"
+              class="link-secondary"
+              mr2
+            >
               <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
             </a>
-            <a href="https://gitcoin.co" target="_blank" class="link-secondary">
+            <a href="https://gitcoin.co/explorer?org=mesg" target="_blank" class="link-secondary">
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
@@ -272,88 +261,76 @@ export default {
 };
 </script>
 
-<style scoped>
-.table-contributors {
-  border: 1px solid var(--light-purple);
-  border-radius: 6px;
+<style lang="scss" scoped>
+#contributors {
+  .card.bordered.thin {
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 17%;
+      z-index: -1;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: var(--purple);
+    }
+  }
+  .user-rewarded {
+    margin-right: 0;
+  }
+  .reward {
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 3px;
+    background-color: var(--gold);
+    & i {
+      text-align: center;
+      margin-right: 0;
+      font-size: 34px;
+      color: var(--white);
+    }
+  }
+  .preview {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: var(--light-background);
+  }
+  table {
+    .date {
+      font-size: 15px;
+      color: var(--light-purple);
+    }
+    i.gold {
+      margin-right: 0;
+    }
+  }
 }
 
-.inner-background-purple {
-  position: relative;
-}
-.inner-background-purple::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 55%;
-  z-index: -1;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  background-color: var(--purple);
+.card.bordered.thin:hover {
+  border: solid 2px transparent;
+  box-shadow: 0 0 0 1px var(--light-purple) inset;
 }
 
-.head-reward {
-  color: var(--white);
-}
-
-.share {
-  font-size: 15px;
-  color: var(--light-purple);
-}
-
-.tweet {
-  text-align: right;
-}
-
-.user-rewarded {
-  margin-right: 0;
-}
-
-.reward {
-  width: 60px;
-  height: 60px;
-  max-width: 60px;
-  max-height: 60px;
-  border-radius: 6px;
-  background-color: #f2c46d;
-}
-.rewardwhite {
-  text-align: center;
-  margin-right: 0;
-  font-size: 34px;
-  color: var(--white);
-}
-
-.embedCard {
-  align-items: center;
-  border-radius: 6px;
-  padding: var(--margin);
-  background-color: var(--white);
-}
-.preview {
-  max-height: 500px;
-  overflow-y: auto;
-  background-color: var(--light-background);
-}
-
-li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(var(--margin) - 5px);
-  background-color: var(--deep-purple);
-  border-radius: 100%;
-  display: inline-block;
-}
-
-#help hr {
-  width: auto;
-}
-
-.rewardgold {
-  color: #f2c46d;
+#help {
+  hr {
+    width: auto;
+  }
+  & li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    margin-right: calc(var(--margin) - 5px);
+    background-color: var(--deep-purple);
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 i {
@@ -365,5 +342,19 @@ i {
 img {
   height: 40px;
   width: auto;
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  #help .ideas {
+    padding-bottom: 0;
+  }
+  .contributors-table {
+    margin-bottom: calc(var(--margin) * 2) !important;
+  }
+}
+@media only screen and (max-width: $mobile-breakpoint) {
+  #more-infos p {
+    margin-bottom: calc(var(--margin) * 2);
+  }
 }
 </style>
