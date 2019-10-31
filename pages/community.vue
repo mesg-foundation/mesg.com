@@ -34,27 +34,16 @@
               </div>
             </div>
             <div class="preview" p2>
-              <Card no-shadow flex row space-between align-center mb1 p1>
+              <Card no-shadow flex row align-center mb1 p1>
                 <p class="infos">Share this contribution</p>
-                <div flex align-center>
-                  <a
-                    href="https://twitter.com/intent/tweet?button_hashtag=MESGRewards&ref_src=twsrc%5Etfw"
-                    class="twitter-hashtag-button"
-                    :data-text="`Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}.`"
-                    data-url="https://mesg.com/community"
-                    data-related="mesgfoundation"
-                    data-show-count="false"
-                  >Tweet #MESGRewards</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+                <Tweetbtn
+                  :url="latestReward.urlContribution"
+                  :text="`Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`"
+                  class="tweet"
+                />
               </Card>
               <Card no-shadow p1>
-                <a
-                  class="embedly-card"
-                  data-card-controls="0"
-                  :href="latestReward.urlContribution"
-                >Card</a>
-                <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+                <EmbedCard :url="latestReward.urlContribution" />
               </Card>
             </div>
           </Card>
@@ -70,15 +59,14 @@
             :items="contributions"
             hideHeader
             compact
+            class="test"
           >
             <template v-slot:item_reward="{item}">
               <i class="fas fa-award gold" v-if="item.reward"></i>
               <span v-else></span>
             </template>
             <template v-slot:item_title="{item}">
-              <nuxt-link to="https://google.com">
-                <p>{{item.title}}</p>
-              </nuxt-link>
+              <nuxt-link to="https://google.com">{{item.title}}</nuxt-link>
             </template>
             <template v-slot:item_category="{item}">
               <Tag>{{ item.category }}</Tag>
@@ -96,16 +84,20 @@
         </Card>
 
         <div flex row space-between wrap mb2>
-          <Titletext4
-            half
-            title="Quality first"
-            text="The value of contributions is determined first by quality. Contributions focusing on quality over quantity have a much greater chance of being rewarded."
-          />
-          <Titletext4
-            half
-            title="Reward payouts"
-            text="Contributions are reviewed by our team, and if we are impressed by the quality and impact of your work, we’ll contact you to send a reward within a few business days."
-          />
+          <div half>
+            <i class="fas fa-badge-check success" mb1></i>
+            <Titletext4
+              title="Quality first"
+              text="The value of contributions is determined first by quality. Contributions focusing on quality over quantity have a much greater chance of being rewarded."
+            />
+          </div>
+          <div half>
+            <i class="fas fa-award gold" mb1></i>
+            <Titletext4
+              title="Reward payouts"
+              text="Contributions are reviewed by our team, and if we are impressed by the quality and impact of your work, we’ll contact you to send a reward within a few business days."
+            />
+          </div>
         </div>
 
         <Button :href="externalLinks.contact" target="_blank" primary>Add contribution</Button>
@@ -204,6 +196,8 @@ import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
+import EmbedCard from "@mesg-components/embed-card";
+import Tweetbtn from "@mesg-components/social-network";
 import Button from "@mesg-components/button";
 import Tag from "@mesg-components/tag-label";
 import Table from "@mesg-components/table";
@@ -217,6 +211,8 @@ export default {
     Header,
     Container,
     Card,
+    EmbedCard,
+    Tweetbtn,
     Button,
     Table,
     Tag,
@@ -301,6 +297,10 @@ export default {
     overflow-y: auto;
     background-color: var(--light-background);
   }
+  .tweet {
+    text-align: right;
+  }
+
   table {
     .date {
       font-size: 15px;
