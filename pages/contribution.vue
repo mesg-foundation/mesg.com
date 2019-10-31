@@ -1,16 +1,16 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/community/community.svg')"
       :title="title"
       :description="description"
+      :picture="require('~/assets/community/community.svg')"
     >
       <template v-slot:top>
         <div class="reward" flex align-center mb1>
           <i class="fas fa-award"></i>
         </div>
       </template>
-      <div class="details" mb2>
+      <div class="details">
         <Tag mr2>Support</Tag>
         <p>
           <i class="fas fa-user-circle"></i>
@@ -76,6 +76,7 @@
 import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import CTA from "~/components/CTA";
+import EmbedCard from "@mesg-components/embed-card";
 import Titletext4 from "~/components/Titletext4";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
@@ -86,6 +87,7 @@ export default {
   components: {
     Header,
     CTA,
+    EmbedCard,
     Titletext4,
     Container,
     Button,
