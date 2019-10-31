@@ -2,6 +2,7 @@
   <header id="header" pt3 pb3 mb3>
     <Container v-if="picture" flex row mobile-column-reverse align-center space-between wrap>
       <div half>
+        <slot name="top" />
         <h1 mb1 v-html="title"></h1>
         <p mb2 v-html="description"></p>
         <slot v-if="$slots.default" />
@@ -44,28 +45,26 @@ export default {
 <style lang="scss" scoped>
 #header {
   position: relative;
-}
-
-#header::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 200px);
-  background-image: linear-gradient(
-    to top,
-    var(--light-background),
-    var(--white)
-  );
-  transform: translateY(-35%) skewY(-8deg);
-  z-index: -1;
-}
-
-p {
-  font-size: 20px;
-}
-img {
-  height: auto;
-  max-height: calc(var(--width) / 2);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 200px);
+    background-image: linear-gradient(
+      to top,
+      var(--light-background),
+      var(--white)
+    );
+    transform: translateY(-35%) skewY(-8deg);
+    z-index: -1;
+  }
+  p {
+    font-size: 20px;
+  }
+  img {
+    height: auto;
+    max-height: calc(var(--width) / 2);
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
