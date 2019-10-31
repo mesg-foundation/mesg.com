@@ -50,7 +50,6 @@
           <h3 mb1>Live feed</h3>
           <Table
             :headers="[
-              { key: 'reward', text: 'r', value: 'reward' },
               { key: 'title', text: 'Title', value: 'title' },
               { key: 'category', text: 'Category', value: 'category' },
               { key: 'name', text: 'Name', value: 'name' },
@@ -59,13 +58,9 @@
             :items="contributions"
             hideHeader
             compact
-            class="test"
           >
-            <template v-slot:item_reward="{item}">
-              <i class="fas fa-award gold" v-if="item.reward"></i>
-              <span v-else></span>
-            </template>
             <template v-slot:item_title="{item}">
+              <i class="fas fa-award" :class="{gold:item.reward, white:!item.reward}"></i>
               <nuxt-link to="https://google.com">{{item.title}}</nuxt-link>
             </template>
             <template v-slot:item_category="{item}">
@@ -305,9 +300,6 @@ export default {
     .date {
       font-size: 15px;
       color: var(--light-purple);
-    }
-    i.gold {
-      margin-right: 0;
     }
   }
 }
