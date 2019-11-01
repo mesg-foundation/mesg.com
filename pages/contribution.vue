@@ -42,7 +42,7 @@
             />
           </div>
         </div>
-        <Button :href="externalLinks.contact" target="_blank" primary>Add contribution</Button>
+        <ContributionForm />
       </Container>
     </section>
 
@@ -76,6 +76,7 @@
 import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import CTA from "~/components/CTA";
+import ContributionForm from "~/components/ContributionForm";
 import EmbedCard from "@mesg-components/embed-card";
 import Titletext4 from "~/components/Titletext4";
 import Container from "~/components/Container";
@@ -87,6 +88,7 @@ export default {
   components: {
     Header,
     CTA,
+    ContributionForm,
     EmbedCard,
     Titletext4,
     Container,

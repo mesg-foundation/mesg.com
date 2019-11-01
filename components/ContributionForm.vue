@@ -4,7 +4,7 @@
     class="typeform-share button"
     href="https://mesgfoundation.typeform.com/to/bOJ0qz"
     data-mode="popup"
-    data-submit-close-delay="1"
+    data-submit-close-delay="0"
   >Add contribution</Button>
 </template>
 

@@ -6,7 +6,7 @@
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.contact" target="_blank" primary>Add contribution</Button>
+        <ContributionForm />
       </div>
     </Header>
 
