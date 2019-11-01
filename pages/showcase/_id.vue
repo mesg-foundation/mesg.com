@@ -84,11 +84,14 @@
       </Container>
     </section>
 
-    <section id="use-cases" class="usecase" mb3>
+    <section id="showcase" mb3>
       <Container>
-        <h2 class="text-center" mb2>More use cases</h2>
-        <div flex row wrap>
-          <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
+        <div flex column align-center>
+          <h2 class="text-center" mb2>Built with MESG</h2>
+          <div flex row mobile-column mb2>
+            <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
+          </div>
+          <Button secondary :to="links.showcase">See the showcase</Button>
         </div>
       </Container>
     </section>
