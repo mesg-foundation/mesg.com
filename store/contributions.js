@@ -1,45 +1,29 @@
-import { firestoreAction } from 'vuexfire'
-import firebase from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/firestore'
-
-const firebaseConfig = {
-  apiKey: "AIzaSyATgrQbIjFBb17pGNSvPKTrmiimphXItdc",
-  authDomain: "mesg-29419.firebaseapp.com",
-  databaseURL: "https://mesg-29419.firebaseio.com",
-  projectId: "mesg-29419",
-}
-
-const db = firebase
-  .initializeApp(firebaseConfig)
-  .firestore()
-
-export const states = () => ({
-  list: []
+export const state = () => ({
+  contributions: {}
 })
 
 export const getters = {
-  all: (state) => state.list
-    .map((x) => ({
-      ...x,
-      createdAt: x.createdAt.toDate()
-    }))
+  all: (state) => state.contributions
+}
+
+export const mutations = {
+  addContribution: (state, contribution) => {
+    state.contributions = {
+      ...state.contributions,
+      [contribution.id]: {
+        ...contribution,
+        createdAt: new Date(contribution.createdAt)
+      }
+    }
+  }
 }
 
 export const actions = {
-  bind: firestoreAction(({ bindFirestoreRef }) => {
-    return bindFirestoreRef(
-      'list',
-      db.collection('contributions').orderBy('createdAt', 'desc')
-    )
-  }),
-  create: async ({ }, contribution) => {
-    await firebase.auth().signInAnonymously()
-    firebase.auth().onAuthStateChanged(async user => {
-      db.collection('contributions').add({
-        ...contribution,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp()
-      })
-    })
+  // Fetch data based on the contributions spreadsheet with the sheety api (https://sheety.co/)
+  fetchAll: async ({ commit }) => {
+    const resp = await fetch('https://sheetdb.io/api/v1/mtqfsj1rfa5ro')
+    const data = await resp.json()
+    data.forEach((x) => commit('addContribution', x))
+    return data
   }
 }

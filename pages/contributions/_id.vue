@@ -82,7 +82,7 @@ import Titletext4 from "~/components/Titletext4";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
 import Tag from "@mesg-components/tag-label";
-import page from "./page";
+import page from "../page";
 
 export default {
   components: {

@@ -13,23 +13,23 @@
     <section id="contributors" mb3>
       <Container flex column align-center>
         <h2 mb1>Contributors</h2>
-        <p
-          class="text-center"
-          mb2
-        >Here, we feature all contributors to the MESG ecosystem. Rewards are dependent on utility, creativity and impact.</p>
+        <p class="text-center" mb2>
+          Here, we feature all contributors to the MESG ecosystem. Rewards are
+          dependent on utility, creativity and impact.
+        </p>
         <Card class="contributors-table" bordered thin flex column p2 mb3>
           <h3 class="white" mb2>Latest reward</h3>
-          <Card flex row mobile-column align-center mb2>
+          <Card flex row mobile-column align-center mb2 v-if="latestReward">
             <div class="user-rewarded" flex column align-center third p2>
               <div class="reward" flex align-center mb1>
                 <i class="fas fa-award"></i>
               </div>
               <div flex column align-center>
-                <p class="text-center" mb1>{{ latestReward.title}}</p>
-                <Tag mb1>{{ latestReward.category}}</Tag>
+                <p class="text-center" mb1>{{ latestReward.title }}</p>
+                <Tag mb1>{{ latestReward.category }}</Tag>
                 <p>
                   <i class="fas fa-user-circle"></i>
-                  {{ latestReward.name}}
+                  {{ latestReward.name }}
                 </p>
               </div>
             </div>
@@ -37,13 +37,15 @@
               <Card no-shadow flex row align-center mb1 p1>
                 <p class="infos">Share this contribution</p>
                 <Tweetbtn
-                  :url="latestReward.urlContribution"
-                  :text="`Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`"
+                  :url="latestReward.link"
+                  :text="
+                    `Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`
+                  "
                   class="tweet"
                 />
               </Card>
               <Card no-shadow p1>
-                <EmbedCard :url="latestReward.urlContribution" />
+                <EmbedCard :url="latestReward.link" />
               </Card>
             </div>
           </Card>
@@ -53,27 +55,35 @@
               { key: 'title', text: 'Title', value: 'title' },
               { key: 'category', text: 'Category', value: 'category' },
               { key: 'name', text: 'Name', value: 'name' },
-              { key: 'createdAt', text: 'createdAt', value: 'createdAt', align: 'right' },
+              {
+                key: 'createdAt',
+                text: 'createdAt',
+                value: 'createdAt',
+                align: 'right'
+              }
             ]"
             :items="contributions"
             hideHeader
             compact
           >
-            <template v-slot:item_title="{item}">
-              <i class="fas fa-award" :class="{gold:item.reward, white:!item.reward}"></i>
-              <nuxt-link to="https://google.com">{{item.title}}</nuxt-link>
+            <template v-slot:item_title="{ item }">
+              <i
+                class="fas fa-award"
+                :class="{ gold: item.reward, white: !item.reward }"
+              ></i>
+              <nuxt-link to="https://google.com">{{ item.title }}</nuxt-link>
             </template>
-            <template v-slot:item_category="{item}">
+            <template v-slot:item_category="{ item }">
               <Tag>{{ item.category }}</Tag>
             </template>
-            <template v-slot:item_name="{item}">
+            <template v-slot:item_name="{ item }">
               <p>
                 <i class="fas fa-user-circle"></i>
-                {{item.name}}
+                {{ item.name }}
               </p>
             </template>
-            <template v-slot:item_createdAt="{item}">
-              <p class="date">{{item.createdAt | relativeDate}}</p>
+            <template v-slot:item_createdAt="{ item }">
+              <p class="date">{{ item.createdAt | relativeDate }}</p>
             </template>
           </Table>
         </Card>
@@ -107,13 +117,21 @@
     <section id="help">
       <Container class="ideas" flex column align-center>
         <h2 mb1>Ways to help</h2>
-        <p
-          class="text-center"
-          mb2
-        >MESG is open to contributions in nearly any way imaginable. From developing the infrastructure to spreading the word. Below are examples, but feel free to get creative and help however you’d like.</p>
+        <p class="text-center" mb2>
+          MESG is open to contributions in nearly any way imaginable. From
+          developing the infrastructure to spreading the word. Below are
+          examples, but feel free to get creative and help however you’d like.
+        </p>
 
         <div flex row wrap>
-          <div v-for="(community, i) in community" :key="i" class="test" flex column third>
+          <div
+            v-for="(community, i) in community"
+            :key="i"
+            class="test"
+            flex
+            column
+            third
+          >
             <Card bordered thin p1 mb2>
               <div flex row align-center mb1>
                 <h4>
@@ -128,9 +146,7 @@
             </Card>
           </div>
           <Card flex third align-center justify-center bordered thin p1 mb2>
-            <h4 class="text-center">
-              <i class="fas fa-plus"></i>Get creative
-            </h4>
+            <h4 class="text-center"><i class="fas fa-plus"></i>Get creative</h4>
           </Card>
         </div>
       </Container>
@@ -138,10 +154,11 @@
       <div flex column align-center class="outer-background" mb3>
         <Container flex column align-center>
           <h3 mb1>Bonus tasks</h3>
-          <p
-            class="text-center"
-            mb2
-          >We use Bounties Network and Gitcoin to manage specific payable tasks we need help with. Tasks for developers are found on Gitcoin, while all other tasks are found on Bounties Network.</p>
+          <p class="text-center" mb2>
+            We use Bounties Network and Gitcoin to manage specific payable tasks
+            we need help with. Tasks for developers are found on Gitcoin, while
+            all other tasks are found on Bounties Network.
+          </p>
           <div flex row align-center>
             <a
               href="https://explorer.bounties.network/profile/0x59d47550bfc7905aa52044610eeda530d780329b/"
@@ -149,9 +166,16 @@
               class="link-secondary"
               mr2
             >
-              <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
+              <img
+                src="~/assets/community/bounties-network.svg"
+                alt="The Bounties Network logo"
+              />
             </a>
-            <a href="https://gitcoin.co/explorer?org=mesg" target="_blank" class="link-secondary">
+            <a
+              href="https://gitcoin.co/explorer?org=mesg"
+              target="_blank"
+              class="link-secondary"
+            >
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
@@ -164,11 +188,21 @@
         <div flex row mobile-column align-center>
           <div half>
             <h3 mb1>Share the love</h3>
-            <p>If your contributions are sharable on one of our channels, we encourage you to do so!</p>
+            <p>
+              If your contributions are sharable on one of our channels, we
+              encourage you to do so!
+            </p>
           </div>
           <div half>
             <ListSN
-              :list="['twitter', 'github', 'telegram', 'forum', 'discord', 'reddit']"
+              :list="[
+                'twitter',
+                'github',
+                'telegram',
+                'forum',
+                'discord',
+                'reddit'
+              ]"
               display-title
             />
           </div>
@@ -179,7 +213,7 @@
     <CTA
       title="Connect with us"
       description="Want to share your contribution directly, or did your post slip under the radar? Let us know! We’d love to check out your work."
-      :links="[{ title: 'Let us know' , href: externalLinks.contact }]"
+      :links="[{ title: 'Let us know', href: externalLinks.contact }]"
       mb1
     />
   </div>
@@ -199,7 +233,7 @@ import Table from "@mesg-components/table";
 import Titletext4 from "~/components/Titletext4";
 import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
-import page from "./page";
+import page from "../page";
 
 export default {
   components: {
@@ -216,8 +250,7 @@ export default {
     ListSN,
     CTA
   },
-  fetch: ({ store, params }) =>
-    store.dispatch("contributions/bind", params.hash),
+  fetch: ({ store }) => store.dispatch("contributions/fetchAll"),
   data() {
     return {
       contribution: {}
@@ -232,22 +265,18 @@ export default {
   ],
   computed: {
     ...mapGetters({
-      contributions: "contributions/all",
+      _contributions: "contributions/all",
       links: "links",
       externalLinks: "externalLinks",
       community: "community"
     }),
+    contributions() {
+      return Object.keys(this._contributions)
+        .map(x => this._contributions[x])
+        .sort((a, b) => a.submittedAt - b.submittedAt);
+    },
     latestReward() {
-      return this.contributions.find(x => x.reward);
-    }
-  },
-  methods: {
-    ...mapActions({
-      createContribution: "contributions/create"
-    }),
-    async submit() {
-      await this.createContribution(this.contribution);
-      this.contribution = {};
+      return this.contributions.find(x => x.rewarded);
     }
   }
 };
@@ -255,7 +284,9 @@ export default {
 
 <style lang="scss" scoped>
 #contributors {
-  .card.bordered.thin {
+  // .contributors-table {
+  .contributors-table {
+    width: 100%;
     position: relative;
     z-index: 0;
     &::before {
