@@ -11,10 +11,16 @@
         </div>
       </template>
       <div class="details">
-        <Tag mr2>Support</Tag>
+        <Tag mr2>{{ contribution.category }}</Tag>
         <p>
           <i class="fas fa-user-circle"></i>
-          <a href="https://t.me/Bowtiesarecool" target="_blank">Sonny</a>
+          <a
+            v-if="contribution.profile"
+            :href="contribution.profile"
+            target="_blank"
+            >{{ contribution.name }}</a
+          >
+          <a href="#" v-else>{{ contribution.name }}</a>
         </p>
       </div>
     </Header>
@@ -22,10 +28,10 @@
     <section id="contribute" mb3>
       <Container flex column align-center>
         <h2 mb1>Contribute</h2>
-        <p
-          class="text-center"
-          mb3
-        >You too contribute to the MESG project... Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="text-center" mb3>
+          You too contribute to the MESG project... Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
         <div flex row space-between wrap mb3>
           <div half>
             <i class="fas fa-badge-check success" mb1></i>
@@ -55,10 +61,10 @@
     <section id="community" mb3>
       <Container flex column align-center>
         <h3 mb1>MESG community</h3>
-        <p
-          class="text-center"
-          mb2
-        >Want to check the lastest contributions or get some ideas about how to contribute?</p>
+        <p class="text-center" mb2>
+          Want to check the lastest contributions or get some ideas about how to
+          contribute?
+        </p>
         <Button secondary :to="links.showcase">Check out the community</Button>
       </Container>
     </section>
@@ -66,7 +72,7 @@
     <CTA
       title="Add your contribution"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit lorem, eleifend posuere posuere ac, malesuada convallis velit."
-      :links="[{ title: 'Add contribution' , href: externalLinks.contact }]"
+      :links="[{ title: 'Add contribution', href: externalLinks.contact }]"
       mb1
     />
   </div>
@@ -97,17 +103,20 @@ export default {
   },
   mixins: [
     page(x => ({
-      title: "Community support via Telegram",
-      description:
-        "Took an active role in community support for the MESG community on Telegram, by answering questions, handling inquiries and promoting the framework and token."
+      title: x.contribution.title,
+      description: x.contribution.description
     }))
   ],
+  fetch: ({ store }) => store.dispatch("contributions/fetchAll"),
   computed: {
     ...mapGetters({
       contributions: "contributions/all",
       links: "links",
       externalLinks: "externalLinks"
-    })
+    }),
+    contribution() {
+      return this.contributions[this.$route.params.id];
+    }
   }
 };
 </script>

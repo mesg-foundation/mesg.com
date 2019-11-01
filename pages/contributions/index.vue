@@ -71,7 +71,7 @@
                 class="fas fa-award"
                 :class="{ gold: item.reward, white: !item.reward }"
               ></i>
-              <nuxt-link to="https://google.com">{{ item.title }}</nuxt-link>
+              <nuxt-link :to="`/contributions/${item.id}`">{{ item.title }}</nuxt-link>
             </template>
             <template v-slot:item_category="{ item }">
               <Tag>{{ item.category }}</Tag>
@@ -284,7 +284,6 @@ export default {
 
 <style lang="scss" scoped>
 #contributors {
-  // .contributors-table {
   .contributors-table {
     width: 100%;
     position: relative;
