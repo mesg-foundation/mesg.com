@@ -1,6 +1,14 @@
 <template>
   <header id="header" pt3 pb3 mb3>
-    <Container v-if="picture" flex row mobile-column-reverse align-center space-between wrap>
+    <Container
+      v-if="picture || $slots.picture"
+      flex
+      row
+      mobile-column-reverse
+      align-center
+      space-between
+      wrap
+    >
       <div half>
         <slot name="top" />
         <h1 mb1 v-html="title"></h1>
@@ -8,7 +16,9 @@
         <slot v-if="$slots.default" />
       </div>
       <div half>
-        <img :src="picture" :alt="title" />
+        <slot name="picture">
+          <img :src="picture" :alt="title" />
+        </slot>
       </div>
     </Container>
     <Container v-else>

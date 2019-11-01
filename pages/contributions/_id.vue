@@ -1,10 +1,6 @@
 <template>
   <div>
-    <Header
-      :title="title"
-      :description="description"
-      :picture="require('~/assets/community/community.svg')"
-    >
+    <Header :title="title" :description="description">
       <template v-slot:top>
         <div class="reward" flex align-center mb1>
           <i class="fas fa-award"></i>
@@ -23,6 +19,9 @@
           <a href="#" v-else>{{ contribution.name }}</a>
         </p>
       </div>
+      <template v-slot:picture>
+        <EmbedCard :url="contribution.link" />
+      </template>
     </Header>
 
     <section id="contribute" mb3>
