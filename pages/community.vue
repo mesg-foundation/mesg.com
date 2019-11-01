@@ -94,8 +94,7 @@
             />
           </div>
         </div>
-
-        <Button :href="externalLinks.contact" target="_blank" primary>Add contribution</Button>
+        <ContributionForm />
       </Container>
     </section>
 
@@ -192,6 +191,7 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import EmbedCard from "@mesg-components/embed-card";
+import ContributionForm from "~/components/ContributionForm";
 import Tweetbtn from "@mesg-components/social-network";
 import Button from "@mesg-components/button";
 import Tag from "@mesg-components/tag-label";
@@ -206,6 +206,7 @@ export default {
     Header,
     Container,
     Card,
+    ContributionForm,
     EmbedCard,
     Tweetbtn,
     Button,
