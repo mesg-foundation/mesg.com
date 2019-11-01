@@ -25,7 +25,11 @@
                 <i class="fas fa-award"></i>
               </div>
               <div flex column align-center>
-                <p class="text-center" mb1>{{ latestReward.title }}</p>
+                <p class="text-center" mb1>
+                  {{
+                  latestReward.title
+                  }}
+                </p>
                 <Tag mb1>{{ latestReward.category }}</Tag>
                 <p>
                   <i class="fas fa-user-circle"></i>
@@ -34,15 +38,21 @@
               </div>
             </div>
             <div class="preview" p2>
-              <Card no-shadow flex row align-center mb1 p1>
-                <p class="infos">Share this contribution</p>
-                <Tweetbtn
-                  :url="contributionLink(latestReward)"
-                  :text="
+              <Card no-shadow flex row mobile-column align-center mb1 p1>
+                <Button
+                  secondary
+                  :to="`/contributions/${latestReward.id}`"
+                  class="text-center"
+                >More informations</Button>
+                <div class="tweet" flex wrap>
+                  <p class="infos">Share this contribution</p>
+                  <Tweetbtn
+                    :url="contributionLink(latestReward)"
+                    :text="
                     `Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`
                   "
-                  class="tweet"
-                />
+                  />
+                </div>
               </Card>
               <Card no-shadow p1>
                 <EmbedCard :url="latestReward.link" />
@@ -67,13 +77,12 @@
             compact
           >
             <template v-slot:item_title="{ item }">
-              <i
-                class="fas fa-award"
-                :class="{ gold: item.reward, white: !item.reward }"
-              ></i>
-              <nuxt-link :to="`/contributions/${item.id}`">{{
+              <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
+              <nuxt-link :to="`/contributions/${item.id}`">
+                {{
                 item.title
-              }}</nuxt-link>
+                }}
+              </nuxt-link>
             </template>
             <template v-slot:item_category="{ item }">
               <Tag>{{ item.category }}</Tag>
@@ -90,7 +99,7 @@
           </Table>
         </Card>
 
-        <div flex row space-between wrap mb2>
+        <div id="contribute" flex row space-between wrap mb2>
           <div half>
             <i class="fas fa-badge-check success" mb1></i>
             <Titletext4
@@ -126,14 +135,7 @@
         </p>
 
         <div flex row wrap>
-          <div
-            v-for="(community, i) in community"
-            :key="i"
-            class="test"
-            flex
-            column
-            third
-          >
+          <div v-for="(community, i) in community" :key="i" class="test" flex column third>
             <Card bordered thin p1 mb2>
               <div flex row align-center mb1>
                 <h4>
@@ -148,7 +150,9 @@
             </Card>
           </div>
           <Card flex third align-center justify-center bordered thin p1 mb2>
-            <h4 class="text-center"><i class="fas fa-plus"></i>Get creative</h4>
+            <h4 class="text-center">
+              <i class="fas fa-plus"></i>Get creative
+            </h4>
           </Card>
         </div>
       </Container>
@@ -168,16 +172,9 @@
               class="link-secondary"
               mr2
             >
-              <img
-                src="~/assets/community/bounties-network.svg"
-                alt="The Bounties Network logo"
-              />
+              <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
             </a>
-            <a
-              href="https://gitcoin.co/explorer?org=mesg"
-              target="_blank"
-              class="link-secondary"
-            >
+            <a href="https://gitcoin.co/explorer?org=mesg" target="_blank" class="link-secondary">
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
@@ -275,7 +272,8 @@ export default {
     contributions() {
       return Object.keys(this._contributions)
         .map(x => this._contributions[x])
-        .sort((a, b) => a.submittedAt - b.submittedAt);
+        .sort((a, b) => b.createdAt - a.createdAt)
+        .slice(0, 10);
     },
     latestReward() {
       return this.contributions.find(x => x.rewarded);
@@ -303,7 +301,7 @@ export default {
       top: 0;
       left: 0;
       width: 100%;
-      height: 17%;
+      height: 320px;
       z-index: -1;
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -344,6 +342,12 @@ export default {
   }
 }
 
+#contribute {
+  i {
+    font-size: 24px;
+  }
+}
+
 .card.bordered.thin:hover {
   border: solid 2px transparent;
   box-shadow: 0 0 0 1px var(--light-purple) inset;
@@ -366,7 +370,7 @@ export default {
 }
 
 i {
-  margin-right: calc(var(--margin) / 2);
+  margin-right: calc(var(--margin) / 4);
   font-size: 18px;
   color: var(--light-purple);
 }
@@ -387,6 +391,12 @@ img {
 @media only screen and (max-width: $mobile-breakpoint) {
   #more-infos p {
     margin-bottom: calc(var(--margin) * 2);
+  }
+  #contributors .tweet {
+    text-align: center;
+  }
+  .infos {
+    margin-bottom: var(--margin);
   }
 }
 </style>
