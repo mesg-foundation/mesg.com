@@ -37,7 +37,7 @@
               <Card no-shadow flex row align-center mb1 p1>
                 <p class="infos">Share this contribution</p>
                 <Tweetbtn
-                  :url="latestReward.link"
+                  :url="contributionLink(latestReward)"
                   :text="
                     `Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`
                   "
@@ -71,7 +71,9 @@
                 class="fas fa-award"
                 :class="{ gold: item.reward, white: !item.reward }"
               ></i>
-              <nuxt-link :to="`/contributions/${item.id}`">{{ item.title }}</nuxt-link>
+              <nuxt-link :to="`/contributions/${item.id}`">{{
+                item.title
+              }}</nuxt-link>
             </template>
             <template v-slot:item_category="{ item }">
               <Tag>{{ item.category }}</Tag>
@@ -277,6 +279,13 @@ export default {
     },
     latestReward() {
       return this.contributions.find(x => x.rewarded);
+    }
+  },
+  methods: {
+    contributionLink(contribution) {
+      return (
+        (location ? location.origin : "") + `/contributions/${contribution.id}`
+      );
     }
   }
 };
