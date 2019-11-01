@@ -12,7 +12,8 @@ export const mutations = {
       ...state.contributions,
       [contribution.id]: {
         ...contribution,
-        createdAt: new Date(contribution.createdAt)
+        createdAt: new Date(contribution.createdAt),
+        rewarded: contribution.rewarded === 'TRUE'
       }
     }
   }
