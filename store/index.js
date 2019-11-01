@@ -1038,6 +1038,7 @@ export const getters = {
       token: "/token",
       foundation: "/foundation",
       showcase: "/showcase",
+      contributions: "/contributions",
       partners: "/partners",
       faq: "/faq",
       roadmap: "/roadmap",
