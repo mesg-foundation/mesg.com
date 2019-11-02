@@ -14,13 +14,14 @@
             v-if="contribution.profile"
             :href="contribution.profile"
             target="_blank"
-            >{{ contribution.name }}</a
-          >
+          >{{ contribution.name }}</a>
           <a href="#" v-else>{{ contribution.name }}</a>
         </p>
       </div>
       <template v-slot:picture>
-        <EmbedCard :url="contribution.link" />
+        <Card class="preview" p2>
+          <EmbedCard :url="contribution.link" />
+        </Card>
       </template>
     </Header>
 
@@ -64,7 +65,7 @@
           Want to check the lastest contributions or get some ideas about how to
           contribute?
         </p>
-        <Button secondary :to="links.showcase">Check out the community</Button>
+        <Button secondary :to="links.contributions">Check out the community</Button>
       </Container>
     </section>
 
@@ -81,6 +82,7 @@
 import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import CTA from "~/components/CTA";
+import Card from "~/components/Card";
 import ContributionForm from "~/components/ContributionForm";
 import EmbedCard from "@mesg-components/embed-card";
 import Titletext4 from "~/components/Titletext4";
@@ -93,6 +95,7 @@ export default {
   components: {
     Header,
     CTA,
+    Card,
     ContributionForm,
     EmbedCard,
     Titletext4,
@@ -121,8 +124,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.details {
-  display: flex;
+.preview {
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .reward {
@@ -140,11 +144,14 @@ export default {
   }
 }
 
-p {
-  i {
-    margin-right: calc(var(--margin) / 2);
-    font-size: 18px;
-    color: var(--light-purple);
+.details {
+  display: flex;
+  p {
+    i {
+      margin-right: calc(var(--margin) / 4);
+      font-size: 18px;
+      color: var(--light-purple);
+    }
   }
 }
 
