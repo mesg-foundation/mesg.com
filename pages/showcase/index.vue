@@ -8,7 +8,7 @@
 
     <section id="use cases" mb3>
       <Container flex column align-center>
-        <h2 mb2>Use Cases</h2>
+        <h2 mb2>Built with MESG</h2>
         <div flex row wrap mb2 class="usecases">
           <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
