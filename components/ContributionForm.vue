@@ -1,5 +1,14 @@
 <template>
   <Button
+    v-if="btnWhite"
+    white
+    class="typeform-share button"
+    href="https://mesgfoundation.typeform.com/to/bOJ0qz"
+    data-mode="popup"
+    data-submit-close-delay="0"
+  >Add contribution</Button>
+  <Button
+    v-else
     primary
     class="typeform-share button"
     href="https://mesgfoundation.typeform.com/to/bOJ0qz"
@@ -13,6 +22,12 @@ import Button from "@mesg-components/button";
 export default {
   components: {
     Button
+  },
+  props: {
+    btnWhite: {
+      type: Boolean,
+      default: false
+    }
   },
   mounted() {
     (function() {
