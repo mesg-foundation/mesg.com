@@ -17,7 +17,8 @@
           Here, we feature all contributors to the MESG ecosystem. Rewards are
           dependent on utility, creativity and impact.
         </p>
-        <Card class="contributors-table" bordered thin flex column p2 mb3>
+
+        <Card class="contributors-table" bordered thin flex column p2 mb1>
           <h3 class="white" mb2>Latest reward</h3>
           <Card flex row mobile-column align-center mb2 v-if="latestReward">
             <div class="user-rewarded" flex column align-center third p2>
@@ -35,30 +36,32 @@
                   <i class="fas fa-user-circle"></i>
                   {{ latestReward.name }}
                 </p>
-              </div>
-            </div>
-            <div class="preview" p2>
-              <Card no-shadow flex row mobile-column align-center mb1 p1>
                 <Button
                   secondary
                   :to="`/contributions/${latestReward.id}`"
                   class="text-center"
-                >More informations</Button>
-                <div class="tweet" flex wrap>
-                  <p class="infos">Share this contribution</p>
+                  mt2
+                >More infos</Button>
+              </div>
+            </div>
+            <div class="preview" p2>
+              <Card no-shadow p1>
+                <p class="infos text-right">
+                  Share this contribution
                   <Tweetbtn
                     :url="contributionLink(latestReward)"
                     :text="
                     `Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`
                   "
+                    ml1
                   />
-                </div>
-              </Card>
-              <Card no-shadow p1>
+                </p>
+                <hr mt1 mb1 />
                 <EmbedCard :url="latestReward.link" />
               </Card>
             </div>
           </Card>
+
           <h3 mb1>Live feed</h3>
           <Table
             :headers="[
@@ -98,6 +101,10 @@
             </template>
           </Table>
         </Card>
+        <p class="infos edit text-center" mb3>
+          Content not showing up as expected?
+          <a href>Let us know</a>
+        </p>
 
         <div id="contribute" flex row space-between wrap mb2>
           <div half>
@@ -135,7 +142,7 @@
         </p>
 
         <div flex row wrap>
-          <div v-for="(community, i) in community" :key="i" class="test" flex column third>
+          <div v-for="(community, i) in community" :key="i" flex column third>
             <Card bordered thin p1 mb2>
               <div flex row align-center mb1>
                 <h4>
@@ -301,7 +308,7 @@ export default {
       top: 0;
       left: 0;
       width: 100%;
-      height: 320px;
+      height: 340px;
       z-index: -1;
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -329,9 +336,9 @@ export default {
     max-height: 500px;
     overflow-y: auto;
     background-color: var(--light-background);
-  }
-  .tweet {
-    text-align: right;
+    .infos {
+      font-weight: bold;
+    }
   }
 
   table {
@@ -344,7 +351,7 @@ export default {
 
 #contribute {
   i {
-    font-size: 24px;
+    font-size: 34px;
   }
 }
 
@@ -370,7 +377,7 @@ export default {
 }
 
 i {
-  margin-right: calc(var(--margin) / 4);
+  margin-right: calc(var(--margin) / 2);
   font-size: 18px;
   color: var(--light-purple);
 }
@@ -385,6 +392,9 @@ img {
     padding-bottom: 0;
   }
   .contributors-table {
+    margin-bottom: var(--margin) !important;
+  }
+  .edit {
     margin-bottom: calc(var(--margin) * 2) !important;
   }
 }
@@ -392,11 +402,10 @@ img {
   #more-infos p {
     margin-bottom: calc(var(--margin) * 2);
   }
-  #contributors .tweet {
+}
+@media only screen and (max-width: $mobile-only) {
+  .preview p {
     text-align: center;
-  }
-  .infos {
-    margin-bottom: var(--margin);
   }
 }
 </style>

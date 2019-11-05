@@ -1,38 +1,77 @@
 <template>
   <div>
     <Header :title="title" :description="description">
-      <template v-slot:top>
-        <div class="reward" flex align-center mb1>
-          <i class="fas fa-award"></i>
+      <template v-slot:top v-if="contribution.rewarded">
+        <div flex row align-center mb1>
+          <div class="reward" flex align-center>
+            <i class="fas fa-award"></i>
+          </div>
+          <p class="reward-label gold">Rewarded</p>
         </div>
       </template>
       <div class="details">
         <Tag mr2>{{ contribution.category }}</Tag>
-        <p>
+        <p v-if="contribution.profile">
           <i class="fas fa-user-circle"></i>
-          <a
-            v-if="contribution.profile"
-            :href="contribution.profile"
-            target="_blank"
-          >{{ contribution.name }}</a>
-          <a href="#" v-else>{{ contribution.name }}</a>
+          <a :href="contribution.profile" target="_blank">{{ contribution.name }}</a>
+        </p>
+        <p v-else>
+          <i class="fas fa-user-circle"></i>
+          {{ contribution.name }}
         </p>
       </div>
       <template v-slot:picture>
-        <Card class="preview" p2>
+        <Card class="preview" p2 mb1>
+          <p class="infos text-right">
+            Share this contribution
+            <Tweetbtn
+              class="tweet-btn"
+              v-if="contribution.rewarded"
+              :url="contributionLink(contribution)"
+              :text="
+                    `Check out the rewarded contribution to the @MESGfoundation by ${contribution.name}. #MESGRewards`
+                  "
+              ml1
+            />
+            <Tweetbtn
+              v-else
+              :url="contributionLink(contribution)"
+              :text="
+                    `Check out the contribution to the @MESGfoundation by ${contribution.name}. #MESGContributions`
+                  "
+              ml1
+            />
+          </p>
+          <hr mt1 mb1 />
           <EmbedCard :url="contribution.link" />
         </Card>
+        <p class="infos text-center edit">
+          Content not showing up as expected?
+          <a href>Let us know</a>
+        </p>
       </template>
     </Header>
 
-    <section id="contribute" mb3>
+    <section id="contribute" pt2 mb3>
       <Container flex column align-center>
-        <h2 mb1>Contribute</h2>
-        <p class="text-center" mb3>
-          You too contribute to the MESG project... Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-        <div flex row space-between wrap mb3>
+        <h2 mb1>MESG contributions</h2>
+        <p
+          class="text-center"
+          mb2
+        >See the latest contributions to the MESG community in the live feed, or get inspired by our list of ways to contribute.</p>
+        <Button secondary :to="links.contributions">Check out the contributions</Button>
+      </Container>
+    </section>
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
+      </Container>
+    </section>
+
+    <section id="rules" mb3>
+      <Container>
+        <div flex row space-between wrap>
           <div half>
             <i class="fas fa-badge-check success" mb1></i>
             <Titletext4
@@ -48,33 +87,16 @@
             />
           </div>
         </div>
-        <ContributionForm />
-      </Container>
-    </section>
-
-    <section>
-      <Container flex column align-center>
-        <hr mb3 />
-      </Container>
-    </section>
-
-    <section id="community" mb3>
-      <Container flex column align-center>
-        <h3 mb1>MESG community</h3>
-        <p class="text-center" mb2>
-          Want to check the lastest contributions or get some ideas about how to
-          contribute?
-        </p>
-        <Button secondary :to="links.contributions">Check out the community</Button>
       </Container>
     </section>
 
     <CTA
-      title="Add your contribution"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit lorem, eleifend posuere posuere ac, malesuada convallis velit."
-      :links="[{ title: 'Add contribution', href: externalLinks.contact }]"
+      title="Add a contribution"
+      description="Have a quality contribution? Awesome! Send it our way, and you could be eligible for a reward. MESG thrives on community support and collaborations."
       mb1
-    />
+    >
+      <ContributionForm btnWhite />
+    </CTA>
   </div>
 </template>
 
@@ -83,6 +105,7 @@ import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import CTA from "~/components/CTA";
 import Card from "~/components/Card";
+import Tweetbtn from "@mesg-components/social-network";
 import ContributionForm from "~/components/ContributionForm";
 import EmbedCard from "@mesg-components/embed-card";
 import Titletext4 from "~/components/Titletext4";
@@ -96,6 +119,7 @@ export default {
     Header,
     CTA,
     Card,
+    Tweetbtn,
     ContributionForm,
     EmbedCard,
     Titletext4,
@@ -119,14 +143,27 @@ export default {
     contribution() {
       return this.contributions[this.$route.params.id];
     }
+  },
+  methods: {
+    contributionLink(contribution) {
+      return (
+        (location ? location.origin : "") + `/contributions/${contribution.id}`
+      );
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 .preview {
-  max-height: 500px;
+  max-height: 540px;
   overflow-y: auto;
+  hr {
+    width: auto;
+  }
+  .infos {
+    font-weight: bold;
+  }
 }
 
 .reward {
@@ -136,6 +173,7 @@ export default {
   max-height: 60px;
   border-radius: 3px;
   background-color: var(--gold);
+  margin-right: var(--margin);
   & i {
     text-align: center;
     margin-right: 0;
@@ -143,21 +181,39 @@ export default {
     color: var(--white);
   }
 }
+.reward-label {
+  font-size: 20px;
+  font-weight: 600;
+}
 
 .details {
   display: flex;
   p {
     i {
-      margin-right: calc(var(--margin) / 4);
+      margin-right: calc(var(--margin) / 2);
       font-size: 18px;
       color: var(--light-purple);
     }
   }
 }
 
-#contribute {
+#rules {
   i {
-    font-size: 24px;
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .edit {
+    margin-bottom: calc(var(--margin) * 2);
+  }
+  h2 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: $mobile-only) {
+  .preview p {
+    text-align: center;
   }
 }
 </style>
