@@ -1003,6 +1003,13 @@ export const getters = {
     }
   },
 
+  forms() {
+    return {
+      addContribution: "bOJ0qz",
+      editContribution: "AFQb2X",
+    }
+  },
+
   externalLinks() {
     return {
       documentation: "https://docs.mesg.com/",
