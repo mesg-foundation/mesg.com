@@ -271,7 +271,7 @@ export default {
   },
   mixins: [
     page({
-      title: "Built by the community",
+      title: "Contributions Hub",
       description:
         "MESG thrives on community support and collaborations. There are countless ways to contribute, even for non-developers."
     })
