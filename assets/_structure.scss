@@ -70,6 +70,12 @@
     display: none!important;
   }
 }
+@media only screen and (max-width: $mobile-only) {
+[mobile-only-column] {
+    flex-direction: column
+  }
+}
+
 
 // Tablet and up
 @media only screen and (min-width: $mobile-breakpoint + 1) {
