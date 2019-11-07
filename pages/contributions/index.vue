@@ -6,7 +6,9 @@
       :description="description"
     >
       <div>
-        <ContributionForm />
+        <TypeFormPopup :id="forms.addContribution" class="form">
+          <Button primary>Add a contribution</Button>
+        </TypeFormPopup>
       </div>
     </Header>
 
@@ -46,16 +48,17 @@
             </div>
             <div class="preview" p2>
               <Card no-shadow p1>
-                <p class="infos text-right">
-                  Share this contribution
+                <div flex mobile-only-column align-center wrap>
+                  <p class="infos text-right">Share this contribution</p>
                   <Tweetbtn
+                    class="tweet-btn"
                     :url="contributionLink(latestReward)"
                     :text="
                     `Check out the latest rewarded contribution to the @MESGfoundation by ${latestReward.name}. #MESGRewards`
                   "
                     ml1
                   />
-                </p>
+                </div>
                 <hr mt1 mb1 />
                 <EmbedCard :url="latestReward.link" />
               </Card>
@@ -103,7 +106,9 @@
         </Card>
         <p class="infos edit text-center" mb3>
           Content not showing up as expected?
-          <a href>Let us know</a>
+          <TypeFormPopup :id="forms.editContribution" class="form link">
+            <a>Let us know</a>
+          </TypeFormPopup>
         </p>
 
         <div id="contribute" flex row space-between wrap mb2>
@@ -122,7 +127,9 @@
             />
           </div>
         </div>
-        <ContributionForm />
+        <TypeFormPopup :id="forms.addContribution" class="form popup">
+          <Button primary>Add a contribution</Button>
+        </TypeFormPopup>
       </Container>
     </section>
 
@@ -231,8 +238,8 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Card from "~/components/Card";
 import EmbedCard from "@mesg-components/embed-card";
-import ContributionForm from "~/components/ContributionForm";
 import Tweetbtn from "@mesg-components/social-network";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 import Tag from "@mesg-components/tag-label";
 import Table from "@mesg-components/table";
@@ -246,9 +253,9 @@ export default {
     Header,
     Container,
     Card,
-    ContributionForm,
     EmbedCard,
     Tweetbtn,
+    TypeFormPopup,
     Button,
     Table,
     Tag,
@@ -274,7 +281,8 @@ export default {
       _contributions: "contributions/all",
       links: "links",
       externalLinks: "externalLinks",
-      community: "community"
+      community: "community",
+      forms: "forms"
     }),
     contributions() {
       return Object.keys(this._contributions)
@@ -302,7 +310,7 @@ export default {
     width: 100%;
     position: relative;
     z-index: 0;
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       top: 0;
@@ -325,7 +333,7 @@ export default {
     max-height: 60px;
     border-radius: 3px;
     background-color: var(--gold);
-    & i {
+    i {
       text-align: center;
       margin-right: 0;
       font-size: 34px;
@@ -340,7 +348,11 @@ export default {
       font-weight: bold;
     }
   }
-
+  .tweet-btn {
+    text-align: right;
+    max-width: fit-content;
+    height: 20px;
+  }
   table {
     .date {
       font-size: 15px;
@@ -364,7 +376,7 @@ export default {
   hr {
     width: auto;
   }
-  & li::before {
+  li:before {
     content: "";
     width: 7px;
     height: 7px;
@@ -387,6 +399,15 @@ img {
   width: auto;
 }
 
+.form {
+  &:hover {
+    cursor: pointer;
+  }
+  .popup {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: $tablet-breakpoint) {
   #help .ideas {
     padding-bottom: 0;
@@ -406,6 +427,20 @@ img {
 @media only screen and (max-width: $mobile-only) {
   .preview p {
     text-align: center;
+  }
+  i.fas.fa-award.white {
+    display: none !important;
+  }
+  .tweet-btn {
+    margin-left: 0 !important;
+    margin-top: var(--margin);
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    a {
+      width: 100%;
+    }
   }
 }
 </style>

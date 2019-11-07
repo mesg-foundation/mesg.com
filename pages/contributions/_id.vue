@@ -245,7 +245,7 @@ export default {
     padding: 6px calc(10px / 2) !important;
   }
   .form {
-    display: flex;
+    display: block;
   }
 }
 </style>
