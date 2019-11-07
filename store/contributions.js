@@ -11,9 +11,7 @@ export const mutations = {
     state.contributions = {
       ...state.contributions,
       [contribution.id]: {
-        ...contribution,
-        createdAt: new Date(contribution.createdAt),
-        rewarded: contribution.rewarded === 'TRUE'
+        ...contribution
       }
     }
   }
@@ -22,9 +20,25 @@ export const mutations = {
 export const actions = {
   // Fetch data based on the contributions spreadsheet with the sheety api (https://sheety.co/)
   fetchAll: async ({ commit }) => {
-    const resp = await fetch('https://sheetdb.io/api/v1/mtqfsj1rfa5ro')
-    const data = await resp.json()
-    data.forEach((x) => commit('addContribution', x))
-    return data
+    const resp = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTue8aX3Elluv80uSsc7IMg4x0GZvy5VeFdicpi1xdXMDY49aVLpf2ybyqed-sILoENjR1vhcSFkWWH/pub?gid=634814968&single=true&output=tsv')
+    const text = await resp.text()
+    const [_, ...data] = text.split('\n')
+    const contributions = data.map((x) => {
+      const [name, link, title, category, description, profile, createdAt, id, rewarded] = x.split('\t')
+      return {
+        id,
+        name,
+        link,
+        title,
+        category,
+        description,
+        profile,
+        createdAt: new Date(createdAt),
+        rewarded: rewarded.startsWith("TRUE")
+      }
+    })
+    contributions
+      .forEach((x) => commit('addContribution', x))
+    return contributions
   }
 }
