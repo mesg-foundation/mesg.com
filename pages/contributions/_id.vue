@@ -22,8 +22,8 @@
       </div>
       <template v-slot:picture>
         <Card class="preview" p2 mb1>
-          <p class="infos text-right">
-            Share this contribution
+          <div flex mobile-only-column align-center wrap>
+            <p class="infos text-right">Share this contribution</p>
             <Tweetbtn
               class="tweet-btn"
               v-if="contribution.rewarded"
@@ -34,6 +34,7 @@
               ml1
             />
             <Tweetbtn
+              class="tweet-btn"
               v-else
               :url="contributionLink(contribution)"
               :text="
@@ -41,13 +42,15 @@
                   "
               ml1
             />
-          </p>
+          </div>
           <hr mt1 mb1 />
           <EmbedCard :url="contribution.link" />
         </Card>
         <p class="infos text-center edit">
           Content not showing up as expected?
-          <a href>Let us know</a>
+          <TypeFormPopup :id="forms.editContribution" class="form link">
+            <a>Let us know</a>
+          </TypeFormPopup>
         </p>
       </template>
     </Header>
@@ -95,7 +98,9 @@
       description="Have a quality contribution? Awesome! Send it our way, and you could be eligible for a reward. MESG thrives on community support and collaborations."
       mb1
     >
-      <ContributionForm btnWhite />
+      <TypeFormPopup :id="forms.addContribution" class="form">
+        <Button white>Add a contribution</Button>
+      </TypeFormPopup>
     </CTA>
   </div>
 </template>
@@ -106,7 +111,7 @@ import Header from "~/components/Header";
 import CTA from "~/components/CTA";
 import Card from "~/components/Card";
 import Tweetbtn from "@mesg-components/social-network";
-import ContributionForm from "~/components/ContributionForm";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import EmbedCard from "@mesg-components/embed-card";
 import Titletext4 from "~/components/Titletext4";
 import Container from "~/components/Container";
@@ -120,7 +125,7 @@ export default {
     CTA,
     Card,
     Tweetbtn,
-    ContributionForm,
+    TypeFormPopup,
     EmbedCard,
     Titletext4,
     Container,
@@ -138,7 +143,8 @@ export default {
     ...mapGetters({
       contributions: "contributions/all",
       links: "links",
-      externalLinks: "externalLinks"
+      externalLinks: "externalLinks",
+      forms: "forms"
     }),
     contribution() {
       return this.contributions[this.$route.params.id];
@@ -155,6 +161,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.form {
+  a {
+    width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .preview {
   max-height: 540px;
   overflow-y: auto;
@@ -165,6 +180,11 @@ export default {
     font-weight: bold;
   }
 }
+.tweet-btn {
+  text-align: right;
+  max-width: fit-content;
+  height: 20px;
+}
 
 .reward {
   width: 60px;
@@ -174,7 +194,7 @@ export default {
   border-radius: 3px;
   background-color: var(--gold);
   margin-right: var(--margin);
-  & i {
+  i {
     text-align: center;
     margin-right: 0;
     font-size: 34px;
@@ -204,16 +224,28 @@ export default {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .edit {
-    margin-bottom: calc(var(--margin) * 2);
-  }
   h2 {
     text-align: center;
   }
+  .edit {
+    margin-bottom: calc(var(--margin) * 2);
+  }
 }
 @media only screen and (max-width: $mobile-only) {
-  .preview p {
-    text-align: center;
+  .preview {
+    .tweet-btn {
+      margin-left: 0 !important;
+      margin-top: var(--margin);
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .size--small {
+    padding: 6px calc(10px / 2) !important;
+  }
+  .form {
+    display: flex;
   }
 }
 </style>
