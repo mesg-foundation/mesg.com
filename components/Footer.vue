@@ -4,58 +4,48 @@
       <Container>
         <nav flex row space-between wrap mobile-column-reverse>
           <div flex column third>
-            <nuxt-link :to="links.home">
+            <nuxt-link :to="links.home" mb1>
               <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG" />
             </nuxt-link>
-            <p class="copyright">© 2019 MESG Foundation</p>
-            <nuxt-link :to="links.policy" class="policy link-secondary" mb2>Privacy & Cookie Policy</nuxt-link>
+            <p class="copyright" mb2>© 2019 MESG Foundation</p>
+            <nuxt-link :to="links.policy" class="policy" mb2>Privacy & Cookie Policy</nuxt-link>
             <div flex space-between wrap>
               <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
                 <i :class="icon.icon"></i>
               </a>
             </div>
           </div>
-          <ul flex row mobile-column class="menu">
+          <ul flex row mobile-column>
             <li flex column quarter>
-              <a href="#" class="category" mb1>Products</a>
-              <nuxt-link :to="links.orchestrator" class="link-secondary" mb1>MESG Orchestrator</nuxt-link>
-              <nuxt-link :to="links.engine" class="link-secondary" mb1>MESG SDK</nuxt-link>
-              <nuxt-link :to="links.marketplace" class="link-secondary" mb1>MESG Marketplace</nuxt-link>
-              <nuxt-link :to="links.showcase" class="link-secondary last">Showcase</nuxt-link>
+              <a href="#" class="category" mb1>Technology</a>
+              <nuxt-link :to="links.orchestrator">MESG Orchestrator</nuxt-link>
+              <nuxt-link :to="links.engine">MESG SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace">MESG Marketplace</nuxt-link>
+              <nuxt-link :to="links.enterprise">Enterprise</nuxt-link>
+              <nuxt-link :to="links.showcase">Showcase</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
-              <a
-                :href="externalLinks.getStarted"
-                target="_blank"
-                class="link-secondary"
-                mb1
-              >Get started</a>
-              <a
-                :href="externalLinks.marketplace"
-                target="_blank"
-                class="link-secondary"
-                mb1
-              >Marketplace</a>
-              <a
-                :href="externalLinks.documentation"
-                target="_blank"
-                class="link-secondary"
-                mb1
-              >Documentation</a>
-              <a :href="externalLinks.forum" target="_blank" class="link-secondary last">Forum</a>
+              <a :href="externalLinks.getStarted" target="_blank">Get started</a>
+              <a :href="externalLinks.marketplace" target="_blank">Marketplace</a>
+              <a :href="externalLinks.documentation" target="_blank">Documentation</a>
+              <a :href="externalLinks.tutorials" target="_blank">Tutorials</a>
+              <a :href="externalLinks.github" target="_blank">Github</a>
             </li>
             <li flex column quarter>
-              <a href="#" class="category" mb1>Foundation</a>
-              <nuxt-link :to="links.foundation" class="link-secondary" mb1>Overview</nuxt-link>
-              <nuxt-link :to="links.roadmap" class="link-secondary" mb1>Roadmap</nuxt-link>
-              <nuxt-link :to="links.faq" class="link-secondary" mb1>FAQ</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank" class="link-secondary last">Blog</a>
+              <a href="#" class="category" mb1>About us</a>
+              <nuxt-link :to="links.foundation">Foundation</nuxt-link>
+              <nuxt-link :to="links.token">Token</nuxt-link>
+              <nuxt-link :to="links.roadmap">Roadmap</nuxt-link>
+              <nuxt-link :to="links.faq">Help Center</nuxt-link>
+              <a :href="externalLinks.blog" target="_blank">Blog</a>
+              <a :href="externalLinks.press" target="_blank">Press & Media</a>
             </li>
             <li flex column quarter>
-              <nuxt-link :to="links.token" class="link-secondary last">Token</nuxt-link>
-              <nuxt-link :to="links.enterprise" class="link-secondary last">Enterprise</nuxt-link>
-              <a :href="externalLinks.press" target="_blank" class="link-secondary">Press & Media</a>
+              <a href="#" class="category" mb1>Community</a>
+              <nuxt-link :to="links.contributions">Contributions Hub</nuxt-link>
+              <a :href="externalLinks.forum" target="_blank">Forum</a>
+              <a :href="externalLinks.discord" target="_blank">Discord</a>
             </li>
           </ul>
         </nav>
@@ -104,80 +94,73 @@ export default {
   background-color: var(--light-background);
 }
 
-.outline {
-  border: solid 1px var(--deep-purple);
-  background-color: var(--dark-purple);
+nav {
+  div {
+    height: fit-content;
+  }
+  img {
+    height: 40px;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
+  }
+  .copyright {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--text-color);
+  }
+  .policy {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--text-color);
+  }
+  .icon {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    color: var(--text-color);
+    &:hover {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
+  }
 }
 
-.purple {
-  color: var(--deep-purple);
-}
-.white {
-  color: var(--white);
-}
-
-.copyright {
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--text-color);
-}
-
-.policy {
-  font-size: 12px !important;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--text-color);
-}
-
-.category {
-  font-size: 17px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--title-color);
-  display: inline;
-}
-
-.icon {
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  color: var(--text-color);
-}
-.icon:hover {
-  opacity: 0.7;
-  transition: 0.1s ease;
-}
-
-.link-secondary {
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  padding: 0;
-  color: var(--text-color);
-}
-
-img {
-  height: 40px;
-}
-img:hover {
-  opacity: 0.7;
-  transition: 0.1s ease;
+li {
+  height: fit-content;
+  .category {
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--title-color);
+    display: inline;
+  }
+  a {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 0;
+    margin-bottom: var(--margin);
+    color: var(--text-color);
+  }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
@@ -191,18 +174,10 @@ img:hover {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  a.link {
-    min-height: auto;
-    margin-bottom: 0;
-  }
-  .last {
-    padding-bottom: calc(var(--margin) * 2);
-  }
-  .copyright {
-    padding-bottom: var(--margin);
-  }
   img {
     margin-top: calc(var(--margin) * 2);
+  }
+  li {
     margin-bottom: var(--margin);
   }
 }
