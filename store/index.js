@@ -1018,7 +1018,7 @@ export const getters = {
       service: "https://docs.mesg.com/guide/marketplace/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
-      blog: "https://medium.com/mesg",
+      blog: "https://blog.mesg.com",
       forum: "https://forum.mesg.com/",
       discord: "https://discordapp.com/invite/5tVTHJC",
       twitter: "https://twitter.com/mesgfoundation",
@@ -1030,6 +1030,7 @@ export const getters = {
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/",
+      tutorials: "https://docs.mesg.com/tutorials/"
     }
   },
 
