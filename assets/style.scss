@@ -10,6 +10,11 @@
   --light-background: #{$light-background};
   --title-color: #{$title-color};
   --text-color: #{$text-color};
+  --gold: #{$gold};
+  --error: #{$error};
+  --success: #{$success};
+  --info: #{$info};
+  --warning: #{$warning};
   --margin: #{$margin};
   --width: #{$width};
   --small-width: #{$small-width};
@@ -25,9 +30,10 @@
   --dark-grey: #{$text-color};
   --Black: #000000;
   --White: #{$white};
-  --Error: #f44336;
-  --Success: #4bb543;
-  --Info: #1e88e5;
+  --Error: #911A26;
+  --Success: #20771D;
+  --Info: #1457E8;
+  --Warning: #C1A100;
   --mobile-only: #{$mobile-only};
   --mobile-breakpoint: #{$mobile-breakpoint};
   --tablet-breakpoint: #{$tablet-breakpoint};
@@ -65,6 +71,7 @@ a,
 p,
 ul,
 li,
+span,
 button,
 label,
 input,
@@ -106,14 +113,14 @@ ul {
 }
 li {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: normal;
   color: var(--text-color);
 }
 .list::before {
   content: "";
   width: 7px;
   height: 7px;
-  margin-right: 15px;
+  margin-right: calc(var(--margin) - 5px);
   background-color: var(--deep-purple);
   border-radius: 100%;
   display: inline-block;
@@ -142,6 +149,16 @@ a {
 .link-secondary:hover {
   opacity: 0.7;
   transition: 0.1s ease;
+}
+
+.white {
+  color: var(--white)!important;
+}
+.gold {
+  color: var(--gold)!important;
+}
+.success {
+  color: var(--success)!important;
 }
 
 .text-center {
@@ -179,7 +196,7 @@ a {
   color: #ff4500;
   background-color: rgba(255, 69, 0, 0.1);
 }
-.blog {
+.medium {
   color: #12100E;
   background-color: rgba(18, 16, 14, 0.1);
 }

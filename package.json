@@ -15,17 +15,26 @@
     "styleguide:build": "vue-styleguidist build"
   },
   "dependencies": {
-    "@mesg-components/button": "^1.1.1",
+    "@mesg-components/button": "^1.1.2",
+    "@mesg-components/embed-card": "^1.0.0",
+    "@mesg-components/social-network": "^1.0.0",
+    "@mesg-components/table": "^1.1.0",
+    "@mesg-components/tag-label": "^1.0.0",
+    "@mesg-components/type-form-popup": "^1.0.1",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/google-tag-manager": "^2.2.0",
     "@nuxtjs/pwa": "^2.5.0",
     "@nuxtjs/sitemap": "^0.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
     "codemirror": "^5.48.4",
+    "firebase": "^7.2.1",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
     "nuxt": "^2.6.3",
     "vue-codemirror": "^4.0.6",
     "vue-embed-gist": "^1.0.2",
-    "vue-sticky-directive": "0.0.7"
+    "vue-sticky-directive": "0.0.7",
+    "vuexfire": "^3.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
