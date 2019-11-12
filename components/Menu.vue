@@ -15,13 +15,16 @@
       <div flex row space-between class="actions" :class="{open}">
         <ul flex row mobile-column>
           <li class="drop-down" flex column align-center>
-            <a href="#" class="title">Products</a>
+            <a href="#" class="title">Technology</a>
             <div flex column class="sub-menu" p1 mt1>
               <nuxt-link :to="links.orchestrator" class="btn">Orchestrator</nuxt-link>
               <nuxt-link :to="links.engine" class="btn">SDK</nuxt-link>
               <nuxt-link :to="links.marketplace" class="btn">Marketplace</nuxt-link>
-              <nuxt-link :to="links.showcase" class="btn">Showcase</nuxt-link>
+              <nuxt-link :to="links.enterprise" class="btn">Enterprise</nuxt-link>
             </div>
+          </li>
+          <li flex align-center>
+            <nuxt-link :to="links.showcase" class="main-menu">Showcase</nuxt-link>
           </li>
           <li class="drop-down" flex column align-center>
             <a href="#" class="title">Developers</a>
@@ -29,23 +32,18 @@
               <a :href="externalLinks.getStarted" target="_blank" class="btn">Get started</a>
               <a :href="externalLinks.marketplace" target="_blank" class="btn">Marketplace</a>
               <a :href="externalLinks.documentation" target="_blank" class="btn">Documentation</a>
-              <a :href="externalLinks.forum" target="_blank" class="btn">Forum</a>
-            </div>
-          </li>
-          <li class="drop-down" flex column align-center>
-            <a href="#" class="title">Foundation</a>
-            <div flex column class="sub-menu" p1 mt1>
-              <nuxt-link :to="links.foundation" class="btn">Overview</nuxt-link>
-              <nuxt-link :to="links.roadmap" class="btn">Roadmap</nuxt-link>
-              <nuxt-link :to="links.faq" class="btn">FAQ</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank" class="btn">Blog</a>
+              <a :href="externalLinks.tutorials" target="_blank" class="btn">Tutorials</a>
+              <a :href="externalLinks.github" target="_blank" class="btn">Github</a>
             </div>
           </li>
           <li flex align-center>
-            <nuxt-link :to="links.token" class="token">Token</nuxt-link>
+            <nuxt-link :to="links.contributions" class="main-menu">Contributions</nuxt-link>
           </li>
           <li flex align-center>
-            <Button primary small :to="links.enterprise" class="enterprise">Enterprise</Button>
+            <nuxt-link :to="links.token" class="main-menu">Token</nuxt-link>
+          </li>
+          <li flex align-center>
+            <Button primary small :to="externalLinks.getStarted" class="enterprise">Get started</Button>
           </li>
         </ul>
       </div>
@@ -98,7 +96,7 @@ img:hover {
 li {
   height: 80px;
 }
-.token:hover {
+.main-menu:hover {
   opacity: 0.7;
   transition: 0.1s ease;
 }
