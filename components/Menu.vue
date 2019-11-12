@@ -81,35 +81,38 @@ export default {
 nav {
   height: 80px;
   padding: calc(var(--margin) - 2px) calc(var(--margin) * 2);
-}
-img {
-  max-width: 153px;
-  max-height: 40px;
-  &:hover {
-    opacity: 0.7;
-    transition: 0.1s ease;
+  img {
+    max-width: 153px;
+    max-height: 40px;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
   }
-}
-li {
-  height: 80px;
-}
-.top-menu {
-  color: var(--title-color);
-  &:hover {
-    opacity: 0.7;
-    transition: 0.1s ease;
+  li {
+    margin-right: var(--margin);
+    font-size: 15px;
+    height: 80px;
   }
-}
-
-li > a:not(.btn--primary) {
-  line-height: 80px;
-  display: block;
+  li > a:not(.btn--primary) {
+    line-height: 80px;
+    display: block;
+  }
+  .top-menu {
+    color: var(--title-color);
+    &:hover {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
+  }
+  .btn--small {
+    padding: 0.45em;
+  }
 }
 
 //drop-down menu//
 @media only screen and (min-width: $tablet-breakpoint + 1) {
   .actions {
-    width: 300px;
     max-width: 100%;
     display: inline-block;
   }
