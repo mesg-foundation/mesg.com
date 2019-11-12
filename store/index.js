@@ -853,8 +853,8 @@ export const getters = {
         icon: "fas fa-code",
         category: "Development",
         list: [
-          "Improve the Engine (1) & (2)",
-          "Feedback on PRs & forum",
+          "Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
+          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
           "Build apps with MESG",
           "..."
         ]
@@ -863,9 +863,9 @@ export const getters = {
         icon: "fas fa-layer-plus",
         category: "Dev UX",
         list: [
-          "Improve the documentation",
-          "Create tutorials",
-          "Improve the CLI",
+          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
+          "Create <a href='https://docs.mesg.com/tutorials/' target='_blank' class='link'>tutorials</a>",
+          "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
         ]
       },
@@ -875,7 +875,7 @@ export const getters = {
         list: [
           "Write articles about MESG",
           "Create informative schemas",
-          "Improve the documentation",
+          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
           "..."
         ]
       },
@@ -924,7 +924,7 @@ export const getters = {
         category: "Support",
         list: [
           "Answer community questions",
-          "Contribute on the forum",
+          "Contribute on the <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
           "Suggest best practices",
           "..."
         ]

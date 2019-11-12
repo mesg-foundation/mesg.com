@@ -159,7 +159,7 @@
               </div>
               <hr mb1 />
               <ul>
-                <li v-for="(list, j) in community.list" :key="j">{{ list }}</li>
+                <li v-for="(list, j) in community.list" :key="j" v-html="list">{{ list }}</li>
               </ul>
             </Card>
           </div>
