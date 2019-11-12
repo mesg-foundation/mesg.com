@@ -43,7 +43,7 @@
             <nuxt-link :to="links.token" class="top-menu">Token</nuxt-link>
           </li>
           <li flex align-center>
-            <Button primary small :to="externalLinks.getStarted">Get started</Button>
+            <Button primary small :href="externalLinks.getStarted">Get started</Button>
           </li>
         </ul>
       </div>
@@ -90,7 +90,7 @@ nav {
     }
   }
   li {
-    margin-right: var(--margin);
+    margin-right: 0;
     font-size: 15px;
     height: 80px;
   }
@@ -279,15 +279,14 @@ nav {
     align-items: left;
   }
   li {
-    margin-right: 0;
     margin-bottom: var(--margin);
     a:not(.btn--primary) {
       line-height: 40px;
       padding: 0;
     }
   }
-
   .btn--primary {
+    line-height: 50px;
     margin-top: calc(var(--margin) * 2);
   }
 }
