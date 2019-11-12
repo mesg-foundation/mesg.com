@@ -15,7 +15,10 @@
       <div flex row space-between class="actions" :class="{open}">
         <ul flex row mobile-column>
           <li class="drop-down" flex column align-center>
-            <a href="#" class="top-menu">Technology</a>
+            <a href="#" class="top-menu">
+              Technology
+              <i class="far fa-angle-down"></i>
+            </a>
             <div flex column class="sub-menu" p1 mt1>
               <nuxt-link :to="links.orchestrator">Orchestrator</nuxt-link>
               <nuxt-link :to="links.engine">SDK</nuxt-link>
@@ -23,11 +26,11 @@
               <nuxt-link :to="links.enterprise">Enterprise</nuxt-link>
             </div>
           </li>
-          <li flex align-center>
-            <nuxt-link :to="links.showcase" class="top-menu">Showcase</nuxt-link>
-          </li>
           <li class="drop-down" flex column align-center>
-            <a href="#" class="top-menu">Developers</a>
+            <a href="#" class="top-menu">
+              Developers
+              <i class="far fa-angle-down"></i>
+            </a>
             <div flex column class="sub-menu" p1 mt1>
               <a :href="externalLinks.getStarted" target="_blank">Get started</a>
               <a :href="externalLinks.marketplace" target="_blank">Marketplace</a>
@@ -35,6 +38,9 @@
               <a :href="externalLinks.tutorials" target="_blank">Tutorials</a>
               <a :href="externalLinks.github" target="_blank">Github</a>
             </div>
+          </li>
+          <li flex align-center>
+            <nuxt-link :to="links.showcase" class="top-menu">Showcase</nuxt-link>
           </li>
           <li flex align-center>
             <nuxt-link :to="links.contributions" class="top-menu">Contributions</nuxt-link>
@@ -107,6 +113,10 @@ nav {
   }
   .btn--small {
     padding: 0.45em;
+  }
+  .top-menu i {
+    font-size: 12px;
+    margin-left: calc(var(--margin) / 4);
   }
 }
 
@@ -234,6 +244,9 @@ nav {
     width: 100%;
     font-weight: bold;
     color: var(--title-color);
+    i {
+      display: none;
+    }
   }
 
   .sub-menu {
