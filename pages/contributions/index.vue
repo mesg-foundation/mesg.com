@@ -43,7 +43,7 @@
                   :to="`/contributions/${latestReward.id}`"
                   class="text-center"
                   mt2
-                >More infos</Button>
+                >More info</Button>
               </div>
             </div>
             <div class="preview" p2>
@@ -116,14 +116,14 @@
             <i class="fas fa-badge-check success" mb1></i>
             <Titletext4
               title="Quality first"
-              text="The value of contributions is determined first by quality. Contributions focusing on quality over quantity have a much greater chance of being rewarded."
+              text="Contribution value is determined by quality first. Those focused on quality over quantity have a much greater chance of getting rewarded."
             />
           </div>
           <div half>
             <i class="fas fa-award gold" mb1></i>
             <Titletext4
-              title="Reward payouts"
-              text="Contributions are reviewed by our team, and if we are impressed by the quality and impact of your work, we’ll contact you to send a reward within a few business days."
+              title="Rewarded payouts"
+              text="Contributions will be reviewed, and if we’re impressed by the quality and impact of your work, we’ll contact you to send a reward."
             />
           </div>
         </div>
@@ -142,11 +142,10 @@
     <section id="help">
       <Container class="ideas" flex column align-center>
         <h2 mb1>Ways to help</h2>
-        <p class="text-center" mb2>
-          MESG is open to contributions in nearly any way imaginable. From
-          developing the infrastructure to spreading the word. Below are
-          examples, but feel free to get creative and help however you’d like.
-        </p>
+        <p
+          class="text-center"
+          mb2
+        >MESG is open to nearly any type of contribution, from developing the infrastructure to spreading the word. Below are examples for inspiration, but feel free to get creative and help however you’d like.</p>
 
         <div flex row wrap>
           <div v-for="(community, i) in community" :key="i" flex column third>
@@ -159,7 +158,7 @@
               </div>
               <hr mb1 />
               <ul>
-                <li v-for="(list, j) in community.list" :key="j">{{ list }}</li>
+                <li v-for="(list, j) in community.list" :key="j" v-html="list">{{ list }}</li>
               </ul>
             </Card>
           </div>

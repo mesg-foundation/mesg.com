@@ -853,9 +853,9 @@ export const getters = {
         icon: "fas fa-code",
         category: "Development",
         list: [
-          "Improve the Engine (1) & (2)",
-          "Feedback on PRs & forum",
-          "Build apps with MESG",
+          "Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
+          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>Forum</a>",
+          "Build apps using MESG",
           "..."
         ]
       },
@@ -863,9 +863,9 @@ export const getters = {
         icon: "fas fa-layer-plus",
         category: "Dev UX",
         list: [
-          "Improve the documentation",
-          "Create tutorials",
-          "Improve the CLI",
+          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
+          "Create <a href='https://docs.mesg.com/tutorials/' target='_blank' class='link'>tutorials</a>",
+          "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
         ]
       },
@@ -873,9 +873,9 @@ export const getters = {
         icon: "fas fa-comment-alt-edit",
         category: "Communication",
         list: [
-          "Write articles about MESG",
-          "Create informative schemas",
-          "Improve the documentation",
+          "Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
+          "Create informative diagrams",
+          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
           "..."
         ]
       },
@@ -883,8 +883,8 @@ export const getters = {
         icon: "fas fa-pencil-ruler",
         category: "Design",
         list: [
-          "Create MESG illustrations",
-          "Create GIF",
+          "Create MESG <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>illustrations</a>",
+          "Create a GIF",
           "Create graphic concepts",
           "..."
         ]
@@ -895,7 +895,7 @@ export const getters = {
         list: [
           "Share on social media",
           "Create advertisements",
-          "Add us to product sites",
+          "Add MESG to product sites",
           "..."
         ]
       },
@@ -904,8 +904,8 @@ export const getters = {
         category: "Token",
         list: [
           "Update info on exchanges",
-          "Submit logo on apps",
-          "List $MESG on a DEX",
+          "Submit <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>logo</a> on apps",
+          "List on a DEX (Kyber, Bancor...)",
           "..."
         ]
       },
@@ -924,7 +924,7 @@ export const getters = {
         category: "Support",
         list: [
           "Answer community questions",
-          "Contribute on the forum",
+          "Contribute on the <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
           "Suggest best practices",
           "..."
         ]
