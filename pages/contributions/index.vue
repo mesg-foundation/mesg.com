@@ -187,7 +187,7 @@
             >
               <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
             </a>
-            <a href="https://gitcoin.co/explorer?org=mesg" target="_blank" class="link-secondary">
+            <a href="https://gitcoin.co/explorer?org=mesg-foundation" target="_blank" class="link-secondary">
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
