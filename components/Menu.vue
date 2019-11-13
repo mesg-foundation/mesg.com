@@ -15,37 +15,41 @@
       <div flex row space-between class="actions" :class="{open}">
         <ul flex row mobile-column>
           <li class="drop-down" flex column align-center>
-            <a href="#" class="title">Products</a>
+            <a href="#" class="top-menu">
+              Technology
+              <i class="far fa-angle-down"></i>
+            </a>
             <div flex column class="sub-menu" p1 mt1>
-              <nuxt-link :to="links.orchestrator" class="btn">Orchestrator</nuxt-link>
-              <nuxt-link :to="links.engine" class="btn">SDK</nuxt-link>
-              <nuxt-link :to="links.marketplace" class="btn">Marketplace</nuxt-link>
-              <nuxt-link :to="links.showcase" class="btn">Showcase</nuxt-link>
+              <nuxt-link :to="links.orchestrator">Orchestrator</nuxt-link>
+              <nuxt-link :to="links.engine">SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace">Marketplace</nuxt-link>
+              <nuxt-link :to="links.enterprise">Enterprise</nuxt-link>
             </div>
           </li>
           <li class="drop-down" flex column align-center>
-            <a href="#" class="title">Developers</a>
+            <a href="#" class="top-menu">
+              Developers
+              <i class="far fa-angle-down"></i>
+            </a>
             <div flex column class="sub-menu" p1 mt1>
-              <a :href="externalLinks.getStarted" target="_blank" class="btn">Get started</a>
-              <a :href="externalLinks.marketplace" target="_blank" class="btn">Marketplace</a>
-              <a :href="externalLinks.documentation" target="_blank" class="btn">Documentation</a>
-              <a :href="externalLinks.forum" target="_blank" class="btn">Forum</a>
-            </div>
-          </li>
-          <li class="drop-down" flex column align-center>
-            <a href="#" class="title">Foundation</a>
-            <div flex column class="sub-menu" p1 mt1>
-              <nuxt-link :to="links.foundation" class="btn">Overview</nuxt-link>
-              <nuxt-link :to="links.roadmap" class="btn">Roadmap</nuxt-link>
-              <nuxt-link :to="links.faq" class="btn">FAQ</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank" class="btn">Blog</a>
+              <a :href="externalLinks.getStarted" target="_blank">Get started</a>
+              <a :href="externalLinks.marketplace" target="_blank">Marketplace</a>
+              <a :href="externalLinks.documentation" target="_blank">Documentation</a>
+              <a :href="externalLinks.tutorials" target="_blank">Tutorials</a>
+              <a :href="externalLinks.github" target="_blank">Github</a>
             </div>
           </li>
           <li flex align-center>
-            <nuxt-link :to="links.token" class="token">Token</nuxt-link>
+            <nuxt-link :to="links.showcase" class="top-menu">Showcase</nuxt-link>
           </li>
           <li flex align-center>
-            <Button primary small :to="links.enterprise" class="enterprise">Enterprise</Button>
+            <nuxt-link :to="links.contributions" class="top-menu">Contributions</nuxt-link>
+          </li>
+          <li flex align-center>
+            <nuxt-link :to="links.token" class="top-menu">Token</nuxt-link>
+          </li>
+          <li flex align-center>
+            <Button primary small :href="externalLinks.getStarted">Get started</Button>
           </li>
         </ul>
       </div>
@@ -82,50 +86,48 @@ export default {
 <style lang="scss" scoped>
 nav {
   height: 80px;
-  padding: 18px 40px;
-}
-img {
-  max-width: 153px;
-  max-height: 40px;
-}
-img:hover {
-  opacity: 0.7;
-  transition: 0.1s ease;
-}
-.enterprise {
-  width: 100%;
-}
-li {
-  height: 80px;
-}
-.token:hover {
-  opacity: 0.7;
-  transition: 0.1s ease;
-}
-
-li > a:not(.btn--primary) {
-  line-height: 80px;
-  display: block;
+  padding: calc(var(--margin) - 2px) calc(var(--margin) * 2);
+  img {
+    max-width: 153px;
+    max-height: 40px;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
+  }
+  li {
+    margin-right: 0;
+    font-size: 15px;
+    height: 80px;
+  }
+  li > a:not(.btn--primary) {
+    line-height: 80px;
+    display: block;
+  }
+  .top-menu {
+    color: var(--title-color);
+    &:hover {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
+  }
+  .btn--small {
+    padding: 0.45em;
+  }
+  .top-menu i {
+    font-size: 12px;
+    margin-left: calc(var(--margin) / 4);
+  }
 }
 
 //drop-down menu//
 @media only screen and (min-width: $tablet-breakpoint + 1) {
   .actions {
-    width: 300px;
     max-width: 100%;
     display: inline-block;
   }
-  .actions a:not(.btn--primary) {
-    color: var(--title-color);
-  }
-  ul {
-    list-style: none;
-  }
   li {
     text-align: center;
-  }
-  .btn {
-    padding: 0.75em 2em;
   }
   .sub-menu {
     position: absolute;
@@ -139,37 +141,40 @@ li > a:not(.btn--primary) {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     animation: appear-in 0.2s ease-in;
     border-top: solid 6px var(--purple);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 100%;
+      left: 45%;
+      border-bottom: 15px solid var(--purple);
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+    }
+    a {
+      font-weight: normal;
+      height: 50px;
+      display: block;
+      text-align: left;
+      padding: 0.75em 2em;
+      color: var(--text-color);
+      &:hover {
+        color: var(--purple);
+        font-weight: 600;
+        transition: 0.1s ease;
+      }
+    }
   }
-  .sub-menu::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 100%;
-    left: 45%;
-    border-bottom: 15px solid var(--purple);
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-  }
-  .sub-menu a {
-    font-weight: normal;
-    height: 50px;
-    display: block;
-    text-align: left;
-  }
-  .sub-menu a:hover {
-    color: var(--purple);
-    opacity: 1;
-    font-weight: 600;
-    transition: 0.1s ease;
-  }
-  .drop-down:hover .sub-menu {
-    opacity: 1;
-    display: block;
-  }
-  .drop-down:hover .title {
-    opacity: 0.7;
-    transition: 0.1s ease;
+  .drop-down:hover {
+    .sub-menu {
+      opacity: 1;
+      display: block;
+    }
+    .top-menu {
+      opacity: 0.7;
+      transition: 0.1s ease;
+    }
   }
   @keyframes appear-in {
     from {
@@ -195,67 +200,74 @@ li > a:not(.btn--primary) {
     z-index: 1;
     background-color: var(--white);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    &.open {
+      display: block;
+      animation: appear-in 0.2s ease-in;
+    }
   }
-  .actions.open {
-    display: block;
-    animation: appear-in 0.2s ease-in;
-  }
-  .sub-menu a {
-    font-weight: normal;
-    display: block;
-    color: var(--title-color);
-  }
-  .token {
-    color: var(--title-color);
-  }
+
   .burger {
     text-align: right;
     display: inline-block;
     line-height: 44px;
     height: 44px;
     font-size: 2em;
+    &:hover {
+      cursor: pointer;
+    }
   }
-  .burger:hover {
-    cursor: pointer;
+
+  ul {
+    padding: calc(var(--margin) * 2);
+    border-top: solid 6px var(--purple);
+    border-radius: 6px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 100%;
+      right: var(--margin);
+      border-bottom: 10px solid var(--purple);
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+    li {
+      height: fit-content;
+    }
+    li > a:not(.btn--primary) {
+      line-height: 40px;
+    }
   }
-  .btn {
-    padding: calc(var(--margin) / 2);
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .title {
+
+  .top-menu {
     width: 100%;
     font-weight: bold;
-    color: var(--light-purple);
+    color: var(--title-color);
+    i {
+      display: none;
+    }
   }
+
   .sub-menu {
     width: 100%;
     padding: 0 !important;
     margin-top: 0 !important;
+    a {
+      color: var(--text-color);
+      font-weight: normal;
+      display: block;
+      padding: calc(var(--margin) / 2);
+      padding-left: 0;
+      padding-right: 0;
+      &:hover {
+        color: var(--purple);
+        font-weight: 600;
+        transition: 0.1s ease;
+      }
+    }
   }
-  ul {
-    padding: calc(var(--margin) * 2);
-    border-top: solid 6px var(--purple);
-    list-style: none;
-    border-radius: 6px;
-  }
-  ul::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 100%;
-    right: var(--margin);
-    border-bottom: 10px solid var(--purple);
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-  }
-  li {
-    height: auto;
-  }
-  li > a:not(.btn--primary) {
-    line-height: 40px;
-  }
+
   .appear-enter-active {
     animation: appear-in 0.2s ease-in;
   }
@@ -273,24 +285,22 @@ li > a:not(.btn--primary) {
     }
   }
 }
+
 //menu mobile//
 @media only screen and (max-width: $mobile-breakpoint) {
   ul {
-    align-items: left !important;
-    padding-top: var(--margin);
+    align-items: left;
   }
   li {
-    margin-right: 0 !important;
-  }
-  li > a:not(.btn--primary) {
-    line-height: 60px;
-  }
-  .btn {
-    padding-top: calc(var(--margin) - 15px);
-    padding-bottom: calc(var(--margin) - 15px);
+    margin-bottom: var(--margin);
+    a:not(.btn--primary) {
+      line-height: 40px;
+      padding: 0;
+    }
   }
   .btn--primary {
-    margin-top: var(--margin);
+    line-height: 50px;
+    margin-top: calc(var(--margin) * 2);
   }
 }
 </style>
