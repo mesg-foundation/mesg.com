@@ -8,12 +8,13 @@ export const getters = {
 
 export const mutations = {
   addContribution: (state, contribution) => {
+    debugger
     state.contributions = {
       ...state.contributions,
       [contribution.id]: {
         ...contribution,
         createdAt: new Date(contribution.createdAt),
-        rewarded: contribution.rewarded.startsWith("TRUE")
+        rewarded: (contribution.rewarded || "").startsWith("TRUE")
       }
     }
   }
