@@ -89,7 +89,7 @@ export default {
 
 <style lang="scss" scoped>
 #footer {
-  padding: calc(var(--margin) * 3);
+  padding: calc(var(--margin) * 2);
   width: 100%;
   background-color: var(--light-background);
 }
@@ -139,6 +139,10 @@ nav {
 
 li {
   height: fit-content;
+  margin-left: 0;
+  &:before {
+    display: none;
+  }
   .category {
     font-size: 17px;
     font-weight: 600;
