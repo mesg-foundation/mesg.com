@@ -18,17 +18,19 @@ export default {
 };
 </script>
 
-<style scoped>
-ul {
-  list-style: none;
-}
-
-li span {
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
-  display: inline-block;
-  margin-right: calc(var(--margin) / 2);
-  vertical-align: middle;
+<style lang="scss" scoped>
+li {
+  margin-left: 0;
+  &:before {
+    display: none;
+  }
+  span {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: calc(var(--margin) / 2);
+    vertical-align: middle;
+  }
 }
 </style>
