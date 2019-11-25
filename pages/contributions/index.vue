@@ -187,7 +187,11 @@
             >
               <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
             </a>
-            <a href="https://gitcoin.co/explorer?org=mesg-foundation" target="_blank" class="link-secondary">
+            <a
+              href="https://gitcoin.co/explorer?org=mesg-foundation"
+              target="_blank"
+              class="link-secondary"
+            >
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
@@ -374,16 +378,6 @@ export default {
 #help {
   hr {
     width: auto;
-  }
-  li:before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    margin-right: calc(var(--margin) - 5px);
-    background-color: var(--deep-purple);
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 
