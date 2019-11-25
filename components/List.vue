@@ -19,13 +19,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
-  list-style: none;
-}
-
-li img {
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
+li {
+  margin-left: 0;
+  &:before {
+    display: none;
+  }
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+  }
 }
 </style>
