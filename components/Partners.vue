@@ -39,11 +39,12 @@ img {
   width: auto;
 }
 ul {
-  list-style: none;
-  text-indent: 0;
-}
-li {
-  text-align: center;
+  li {
+    margin-left: 0;
+    &:before {
+      display: none;
+    }
+  }
 }
 @media only screen and (max-width: $mobile-only) {
   img,
@@ -51,9 +52,9 @@ li {
     width: 100%;
     margin-right: 0 !important;
     margin-bottom: var(--margin);
-  }
-  img:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 </style>
