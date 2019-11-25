@@ -201,31 +201,17 @@ export default {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul {
-  list-style: none;
-}
-li {
-  font-weight: normal;
-}
-li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(var(--margin) - 5px);
-  background-color: var(--deep-purple);
-  border-radius: 100%;
-  display: inline-block;
-}
-
 li.opportunitie:last-child {
   margin-bottom: 0 !important;
 }
-.companies li::before {
-  display: none;
-}
 .companies li {
+  margin-left: 0;
   text-align: center;
+  &:before {
+    display: none;
+  }
 }
+
 .company {
   height: 30px;
   width: auto;
