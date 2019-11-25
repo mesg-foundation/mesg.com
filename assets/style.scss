@@ -110,20 +110,20 @@ p {
 
 ul {
   list-style: none;
-}
-li {
-  font-size: 17px;
-  font-weight: normal;
-  color: var(--text-color);
-}
-.list::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(var(--margin) - 5px);
-  background-color: var(--deep-purple);
-  border-radius: 100%;
-  display: inline-block;
+  li {
+    font-size: 17px;
+    font-weight: normal;
+    color: var(--text-color);
+    margin-left: 1em;
+    &:before {
+      content: "\2022";
+      font-weight: bold;
+      margin-left: -1em;
+      width: 1em;
+      color: var(--deep-purple);
+      display: inline-block;
+    }
+  }
 }
 .list p {
   margin-left:22px;
