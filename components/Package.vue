@@ -84,15 +84,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
-  list-style: none;
-}
-
 li {
   margin-right: var(--margin);
-}
-li:last-child {
-  margin-bottom: 0 !important;
+  margin-left: 0;
+  &:before {
+    display: none;
+  }
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
 }
 
 .pricing {
