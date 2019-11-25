@@ -99,6 +99,10 @@ nav {
     margin-right: 0;
     font-size: 15px;
     height: 80px;
+    margin-left: 0;
+    &:before {
+      display: none;
+    }
   }
   li > a:not(.btn--primary) {
     line-height: 80px;
