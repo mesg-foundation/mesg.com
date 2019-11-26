@@ -97,12 +97,9 @@ nav {
   }
   li {
     margin-right: 0;
+    margin-bottom: 0;
     font-size: 15px;
     height: 80px;
-    margin-left: 0;
-    &:before {
-      display: none;
-    }
   }
   li > a:not(.btn--primary) {
     line-height: 80px;
@@ -162,11 +159,14 @@ ul {
     }
     a {
       font-weight: normal;
-      height: 50px;
       display: block;
       text-align: left;
       padding: 0.75em 2em;
       color: var(--text-color);
+      border-bottom: dashed 1px var(--light-purple);
+      &:last-child {
+        border-bottom: none;
+      }
       &:hover {
         color: var(--purple);
         font-weight: 600;
@@ -241,6 +241,7 @@ ul {
       border-left: 10px solid transparent;
     }
     li {
+      margin-right: var(--margin);
       height: fit-content;
     }
     li > a:not(.btn--primary) {
@@ -268,10 +269,14 @@ ul {
       padding: calc(var(--margin) / 2);
       padding-left: 0;
       padding-right: 0;
+      border-bottom: dashed 1px var(--light-purple);
       &:hover {
         color: var(--purple);
         font-weight: 600;
         transition: 0.1s ease;
+      }
+      &:last-child {
+        border-bottom: none;
       }
     }
   }
@@ -300,15 +305,21 @@ ul {
     align-items: left;
   }
   li {
-    margin-bottom: var(--margin);
+    margin-right: 0;
+    margin-bottom: var(--margin) !important;
     a:not(.btn--primary) {
       line-height: 40px;
       padding: 0;
     }
   }
+  .sub-menu {
+    a:last-child {
+      border-bottom: dashed 1px var(--light-purple);
+    }
+  }
   .btn--primary {
     line-height: 50px;
-    margin-top: calc(var(--margin) * 2);
+    margin-top: var(--margin);
   }
 }
 </style>
