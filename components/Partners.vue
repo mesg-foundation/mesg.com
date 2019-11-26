@@ -34,26 +34,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  height: 40px;
-  width: auto;
-}
 ul {
-  li {
-    margin-left: 0;
-    &:before {
-      display: none;
-    }
+  list-style: none;
+  margin-left: 0;
+  img {
+    height: 40px;
+    width: auto;
   }
 }
 @media only screen and (max-width: $mobile-only) {
-  img,
   li {
+    text-align: center;
     width: 100%;
-    margin-right: 0 !important;
     margin-bottom: var(--margin);
     &:last-child {
       margin-bottom: 0;
+    }
+    img {
+      margin-right: 0 !important;
     }
   }
 }

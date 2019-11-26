@@ -19,7 +19,7 @@
                         <i class="far fa-external-link" />
                       </a>
                     </h4>
-                    <ul>
+                    <ul class="bullet-points">
                       <li v-for="(item, l) in goal.list" :key="l">{{item}}</li>
                     </ul>
                   </li>
@@ -120,17 +120,18 @@ export default {
   }
 }
 
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
 .years {
   width: var(--small-width);
   max-width: 100%;
   margin: auto;
 }
 .years > li {
-  margin-left: 0;
   margin-bottom: calc(var(--margin) + 35px);
-  &:before {
-    display: none;
-  }
 }
 
 .quarters {
@@ -138,12 +139,8 @@ export default {
   margin-top: -51px;
 }
 .quarters > li {
-  margin-left: 0;
   margin-bottom: calc(var(--margin) + 25px);
   position: relative;
-  &:before {
-    display: none;
-  }
   &:after {
     content: "";
     display: block;
@@ -186,12 +183,13 @@ export default {
   }
 }
 
+.bullet-points {
+  list-style: disc;
+  margin-left: var(--margin);
+}
+
 .goals > li {
-  margin-left: 0;
   margin-bottom: calc(var(--margin) + 12px);
-  &:before {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {

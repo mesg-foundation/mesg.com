@@ -1,5 +1,5 @@
 <template>
-  <ul mb2>
+  <ul>
     <li mb1 v-for="(item, i) in items" :key="i">
       <span :style="`background-color: ${item.color}`"></span>
       {{ item.title }}
@@ -19,18 +19,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-li {
-  margin-left: 0;
-  &:before {
-    display: none;
-  }
-  span {
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    display: inline-block;
-    margin-right: calc(var(--margin) / 2);
-    vertical-align: middle;
-  }
+span {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: calc(var(--margin) / 2);
+  vertical-align: middle;
 }
 </style>

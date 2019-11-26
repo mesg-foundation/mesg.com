@@ -84,14 +84,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-li {
-  margin-right: var(--margin);
+ul {
+  list-style: none;
   margin-left: 0;
-  &:before {
-    display: none;
-  }
-  &:last-child {
-    margin-bottom: 0 !important;
+  li {
+    margin-right: var(--margin);
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+    i {
+      max-width: 18px;
+    }
   }
 }
 
@@ -104,10 +107,6 @@ li {
   letter-spacing: normal;
 }
 
-i {
-  max-width: 18px;
-}
-
 hr {
   min-width: 100%;
   width: 100%;
@@ -116,40 +115,44 @@ hr {
 /*white*/
 .white {
   background-color: var(--white);
-}
-.invalid p {
-  color: var(--light-purple);
-}
-.invalid i {
-  color: var(--light-purple);
+  .invalid {
+    p {
+      color: var(--light-purple);
+    }
+    i {
+      color: var(--light-purple);
+    }
+  }
 }
 
 /*purple*/
 .purple {
   transform: scale(1.05);
   background-color: var(--purple);
-}
-.purple h3 {
-  color: var(--white);
-}
-.purple p {
-  color: var(--white);
-}
-.purple .invalid p {
-  color: var(--deep-purple);
-}
-.purple .invalid i {
-  color: var(--deep-purple);
-}
-.purple li {
-  color: var(--white);
-}
-.purple hr {
-  color: var(--deep-purple);
-}
-.purple button {
-  color: var(--purple);
-  background-color: var(--white);
+  h3 {
+    color: var(--white);
+  }
+  p {
+    color: var(--white);
+  }
+  .invalid {
+    p {
+      color: var(--deep-purple);
+    }
+    i {
+      color: var(--deep-purple);
+    }
+  }
+  li {
+    color: var(--white);
+  }
+  hr {
+    color: var(--deep-purple);
+  }
+  button {
+    color: var(--purple);
+    background-color: var(--white);
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {

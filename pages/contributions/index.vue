@@ -344,6 +344,7 @@ export default {
     }
   }
   .preview {
+    min-height: 450px;
     max-height: 500px;
     overflow-y: auto;
     background-color: var(--light-background);

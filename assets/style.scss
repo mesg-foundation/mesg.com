@@ -109,20 +109,10 @@ p {
 }
 
 ul {
-  list-style: none;
+  list-style: disc;
+  margin-left: var(--margin);
   li {
-    font-size: 17px;
-    font-weight: normal;
     color: var(--text-color);
-    margin-left: 1em;
-    &:before {
-      content: "\2022";
-      font-weight: bold;
-      margin-left: -1em;
-      width: 1em;
-      color: var(--deep-purple);
-      display: inline-block;
-    }
   }
 }
 

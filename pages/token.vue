@@ -214,24 +214,23 @@ export default {
 <style lang="scss" scoped>
 #cta {
   position: relative;
-}
-
-#cta::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 100px);
-  background: var(--light-background);
-  transform: translateY(30%) skewY(-8deg);
-  z-index: -1;
-}
-#cta h2 {
-  color: var(--white);
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    background: var(--light-background);
+    transform: translateY(30%) skewY(-8deg);
+    z-index: -1;
+  }
+  h2 {
+    color: var(--white);
+  }
 }
 
 ul {
   list-style: none;
-  margin-bottom: 0 !important;
+  margin-left: 0;
 }
 
 a img {

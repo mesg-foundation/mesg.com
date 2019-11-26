@@ -63,11 +63,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-li {
+ul {
+  list-style: none;
   margin-left: 0;
-  &:before {
-    display: none;
-  }
 }
 h2 {
   text-align: left;

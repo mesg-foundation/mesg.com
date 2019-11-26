@@ -204,11 +204,11 @@ export default {
 li.opportunitie:last-child {
   margin-bottom: 0 !important;
 }
-.companies li {
+.companies {
+  list-style: none;
   margin-left: 0;
-  text-align: center;
-  &:before {
-    display: none;
+  li {
+    text-align: center;
   }
 }
 
@@ -232,11 +232,13 @@ li.opportunitie:last-child {
   .intro {
     padding-bottom: 0;
   }
-  #usecase-description .illus {
-    margin-bottom: calc(var(--margin) * 2) !important;
-  }
-  #usecase-description ul:last-child {
-    margin-bottom: 0 !important;
+  #usecase-description {
+    .illus {
+      margin-bottom: calc(var(--margin) * 2) !important;
+    }
+    ul:last-child {
+      margin-bottom: 0 !important;
+    }
   }
   .companies li {
     margin-bottom: var(--margin);

@@ -114,14 +114,18 @@ nav {
       opacity: 0.7;
       transition: 0.1s ease;
     }
+    i {
+      font-size: 12px;
+      margin-left: calc(var(--margin) / 4);
+    }
   }
   .btn--small {
     padding: 0.45em;
   }
-  .top-menu i {
-    font-size: 12px;
-    margin-left: calc(var(--margin) / 4);
-  }
+}
+ul {
+  list-style: none;
+  margin-left: 0;
 }
 
 //drop-down menu//
