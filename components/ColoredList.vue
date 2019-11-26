@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li mb1 v-for="(item, i) in items" :key="i">
+    <li v-for="(item, i) in items" :key="i">
       <span :style="`background-color: ${item.color}`"></span>
       {{ item.title }}
     </li>

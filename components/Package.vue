@@ -6,10 +6,9 @@
         <p class="pricing text-right">{{ text }}</p>
       </div>
       <hr mb2 />
-      <div>
-        <ul flex row wrap mb2>
+      <div mb2>
+        <ul flex row wrap>
           <li
-            mb1
             v-for="(item, i) in items"
             :key="i"
             flex
@@ -89,9 +88,6 @@ ul {
   margin-left: 0;
   li {
     margin-right: var(--margin);
-    &:last-child {
-      margin-bottom: 0 !important;
-    }
     i {
       max-width: 18px;
     }
@@ -157,7 +153,8 @@ hr {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   li {
-    margin-right: 0;
+    margin-right: 0 !important;
+    margin-bottom: calc(var(--margin) / 2);
   }
   a {
     width: 100%;

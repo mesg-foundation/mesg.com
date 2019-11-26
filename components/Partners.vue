@@ -37,6 +37,9 @@ export default {
 ul {
   list-style: none;
   margin-left: 0;
+  li {
+    margin-bottom: 0;
+  }
   img {
     height: 40px;
     width: auto;
@@ -46,7 +49,7 @@ ul {
   li {
     text-align: center;
     width: 100%;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin) !important;
     &:last-child {
       margin-bottom: 0;
     }

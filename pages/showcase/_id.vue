@@ -37,14 +37,13 @@
           <div half>
             <h3 mb1>Benefits</h3>
             <ul mb2>
-              <li v-for="(benefit, i) in usecase.benefits" :key="i" mb1>{{ benefit }}</li>
+              <li v-for="(benefit, i) in usecase.benefits" :key="i">{{ benefit }}</li>
             </ul>
             <h3 mb1>Opportunities</h3>
             <ul>
               <li
                 v-for="(opportunitie, i) in usecase.opportunities"
                 :key="i"
-                mb1
                 class="opportunitie"
               >{{ opportunitie }}</li>
             </ul>
@@ -209,6 +208,7 @@ li.opportunitie:last-child {
   margin-left: 0;
   li {
     text-align: center;
+    margin-bottom: 0;
   }
 }
 
