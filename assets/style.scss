@@ -113,6 +113,10 @@ ul {
   margin-left: var(--margin);
   li {
     color: var(--text-color);
+    margin-bottom: calc(var(--margin) /2);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
