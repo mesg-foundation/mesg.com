@@ -211,7 +211,6 @@ export default {
   p {
     i {
       margin-right: calc(var(--margin) / 2);
-      font-size: 18px;
       color: var(--light-purple);
     }
   }

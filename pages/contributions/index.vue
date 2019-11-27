@@ -34,10 +34,10 @@
                   }}
                 </p>
                 <Tag mb1>{{ latestReward.category }}</Tag>
-                <p>
+                <div flex row class="user">
                   <i class="fas fa-user-circle"></i>
-                  {{ latestReward.name }}
-                </p>
+                  <span>{{ latestReward.name }}</span>
+                </div>
                 <Button
                   secondary
                   :to="`/contributions/${latestReward.id}`"
@@ -83,24 +83,26 @@
             compact
           >
             <template v-slot:item_title="{ item }">
-              <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
-              <nuxt-link :to="`/contributions/${item.id}`">
-                {{
-                item.title
-                }}
-              </nuxt-link>
+              <div flex row>
+                <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
+                <nuxt-link :to="`/contributions/${item.id}`">
+                  {{
+                  item.title
+                  }}
+                </nuxt-link>
+              </div>
             </template>
             <template v-slot:item_category="{ item }">
               <Tag>{{ item.category }}</Tag>
             </template>
             <template v-slot:item_name="{ item }">
-              <p>
+              <div flex row>
                 <i class="fas fa-user-circle"></i>
-                {{ item.name }}
-              </p>
+                <span>{{ item.name }}</span>
+              </div>
             </template>
             <template v-slot:item_createdAt="{ item }">
-              <p class="date">{{ item.createdAt | relativeDate }}</p>
+              <datetime class="date">{{ item.createdAt | relativeDate }}</datetime>
             </template>
           </Table>
         </Card>
@@ -187,7 +189,11 @@
             >
               <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
             </a>
-            <a href="https://gitcoin.co/explorer?org=mesg-foundation" target="_blank" class="link-secondary">
+            <a
+              href="https://gitcoin.co/explorer?org=mesg-foundation"
+              target="_blank"
+              class="link-secondary"
+            >
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
@@ -339,6 +345,14 @@ export default {
       color: var(--white);
     }
   }
+  .user {
+    i {
+      min-width: 24px;
+      max-width: 24px;
+      text-align: center;
+      padding-top: 0.2em;
+    }
+  }
   .preview {
     max-height: 500px;
     overflow-y: auto;
@@ -356,6 +370,16 @@ export default {
     .date {
       font-size: 15px;
       color: var(--light-purple);
+    }
+    div {
+      width: auto;
+      margin: 0;
+    }
+    i {
+      min-width: 24px;
+      max-width: 24px;
+      text-align: center;
+      padding-top: 0.2em;
     }
   }
 }
@@ -389,7 +413,6 @@ export default {
 
 i {
   margin-right: calc(var(--margin) / 2);
-  font-size: 18px;
   color: var(--light-purple);
 }
 
