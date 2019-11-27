@@ -35,9 +35,9 @@
         <Container>
           <Card v-for="(getstarted, i) in getstarted" :key="i" flex row align-center p2 mb2>
             <div half pr1>
-              <Tag class="purple" mb1>{{ getstarted.tag}}</Tag>
+              <Tag class="tag-purple" mb1>{{ getstarted.tag}}</Tag>
               <h3 mb1>{{ getstarted.title}}</h3>
-              <p v-html="getstarted.description"></p>
+              <p class="test" v-html="getstarted.description"></p>
             </div>
             <span class="separator"></span>
             <div flex column half pl1>
@@ -93,6 +93,7 @@
                 'github',
                 'discord'
               ]"
+              class="list-social"
             />
           </div>
           <div flex column mobile-column half>
@@ -110,45 +111,42 @@
               </div>
               <p>Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
             </div>
-            <ListSN
-              :list="[
-                'forum',
-                'github',
-                'discord'
-              ]"
-            />
           </div>
         </div>
       </Container>
     </section>
 
-    <section id="links" mb3>
+    <section id="links-card" mb3>
       <Container>
         <div flex row>
           <a :href="externalLinks.github" target="_blank" half>
             <Card bordered p2 class="open-source">
-              <div class="icon"></div>
+              <span flex align-center>
+                <i class="fal fa-code"></i>
+              </span>
               <div class="content">
                 <h3 mb1>Open source</h3>
                 <p
                   mb2
                 >MESG is completely open-source. Everyone is free to browse the source code, fix bugs, or help us build the framework.</p>
               </div>
-              <div flex>
+              <div flex class="icon">
                 <i class="fal fa-external-link-alt"></i>
               </div>
             </Card>
           </a>
           <nuxt-link :to="links.enterprise" half>
             <Card bordered p2 class="enterprise">
-              <div class="icon"></div>
+              <span flex align-center>
+                <i class="fal fa-globe"></i>
+              </span>
               <div class="content">
                 <h3 mb1>Enterprise</h3>
                 <p
                   mb2
                 >Build ultra-efficient services and applications with confidence using technical, advisory and design support from the MESG Enterprise Team.</p>
               </div>
-              <div flex>
+              <div flex class="icon">
                 <i class="fal fa-long-arrow-alt-right"></i>
               </div>
             </Card>
@@ -225,62 +223,70 @@ export default {
   background-color: red;
 }
 
-.purple {
-  background-color: #edddfd;
-  color: #8350db;
-}
-
-.separator {
-  position: absolute;
-  left: 50%;
-  height: 200px;
-  border: solid 0.5px var(--light-purple);
-}
-
-.icon-cta {
-  font-size: 100px;
-  color: #8350db;
-}
-
-.btn-more-infos {
-  text-align: right;
-}
-
-#links {
-  .open-source {
-    border-bottom-color: #388df5;
+#resources {
+  .tag-purple {
+    background-color: $light-electric-purple;
+    color: $electric-purple;
   }
-  .enterprise {
-    border-bottom-color: #ffa33a;
-  }
-  .icon {
+  .separator {
     position: absolute;
-    min-width: 50px;
-    min-height: 50px;
-    max-width: 50px;
-    max-height: 50px;
-    background-color: red;
+    left: 50%;
+    height: 200px;
+    border: solid 0.5px $light-purple;
   }
-  .content {
-    margin-left: calc(var(--margin) * 4);
+}
+
+#more-infos {
+  .list-social {
+    flex-direction: column;
   }
-  i {
+  .btn-more-infos {
     text-align: right;
   }
 }
 
-.features {
-  padding-top: calc(var(--margin) * 2);
-}
-@media only screen and (max-width: $tablet-breakpoint) {
-  .features {
-    padding-top: 0;
+#links-card {
+  .open-source {
+    border-bottom-color: $blue;
+    span {
+      text-align: center;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      background-color: $light-blue;
+      i {
+        font-size: 30px;
+        color: $blue;
+      }
+    }
+  }
+  .enterprise {
+    border-bottom-color: $orange;
+    span {
+      text-align: center;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      background-color: $light-orange;
+      i {
+        font-size: 30px;
+        color: $orange;
+      }
+    }
+  }
+  .content {
+    margin-left: calc(var(--margin) * 4);
+  }
+  .icon {
+    text-align: right;
   }
 }
-@media only screen and (max-width: $mobile-breakpoint) {
-  #packages .intro {
-    padding-bottom: 0;
-  }
+
+.icon-cta {
+  font-size: 100px;
+  color: $electric-purple;
 }
 </style>
 
