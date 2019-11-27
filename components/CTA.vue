@@ -3,7 +3,8 @@
     <Container>
       <Card purple p2>
         <div flex row align-center space-between mobile-column>
-          <div class="content" flex column>
+          <slot name="icon" />
+          <div class="content">
             <h2>{{ title }}</h2>
             <p v-if="description" mt1>{{ description }}</p>
           </div>
