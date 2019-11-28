@@ -44,11 +44,11 @@
               <Table
                 :headers="[
               { key: 'category', text: 'Category', value: 'category' },
-              { key: 'link', text: 'Link', value: 'link' },
+              { key: 'title', text: 'Title', value: 'title' },
               { key: 'info', text: 'Info', value: 'info', align: 'right'},
               { key: 'icon', text: 'Icon', value: 'icon', align: 'right'}              
             ]"
-                :items="getstarted"
+                :items="getstarted.resources"
                 hideHeader
                 compact
               >
@@ -57,14 +57,14 @@
                     <i class="text-center" :class="item.category"></i>
                   </span>
                 </template>
-                <template v-slot:item_link="{ item }">
-                  <nuxt-link v-if="item.to" :to="item.to">{{ item.link }}</nuxt-link>
-                  <a v-else :href="item.to" target="_blank">{{ item.link }}</a>
+                <template v-slot:item_title="{ item }">
+                  <nuxt-link v-if="item.to" :to="item.to">{{ item.title }}</nuxt-link>
+                  <a v-else :href="item.link" target="_blank">{{ item.title }}</a>
                 </template>
-                <template v-slot:info="{ item }">
+                <template v-slot:item_info="{ item }">
                   <span>{{ item.info }}</span>
                 </template>
-                <template v-slot:icon="{ item }">
+                <template v-slot:item_icon="{ item }">
                   <i :class="item.icon"></i>
                 </template>
               </Table>
@@ -119,7 +119,7 @@
     <section id="links-card" mb3>
       <Container>
         <div flex row>
-          <a :href="externalLinks.github" target="_blank" half>
+          <a :href="externalLinks.github" target="_blank" half fill-height>
             <Card bordered p2 class="open-source">
               <span flex align-center>
                 <i class="fal fa-code"></i>
@@ -135,7 +135,7 @@
               </div>
             </Card>
           </a>
-          <nuxt-link :to="links.enterprise" half>
+          <nuxt-link :to="links.enterprise" half fill-height>
             <Card bordered p2 class="enterprise">
               <span flex align-center>
                 <i class="fal fa-globe"></i>
@@ -233,6 +233,13 @@ export default {
     left: 50%;
     height: 200px;
     border: solid 0.5px $light-purple;
+  }
+  .circle {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 100%;
   }
 }
 

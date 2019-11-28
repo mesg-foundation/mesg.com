@@ -932,7 +932,7 @@ export const getters = {
     ]
   },
 
-  getstarted() {
+  getstarted(_, { links, externalLinks, tutorials }) {
     return [
       {
         tag: "Install",
@@ -940,12 +940,20 @@ export const getters = {
         description: "The Engine is a message broker and common event channel built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the Engine, open a terminal and enter in <code>npm install - g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
         resources: [
           {
-            category: "icon",
+            category: "fal fa-question",
             color: "color",
-            link: "link",
-            to: "https://www.google.com/",
-            info: "info",
-            icon: "icon",
+            title: "Learn more",
+            to: links.engine,
+            info: "SDK",
+            icon: "fal fa-long-arrow-alt-right"
+          },
+          {
+            category: "fal fa-book",
+            color: "color",
+            title: "Installation",
+            link: externalLinks.getStarted,
+            info: "Documentation",
+            icon: "fal fa-external-link-alt"
           }
         ]
       },
@@ -955,12 +963,44 @@ export const getters = {
         description: "Services are discrete units of functionality that are used to bridge to external technologies or complete a specific function. They can be remotely accessed, and independently acted upon and updated.<br/><br/>Start building a new service by running: <code>mesg - cli service: init</code> or reuse existing services from the Marketplace.",
         resources: [
           {
-            category: "icon",
+            category: "fal fa-question",
             color: "color",
-            link: "link",
-            to: "https://www.google.com/",
-            info: "info",
-            icon: "icon",
+            title: "Learn more",
+            to: links.marketplace,
+            info: "Marketplace",
+            icon: "fal fa-long-arrow-alt-right"
+          },
+          {
+            category: "fal fa-book",
+            color: "color",
+            title: "Create a service",
+            link: externalLinks.service,
+            info: "Documentation",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-store",
+            color: "color",
+            title: "Browse the marketplace",
+            link: externalLinks.marketplace,
+            info: "Resource",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-laptop-code",
+            color: "color",
+            title: "Email service",
+            link: tutorials.emailService,
+            info: "Tutorial",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-laptop-code",
+            color: "color",
+            title: "ERC-20 service",
+            link: tutorials.erc20Service,
+            info: "Tutorial",
+            icon: "fal fa-external-link-alt"
           }
         ]
       },
@@ -970,12 +1010,28 @@ export const getters = {
         description: "A process is a step-by-step description of business logic that combines the events and tasks of services to form applications.<br/><br/>All interaction between services is managed by the Engine, enabling easy scalability. Start creating a process by running: <code>mesg - cli process: create</code>",
         resources: [
           {
-            category: "icon",
+            category: "fal fa-question",
             color: "color",
-            link: "link",
-            to: "https://www.google.com/",
-            info: "info",
-            icon: "icon",
+            title: "Learn more",
+            to: links.orchestrator,
+            info: "Orchestrator",
+            icon: "fal fa-long-arrow-alt-right"
+          },
+          {
+            category: "fal fa-book",
+            color: "color",
+            title: "Create a process",
+            link: externalLinks.process,
+            info: "Documentation",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-laptop-code",
+            color: "color",
+            title: "ERC-20 notifier",
+            link: tutorials.erc20Notifier,
+            info: "Tutorial",
+            icon: "fal fa-external-link-alt"
           }
         ]
       }
@@ -1006,49 +1062,49 @@ export const getters = {
         icon: "fab fa-twitter",
         color: "twitter",
         description: "Engage with us",
-        title: "Twitter"
+        default: "Twitter"
       },
       github: {
         to: externalLinks.github,
         icon: "fab fa-github",
         color: "github",
         description: "Contribute",
-        title: "Github"
+        default: "Github"
       },
       telegram: {
         to: externalLinks.telegram,
         icon: "fab fa-telegram-plane",
         color: "telegram",
         description: "Community Chat",
-        title: "Telegram"
+        default: "Telegram"
       },
       forum: {
         to: externalLinks.forum,
         icon: "fas fa-comments",
         color: "forum",
         description: "Help & Guidance",
-        title: "Forum"
+        default: "Forum"
       },
       discord: {
         to: externalLinks.discord,
         icon: "fab fa-discord",
         color: "discord",
         description: "Chat with us",
-        title: "Discord"
+        default: "Discord"
       },
       reddit: {
         to: externalLinks.reddit,
         icon: "fab fa-reddit-alien",
         color: "reddit",
         description: "General news",
-        title: "Reddit"
+        default: "Reddit"
       },
       medium: {
         to: externalLinks.blog,
         icon: "fab fa-medium",
         color: "medium",
         description: "Check out the news",
-        title: "Medium"
+        default: "Medium"
       }
     }
   },
@@ -1056,7 +1112,15 @@ export const getters = {
   forms() {
     return {
       addContribution: "bOJ0qz",
-      editContribution: "AFQb2X",
+      editContribution: "AFQb2X"
+    }
+  },
+
+  tutorials() {
+    return {
+      emailService: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/send-emails-with-sendgrid.html",
+      erc20Service: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/listen-for-transfers-of-an-ethereum-erc20-token.html",
+      erc20Notifier: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/receive-email-when-there-is-an-erc20-transfer.html"
     }
   },
 
@@ -1065,7 +1129,7 @@ export const getters = {
       documentation: "https://docs.mesg.com/",
       process: "https://docs.mesg.com/guide/process/",
       marketplace: "https://marketplace.mesg.com/",
-      service: "https://docs.mesg.com/guide/marketplace/",
+      service: "https://docs.mesg.com/guide/service/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
       blog: "https://blog.mesg.com",
