@@ -941,7 +941,7 @@ export const getters = {
         resources: [
           {
             category: "fal fa-question",
-            color: "color",
+            color: "orange",
             title: "Learn more",
             to: links.engine,
             info: "SDK",
@@ -949,7 +949,7 @@ export const getters = {
           },
           {
             category: "fal fa-book",
-            color: "color",
+            color: "blue",
             title: "Installation",
             link: externalLinks.getStarted,
             info: "Documentation",
@@ -964,7 +964,7 @@ export const getters = {
         resources: [
           {
             category: "fal fa-question",
-            color: "color",
+            color: "orange",
             title: "Learn more",
             to: links.marketplace,
             info: "Marketplace",
@@ -972,7 +972,7 @@ export const getters = {
           },
           {
             category: "fal fa-book",
-            color: "color",
+            color: "blue",
             title: "Create a service",
             link: externalLinks.service,
             info: "Documentation",
@@ -980,7 +980,7 @@ export const getters = {
           },
           {
             category: "fal fa-store",
-            color: "color",
+            color: "purple",
             title: "Browse the marketplace",
             link: externalLinks.marketplace,
             info: "Resource",
@@ -988,17 +988,9 @@ export const getters = {
           },
           {
             category: "fal fa-laptop-code",
-            color: "color",
+            color: "green",
             title: "Email service",
             link: tutorials.emailService,
-            info: "Tutorial",
-            icon: "fal fa-external-link-alt"
-          },
-          {
-            category: "fal fa-laptop-code",
-            color: "color",
-            title: "ERC-20 service",
-            link: tutorials.erc20Service,
             info: "Tutorial",
             icon: "fal fa-external-link-alt"
           }
@@ -1011,7 +1003,7 @@ export const getters = {
         resources: [
           {
             category: "fal fa-question",
-            color: "color",
+            color: "orange",
             title: "Learn more",
             to: links.orchestrator,
             info: "Orchestrator",
@@ -1019,7 +1011,7 @@ export const getters = {
           },
           {
             category: "fal fa-book",
-            color: "color",
+            color: "blue",
             title: "Create a process",
             link: externalLinks.process,
             info: "Documentation",
@@ -1027,7 +1019,7 @@ export const getters = {
           },
           {
             category: "fal fa-laptop-code",
-            color: "color",
+            color: "green",
             title: "ERC-20 notifier",
             link: tutorials.erc20Notifier,
             info: "Tutorial",
@@ -1062,49 +1054,42 @@ export const getters = {
         icon: "fab fa-twitter",
         color: "twitter",
         description: "Engage with us",
-        default: "Twitter"
       },
       github: {
         to: externalLinks.github,
         icon: "fab fa-github",
         color: "github",
         description: "Contribute",
-        default: "Github"
       },
       telegram: {
         to: externalLinks.telegram,
         icon: "fab fa-telegram-plane",
         color: "telegram",
         description: "Community Chat",
-        default: "Telegram"
       },
       forum: {
         to: externalLinks.forum,
         icon: "fas fa-comments",
         color: "forum",
         description: "Help & Guidance",
-        default: "Forum"
       },
       discord: {
         to: externalLinks.discord,
         icon: "fab fa-discord",
         color: "discord",
         description: "Chat with us",
-        default: "Discord"
       },
       reddit: {
         to: externalLinks.reddit,
         icon: "fab fa-reddit-alien",
         color: "reddit",
         description: "General news",
-        default: "Reddit"
       },
       medium: {
         to: externalLinks.blog,
         icon: "fab fa-medium",
         color: "medium",
         description: "Check out the news",
-        default: "Medium"
       }
     }
   },
