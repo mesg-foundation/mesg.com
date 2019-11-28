@@ -1,7 +1,7 @@
 <template>
   <nav flex row wrap>
     <a
-      v-for="(item, i) in items"
+      v-for="(item, i) in list"
       :key="i"
       :href="item.to"
       target="_blank"
@@ -13,8 +13,7 @@
       <span class="circle" :class="item.color" flex align-center mr1>
         <i class="text-center" :class="item.icon"></i>
       </span>
-      <p v-if="displayTitle">{{ item.title }}</p>
-      <p v-else>{{ item.description }}</p>
+      <p>{{ item.description }}</p>
     </a>
   </nav>
 </template>
@@ -26,18 +25,6 @@ export default {
     list: {
       type: Array,
       required: true
-    },
-    displayTitle: {
-      type: Boolean,
-      default: false
-    }
-  },
-  computed: {
-    ...mapGetters({
-      _icons: "icons"
-    }),
-    items() {
-      return this.list.map(x => this._icons[x]);
     }
   }
 };

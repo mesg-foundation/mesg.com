@@ -129,7 +129,7 @@
             <p
               mb2
             >Join the community of builders and traders in our Telegram group, or head over to Discord to chat with the team.</p>
-            <ListSN :list="['telegram', 'discord']" />
+            <ListSN :list="[icons.telegram, icons.discord]" />
           </div>
         </div>
       </Container>
@@ -205,7 +205,8 @@ export default {
       links: "links",
       externalLinks: "externalLinks",
       articles: "articles",
-      exchanges: "exchanges"
+      exchanges: "exchanges",
+      icons: "icons"
     })
   }
 };

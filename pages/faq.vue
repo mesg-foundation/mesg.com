@@ -48,7 +48,7 @@
             >MESG is built by our global community. Join us on our forum and chats, or connect with us on social media.</p>
           </div>
           <div half>
-            <ListSN :list="['forum', 'twitter', 'discord', 'telegram']" />
+            <ListSN :list="[icons.forum, icons.twitter, icons.discord, icons.telegram]" />
           </div>
         </div>
       </Container>
@@ -92,7 +92,8 @@ export default {
   computed: mapGetters({
     links: "links",
     questions: "questions",
-    externalLinks: "externalLinks"
+    externalLinks: "externalLinks",
+    icons: "icons"
   })
 };
 </script>

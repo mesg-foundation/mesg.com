@@ -115,7 +115,7 @@
             <p
               mb2
             >MESG is open-source and is built by contributors from around the world. Join us in building the bridges between legacy and emerging technologies.</p>
-            <ListSN :list="['forum', 'discord']" />
+            <ListSN :list="[icons.forum, icons.discord]" />
           </div>
         </div>
       </Container>
@@ -177,7 +177,8 @@ export default {
     ...mapGetters({
       links: "links",
       usecases: "usecases",
-      externalLinks: "externalLinks"
+      externalLinks: "externalLinks",
+      icons: "icons"
     }),
     nextUsecases() {
       const index = this.usecases.findIndex(x => x.id === this.usecase.id) + 1;
