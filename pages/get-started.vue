@@ -33,7 +33,7 @@
       </Container>
       <div class="outer-background">
         <Container>
-          <Card v-for="(getstarted, i) in getstarted" :key="i" flex row align-center p2 mb2>
+          <Card v-for="(getstarted, i) in getstarted" :key="i" flex row p2 mb2>
             <div half pr1>
               <Tag class="tag-purple" mb1>{{ getstarted.tag}}</Tag>
               <h3 mb1>{{ getstarted.title}}</h3>
@@ -43,29 +43,31 @@
             <div flex column half pl1>
               <Table
                 :headers="[
-              { key: 'category', text: 'Category', value: 'category' },
-              { key: 'title', text: 'Title', value: 'title' },
-              { key: 'info', text: 'Info', value: 'info', align: 'right'},
-              { key: 'icon', text: 'Icon', value: 'icon', align: 'right'}              
+              { key: 'link', text: 'Link', value: 'link' },
+              { key: 'info', text: 'Info', value: 'info', align: 'right'}
             ]"
                 :items="getstarted.resources"
                 hideHeader
                 compact
+                flex
+                align-center
               >
-                <template v-slot:item_category="{ item }">
-                  <span class="circle" :class="item.color" flex align-center mr1>
-                    <i class="text-center" :class="item.category"></i>
-                  </span>
-                </template>
-                <template v-slot:item_title="{ item }">
-                  <nuxt-link v-if="item.to" :to="item.to">{{ item.title }}</nuxt-link>
-                  <a v-else :href="item.link" target="_blank">{{ item.title }}</a>
+                <template v-slot:item_link="{ item }">
+                  <div flex row align-center>
+                    <span class="circle" :class="item.color" flex align-center mr1>
+                      <i class="text-center" :class="item.category"></i>
+                    </span>
+                    <nuxt-link v-if="item.to" :to="item.to">{{ item.title }}</nuxt-link>
+                    <a v-else :href="item.link" target="_blank">{{ item.title }}</a>
+                  </div>
                 </template>
                 <template v-slot:item_info="{ item }">
-                  <span>{{ item.info }}</span>
-                </template>
-                <template v-slot:item_icon="{ item }">
-                  <i :class="item.icon"></i>
+                  <div flex row align-center>
+                    <span class="info">
+                      {{ item.info }}
+                      <i class="icon-right-table" :class="item.icon"></i>
+                    </span>
+                  </div>
                 </template>
               </Table>
             </div>
@@ -89,11 +91,10 @@
             </div>
             <ListSN
               :list="[
-                'forum',
-                'github',
-                'discord'
+                { ...icons.forum, description: 'Create a post on the Forum' },
+                { ...icons.github, description: 'Create an issue on Github' },
+                { ...icons.discord, description: 'Reach out to us on Discord' }
               ]"
-              class="list-social"
             />
           </div>
           <div flex column mobile-column half>
@@ -208,6 +209,7 @@ export default {
   ],
   computed: mapGetters({
     links: "links",
+    icons: "icons",
     externalLinks: "externalLinks",
     getstarted: "getstarted"
   })
@@ -231,7 +233,7 @@ export default {
   .separator {
     position: absolute;
     left: 50%;
-    height: 200px;
+    height: 264px;
     border: solid 0.5px $light-purple;
   }
   .circle {
@@ -241,12 +243,18 @@ export default {
     max-height: 50px;
     border-radius: 100%;
   }
+  .info {
+    font-size: 12px;
+    font-weight: bold;
+    color: $light-purple;
+    i {
+      color: $purple;
+      margin-left: calc(#{$margin} / 2);
+    }
+  }
 }
 
 #more-infos {
-  .list-social {
-    flex-direction: column;
-  }
   .btn-more-infos {
     text-align: right;
   }
@@ -284,7 +292,7 @@ export default {
     }
   }
   .content {
-    margin-left: calc(var(--margin) * 4);
+    margin-left: calc(#{$margin} * 4);
   }
   .icon {
     text-align: right;
