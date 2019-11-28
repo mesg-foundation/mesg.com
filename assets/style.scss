@@ -216,6 +216,24 @@ a {
   background-color: rgba(18, 16, 14, 0.1);
 }
 
+/*secondary MESG colors*/
+.orange {
+  color: $orange;
+  background-color: $light-orange;
+}
+.blue {
+  color: $blue;
+  background-color: $light-blue;
+}
+.green {
+ color: $green;
+ background-color: $light-green;
+}
+.purple {
+  color: $electric-purple;
+  background-color: $light-electric-purple;
+}
+
 
 /* Design styles */
 img {
