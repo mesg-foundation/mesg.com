@@ -11,17 +11,26 @@
     </Header>
 
     <section id="steps" mb3>
-      <Container flex row space-between wrap>
+      <Container flex row space-between align-center>
         <div flex align-center>
-          <div class="number" mr1></div>
+          <div class="step-number" flex align-center mr1>
+            <img src="~/assets/load-1.svg" />
+            <span>1</span>
+          </div>
           <h4>Install and run Engine</h4>
         </div>
         <div flex align-center>
-          <div class="number" mr1></div>
+          <div class="step-number" flex align center mr1>
+            <img src="~/assets/load-2.svg" />
+            <span>2</span>
+          </div>
           <h4>Build or reuse services</h4>
         </div>
         <div flex align-center>
-          <div class="number" mr1></div>
+          <div class="step-number" flex align-center mr1>
+            <img src="~/assets/load-3.svg" />
+            <span>3</span>
+          </div>
           <h4>Create a process</h4>
         </div>
       </Container>
@@ -78,17 +87,17 @@
 
     <section id="more-infos" mb3>
       <Container>
-        <div flex row>
+        <div flex row fill-height>
           <div flex column mobile-column half>
-            <div mb2>
-              <div flex row space-between align-center>
-                <h3 mb1>Need help?</h3>
-                <nuxt-link secondary :to="links.faq" class="btn-more-infos">
-                  <i class="fal fa-long-arrow-alt-right" mr1></i>Help center
-                </nuxt-link>
-              </div>
-              <p>Browse the Forum and Github for answers, and create a new issue if you don’t find your solution. Our team is also available for help on Discord.</p>
+            <div class="title-link" flex row space-between align-center mb1>
+              <h3>Need help?</h3>
+              <nuxt-link :to="links.faq">
+                <i class="fal fa-long-arrow-alt-right"></i>Help center
+              </nuxt-link>
             </div>
+            <p
+              mb2
+            >Browse the Forum and Github for answers, and create a new issue if you don’t find your solution. Our team is also available for help on Discord.</p>
             <ListSN
               :list="[
                 { ...icons.forum, description: 'Create a post on the Forum' },
@@ -98,36 +107,31 @@
             />
           </div>
           <div flex column mobile-column half>
-            <div mb2>
-              <div flex row space-between align-center>
-                <h3 mb1>Tutorials</h3>
-                <a
-                  secondary
-                  :href="externalLinks.getStarted"
-                  target="_blank"
-                  class="btn-more-infos"
-                >
-                  <i class="fal fa-external-link-alt" mr1></i>See all
-                </a>
-              </div>
-              <p>Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
-              <Table
-                :headers="[
+            <div class="title-link" flex row space-between align-center mb1>
+              <h3>Tutorials</h3>
+              <a :href="externalLinks.getStarted" target="_blank">
+                <i class="fal fa-external-link-alt"></i>See all
+              </a>
+            </div>
+            <p
+              mb2
+            >Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
+            <Table
+              :headers="[
               { key: 'title', text: 'Title', value: 'title' },
               { key: 'icon', text: 'Icon', value: 'icon', align: 'right'}
             ]"
-                :items="tutorials"
-                hideHeader
-                compact
-              >
-                <template v-slot:item_title="{ item }">
-                  <a :href="item.tutorial.link" target="_blank">{{ item.tutorial.title }}</a>
-                </template>
-                <template v-slot:item_title="{ item }">
-                  <i class="fal fa-external-link-alt"></i>
-                </template>
-              </Table>
-            </div>
+              :items="tutorials"
+              hideHeader
+              compact
+            >
+              <template v-slot:item_title="{ item }">
+                <a :href="item.to" target="_blank">{{ item.title }}</a>
+              </template>
+              <template v-slot:item_icon="{ item }">
+                <i class="fal fa-external-link-alt"></i>
+              </template>
+            </Table>
           </div>
         </div>
       </Container>
@@ -242,6 +246,25 @@ export default {
   background-color: red;
 }
 
+#steps {
+  .step-number {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    img {
+      max-width: 50px;
+      position: absolute;
+    }
+    span {
+      color: $electric-purple;
+      font-size: 28px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+}
+
 #resources {
   .tag-purple {
     background-color: $light-electric-purple;
@@ -280,8 +303,16 @@ export default {
 }
 
 #more-infos {
-  .btn-more-infos {
-    text-align: right;
+  .title-link {
+    a {
+      text-align: right;
+      i {
+        margin-right: calc(#{$margin} / 2);
+      }
+    }
+  }
+  .fa-external-link-alt {
+    color: $purple;
   }
 }
 
