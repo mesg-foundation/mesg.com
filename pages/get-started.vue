@@ -29,7 +29,7 @@
 
     <section id="resources" mb3>
       <Container class="intro text-center">
-        <h2 mb2>Lorem ipsum dolor</h2>
+        <h2>Lorem ipsum dolor</h2>
       </Container>
       <div class="outer-background">
         <Container>
@@ -53,7 +53,7 @@
                 align-center
               >
                 <template v-slot:item_link="{ item }">
-                  <div flex row align-center>
+                  <div class="link-resource" flex row align-center>
                     <span class="circle" :class="item.color" flex align-center mr1>
                       <i class="text-center" :class="item.category"></i>
                     </span>
@@ -62,8 +62,8 @@
                   </div>
                 </template>
                 <template v-slot:item_info="{ item }">
-                  <div flex row align-center>
-                    <span class="info">
+                  <div class="info" flex row align-center>
+                    <span>
                       {{ item.info }}
                       <i class="icon-right-table" :class="item.icon"></i>
                     </span>
@@ -111,6 +111,22 @@
                 </a>
               </div>
               <p>Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
+              <Table
+                :headers="[
+              { key: 'title', text: 'Title', value: 'title' },
+              { key: 'icon', text: 'Icon', value: 'icon', align: 'right'}
+            ]"
+                :items="tutorials"
+                hideHeader
+                compact
+              >
+                <template v-slot:item_title="{ item }">
+                  <a :href="item.tutorial.link" target="_blank">{{ item.tutorial.title }}</a>
+                </template>
+                <template v-slot:item_title="{ item }">
+                  <i class="fal fa-external-link-alt"></i>
+                </template>
+              </Table>
             </div>
           </div>
         </div>
@@ -211,7 +227,8 @@ export default {
     links: "links",
     icons: "icons",
     externalLinks: "externalLinks",
-    getstarted: "getstarted"
+    getstarted: "getstarted",
+    tutorials: "tutorials"
   })
 };
 </script>
@@ -243,13 +260,21 @@ export default {
     max-height: 50px;
     border-radius: 100%;
   }
+  .link-resource {
+    width: auto;
+    margin: 0;
+  }
   .info {
-    font-size: 12px;
-    font-weight: bold;
-    color: $light-purple;
-    i {
-      color: $purple;
-      margin-left: calc(#{$margin} / 2);
+    width: auto;
+    margin: 0;
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: $light-purple;
+      i {
+        color: $purple;
+        margin-left: calc(#{$margin} / 2);
+      }
     }
   }
 }

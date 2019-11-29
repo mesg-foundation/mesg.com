@@ -989,8 +989,8 @@ export const getters = {
           {
             category: "fal fa-laptop-code",
             color: "green",
-            title: "Email service",
-            link: tutorials.emailService,
+            title: tutorials.emailService.title,
+            link: tutorials.emailService.to,
             info: "Tutorial",
             icon: "fal fa-external-link-alt"
           }
@@ -1020,8 +1020,8 @@ export const getters = {
           {
             category: "fal fa-laptop-code",
             color: "green",
-            title: "ERC-20 notifier",
-            link: tutorials.erc20Notifier,
+            title: tutorials.erc20Notifier.title,
+            link: tutorials.erc20Notifier.to,
             info: "Tutorial",
             icon: "fal fa-external-link-alt"
           }
@@ -1103,9 +1103,18 @@ export const getters = {
 
   tutorials() {
     return {
-      emailService: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/send-emails-with-sendgrid.html",
-      erc20Service: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/listen-for-transfers-of-an-ethereum-erc20-token.html",
-      erc20Notifier: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/receive-email-when-there-is-an-erc20-transfer.html"
+      emailService: {
+        title: "Email service",
+        to: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/send-emails-with-sendgrid.html"
+      },
+      erc20Service: {
+        title: "ERC-20 service",
+        to: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/listen-for-transfers-of-an-ethereum-erc20-token.html"
+      },
+      erc20Notifier: {
+        title: "ERC-20 notifier",
+        to: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/receive-email-when-there-is-an-erc20-transfer.html"
+      }
     }
   },
 
