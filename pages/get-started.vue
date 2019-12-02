@@ -91,7 +91,7 @@
           <div flex column mobile-column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Need help?</h3>
-              <nuxt-link :to="links.faq">
+              <nuxt-link :to="links.faq" class="link">
                 <i class="fal fa-long-arrow-alt-right"></i>Help center
               </nuxt-link>
             </div>
@@ -109,7 +109,7 @@
           <div flex column mobile-column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Tutorials</h3>
-              <a :href="externalLinks.getStarted" target="_blank">
+              <a :href="externalLinks.tutorials" target="_blank" class="link">
                 <i class="fal fa-external-link-alt"></i>See all
               </a>
             </div>

@@ -1105,15 +1105,23 @@ export const getters = {
     return {
       emailService: {
         title: "Email service",
-        to: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/send-emails-with-sendgrid.html"
+        to: "https://blog.mesg.com/send-emails-with-sendgrid/"
       },
       erc20Service: {
         title: "ERC-20 service",
-        to: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/listen-for-transfers-of-an-ethereum-erc20-token.html"
+        to: "https://blog.mesg.com/listen-for-transfers-of-an-ethereum-erc20-token/"
       },
       erc20Notifier: {
         title: "ERC-20 notifier",
-        to: "https://docs.mesg.com/tutorials/erc20-transfer-notifications/receive-email-when-there-is-an-erc20-transfer.html"
+        to: "https://blog.mesg.com/receive-email-when-there-is-an-erc20-transfer/"
+      },
+      networkEngine: {
+        title: "Create a network with multiple Engines",
+        to: "https://blog.mesg.com/tutorial-create-a-network-with-multiple-engines/"
+      },
+      processEmailerc20transfer: {
+        title: "Create a process to receive an email when an ERC-20 transfer occurs",
+        to: "https://blog.mesg.com/create-a-process-to-receive-an-email-when-an-erc20-transfer-occurs/"
       }
     }
   },
@@ -1138,7 +1146,7 @@ export const getters = {
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/",
-      tutorials: "https://docs.mesg.com/tutorials/"
+      tutorials: "https://blog.mesg.com/tag/tutorials/"
     }
   },
 
