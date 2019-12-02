@@ -163,10 +163,6 @@ ul {
       text-align: left;
       padding: 0.75em 2em;
       color: var(--text-color);
-      border-bottom: dashed 1px var(--light-purple);
-      &:last-child {
-        border-bottom: none;
-      }
       &:hover {
         color: var(--purple);
         font-weight: 600;
@@ -269,14 +265,10 @@ ul {
       padding: calc(var(--margin) / 2);
       padding-left: 0;
       padding-right: 0;
-      border-bottom: dashed 1px var(--light-purple);
       &:hover {
         color: var(--purple);
         font-weight: 600;
         transition: 0.1s ease;
-      }
-      &:last-child {
-        border-bottom: none;
       }
     }
   }
@@ -313,9 +305,6 @@ ul {
     }
   }
   .sub-menu {
-    a:last-child {
-      border-bottom: dashed 1px var(--light-purple);
-    }
   }
   .btn--primary {
     line-height: 50px;
