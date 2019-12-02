@@ -3,7 +3,7 @@
     <Container>
       <Card purple p2>
         <div flex row align-center space-between mobile-column>
-          <slot name="icon" />
+          <i :class="icon"></i>
           <div class="content">
             <h2>{{ title }}</h2>
             <p v-if="description" mt1>{{ description }}</p>
@@ -45,6 +45,9 @@ export default {
     description: {
       type: String
     },
+    icon: {
+      type: String
+    },
     links: {
       type: Array,
       default: () => []
@@ -58,23 +61,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2,
-p {
-  color: var(--white);
-}
-
 #cta {
   position: relative;
-}
-
-#cta::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 100px);
-  background: var(--light-background);
-  transform: translateY(30%) skewY(-8deg);
-  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    background: var(--light-background);
+    transform: translateY(30%) skewY(-8deg);
+    z-index: -1;
+  }
+  h2,
+  p {
+    color: var(--white);
+  }
+  i {
+    font-size: 100px;
+    color: $electric-purple;
+  }
 }
 
 @media only screen and (min-width: $huge-breakpoint) {

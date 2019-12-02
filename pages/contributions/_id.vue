@@ -94,6 +94,7 @@
     </section>
 
     <CTA
+      icon="fal fa-file-alt"
       title="Add a contribution"
       description="Have a quality contribution? Awesome! Send it our way, and you could be eligible for a reward. MESG thrives on community support and collaborations."
       mb1

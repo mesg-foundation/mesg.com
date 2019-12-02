@@ -57,6 +57,7 @@
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Contact us"
       description="Aligned with our vision and goals? We’d love to connect. Drop us a line and we’ll get back to you."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"

@@ -177,15 +177,12 @@
     </section>
 
     <CTA
+      icon="fal fa-book"
       title="Get started"
       description="Don’t know where to begin? Get going with the quickstart guide on our documentation."
       :links="[{ title: 'Quick start' , href: externalLinks.getStarted }]"
       mb1
-    >
-      <template v-slot:icon>
-        <i class="fal fa-book icon-cta"></i>
-      </template>
-    </CTA>
+    />
   </div>
 </template>
 
@@ -353,11 +350,6 @@ export default {
   .icon {
     text-align: right;
   }
-}
-
-.icon-cta {
-  font-size: 100px;
-  color: $electric-purple;
 }
 </style>
 

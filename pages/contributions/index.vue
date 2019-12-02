@@ -226,6 +226,7 @@
     </section>
 
     <CTA
+      icon="fal fa-file-alt"
       title="Connect with us"
       description="Want to share your contribution directly, or did your post slip under the radar? Let us know! We’d love to check out your work."
       :links="[{ title: 'Let us know', href: externalLinks.contact }]"

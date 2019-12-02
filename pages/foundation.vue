@@ -117,6 +117,7 @@
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Aligned with our purpose?"
       description="Reach out! We love helping the community find new ways to build powerful solutions."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
