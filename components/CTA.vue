@@ -68,13 +68,13 @@ export default {
     position: absolute;
     width: 100%;
     height: calc(100% + 100px);
-    background: var(--light-background);
+    background: $light-background;
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
   h2,
   p {
-    color: var(--white);
+    color: $white;
   }
   i {
     font-size: 100px;
@@ -83,19 +83,23 @@ export default {
 }
 
 @media only screen and (min-width: $huge-breakpoint) {
-  #cta::before {
+  #cta:before {
     transform: translateY(30%) skewY(-5deg);
   }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  #cta::before {
+  #cta:before {
     height: calc(100% + 80px);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   .content {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
+  }
+  i {
+    width: 100%;
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>
