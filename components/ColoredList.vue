@@ -1,6 +1,6 @@
 <template>
-  <ul mb2>
-    <li mb1 v-for="(item, i) in items" :key="i">
+  <ul>
+    <li v-for="(item, i) in items" :key="i">
       <span :style="`background-color: ${item.color}`"></span>
       {{ item.title }}
     </li>
@@ -18,12 +18,8 @@ export default {
 };
 </script>
 
-<style scoped>
-ul {
-  list-style: none;
-}
-
-li span {
+<style lang="scss" scoped>
+span {
   width: 20px;
   height: 20px;
   border-radius: 3px;

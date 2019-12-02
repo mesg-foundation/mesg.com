@@ -89,7 +89,7 @@ export default {
 
 <style lang="scss" scoped>
 #footer {
-  padding: calc(var(--margin) * 3);
+  padding: calc(var(--margin) * 2);
   width: 100%;
   background-color: var(--light-background);
 }
@@ -137,29 +137,34 @@ nav {
   }
 }
 
-li {
-  height: fit-content;
-  .category {
-    font-size: 17px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--title-color);
-    display: inline;
-  }
-  a {
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    padding: 0;
-    margin-bottom: var(--margin);
-    color: var(--text-color);
+ul {
+  list-style: none;
+  margin-left: 0;
+  li {
+    height: fit-content;
+    margin-bottom: 0;
+    .category {
+      font-size: 17px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--title-color);
+      display: inline;
+    }
+    a {
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      padding: 0;
+      margin-bottom: calc(var(--margin) / 2);
+      color: var(--text-color);
+    }
   }
 }
 
@@ -178,7 +183,7 @@ li {
     margin-top: calc(var(--margin) * 2);
   }
   li {
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin) !important;
   }
 }
 </style>

@@ -45,7 +45,7 @@
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description" />
             <span spacer />
-            <List :items="product.features.secondary" />
+            <List :items="product.features.secondary" mb2 />
             <Button outline :to="links[product.id]">{{ product.action }}</Button>
           </Card>
         </div>
