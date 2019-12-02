@@ -11,23 +11,23 @@
     </Header>
 
     <section id="steps" mb3>
-      <Container flex row space-between align-center>
-        <div flex align-center>
-          <div class="step-number" flex align-center mr1>
+      <Container flex row space-between mobile-column align-center>
+        <div class="step-number" flex align-center>
+          <div flex align-center mr1>
             <img src="~/assets/load-1.svg" />
             <span>1</span>
           </div>
           <h4>Install and run Engine</h4>
         </div>
-        <div flex align-center>
-          <div class="step-number" flex align center mr1>
+        <div class="step-number" flex align-center>
+          <div flex align center mr1>
             <img src="~/assets/load-2.svg" />
             <span>2</span>
           </div>
           <h4>Build or reuse services</h4>
         </div>
-        <div flex align-center>
-          <div class="step-number" flex align-center mr1>
+        <div class="step-number last" flex align-center>
+          <div flex align-center mr1>
             <img src="~/assets/load-3.svg" />
             <span>3</span>
           </div>
@@ -38,18 +38,26 @@
 
     <section id="resources" mb3>
       <Container class="intro text-center">
-        <h2>Lorem ipsum dolor</h2>
+        <h2>Pute pupupute</h2>
       </Container>
       <div class="outer-background">
         <Container>
-          <Card v-for="(getstarted, i) in getstarted" :key="i" flex row p2 mb2>
-            <div half pr1>
+          <Card
+            v-for="(getstarted, i) in getstarted"
+            :key="i"
+            class="card-getstarted"
+            flex
+            row
+            mobile-column
+            p2
+          >
+            <div half class="getstarted-content" pr1>
               <Tag class="tag-purple" mb1>{{ getstarted.tag}}</Tag>
               <h3 mb1>{{ getstarted.title}}</h3>
               <p class="test" v-html="getstarted.description"></p>
             </div>
             <span class="separator"></span>
-            <div flex column half pl1>
+            <div flex column half class="getstarted-table" pl1>
               <Table
                 :headers="[
               { key: 'link', text: 'Link', value: 'link' },
@@ -87,8 +95,8 @@
 
     <section id="more-infos" mb3>
       <Container>
-        <div flex row fill-height>
-          <div flex column mobile-column half>
+        <div flex row mobile-column fill-height>
+          <div flex column half class="help">
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Need help?</h3>
               <nuxt-link :to="links.faq" class="link">
@@ -106,7 +114,7 @@
               ]"
             />
           </div>
-          <div flex column mobile-column half>
+          <div flex column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Tutorials</h3>
               <a :href="externalLinks.tutorials" target="_blank" class="link">
@@ -114,7 +122,7 @@
               </a>
             </div>
             <p
-              mb2
+              mb1
             >Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
             <Table
               :headers="[
@@ -139,7 +147,7 @@
 
     <section id="links-card" mb3>
       <Container>
-        <div flex row>
+        <div flex row mobile-column>
           <a :href="externalLinks.github" target="_blank" half fill-height>
             <Card bordered p2 class="open-source">
               <span flex align-center>
@@ -235,34 +243,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.number {
-  min-width: 50px;
-  min-height: 50px;
-  max-width: 50px;
-  max-height: 50px;
-  background-color: red;
-}
-
 #steps {
   .step-number {
-    width: 50px;
-    height: 50px;
-    max-width: 50px;
-    max-height: 50px;
-    img {
+    div {
+      width: 50px;
+      height: 50px;
       max-width: 50px;
-      position: absolute;
-    }
-    span {
-      color: $electric-purple;
-      font-size: 28px;
-      line-height: 50px;
-      text-align: center;
+      max-height: 50px;
+      img {
+        max-width: 50px;
+        position: absolute;
+      }
+      span {
+        color: $electric-purple;
+        font-size: 28px;
+        line-height: 50px;
+        text-align: center;
+      }
     }
   }
 }
 
 #resources {
+  .card-getstarted {
+    margin-bottom: calc(#{$margin} * 2);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   .tag-purple {
     background-color: $light-electric-purple;
     color: $electric-purple;
@@ -349,6 +357,45 @@ export default {
   }
   .icon {
     text-align: right;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  #steps {
+    .step-number {
+      width: 100%;
+      margin-bottom: $margin;
+    }
+    .last {
+      margin-bottom: 0;
+    }
+  }
+  #resources {
+    .getstarted-content {
+      padding-left: 0;
+      margin-bottom: calc(#{$margin} * 2);
+    }
+    .getstarted-table {
+      padding-left: 0 !important;
+      padding-right: 0;
+    }
+    .separator {
+      display: none;
+    }
+  }
+  #more-infos {
+    .help {
+      margin-bottom: calc(#{$margin} * 2);
+    }
+  }
+  #links-card {
+    .open-source {
+      margin-bottom: calc(#{$margin} * 2);
+    }
+    .content {
+      margin-left: 0;
+      margin-top: calc(#{$margin} * 4);
+    }
   }
 }
 </style>
