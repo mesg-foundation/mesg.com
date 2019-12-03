@@ -956,49 +956,42 @@ export const getters = {
         icon: "fab fa-twitter",
         color: "twitter",
         description: "Engage with us",
-        title: "Twitter"
       },
       github: {
         to: externalLinks.github,
         icon: "fab fa-github",
         color: "github",
         description: "Contribute",
-        title: "Github"
       },
       telegram: {
         to: externalLinks.telegram,
         icon: "fab fa-telegram-plane",
         color: "telegram",
         description: "Community Chat",
-        title: "Telegram"
       },
       forum: {
         to: externalLinks.forum,
         icon: "fas fa-comments",
         color: "forum",
         description: "Help & Guidance",
-        title: "Forum"
       },
       discord: {
         to: externalLinks.discord,
         icon: "fab fa-discord",
         color: "discord",
         description: "Chat with us",
-        title: "Discord"
       },
       reddit: {
         to: externalLinks.reddit,
         icon: "fab fa-reddit-alien",
         color: "reddit",
         description: "General news",
-        title: "Reddit"
       },
       medium: {
         to: externalLinks.blog,
         icon: "fab fa-medium",
         color: "medium",
         description: "Check out the news",
-        title: "Medium"
       }
     }
   },
