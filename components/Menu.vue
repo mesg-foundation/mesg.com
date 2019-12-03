@@ -97,6 +97,7 @@ nav {
   }
   li {
     margin-right: 0;
+    margin-bottom: 0;
     font-size: 15px;
     height: 80px;
   }
@@ -110,14 +111,18 @@ nav {
       opacity: 0.7;
       transition: 0.1s ease;
     }
+    i {
+      font-size: 12px;
+      margin-left: calc(var(--margin) / 4);
+    }
   }
   .btn--small {
     padding: 0.45em;
   }
-  .top-menu i {
-    font-size: 12px;
-    margin-left: calc(var(--margin) / 4);
-  }
+}
+ul {
+  list-style: none;
+  margin-left: 0;
 }
 
 //drop-down menu//
@@ -154,7 +159,6 @@ nav {
     }
     a {
       font-weight: normal;
-      height: 50px;
       display: block;
       text-align: left;
       padding: 0.75em 2em;
@@ -233,6 +237,7 @@ nav {
       border-left: 10px solid transparent;
     }
     li {
+      margin-right: var(--margin);
       height: fit-content;
     }
     li > a:not(.btn--primary) {
@@ -292,15 +297,18 @@ nav {
     align-items: left;
   }
   li {
-    margin-bottom: var(--margin);
+    margin-right: 0;
+    margin-bottom: var(--margin) !important;
     a:not(.btn--primary) {
       line-height: 40px;
       padding: 0;
     }
   }
+  .sub-menu {
+  }
   .btn--primary {
     line-height: 50px;
-    margin-top: calc(var(--margin) * 2);
+    margin-top: var(--margin);
   }
 }
 </style>

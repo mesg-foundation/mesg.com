@@ -37,14 +37,13 @@
           <div half>
             <h3 mb1>Benefits</h3>
             <ul mb2>
-              <li v-for="(benefit, i) in usecase.benefits" :key="i" mb1>{{ benefit }}</li>
+              <li v-for="(benefit, i) in usecase.benefits" :key="i">{{ benefit }}</li>
             </ul>
             <h3 mb1>Opportunities</h3>
             <ul>
               <li
                 v-for="(opportunitie, i) in usecase.opportunities"
                 :key="i"
-                mb1
                 class="opportunitie"
               >{{ opportunitie }}</li>
             </ul>
@@ -203,31 +202,18 @@ export default {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul {
-  list-style: none;
-}
-li {
-  font-weight: normal;
-}
-li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(var(--margin) - 5px);
-  background-color: var(--deep-purple);
-  border-radius: 100%;
-  display: inline-block;
-}
-
 li.opportunitie:last-child {
   margin-bottom: 0 !important;
 }
-.companies li::before {
-  display: none;
+.companies {
+  list-style: none;
+  margin-left: 0;
+  li {
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
-.companies li {
-  text-align: center;
-}
+
 .company {
   height: 30px;
   width: auto;
@@ -248,11 +234,13 @@ li.opportunitie:last-child {
   .intro {
     padding-bottom: 0;
   }
-  #usecase-description .illus {
-    margin-bottom: calc(var(--margin) * 2) !important;
-  }
-  #usecase-description ul:last-child {
-    margin-bottom: 0 !important;
+  #usecase-description {
+    .illus {
+      margin-bottom: calc(var(--margin) * 2) !important;
+    }
+    ul:last-child {
+      margin-bottom: 0 !important;
+    }
   }
   .companies li {
     margin-bottom: var(--margin);

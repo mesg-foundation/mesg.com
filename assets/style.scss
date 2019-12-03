@@ -116,24 +116,15 @@ p {
 }
 
 ul {
-  list-style: none;
-}
-li {
-  font-size: 17px;
-  font-weight: normal;
-  color: $text-color;
-}
-.list::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(#{$margin} - 5px);
-  background-color: $deep-purple;
-  border-radius: 100%;
-  display: inline-block;
-}
-.list p {
-  margin-left:22px;
+  list-style: disc;
+  margin-left: $margin;
+  li {
+    color: $text-color;
+    margin-bottom: calc(#{$margin} /2);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 code {

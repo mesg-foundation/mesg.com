@@ -5,10 +5,10 @@
       :key="i"
       :href="item.to"
       target="_blank"
+      class="link-secondary"
       flex
       align-center
       half
-      mb1
     >
       <span class="circle" :class="item.color" flex align-center mr1>
         <i class="text-center" :class="item.icon"></i>
@@ -32,19 +32,19 @@ export default {
 
 <style lang="scss" scoped>
 a {
-  margin-right: var(--margin);
-}
-a:hover {
-  opacity: 0.7;
-  transition: 0.1s ease;
-}
-
-.circle {
-  min-width: 50px;
-  max-width: 50px;
-  min-height: 50px;
-  max-height: 50px;
-  border-radius: 100%;
+  margin-top: calc(#{$margin} / 2);
+  margin-bottom: calc(#{$margin} / 2);
+  &hover {
+    opacity: 0.7;
+    transition: 0.1s ease;
+  }
+  .circle {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 100%;
+  }
 }
 
 @media only screen and (max-width: $mobile-only) {

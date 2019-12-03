@@ -212,12 +212,12 @@
           <div half>
             <ListSN
               :list="[
-                { ...icons.twitter, description: 'Twitter' },
-                { ...icons.github, description: 'Github' },
-                { ...icons.telegram, description: 'Telegram' },
-                { ...icons.forum, description: 'Forum' },
-                { ...icons.discord, description: 'Discord' },
-                { ...icons.reddit, description: 'Reddit' },
+              { ...icons.twitter, description: 'Twitter' },
+              { ...icons.github, description: 'Github' },
+              { ...icons.telegram, description: 'Telegram' },
+              { ...icons.forum, description: 'Forum' },
+              { ...icons.discord, description: 'Discord' },
+              { ...icons.reddit, description: 'Reddit' }
               ]"
             />
           </div>
@@ -345,6 +345,7 @@ export default {
     }
   }
   .preview {
+    min-height: 450px;
     max-height: 500px;
     overflow-y: auto;
     background-color: var(--light-background);
@@ -379,16 +380,6 @@ export default {
 #help {
   hr {
     width: auto;
-  }
-  li:before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    margin-right: calc(var(--margin) - 5px);
-    background-color: var(--deep-purple);
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 
