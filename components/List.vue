@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li mb1 v-for="(item, i) in items" :key="i">
+    <li mb1 v-for="(item, i) in items" :key="i" flex row align-center>
       <img mr1 v-if="item.src" :src="item.src" :alt="item.title" />
       {{ item.title }}
     </li>
@@ -29,7 +29,7 @@ ul {
     img {
       height: 50px;
       width: 50px;
-      vertical-align: middle;
+      max-width: 50px;
     }
   }
 }
