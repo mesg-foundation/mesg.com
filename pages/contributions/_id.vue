@@ -11,19 +11,19 @@
       </template>
       <div class="details">
         <Tag mr2>{{ contribution.category }}</Tag>
-        <p v-if="contribution.profile">
+        <span v-if="contribution.profile" flex row>
           <i class="fas fa-user-circle"></i>
           <a :href="contribution.profile" target="_blank">{{ contribution.name }}</a>
-        </p>
-        <p v-else>
+        </span>
+        <span v-else flex row>
           <i class="fas fa-user-circle"></i>
           {{ contribution.name }}
-        </p>
+        </span>
       </div>
       <template v-slot:picture>
         <Card class="preview" p2 mb1>
           <div flex mobile-only-column align-center wrap>
-            <p class="infos text-right">Share this contribution</p>
+            <span class="infos text-right">Share this contribution</span>
             <Tweetbtn
               class="tweet-btn"
               v-if="contribution.rewarded"
@@ -192,13 +192,13 @@ export default {
   max-width: 60px;
   max-height: 60px;
   border-radius: 3px;
-  background-color: var(--gold);
-  margin-right: var(--margin);
+  background-color: $gold;
+  margin-right: $margin;
   i {
     text-align: center;
     margin-right: 0;
     font-size: 34px;
-    color: var(--white);
+    color: $white;
   }
 }
 .reward-label {
@@ -208,11 +208,13 @@ export default {
 
 .details {
   display: flex;
-  p {
+  span {
     i {
-      margin-right: calc(var(--margin) / 2);
-      font-size: 18px;
-      color: var(--light-purple);
+      min-width: 18px;
+      max-width: 18px;
+      margin-top: 0.1em;
+      margin-right: calc(#{$margin} / 2);
+      color: $light-purple;
     }
   }
 }
@@ -228,14 +230,14 @@ export default {
     text-align: center;
   }
   .edit {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 @media only screen and (max-width: $mobile-only) {
   .preview {
     .tweet-btn {
       margin-left: 0 !important;
-      margin-top: var(--margin);
+      margin-top: $margin;
     }
     p {
       text-align: center;
