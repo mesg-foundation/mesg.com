@@ -110,7 +110,7 @@
             >Join us and the global community of builders on our mission to bridge the gaps between legacy and emerging technologies.</p>
           </div>
           <div half>
-            <ListSN :list="['twitter', 'discord', 'telegram', 'forum']" />
+            <ListSN :list="[icons.twitter, icons.discord, icons.telegram, icons.forum]" />
           </div>
         </div>
       </Container>
@@ -167,7 +167,8 @@ export default {
     team: "team",
     links: "links",
     externalLinks: "externalLinks",
-    articles: "articles"
+    articles: "articles",
+    icons: "icons"
   })
 };
 </script>

@@ -50,7 +50,7 @@
             <p
               mb2
             >MESG is built for and by the community. Join our chats, learn more on our blog, or help us build on Github.</p>
-            <ListSN :list="['twitter', 'telegram', 'github', 'medium']" />
+            <ListSN :list="[icons.twitter, icons.telegram, icons.github, icons.medium]" />
           </div>
         </div>
       </Container>
@@ -93,7 +93,8 @@ export default {
     ...mapGetters({
       links: "links",
       externalLinks: "externalLinks",
-      roadmap: "roadmap"
+      roadmap: "roadmap",
+      icons: "icons"
     })
   }
 };

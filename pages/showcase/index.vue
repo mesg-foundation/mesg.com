@@ -79,7 +79,7 @@
             <p
               mb2
             >MESG is open-source and is community-driven. Join us in building the bridge between legacy and emerging technologies.</p>
-            <ListSN :list="['forum', 'discord']" />
+            <ListSN :list="[icons.forum, icons.discord]" />
           </div>
         </div>
       </Container>
@@ -127,7 +127,8 @@ export default {
   computed: mapGetters({
     links: "links",
     externalLinks: "externalLinks",
-    usecases: "usecases"
+    usecases: "usecases",
+    icons: "icons"
   })
 };
 </script>
