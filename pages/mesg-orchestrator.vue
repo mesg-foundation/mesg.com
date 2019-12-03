@@ -61,6 +61,7 @@
     </section>
 
     <CTA
+      icon="fal fa-book"
       title="Build faster with MESG Orchestrator"
       description="Start creating feature-rich software today with a simple process file."
       mb1

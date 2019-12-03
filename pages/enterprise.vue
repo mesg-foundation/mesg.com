@@ -75,6 +75,7 @@
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Custom solutions"
       description="MESG offers high levels of customizability and control. We can create custom solutions for you regardless of what’s in your software stack."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
