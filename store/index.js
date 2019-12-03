@@ -937,7 +937,7 @@ export const getters = {
       {
         tag: "Install",
         title: "Engine",
-        description: "The Engine is a message broker and common event channel built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the Engine, open a terminal and enter in <code>npm install - g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
+        description: "The Engine is a message broker and common event channel built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the Engine, open a terminal and enter in <code>npm install -g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
         resources: [
           {
             category: "fal fa-question",
@@ -960,7 +960,7 @@ export const getters = {
       {
         tag: "Build",
         title: "Service",
-        description: "Services are discrete units of functionality that are used to bridge to external technologies or complete a specific function. They can be remotely accessed, and independently acted upon and updated.<br/><br/>Start building a new service by running: <code>mesg - cli service: init</code> or reuse existing services from the Marketplace.",
+        description: "Services are discrete units of functionality that are used to bridge to external technologies or complete a specific function. They can be remotely accessed, and independently acted upon and updated.<br/><br/>Start building a new service by running: <code>mesg-cli service:init</code> or reuse existing services from the Marketplace.",
         resources: [
           {
             category: "fal fa-question",
@@ -999,7 +999,7 @@ export const getters = {
       {
         tag: "Create",
         title: "Process",
-        description: "A process is a step-by-step description of business logic that combines the events and tasks of services to form applications.<br/><br/>All interaction between services is managed by the Engine, enabling easy scalability. Start creating a process by running: <code>mesg - cli process: create</code>",
+        description: "A process is a step-by-step description of business logic that combines the events and tasks of services to form applications.<br/><br/>All interaction between services is managed by the Engine, enabling easy scalability. Start creating a process by running: <code>mesg-cli process:create</code>",
         resources: [
           {
             category: "fal fa-question",
