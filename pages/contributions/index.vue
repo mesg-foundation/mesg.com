@@ -214,14 +214,13 @@
           <div half>
             <ListSN
               :list="[
-                'twitter',
-                'github',
-                'telegram',
-                'forum',
-                'discord',
-                'reddit'
+              { ...icons.twitter, description: 'Twitter' },
+              { ...icons.github, description: 'Github' },
+              { ...icons.telegram, description: 'Telegram' },
+              { ...icons.forum, description: 'Forum' },
+              { ...icons.discord, description: 'Discord' },
+              { ...icons.reddit, description: 'Reddit' }
               ]"
-              display-title
             />
           </div>
         </div>
@@ -287,7 +286,8 @@ export default {
       links: "links",
       externalLinks: "externalLinks",
       community: "community",
-      forms: "forms"
+      forms: "forms",
+      icons: "icons"
     }),
     contributions() {
       return Object.keys(this._contributions)
@@ -354,6 +354,7 @@ export default {
     }
   }
   .preview {
+    min-height: 450px;
     max-height: 500px;
     overflow-y: auto;
     background-color: var(--light-background);
@@ -398,16 +399,6 @@ export default {
 #help {
   hr {
     width: auto;
-  }
-  li:before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    margin-right: calc(var(--margin) - 5px);
-    background-color: var(--deep-purple);
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 

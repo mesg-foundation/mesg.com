@@ -54,7 +54,7 @@
             >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
           </div>
           <div half>
-            <ListSN :list="['github', 'forum']" />
+            <ListSN :list="[icons.github, icons.forum]" />
           </div>
         </div>
       </Container>
@@ -106,7 +106,8 @@ export default {
   computed: mapGetters({
     links: "links",
     externalLinks: "externalLinks",
-    orchestrator: "orchestrator"
+    orchestrator: "orchestrator",
+    icons: "icons"
   })
 };
 </script>

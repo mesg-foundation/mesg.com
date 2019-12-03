@@ -29,9 +29,13 @@
         <p
           mb2
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
-        <Button secondary mb2 href="/documents/decentralized-network-of-services.pdf" download icon="fas fa-download">
-          Whitepaper
-        </Button>
+        <Button
+          secondary
+          mb2
+          href="/documents/decentralized-network-of-services.pdf"
+          download
+          icon="fas fa-download"
+        >Whitepaper</Button>
       </Container>
       <div class="outer-background">
         <Container>
@@ -81,7 +85,7 @@
             >Have questions or not sure where to start? Head over to Discord to chat with the team, or browse the forum.</p>
           </div>
           <div half>
-            <ListSN :list="['discord', 'forum']" />
+            <ListSN :list="[icons.discord, icons.forum]" />
           </div>
         </div>
       </Container>
@@ -129,7 +133,8 @@ export default {
     ...mapGetters({
       products: "products",
       links: "links",
-      externalLinks: "externalLinks"
+      externalLinks: "externalLinks",
+      icons: "icons"
     }),
     marketplace() {
       return this.products.find(x => x.id === "marketplace");

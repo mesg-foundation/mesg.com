@@ -434,7 +434,7 @@ export const getters = {
       },
       {
         title: "What problems does MESG solve?",
-        description: "MESG solves major issues in the tech and business industries.<br/><br/>These problems are as follows:<br/><br/><ul><li class='list'>There is no common channel for blockchains to communicate with everyday technologies.</li><br/><li class='list'>Business IT infrastructures require inefficient and costly updates to maintain old features, or accommodate new features.</li><br/><li class='list'>As new technologies and devices enter the market, interoperability between these devices increasingly becomes an issue.</li><br/><li class='list'>Prototyping products or features, particularly those based in blockchain, requires immense overhead and a large resource commitment, simply to test out a single technology.</li></ul><br/>We see opportunity in these issues. To solve them, we are tackling three large challenges within the business and tech industries simultaneously:<br/><br/><ul><li class='list'>Interoperability<br/><br/><p>Effortless communication between any combination of blockchains, web and IoT.</p></li><br/><li class='list'>Scalability<br/><br/><p>A single infrastructure from startup to multinational corporation.</p></li><br/><li class='list'>Efficiency<br/><br/><p>Streamline business functions with set-and-forget automation.</p></li></ul>"
+        description: "MESG solves major issues in the tech and business industries.<br/><br/><strong>These problems are as follows:</strong><br/><br/><ul><li>There is no common channel for blockchains to communicate with everyday technologies.</li><li>Business IT infrastructures require inefficient and costly updates to maintain old features, or accommodate new features.</li><li>As new technologies and devices enter the market, interoperability between these devices increasingly becomes an issue.</li><li>Prototyping products or features, particularly those based in blockchain, requires immense overhead and a large resource commitment, simply to test out a single technology.</li></ul><br/>We see opportunity in these issues. To solve them, we are tackling three large challenges within the business and tech industries simultaneously:<br/><br/><ul><li><strong>Interoperability</strong><br/><br/><p>Effortless communication between any combination of blockchains, web and IoT.</p></li><br/><li><strong>Scalability</strong><br/><br/><p>A single infrastructure from startup to multinational corporation.</p></li><br/><li><strong>Efficiency</strong><br/><br/><p>Streamline business functions with set-and-forget automation.</p></li></ul>"
       }]
     },
     {
@@ -466,7 +466,7 @@ export const getters = {
       },
       {
         title: "Who can benefit from MESG?",
-        description: "We’ve identified a few target markets who are immediately in need of our solution:<br/><br/><ul><li class='list'>Blockchain developers<br/><br/><p>Compatibility with any blockchain, plus the ability to reuse components and not need to worry about managing communication or DevOps between them makes it one of the most powerful blockchain development tools around.</p></li><br/><li class='list'>Legacy companies interested in moving to a decentralized system<br/><br/><p>MESG can connect to any legacy software stack. By connecting to MESG, companies can easily adopt a variable level of decentralization into current practices, allowing for customized security or unrestricted growth.</p></li><br/><li class='list'>Entrepreneurs looking to cut costs by optimizing their infrastructures<br/><br/><p>Connecting previously-incompatible technologies means entrepreneurs can streamline business processes that weren’t previously able to be streamlined through autonomous, event-driven applications.</p></li><br/><li class='list'>Innovators wanting to push the boundaries of what’s possible with technology<br/><br/><p>With many reusable and interchangeable connections to any technologies available to build with, innovators can shift their focus from implementation to creativity.</p></li></ul>"
+        description: "We’ve identified a few target markets who are immediately in need of our solution:<br/><br/><ul><li><strong>Blockchain developers</strong><br/><br/><p>Compatibility with any blockchain, plus the ability to reuse components and not need to worry about managing communication or DevOps between them makes it one of the most powerful blockchain development tools around.</p></li><br/><li><strong>Legacy companies interested in moving to a decentralized system</strong><br/><br/><p>MESG can connect to any legacy software stack. By connecting to MESG, companies can easily adopt a variable level of decentralization into current practices, allowing for customized security or unrestricted growth.</p></li><br/><li><strong>Entrepreneurs looking to cut costs by optimizing their infrastructures</strong><br/><br/><p>Connecting previously-incompatible technologies means entrepreneurs can streamline business processes that weren’t previously able to be streamlined through autonomous, event-driven applications.</p></li><br/><li><strong>Innovators wanting to push the boundaries of what’s possible with technology</strong><br/><br/><p>With many reusable and interchangeable connections to any technologies available to build with, innovators can shift their focus from implementation to creativity.</p></li></ul>"
       }]
     },
     {
@@ -956,49 +956,42 @@ export const getters = {
         icon: "fab fa-twitter",
         color: "twitter",
         description: "Engage with us",
-        title: "Twitter"
       },
       github: {
         to: externalLinks.github,
         icon: "fab fa-github",
         color: "github",
         description: "Contribute",
-        title: "Github"
       },
       telegram: {
         to: externalLinks.telegram,
         icon: "fab fa-telegram-plane",
         color: "telegram",
         description: "Community Chat",
-        title: "Telegram"
       },
       forum: {
         to: externalLinks.forum,
         icon: "fas fa-comments",
         color: "forum",
         description: "Help & Guidance",
-        title: "Forum"
       },
       discord: {
         to: externalLinks.discord,
         icon: "fab fa-discord",
         color: "discord",
         description: "Chat with us",
-        title: "Discord"
       },
       reddit: {
         to: externalLinks.reddit,
         icon: "fab fa-reddit-alien",
         color: "reddit",
         description: "General news",
-        title: "Reddit"
       },
       medium: {
         to: externalLinks.blog,
         icon: "fab fa-medium",
         color: "medium",
         description: "Check out the news",
-        title: "Medium"
       }
     }
   },

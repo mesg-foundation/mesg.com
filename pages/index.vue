@@ -45,7 +45,7 @@
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description" />
             <span spacer />
-            <List :items="product.features.secondary" />
+            <List :items="product.features.secondary" mb2 />
             <Button outline :to="links[product.id]">{{ product.action }}</Button>
           </Card>
         </div>
@@ -124,7 +124,9 @@
             <p
               mb2
             >MESG is open-source and is community-driven. Join us in building the bridges between legacy and emerging technologies.</p>
-            <ListSN :list="['twitter', 'github', 'telegram', 'forum', 'discord', 'reddit']" />
+            <ListSN
+              :list="[icons.twitter,icons.github,icons.telegram,icons.forum,icons.discord,icons.reddit]"
+            />
           </div>
         </div>
       </Container>
@@ -180,7 +182,8 @@ export default {
       home: "home",
       links: "links",
       externalLinks: "externalLinks",
-      allusecases: "usecases"
+      allusecases: "usecases",
+      icons: "icons"
     }),
     usecases() {
       return this.allusecases.slice(0, 3);

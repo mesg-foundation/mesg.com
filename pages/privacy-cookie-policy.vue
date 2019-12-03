@@ -62,9 +62,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
   list-style: none;
+  margin-left: 0;
 }
 h2 {
   text-align: left;
