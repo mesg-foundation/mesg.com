@@ -81,7 +81,7 @@ ul {
   margin-left: 0;
   i {
     position: relative;
-    top: 2px;
+    top: 0.2em;
     max-width: 18px;
   }
 }
