@@ -212,14 +212,13 @@
           <div half>
             <ListSN
               :list="[
-                'twitter',
-                'github',
-                'telegram',
-                'forum',
-                'discord',
-                'reddit'
+              { ...icons.twitter, description: 'Twitter' },
+              { ...icons.github, description: 'Github' },
+              { ...icons.telegram, description: 'Telegram' },
+              { ...icons.forum, description: 'Forum' },
+              { ...icons.discord, description: 'Discord' },
+              { ...icons.reddit, description: 'Reddit' }
               ]"
-              display-title
             />
           </div>
         </div>
@@ -285,7 +284,8 @@ export default {
       links: "links",
       externalLinks: "externalLinks",
       community: "community",
-      forms: "forms"
+      forms: "forms",
+      icons: "icons"
     }),
     contributions() {
       return Object.keys(this._contributions)
