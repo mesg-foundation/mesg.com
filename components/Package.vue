@@ -8,14 +8,7 @@
       <hr mb2 />
       <div mb2>
         <ul flex row wrap>
-          <li
-            v-for="(item, i) in items"
-            :key="i"
-            flex
-            half
-            align-center
-            :class="{ invalid: !item.valid }"
-          >
+          <li v-for="(item, i) in items" :key="i" flex row half :class="{ invalid: !item.valid }">
             <i v-if="item.valid" class="far fa-check" mr1></i>
             <i v-else class="far fa-times" mr1></i>
             <p>{{ item.description }}</p>
@@ -86,21 +79,15 @@ export default {
 ul {
   list-style: none;
   margin-left: 0;
-  li {
-    margin-right: var(--margin);
-    i {
-      max-width: 18px;
-    }
+  i {
+    position: relative;
+    top: 2px;
+    max-width: 18px;
   }
 }
 
 .pricing {
-  font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 hr {
@@ -110,13 +97,13 @@ hr {
 
 /*white*/
 .white {
-  background-color: var(--white);
+  background-color: $white;
   .invalid {
     p {
-      color: var(--light-purple);
+      color: $light-purple;
     }
     i {
-      color: var(--light-purple);
+      color: $light-purple;
     }
   }
 }
@@ -124,37 +111,37 @@ hr {
 /*purple*/
 .purple {
   transform: scale(1.05);
-  background-color: var(--purple);
+  background-color: $purple;
   h3 {
-    color: var(--white);
+    color: $white;
   }
   p {
-    color: var(--white);
+    color: $white;
   }
   .invalid {
     p {
-      color: var(--deep-purple);
+      color: $deep-purple;
     }
     i {
-      color: var(--deep-purple);
+      color: $deep-purple;
     }
   }
   li {
-    color: var(--white);
+    color: $white;
   }
   hr {
-    color: var(--deep-purple);
+    color: $deep-purple;
   }
   button {
-    color: var(--purple);
-    background-color: var(--white);
+    color: $purple;
+    background-color: $white;
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   li {
     margin-right: 0 !important;
-    margin-bottom: calc(var(--margin) / 2);
+    margin-bottom: calc(#{$margin} / 2);
   }
   a {
     width: 100%;
@@ -162,7 +149,7 @@ hr {
 }
 @media only screen and (max-width: $mobile-only) {
   .pricing {
-    margin-top: calc(var(--margin) * 2);
+    margin-top: calc(#{$margin} * 2);
     text-align: left;
   }
 }
