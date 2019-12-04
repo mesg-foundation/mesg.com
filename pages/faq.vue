@@ -55,6 +55,7 @@
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Still have questions?"
       description="If you didn’t find the answer you were looking for, reach out to us! The MESG team is here to help."
       :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"

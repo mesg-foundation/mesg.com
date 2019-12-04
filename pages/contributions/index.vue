@@ -228,9 +228,10 @@
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Connect with us"
       description="Want to share your contribution directly, or did your post slip under the radar? Let us know! We’d love to check out your work."
-      :links="[{ title: 'Let us know', href: externalLinks.contact }]"
+      :links="[{ title: 'Get in touch', href: externalLinks.contact }]"
       mb1
     />
   </div>

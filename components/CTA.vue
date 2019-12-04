@@ -1,13 +1,18 @@
 <template>
   <section id="cta">
     <Container>
-      <Card purple p2>
+      <Card class="card-cta" p2>
         <div flex row align-center space-between mobile-column>
-          <div class="content" flex column>
+          <div class="icon" v-if="icon">
+            <span flex align-center>
+              <i :class="icon"></i>
+            </span>
+          </div>
+          <div class="content">
             <h2>{{ title }}</h2>
             <p v-if="description" mt1>{{ description }}</p>
           </div>
-          <nav flex column third>
+          <nav flex column quarter>
             <Button
               white
               v-for="(link, i) in links"
@@ -21,7 +26,6 @@
         </div>
       </Card>
     </Container>
-    <div class="background"></div>
   </section>
 </template>
 
@@ -44,6 +48,9 @@ export default {
     description: {
       type: String
     },
+    icon: {
+      type: String
+    },
     links: {
       type: Array,
       default: () => []
@@ -57,39 +64,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2,
-p {
-  color: var(--white);
-}
-
 #cta {
   position: relative;
-}
-
-#cta::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 100px);
-  background: var(--light-background);
-  transform: translateY(30%) skewY(-8deg);
-  z-index: -1;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    background: $light-background;
+    transform: translateY(30%) skewY(-8deg);
+    z-index: -1;
+  }
+  .card-cta {
+    background-image: linear-gradient(to right, $purple, $electric-purple);
+  }
+  h2 {
+    color: $white;
+  }
+  p {
+    opacity: 0.85;
+    color: $white;
+  }
+  span {
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+    background-color: $electric-purple;
+    i {
+      text-align: center;
+      font-size: 40px;
+      color: $light-electric-purple;
+    }
+  }
+  nav {
+    min-width: 220px;
+  }
 }
 
 @media only screen and (min-width: $huge-breakpoint) {
-  #cta::before {
+  #cta:before {
     transform: translateY(30%) skewY(-5deg);
   }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  #cta::before {
+  #cta:before {
     height: calc(100% + 80px);
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   .content {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
+  }
+  .icon {
+    width: 100%;
+    span {
+      width: 100%;
+      margin-bottom: calc(#{$margin} * 2);
+    }
   }
 }
 </style>
