@@ -34,7 +34,7 @@
           mb2
           href="/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
           download
-          icon="fas fa-download"
+          icon="fal fa-file-download"
         >Technical implementation</Button>
       </Container>
       <div class="outer-background">

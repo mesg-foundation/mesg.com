@@ -850,7 +850,7 @@ export const getters = {
   community() {
     return [
       {
-        icon: "fas fa-code",
+        icon: "fal fa-code",
         category: "Development",
         list: [
           "Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
@@ -860,7 +860,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-layer-plus",
+        icon: "fal fa-layer-plus",
         category: "Dev UX",
         list: [
           "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
@@ -870,7 +870,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-comment-alt-edit",
+        icon: "fal fa-comment-alt-edit",
         category: "Communication",
         list: [
           "Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
@@ -880,7 +880,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-pencil-ruler",
+        icon: "fal fa-pencil-ruler",
         category: "Design",
         list: [
           "Create MESG <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>illustrations</a>",
@@ -890,7 +890,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-bullhorn",
+        icon: "fal fa-bullhorn",
         category: "Marketing",
         list: [
           "Share on social media",
@@ -900,7 +900,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-coins",
+        icon: "fal fa-coins",
         category: "Token",
         list: [
           "Update info on exchanges",
@@ -910,7 +910,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-handshake-alt",
+        icon: "fal fa-handshake-alt",
         category: "Partnerships",
         list: [
           "Introduce projects to MESG",
@@ -920,7 +920,7 @@ export const getters = {
         ]
       },
       {
-        icon: "fas fa-user-headset",
+        icon: "fal fa-user-headset",
         category: "Support",
         list: [
           "Answer community questions",
