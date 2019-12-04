@@ -98,6 +98,9 @@ export default {
       color: $light-electric-purple;
     }
   }
+  nav {
+    min-width: 220px;
+  }
 }
 
 @media only screen and (min-width: $huge-breakpoint) {
