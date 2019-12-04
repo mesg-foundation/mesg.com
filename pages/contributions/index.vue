@@ -34,10 +34,10 @@
                   }}
                 </p>
                 <Tag mb1>{{ latestReward.category }}</Tag>
-                <p>
+                <div flex row class="user">
                   <i class="fas fa-user-circle"></i>
-                  {{ latestReward.name }}
-                </p>
+                  <span>{{ latestReward.name }}</span>
+                </div>
                 <Button
                   secondary
                   :to="`/contributions/${latestReward.id}`"
@@ -49,7 +49,7 @@
             <div class="preview" p2>
               <Card no-shadow p1>
                 <div flex mobile-only-column align-center wrap>
-                  <p class="infos text-right">Share this contribution</p>
+                  <span class="infos text-right">Share this contribution</span>
                   <Tweetbtn
                     class="tweet-btn"
                     :url="contributionLink(latestReward)"
@@ -83,24 +83,26 @@
             compact
           >
             <template v-slot:item_title="{ item }">
-              <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
-              <nuxt-link :to="`/contributions/${item.id}`">
-                {{
-                item.title
-                }}
-              </nuxt-link>
+              <div flex row>
+                <i class="fas fa-award" :class="{ gold: item.rewarded, white: !item.rewarded }"></i>
+                <nuxt-link :to="`/contributions/${item.id}`">
+                  {{
+                  item.title
+                  }}
+                </nuxt-link>
+              </div>
             </template>
             <template v-slot:item_category="{ item }">
               <Tag>{{ item.category }}</Tag>
             </template>
             <template v-slot:item_name="{ item }">
-              <p>
+              <div flex row>
                 <i class="fas fa-user-circle"></i>
-                {{ item.name }}
-              </p>
+                <span>{{ item.name }}</span>
+              </div>
             </template>
             <template v-slot:item_createdAt="{ item }">
-              <p class="date">{{ item.createdAt | relativeDate }}</p>
+              <datetime class="date">{{ item.createdAt | relativeDate }}</datetime>
             </template>
           </Table>
         </Card>
@@ -324,7 +326,7 @@ export default {
       z-index: -1;
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
-      background-color: var(--purple);
+      background-color: $purple;
     }
   }
   .user-rewarded {
@@ -336,19 +338,26 @@ export default {
     max-width: 60px;
     max-height: 60px;
     border-radius: 3px;
-    background-color: var(--gold);
+    background-color: $gold;
     i {
       text-align: center;
       margin-right: 0;
       font-size: 34px;
-      color: var(--white);
+      color: $white;
+    }
+  }
+  .user {
+    i {
+      min-width: 18px;
+      max-width: 18px;
+      margin-top: 0.1em;
     }
   }
   .preview {
     min-height: 450px;
     max-height: 500px;
     overflow-y: auto;
-    background-color: var(--light-background);
+    background-color: $light-background;
     .infos {
       font-weight: bold;
     }
@@ -361,7 +370,16 @@ export default {
   table {
     .date {
       font-size: 15px;
-      color: var(--light-purple);
+      color: $light-purple;
+    }
+    div {
+      width: auto;
+      margin: 0;
+    }
+    i {
+      min-width: 18px;
+      max-width: 18px;
+      margin-top: 0.1em;
     }
   }
 }
@@ -374,7 +392,7 @@ export default {
 
 .card.bordered.thin:hover {
   border: solid 2px transparent;
-  box-shadow: 0 0 0 1px var(--light-purple) inset;
+  box-shadow: 0 0 0 1px $light-purple inset;
 }
 
 #help {
@@ -384,9 +402,8 @@ export default {
 }
 
 i {
-  margin-right: calc(var(--margin) / 2);
-  font-size: 18px;
-  color: var(--light-purple);
+  margin-right: calc(#{$margin} / 2);
+  color: $light-purple;
 }
 
 img {
@@ -408,27 +425,24 @@ img {
     padding-bottom: 0;
   }
   .contributors-table {
-    margin-bottom: var(--margin) !important;
+    margin-bottom: $margin !important;
   }
   .edit {
-    margin-bottom: calc(var(--margin) * 2) !important;
+    margin-bottom: calc(#{$margin} * 2) !important;
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   #more-infos p {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 @media only screen and (max-width: $mobile-only) {
   .preview p {
     text-align: center;
   }
-  i.fas.fa-award.white {
-    display: none !important;
-  }
   .tweet-btn {
     margin-left: 0 !important;
-    margin-top: var(--margin);
+    margin-top: $margin;
   }
   .form {
     width: 100%;
