@@ -647,7 +647,7 @@ export const getters = {
           { src: require("~/assets/showcase/cryptokitties.svg"), to: "https://www.cryptokitties.co/" }
         ],
         resources: [
-          { title: "Read the full article", to: "https://medium.com/mesg/plasma-is-not-secure-unless-you-watch-it-196d23130367" },
+          { title: "Read the full article", to: "https://blog.mesg.com/plasma-is-not-secure/" },
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
           { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
         ],
@@ -682,7 +682,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/PNoWKxU6WSk",
         information: "Want a deeper look at how MESG can be used to send messages from space? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://medium.com/mesg/use-case-send-messages-from-space-6a02a353df7d" },
+          { title: "Read the full article", to: "https://blog.mesg.com/use-case-send-messages-from-space/" },
           { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
         ],
         cta: "https://github.com/RyanMilb/spaceforce-mesg-app"
@@ -716,7 +716,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/RVMg9VBhhUI",
         information: "Want a more in-depth look at how MESG and Zapier can be used together? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://medium.com/mesg/use-case-connecting-zapier-and-mesg-a9a661526ff0" },
+          { title: "Read the full article", to: "https://blog.mesg.com/use-case-connecting-zapier-mesg/" },
           { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
         ],
         cta: "https://github.com/JBarna/MESG-Z"
@@ -755,7 +755,7 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://medium.com/mesg/how-to-monitor-important-erc20-transactions-ead35309ba9c" },
+          { title: "Read the full article", to: "https://blog.mesg.com/how-to-monitor-erc-20-transactions/" },
           { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
           { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
         ],
@@ -796,7 +796,7 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://medium.com/mesg/the-death-of-the-subscription-plan-2ffbcbf521b4" },
+          { title: "Read the full article", to: "https://blog.mesg.com/could-this-cause-the-death-of-the-subscription-plan/" },
           { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
           { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
           { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
@@ -838,7 +838,7 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://medium.com/mesg/an-app-to-buy-crypto-with-fiat-95c658ad74b7" },
+          { title: "Read the full article", to: "https://blog.mesg.com/directly-buy-crypto-with-fiat/" },
           { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
           { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
         ],
@@ -864,7 +864,7 @@ export const getters = {
         category: "Dev UX",
         list: [
           "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
-          "Create <a href='https://docs.mesg.com/tutorials/' target='_blank' class='link'>tutorials</a>",
+          "Create <a href='https://blog.mesg.com/tag/tutorials/' target='_blank' class='link'>tutorials</a>",
           "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
         ]
@@ -1023,7 +1023,7 @@ export const getters = {
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/",
-      tutorials: "https://docs.mesg.com/tutorials/"
+      tutorials: "https://blog.mesg.com/tag/tutorials/"
     }
   },
 
