@@ -34,7 +34,9 @@ module.exports = {
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' },
-      { rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.8.2/css/all.css', integrity: 'sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF', crossorigin: 'anonymous' }
+    ],
+    script: [
+      { src: "https://kit.fontawesome.com/9501c0d07b.js", crossorigin: "anonymous" }
     ]
   },
   css: [
