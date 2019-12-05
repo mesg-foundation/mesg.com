@@ -66,11 +66,7 @@ export default {
 <style lang="scss" scoped>
 #cta {
   position: relative;
-<<<<<<< HEAD
-  &::before {
-=======
   &:before {
->>>>>>> master
     content: "";
     position: absolute;
     width: 100%;
@@ -79,15 +75,6 @@ export default {
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
-<<<<<<< HEAD
-  h2,
-  p {
-    color: $white;
-  }
-  i {
-    font-size: 100px;
-    color: $electric-purple;
-=======
   .card-cta {
     background-image: linear-gradient(to right, $purple, $electric-purple);
   }
@@ -113,7 +100,6 @@ export default {
   }
   nav {
     min-width: 220px;
->>>>>>> master
   }
 }
 
@@ -132,18 +118,12 @@ export default {
   .content {
     margin-bottom: calc(#{$margin} * 2);
   }
-<<<<<<< HEAD
-  i {
-    width: 100%;
-    margin-bottom: calc(#{$margin} * 2);
-=======
   .icon {
     width: 100%;
     span {
       width: 100%;
       margin-bottom: calc(#{$margin} * 2);
     }
->>>>>>> master
   }
 }
 </style>
