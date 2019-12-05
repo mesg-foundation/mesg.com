@@ -38,7 +38,7 @@
 
     <section id="resources" mb3>
       <Container class="intro text-center">
-        <h2>Lorem ipsum dolor</h2>
+        <h2>Build in 3 steps</h2>
       </Container>
       <div class="outer-background">
         <Container>
