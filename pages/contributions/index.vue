@@ -350,7 +350,7 @@ export default {
     i {
       min-width: 18px;
       max-width: 18px;
-      margin-top: 0.1em;
+      margin-top: 0.2em;
     }
   }
   .preview {
@@ -379,7 +379,7 @@ export default {
     i {
       min-width: 18px;
       max-width: 18px;
-      margin-top: 0.1em;
+      margin-top: 0.2em;
     }
   }
 }
