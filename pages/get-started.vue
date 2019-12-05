@@ -58,35 +58,34 @@
             </div>
             <span class="separator"></span>
             <div flex column half class="getstarted-table" pl1>
-              <Table
-                :headers="[
-              { key: 'link', text: 'Link', value: 'link' },
-              { key: 'info', text: 'Info', value: 'info', align: 'right'}
-            ]"
-                :items="getstarted.resources"
-                hideHeader
-                compact
-                flex
-                align-center
-              >
-                <template v-slot:item_link="{ item }">
-                  <div class="link-resource" flex row align-center>
-                    <span class="circle" :class="item.color" flex align-center mr1>
-                      <i class="text-center" :class="item.category"></i>
+              <ul>
+                <li v-for="(resource, i) in getstarted.resources" :key="i" flex row align-center>
+                  <nuxt-link v-if="resource.to" :to="resource.to" flex row align-center>
+                    <span class="circle" :class="resource.color" flex align-center mr1>
+                      <i class="text-center" :class="resource.category"></i>
                     </span>
-                    <nuxt-link v-if="item.to" :to="item.to">{{ item.title }}</nuxt-link>
-                    <a v-else :href="item.link" target="_blank">{{ item.title }}</a>
-                  </div>
-                </template>
-                <template v-slot:item_info="{ item }">
-                  <div class="info" flex row align-center>
-                    <span>
-                      {{ item.info }}
-                      <i class="icon-right-table" :class="item.icon"></i>
+                    <div flex column>
+                      <span>
+                        <strong>{{ resource.title }}</strong>
+                      </span>
+                      <span class="info">{{ resource.info }}</span>
+                    </div>
+                    <i class="icon-right-table" :class="resource.icon"></i>
+                  </nuxt-link>
+                  <a v-else :href="resource.link" target="_blank" flex row align-center>
+                    <span class="circle" :class="resource.color" flex align-center mr1>
+                      <i class="text-center" :class="resource.category"></i>
                     </span>
-                  </div>
-                </template>
-              </Table>
+                    <div flex column>
+                      <span>
+                        <strong>{{ resource.title }}</strong>
+                      </span>
+                      <span class="info">{{ resource.info }}</span>
+                    </div>
+                    <i class="icon-right-table" :class="resource.icon"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </Card>
         </Container>
@@ -125,7 +124,7 @@
               mb1
             >Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
             <ul>
-              <li v-for="(tutorial, i) in tutorials" :key="i">
+              <li v-for="(tutorial, j) in tutorials" :key="j">
                 <a :href="tutorial.to" target="_blank" flex row>
                   <i class="fal fa-external-link-alt"></i>
                   {{ tutorial.title }}
@@ -280,39 +279,35 @@ export default {
     max-height: 50px;
     border-radius: 100%;
   }
-  .link-resource {
-    width: auto;
-    margin: 0;
-  }
-  .info {
-    width: auto;
-    margin: 0;
-    span {
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  li {
+    padding: $margin;
+    border-bottom: 1px dotted $light-purple;
+    margin-bottom: 0;
+    &:hover {
+      transition: 0.1s ease;
+      background-color: $light-background;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    .icon-right-table {
+      max-width: 18px;
+      color: $purple;
+    }
+    .info {
       font-size: 12px;
       font-weight: bold;
       color: $light-purple;
-      i {
-        color: $purple;
-        margin-left: calc(#{$margin} / 2);
-      }
     }
   }
 }
 
 #more-infos {
-  ul {
-    list-style: none;
-    margin-left: 0;
-    li {
-      padding: $margin;
-      border-bottom: 1px dotted $light-purple;
-      margin-bottom: 0;
-      &:hover {
-        transition: 0.1s ease;
-        background-color: $light-background;
-      }
-    }
-  }
   .title-link {
     a {
       text-align: right;
