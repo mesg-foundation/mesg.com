@@ -285,24 +285,26 @@ ul {
   list-style: none;
   margin-left: 0;
   li {
-    padding: $margin;
     border-bottom: 1px dotted $light-purple;
     margin-bottom: 0;
-    &:hover {
-      transition: 0.1s ease;
-      background-color: $light-background;
-    }
     &:last-child {
       border-bottom: 0;
     }
-    .icon-right-table {
-      max-width: 18px;
-      color: $purple;
-    }
-    .info {
-      font-size: 12px;
-      font-weight: bold;
-      color: $light-purple;
+    a {
+      padding: $margin;
+      &:hover {
+        transition: 0.1s ease;
+        background-color: rgba(0, 0, 0, 0.025);
+      }
+      .icon-right-table {
+        max-width: 18px;
+        color: $purple;
+      }
+      .info {
+        font-size: 12px;
+        font-weight: bold;
+        color: $light-purple;
+      }
     }
   }
 }
@@ -393,6 +395,15 @@ ul {
     .content {
       margin-left: 0;
       margin-top: calc(#{$margin} * 4);
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-only) {
+  ul {
+    a {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
 }
