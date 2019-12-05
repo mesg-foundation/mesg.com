@@ -56,7 +56,7 @@
               <h3 mb1>{{ getstarted.title}}</h3>
               <p class="test" v-html="getstarted.description"></p>
             </div>
-            <span class="separator"></span>
+            <div class="separator" fill-height></div>
             <div flex column half class="getstarted-table" pl1>
               <ul>
                 <li v-for="(resource, i) in getstarted.resources" :key="i" flex row align-center>
@@ -257,6 +257,7 @@ export default {
 
 #resources {
   .card-getstarted {
+    position: relative;
     margin-bottom: calc(#{$margin} * 2);
     &:last-child {
       margin-bottom: 0;
@@ -269,7 +270,8 @@ export default {
   .separator {
     position: absolute;
     left: 50%;
-    height: 264px;
+    height: calc(100% - 80px);
+    top: 40px;
     border: solid 0.5px $light-purple;
   }
   .circle {
@@ -280,7 +282,6 @@ export default {
     border-radius: 100%;
   }
 }
-
 ul {
   list-style: none;
   margin-left: 0;
@@ -324,6 +325,14 @@ ul {
 #links-card {
   .open-source {
     border-bottom-color: $blue;
+    &:hover {
+      transition: 0.2s ease;
+      border: solid 1px $light-purple;
+      border-bottom-width: 6px;
+      border-bottom-color: $blue;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    }
     span {
       text-align: center;
       position: absolute;
@@ -339,6 +348,14 @@ ul {
   }
   .enterprise {
     border-bottom-color: $orange;
+    &:hover {
+      transition: 0.2s ease;
+      border: solid 1px $light-purple;
+      border-bottom-width: 6px;
+      border-bottom-color: $orange;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    }
     span {
       text-align: center;
       position: absolute;
