@@ -1165,7 +1165,8 @@ export const getters = {
       faq: "/faq",
       roadmap: "/roadmap",
       usecase: "/usecase",
-      policy: "/privacy-cookie-policy"
+      policy: "/privacy-cookie-policy",
+      getstarted: "/get-started"
     }
   }
 }
