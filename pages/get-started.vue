@@ -124,22 +124,14 @@
             <p
               mb1
             >Follow along with step-by-step tutorials for guidance on how to install the SDK and build services and applications with MESG.</p>
-            <Table
-              :headers="[
-              { key: 'title', text: 'Title', value: 'title' },
-              { key: 'icon', text: 'Icon', value: 'icon', align: 'right'}
-            ]"
-              :items="tutorials"
-              hideHeader
-              compact
-            >
-              <template v-slot:item_title="{ item }">
-                <a :href="item.to" target="_blank">{{ item.title }}</a>
-              </template>
-              <template v-slot:item_icon="{ item }">
-                <i class="fal fa-external-link-alt"></i>
-              </template>
-            </Table>
+            <ul>
+              <li v-for="(tutorial, i) in tutorials" :key="i">
+                <a :href="tutorial.to" target="_blank" flex row>
+                  <i class="fal fa-external-link-alt"></i>
+                  {{ tutorial.title }}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </Container>
@@ -308,16 +300,27 @@ export default {
 }
 
 #more-infos {
-  .title-link {
-    a {
-      text-align: right;
-      i {
-        margin-right: calc(#{$margin} / 2);
+  ul {
+    list-style: none;
+    margin-left: 0;
+    li {
+      padding: $margin;
+      border-bottom: 1px dotted $light-purple;
+      margin-bottom: 0;
+      &:hover {
+        transition: 0.1s ease;
+        background-color: $light-background;
       }
     }
   }
-  .fa-external-link-alt {
-    color: $purple;
+  .title-link {
+    a {
+      text-align: right;
+    }
+  }
+  i {
+    max-width: 18px;
+    margin-right: calc(#{$margin} / 2);
   }
 }
 
