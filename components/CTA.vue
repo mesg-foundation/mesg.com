@@ -1,14 +1,18 @@
 <template>
   <section id="cta">
     <Container>
-      <Card purple p2>
+      <Card class="card-cta" p2>
         <div flex row align-center space-between mobile-column>
-          <i :class="icon"></i>
+          <div class="icon" v-if="icon">
+            <span flex align-center>
+              <i :class="icon"></i>
+            </span>
+          </div>
           <div class="content">
             <h2>{{ title }}</h2>
             <p v-if="description" mt1>{{ description }}</p>
           </div>
-          <nav flex column third>
+          <nav flex column quarter>
             <Button
               white
               v-for="(link, i) in links"
@@ -22,7 +26,6 @@
         </div>
       </Card>
     </Container>
-    <div class="background"></div>
   </section>
 </template>
 
@@ -63,7 +66,11 @@ export default {
 <style lang="scss" scoped>
 #cta {
   position: relative;
+<<<<<<< HEAD
   &::before {
+=======
+  &:before {
+>>>>>>> master
     content: "";
     position: absolute;
     width: 100%;
@@ -72,6 +79,7 @@ export default {
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
+<<<<<<< HEAD
   h2,
   p {
     color: $white;
@@ -79,6 +87,33 @@ export default {
   i {
     font-size: 100px;
     color: $electric-purple;
+=======
+  .card-cta {
+    background-image: linear-gradient(to right, $purple, $electric-purple);
+  }
+  h2 {
+    color: $white;
+  }
+  p {
+    opacity: 0.85;
+    color: $white;
+  }
+  span {
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+    background-color: $electric-purple;
+    i {
+      text-align: center;
+      font-size: 40px;
+      color: $light-electric-purple;
+    }
+  }
+  nav {
+    min-width: 220px;
+>>>>>>> master
   }
 }
 
@@ -97,9 +132,18 @@ export default {
   .content {
     margin-bottom: calc(#{$margin} * 2);
   }
+<<<<<<< HEAD
   i {
     width: 100%;
     margin-bottom: calc(#{$margin} * 2);
+=======
+  .icon {
+    width: 100%;
+    span {
+      width: 100%;
+      margin-bottom: calc(#{$margin} * 2);
+    }
+>>>>>>> master
   }
 }
 </style>

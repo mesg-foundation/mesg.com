@@ -137,7 +137,7 @@
 
     <section id="cta" mb1>
       <Container>
-        <Card purple p2>
+        <Card class="card-cta" p2>
           <h2 class="text-center" mb2>Buy and Trade</h2>
           <div flex row mobile-column class="exchange">
             <Button
@@ -220,12 +220,15 @@ export default {
     position: absolute;
     width: 100%;
     height: calc(100% + 100px);
-    background: var(--light-background);
+    background: $light-background;
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
   h2 {
-    color: var(--white);
+    color: $white;
+  }
+  .card-cta {
+    background-image: linear-gradient(to right, $purple, $electric-purple);
   }
 }
 
