@@ -1,10 +1,6 @@
 <template>
   <div>
-    <Header
-      :picture="require('~/assets/getstarted.svg')"
-      :title="title"
-      :description="description"
-    >
+    <Header :picture="require('~/assets/getstarted.svg')" :title="title" :description="description">
       <div>
         <Button :href="externalLinks.getStarted" primary target="_blank">Quick start</Button>
       </div>
@@ -64,7 +60,7 @@
                     <span class="circle" :class="resource.color" flex align-center mr1>
                       <i class="text-center" :class="resource.category"></i>
                     </span>
-                    <div flex column>
+                    <div class="title" flex column>
                       <span>
                         <strong>{{ resource.title }}</strong>
                       </span>
@@ -76,7 +72,7 @@
                     <span class="circle" :class="resource.color" flex align-center mr1>
                       <i class="text-center" :class="resource.category"></i>
                     </span>
-                    <div flex column>
+                    <div class="title" flex column>
                       <span>
                         <strong>{{ resource.title }}</strong>
                       </span>
@@ -262,24 +258,27 @@ export default {
     &:last-child {
       margin-bottom: 0;
     }
-  }
-  .tag-purple {
-    background-color: $light-electric-purple;
-    color: $electric-purple;
-  }
-  .separator {
-    position: absolute;
-    left: 50%;
-    height: calc(100% - 80px);
-    top: 40px;
-    border: solid 0.5px $light-purple;
-  }
-  .circle {
-    min-width: 50px;
-    max-width: 50px;
-    min-height: 50px;
-    max-height: 50px;
-    border-radius: 100%;
+    .tag-purple {
+      background-color: $light-electric-purple;
+      color: $electric-purple;
+    }
+    .separator {
+      position: absolute;
+      left: 50%;
+      height: calc(100% - 80px);
+      top: 40px;
+      border: solid 0.5px $light-purple;
+    }
+    .circle {
+      min-width: 50px;
+      max-width: 50px;
+      min-height: 50px;
+      max-height: 50px;
+      border-radius: 100%;
+    }
+    .title {
+      margin-right: $margin;
+    }
   }
 }
 ul {
@@ -388,6 +387,9 @@ ul {
     }
   }
   #resources {
+    .intro {
+      padding-bottom: 0;
+    }
     .getstarted-content {
       padding-left: 0;
       margin-bottom: calc(#{$margin} * 2);
@@ -412,6 +414,12 @@ ul {
     .content {
       margin-left: 0;
       margin-top: calc(#{$margin} * 4);
+    }
+  }
+  .help {
+    margin-bottom: calc(#{$margin} * 3) !important;
+    p {
+      margin-bottom: $margin !important;
     }
   }
 }
