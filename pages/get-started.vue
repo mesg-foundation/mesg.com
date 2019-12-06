@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/enterprise/enterprise.svg')"
+      :picture="require('~/assets/getstarted.svg')"
       :title="title"
       :description="description"
     >
