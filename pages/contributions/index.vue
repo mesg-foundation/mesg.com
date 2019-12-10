@@ -228,12 +228,15 @@
     </section>
 
     <CTA
-      icon="fal fa-envelope-open-text"
-      title="Connect with us"
-      description="Want to share your contribution directly, or did your post slip under the radar? Let us know! We’d love to check out your work."
-      :links="[{ title: 'Get in touch', href: externalLinks.contact }]"
+      icon="fal fa-file-alt"
+      title="Add a contribution"
+      description="Have a quality contribution? Awesome! Send it our way, and you could be eligible for a reward. MESG thrives on community support and collaborations."
       mb1
-    />
+    >
+      <TypeFormPopup :id="forms.addContribution" class="form">
+        <Button white>Add a contribution</Button>
+      </TypeFormPopup>
+    </CTA>
   </div>
 </template>
 
