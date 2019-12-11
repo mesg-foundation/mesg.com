@@ -15,8 +15,9 @@
     "styleguide:build": "vue-styleguidist build"
   },
   "dependencies": {
-    "@mesg-components/button": "^1.1.2",
+    "@mesg-components/button": "^1.1.4",
     "@mesg-components/embed-card": "^1.0.0",
+    "@mesg-components/side-menu": "^1.0.3",
     "@mesg-components/social-network": "^1.0.0",
     "@mesg-components/table": "^1.1.0",
     "@mesg-components/tag-label": "^1.0.0",

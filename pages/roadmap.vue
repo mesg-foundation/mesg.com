@@ -16,7 +16,7 @@
                     <h4>
                       {{ goal.title }}
                       <a v-if="goal.link" :href="goal.link" target="_blank">
-                        <i class="far fa-external-link" />
+                        <i class="fal fa-external-link-alt" />
                       </a>
                     </h4>
                     <ul class="bullet-points">
@@ -119,6 +119,9 @@ export default {
   h4 {
     font-weight: bold;
     margin-bottom: calc(var(--margin) - 8px);
+    a {
+      margin-left: calc(#{$margin} / 2);
+    }
   }
 }
 

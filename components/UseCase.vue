@@ -16,7 +16,7 @@
             <p>{{ usecase.label }}</p>
           </div>
         </div>
-        <i class="fa fa-arrow-right"></i>
+        <i class="fal fa-long-arrow-alt-right"></i>
       </div>
     </Card>
   </nuxt-link>
@@ -91,8 +91,6 @@ img {
 }
 
 i {
-  font-size: 1em;
-  font-weight: bold;
   text-align: right;
 }
 

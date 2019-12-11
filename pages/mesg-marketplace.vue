@@ -34,7 +34,7 @@
           mb2
           href="/documents/decentralized-network-of-services.pdf"
           download
-          icon="fas fa-download"
+          icon="fal fa-file-download"
         >Whitepaper</Button>
       </Container>
       <div class="outer-background">
