@@ -49,19 +49,15 @@ export default {
 <style lang="scss" scoped>
 a {
   position: relative;
-}
-
-img {
-  height: 25px;
-  width: auto;
-}
-
-i {
-  position: absolute;
-  bottom: calc(var(--margin) + 6px);
-  right: var(--margin);
-  font-size: 1em;
-  font-weight: bold;
-  text-align: right;
+  img {
+    height: 25px;
+    width: auto;
+  }
+  i {
+    position: absolute;
+    bottom: calc(#{$margin} + 6px);
+    right: $margin;
+    text-align: right;
+  }
 }
 </style>
