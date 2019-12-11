@@ -6,11 +6,13 @@
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu :items="questions" />
+            <div class="menu-fixed">
+              <SideMenu :items="questions" />
+            </div>
           </div>
           <ul flex column>
             <li v-for="(category, i) in questions" :key="i">
-              <h2 :id="category.id" mb2>{{category.category}}</h2>
+              <h2 :id="category.key" mb2>{{category.text}}</h2>
               <ul>
                 <li v-for="(content, j) in category.contents" :key="j">
                   <h3 mb1>{{content.title }}</h3>
@@ -69,7 +71,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
-import SideMenu from "~/components/SideMenu";
+import SideMenu from "@mesg-components/side-menu";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import page from "./page";
@@ -100,6 +102,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.menu-fixed > nav {
+  position: sticky;
+  top: 40px;
+}
+
 ul {
   list-style: none;
   margin-left: 0;
