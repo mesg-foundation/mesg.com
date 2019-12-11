@@ -57,6 +57,10 @@ a {
     position: absolute;
     bottom: calc(#{$margin} + 6px);
     right: $margin;
+<<<<<<< HEAD
+=======
+    text-align: right;
+>>>>>>> master
   }
 }
 </style>
