@@ -16,7 +16,7 @@
           <Card p1 bordered>
             <img mb1 :src="article.img" :alt="article.title" />
             <h4 mb1>{{ article.title }}</h4>
-            <i class="far fa-external-link"></i>
+            <i class="fal fa-external-link-alt"></i>
           </Card>
         </a>
       </div>
@@ -57,7 +57,6 @@ a {
     position: absolute;
     bottom: calc(#{$margin} + 6px);
     right: $margin;
-    text-align: right;
   }
 }
 </style>

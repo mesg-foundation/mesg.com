@@ -9,8 +9,8 @@
       <div mb2>
         <ul flex row wrap>
           <li v-for="(item, i) in items" :key="i" flex row half :class="{ invalid: !item.valid }">
-            <i v-if="item.valid" class="far fa-check" mr1></i>
-            <i v-else class="far fa-times" mr1></i>
+            <i v-if="item.valid" class="fal fa-check" mr1></i>
+            <i v-else class="fal fa-times" mr1></i>
             <p>{{ item.description }}</p>
           </li>
         </ul>

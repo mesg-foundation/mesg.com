@@ -35,7 +35,7 @@
                 </p>
                 <Tag mb1>{{ latestReward.category }}</Tag>
                 <div flex row class="user">
-                  <i class="fas fa-user-circle"></i>
+                  <i class="fal fa-user-circle"></i>
                   <span>{{ latestReward.name }}</span>
                 </div>
                 <Button
@@ -97,7 +97,7 @@
             </template>
             <template v-slot:item_name="{ item }">
               <div flex row>
-                <i class="fas fa-user-circle"></i>
+                <i class="fal fa-user-circle"></i>
                 <span>{{ item.name }}</span>
               </div>
             </template>
@@ -166,7 +166,7 @@
           </div>
           <Card flex third align-center justify-center bordered thin p1 mb2>
             <h4 class="text-center">
-              <i class="fas fa-plus"></i>Get creative
+              <i class="fal fa-plus"></i>Get creative
             </h4>
           </Card>
         </div>
@@ -353,7 +353,7 @@ export default {
     i {
       min-width: 18px;
       max-width: 18px;
-      margin-top: 0.1em;
+      margin-top: 0.2em;
     }
   }
   .preview {
@@ -382,7 +382,7 @@ export default {
     i {
       min-width: 18px;
       max-width: 18px;
-      margin-top: 0.1em;
+      margin-top: 0.2em;
     }
   }
 }

@@ -6,11 +6,13 @@
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu :items="policies" />
+            <div class="menu-fixed">
+              <SideMenu :items="policies" />
+            </div>
           </div>
           <ul flex column>
             <li v-for="(policy, i) in policies" :key="i">
-              <h2 :id="policy.id" mb1>{{ policy.title }}</h2>
+              <h2 :id="policy.key" mb1>{{ policy.title }}</h2>
               <p v-html="policy.description" mb2></p>
               <hr mb2 class="separator" />
             </li>
@@ -31,7 +33,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
-import SideMenu from "~/components/SideMenu";
+import SideMenu from "@mesg-components/side-menu";
 import CallToAction from "~/components/CallToAction";
 import Discover from "~/components/Discover";
 import GetStarted from "~/components/GetStarted";
@@ -63,6 +65,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.menu-fixed > nav {
+  position: sticky;
+  top: 40px;
+}
 ul {
   list-style: none;
   margin-left: 0;

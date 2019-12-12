@@ -12,11 +12,11 @@
       <div class="details">
         <Tag mr2>{{ contribution.category }}</Tag>
         <span v-if="contribution.profile" flex row>
-          <i class="fas fa-user-circle"></i>
+          <i class="fal fa-user-circle"></i>
           <a :href="contribution.profile" target="_blank">{{ contribution.name }}</a>
         </span>
         <span v-else flex row>
-          <i class="fas fa-user-circle"></i>
+          <i class="fal fa-user-circle"></i>
           {{ contribution.name }}
         </span>
       </div>

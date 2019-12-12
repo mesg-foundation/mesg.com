@@ -17,7 +17,7 @@
           </div>
           <div class="content" flex align-center>
             <span>{{ item.title }}</span>
-            <i class="fas fa-download"></i>
+            <i class="fal fa-file-download"></i>
           </div>
         </div>
       </Card>
