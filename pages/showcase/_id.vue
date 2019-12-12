@@ -1,6 +1,9 @@
 <template>
   <div>
     <Header :picture="usecase.headerimage" :title="title" :description="description">
+      <template v-slot:top v-if="usecase.label">
+        <TagLabel :type="usecase.label.type" mb1>{{ usecase.label.title }}</TagLabel>
+      </template>
       <div>
         <Button :href="usecase.cta" target="_blank" primary>Discover the project</Button>
       </div>
@@ -8,14 +11,6 @@
 
     <section id="use-case">
       <Container id="intro" flex column align-center class="intro text-center" mb3>
-        <div v-if="usecase.label" mb2>
-          <div v-if="usecase.label.type" class="label partner" flex column align-center>
-            <p>{{ usecase.label.title }}</p>
-          </div>
-          <div v-else class="label community" flex column align-center>
-            <p>{{ usecase.label }}</p>
-          </div>
-        </div>
         <h2 mb1>{{ usecase.technology }}</h2>
         <p>{{ usecase.paragraphe }}</p>
       </Container>
@@ -137,6 +132,7 @@ import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
+import TagLabel from "@mesg-components/tag-label";
 import Card from "~/components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
@@ -150,6 +146,7 @@ export default {
     UseCase,
     Video,
     Button,
+    TagLabel,
     Card,
     CTA,
     ListSN,

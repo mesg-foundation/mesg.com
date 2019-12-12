@@ -638,7 +638,7 @@ export const getters = {
         id: "plasma-exit-challenge",
         label: {
           title: "MESG Partner",
-          type: "partner"
+          type: "purple"
         },
         to: `${links.showcase}/plasma-exit-challenge`,
         logos: [
@@ -680,7 +680,10 @@ export const getters = {
       },
       {
         id: "send-messages-from-a-satellite",
-        label: "Community",
+        label: {
+          title: "Community",
+          type: "blue"
+        },
         to: `${links.showcase}/send-messages-from-a-satellite`,
         logos: [
           require("~/assets/showcase/opennode.svg"),
@@ -714,7 +717,10 @@ export const getters = {
       },
       {
         id: "enhance-zapier-workflows",
-        label: "Community",
+        label: {
+          title: "Community",
+          type: "blue"
+        },
         to: `${links.showcase}/enhance-zapier-workflows`,
         logos: [
           require("~/assets/showcase/zapier.svg"),
