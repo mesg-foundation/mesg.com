@@ -53,7 +53,7 @@ a {
     height: 80px;
     width: 0.1em;
     left: 50%;
-    background-color: $primary-light;
+    background-color: $lavender-light;
   }
   img {
     min-width: 10%;

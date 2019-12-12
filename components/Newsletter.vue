@@ -66,7 +66,7 @@ input[type="email"] {
   max-height: 50px;
   font-size: 15px;
   padding: 13px $margin;
-  border: solid 1px $primary-light;
+  border: solid 1px $lavender-light;
   border-radius: 3px;
   background-color: $white;
   color: $title-color;
@@ -74,7 +74,7 @@ input[type="email"] {
 
 input[type="email"]:focus {
   outline: none;
-  box-shadow: 0 0 0 1px $primary-light inset;
+  box-shadow: 0 0 0 1px $lavender-light inset;
 }
 
 .email {

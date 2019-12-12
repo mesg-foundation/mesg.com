@@ -216,7 +216,7 @@ export default {
       max-width: 18px;
       margin-top: 0.1em;
       margin-right: calc(#{$margin} / 2);
-      color: $primary-light;
+      color: $lavender-light;
     }
   }
 }

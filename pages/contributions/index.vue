@@ -407,7 +407,7 @@ export default {
 
 i {
   margin-right: calc(#{$margin} / 2);
-  color: $primary-light;
+  color: $lavender-light;
 }
 
 img {

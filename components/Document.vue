@@ -60,7 +60,7 @@ export default {
     min-height: 100px;
     max-height: 100px;
     overflow: hidden;
-    background-color: $primary-light;
+    background-color: $lavender-light;
     margin-right: 0;
     img {
       max-width: 40px;

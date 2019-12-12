@@ -45,7 +45,7 @@ export default {
 }
 
 .card.bordered {
-  border: solid 1px $primary-light;
+  border: solid 1px $lavender-light;
   border-bottom-width: 6px;
   border-bottom-color: $primary;
   box-shadow: none;
@@ -60,7 +60,7 @@ export default {
 
 .card.bordered.thin {
   border: solid 2px transparent;
-  box-shadow: 0 0 0 1px $primary-light inset;
+  box-shadow: 0 0 0 1px $lavender-light inset;
 }
 .card.bordered.thin:hover {
   transition: 0.2s ease;

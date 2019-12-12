@@ -42,7 +42,7 @@ export default {
 @import "~/assets/_variables";
 .outline {
   border-radius: 6px;
-  border: solid 1px $primary-light;
+  border: solid 1px $lavender-light;
 }
 
 .bottom {
