@@ -9,12 +9,7 @@
       <p mb2>{{ usecase.description}}</p>
       <div flex row space-between align-center class="label-icon">
         <div v-if="usecase.label">
-          <div v-if="usecase.label.type" class="label partner" flex column align-center>
-            <p>{{ usecase.label.title }}</p>
-          </div>
-          <div v-else class="label community" flex column align-center>
-            <p>{{ usecase.label }}</p>
-          </div>
+          <TagLabel :type="usecase.label.type">{{ usecase.label.title }}</TagLabel>
         </div>
         <i class="fal fa-long-arrow-alt-right"></i>
       </div>
@@ -24,10 +19,12 @@
 
 <script>
 import { mapGetters } from "vuex";
+import TagLabel from "@mesg-components/tag-label";
 import Card from "~/components/Card";
 export default {
   components: {
-    Card
+    Card,
+    TagLabel
   },
   props: {
     usecase: {
@@ -48,50 +45,37 @@ export default {
 <style lang="scss" scoped>
 a {
   position: relative;
-}
-img {
-  min-width: 10%;
-  max-width: 100%;
-  min-height: 10%;
-  max-height: 80px;
-}
-.logos::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  height: 80px;
-  width: 0.1em;
-  left: 50%;
-  background-color: var(--light-purple);
-}
-
-.label-icon {
-  width: calc(100% - var(--margin) * 2);
-  position: absolute;
-  bottom: calc(var(--margin) + 6px);
-}
-.label {
-  border-radius: 3px;
-  padding: calc(var(--margin) * 0.2);
-}
-.partner {
-  background-color: var(--light-orange);
-}
-.community {
-  background-color: var(--light-background);
-}
-
-.category {
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--purple);
-}
-
-i {
-  text-align: right;
+  .logos::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 80px;
+    width: 0.1em;
+    left: 50%;
+    background-color: $light-purple;
+  }
+  img {
+    min-width: 10%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 80px;
+  }
+  .category {
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $purple;
+  }
+  .label-icon {
+    width: calc(100% - #{$margin} * 2);
+    position: absolute;
+    bottom: calc(#{$margin} + 6px);
+    i {
+      text-align: right;
+    }
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
