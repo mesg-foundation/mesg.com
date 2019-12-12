@@ -24,7 +24,7 @@
 
     <section id="partners" mb3>
       <Container class="title">
-        <hr class="separator" mb3>
+        <hr class="separator" mb3 />
         <h2 mb3>Our trusted partners</h2>
       </Container>
       <Container>
@@ -46,9 +46,9 @@
       :links="[{ title: 'Become a partner' , href: externalLinks.contact }]"
     />
 
-    <Discover mb3 left="token" right="enterprise"/>
+    <Discover mb3 left="token" right="enterprise" />
 
-    <GetStarted mb3/>
+    <GetStarted mb3 />
   </div>
 </template>
 
@@ -91,6 +91,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 @media only screen and (max-width: $tablet-breakpoint) {
   #partners .title {
     padding-top: 0 !important;

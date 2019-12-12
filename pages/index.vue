@@ -194,6 +194,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #products .card img.product {
   height: 160px;
   width: 160px;
@@ -207,7 +208,7 @@ export default {
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .token {
-    margin-right: var(--margin);
+    margin-right: $margin;
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -215,17 +216,17 @@ export default {
     padding-bottom: 0;
   }
   #token {
-    margin-top: calc(var(--margin) * 2);
+    margin-top: calc(#{$margin} * 2);
   }
   #token .content {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
   .token {
     margin-right: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: $margin;
   }
   .community {
-    margin-top: calc(var(--margin) * 3);
+    margin-top: calc(#{$margin} * 3);
   }
 }
 </style>

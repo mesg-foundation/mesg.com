@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 a {
   position: relative;
   .logos::before {
@@ -52,7 +53,7 @@ a {
     height: 80px;
     width: 0.1em;
     left: 50%;
-    background-color: $light-purple;
+    background-color: $primary-light;
   }
   img {
     min-width: 10%;
@@ -66,7 +67,7 @@ a {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: $purple;
+    color: $primary;
   }
   .label-icon {
     width: calc(100% - #{$margin} * 2);

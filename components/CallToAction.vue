@@ -48,18 +48,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .primary-call-to-action {
   text-align: center;
-  background: var(--light-purple);
+  background: $primary-light;
   position: relative;
   z-index: 1;
-  padding-top: calc(4 * var(--margin));
-  padding-bottom: calc(4 * var(--margin));
+  padding-top: calc(4 * #{$margin});
+  padding-bottom: calc(4 * #{$margin});
 }
 
 .primary-call-to-action::after {
   content: "";
-  background: var(--purple);
+  background: $primary;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   display: block;
   position: absolute;
@@ -71,29 +72,29 @@ export default {
   z-index: -1;
 }
 .primary-call-to-action > * {
-  width: var(--small-width);
+  width: $small-width;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 h3 {
-  margin-bottom: var(--margin);
-  color: var(--white);
+  margin-bottom: $margin;
+  color: $white;
 }
 p {
-  color: var(--white);
+  color: $white;
 }
 @media only screen and (max-width: $tablet-breakpoint) {
   .primary-call-to-action {
-    padding: calc(var(--margin) * 2);
-    padding-top: calc(var(--margin) * 3);
-    padding-bottom: calc(var(--margin) * 3);
+    padding: calc(#{$margin} * 2);
+    padding-top: calc(#{$margin} * 3);
+    padding-bottom: calc(#{$margin} * 3);
   }
 }
 @media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .primary-call-to-action {
-    margin-top: calc(var(--margin) * 2);
-    margin-bottom: calc(var(--margin) * 2);
+    margin-top: calc(#{$margin} * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

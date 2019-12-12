@@ -41,11 +41,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 h2 {
   text-align: left;
 }
 
 .bottom {
-  background-color: var(--light-background);
+  background-color: $grey-light;
 }
 </style>

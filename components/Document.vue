@@ -50,6 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .card {
   height: 100px;
   max-height: 100%;
@@ -59,7 +60,7 @@ export default {
     min-height: 100px;
     max-height: 100px;
     overflow: hidden;
-    background-color: $light-purple;
+    background-color: $primary-light;
     margin-right: 0;
     img {
       max-width: 40px;

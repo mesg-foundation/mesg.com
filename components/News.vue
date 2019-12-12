@@ -47,6 +47,7 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 a {
   position: relative;
   img {

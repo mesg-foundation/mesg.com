@@ -114,9 +114,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 @media only screen and (max-width: $mobile-breakpoint) {
   .code {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

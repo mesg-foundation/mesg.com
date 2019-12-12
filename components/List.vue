@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 ul {
   list-style: none;
   margin-left: 0;

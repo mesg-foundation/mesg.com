@@ -28,7 +28,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/assets/_variables";
 ul {
   list-style: none;
 }
@@ -47,7 +48,7 @@ li span {
   width: 100%;
   height: 20px;
   border-radius: 6px;
-  background-color: var(--light-background);
+  background-color: $grey-light;
 }
 
 .progress {

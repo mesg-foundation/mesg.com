@@ -38,15 +38,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/assets/_variables";
 .outline {
   border-radius: 6px;
-  border: solid 1px var(--light-purple);
+  border: solid 1px $primary-light;
 }
 
 .bottom {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  background-color: var(--light-background);
+  background-color: $grey-light;
 }
 </style>

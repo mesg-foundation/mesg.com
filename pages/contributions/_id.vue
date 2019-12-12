@@ -162,6 +162,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .form {
   a {
     width: 100%;
@@ -215,7 +216,7 @@ export default {
       max-width: 18px;
       margin-top: 0.1em;
       margin-right: calc(#{$margin} / 2);
-      color: $light-purple;
+      color: $primary-light;
     }
   }
 }

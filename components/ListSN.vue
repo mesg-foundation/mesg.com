@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 a {
   margin-top: calc(#{$margin} / 2);
   margin-bottom: calc(#{$margin} / 2);

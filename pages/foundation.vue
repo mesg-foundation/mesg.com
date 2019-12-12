@@ -175,6 +175,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .mesg-presentation {
   width: 66%;
 }
@@ -198,13 +199,13 @@ export default {
     padding-bottom: 0;
   }
   .founders {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
   #documents {
     margin-bottom: 0 !important;
   }
   #documents .container {
-    padding-bottom: calc(var(--margin) * 2);
+    padding-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

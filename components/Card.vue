@@ -28,15 +28,16 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/assets/_variables";
 .card {
   border-radius: 6px;
-  background-color: var(--white);
+  background-color: $white;
   overflow: hidden;
 }
 
 .card.purple {
-  background-color: var(--purple);
+  background-color: $primary;
 }
 
 .card.shadow {
@@ -44,26 +45,26 @@ export default {
 }
 
 .card.bordered {
-  border: solid 1px var(--light-purple);
+  border: solid 1px $primary-light;
   border-bottom-width: 6px;
-  border-bottom-color: var(--purple);
+  border-bottom-color: $primary;
   box-shadow: none;
 }
 .card.bordered:hover {
   transition: 0.2s ease;
-  border: solid 1px var(--purple);
+  border: solid 1px $primary;
   border-bottom-width: 6px;
-  border-bottom-color: var(--purple);
-  box-shadow: 0 0 0 1px var(--purple) inset;
+  border-bottom-color: $primary;
+  box-shadow: 0 0 0 1px $primary inset;
 }
 
 .card.bordered.thin {
   border: solid 2px transparent;
-  box-shadow: 0 0 0 1px var(--light-purple) inset;
+  box-shadow: 0 0 0 1px $primary-light inset;
 }
 .card.bordered.thin:hover {
   transition: 0.2s ease;
-  border-color: var(--purple);
+  border-color: $primary;
   box-shadow: none;
 }
 </style>
