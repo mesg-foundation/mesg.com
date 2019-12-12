@@ -48,7 +48,7 @@
             p2
           >
             <div half class="getstarted-content" pr1>
-              <Tag class="tag-purple" mb1>{{ getstarted.tag}}</Tag>
+              <TagLabel type="purple" mb1>{{ getstarted.tag}}</TagLabel>
               <h3 mb1>{{ getstarted.title}}</h3>
               <p class="test" v-html="getstarted.description"></p>
             </div>
@@ -192,7 +192,7 @@ import Partners from "~/components/Partners";
 import Titletext4 from "~/components/Titletext4";
 import CTA from "~/components/CTA";
 import Card from "~/components/Card";
-import Tag from "@mesg-components/tag-label";
+import TagLabel from "@mesg-components/tag-label";
 import Table from "@mesg-components/table";
 import ListSN from "~/components/ListSN";
 import page from "./page";
