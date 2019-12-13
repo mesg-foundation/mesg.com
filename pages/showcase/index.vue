@@ -2,7 +2,7 @@
   <div>
     <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description">
       <div>
-        <Button :href="externalLinks.getStarted" target="_blank" primary>Start building</Button>
+        <Button :to="links.getstarted" primary>Start building</Button>
       </div>
     </Header>
 
@@ -89,7 +89,7 @@
       icon="fal fa-book"
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Start building' , href: externalLinks.getStarted }]"
+      :links="[{ title: 'Start building' , to: links.getstarted }]"
       mb1
     />
   </div>

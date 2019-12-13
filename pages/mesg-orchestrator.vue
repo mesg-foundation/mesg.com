@@ -5,7 +5,7 @@
       :title="title"
       :description="description"
     >
-      <Button :href="externalLinks.process" primary target="_blank">Start building</Button>
+      <Button :to="links.getstarted" primary>Start building</Button>
     </Header>
 
     <section id="features" mb3>
@@ -66,7 +66,7 @@
       description="Start creating feature-rich software today with a simple process file."
       mb1
     >
-      <Button :href="externalLinks.process" target="_blank" white>Start building</Button>
+      <Button :to="links.getstarted" target="_blank" white>Start building</Button>
     </CTA>
   </div>
 </template>

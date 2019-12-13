@@ -49,7 +49,7 @@
             <nuxt-link :to="links.token" class="top-menu">Token</nuxt-link>
           </li>
           <li flex align-center>
-            <Button primary small :href="externalLinks.getStarted">Get started</Button>
+            <Button primary small :to="links.getstarted">Get started</Button>
           </li>
         </ul>
       </div>

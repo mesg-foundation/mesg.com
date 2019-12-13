@@ -963,6 +963,104 @@ export const getters = {
     ]
   },
 
+  getstarted(_, { links, externalLinks, tutorials }) {
+    return [
+      {
+        tag: "Install",
+        title: "Engine",
+        description: "The Engine is a message broker and common event channel built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the Engine, open a terminal and enter in <code>npm install -g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
+        resources: [
+          {
+            category: "fal fa-question",
+            color: "orange",
+            title: "Learn more",
+            to: links.engine,
+            info: "SDK",
+            icon: "fal fa-long-arrow-alt-right"
+          },
+          {
+            category: "fal fa-book",
+            color: "blue",
+            title: "Installation",
+            link: externalLinks.getStarted,
+            info: "Documentation",
+            icon: "fal fa-external-link-alt"
+          }
+        ]
+      },
+      {
+        tag: "Build",
+        title: "Service",
+        description: "Services are discrete units of functionality that are used to bridge to external technologies or complete a specific function. They can be remotely accessed, and independently acted upon and updated.<br/><br/>Start building a new service by running: <code>mesg-cli service:init</code> or reuse existing services from the Marketplace.",
+        resources: [
+          {
+            category: "fal fa-question",
+            color: "orange",
+            title: "Learn more",
+            to: links.marketplace,
+            info: "Marketplace",
+            icon: "fal fa-long-arrow-alt-right"
+          },
+          {
+            category: "fal fa-book",
+            color: "blue",
+            title: "Create a service",
+            link: externalLinks.service,
+            info: "Documentation",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-store",
+            color: "purple",
+            title: "Browse the marketplace",
+            link: externalLinks.marketplace,
+            info: "Resource",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-laptop-code",
+            color: "green",
+            title: tutorials.emailService.title,
+            link: tutorials.emailService.to,
+            info: "Tutorial",
+            icon: "fal fa-external-link-alt"
+          }
+        ]
+      },
+      {
+        tag: "Create",
+        title: "Process",
+        description: "A process is a step-by-step description of business logic that combines the events and tasks of services to form applications.<br/><br/>All interaction between services is managed by the Engine, enabling easy scalability. Start creating a process by running: <code>mesg-cli process:create</code>",
+        resources: [
+          {
+            category: "fal fa-question",
+            color: "orange",
+            title: "Learn more",
+            to: links.orchestrator,
+            info: "Orchestrator",
+            icon: "fal fa-long-arrow-alt-right"
+          },
+          {
+            category: "fal fa-book",
+            color: "blue",
+            title: "Create a process",
+            link: externalLinks.process,
+            info: "Documentation",
+            icon: "fal fa-external-link-alt"
+          },
+          {
+            category: "fal fa-laptop-code",
+            color: "green",
+            title: tutorials.erc20Notifier.title,
+            link: tutorials.erc20Notifier.to,
+            info: "Tutorial",
+            icon: "fal fa-external-link-alt"
+          }
+        ]
+      }
+    ]
+  },
+
   exchanges() {
     return [
       { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
@@ -1030,7 +1128,32 @@ export const getters = {
   forms() {
     return {
       addContribution: "bOJ0qz",
-      editContribution: "AFQb2X",
+      editContribution: "AFQb2X"
+    }
+  },
+
+  tutorials() {
+    return {
+      emailService: {
+        title: "Email service",
+        to: "https://blog.mesg.com/send-emails-with-sendgrid/"
+      },
+      erc20Service: {
+        title: "ERC-20 service",
+        to: "https://blog.mesg.com/listen-for-transfers-of-an-ethereum-erc20-token/"
+      },
+      erc20Notifier: {
+        title: "ERC-20 notifier",
+        to: "https://blog.mesg.com/receive-email-when-there-is-an-erc20-transfer/"
+      },
+      networkEngine: {
+        title: "Create a network with multiple Engines",
+        to: "https://blog.mesg.com/tutorial-create-a-network-with-multiple-engines/"
+      },
+      processEmailerc20transfer: {
+        title: "Create a process to receive an email when an ERC-20 transfer occurs",
+        to: "https://blog.mesg.com/create-a-process-to-receive-an-email-when-an-erc20-transfer-occurs/"
+      }
     }
   },
 
@@ -1039,7 +1162,7 @@ export const getters = {
       documentation: "https://docs.mesg.com/",
       process: "https://docs.mesg.com/guide/process/",
       marketplace: "https://marketplace.mesg.com/",
-      service: "https://docs.mesg.com/guide/marketplace/",
+      service: "https://docs.mesg.com/guide/service/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
       blog: "https://blog.mesg.com",
@@ -1073,7 +1196,8 @@ export const getters = {
       faq: "/faq",
       roadmap: "/roadmap",
       usecase: "/usecase",
-      policy: "/privacy-cookie-policy"
+      policy: "/privacy-cookie-policy",
+      getstarted: "/get-started"
     }
   }
 }
