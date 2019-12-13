@@ -43,16 +43,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 @media only screen and (max-width: $mobile-breakpoint) {
   p {
     margin-bottom: 0 !important;
   }
   img {
-    margin-bottom: var(--margin);
+    margin-bottom: $margin;
   }
 }
 .section {
-  margin-bottom: calc(var(--margin) * 3) !important;
+  margin-bottom: calc(#{$margin} * 3) !important;
 }
 .section:last-child {
   margin-bottom: 0 !important;

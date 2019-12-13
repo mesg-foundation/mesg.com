@@ -1,131 +1,7 @@
-:root {
-  --purple: #{$purple};
-  --purple-shadow: #{$purple-shadow};
-  --light-purple: #{$light-purple};
-  --deep-purple: #{$deep-purple};
-  --dark-purple: #{$dark-purple};
-  --orange: #{$orange};
-  --light-orange: #{$light-orange};
-  --green: #{$green};
-  --light-green: #{$light-green};
-  --blue: #{$blue};
-  --light-blue: #{$light-blue};
-  --electric-purple: #{$electric-purple};
-  --light-electric-purple: #{$light-electric-purple};
-  --white: #{$white};
-  --light-background: #{$light-background};
-  --title-color: #{$title-color};
-  --text-color: #{$text-color};
-  --gold: #{$gold};
-  --error: #{$error};
-  --success: #{$success};
-  --info: #{$info};
-  --warning: #{$warning};
-  --margin: #{$margin};
-  --width: #{$width};
-  --small-width: #{$small-width};
-}
-
-:root {
-  --primary: #{$purple};
-  --primary-dark: #{$title-color};
-  --primary-light: #{$deep-purple};
-  --primary-very-light: #{$light-purple};
-  --light-grey: #{$light-background};
-  --secondary: #{$purple-shadow};
-  --dark-grey: #{$text-color};
-  --Black: #000000;
-  --White: #{$white};
-  --Error: #9E2316;
-  --Success: #238218;
-  --Info: #144DD1;
-  --Warning: #E08C04;
-  --mobile-only: #{$mobile-only};
-  --mobile-breakpoint: #{$mobile-breakpoint};
-  --tablet-breakpoint: #{$tablet-breakpoint};
-  --huge-breakpoint: #{$huge-breakpoint};
-}
 
 @import "structure";
+@import "@mesg-components/theme";
 
-/* Reset */
-html {
-  font-size: 1em;
-  word-spacing: 0.1em;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Text styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-a,
-p,
-ul,
-li,
-span,
-button,
-label,
-input,
-textarea {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  font-weight: normal;
-}
-h1 {
-  font-size: 38px;
-  font-weight: bold;
-  color: $title-color;
-}
-h2 {
-  font-size: 32px;
-  font-weight: bold;
-  color: $title-color;
-}
-h3 {
-  font-size: 26px;
-  font-weight: 600;
-  color: $title-color;
-}
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: $title-color;
-}
-p {
-  font-size: 17px;
-  color: $text-color;
-  line-height: 1.7;
-}
-
-ul {
-  list-style: disc;
-  margin-left: $margin;
-  li {
-    color: $text-color;
-    margin-bottom: calc(#{$margin} /2);
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
 
 code {
   color: $purple;
@@ -140,24 +16,6 @@ code {
   font-size: 14px;
 }
 
-i {
-  font-size: 17px;
-}
-
-a {
-  font-weight: bold;
-  color: $purple;
-  text-decoration: none;
-}
-.link:hover {
-  text-decoration: underline;
-  transition: 0.1s ease;
-}
-.link-secondary:hover {
-  opacity: 0.7;
-  transition: 0.1s ease;
-}
-
 .white {
   color: $white!important;
 }
@@ -167,65 +25,6 @@ a {
 .success {
   color: $success!important;
 }
-
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-
-/*Social*/
-.twitter {
-  color: #1da1f2;
-  background-color: rgba(29, 161, 242, 0.1);
-}
-.github {
-  color: #24292e;
-  background-color: rgba(36, 41, 46, 0.1);
-}
-.telegram {
-  color: #0088cc;
-  background-color: rgba(0, 136, 204, 0.1);
-}
-.forum {
-  color: #491e8c;
-  background-color: rgba(73, 30, 140, 0.1);
-}
-.discord {
-  color: #7289da;
-  background-color: rgba(114, 137, 218, 0.1);
-}
-.reddit {
-  color: #ff4500;
-  background-color: rgba(255, 69, 0, 0.1);
-}
-.medium {
-  color: #12100E;
-  background-color: rgba(18, 16, 14, 0.1);
-}
-
-/*secondary MESG colors*/
-.orange {
-  color: $orange;
-  background-color: $light-orange;
-}
-.blue {
-  color: $blue;
-  background-color: $light-blue;
-}
-.green {
- color: $green;
- background-color: $light-green;
-}
-.purple {
-  color: $electric-purple;
-  background-color: $light-electric-purple;
-}
-
 
 /* Design styles */
 img {
@@ -243,14 +42,14 @@ img {
   left: 0;
   width: 100%;
   z-index: -1;
-  background-color: $light-background;
+  background-color: $grey-light;
 }
 .outer-background {
   padding-top: calc(#{$margin} * 4);
-  padding-bottom: calc(#{$margin} * 4);
+  padding-bottom:calc(#{$margin} * 4);
   background-image: linear-gradient(
     to top,
-    $light-background,
+    $grey-light,
     $white
   );
 }
@@ -260,13 +59,9 @@ hr {
   max-width: calc(#{$width} / 2);
   margin: auto;
   border:solid 0.5px;
-  color: $light-purple;
+  color: $lavender-light;
 }
 
-.container > p {
-  max-width: $small-width;
-  margin: auto;
-}
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .description {
@@ -285,10 +80,10 @@ hr {
     text-align: center;
   }
   #usecase .button {
-    margin-top: $margin;
+    margin-top:$margin;
   }
   #faq .button {
-    margin-top: $margin;
+    margin-top:$margin;
   }
   .outer-background {
   padding-top: $margin;

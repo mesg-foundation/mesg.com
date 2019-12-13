@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 form {
   position: relative;
 }
@@ -64,25 +65,25 @@ form {
 input[type="email"] {
   max-height: 50px;
   font-size: 15px;
-  padding: 13px var(--margin);
-  border: solid 1px var(--light-purple);
+  padding: 13px $margin;
+  border: solid 1px $lavender-light;
   border-radius: 3px;
-  background-color: var(--white);
-  color: var(--dark-purple);
+  background-color: $white;
+  color: $title-color;
 }
 
 input[type="email"]:focus {
   outline: none;
-  box-shadow: 0 0 0 1px var(--light-purple) inset;
+  box-shadow: 0 0 0 1px $lavender-light inset;
 }
 
 .email {
-  margin-right: var(--margin);
+  margin-right: $margin;
 }
 
 button {
-  padding-left: var(--margin);
-  padding-right: var(--margin);
+  padding-left: $margin;
+  padding-right: $margin;
   border: none;
 }
 button:hover {
@@ -96,7 +97,7 @@ button:hover {
   .btn {
     width: 100%;
     max-width: 100%;
-    margin-top: var(--margin);
+    margin-top: $margin;
   }
 }
 </style>

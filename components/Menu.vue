@@ -84,9 +84,10 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 nav {
   height: 80px;
-  padding: calc(var(--margin) - 2px) calc(var(--margin) * 2);
+  padding: calc(#{$margin} - 2px) calc(#{$margin} * 2);
   img {
     max-width: 153px;
     max-height: 40px;
@@ -106,14 +107,14 @@ nav {
     display: block;
   }
   .top-menu {
-    color: var(--title-color);
+    color: $title-color;
     &:hover {
       opacity: 0.7;
       transition: 0.1s ease;
     }
     i {
       font-size: 12px;
-      margin-left: calc(var(--margin) / 4);
+      margin-left: calc(#{$margin} / 4);
     }
   }
   .btn--small {
@@ -142,10 +143,10 @@ ul {
     opacity: 0;
     z-index: 1;
     border-radius: 6px;
-    background-color: var(--white);
+    background-color: $white;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     animation: appear-in 0.2s ease-in;
-    border-top: solid 6px var(--purple);
+    border-top: solid 6px $primary;
     &::before {
       content: "";
       position: absolute;
@@ -153,7 +154,7 @@ ul {
       height: 0;
       bottom: 100%;
       left: 45%;
-      border-bottom: 15px solid var(--purple);
+      border-bottom: 15px solid $primary;
       border-right: 15px solid transparent;
       border-left: 15px solid transparent;
     }
@@ -162,9 +163,9 @@ ul {
       display: block;
       text-align: left;
       padding: 0.75em 2em;
-      color: var(--text-color);
+      color: $text-color;
       &:hover {
-        color: var(--purple);
+        color: $primary;
         font-weight: 600;
         transition: 0.1s ease;
       }
@@ -202,7 +203,7 @@ ul {
     width: 95%;
     top: 80px;
     z-index: 1;
-    background-color: var(--white);
+    background-color: $white;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     &.open {
       display: block;
@@ -222,8 +223,8 @@ ul {
   }
 
   ul {
-    padding: calc(var(--margin) * 2);
-    border-top: solid 6px var(--purple);
+    padding: calc(#{$margin} * 2);
+    border-top: solid 6px $primary;
     border-radius: 6px;
     &::before {
       content: "";
@@ -231,13 +232,13 @@ ul {
       width: 0;
       height: 0;
       bottom: 100%;
-      right: var(--margin);
-      border-bottom: 10px solid var(--purple);
+      right: $margin;
+      border-bottom: 10px solid $primary;
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
     }
     li {
-      margin-right: var(--margin);
+      margin-right: $margin;
       height: fit-content;
     }
     li > a:not(.btn--primary) {
@@ -248,7 +249,7 @@ ul {
   .top-menu {
     width: 100%;
     font-weight: bold;
-    color: var(--title-color);
+    color: $title-color;
     i {
       display: none;
     }
@@ -259,14 +260,14 @@ ul {
     padding: 0 !important;
     margin-top: 0 !important;
     a {
-      color: var(--text-color);
+      color: $text-color;
       font-weight: normal;
       display: block;
-      padding: calc(var(--margin) / 2);
+      padding: calc(#{$margin} / 2);
       padding-left: 0;
       padding-right: 0;
       &:hover {
-        color: var(--purple);
+        color: $primary;
         font-weight: 600;
         transition: 0.1s ease;
       }
@@ -298,17 +299,15 @@ ul {
   }
   li {
     margin-right: 0;
-    margin-bottom: var(--margin) !important;
+    margin-bottom: $margin !important;
     a:not(.btn--primary) {
       line-height: 40px;
       padding: 0;
     }
   }
-  .sub-menu {
-  }
   .btn--primary {
     line-height: 50px;
-    margin-top: var(--margin);
+    margin-top: $margin;
   }
 }
 </style>

@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .sidebar {
   position: sticky;
   top: 40px;

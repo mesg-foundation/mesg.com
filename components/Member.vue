@@ -44,7 +44,8 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/assets/_variables";
 img {
   width: 100%;
   height: auto;
@@ -52,7 +53,7 @@ img {
 }
 
 .text {
-  padding: var(--margin);
+  padding: $margin;
 }
 
 .picture {
@@ -90,7 +91,7 @@ img {
   bottom: 0;
   position: absolute;
   opacity: 0.8;
-  background-color: var(--purple);
+  background-color: $primary;
 }
 
 .social {
@@ -107,10 +108,10 @@ i {
   text-decoration: none;
   margin-left: 0.4em;
   margin-right: 0.4em;
-  color: var(--purple);
+  color: $primary;
   height: 50px;
   max-width: 50px;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 100%;
   animation: Bubble 0.2s ease-in;
 }

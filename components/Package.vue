@@ -76,6 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 ul {
   list-style: none;
   margin-left: 0;
@@ -100,10 +101,10 @@ hr {
   background-color: $white;
   .invalid {
     p {
-      color: $light-purple;
+      color: $primary-light;
     }
     i {
-      color: $light-purple;
+      color: $primary-light;
     }
   }
 }
@@ -111,7 +112,7 @@ hr {
 /*purple*/
 .purple {
   transform: scale(1.05);
-  background-color: $purple;
+  background-color: $primary;
   h3 {
     color: $white;
   }
@@ -120,20 +121,20 @@ hr {
   }
   .invalid {
     p {
-      color: $deep-purple;
+      color: $lavender;
     }
     i {
-      color: $deep-purple;
+      color: $lavender;
     }
   }
   li {
     color: $white;
   }
   hr {
-    color: $deep-purple;
+    color: $lavender;
   }
   button {
-    color: $purple;
+    color: $primary;
     background-color: $white;
   }
 }

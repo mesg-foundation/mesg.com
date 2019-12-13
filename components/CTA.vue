@@ -64,6 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #cta {
   position: relative;
   &:before {
@@ -71,12 +72,12 @@ export default {
     position: absolute;
     width: 100%;
     height: calc(100% + 100px);
-    background: $light-background;
+    background: $grey-light;
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
   .card-cta {
-    background-image: linear-gradient(to right, $purple, $electric-purple);
+    background-image: linear-gradient(to right, $primary, $purple);
   }
   h2 {
     color: $white;
@@ -91,11 +92,11 @@ export default {
     min-height: 80px;
     max-height: 80px;
     border-radius: 3px;
-    background-color: $electric-purple;
+    background-color: $purple;
     i {
       text-align: center;
       font-size: 40px;
-      color: $light-electric-purple;
+      color: $primary-light;
     }
   }
   nav {

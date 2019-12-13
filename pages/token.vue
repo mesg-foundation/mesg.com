@@ -213,6 +213,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #cta {
   position: relative;
   &:before {
@@ -220,7 +221,7 @@ export default {
     position: absolute;
     width: 100%;
     height: calc(100% + 100px);
-    background: $light-background;
+    background: $grey-light;
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
@@ -228,7 +229,7 @@ export default {
     color: $white;
   }
   .card-cta {
-    background-image: linear-gradient(to right, $purple, $electric-purple);
+    background-image: linear-gradient(to right, $primary, $purple);
   }
 }
 
@@ -250,7 +251,7 @@ li img {
 }
 
 .features {
-  padding-top: calc(var(--margin) * 2);
+  padding-top: calc(#{$margin} * 2);
 }
 @media only screen and (max-width: $tablet-breakpoint) {
   .features {
@@ -260,7 +261,7 @@ li img {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .btn--white {
-    margin-bottom: calc(var(--margin) * 2) !important;
+    margin-bottom: calc(#{$margin} * 2) !important;
   }
   .btn--white:last-child {
     margin-bottom: 0 !important;
@@ -269,21 +270,21 @@ li img {
     margin-bottom: 0 !important;
   }
   .logo {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
   #atd .container {
     padding-bottom: 0;
   }
   .community {
-    margin-top: calc(var(--margin) * 3);
+    margin-top: calc(#{$margin} * 3);
   }
 }
 
 @media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .logo {
-    width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
-    min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
-    max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+    width: calc((100% - (3 - 1) * 2 * #{$margin}) / 3);
+    min-width: calc((100% - (3 - 1) * 2 * #{$margin}) / 3);
+    max-width: calc((100% - (3 - 1) * 2 * #{$margin}) / 3);
   }
 }
 </style>

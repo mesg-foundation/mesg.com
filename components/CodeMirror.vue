@@ -58,6 +58,3 @@ tasks:
   }
 };
 </script>
-
-<style scoped>
-</style>

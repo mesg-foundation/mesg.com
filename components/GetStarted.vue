@@ -75,6 +75,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 i {
   font-size: 1em;
   font-weight: bold;
@@ -91,17 +92,17 @@ i {
   position: absolute;
   width: 100%;
   height: calc(100% + 200px);
-  background: var(--light-background);
+  background: $grey-light;
   transform: translateY(30%) skewY(-8deg);
   z-index: -1;
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .link-secondary {
-    margin-bottom: var(--margin);
+    margin-bottom: $margin;
   }
   .content {
-    margin-bottom: var(--margin);
+    margin-bottom: $margin;
   }
 }
 </style>

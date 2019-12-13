@@ -1,3 +1,6 @@
+@import "variables";
+
+
 /* Structure */
 [flex] {
   display: flex;
@@ -21,7 +24,7 @@
   flex-wrap: wrap;
 }
 [row] > * {
-  margin-right: calc(2 * var(--margin));
+  margin-right: calc(2 * #{$margin});
 }
 [row] > *:last-child {
   margin-right: 0;
@@ -35,7 +38,7 @@
   }
 }
 [row][reverse] > * {
-  margin-right: calc(2 * var(--margin));
+  margin-right: calc(2 * #{$margin});
 }
 [row][reverse] > *:first-child {
   margin-right: 0;
@@ -107,27 +110,27 @@
   margin-right: 0;
 }
 [half] {
-  width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
-  min-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
-  max-width: calc((100% - (2 - 1) * 2 * var(--margin)) / 2);
+  width: calc((100% - (2 - 1) * 2 * #{$margin} / 2));
+  min-width: calc((100% - (2 - 1) * 2 * #{$margin} / 2));
+  max-width: calc((100% - (2 - 1) * 2 * #{$margin} / 2));
 }
 
 [row] > [third]:nth-child(3n) {
   margin-right: 0;
 }
 [third] {
-  width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
-  min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
-  max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+  width: calc((100% - (3 - 1) * 2 * #{$margin} / 3));
+  min-width: calc((100% - (3 - 1) * 2 * #{$margin} / 3));
+  max-width: calc((100% - (3 - 1) * 2 * #{$margin} / 3));
 }
 
 [row] > [quarter]:nth-child(4n) {
   margin-right: 0;
 }
 [quarter] {
-  width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
-  min-width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
-  max-width: calc((100% - (4 - 1) * 2 * var(--margin)) / 4);
+  width: calc((100% - (4 - 1) * 2 * #{$margin} / 4));
+  min-width: calc((100% - (4 - 1) * 2 * #{$margin} / 4));
+  max-width: calc((100% - (4 - 1) * 2 * #{$margin} / 4));
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -157,7 +160,7 @@
   max-width: 75%;
 }
 @for $i from 1 through 4 {
-  $val: calc(var(--margin) * #{pow(2, $i - 1)});
+  $val: calc(#{$margin} * #{pow(2, $i - 1)});
   [m#{$i}] {
     margin: $val !important;
   }

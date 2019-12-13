@@ -102,6 +102,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #roadmap-list {
   h2 {
     width: 80px;
@@ -110,15 +111,15 @@ export default {
   h3 {
     width: 60px;
     height: 60px;
-    padding: calc(var(--margin) / 2);
-    color: var(--deep-purple);
+    padding: calc(#{$margin} / 2);
+    color: $lavender;
     border: solid 2px;
     border-radius: 3px;
     text-align: center;
   }
   h4 {
     font-weight: bold;
-    margin-bottom: calc(var(--margin) - 8px);
+    margin-bottom: calc(#{$margin} - 8px);
     a {
       margin-left: calc(#{$margin} / 2);
     }
@@ -131,27 +132,27 @@ ul {
 }
 
 .years {
-  width: var(--small-width);
+  width: $small-width;
   max-width: 100%;
   margin: auto;
 }
 .years > li {
-  margin-bottom: calc(var(--margin) + 35px);
+  margin-bottom: calc(#{$margin} + 35px);
 }
 
 .quarters {
-  margin-left: calc(80px + 2 * var(--margin));
+  margin-left: calc(80px + 2 * #{$margin});
   margin-top: -51px;
 }
 .quarters > li {
-  margin-bottom: calc(var(--margin) + 25px);
+  margin-bottom: calc(#{$margin} + 25px);
   position: relative;
   &:after {
     content: "";
     display: block;
     width: 10px;
     height: 2px;
-    background-color: var(--purple);
+    background-color: $primary;
     display: inline-block;
     position: absolute;
     left: 25px;
@@ -160,7 +161,7 @@ ul {
 }
 
 .goals {
-  padding-left: calc(60px + 2 * var(--margin));
+  padding-left: calc(60px + 2 * #{$margin});
   margin-top: -42px;
   position: relative;
   &:before {
@@ -168,7 +169,7 @@ ul {
     display: block;
     width: 2px;
     height: calc(100% - 30px);
-    background-color: var(--purple);
+    background-color: $primary;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -180,7 +181,7 @@ ul {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: var(--purple);
+    background-color: $primary;
     display: inline-block;
     position: absolute;
     left: 25px;
@@ -190,11 +191,11 @@ ul {
 
 .bullet-points {
   list-style: disc;
-  margin-left: var(--margin);
+  margin-left: $margin;
 }
 
 .goals > li {
-  margin-bottom: calc(var(--margin) + 12px);
+  margin-bottom: calc(#{$margin} + 12px);
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -215,15 +216,15 @@ ul {
   }
   #roadmap-list {
     h2 {
-      margin-top: calc(2 * var(--margin));
+      margin-top: calc(2 * #{$margin});
     }
     h3,
     h4 {
-      margin-top: var(--margin);
+      margin-top: $margin;
     }
   }
   .community {
-    margin-top: calc(var(--margin) * 3);
+    margin-top: calc(#{$margin} * 3);
   }
 }
 </style>

@@ -19,12 +19,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 span {
   width: 20px;
   height: 20px;
   border-radius: 3px;
   display: inline-block;
-  margin-right: calc(var(--margin) / 2);
+  margin-right: calc(#{$margin} / 2);
   vertical-align: middle;
 }
 </style>
