@@ -314,6 +314,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #contributors {
   .contributors-table {
     width: 100%;
@@ -329,7 +330,7 @@ export default {
       z-index: -1;
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
-      background-color: $purple;
+      background-color: $primary;
     }
   }
   .user-rewarded {
@@ -360,7 +361,7 @@ export default {
     min-height: 450px;
     max-height: 500px;
     overflow-y: auto;
-    background-color: $light-background;
+    background-color: $grey-light;
     .infos {
       font-weight: bold;
     }
@@ -373,7 +374,7 @@ export default {
   table {
     .date {
       font-size: 15px;
-      color: $light-purple;
+      color: $primary-light;
     }
     div {
       width: auto;
@@ -395,7 +396,7 @@ export default {
 
 .card.bordered.thin:hover {
   border: solid 2px transparent;
-  box-shadow: 0 0 0 1px $light-purple inset;
+  box-shadow: 0 0 0 1px $primary-light inset;
 }
 
 #help {
@@ -406,7 +407,7 @@ export default {
 
 i {
   margin-right: calc(#{$margin} / 2);
-  color: $light-purple;
+  color: $lavender-light;
 }
 
 img {

@@ -25,11 +25,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/assets/_variables";
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: calc(var(--margin) + 5px);
+  padding-top: calc(#{$margin} + 5px);
   height: 0;
 }
 .videoWrapper iframe {

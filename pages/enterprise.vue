@@ -123,8 +123,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .features {
-  padding-top: calc(var(--margin) * 2);
+  padding-top: calc(#{$margin} * 2);
 }
 @media only screen and (max-width: $tablet-breakpoint) {
   .features {

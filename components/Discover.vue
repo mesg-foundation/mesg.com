@@ -44,6 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .items {
   position: relative;
 }
@@ -55,13 +56,13 @@ export default {
     height: 100%;
     width: 0.1em;
     left: 50%;
-    background-color: var(--light-purple);
+    background-color: $primary-light;
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .item {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
   p {
     margin-bottom: 0 !important;

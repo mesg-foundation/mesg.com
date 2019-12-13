@@ -70,11 +70,11 @@ module.exports = {
     generate: true, // Enable me when using nuxt generate
     exclude: ['showcases']
   },
-  styleResources: {
-    scss: [
-      './assets/_variables.scss'
-    ]
-  },
+  // styleResources: {
+  //   scss: [
+  //     './assets/_variables.scss'
+  //   ]
+  // },
   /*
   ** Plugins
   */

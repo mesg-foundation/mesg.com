@@ -88,10 +88,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #footer {
-  padding: calc(var(--margin) * 2);
+  padding: calc(#{$margin} * 2);
   width: 100%;
-  background-color: var(--light-background);
+  background-color: $grey-light;
 }
 
 nav {
@@ -112,7 +113,7 @@ nav {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--text-color);
+    color: $text-color;
   }
   .policy {
     font-size: 12px;
@@ -121,7 +122,7 @@ nav {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--text-color);
+    color: $text-color;
   }
   .icon {
     font-size: 18px;
@@ -129,7 +130,7 @@ nav {
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    color: var(--text-color);
+    color: $text-color;
     &:hover {
       opacity: 0.7;
       transition: 0.1s ease;
@@ -150,7 +151,7 @@ ul {
       font-stretch: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: var(--title-color);
+      color: $title-color;
       display: inline;
     }
     a {
@@ -162,15 +163,15 @@ ul {
       letter-spacing: normal;
       text-align: left;
       padding: 0;
-      margin-bottom: calc(var(--margin) / 2);
-      color: var(--text-color);
+      margin-bottom: calc(#{$margin} / 2);
+      color: $text-color;
     }
   }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
   #footer {
-    padding: calc(var(--margin) * 2);
+    padding: calc(#{$margin} * 2);
     padding-top: 0;
   }
   .container {
@@ -180,10 +181,10 @@ ul {
 
 @media only screen and (max-width: $mobile-breakpoint) {
   img {
-    margin-top: calc(var(--margin) * 2);
+    margin-top: calc(#{$margin} * 2);
   }
   li {
-    margin-bottom: var(--margin) !important;
+    margin-bottom: $margin !important;
   }
 }
 </style>

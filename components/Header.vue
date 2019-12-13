@@ -53,6 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #header {
   position: relative;
   &::before {
@@ -60,11 +61,7 @@ export default {
     position: absolute;
     width: 100%;
     height: calc(100% + 200px);
-    background-image: linear-gradient(
-      to top,
-      var(--light-background),
-      var(--white)
-    );
+    background-image: linear-gradient(to top, $grey-light, $white);
     transform: translateY(-35%) skewY(-8deg);
     z-index: -1;
   }
@@ -73,7 +70,7 @@ export default {
   }
   img {
     height: auto;
-    max-height: calc(var(--width) / 2);
+    max-height: calc(#{$width} / 2);
   }
 }
 
@@ -82,7 +79,7 @@ export default {
     height: calc(100% + 400px);
   }
   img {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

@@ -194,6 +194,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .image {
   border-radius: 6px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
@@ -218,13 +219,13 @@ li.opportunitie:last-child {
 
 .label {
   border-radius: 3px;
-  padding: calc(var(--margin) / 2);
+  padding: calc(#{$margin} / 2);
 }
 .partner {
-  background-color: var(--light-orange);
+  background-color: $orange-light;
 }
 .community {
-  background-color: var(--light-background);
+  background-color: $grey-light;
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -233,21 +234,21 @@ li.opportunitie:last-child {
   }
   #usecase-description {
     .illus {
-      margin-bottom: calc(var(--margin) * 2) !important;
+      margin-bottom: calc(#{$margin} * 2) !important;
     }
     ul:last-child {
       margin-bottom: 0 !important;
     }
   }
   .companies li {
-    margin-bottom: var(--margin);
+    margin-bottom: $margin;
   }
   #information a {
     text-align: center;
     margin-right: 0 !important;
   }
   .social {
-    margin-top: calc(var(--margin) * 3);
+    margin-top: calc(#{$margin} * 3);
   }
 }
 </style>

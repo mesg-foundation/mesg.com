@@ -135,12 +135,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 @media only screen and (max-width: $mobile-breakpoint) {
   .usecases {
-    margin-bottom: calc(var(--margin) * 3) !important;
+    margin-bottom: calc(#{$margin} * 3) !important;
   }
   .community {
-    margin-top: calc(var(--margin) * 3);
+    margin-top: calc(#{$margin} * 3);
   }
   #separator .container {
     padding-bottom: 0;
