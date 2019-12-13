@@ -53,7 +53,7 @@
               <p class="test" v-html="getstarted.description"></p>
             </div>
             <div class="separator" fill-height></div>
-            <div flex column half class="getstarted-table" pl1>
+            <div flex column half class="getstarted-list" pl1>
               <ul>
                 <li v-for="(resource, i) in getstarted.resources" :key="i" flex row align-center>
                   <nuxt-link v-if="resource.to" :to="resource.to" flex row align-center>
@@ -66,7 +66,7 @@
                       </span>
                       <span class="info">{{ resource.info }}</span>
                     </div>
-                    <i class="icon-right-table" :class="resource.icon"></i>
+                    <i class="icon-right-list" :class="resource.icon"></i>
                   </nuxt-link>
                   <a v-else :href="resource.link" target="_blank" flex row align-center>
                     <span class="circle" :class="resource.color" flex align-center mr1>
@@ -78,7 +78,7 @@
                       </span>
                       <span class="info">{{ resource.info }}</span>
                     </div>
-                    <i class="icon-right-table" :class="resource.icon"></i>
+                    <i class="icon-right-list" :class="resource.icon"></i>
                   </a>
                 </li>
               </ul>
@@ -186,14 +186,9 @@ import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Package from "~/components/Package";
-import TextWithIcon from "~/components/TextWithIcon";
-import Partners from "~/components/Partners";
-import Titletext4 from "~/components/Titletext4";
 import CTA from "~/components/CTA";
 import Card from "~/components/Card";
 import TagLabel from "@mesg-components/tag-label";
-import Table from "@mesg-components/table";
 import ListSN from "~/components/ListSN";
 import page from "./page";
 
@@ -201,15 +196,10 @@ export default {
   components: {
     Header,
     Container,
-    Package,
-    TextWithIcon,
     Button,
-    Partners,
-    Titletext4,
     CTA,
     Card,
-    Tag,
-    Table,
+    TagLabel,
     ListSN
   },
   mixins: [
@@ -230,6 +220,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 #steps {
   .step-number {
     div {
@@ -242,7 +233,8 @@ export default {
         position: absolute;
       }
       span {
-        color: $electric-purple;
+        min-width: 50px;
+        color: $purple;
         font-size: 28px;
         line-height: 50px;
         text-align: center;
@@ -258,16 +250,12 @@ export default {
     &:last-child {
       margin-bottom: 0;
     }
-    .tag-purple {
-      background-color: $light-electric-purple;
-      color: $electric-purple;
-    }
     .separator {
       position: absolute;
       left: 50%;
       height: calc(100% - 80px);
       top: 40px;
-      border: solid 0.5px $light-purple;
+      border: solid 0.5px $lavender-light;
     }
     .circle {
       min-width: 50px;
@@ -285,7 +273,7 @@ ul {
   list-style: none;
   margin-left: 0;
   li {
-    border-bottom: 1px dotted $light-purple;
+    border-bottom: 1px dotted $lavender-light;
     margin-bottom: 0;
     &:last-child {
       border-bottom: 0;
@@ -296,14 +284,14 @@ ul {
         transition: 0.1s ease;
         background-color: rgba(0, 0, 0, 0.025);
       }
-      .icon-right-table {
-        max-width: 18px;
-        color: $purple;
+      .icon-right-list {
+        max-width: 17px;
+        color: $primary;
       }
       .info {
         font-size: 12px;
         font-weight: bold;
-        color: $light-purple;
+        color: $lavender-light;
       }
     }
   }
@@ -316,7 +304,7 @@ ul {
     }
   }
   i {
-    max-width: 18px;
+    max-width: 17px;
     margin-right: calc(#{$margin} / 2);
   }
 }
@@ -326,7 +314,7 @@ ul {
     border-bottom-color: $blue;
     &:hover {
       transition: 0.2s ease;
-      border: solid 1px $light-purple;
+      border: solid 1px $lavender-light;
       border-bottom-width: 6px;
       border-bottom-color: $blue;
       transform: translateY(-5px);
@@ -338,7 +326,7 @@ ul {
       width: 50px;
       height: 50px;
       border-radius: 6px;
-      background-color: $light-blue;
+      background-color: $blue-light;
       i {
         font-size: 30px;
         color: $blue;
@@ -349,7 +337,7 @@ ul {
     border-bottom-color: $orange;
     &:hover {
       transition: 0.2s ease;
-      border: solid 1px $light-purple;
+      border: solid 1px $lavender-light;
       border-bottom-width: 6px;
       border-bottom-color: $orange;
       transform: translateY(-5px);
@@ -361,7 +349,7 @@ ul {
       width: 50px;
       height: 50px;
       border-radius: 6px;
-      background-color: $light-orange;
+      background-color: $orange-light;
       i {
         font-size: 30px;
         color: $orange;
@@ -394,7 +382,7 @@ ul {
       padding-left: 0;
       margin-bottom: calc(#{$margin} * 2);
     }
-    .getstarted-table {
+    .getstarted-list {
       padding-left: 0 !important;
       padding-right: 0;
     }
