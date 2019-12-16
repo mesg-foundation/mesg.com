@@ -142,9 +142,7 @@ export const getters = {
             {
               valid: true, description: "Direct support from the MESG team"
             }
-          ],
-          to: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
-          action: "Get in touch"
+          ]
         }
       ]
     }
@@ -1128,7 +1126,8 @@ export const getters = {
   forms() {
     return {
       addContribution: "bOJ0qz",
-      editContribution: "AFQb2X"
+      editContribution: "AFQb2X",
+      contactForm: "jLp6WZ"
     }
   },
 
