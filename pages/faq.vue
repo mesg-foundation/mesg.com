@@ -60,9 +60,12 @@
       icon="fal fa-envelope-open-text"
       title="Still have questions?"
       description="If you didn’t find the answer you were looking for, reach out to us! The MESG team is here to help."
-      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
-    />
+    >
+      <TypeFormPopup :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+    </CTA>
   </div>
 </template>
 
@@ -71,6 +74,7 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import SideMenu from "@mesg-components/side-menu";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
@@ -81,6 +85,7 @@ export default {
     Header,
     Container,
     Button,
+    TypeFormPopup,
     SideMenu,
     CTA,
     ListSN
@@ -96,7 +101,8 @@ export default {
     links: "links",
     questions: "questions",
     externalLinks: "externalLinks",
-    icons: "icons"
+    icons: "icons",
+    forms: "forms"
   })
 };
 </script>

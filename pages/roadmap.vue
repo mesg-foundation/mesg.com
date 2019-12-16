@@ -60,9 +60,12 @@
       icon="fal fa-envelope-open-text"
       title="Contact us"
       description="Aligned with our vision and goals? We’d love to connect. Drop us a line and we’ll get back to you."
-      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
-    />
+    >
+      <TypeFormPopup :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+    </CTA>
   </div>
 </template>
 
@@ -71,6 +74,8 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
+import Button from "@mesg-components/button";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import CardNewsletter from "~/components/CardNewsletter";
 import Container from "~/components/Container";
 import page from "./page";
@@ -80,6 +85,8 @@ export default {
     Header,
     ListSN,
     CTA,
+    Button,
+    TypeFormPopup,
     CardNewsletter,
     Container
   },
@@ -95,7 +102,8 @@ export default {
       links: "links",
       externalLinks: "externalLinks",
       roadmap: "roadmap",
-      icons: "icons"
+      icons: "icons",
+      forms: "forms"
     })
   }
 };

@@ -416,9 +416,6 @@ img {
 }
 
 .form {
-  &:hover {
-    cursor: pointer;
-  }
   .popup {
     width: 100%;
   }

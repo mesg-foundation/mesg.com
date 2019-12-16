@@ -18,18 +18,25 @@
       <hr mb2 />
     </div>
     <div class="text-center btn-action">
-      <Button v-if="featured" white :href="to" target="_blank">{{ action }}</Button>
-      <Button v-else primary :href="to" target="_blank">{{ action }}</Button>
+      <TypeFormPopup v-if="featured" :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+      <TypeFormPopup v-else :id="forms.contactForm" class="form">
+        <Button primary>Get in touch</Button>
+      </TypeFormPopup>
     </div>
   </Card>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Card from "~/components/Card";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 export default {
   components: {
     Card,
+    TypeFormPopup,
     Button
   },
   props: {
@@ -65,6 +72,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      forms: "forms"
+    }),
     white() {
       return !this.featured;
     },
@@ -132,10 +142,6 @@ hr {
   }
   hr {
     color: $lavender;
-  }
-  button {
-    color: $primary;
-    background-color: $white;
   }
 }
 
