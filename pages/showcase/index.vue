@@ -12,7 +12,9 @@
         <div flex row wrap mb2 class="usecases">
           <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
-        <Button primary :href="externalLinks.contact" target="_blank">Submit my project</Button>
+        <TypeFormPopup :id="forms.contactForm" class="form">
+          <Button primary>Submit my project</Button>
+        </TypeFormPopup>
       </Container>
     </section>
 
@@ -101,6 +103,7 @@ import Header from "~/components/Header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Button from "@mesg-components/button";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import Card from "~/components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
@@ -113,6 +116,7 @@ export default {
     Container,
     UseCase,
     Button,
+    TypeFormPopup,
     Card,
     CTA,
     ListSN,
@@ -129,13 +133,15 @@ export default {
     links: "links",
     externalLinks: "externalLinks",
     usecases: "usecases",
-    icons: "icons"
+    icons: "icons",
+    forms: "forms"
   })
 };
 </script>
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+
 @media only screen and (max-width: $mobile-breakpoint) {
   .usecases {
     margin-bottom: calc(#{$margin} * 3) !important;
@@ -145,6 +151,12 @@ export default {
   }
   #separator .container {
     padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: $mobile-only) {
+  .form {
+    width: 100%;
   }
 }
 </style>

@@ -48,6 +48,15 @@ img {
   max-width: 100%;
 }
 
+.form {
+  &:hover {
+    cursor: pointer;
+  }
+  .btn--white {
+    width: 100%;
+  }
+}
+
 .inner-background {
   position: relative;
 }

@@ -6,7 +6,9 @@
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.contact" primary target="_blank">Get in touch</Button>
+        <TypeFormPopup :id="forms.contactForm" class="form">
+          <Button primary>Get in touch</Button>
+        </TypeFormPopup>
       </div>
     </Header>
 
@@ -78,9 +80,12 @@
       icon="fal fa-envelope-open-text"
       title="Custom solutions"
       description="MESG offers high levels of customizability and control. We can create custom solutions for you regardless of what’s in your software stack."
-      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
-    />
+    >
+      <TypeFormPopup :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+    </CTA>
   </div>
 </template>
 
@@ -89,6 +94,7 @@ import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import Package from "~/components/Package";
 import TextWithIcon from "~/components/TextWithIcon";
 import Partners from "~/components/Partners";
@@ -100,6 +106,7 @@ export default {
   components: {
     Header,
     Container,
+    TypeFormPopup,
     Package,
     TextWithIcon,
     Button,
@@ -117,7 +124,8 @@ export default {
   computed: mapGetters({
     links: "links",
     externalLinks: "externalLinks",
-    enterprise: "enterprise"
+    enterprise: "enterprise",
+    forms: "forms"
   })
 };
 </script>
