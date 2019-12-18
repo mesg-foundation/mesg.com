@@ -104,7 +104,7 @@ import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Button from "@mesg-components/button";
 import TypeFormPopup from "@mesg-components/type-form-popup";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import CardNewsletter from "~/components/CardNewsletter";

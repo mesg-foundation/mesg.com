@@ -133,7 +133,7 @@ import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
 import TagLabel from "@mesg-components/tag-label";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import CardNewsletter from "~/components/CardNewsletter";
@@ -195,6 +195,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+
+.card {
+  padding: 0;
+}
+
 .image {
   border-radius: 6px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);

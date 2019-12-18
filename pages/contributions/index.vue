@@ -244,7 +244,7 @@
 import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 import EmbedCard from "@mesg-components/embed-card";
 import Tweetbtn from "@mesg-components/social-network";
 import TypeFormPopup from "@mesg-components/type-form-popup";
@@ -315,6 +315,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+.card {
+  padding: 0;
+}
+
 #contributors {
   .contributors-table {
     width: 100%;

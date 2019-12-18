@@ -110,7 +110,7 @@
 import { mapGetters, mapActions } from "vuex";
 import Header from "~/components/Header";
 import CTA from "~/components/CTA";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 import Tweetbtn from "@mesg-components/social-network";
 import TypeFormPopup from "@mesg-components/type-form-popup";
 import EmbedCard from "@mesg-components/embed-card";

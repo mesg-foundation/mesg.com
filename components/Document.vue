@@ -27,7 +27,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 export default {
   components: {
     Card
@@ -54,6 +54,7 @@ export default {
 .card {
   height: 100px;
   max-height: 100%;
+  padding: 0;
   .preview {
     min-width: 100px;
     max-width: 100px;

@@ -187,6 +187,9 @@ export default {
 .mesg-presentation {
   width: 66%;
 }
+.card {
+  padding: 0;
+}
 
 @media only screen and (max-width: $tablet-breakpoint) {
   #documents {

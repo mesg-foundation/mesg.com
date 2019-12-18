@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 export default {
   components: {
     Card

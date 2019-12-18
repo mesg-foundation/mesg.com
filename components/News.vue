@@ -26,7 +26,7 @@
 
 <script>
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 export default {
   components: {
     Container,

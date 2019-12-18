@@ -187,7 +187,7 @@ import Button from "@mesg-components/button";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";
-import Card from "~/components/Card";
+import Card from "@mesg-components/Card";
 import TagLabel from "@mesg-components/tag-label";
 import ListSN from "~/components/ListSN";
 import page from "./page";
