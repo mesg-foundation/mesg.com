@@ -77,7 +77,6 @@ import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "@mesg-components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -90,7 +89,6 @@ export default {
     Header,
     Container,
     Button,
-    Card,
     CTA,
     ListSN,
     TextWithIcon,
@@ -116,9 +114,6 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/_variables";
 
-.card {
-  padding: 0;
-}
 @media only screen and (max-width: $mobile-breakpoint) {
   .code {
     margin-bottom: calc(#{$margin} * 2);

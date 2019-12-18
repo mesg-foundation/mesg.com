@@ -1,5 +1,5 @@
 <template>
-  <Card class="card" :class="{ white, purple }" p2>
+  <Card :class="{ white, purple }" p2>
     <div flex column>
       <div flex row space-between align-center wrap mb2>
         <h3>{{ title }}</h3>

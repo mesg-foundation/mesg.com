@@ -36,6 +36,10 @@ export default {
 @import "~/assets/_variables";
 @import url("https://github.githubassets.com/assets/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css");
 
+.card {
+  padding: 0;
+}
+
 .tab {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;

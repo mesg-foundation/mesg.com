@@ -27,6 +27,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+
+.card {
+  padding: 0;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;

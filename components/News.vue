@@ -13,7 +13,7 @@
           fill-height
           mb2
         >
-          <Card p1 bordered>
+          <Card bordered>
             <img mb1 :src="article.img" :alt="article.title" />
             <h4 mb1>{{ article.title }}</h4>
             <i class="fal fa-external-link-alt"></i>

@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="usecase.to" :id="usecase.id" flex column third mb2>
-    <Card p1 bordered>
+    <Card bordered>
       <div mb2 flex row space-between class="logos">
         <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
       </div>

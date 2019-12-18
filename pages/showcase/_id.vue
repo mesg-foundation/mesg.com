@@ -133,7 +133,6 @@ import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
 import TagLabel from "@mesg-components/tag-label";
-import Card from "@mesg-components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import CardNewsletter from "~/components/CardNewsletter";
@@ -147,7 +146,6 @@ export default {
     Video,
     Button,
     TagLabel,
-    Card,
     CTA,
     ListSN,
     CardNewsletter
@@ -195,10 +193,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-
-.card {
-  padding: 0;
-}
 
 .image {
   border-radius: 6px;

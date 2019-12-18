@@ -22,7 +22,15 @@
 
         <Card class="contributors-table" bordered thin flex column p2 mb1>
           <h3 class="white" mb2>Latest reward</h3>
-          <Card flex row mobile-column align-center mb2 v-if="latestReward">
+          <Card
+            class="contributors-card"
+            flex
+            row
+            mobile-column
+            align-center
+            mb2
+            v-if="latestReward"
+          >
             <div class="user-rewarded" flex column align-center third p2>
               <div class="reward" flex align-center mb1>
                 <i class="fas fa-award"></i>
@@ -47,7 +55,7 @@
               </div>
             </div>
             <div class="preview" p2>
-              <Card no-shadow p1>
+              <Card no-shadow>
                 <div flex mobile-only-column align-center wrap>
                   <span class="infos text-right">Share this contribution</span>
                   <Tweetbtn
@@ -151,7 +159,7 @@
 
         <div flex row wrap>
           <div v-for="(community, i) in community" :key="i" flex column third>
-            <Card bordered thin p1 mb2>
+            <Card bordered thin mb2>
               <div flex row align-center mb1>
                 <h4>
                   <i :class="community.icon"></i>
@@ -164,7 +172,7 @@
               </ul>
             </Card>
           </div>
-          <Card flex third align-center justify-center bordered thin p1 mb2>
+          <Card flex third align-center justify-center bordered thin mb2>
             <h4 class="text-center">
               <i class="fal fa-plus"></i>Get creative
             </h4>
@@ -315,9 +323,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-.card {
-  padding: 0;
-}
 
 #contributors {
   .contributors-table {
@@ -336,6 +341,9 @@ export default {
       border-top-right-radius: 6px;
       background-color: $primary;
     }
+  }
+  .contributors-card {
+    padding: 0;
   }
   .user-rewarded {
     margin-right: 0;
