@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mesg-components/button": "^1.1.5",
+    "@mesg-components/card": "^2.0.3",
     "@mesg-components/embed-card": "^1.0.1",
     "@mesg-components/side-menu": "^1.0.4",
     "@mesg-components/social-network": "^1.0.1",

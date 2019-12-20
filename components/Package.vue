@@ -1,5 +1,5 @@
 <template>
-  <Card class="card" :class="{ white, purple }" p2>
+  <Card :class="{ white, purple }" p2>
     <div flex column>
       <div flex row space-between align-center wrap mb2>
         <h3>{{ title }}</h3>
@@ -30,7 +30,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 export default {
