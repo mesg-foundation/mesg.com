@@ -114,6 +114,9 @@ export default {
   #cta:before {
     height: calc(100% + 80px);
   }
+  .container {
+    padding-bottom: 0;
+  }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   .content {
