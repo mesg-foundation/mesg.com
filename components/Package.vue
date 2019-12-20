@@ -30,7 +30,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Card from "@mesg-components/Card";
+import Card from "@mesg-components/card";
 import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 export default {

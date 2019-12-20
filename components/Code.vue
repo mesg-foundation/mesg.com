@@ -16,7 +16,7 @@
 <script>
 import VueEmbedGist from "vue-embed-gist";
 import Container from "~/components/Container";
-import Card from "@mesg-components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     VueEmbedGist,

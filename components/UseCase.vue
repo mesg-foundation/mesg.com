@@ -20,7 +20,7 @@
 <script>
 import { mapGetters } from "vuex";
 import TagLabel from "@mesg-components/tag-label";
-import Card from "@mesg-components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Card,
