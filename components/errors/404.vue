@@ -41,9 +41,8 @@ export default {
 @import "~/assets/_variables";
 
 header {
-  height: calc(100vh - (#{$margin} * 4));
+  min-height: calc(100vh - (#{$margin} * 4));
   margin-bottom: 0 !important;
-  overflow: hidden;
   &:before {
     transform: none !important;
   }
