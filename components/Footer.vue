@@ -170,7 +170,6 @@ ul {
 @media only screen and (max-width: $tablet-breakpoint) {
   #footer {
     padding: calc(#{$margin} * 2);
-    padding-top: 0;
   }
   .container {
     padding: 0;
