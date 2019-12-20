@@ -150,7 +150,7 @@ import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import TextWithIcon from "~/components/TextWithIcon";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 import List from "~/components/List";
 import CardNewsletter from "~/components/CardNewsletter";
 import ListSN from "~/components/ListSN";

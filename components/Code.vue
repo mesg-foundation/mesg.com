@@ -16,7 +16,7 @@
 <script>
 import VueEmbedGist from "vue-embed-gist";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     VueEmbedGist,
@@ -35,6 +35,10 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/_variables";
 @import url("https://github.githubassets.com/assets/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css");
+
+.card {
+  padding: 0;
+}
 
 .tab {
   border-top-left-radius: 6px;

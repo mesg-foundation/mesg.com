@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="usecase.to" :id="usecase.id" flex column third mb2>
-    <Card p1 bordered>
+    <Card bordered>
       <div mb2 flex row space-between class="logos">
         <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
       </div>
@@ -20,7 +20,7 @@
 <script>
 import { mapGetters } from "vuex";
 import TagLabel from "@mesg-components/tag-label";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Card,
