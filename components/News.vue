@@ -13,7 +13,7 @@
           fill-height
           mb2
         >
-          <Card p1 bordered>
+          <Card bordered>
             <img mb1 :src="article.img" :alt="article.title" />
             <h4 mb1>{{ article.title }}</h4>
             <i class="fal fa-external-link-alt"></i>
@@ -26,7 +26,7 @@
 
 <script>
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Container,

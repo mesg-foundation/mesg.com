@@ -57,8 +57,6 @@
 <script>
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
-import Newsletter from "~/components/Newsletter";
 import { mapGetters } from "vuex";
 export default {
   components: {

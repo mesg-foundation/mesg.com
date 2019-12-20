@@ -33,7 +33,7 @@
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Container,

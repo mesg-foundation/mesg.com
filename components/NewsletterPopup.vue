@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 import Container from "~/components/Container";
 import Newsletter from "~/components/Newsletter";
 export default {
