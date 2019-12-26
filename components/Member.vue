@@ -2,8 +2,8 @@
   <Card>
     <div class="picture" flex column>
       <div>
-        <nav class="social" flex row justify-center align-center>
-          <a class="social-networks" :href="to" target="_blank" flex justify-center align-center>
+        <nav flex row justify-center align-center>
+          <a :href="to" target="_blank" flex justify-center align-center>
             <i class="fab fa-linkedin-in"></i>
           </a>
         </nav>
