@@ -1,6 +1,6 @@
 <template>
-  <div id="codeeditor">
-    <codemirror v-model="code" :options="cmOptions" ref="cmA" class="CodeMirror"></codemirror>
+  <div>
+    <codemirror v-model="code" :options="cmOptions" ref="cmA"></codemirror>
   </div>
 </template>
  

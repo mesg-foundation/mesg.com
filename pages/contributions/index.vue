@@ -127,6 +127,7 @@
             <Titletext4
               title="Quality first"
               text="Contribution value is determined by quality first. Those focused on quality over quantity have a much greater chance of getting rewarded."
+              mb2
             />
           </div>
           <div half>
@@ -134,6 +135,7 @@
             <Titletext4
               title="Rewarded payouts"
               text="Contributions will be reviewed, and if we’re impressed by the quality and impact of your work, we’ll contact you to send a reward."
+              mb2
             />
           </div>
         </div>

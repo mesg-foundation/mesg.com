@@ -10,7 +10,7 @@
       align-center
       half
     >
-      <span class="circle" :class="item.color" flex align-center mr1>
+      <span :class="item.color" flex align-center mr1>
         <i class="text-center" :class="item.icon"></i>
       </span>
       <p>{{ item.description }}</p>
@@ -39,7 +39,7 @@ a {
     opacity: 0.7;
     transition: 0.1s ease;
   }
-  .circle {
+  span {
     min-width: 50px;
     max-width: 50px;
     min-height: 50px;

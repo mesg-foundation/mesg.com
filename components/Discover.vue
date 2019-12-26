@@ -1,16 +1,14 @@
 <template>
-  <section id="discover">
-    <Container>
-      <h2 mb2>Discover more</h2>
-      <div flex row space-between wrap class="items">
-        <div half v-for="(item, i) in items" :key="i" class="item">
-          <h3 mb1>{{ item.title }}</h3>
-          <p mb2>{{ item.description }}</p>
-          <Button secondary :to="item.to">{{ item.action }}</Button>
-        </div>
+  <Container>
+    <h2 mb2>Discover more</h2>
+    <div flex row space-between wrap class="items">
+      <div half v-for="(item, i) in items" :key="i" class="item">
+        <h3 mb1>{{ item.title }}</h3>
+        <p mb2>{{ item.description }}</p>
+        <Button secondary :to="item.to">{{ item.action }}</Button>
       </div>
-    </Container>
-  </section>
+    </div>
+  </Container>
 </template>
 
 <script>

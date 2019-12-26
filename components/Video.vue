@@ -1,6 +1,6 @@
 <template>
   <Card>
-    <div class="videoWrapper">
+    <div>
       <iframe
         :src="src"
         width="680"
@@ -30,7 +30,7 @@ export default {
 
 .card {
   padding: 0;
-  .videoWrapper {
+  div {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: calc(#{$margin} + 5px);

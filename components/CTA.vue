@@ -1,7 +1,7 @@
 <template>
-  <section id="cta">
+  <section class="cta">
     <Container>
-      <Card p2>
+      <Card class="card-cta" p2>
         <div flex row align-center space-between mobile-column>
           <div class="icon" v-if="icon">
             <span flex align-center>
@@ -65,7 +65,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-#cta {
+.cta {
   position: relative;
   &:before {
     content: "";
@@ -105,13 +105,13 @@ export default {
 }
 
 @media only screen and (min-width: $huge-breakpoint) {
-  #cta:before {
+  .cta:before {
     transform: translateY(30%) skewY(-5deg);
   }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  #cta:before {
+  .cta:before {
     height: calc(100% + 80px);
   }
   .container {

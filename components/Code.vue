@@ -2,9 +2,9 @@
   <Card>
     <Container class="tab" p1>
       <div flex row>
-        <span class="circle close" flex column></span>
-        <span class="circle reduce" flex column></span>
-        <span class="circle extend" flex column></span>
+        <span class="close" flex column></span>
+        <span class="reduce" flex column></span>
+        <span class="extend" flex column></span>
       </div>
     </Container>
     <Container p1>
@@ -42,7 +42,7 @@ export default {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     background-color: $grey-light;
-    .circle {
+    span {
       width: 10px;
       height: 10px;
       max-width: 10px;
