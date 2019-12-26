@@ -196,7 +196,7 @@ export default {
   },
   mixins: [
     page({
-      title: "Start building with MESG today",
+      title: "Start building with MESG",
       description:
         "Connect blockchain events to the outside world, reuse services within any applications, and scale limitlessly in a decentralized cloud."
     })
