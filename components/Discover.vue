@@ -63,9 +63,9 @@ export default {
 @media only screen and (max-width: $mobile-breakpoint) {
   .item {
     margin-bottom: calc(#{$margin} * 2);
-  }
-  p {
-    margin-bottom: 0 !important;
+    p {
+      margin-bottom: 0 !important;
+    }
   }
 }
 </style>

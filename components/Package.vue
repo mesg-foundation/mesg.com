@@ -87,6 +87,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+
+.pricing {
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
   margin-left: 0;
@@ -95,10 +100,6 @@ ul {
     top: 0.2em;
     max-width: 18px;
   }
-}
-
-.pricing {
-  font-weight: bold;
 }
 
 hr {

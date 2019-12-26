@@ -35,7 +35,7 @@ export default {
 a {
   margin-top: calc(#{$margin} / 2);
   margin-bottom: calc(#{$margin} / 2);
-  &hover {
+  &:hover {
     opacity: 0.7;
     transition: 0.1s ease;
   }
