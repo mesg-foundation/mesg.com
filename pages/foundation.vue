@@ -145,7 +145,6 @@ import News from "~/components/News";
 import Titletext3 from "~/components/Titletext3";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
-import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
 export default {
@@ -161,8 +160,7 @@ export default {
     News,
     Titletext3,
     CTA,
-    ListSN,
-    GetStarted
+    ListSN
   },
   mixins: [
     page({

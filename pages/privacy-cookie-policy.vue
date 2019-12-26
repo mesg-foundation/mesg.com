@@ -32,22 +32,14 @@
 import { mapGetters } from "vuex";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
-import Button from "@mesg-components/button";
 import SideMenu from "@mesg-components/side-menu";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
 export default {
   components: {
     Header,
     Container,
-    Button,
-    SideMenu,
-    CallToAction,
-    Discover,
-    GetStarted
+    SideMenu
   },
   mixins: [
     page({

@@ -168,7 +168,6 @@ import News from "~/components/News";
 import Partners from "~/components/Partners";
 import CardNewsletter from "~/components/CardNewsletter";
 import ListSN from "~/components/ListSN";
-import CallToAction from "~/components/CallToAction";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import ColoredList from "~/components/ColoredList";
@@ -186,7 +185,6 @@ export default {
     Partners,
     CardNewsletter,
     ListSN,
-    CallToAction,
     TextWithIcon,
     Feature,
     ColoredList,
