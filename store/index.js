@@ -1191,7 +1191,6 @@ export const getters = {
       foundation: "/foundation",
       showcase: "/showcase",
       contributions: "/contributions",
-      partners: "/partners",
       faq: "/faq",
       roadmap: "/roadmap",
       usecase: "/usecase",
