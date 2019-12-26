@@ -57,7 +57,7 @@
         <ul flex row mobile-column class="companies">
           <li v-for="(company, i) in usecase.companies" :key="i">
             <a :href="company.to" class="link-secondary" target="_blank">
-              <img :src="company.src" class="company" />
+              <img :src="company.src" />
             </a>
           </li>
         </ul>
@@ -104,7 +104,7 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div id="community" half class="social">
+          <div id="community" half>
             <h3 mb1>Community</h3>
             <p
               mb2
@@ -193,38 +193,27 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-
-.image {
-  border-radius: 6px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+#usecase-description {
+  img {
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  li.opportunitie:last-child {
+    margin-bottom: 0 !important;
+  }
 }
 
-li.opportunitie:last-child {
-  margin-bottom: 0 !important;
-}
 .companies {
   list-style: none;
   margin-left: 0;
   li {
     text-align: center;
     margin-bottom: 0;
+    img {
+      height: 30px;
+      width: auto;
+    }
   }
-}
-
-.company {
-  height: 30px;
-  width: auto;
-}
-
-.label {
-  border-radius: 3px;
-  padding: calc(#{$margin} / 2);
-}
-.partner {
-  background-color: $orange-light;
-}
-.community {
-  background-color: $grey-light;
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -246,7 +235,7 @@ li.opportunitie:last-child {
     text-align: center;
     margin-right: 0 !important;
   }
-  .social {
+  #community {
     margin-top: calc(#{$margin} * 3);
   }
 }

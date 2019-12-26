@@ -64,15 +64,9 @@ export default {
 ul {
   list-style: none;
   margin-left: 0;
-}
-h2 {
-  text-align: left;
-}
-.infos {
-  font-size: 14px;
-}
-.separator {
-  width: 100%;
-  min-width: 100%;
+  .separator {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 </style>

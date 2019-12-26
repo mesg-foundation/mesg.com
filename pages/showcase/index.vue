@@ -28,11 +28,7 @@
       <Container>
         <div flex row mobile-column align-center>
           <div half p1>
-            <img
-              src="~/assets/marketplace/marketplace.svg"
-              alt="MESG Marketplace"
-              class="marketplace"
-            />
+            <img src="~/assets/marketplace/marketplace.svg" alt="MESG Marketplace" />
           </div>
           <div half>
             <h2 mb1>Get inspired</h2>

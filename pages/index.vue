@@ -40,7 +40,7 @@
             half
           >
             <div>
-              <img class="product" mb1 :src="product.img" :alt="product.title" />
+              <img mb1 :src="product.img" :alt="product.title" />
             </div>
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description" />
@@ -57,9 +57,7 @@
               </div>
               <div flex column>
                 <h3 mb1>Build services, earn tokens</h3>
-                <p
-                  class="token-desc"
-                >Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
+                <p>Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
               </div>
             </div>
             <div flex column third>
@@ -195,20 +193,26 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-#products .card img.product {
-  height: 160px;
-  width: 160px;
-  max-width: 100%;
+#products {
+  img {
+    height: 160px;
+    width: 160px;
+    max-width: 100%;
+  }
 }
 
-#token img {
-  width: 100px;
-  height: 100px;
+#token {
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  .token {
-    margin-right: $margin;
+  #token {
+    .token {
+      margin-right: $margin;
+    }
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
@@ -217,16 +221,18 @@ export default {
   }
   #token {
     margin-top: calc(#{$margin} * 2);
+    .content {
+      margin-bottom: calc(#{$margin} * 2);
+      .token {
+        margin-right: 0;
+        margin-bottom: $margin;
+      }
+    }
   }
-  #token .content {
-    margin-bottom: calc(#{$margin} * 2);
-  }
-  .token {
-    margin-right: 0;
-    margin-bottom: $margin;
-  }
-  .community {
-    margin-top: calc(#{$margin} * 3);
+  #more-infos {
+    .community {
+      margin-top: calc(#{$margin} * 3);
+    }
   }
 }
 </style>

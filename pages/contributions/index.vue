@@ -158,7 +158,6 @@
           class="text-center"
           mb2
         >MESG is open to nearly any type of contribution, from developing the infrastructure to spreading the word. Below are examples for inspiration, but feel free to get creative and help however you’d like.</p>
-
         <div flex row wrap>
           <div v-for="(community, i) in community" :key="i" flex column third>
             <Card bordered thin mb2>
@@ -349,26 +348,26 @@ export default {
   }
   .user-rewarded {
     margin-right: 0;
-  }
-  .reward {
-    width: 60px;
-    height: 60px;
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 3px;
-    background-color: $gold;
-    i {
-      text-align: center;
-      margin-right: 0;
-      font-size: 34px;
-      color: $white;
+    .reward {
+      width: 60px;
+      height: 60px;
+      max-width: 60px;
+      max-height: 60px;
+      border-radius: 3px;
+      background-color: $gold;
+      i {
+        text-align: center;
+        margin-right: 0;
+        font-size: 34px;
+        color: $white;
+      }
     }
-  }
-  .user {
-    i {
-      min-width: 18px;
-      max-width: 18px;
-      margin-top: 0.2em;
+    .user {
+      i {
+        min-width: 18px;
+        max-width: 18px;
+        margin-top: 0.2em;
+      }
     }
   }
   .preview {
@@ -379,11 +378,11 @@ export default {
     .infos {
       font-weight: bold;
     }
-  }
-  .tweet-btn {
-    text-align: right;
-    max-width: fit-content;
-    height: 20px;
+    .tweet-btn {
+      text-align: right;
+      max-width: fit-content;
+      height: 20px;
+    }
   }
   table {
     .date {
