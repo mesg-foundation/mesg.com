@@ -33,7 +33,7 @@
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Container,
@@ -113,6 +113,9 @@ export default {
 @media only screen and (max-width: $tablet-breakpoint) {
   #cta:before {
     height: calc(100% + 80px);
+  }
+  .container {
+    padding-bottom: 0;
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {

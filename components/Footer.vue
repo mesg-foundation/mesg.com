@@ -57,8 +57,6 @@
 <script>
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
-import Newsletter from "~/components/Newsletter";
 import { mapGetters } from "vuex";
 export default {
   components: {
@@ -175,7 +173,6 @@ a:hover {
 @media only screen and (max-width: $tablet-breakpoint) {
   #footer {
     padding: calc(#{$margin} * 2);
-    padding-top: 0;
   }
   .container {
     padding: 0;

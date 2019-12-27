@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Card
@@ -27,6 +27,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+
+.card {
+  padding: 0;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;

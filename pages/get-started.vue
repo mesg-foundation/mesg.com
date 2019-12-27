@@ -187,7 +187,7 @@ import Button from "@mesg-components/button";
 import Header from "~/components/Header";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 import TagLabel from "@mesg-components/tag-label";
 import ListSN from "~/components/ListSN";
 import page from "./page";
@@ -204,7 +204,7 @@ export default {
   },
   mixins: [
     page({
-      title: "Start building with MESG today",
+      title: "Start building with MESG",
       description:
         "Connect blockchain events to the outside world, reuse services within any applications, and scale limitlessly in a decentralized cloud."
     })
