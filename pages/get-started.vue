@@ -326,7 +326,7 @@ ul {
       border-bottom-width: 6px;
       border-bottom-color: $blue;
       transform: scale(1.01);
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     }
     span {
       text-align: center;
@@ -349,7 +349,7 @@ ul {
       border-bottom-width: 6px;
       border-bottom-color: $orange;
       transform: scale(1.01);
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     }
     span {
       text-align: center;
