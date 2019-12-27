@@ -3,27 +3,27 @@
     <h2 class="text-center" mb2>Already building on MESG</h2>
     <ul flex row align-center>
       <li>
-        <a href="https://omisego.co/" target="_blank" class="link-secondary">
+        <a href="https://omisego.co/" target="_blank">
           <img src="~/assets/partners/omisego.svg" alt="OmiseGO logo" />
         </a>
       </li>
       <li>
-        <a href="https://aragon.org/" target="_blank" class="link-secondary">
+        <a href="https://aragon.org/" target="_blank">
           <img src="~/assets/partners/aragon.svg" alt="Aragon logo" />
         </a>
       </li>
       <li>
-        <a href="https://projecthydro.org/" target="_blank" class="link-secondary">
+        <a href="https://projecthydro.org/" target="_blank">
           <img src="~/assets/partners/hydro.svg" alt="Hydro logo" />
         </a>
       </li>
       <li>
-        <a href="https://beachhead.com/" target="_blank" class="link-secondary">
+        <a href="https://beachhead.com/" target="_blank">
           <img src="~/assets/partners/beachhead.svg" alt="BeachHead logo" />
         </a>
       </li>
       <li>
-        <a href="https://www.yellow.com/" target="_blank" class="link-secondary">
+        <a href="https://www.yellow.com/" target="_blank">
           <img src="~/assets/partners/yellow.svg" alt="Yellow logo" />
         </a>
       </li>
@@ -48,6 +48,10 @@ ul {
     max-width: 170px;
     height: 40px;
     text-align: center;
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
     img {
       height: 40px;
     }

@@ -56,7 +56,7 @@
         <h3 class="text-center" mb2>Who could benefit from this?</h3>
         <ul flex row mobile-column class="companies">
           <li v-for="(company, i) in usecase.companies" :key="i">
-            <a :href="company.to" class="link-secondary" target="_blank">
+            <a :href="company.to" target="_blank">
               <img :src="company.src" class="company" />
             </a>
           </li>
@@ -209,6 +209,10 @@ li.opportunitie:last-child {
   li {
     text-align: center;
     margin-bottom: 0;
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

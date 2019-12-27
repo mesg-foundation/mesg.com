@@ -280,9 +280,17 @@ ul {
     }
     a {
       padding: $margin;
+      transition: 0.1s ease-in;
       &:hover {
-        transition: 0.1s ease;
-        background-color: rgba(0, 0, 0, 0.025);
+        background-color: rgba(231, 210, 249, 0.15);
+        .circle {
+          i {
+            font-weight: bold;
+          }
+        }
+        .info {
+          color: $text-color;
+        }
       }
       .icon-right-list {
         max-width: 17px;
@@ -312,8 +320,8 @@ ul {
 #links-card {
   .open-source {
     border-bottom-color: $blue;
+    transition: 0.1s ease-in;
     &:hover {
-      transition: 0.2s ease;
       border: solid 1px $lavender-light;
       border-bottom-width: 6px;
       border-bottom-color: $blue;
@@ -335,8 +343,8 @@ ul {
   }
   .enterprise {
     border-bottom-color: $orange;
+    transition: 0.1s ease-in;
     &:hover {
-      transition: 0.2s ease;
       border: solid 1px $lavender-light;
       border-bottom-width: 6px;
       border-bottom-color: $orange;

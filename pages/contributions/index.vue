@@ -184,16 +184,11 @@
             <a
               href="https://explorer.bounties.network/profile/0x59d47550bfc7905aa52044610eeda530d780329b/"
               target="_blank"
-              class="link-secondary"
               mr2
             >
               <img src="~/assets/community/bounties-network.svg" alt="The Bounties Network logo" />
             </a>
-            <a
-              href="https://gitcoin.co/explorer?org=mesg-foundation"
-              target="_blank"
-              class="link-secondary"
-            >
+            <a href="https://gitcoin.co/explorer?org=mesg-foundation" target="_blank">
               <img src="~/assets/community/gitcoin.svg" alt="Gitcoin logo" />
             </a>
           </div>
@@ -403,16 +398,21 @@ export default {
   hr {
     width: auto;
   }
+  a {
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
 }
 
 i {
   margin-right: calc(#{$margin} / 2);
   color: $lavender-light;
-}
-
-img {
-  height: 40px;
-  width: auto;
 }
 
 .form {

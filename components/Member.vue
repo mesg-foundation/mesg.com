@@ -72,7 +72,8 @@ img {
   right: 0;
   bottom: 0;
   position: absolute;
-  animation: social 0.2s ease-in;
+  animation: social 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 @keyframes social {
   from {
@@ -113,7 +114,11 @@ i {
   max-width: 50px;
   background-color: $white;
   border-radius: 100%;
-  animation: Bubble 0.2s ease-in;
+  transition: 0.1s ease-in;
+  animation: Bubble 0.1s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 @keyframes Bubble {
   from {
@@ -124,9 +129,5 @@ i {
     opacity: 1;
     transform: scale(1);
   }
-}
-.social-networks:hover {
-  opacity: 0.7;
-  transition: 0.2s ease;
 }
 </style>

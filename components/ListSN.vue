@@ -1,15 +1,6 @@
 <template>
   <nav flex row wrap>
-    <a
-      v-for="(item, i) in list"
-      :key="i"
-      :href="item.to"
-      target="_blank"
-      class="link-secondary"
-      flex
-      align-center
-      half
-    >
+    <a v-for="(item, i) in list" :key="i" :href="item.to" target="_blank" flex align-center half>
       <span class="circle" :class="item.color" flex align-center mr1>
         <i class="text-center" :class="item.icon"></i>
       </span>
@@ -35,9 +26,15 @@ export default {
 a {
   margin-top: calc(#{$margin} / 2);
   margin-bottom: calc(#{$margin} / 2);
-  &hover {
-    opacity: 0.7;
-    transition: 0.1s ease;
+  transition: 0.1s ease-in;
+  &:hover {
+    p {
+      font-weight: bold;
+      color: $primary;
+    }
+    .circle {
+      opacity: 1;
+    }
   }
   .circle {
     min-width: 50px;
@@ -45,6 +42,7 @@ a {
     min-height: 50px;
     max-height: 50px;
     border-radius: 100%;
+    opacity: 0.9;
   }
 }
 

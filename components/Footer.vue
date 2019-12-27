@@ -101,10 +101,6 @@ nav {
   }
   img {
     height: 40px;
-    &:hover {
-      opacity: 0.7;
-      transition: 0.1s ease;
-    }
   }
   .copyright {
     font-size: 12px;
@@ -131,9 +127,10 @@ nav {
     font-stretch: normal;
     line-height: normal;
     color: $text-color;
+    transition: 0.1s ease-in;
     &:hover {
-      opacity: 0.7;
-      transition: 0.1s ease;
+      color: $primary;
+      font-weight: normal;
     }
   }
 }
@@ -165,8 +162,14 @@ ul {
       padding: 0;
       margin-bottom: calc(#{$margin} / 2);
       color: $text-color;
+      transition: 0.1s ease-in;
     }
   }
+}
+
+a:hover {
+  color: $primary;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
