@@ -325,7 +325,7 @@ ul {
       border: solid 1px $lavender-light;
       border-bottom-width: 6px;
       border-bottom-color: $blue;
-      transform: translateY(-5px);
+      transform: scale(1.01);
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
     }
     span {
@@ -348,7 +348,7 @@ ul {
       border: solid 1px $lavender-light;
       border-bottom-width: 6px;
       border-bottom-color: $orange;
-      transform: translateY(-5px);
+      transform: scale(1.01);
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
     }
     span {
