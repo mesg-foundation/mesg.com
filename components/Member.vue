@@ -1,9 +1,9 @@
 <template>
   <Card>
     <div class="picture" flex column>
-      <div class="picture-hover">
-        <nav class="social" flex row justify-center align-center>
-          <a class="social-networks" :href="to" target="_blank" flex justify-center align-center>
+      <div>
+        <nav flex row justify-center align-center>
+          <a :href="to" target="_blank" flex justify-center align-center>
             <i class="fab fa-linkedin-in"></i>
           </a>
         </nav>
@@ -49,36 +49,67 @@ export default {
 
 .card {
   padding: 0;
+  .picture {
+    position: relative;
+    object-fit: contain;
+    overflow: hidden;
+    &:hover div {
+      display: block;
+    }
+    div {
+      display: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      animation: social 0.2s ease-in;
+      &:before {
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        opacity: 0.8;
+        background-color: $primary;
+      }
+      nav {
+        height: 100%;
+        width: 100%;
+        a {
+          z-index: 1;
+          text-decoration: none;
+          margin-left: 0.4em;
+          margin-right: 0.4em;
+          color: $primary;
+          height: 50px;
+          max-width: 50px;
+          background-color: $white;
+          border-radius: 100%;
+          animation: Bubble 0.2s ease-in;
+          &:hover {
+            opacity: 0.7;
+            transition: 0.2s ease;
+          }
+          i {
+            text-align: center;
+          }
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  .text {
+    padding: $margin;
+  }
 }
 
-img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.text {
-  padding: $margin;
-}
-
-.picture {
-  position: relative;
-  object-fit: contain;
-  overflow: hidden;
-}
-.picture:hover .picture-hover {
-  display: block;
-}
-
-.picture-hover {
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  animation: social 0.2s ease-in;
-}
 @keyframes social {
   from {
     opacity: 0;
@@ -87,39 +118,7 @@ img {
     opacity: 1;
   }
 }
-.picture-hover::before {
-  content: "";
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  opacity: 0.8;
-  background-color: $primary;
-}
 
-.social {
-  height: 100%;
-  width: 100%;
-}
-
-i {
-  text-align: center;
-}
-
-.social-networks {
-  z-index: 1;
-  text-decoration: none;
-  margin-left: 0.4em;
-  margin-right: 0.4em;
-  color: $primary;
-  height: 50px;
-  max-width: 50px;
-  background-color: $white;
-  border-radius: 100%;
-  animation: Bubble 0.2s ease-in;
-}
 @keyframes Bubble {
   from {
     opacity: 0;
@@ -129,9 +128,5 @@ i {
     opacity: 1;
     transform: scale(1);
   }
-}
-.social-networks:hover {
-  opacity: 0.7;
-  transition: 0.2s ease;
 }
 </style>

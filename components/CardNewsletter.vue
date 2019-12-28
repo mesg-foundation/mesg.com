@@ -43,11 +43,10 @@ export default {
 .outline {
   border-radius: 6px;
   border: solid 1px $lavender-light;
-}
-
-.bottom {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background-color: $grey-light;
+  .bottom {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: $grey-light;
+  }
 }
 </style>

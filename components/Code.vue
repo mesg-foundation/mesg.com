@@ -2,9 +2,9 @@
   <Card>
     <Container class="tab" p1>
       <div flex row>
-        <span class="circle close" flex column></span>
-        <span class="circle reduce" flex column></span>
-        <span class="circle extend" flex column></span>
+        <span class="close" flex column></span>
+        <span class="reduce" flex column></span>
+        <span class="extend" flex column></span>
       </div>
     </Container>
     <Container p1>
@@ -38,28 +38,27 @@ export default {
 
 .card {
   padding: 0;
-}
-
-.tab {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  background-color: $grey-light;
-  .circle {
-    width: 10px;
-    height: 10px;
-    max-width: 10px;
-    max-height: 10px;
-    border-radius: 100%;
-    margin-right: calc(#{$margin} / 2);
-  }
-  .close {
-    background-color: #fc5b57;
-  }
-  .reduce {
-    background-color: #e5bf3c;
-  }
-  .extend {
-    background-color: #57c038;
+  .tab {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: $grey-light;
+    span {
+      width: 10px;
+      height: 10px;
+      max-width: 10px;
+      max-height: 10px;
+      border-radius: 100%;
+      margin-right: calc(#{$margin} / 2);
+    }
+    .close {
+      background-color: #fc5b57;
+    }
+    .reduce {
+      background-color: #e5bf3c;
+    }
+    .extend {
+      background-color: #57c038;
+    }
   }
 }
 </style>

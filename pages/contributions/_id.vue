@@ -163,14 +163,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-.form {
-  a {
-    width: 100%;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 .preview {
   max-height: 540px;
@@ -181,11 +173,11 @@ export default {
   .infos {
     font-weight: bold;
   }
-}
-.tweet-btn {
-  text-align: right;
-  max-width: fit-content;
-  height: 20px;
+  .tweet-btn {
+    text-align: right;
+    max-width: fit-content;
+    height: 20px;
+  }
 }
 
 .reward {
