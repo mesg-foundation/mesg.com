@@ -212,10 +212,10 @@ export default {
     transition: 0.1s ease-in;
     &:hover {
       transform: scale(1.1);
-      img {
-        height: 30px;
-        width: auto;
-      }
+    }
+    img {
+      height: 30px;
+      width: auto;
     }
   }
 }
