@@ -253,7 +253,18 @@ a img {
     }
   }
 }
+
+@media only screen and (min-width: $huge-breakpoint +1) {
+  #cta:before {
+    transform: none;
+    top: 60px;
+  }
+}
+
 @media only screen and (max-width: $tablet-breakpoint) {
+  #cta:before {
+    height: calc(100% + 80px);
+  }
   #atd {
     div {
       padding-top: 0;
