@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div>
     <h3 mb1>{{ title }}</h3>
     <p v-html="text"></p>
   </div>

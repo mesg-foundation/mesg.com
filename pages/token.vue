@@ -44,7 +44,7 @@
           mb2
           class="text-center"
         >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
-        <div flex row space-between wrap class="features">
+        <div flex row space-between wrap>
           <TextWithIcon
             half
             v-for="(feature, i) in token.features.secondary"
@@ -99,6 +99,7 @@
             :key="i"
             :title="faq.title"
             :text="faq.description"
+            mb2
           />
         </div>
       </Container>
@@ -137,9 +138,9 @@
 
     <section id="cta" mb1>
       <Container>
-        <Card class="card-cta" p2>
+        <Card p2>
           <h2 class="text-center" mb2>Buy and Trade</h2>
-          <div flex row mobile-column class="exchange">
+          <div flex row mobile-column>
             <Button
               white
               v-for="exchange in exchanges"
@@ -168,7 +169,6 @@ import News from "~/components/News";
 import Partners from "~/components/Partners";
 import CardNewsletter from "~/components/CardNewsletter";
 import ListSN from "~/components/ListSN";
-import CallToAction from "~/components/CallToAction";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import ColoredList from "~/components/ColoredList";
@@ -186,7 +186,6 @@ export default {
     Partners,
     CardNewsletter,
     ListSN,
-    CallToAction,
     TextWithIcon,
     Feature,
     ColoredList,
@@ -214,6 +213,25 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+
+a img {
+  height: 25px;
+  display: block;
+}
+
+#atd {
+  div {
+    padding-top: calc(#{$margin} * 2);
+  }
+}
+
+#distribution {
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
 #cta {
   position: relative;
   &:before {
@@ -225,33 +243,15 @@ export default {
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
-  h2 {
-    color: $white;
-  }
-  .card-cta {
+  .card {
     background-image: linear-gradient(to right, $primary, $purple);
+    h2 {
+      color: $white;
+    }
+    img {
+      margin: auto;
+    }
   }
-}
-
-ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-a img {
-  height: 25px;
-  display: block;
-}
-
-a.btn--white img {
-  margin: auto;
-}
-li img {
-  vertical-align: middle;
-}
-
-.features {
-  padding-top: calc(#{$margin} * 2);
 }
 
 @media only screen and (min-width: $huge-breakpoint) {
@@ -264,29 +264,37 @@ li img {
   #cta:before {
     height: calc(100% + 80px);
   }
-  .features {
-    padding-top: 0;
+  #atd {
+    div {
+      padding-top: 0;
+    }
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .btn--white {
-    margin-bottom: calc(#{$margin} * 2) !important;
-  }
-  .btn--white:last-child {
-    margin-bottom: 0 !important;
-  }
-  .exchange {
-    margin-bottom: 0 !important;
-  }
   .logo {
     margin-bottom: calc(#{$margin} * 2);
   }
-  #atd .container {
-    padding-bottom: 0;
+  #cta {
+    div {
+      margin-bottom: 0 !important;
+      .btn--white {
+        margin-bottom: calc(#{$margin} * 2) !important;
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
   }
-  .community {
-    margin-top: calc(#{$margin} * 3);
+  #atd {
+    .container {
+      padding-bottom: 0;
+    }
+  }
+  #more-infos {
+    .community {
+      margin-top: calc(#{$margin} * 3);
+    }
   }
 }
 
