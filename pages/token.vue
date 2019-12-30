@@ -218,6 +218,12 @@ a img {
   height: 25px;
   display: block;
 }
+.logo {
+  transition: 0.1s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
 #atd {
   div {
