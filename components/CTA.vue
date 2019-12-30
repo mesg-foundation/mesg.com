@@ -1,5 +1,5 @@
 <template>
-  <section id="cta">
+  <section class="cta">
     <Container>
       <Card class="card-cta" p2>
         <div flex row align-center space-between mobile-column>
@@ -65,7 +65,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-#cta {
+.cta {
   position: relative;
   &:before {
     content: "";
@@ -76,42 +76,42 @@ export default {
     transform: translateY(30%) skewY(-8deg);
     z-index: -1;
   }
-  .card-cta {
+  .card {
     background-image: linear-gradient(to right, $primary, $purple);
-  }
-  h2 {
-    color: $white;
-  }
-  p {
-    opacity: 0.85;
-    color: $white;
-  }
-  span {
-    min-width: 80px;
-    max-width: 80px;
-    min-height: 80px;
-    max-height: 80px;
-    border-radius: 3px;
-    background-color: $purple;
-    i {
-      text-align: center;
-      font-size: 40px;
-      color: $primary-light;
+    span {
+      min-width: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      max-height: 80px;
+      border-radius: 3px;
+      background-color: $purple;
+      i {
+        text-align: center;
+        font-size: 40px;
+        color: $primary-light;
+      }
     }
-  }
-  nav {
-    min-width: 220px;
+    h2 {
+      color: $white;
+    }
+    p {
+      opacity: 0.85;
+      color: $white;
+    }
+    nav {
+      min-width: 220px;
+    }
   }
 }
 
 @media only screen and (min-width: $huge-breakpoint) {
-  #cta:before {
+  .cta:before {
     transform: translateY(30%) skewY(-5deg);
   }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  #cta:before {
+  .cta:before {
     height: calc(100% + 80px);
   }
   .container {
@@ -119,15 +119,15 @@ export default {
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
-  .content {
-    margin-bottom: calc(#{$margin} * 2);
-  }
   .icon {
     width: 100%;
     span {
       width: 100%;
       margin-bottom: calc(#{$margin} * 2);
     }
+  }
+  .content {
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

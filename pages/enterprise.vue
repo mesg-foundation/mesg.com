@@ -71,6 +71,7 @@
             :key="i"
             :title="faq.title"
             :text="faq.description"
+            mb2
           />
         </div>
       </Container>

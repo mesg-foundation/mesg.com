@@ -145,7 +145,6 @@ import News from "~/components/News";
 import Titletext3 from "~/components/Titletext3";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
-import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
 export default {
@@ -161,8 +160,7 @@ export default {
     News,
     Titletext3,
     CTA,
-    ListSN,
-    GetStarted
+    ListSN
   },
   mixins: [
     page({
@@ -191,29 +189,33 @@ export default {
 @media only screen and (max-width: $tablet-breakpoint) {
   #documents {
     margin-bottom: 0 !important;
-  }
-  #documents .container {
-    padding-bottom: 0;
+    .container {
+      padding-bottom: 0;
+    }
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   .mesg-presentation {
     width: 100%;
   }
-  #presentation .container {
-    padding-bottom: 0;
+  #presentation {
+    .container {
+      padding-bottom: 0;
+    }
   }
-  #team .title {
-    padding-bottom: 0;
-  }
-  .founders {
-    margin-bottom: calc(#{$margin} * 2);
+  #team {
+    .title {
+      padding-bottom: 0;
+    }
+    .founders {
+      margin-bottom: calc(#{$margin} * 2);
+    }
   }
   #documents {
     margin-bottom: 0 !important;
-  }
-  #documents .container {
-    padding-bottom: calc(#{$margin} * 2);
+    .container {
+      padding-bottom: calc(#{$margin} * 2);
+    }
   }
 }
 </style>

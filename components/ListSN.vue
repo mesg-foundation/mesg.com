@@ -1,7 +1,7 @@
 <template>
   <nav flex row wrap>
     <a v-for="(item, i) in list" :key="i" :href="item.to" target="_blank" flex align-center half>
-      <span class="circle" :class="item.color" flex align-center mr1>
+      <span :class="item.color" flex align-center mr1>
         <i class="text-center" :class="item.icon"></i>
       </span>
       <p>{{ item.description }}</p>
@@ -32,11 +32,11 @@ a {
       font-weight: bold;
       color: $primary;
     }
-    .circle {
+    span {
       opacity: 1;
     }
   }
-  .circle {
+  span {
     min-width: 50px;
     max-width: 50px;
     min-height: 50px;

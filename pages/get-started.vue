@@ -38,19 +38,11 @@
       </Container>
       <div class="outer-background">
         <Container>
-          <Card
-            v-for="(getstarted, i) in getstarted"
-            :key="i"
-            class="card-getstarted"
-            flex
-            row
-            mobile-column
-            p2
-          >
+          <Card v-for="(getstarted, i) in getstarted" :key="i" flex row mobile-column p2>
             <div half class="getstarted-content" pr1>
               <TagLabel type="purple" mb1>{{ getstarted.tag}}</TagLabel>
               <h3 mb1>{{ getstarted.title}}</h3>
-              <p class="test" v-html="getstarted.description"></p>
+              <p v-html="getstarted.description"></p>
             </div>
             <div class="separator" fill-height></div>
             <div flex column half class="getstarted-list" pl1>
@@ -244,7 +236,7 @@ export default {
 }
 
 #resources {
-  .card-getstarted {
+  .card {
     position: relative;
     margin-bottom: calc(#{$margin} * 2);
     &:last-child {

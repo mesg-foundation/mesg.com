@@ -60,39 +60,35 @@ export default {
 @import "~/assets/_variables";
 form {
   position: relative;
-}
-
-input[type="email"] {
-  max-height: 50px;
-  font-size: 15px;
-  padding: 13px $margin;
-  border: solid 1px $lavender-light;
-  border-radius: 3px;
-  background-color: $white;
-  color: $title-color;
-}
-
-input[type="email"]:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px $lavender-light inset;
-}
-
-.email {
-  margin-right: $margin;
-}
-
-button {
-  padding-left: $margin;
-  padding-right: $margin;
-  border: none;
-}
-button:hover {
-  cursor: pointer;
+  .email {
+    margin-right: $margin;
+    input[type="email"] {
+      max-height: 50px;
+      font-size: 15px;
+      padding: 13px $margin;
+      border: solid 1px $lavender-light;
+      border-radius: 3px;
+      background-color: $white;
+      color: $title-color;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px $lavender-light inset;
+      }
+    }
+  }
+  button {
+    padding-left: $margin;
+    padding-right: $margin;
+    border: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .email {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .btn {
     width: 100%;

@@ -17,13 +17,12 @@
           :title="feature.title"
           :text="feature.description"
           third
-          class="feature"
         />
       </Container>
     </section>
 
     <section id="config" mb3>
-      <Container class="intro text-center">
+      <Container class="text-center">
         <h2 mb1>Feature-based applications</h2>
         <p>Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
       </Container>

@@ -108,18 +108,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.menu-fixed > nav {
-  position: sticky;
-  top: 40px;
-}
-
-ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-.separator {
-  width: 100%;
-  min-width: 100%;
+#faq {
+  .menu-fixed > nav {
+    position: sticky;
+    top: 40px;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  .separator {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 </style>
