@@ -30,7 +30,7 @@ a {
   &:hover {
     p {
       font-weight: bold;
-      color: $primary;
+      color: $title-color;
     }
     span {
       opacity: 1;
@@ -42,7 +42,7 @@ a {
     min-height: 50px;
     max-height: 50px;
     border-radius: 100%;
-    opacity: 0.9;
+    opacity: 0.85;
   }
 }
 
