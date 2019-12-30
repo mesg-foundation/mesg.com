@@ -104,9 +104,10 @@ export default {
   }
 }
 
-@media only screen and (min-width: $huge-breakpoint) {
+@media only screen and (min-width: $huge-breakpoint +1) {
   .cta:before {
-    transform: translateY(30%) skewY(-5deg);
+    transform: none;
+    top: 60px;
   }
 }
 
