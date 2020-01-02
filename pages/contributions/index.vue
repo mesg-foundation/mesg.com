@@ -321,6 +321,10 @@ export default {
 @import "~/assets/_variables";
 
 #contributors {
+  .card.bordered:hover {
+    box-shadow: none;
+    transform: none;
+  }
   .contributors-table {
     width: 100%;
     position: relative;
@@ -402,12 +406,11 @@ export default {
   }
 }
 
-.card.bordered.thin:hover {
-  border: solid 2px transparent;
-  box-shadow: 0 0 0 1px $primary-light inset;
-}
-
 #help {
+  .card.bordered.thin {
+    transform: none;
+    box-shadow: none;
+  }
   hr {
     width: auto;
   }
