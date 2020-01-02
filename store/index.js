@@ -1114,10 +1114,10 @@ export const getters = {
         color: "reddit",
         description: "General news",
       },
-      medium: {
+      blog: {
         to: externalLinks.blog,
         icon: "fab fa-medium",
-        color: "medium",
+        color: "blog",
         description: "Check out the news",
       }
     }
