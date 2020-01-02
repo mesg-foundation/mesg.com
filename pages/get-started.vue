@@ -86,9 +86,7 @@
           <div flex column half class="help">
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Need help?</h3>
-              <nuxt-link :to="links.faq" class="link">
-                <i class="fal fa-long-arrow-alt-right"></i>Help center
-              </nuxt-link>
+              <nuxt-link :to="links.faq" class="link">Help center</nuxt-link>
             </div>
             <p
               mb2
@@ -104,9 +102,7 @@
           <div flex column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Tutorials</h3>
-              <a :href="externalLinks.tutorials" target="_blank" class="link">
-                <i class="fal fa-external-link-alt"></i>See all
-              </a>
+              <a :href="externalLinks.tutorials" target="_blank" class="link">See all</a>
             </div>
             <p
               mb1
@@ -274,12 +270,7 @@ ul {
       padding: $margin;
       transition: 0.1s ease-in;
       &:hover {
-        background-color: rgba(231, 210, 249, 0.15);
-        .circle {
-          i {
-            font-weight: bold;
-          }
-        }
+        background-color: transparentize($primary-light, 0.85);
         .info {
           color: $text-color;
         }
@@ -313,13 +304,6 @@ ul {
   .open-source {
     border-bottom-color: $blue;
     transition: 0.1s ease-in;
-    &:hover {
-      border: solid 1px $lavender-light;
-      border-bottom-width: 6px;
-      border-bottom-color: $blue;
-      transform: scale(1.01);
-      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    }
     span {
       text-align: center;
       position: absolute;
@@ -336,13 +320,6 @@ ul {
   .enterprise {
     border-bottom-color: $orange;
     transition: 0.1s ease-in;
-    &:hover {
-      border: solid 1px $lavender-light;
-      border-bottom-width: 6px;
-      border-bottom-color: $orange;
-      transform: scale(1.01);
-      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    }
     span {
       text-align: center;
       position: absolute;
