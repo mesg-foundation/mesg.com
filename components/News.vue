@@ -48,13 +48,16 @@ export default {
 @import "~/assets/_variables";
 a {
   position: relative;
+  .card.bordered {
+    position: relative;
+  }
   img {
     height: 25px;
     width: auto;
   }
   i {
     position: absolute;
-    bottom: calc(#{$margin} + 6px);
+    bottom: $margin;
     right: $margin;
   }
 }

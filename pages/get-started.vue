@@ -301,6 +301,9 @@ ul {
 }
 
 #links-card {
+  .card.bordered {
+    position: relative;
+  }
   .open-source {
     border-bottom-color: $blue;
     transition: 0.1s ease-in;
@@ -315,6 +318,11 @@ ul {
         font-size: 30px;
         color: $blue;
       }
+    }
+    .icon {
+      position: absolute;
+      bottom: calc(#{$margin} * 2);
+      right: calc(#{$margin} * 2);
     }
   }
   .enterprise {
@@ -331,6 +339,11 @@ ul {
         font-size: 30px;
         color: $orange;
       }
+    }
+    .icon {
+      position: absolute;
+      bottom: calc(#{$margin} * 2);
+      right: calc(#{$margin} * 2);
     }
   }
   .content {
