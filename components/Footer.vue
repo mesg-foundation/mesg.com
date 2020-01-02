@@ -127,7 +127,7 @@ nav {
     color: $text-color;
     transition: 0.1s ease-in;
     &:hover {
-      color: $primary;
+      color: $title-color;
       font-weight: normal;
     }
   }
@@ -166,7 +166,7 @@ ul {
 }
 
 a:hover {
-  color: $primary;
+  color: $title-color;
   font-weight: bold;
 }
 
