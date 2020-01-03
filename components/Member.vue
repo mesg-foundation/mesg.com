@@ -64,6 +64,7 @@ export default {
       bottom: 0;
       position: absolute;
       animation: social 0.2s ease-in;
+      transition: 0.1s ease-in;
       &:before {
         content: "";
         display: block;
@@ -88,10 +89,10 @@ export default {
           max-width: 50px;
           background-color: $white;
           border-radius: 100%;
+          transition: 0.1s ease-in;
           animation: Bubble 0.2s ease-in;
           &:hover {
-            opacity: 0.7;
-            transition: 0.2s ease;
+            transform: scale(1.1);
           }
           i {
             text-align: center;

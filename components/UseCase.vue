@@ -46,6 +46,9 @@ export default {
 @import "~/assets/_variables";
 a {
   position: relative;
+  .card.bordered {
+    position: relative;
+  }
   .logos::before {
     content: "";
     position: absolute;
@@ -72,7 +75,7 @@ a {
   .label-icon {
     width: calc(100% - #{$margin} * 2);
     position: absolute;
-    bottom: calc(#{$margin} + 6px);
+    bottom: $margin;
     i {
       text-align: right;
     }

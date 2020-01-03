@@ -50,7 +50,7 @@
             <p
               mb2
             >MESG is built for and by the community. Join our chats, learn more on our blog, or help us build on Github.</p>
-            <ListSN :list="[icons.twitter, icons.telegram, icons.github, icons.medium]" />
+            <ListSN :list="[icons.twitter, icons.telegram, icons.github, icons.blog]" />
           </div>
         </div>
       </Container>

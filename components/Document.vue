@@ -77,6 +77,8 @@ export default {
       margin-right: $margin;
     }
     i {
+      height: 18px;
+      max-width: 17px;
       text-align: right;
     }
   }

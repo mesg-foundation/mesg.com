@@ -14,7 +14,7 @@
             v-for="exchange in exchanges"
             :key="exchange.id"
             :href="exchange.to"
-            class="logo link-secondary"
+            class="logo"
             target="_blank"
             third
           >
@@ -217,6 +217,12 @@ export default {
 a img {
   height: 25px;
   display: block;
+}
+.logo {
+  transition: 0.1s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 #atd {

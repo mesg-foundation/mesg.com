@@ -86,9 +86,7 @@
           <div flex column half class="help">
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Need help?</h3>
-              <nuxt-link :to="links.faq" class="link">
-                <i class="fal fa-long-arrow-alt-right"></i>Help center
-              </nuxt-link>
+              <nuxt-link :to="links.faq" class="link">Help center</nuxt-link>
             </div>
             <p
               mb2
@@ -104,9 +102,7 @@
           <div flex column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Tutorials</h3>
-              <a :href="externalLinks.tutorials" target="_blank" class="link">
-                <i class="fal fa-external-link-alt"></i>See all
-              </a>
+              <a :href="externalLinks.tutorials" target="_blank" class="link">See all</a>
             </div>
             <p
               mb1
@@ -272,9 +268,12 @@ ul {
     }
     a {
       padding: $margin;
+      transition: 0.1s ease-in;
       &:hover {
-        transition: 0.1s ease;
-        background-color: rgba(0, 0, 0, 0.025);
+        background-color: transparentize($primary-light, 0.85);
+        .info {
+          color: $text-color;
+        }
       }
       .icon-right-list {
         max-width: 17px;
@@ -302,16 +301,12 @@ ul {
 }
 
 #links-card {
+  .card.bordered {
+    position: relative;
+  }
   .open-source {
     border-bottom-color: $blue;
-    &:hover {
-      transition: 0.2s ease;
-      border: solid 1px $lavender-light;
-      border-bottom-width: 6px;
-      border-bottom-color: $blue;
-      transform: translateY(-5px);
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-    }
+    transition: 0.1s ease-in;
     span {
       text-align: center;
       position: absolute;
@@ -324,17 +319,15 @@ ul {
         color: $blue;
       }
     }
+    .icon {
+      position: absolute;
+      bottom: calc(#{$margin} * 2);
+      right: calc(#{$margin} * 2);
+    }
   }
   .enterprise {
     border-bottom-color: $orange;
-    &:hover {
-      transition: 0.2s ease;
-      border: solid 1px $lavender-light;
-      border-bottom-width: 6px;
-      border-bottom-color: $orange;
-      transform: translateY(-5px);
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-    }
+    transition: 0.1s ease-in;
     span {
       text-align: center;
       position: absolute;
@@ -346,6 +339,11 @@ ul {
         font-size: 30px;
         color: $orange;
       }
+    }
+    .icon {
+      position: absolute;
+      bottom: calc(#{$margin} * 2);
+      right: calc(#{$margin} * 2);
     }
   }
   .content {
