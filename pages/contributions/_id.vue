@@ -9,7 +9,7 @@
           <p class="reward-label gold">Rewarded</p>
         </div>
       </template>
-      <div class="details">
+      <div class="details" mt2>
         <Tag mr2>{{ contribution.category }}</Tag>
         <span v-if="contribution.profile" flex row>
           <i class="fal fa-user-circle"></i>
@@ -20,7 +20,7 @@
           {{ contribution.name }}
         </span>
       </div>
-      <template v-slot:picture>
+      <template v-slot:image>
         <Card class="preview" p2 mb1>
           <div flex mobile-only-column align-center wrap>
             <span class="infos text-right">Share this contribution</span>
@@ -46,7 +46,7 @@
           <hr mt1 mb1 />
           <EmbedCard :url="contribution.link" />
         </Card>
-        <p class="infos text-center edit">
+        <p class="sub-text text-center edit">
           Content not showing up as expected?
           <TypeFormPopup :id="forms.editContribution" class="form link">
             <a>Let us know</a>
@@ -108,7 +108,7 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/Header";
 import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";
 import Tweetbtn from "@mesg-components/social-network";
@@ -178,6 +178,9 @@ export default {
     max-width: fit-content;
     height: 20px;
   }
+}
+.sub-text {
+  font-size: 14px !important;
 }
 
 .reward {

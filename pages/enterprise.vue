@@ -1,11 +1,11 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/enterprise/enterprise.svg')"
+      :image="require('~/assets/enterprise/enterprise.svg')"
       :title="title"
       :description="description"
     >
-      <div>
+      <div mt2>
         <TypeFormPopup :id="forms.contactForm" class="form">
           <Button primary>Get in touch</Button>
         </TypeFormPopup>
@@ -93,7 +93,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
-import Header from "~/components/Header";
+import Header from "@mesg-components/Header";
 import Container from "~/components/Container";
 import TypeFormPopup from "@mesg-components/type-form-popup";
 import Package from "~/components/Package";

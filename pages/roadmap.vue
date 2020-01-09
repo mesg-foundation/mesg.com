@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/roadmap.svg')" :title="title" :description="description" />
+    <Header :image="require('~/assets/roadmap.svg')" :title="title" :description="description" />
 
     <section id="roadmap" mb3>
       <Container>
@@ -71,7 +71,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/Header";
 import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
 import Button from "@mesg-components/button";

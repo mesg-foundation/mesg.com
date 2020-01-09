@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
+    <Header :image="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
 
     <section id="faq" mb3>
       <Container>
@@ -71,7 +71,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/Header";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
 import TypeFormPopup from "@mesg-components/type-form-popup";

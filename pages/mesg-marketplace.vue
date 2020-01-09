@@ -1,12 +1,12 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/marketplace/marketplace.svg')"
+      :image="require('~/assets/marketplace/marketplace.svg')"
       :title="title"
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.marketplace" target="_blank" primary>MESG Marketplace</Button>
+        <Button :href="externalLinks.marketplace" target="_blank" primary mt2>MESG Marketplace</Button>
       </div>
     </Header>
 
@@ -104,7 +104,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/Header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";

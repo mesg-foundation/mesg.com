@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/getstarted.svg')" :title="title" :description="description">
+    <Header :image="require('~/assets/getstarted.svg')" :title="title" :description="description">
       <div>
-        <Button :href="externalLinks.getStarted" primary target="_blank">Quick start</Button>
+        <Button :href="externalLinks.getStarted" primary target="_blank" mt2>Quick start</Button>
       </div>
     </Header>
 
@@ -172,7 +172,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
-import Header from "~/components/Header";
+import Header from "@mesg-components/Header";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";
