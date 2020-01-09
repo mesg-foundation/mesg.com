@@ -93,7 +93,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import TypeFormPopup from "@mesg-components/type-form-popup";
 import Package from "~/components/Package";

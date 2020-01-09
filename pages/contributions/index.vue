@@ -246,7 +246,7 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Card from "@mesg-components/card";
 import EmbedCard from "@mesg-components/embed-card";

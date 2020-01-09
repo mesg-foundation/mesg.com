@@ -172,7 +172,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";

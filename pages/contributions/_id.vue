@@ -108,7 +108,7 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";
 import Tweetbtn from "@mesg-components/social-network";

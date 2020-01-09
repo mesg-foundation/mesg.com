@@ -71,7 +71,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
 import Button from "@mesg-components/button";

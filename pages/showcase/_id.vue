@@ -127,7 +127,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";

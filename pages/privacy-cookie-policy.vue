@@ -39,7 +39,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "@mesg-components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import SideMenu from "@mesg-components/side-menu";
 import page from "./page";
