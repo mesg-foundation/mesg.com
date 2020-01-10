@@ -1,11 +1,11 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/community/community.svg')"
+      :image="require('~/assets/community/community.svg')"
       :title="title"
       :description="description"
     >
-      <div>
+      <div mt2>
         <TypeFormPopup :id="forms.addContribution" class="form">
           <Button primary>Add a contribution</Button>
         </TypeFormPopup>
@@ -246,7 +246,7 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Card from "@mesg-components/card";
 import EmbedCard from "@mesg-components/embed-card";
