@@ -1,10 +1,11 @@
 <template>
   <Header
-    :picture="require('~/assets/404.svg')"
+    :image="require('~/assets/404.svg')"
     :title="title"
     :description="description"
     flex
     align-center
+    id="header"
   >
     <div>
       <Button :to="links.home" primary>MESG Home</Button>
@@ -15,7 +16,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 export default {
   components: {
     Header,
@@ -40,7 +41,7 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/_variables";
 
-header {
+#header {
   min-height: calc(100vh - (#{$margin} * 4));
   margin-bottom: 0 !important;
   &:before {

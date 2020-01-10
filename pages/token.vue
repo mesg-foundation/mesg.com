@@ -1,12 +1,8 @@
 <template>
   <div>
-    <Header
-      :picture="require('~/assets/token/token.svg')"
-      :title="title"
-      :description="description"
-    >
+    <Header :image="require('~/assets/token/token.svg')" :title="title" :description="description">
       <div>
-        <p mb1>
+        <p class="sub-text" mb1 mt2>
           <strong>Buy and trade on:</strong>
         </p>
         <div flex row wrap>
@@ -160,7 +156,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import Card from "@mesg-components/card";
@@ -217,8 +213,12 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/_variables";
 
+.sub-text {
+  font-size: 17px !important;
+}
+
 a img {
-  height: 25px;
+  height: 25px !important;
   display: block;
 }
 .logo {
@@ -282,9 +282,6 @@ a img {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .logo {
-    margin-bottom: calc(#{$margin} * 2);
-  }
   #cta {
     div {
       margin-bottom: 0 !important;

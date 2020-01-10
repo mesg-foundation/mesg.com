@@ -1,11 +1,7 @@
 <template>
   <div>
-    <Header
-      :picture="require('~/assets/orchestrator.svg')"
-      :title="title"
-      :description="description"
-    >
-      <Button :to="links.getstarted" primary>Start building</Button>
+    <Header :image="require('~/assets/orchestrator.svg')" :title="title" :description="description">
+      <Button :to="links.getstarted" primary mt2>Start building</Button>
     </Header>
 
     <section id="features" mb3>
@@ -73,7 +69,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";

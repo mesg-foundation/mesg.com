@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/showcase.svg')" :title="title" :description="description">
+    <Header :image="require('~/assets/showcase.svg')" :title="title" :description="description">
       <div>
-        <Button :to="links.getstarted" primary>Start building</Button>
+        <Button :to="links.getstarted" primary mt2>Start building</Button>
       </div>
     </Header>
 
@@ -95,7 +95,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Button from "@mesg-components/button";

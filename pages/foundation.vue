@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/team.svg')" :title="title" :description="description">
-      <div>
+    <Header :image="require('~/assets/team.svg')" :title="title" :description="description">
+      <div mt2>
         <TypeFormPopup :id="forms.contactForm" class="form">
           <Button primary>Get in touch</Button>
         </TypeFormPopup>
@@ -133,7 +133,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
