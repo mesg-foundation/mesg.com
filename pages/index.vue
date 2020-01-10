@@ -168,6 +168,7 @@ export default {
     ListSN,
     CTA
   },
+  fetch: ({ store }) => store.dispatch("articles/fetchAll"),
   mixins: [
     page({
       title: "The builders’ open economy",
@@ -182,7 +183,8 @@ export default {
       links: "links",
       externalLinks: "externalLinks",
       allusecases: "usecases",
-      icons: "icons"
+      icons: "icons",
+      articles: "articles/all"
     }),
     usecases() {
       return this.allusecases.slice(0, 3);
