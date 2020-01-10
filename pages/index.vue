@@ -21,34 +21,37 @@
 
     <section id="presentation">
       <Container flex column class="intro text-center">
-        <h2 mb1>Products</h2>
-        <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
+        <h2 mb1>Technology</h2>
+        <p>Together, the MESG Engine, Services, Processes, and Token form an ultra-efficient, open economy of application development and hosting.</p>
       </Container>
     </section>
 
-    <section id="products" mb3 class="outer-background">
+    <section id="technology" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
-          <Card
+          <nuxt-link
             v-for="product in products"
             :key="product.id"
             :id="product.id"
-            p2
-            mb2
+            :to="links[product.id]"
+            class="technology-card"
             flex
             column
             half
+            mb2
           >
-            <div>
-              <img mb1 :src="product.img" :alt="product.title" />
-            </div>
-            <span>{{ product.label }}</span>
-            <h3 mb1>{{ product.title }}</h3>
-            <p mb2 v-html="product.description" />
-            <div>
-              <Button secondary :to="links[product.id]">Learn more</Button>
-            </div>
-          </Card>
+            <Card p2>
+              <div>
+                <img mb1 :src="product.img" :alt="product.title" />
+              </div>
+              <span>{{ product.label }}</span>
+              <h3 mb1>{{ product.title }}</h3>
+              <p mb2 v-html="product.description" />
+              <div>
+                <Button secondary :to="links[product.id]">Learn more</Button>
+              </div>
+            </Card>
+          </nuxt-link>
         </div>
       </Container>
     </section>
@@ -178,41 +181,31 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-#products {
-  img {
-    height: 160px;
-    width: 160px;
-    max-width: 100%;
-  }
-  span {
-    font-size: 12px;
-    font-weight: bold;
-    color: $purple;
-    text-transform: uppercase;
-    margin-bottom: calc(#{$margin} / 2) !important;
+#technology {
+  .technology-card {
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    img {
+      height: 160px;
+      width: 160px;
+      max-width: 100%;
+    }
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: $purple;
+      text-transform: uppercase;
+      margin-bottom: calc(#{$margin} / 2) !important;
+    }
   }
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
-  #token {
-    .token {
-      margin-right: $margin;
-    }
-  }
-}
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
-  }
-  #token {
-    margin-top: calc(#{$margin} * 2);
-    .content {
-      margin-bottom: calc(#{$margin} * 2);
-      .token {
-        margin-right: 0;
-        margin-bottom: $margin;
-      }
-    }
   }
   #more-infos {
     .community {
