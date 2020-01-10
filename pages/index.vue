@@ -42,29 +42,14 @@
             <div>
               <img mb1 :src="product.img" :alt="product.title" />
             </div>
+            <span>{{ product.label }}</span>
             <h3 mb1>{{ product.title }}</h3>
             <p mb2 v-html="product.description" />
-            <span spacer />
-            <List :items="product.features.secondary" mb2 />
-            <Button outline :to="links[product.id]">{{ product.action }}</Button>
+            <div>
+              <Button secondary :to="links[product.id]">Learn more</Button>
+            </div>
           </Card>
         </div>
-        <Card p2 id="token">
-          <div flex row mobile-column align-center>
-            <div flex mobile-column class="content">
-              <div flex column quarter class="token">
-                <img src="~/assets/token/MESG-token.svg" alt="MESG Token" />
-              </div>
-              <div flex column>
-                <h3 mb1>Build services, earn tokens</h3>
-                <p>Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
-              </div>
-            </div>
-            <div flex column third>
-              <Button outline :to="links.token">Discover the MESG Token</Button>
-            </div>
-          </div>
-        </Card>
       </Container>
     </section>
 
@@ -199,12 +184,12 @@ export default {
     width: 160px;
     max-width: 100%;
   }
-}
-
-#token {
-  img {
-    width: 100px;
-    height: 100px;
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: $purple;
+    text-transform: uppercase;
+    margin-bottom: calc(#{$margin} / 2) !important;
   }
 }
 
