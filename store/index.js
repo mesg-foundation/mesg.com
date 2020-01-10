@@ -7,7 +7,7 @@ export const getters = {
         img: require("~/assets/engine/engine.svg"),
         title: "Engine",
         description:
-          "A suite of tools to connect together services with other devices and applications. Control the flow of data and level of security between your whole stack of technologies.",
+          "Connect services to any other device or application. Then, control the flow of data and the level of security between your whole stack of connected technologies.",
         features: {
           primary: [
             {
@@ -39,7 +39,7 @@ export const getters = {
         img: require("~/assets/marketplace/marketplace.svg"),
         title: "Service",
         description:
-          "A decentralized marketplace built to save time in development. Reuse intercompatible application components and earn tokens when your work is reused by others.",
+          "Create or reuse intercompatible application components to save time in development. Builders can earn tokens when their services are reused through the MESG Marketplace.",
         features: {
           primary: [
             { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/guide/marketplace/", action: "Create a service" },
@@ -64,7 +64,7 @@ export const getters = {
         label: "Create",
         img: require("~/assets/orchestrator.svg"),
         title: "Process",
-        description: "Orchestrate your application by connecting the events and tasks from any service. Implement complex technologies like blockchains and AI without managing the complexities.",
+        description: "Orchestrate applications by connecting the events and tasks from any service with a Process. Forget the complexities while utilizing powerful technologies like blockchains or AI.",
         features: {
           primary: [
             {
@@ -85,7 +85,7 @@ export const getters = {
         label: "Fuel",
         img: require("~/assets/token/token.svg"),
         title: "Token",
-        description: "Orchestrate your application by connecting the events and tasks from any service. Implement complex technologies like blockchains and AI without managing the complexities.",
+        description: "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace.",
         features: {
           primary: [
             { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications and get rewarded for your participation." },
