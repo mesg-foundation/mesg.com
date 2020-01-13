@@ -6,3 +6,9 @@ Vue.filter('relativeDate', function (value) {
         return moment(String(value)).fromNow();
     }
 })
+
+Vue.filter('formatDate', function (value) {
+    if (value) {
+        return moment(String(value)).format("DD MMM YYYY");;
+    }
+})
