@@ -1197,5 +1197,36 @@ export const getters = {
       policy: "/privacy-cookie-policy",
       getstarted: "/get-started"
     }
+  },
+
+  menu(_, { links, externalLinks }) {
+    return [{
+      text: 'Technology',
+      to: '#',
+      subMenu: [
+        { text: 'Orchestrator', to: links.orchestrator },
+        { text: 'SDK', to: links.engine },
+        { text: 'Marketplace', to: links.marketplace },
+        { text: 'Enterprise', to: links.enterprise }
+      ]
+    },
+    {
+      text: 'Developers',
+      to: '#',
+      subMenu: [
+        { text: 'Get started', to: externalLinks.getStarted },
+        { text: 'Marketplace', to: externalLinks.marketplace },
+        { text: 'Documentation', to: externalLinks.documentation },
+        { text: 'Tutorials', to: externalLinks.tutorials },
+        { text: 'Github', to: externalLinks.github }
+      ]
+    },
+    { text: 'Showcase', to: links.showcase },
+    { text: 'Contributions', to: links.contributions },
+    { text: 'Token', to: links.token },
+    { text: 'Get started', to: links.getstarted, type: 'button' }
+    ]
   }
 }
+
+
