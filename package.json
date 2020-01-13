@@ -19,6 +19,7 @@
     "@mesg-components/card": "^2.1.0",
     "@mesg-components/embed-card": "^1.0.1",
     "@mesg-components/menu": "^1.0.5",
+    "@mesg-components/header": "^2.0.1",
     "@mesg-components/side-menu": "^1.1.0",
     "@mesg-components/social-network": "^1.0.1",
     "@mesg-components/table": "^1.1.3",

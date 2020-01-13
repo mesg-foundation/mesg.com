@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Header :picture="usecase.headerimage" :title="title" :description="description">
+    <Header :image="usecase.headerimage" :title="title" :description="description">
       <template v-slot:top v-if="usecase.label">
         <TagLabel :type="usecase.label.type" mb1>{{ usecase.label.title }}</TagLabel>
       </template>
       <div>
-        <Button :href="usecase.cta" target="_blank" primary>Discover the project</Button>
+        <Button :href="usecase.cta" target="_blank" primary mt2>Discover the project</Button>
       </div>
     </Header>
 
@@ -127,7 +127,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";

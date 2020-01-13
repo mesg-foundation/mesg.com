@@ -1,6 +1,15 @@
 <template>
   <div>
-    <Header :title="title" :description="description"></Header>
+    <Header :title="title">
+      <p>
+        This privacy policy ('Policy') describes how MESG Foundation ('MESG Foundation', 'we', 'us' or 'our') collects, protects and uses the personally identifiable information ('Personal Information') you ('User', 'you' or 'your') may provide on the
+        <a
+          href="https://mesg.com/"
+          class="link"
+          target="_blank"
+        >mesg.com</a> website and any of its products or services (collectively, 'Website' or 'Services'). It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.
+      </p>
+    </Header>
 
     <section id="policy" mb3>
       <Container>
@@ -30,7 +39,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import SideMenu from "@mesg-components/side-menu";
 import page from "./page";
@@ -45,7 +54,7 @@ export default {
     page({
       title: "Privacy and Cookie Policy",
       description:
-        "This privacy policy ('Policy') describes how MESG Foundation ('MESG Foundation', 'we', 'us' or 'our') collects, protects and uses the personally identifiable information ('Personal Information') you ('User', 'you' or 'your') may provide on the <a href='https://mesg.com/' class='link' target='_blank'>mesg.com</a> website and any of its products or services (collectively, 'Website' or 'Services'). It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage."
+        "This privacy policy ('Policy') describes how MESG Foundation ('MESG Foundation', 'we', 'us' or 'our') collects, protects and uses the personally identifiable information ('Personal Information') you ('User', 'you' or 'your') may provide on the mesg.com website and any of its products or services (collectively, 'Website' or 'Services'). It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage."
     })
   ],
   computed: mapGetters({
