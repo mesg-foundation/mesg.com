@@ -91,7 +91,7 @@
         <div flex column align-center>
           <h2 mb2>Blog</h2>
           <div flex row mobile-column mb2>
-            <Article :items="articles" />
+            <Article v-for="article in articles" :key="article.id" :article="article" />
           </div>
           <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
         </div>

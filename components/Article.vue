@@ -1,34 +1,22 @@
 <template>
-  <nav flex row wrap>
-    <a
-      v-for="(item, i) in items"
-      :key="i"
-      :href="item.url"
-      :id="item.id"
-      target="_blank"
-      flex
-      column
-      quarter
-      mb1
-    >
-      <img :src="item.feature_image" :alt="item.title" mb1 />
-      <div>
-        <div class="tag-date" flex row align-center>
-          <span class="tag">{{ item.primary_tag.name }}</span>
-          <span class="date">{{ item.published_at | formatDate }}</span>
-        </div>
-        <h4>{{ item.title }}</h4>
+  <a :href="article.url" :id="article.id" target="_blank" flex column quarter mb1>
+    <img :src="article.feature_image" :alt="article.title" mb1 />
+    <div>
+      <div class="tag-date" flex row align-center>
+        <span class="tag">{{ article.primary_tag.name }}</span>
+        <span class="date">{{ article.published_at | formatDate }}</span>
       </div>
-    </a>
-  </nav>
+      <h4>{{ article.title }}</h4>
+    </div>
+  </a>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 export default {
   props: {
-    items: {
-      type: Array,
+    article: {
+      type: Object,
       required: true
     }
   }
