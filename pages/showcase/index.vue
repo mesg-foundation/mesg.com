@@ -43,17 +43,12 @@
 
     <section id="blog" mb3>
       <Container>
-        <div flex row mobile-column-reverse align-center>
-          <div half>
-            <h2 mb1>Blog</h2>
-            <p
-              mb1
-            >Discover even more ways to use MESG on our blog, plus stay up to date about what we are building and why we are building it.</p>
-            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+        <div flex column align-center>
+          <h2 mb2>Blog</h2>
+          <div flex row mobile-column mb2>
+            <Article :items="articles" />
           </div>
-          <div half p1>
-            <img src="~/assets/blog.svg" alt="Blog" />
-          </div>
+          <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
         </div>
       </Container>
     </section>
@@ -103,6 +98,7 @@ import TypeFormPopup from "@mesg-components/type-form-popup";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import CardNewsletter from "~/components/CardNewsletter";
+import Article from "~/components/Article";
 import page from "../page";
 
 export default {
@@ -114,8 +110,10 @@ export default {
     TypeFormPopup,
     CTA,
     ListSN,
-    CardNewsletter
+    CardNewsletter,
+    Article
   },
+  fetch: ({ store }) => store.dispatch("articles/fetchAll"),
   mixins: [
     page({
       title: "Showcase",
@@ -128,7 +126,8 @@ export default {
     externalLinks: "externalLinks",
     usecases: "usecases",
     icons: "icons",
-    forms: "forms"
+    forms: "forms",
+    articles: "articles/all"
   })
 };
 </script>
