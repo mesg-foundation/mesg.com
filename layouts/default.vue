@@ -8,7 +8,7 @@
 
 
 <script>
-import Menu from "@mesg-components/Menu";
+import Menu from "@mesg-components/menu";
 import Footer from "~/components/Footer";
 import { mapGetters } from "vuex";
 export default {
