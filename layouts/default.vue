@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Menu class="menu-bar" />
+    <Menu :logo="require('~/assets/MESG-logo-horizontal-purple.svg')" :items="menu" is-nuxt />
     <nuxt />
     <Footer />
   </div>
@@ -8,12 +8,16 @@
 
 
 <script>
-import Menu from "~/components/Menu";
+import Menu from "@mesg-components/Menu";
 import Footer from "~/components/Footer";
+import { mapGetters } from "vuex";
 export default {
   components: {
     Menu,
     Footer
-  }
+  },
+  computed: mapGetters({
+    menu: "menu"
+  })
 };
 </script>
