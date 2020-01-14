@@ -29,29 +29,26 @@
     <section id="technology" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
-          <nuxt-link
-            v-for="product in products"
-            :key="product.id"
-            :id="product.id"
-            :to="links[product.id]"
-            class="technology-card"
-            flex
-            column
-            half
-            mb2
-          >
-            <Card p2>
+          <Card flex row mobile-column>
+            <nuxt-link
+              v-for="product in products"
+              :key="product.id"
+              :id="product.id"
+              :to="links[product.id]"
+              class="technology-card"
+              flex
+              column
+              align-center
+              p2
+            >
               <div>
-                <img mb1 :src="product.img" :alt="product.title" />
+                <img mb2 :src="product.img" :alt="product.title" />
               </div>
-              <span>{{ product.label }}</span>
+              <span class="label">{{ product.label }}</span>
               <h3 mb1>{{ product.title }}</h3>
-              <p mb2 v-html="product.description" />
-              <div>
-                <Button secondary :to="links[product.id]">Learn more</Button>
-              </div>
-            </Card>
-          </nuxt-link>
+              <i class="fal fa-long-arrow-alt-right"></i>
+            </nuxt-link>
+          </Card>
         </div>
       </Container>
     </section>
@@ -182,21 +179,31 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/_variables";
 #technology {
+  .card {
+    padding: 0;
+  }
   .technology-card {
     transition: 0.1s ease-in;
+    margin-right: 0;
+    border-right: dotted 1px $lavender-light;
     &:hover {
       transform: scale(1.01);
-      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: transparentize($primary-light, 0.85);
+    }
+    &:last-child {
+      border-right: none;
     }
     img {
-      height: 160px;
-      width: 160px;
+      height: 140px;
+      width: 140px;
       max-width: 100%;
     }
     span {
       font-size: 12px;
       font-weight: bold;
       color: $purple;
+    }
+    .label {
       text-transform: uppercase;
       margin-bottom: calc(#{$margin} / 2) !important;
     }
@@ -206,6 +213,13 @@ export default {
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
+  }
+  .technology-card {
+    border-right: none;
+    border-bottom: dotted 1px $lavender-light;
+    &:last-child {
+      border-bottom: none;
+    }
   }
   #more-infos {
     .community {
