@@ -73,17 +73,12 @@
 
     <section id="blog" mb3>
       <Container>
-        <div flex row mobile-column-reverse align-center>
-          <div half>
-            <h2 mb1>Blog</h2>
-            <p
-              mb1
-            >Stay up to date with the MESG Foundation on our blog. Check out in-depth features about what we are building and why we are building it.</p>
-            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+        <div flex column align-center>
+          <h2 mb2>Blog</h2>
+          <div flex row mobile-column mb2>
+            <Article v-for="article in articles" :key="article.id" :article="article" />
           </div>
-          <div half p1>
-            <img src="~/assets/blog.svg" alt="Blog" />
-          </div>
+          <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
         </div>
       </Container>
     </section>
@@ -138,6 +133,7 @@ import List from "~/components/List";
 import CardNewsletter from "~/components/CardNewsletter";
 import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
+import Article from "~/components/Article";
 import page from "./page";
 
 export default {
@@ -151,8 +147,10 @@ export default {
     List,
     CardNewsletter,
     ListSN,
-    CTA
+    CTA,
+    Article
   },
+  fetch: ({ store }) => store.dispatch("articles/fetchAll"),
   mixins: [
     page({
       title: "The builders’ open economy",
@@ -167,7 +165,8 @@ export default {
       links: "links",
       externalLinks: "externalLinks",
       allusecases: "usecases",
-      icons: "icons"
+      icons: "icons",
+      articles: "articles/all"
     }),
     usecases() {
       return this.allusecases.slice(0, 3);
