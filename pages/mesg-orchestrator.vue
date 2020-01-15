@@ -1,31 +1,7 @@
 <template>
   <div>
-    <Header
-      :picture="require('~/assets/orchestrator.svg')"
-      :title="title"
-      :description="description"
-    >
-      <div flex row mobile-column align-center>
-        <Button
-          :href="externalLinks.process"
-          primary
-          target="_blank"
-          mr2
-          class="btn-cta"
-        >Start building</Button>
-        <a
-          href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
-          target="_blank"
-        >
-          <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
-            alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
-            style="width: 250px; height: 54px;"
-            width="250px"
-            height="54px"
-          />
-        </a>
-      </div>
+    <Header :image="require('~/assets/orchestrator.svg')" :title="title" :description="description">
+      <Button :to="links.getstarted" primary mt2>Start building</Button>
     </Header>
 
     <section id="features" mb3>
@@ -37,13 +13,12 @@
           :title="feature.title"
           :text="feature.description"
           third
-          class="feature"
         />
       </Container>
     </section>
 
     <section id="config" mb3>
-      <Container class="intro text-center">
+      <Container class="text-center">
         <h2 mb1>Feature-based applications</h2>
         <p>Orchestrate services to create features for your applications. After all, what is an application but a collection of features?</p>
       </Container>
@@ -64,32 +39,6 @@
       </div>
     </section>
 
-    <section mb3>
-      <Container>
-        <div flex column align-center>
-          <h2 mb2 class="text-center">Check out Orchestrator on Product Hunt</h2>
-          <a
-            href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
-            target="_blank"
-          >
-            <img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
-              alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
-              style="width: 250px; height: 54px;"
-              width="250px"
-              height="54px"
-            />
-          </a>
-        </div>
-      </Container>
-    </section>
-
-    <section>
-      <Container flex column align-center>
-        <hr mb3 />
-      </Container>
-    </section>
-
     <section id="more-infos" mb3>
       <Container>
         <div flex row mobile-column align-center>
@@ -100,18 +49,19 @@
             >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
           </div>
           <div half>
-            <ListSN :list="['github', 'forum']" />
+            <ListSN :list="[icons.github, icons.forum]" />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-book"
       title="Build faster with MESG Orchestrator"
       description="Start creating feature-rich software today with a simple process file."
       mb1
     >
-      <Button :href="externalLinks.process" target="_blank" white>Start building</Button>
+      <Button :to="links.getstarted" target="_blank" white>Start building</Button>
     </CTA>
   </div>
 </template>
@@ -119,10 +69,9 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -135,7 +84,6 @@ export default {
     Header,
     Container,
     Button,
-    Card,
     CTA,
     ListSN,
     TextWithIcon,
@@ -149,21 +97,26 @@ export default {
         "Build feature-based applications through the orchestration of MESG services."
     })
   ],
-  computed: mapGetters({
-    links: "links",
-    externalLinks: "externalLinks",
-    orchestrator: "orchestrator"
-  })
+  computed: {
+    ...mapGetters({
+      products: "products",
+      links: "links",
+      externalLinks: "externalLinks",
+      icons: "icons"
+    }),
+    orchestrator() {
+      return this.products.find(x => x.id === "orchestrator");
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
+
 @media only screen and (max-width: $mobile-breakpoint) {
-  .btn-cta {
-    margin-right: 0 !important;
-  }
   .code {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

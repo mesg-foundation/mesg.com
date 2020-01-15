@@ -1,20 +1,30 @@
 <template>
   <Container flex column align-center>
     <h2 class="text-center" mb2>Already building on MESG</h2>
-    <ul flex row wrap>
+    <ul flex row align-center>
       <li>
-        <a href="https://omisego.co/" target="_blank" class="link-secondary">
-          <img mr2 src="~/assets/partners/omisego.svg" alt="omisego" />
+        <a href="https://omisego.co/" target="_blank">
+          <img src="~/assets/partners/omisego.svg" alt="OmiseGO logo" />
         </a>
       </li>
       <li>
-        <a href="https://beachhead.com/" target="_blank" class="link-secondary">
-          <img mr2 src="~/assets/partners/beachhead.svg" alt="beachhead" />
+        <a href="https://aragon.org/" target="_blank">
+          <img src="~/assets/partners/aragon.svg" alt="Aragon logo" />
         </a>
       </li>
       <li>
-        <a href="https://www.yellow.com/" target="_blank" class="link-secondary">
-          <img src="~/assets/partners/yellow.svg" alt="yellow" />
+        <a href="https://projecthydro.org/" target="_blank">
+          <img src="~/assets/partners/hydro.svg" alt="Hydro logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://beachhead.com/" target="_blank">
+          <img src="~/assets/partners/beachhead.svg" alt="BeachHead logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.yellow.com/" target="_blank">
+          <img src="~/assets/partners/yellow.svg" alt="Yellow logo" />
         </a>
       </li>
     </ul>
@@ -29,26 +39,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  height: 40px;
-  width: auto;
-}
+@import "~/assets/_variables";
 ul {
   list-style: none;
-  text-indent: 0;
+  margin-left: 0;
+  li {
+    margin-bottom: 0;
+    max-width: 170px;
+    height: 40px;
+    text-align: center;
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 40px;
+    }
+  }
 }
-li {
-  text-align: center;
+@media only screen and (max-width: $mobile-breakpoint) {
+  li {
+    margin-right: $margin;
+  }
 }
 @media only screen and (max-width: $mobile-only) {
-  img,
-  li {
-    width: 100%;
-    margin-right: 0 !important;
-    margin-bottom: var(--margin);
-  }
-  img:last-child {
-    margin-bottom: 0;
+  ul {
+    flex-direction: column;
+    li {
+      text-align: center;
+      margin-bottom: $margin !important;
+      margin-right: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 </style>

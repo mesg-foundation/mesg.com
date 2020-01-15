@@ -1,12 +1,8 @@
 <template>
   <div>
-    <Header
-      :picture="require('~/assets/token/token.svg')"
-      :title="title"
-      :description="description"
-    >
+    <Header :image="require('~/assets/token/token.svg')" :title="title" :description="description">
       <div>
-        <p mb1>
+        <p class="sub-text" mb1 mt2>
           <strong>Buy and trade on:</strong>
         </p>
         <div flex row wrap>
@@ -14,7 +10,7 @@
             v-for="exchange in exchanges"
             :key="exchange.id"
             :href="exchange.to"
-            class="logo link-secondary"
+            class="logo"
             target="_blank"
             third
           >
@@ -44,7 +40,7 @@
           mb2
           class="text-center"
         >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
-        <div flex row space-between wrap class="features">
+        <div flex row space-between wrap>
           <TextWithIcon
             half
             v-for="(feature, i) in token.features.secondary"
@@ -99,6 +95,7 @@
             :key="i"
             :title="faq.title"
             :text="faq.description"
+            mb2
           />
         </div>
       </Container>
@@ -129,7 +126,7 @@
             <p
               mb2
             >Join the community of builders and traders in our Telegram group, or head over to Discord to chat with the team.</p>
-            <ListSN :list="['telegram', 'discord']" />
+            <ListSN :list="[icons.telegram, icons.discord]" />
           </div>
         </div>
       </Container>
@@ -137,9 +134,9 @@
 
     <section id="cta" mb1>
       <Container>
-        <Card purple p2>
+        <Card p2>
           <h2 class="text-center" mb2>Buy and Trade</h2>
-          <div flex row mobile-column class="exchange">
+          <div flex row mobile-column>
             <Button
               white
               v-for="exchange in exchanges"
@@ -159,16 +156,15 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
 import Partners from "~/components/Partners";
 import CardNewsletter from "~/components/CardNewsletter";
 import ListSN from "~/components/ListSN";
-import CallToAction from "~/components/CallToAction";
 import TextWithIcon from "~/components/TextWithIcon";
 import Feature from "~/components/Feature";
 import ColoredList from "~/components/ColoredList";
@@ -186,7 +182,6 @@ export default {
     Partners,
     CardNewsletter,
     ListSN,
-    CallToAction,
     TextWithIcon,
     Feature,
     ColoredList,
@@ -201,86 +196,120 @@ export default {
   ],
   computed: {
     ...mapGetters({
-      token: "token",
+      products: "products",
       links: "links",
       externalLinks: "externalLinks",
       articles: "articles",
-      exchanges: "exchanges"
-    })
+      exchanges: "exchanges",
+      icons: "icons"
+    }),
+    token() {
+      return this.products.find(x => x.id === "token");
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-#cta {
-  position: relative;
-}
+@import "~/assets/_variables";
 
-#cta::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 100px);
-  background: var(--light-background);
-  transform: translateY(30%) skewY(-8deg);
-  z-index: -1;
-}
-#cta h2 {
-  color: var(--white);
-}
-
-ul {
-  list-style: none;
-  margin-bottom: 0 !important;
+.sub-text {
+  font-size: 17px !important;
 }
 
 a img {
-  height: 25px;
+  height: 25px !important;
   display: block;
 }
+.logo {
+  transition: 0.1s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
-a.btn--white img {
-  margin: auto;
-}
-li img {
-  vertical-align: middle;
+#atd {
+  div {
+    padding-top: calc(#{$margin} * 2);
+  }
 }
 
-.features {
-  padding-top: calc(var(--margin) * 2);
+#distribution {
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
 }
+
+#cta {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    background: $grey-light;
+    transform: translateY(30%) skewY(-8deg);
+    z-index: -1;
+  }
+  .card {
+    background-image: linear-gradient(to right, $primary, $purple);
+    h2 {
+      color: $white;
+    }
+    img {
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $huge-breakpoint +1) {
+  #cta:before {
+    transform: none;
+    top: 60px;
+  }
+}
+
 @media only screen and (max-width: $tablet-breakpoint) {
-  .features {
-    padding-top: 0;
+  #cta:before {
+    height: calc(100% + 80px);
+  }
+  #atd {
+    div {
+      padding-top: 0;
+    }
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .btn--white {
-    margin-bottom: calc(var(--margin) * 2) !important;
+  #cta {
+    div {
+      margin-bottom: 0 !important;
+      .btn--white {
+        margin-bottom: calc(#{$margin} * 2) !important;
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
   }
-  .btn--white:last-child {
-    margin-bottom: 0 !important;
+  #atd {
+    .container {
+      padding-bottom: 0;
+    }
   }
-  .exchange {
-    margin-bottom: 0 !important;
-  }
-  .logo {
-    margin-bottom: calc(var(--margin) * 2);
-  }
-  #atd .container {
-    padding-bottom: 0;
-  }
-  .community {
-    margin-top: calc(var(--margin) * 3);
+  #more-infos {
+    .community {
+      margin-top: calc(#{$margin} * 3);
+    }
   }
 }
 
 @media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .logo {
-    width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
-    min-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
-    max-width: calc((100% - (3 - 1) * 2 * var(--margin)) / 3);
+    width: calc((100% - (3 - 1) * 2 * #{$margin}) / 3);
+    min-width: calc((100% - (3 - 1) * 2 * #{$margin}) / 3);
+    max-width: calc((100% - (3 - 1) * 2 * #{$margin}) / 3);
   }
 }
 </style>

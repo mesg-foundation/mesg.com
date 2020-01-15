@@ -1,6 +1,6 @@
 <template>
   <Card>
-    <div class="videoWrapper">
+    <div>
       <iframe
         :src="src"
         width="680"
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Card
@@ -25,18 +25,23 @@ export default {
 };
 </script>
 
-<style scoped>
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: calc(var(--margin) + 5px);
-  height: 0;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+<style lang="scss" scoped>
+@import "~/assets/_variables";
+
+.card {
+  padding: 0;
+  div {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: calc(#{$margin} + 5px);
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 </style>

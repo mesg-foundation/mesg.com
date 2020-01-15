@@ -1,16 +1,14 @@
 <template>
-  <section id="discover">
-    <Container>
-      <h2 mb2>Discover more</h2>
-      <div flex row space-between wrap class="items">
-        <div half v-for="(item, i) in items" :key="i" class="item">
-          <h3 mb1>{{ item.title }}</h3>
-          <p mb2>{{ item.description }}</p>
-          <Button secondary :to="item.to">{{ item.action }}</Button>
-        </div>
+  <Container>
+    <h2 mb2>Discover more</h2>
+    <div flex row space-between wrap class="items">
+      <div half v-for="(item, i) in items" :key="i" class="item">
+        <h3 mb1>{{ item.title }}</h3>
+        <p mb2>{{ item.description }}</p>
+        <Button secondary :to="item.to">{{ item.action }}</Button>
       </div>
-    </Container>
-  </section>
+    </div>
+  </Container>
 </template>
 
 <script>
@@ -44,6 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .items {
   position: relative;
 }
@@ -55,16 +54,16 @@ export default {
     height: 100%;
     width: 0.1em;
     left: 50%;
-    background-color: var(--light-purple);
+    background-color: $primary-light;
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .item {
-    margin-bottom: calc(var(--margin) * 2);
-  }
-  p {
-    margin-bottom: 0 !important;
+    margin-bottom: calc(#{$margin} * 2);
+    p {
+      margin-bottom: 0 !important;
+    }
   }
 }
 </style>

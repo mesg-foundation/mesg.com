@@ -1,21 +1,16 @@
 <template>
   <div>
-    <Header :picture="usecase.headerimage" :title="title" :description="description">
+    <Header :image="usecase.headerimage" :title="title" :description="description">
+      <template v-slot:top v-if="usecase.tag">
+        <TagLabel :type="usecase.tag.type" mb1>{{ usecase.tag.title }}</TagLabel>
+      </template>
       <div>
-        <Button :href="usecase.cta" target="_blank" primary>Discover the project</Button>
+        <Button :href="usecase.cta" target="_blank" primary mt2>Discover the project</Button>
       </div>
     </Header>
 
     <section id="use-case">
       <Container id="intro" flex column align-center class="intro text-center" mb3>
-        <div v-if="usecase.label" mb2>
-          <div v-if="usecase.label.type" class="label partner" flex column align-center>
-            <p>{{ usecase.label.title }}</p>
-          </div>
-          <div v-else class="label community" flex column align-center>
-            <p>{{ usecase.label }}</p>
-          </div>
-        </div>
         <h2 mb1>{{ usecase.technology }}</h2>
         <p>{{ usecase.paragraphe }}</p>
       </Container>
@@ -37,14 +32,13 @@
           <div half>
             <h3 mb1>Benefits</h3>
             <ul mb2>
-              <li v-for="(benefit, i) in usecase.benefits" :key="i" mb1>{{ benefit }}</li>
+              <li v-for="(benefit, i) in usecase.benefits" :key="i">{{ benefit }}</li>
             </ul>
             <h3 mb1>Opportunities</h3>
             <ul>
               <li
                 v-for="(opportunitie, i) in usecase.opportunities"
                 :key="i"
-                mb1
                 class="opportunitie"
               >{{ opportunitie }}</li>
             </ul>
@@ -62,8 +56,8 @@
         <h3 class="text-center" mb2>Who could benefit from this?</h3>
         <ul flex row mobile-column class="companies">
           <li v-for="(company, i) in usecase.companies" :key="i">
-            <a :href="company.to" class="link-secondary" target="_blank">
-              <img :src="company.src" class="company" />
+            <a :href="company.to" target="_blank">
+              <img :src="company.src" />
             </a>
           </li>
         </ul>
@@ -84,11 +78,14 @@
       </Container>
     </section>
 
-    <section id="use-cases" class="usecase" mb3>
+    <section id="showcase" mb3>
       <Container>
-        <h2 class="text-center" mb2>More use cases</h2>
-        <div flex row wrap>
-          <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
+        <div flex column align-center>
+          <h2 class="text-center" mb2>Built with MESG</h2>
+          <div flex row mobile-column mb2>
+            <UseCase v-for="usecase in nextUsecases" :key="usecase.id" :usecase="usecase" />
+          </div>
+          <Button secondary :to="links.showcase">See the showcase</Button>
         </div>
       </Container>
     </section>
@@ -107,21 +104,22 @@
             description="Sign up for our monthly newsletter to receive updates about MESG, our roadmap, products, new releases and more."
             half
           />
-          <div id="community" half class="social">
+          <div id="community" half>
             <h3 mb1>Community</h3>
             <p
               mb2
             >MESG is open-source and is built by contributors from around the world. Join us in building the bridges between legacy and emerging technologies.</p>
-            <ListSN :list="['forum', 'discord']" />
+            <ListSN :list="[icons.forum, icons.discord]" />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-book"
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Start building' , href: externalLinks.getStarted }]"
+      :links="[{ title: 'Start building' , to: links.getstarted }]"
       mb1
     />
   </div>
@@ -129,12 +127,12 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
-import Card from "~/components/Card";
+import TagLabel from "@mesg-components/tag-label";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import CardNewsletter from "~/components/CardNewsletter";
@@ -147,7 +145,7 @@ export default {
     UseCase,
     Video,
     Button,
-    Card,
+    TagLabel,
     CTA,
     ListSN,
     CardNewsletter
@@ -174,7 +172,8 @@ export default {
     ...mapGetters({
       links: "links",
       usecases: "usecases",
-      externalLinks: "externalLinks"
+      externalLinks: "externalLinks",
+      icons: "icons"
     }),
     nextUsecases() {
       const index = this.usecases.findIndex(x => x.id === this.usecase.id) + 1;
@@ -193,71 +192,55 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.image {
-  border-radius: 6px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+@import "~/assets/_variables";
+#usecase-description {
+  img {
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  li.opportunitie:last-child {
+    margin-bottom: 0 !important;
+  }
 }
 
-ul {
+.companies {
   list-style: none;
-}
-li {
-  font-weight: normal;
-}
-li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: calc(var(--margin) - 5px);
-  background-color: var(--deep-purple);
-  border-radius: 100%;
-  display: inline-block;
-}
-
-li.opportunitie:last-child {
-  margin-bottom: 0 !important;
-}
-.companies li::before {
-  display: none;
-}
-.companies li {
-  text-align: center;
-}
-.company {
-  height: 30px;
-  width: auto;
-}
-
-.label {
-  border-radius: 3px;
-  padding: calc(var(--margin) / 2);
-}
-.partner {
-  background-color: var(--light-orange);
-}
-.community {
-  background-color: var(--light-background);
+  margin-left: 0;
+  li {
+    text-align: center;
+    margin-bottom: 0;
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 30px;
+      width: auto;
+    }
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
-  #usecase-description .illus {
-    margin-bottom: calc(var(--margin) * 2) !important;
-  }
-  #usecase-description ul:last-child {
-    margin-bottom: 0 !important;
+  #usecase-description {
+    .illus {
+      margin-bottom: calc(#{$margin} * 2) !important;
+    }
+    ul:last-child {
+      margin-bottom: 0 !important;
+    }
   }
   .companies li {
-    margin-bottom: var(--margin);
+    margin-bottom: $margin;
   }
   #information a {
     text-align: center;
     margin-right: 0 !important;
   }
-  .social {
-    margin-top: calc(var(--margin) * 3);
+  #community {
+    margin-top: calc(#{$margin} * 3);
   }
 }
 </style>

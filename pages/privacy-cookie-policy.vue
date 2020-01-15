@@ -1,16 +1,27 @@
 <template>
   <div>
-    <Header :title="title" :description="description"></Header>
+    <Header :title="title">
+      <p>
+        This privacy policy ('Policy') describes how MESG Foundation ('MESG Foundation', 'we', 'us' or 'our') collects, protects and uses the personally identifiable information ('Personal Information') you ('User', 'you' or 'your') may provide on the
+        <a
+          href="https://mesg.com/"
+          class="link"
+          target="_blank"
+        >mesg.com</a> website and any of its products or services (collectively, 'Website' or 'Services'). It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.
+      </p>
+    </Header>
 
     <section id="policy" mb3>
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu :items="policies" />
+            <div class="menu-fixed">
+              <SideMenu :items="policies" />
+            </div>
           </div>
           <ul flex column>
             <li v-for="(policy, i) in policies" :key="i">
-              <h2 :id="policy.id" mb1>{{ policy.title }}</h2>
+              <h2 :id="policy.key" mb1>{{ policy.title }}</h2>
               <p v-html="policy.description" mb2></p>
               <hr mb2 class="separator" />
             </li>
@@ -28,30 +39,22 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
-import Button from "@mesg-components/button";
-import SideMenu from "~/components/SideMenu";
-import CallToAction from "~/components/CallToAction";
-import Discover from "~/components/Discover";
-import GetStarted from "~/components/GetStarted";
+import SideMenu from "@mesg-components/side-menu";
 import page from "./page";
 
 export default {
   components: {
     Header,
     Container,
-    Button,
-    SideMenu,
-    CallToAction,
-    Discover,
-    GetStarted
+    SideMenu
   },
   mixins: [
     page({
       title: "Privacy and Cookie Policy",
       description:
-        "This privacy policy ('Policy') describes how MESG Foundation ('MESG Foundation', 'we', 'us' or 'our') collects, protects and uses the personally identifiable information ('Personal Information') you ('User', 'you' or 'your') may provide on the <a href='https://mesg.com/' class='link' target='_blank'>mesg.com</a> website and any of its products or services (collectively, 'Website' or 'Services'). It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage."
+        "This privacy policy ('Policy') describes how MESG Foundation ('MESG Foundation', 'we', 'us' or 'our') collects, protects and uses the personally identifiable information ('Personal Information') you ('User', 'you' or 'your') may provide on the mesg.com website and any of its products or services (collectively, 'Website' or 'Services'). It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage."
     })
   ],
   computed: mapGetters({
@@ -62,18 +65,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.menu-fixed > nav {
+  position: sticky;
+  top: 40px;
+}
 ul {
   list-style: none;
-}
-h2 {
-  text-align: left;
-}
-.infos {
-  font-size: 14px;
-}
-.separator {
-  width: 100%;
-  min-width: 100%;
+  margin-left: 0;
+  .separator {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 </style>

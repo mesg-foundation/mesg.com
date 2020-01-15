@@ -57,46 +57,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 form {
   position: relative;
-}
-
-input[type="email"] {
-  max-height: 50px;
-  font-size: 15px;
-  padding: 13px var(--margin);
-  border: solid 1px var(--light-purple);
-  border-radius: 3px;
-  background-color: var(--white);
-  color: var(--dark-purple);
-}
-
-input[type="email"]:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px var(--light-purple) inset;
-}
-
-.email {
-  margin-right: var(--margin);
-}
-
-button {
-  padding-left: var(--margin);
-  padding-right: var(--margin);
-  border: none;
-}
-button:hover {
-  cursor: pointer;
+  .email {
+    margin-right: $margin;
+    input[type="email"] {
+      max-height: 50px;
+      font-size: 15px;
+      padding: 13px $margin;
+      border: solid 1px $lavender-light;
+      border-radius: 3px;
+      background-color: $white;
+      color: $title-color;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px $lavender-light inset;
+      }
+    }
+  }
+  button {
+    padding-left: $margin;
+    padding-right: $margin;
+    border: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .email {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .btn {
     width: 100%;
     max-width: 100%;
-    margin-top: var(--margin);
+    margin-top: $margin;
   }
 }
 </style>

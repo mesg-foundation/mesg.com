@@ -1,16 +1,18 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
+    <Header :image="require('~/assets/faq.svg')" :title="title" :description="description"></Header>
 
     <section id="faq" mb3>
       <Container>
         <div flex row mobile-column space-between>
           <div flex column quarter tablet-and-up>
-            <SideMenu :items="questions" />
+            <div class="menu-fixed">
+              <SideMenu :items="questions" />
+            </div>
           </div>
           <ul flex column>
             <li v-for="(category, i) in questions" :key="i">
-              <h2 :id="category.id" mb2>{{category.category}}</h2>
+              <h2 :id="category.key" mb2>{{category.text}}</h2>
               <ul>
                 <li v-for="(content, j) in category.contents" :key="j">
                   <h3 mb1>{{content.title }}</h3>
@@ -48,27 +50,32 @@
             >MESG is built by our global community. Join us on our forum and chats, or connect with us on social media.</p>
           </div>
           <div half>
-            <ListSN :list="['forum', 'twitter', 'discord', 'telegram']" />
+            <ListSN :list="[icons.forum, icons.twitter, icons.discord, icons.telegram]" />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Still have questions?"
       description="If you didn’t find the answer you were looking for, reach out to us! The MESG team is here to help."
-      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
-    />
+    >
+      <TypeFormPopup :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+    </CTA>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
-import SideMenu from "~/components/SideMenu";
+import TypeFormPopup from "@mesg-components/type-form-popup";
+import SideMenu from "@mesg-components/side-menu";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import page from "./page";
@@ -78,6 +85,7 @@ export default {
     Header,
     Container,
     Button,
+    TypeFormPopup,
     SideMenu,
     CTA,
     ListSN
@@ -92,18 +100,26 @@ export default {
   computed: mapGetters({
     links: "links",
     questions: "questions",
-    externalLinks: "externalLinks"
+    externalLinks: "externalLinks",
+    icons: "icons",
+    forms: "forms"
   })
 };
 </script>
 
-<style scoped>
-ul {
-  list-style: none;
-}
-
-.separator {
-  width: 100%;
-  min-width: 100%;
+<style lang="scss" scoped>
+#faq {
+  .menu-fixed > nav {
+    position: sticky;
+    top: 40px;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  .separator {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 </style>

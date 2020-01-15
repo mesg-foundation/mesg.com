@@ -1,24 +1,16 @@
 <template>
-  <Card class="card" :class="{ white, purple }" p2>
+  <Card :class="{ white, purple }" p2>
     <div flex column>
       <div flex row space-between align-center wrap mb2>
         <h3>{{ title }}</h3>
         <p class="pricing text-right">{{ text }}</p>
       </div>
       <hr mb2 />
-      <div>
-        <ul flex row wrap mb2>
-          <li
-            mb1
-            v-for="(item, i) in items"
-            :key="i"
-            flex
-            half
-            align-center
-            :class="{ invalid: !item.valid }"
-          >
-            <i v-if="item.valid" class="far fa-check" mr1></i>
-            <i v-else class="far fa-times" mr1></i>
+      <div mb2>
+        <ul flex row wrap>
+          <li v-for="(item, i) in items" :key="i" flex row half :class="{ invalid: !item.valid }">
+            <i v-if="item.valid" class="fal fa-check" mr1></i>
+            <i v-else class="fal fa-times" mr1></i>
             <p>{{ item.description }}</p>
           </li>
         </ul>
@@ -26,18 +18,25 @@
       <hr mb2 />
     </div>
     <div class="text-center btn-action">
-      <Button v-if="featured" white :href="to" target="_blank">{{ action }}</Button>
-      <Button v-else primary :href="to" target="_blank">{{ action }}</Button>
+      <TypeFormPopup v-if="featured" :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+      <TypeFormPopup v-else :id="forms.contactForm" class="form">
+        <Button primary>Get in touch</Button>
+      </TypeFormPopup>
     </div>
   </Card>
 </template>
 
 <script>
-import Card from "~/components/Card";
+import { mapGetters } from "vuex";
+import Card from "@mesg-components/card";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 export default {
   components: {
     Card,
+    TypeFormPopup,
     Button
   },
   props: {
@@ -73,6 +72,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      forms: "forms"
+    }),
     white() {
       return !this.featured;
     },
@@ -84,28 +86,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
-  list-style: none;
-}
-
-li {
-  margin-right: var(--margin);
-}
-li:last-child {
-  margin-bottom: 0 !important;
-}
+@import "~/assets/_variables";
 
 .pricing {
-  font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
-i {
-  max-width: 18px;
+ul {
+  list-style: none;
+  margin-left: 0;
+  i {
+    position: relative;
+    top: 0.2em;
+    max-width: 18px;
+  }
 }
 
 hr {
@@ -115,46 +109,47 @@ hr {
 
 /*white*/
 .white {
-  background-color: var(--white);
-}
-.invalid p {
-  color: var(--light-purple);
-}
-.invalid i {
-  color: var(--light-purple);
+  background-color: $white;
+  .invalid {
+    p {
+      color: $primary-light;
+    }
+    i {
+      color: $primary-light;
+    }
+  }
 }
 
 /*purple*/
 .purple {
   transform: scale(1.05);
-  background-color: var(--purple);
-}
-.purple h3 {
-  color: var(--white);
-}
-.purple p {
-  color: var(--white);
-}
-.purple .invalid p {
-  color: var(--deep-purple);
-}
-.purple .invalid i {
-  color: var(--deep-purple);
-}
-.purple li {
-  color: var(--white);
-}
-.purple hr {
-  color: var(--deep-purple);
-}
-.purple button {
-  color: var(--purple);
-  background-color: var(--white);
+  background-color: $primary;
+  h3 {
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+  .invalid {
+    p {
+      color: $lavender;
+    }
+    i {
+      color: $lavender;
+    }
+  }
+  li {
+    color: $white;
+  }
+  hr {
+    color: $lavender;
+  }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   li {
-    margin-right: 0;
+    margin-right: 0 !important;
+    margin-bottom: calc(#{$margin} / 2);
   }
   a {
     width: 100%;
@@ -162,7 +157,7 @@ hr {
 }
 @media only screen and (max-width: $mobile-only) {
   .pricing {
-    margin-top: calc(var(--margin) * 2);
+    margin-top: calc(#{$margin} * 2);
     text-align: left;
   }
 }

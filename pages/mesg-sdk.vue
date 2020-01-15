@@ -1,12 +1,12 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/engine/engine.svg')"
+      :image="require('~/assets/engine/engine.svg')"
       :title="title"
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
+        <Button :to="links.getstarted" primary mt2>Get started</Button>
       </div>
     </Header>
 
@@ -34,7 +34,7 @@
           mb2
           href="/documents/MESG-application-of-the-decentralized-network-of-services.pdf"
           download
-          icon="fas fa-download"
+          icon="fal fa-file-download"
         >Technical implementation</Button>
       </Container>
       <div class="outer-background">
@@ -109,16 +109,17 @@
             >The MESG Forum and Github are built to support the community. Browse existing issues and solutions, or create a new one.</p>
           </div>
           <div half>
-            <ListSN :list="['github', 'forum']" />
+            <ListSN :list="[icons.github, icons.forum]" />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-book"
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Get started' , href: externalLinks.getStarted }]"
+      :links="[{ title: 'Get started' , to: links.getstarted }]"
       mb1
     />
   </div>
@@ -127,10 +128,9 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import TextWithIcon from "~/components/TextWithIcon";
@@ -142,7 +142,6 @@ export default {
     Header,
     Container,
     Button,
-    Card,
     CTA,
     ListSN,
     TextWithIcon,
@@ -159,7 +158,8 @@ export default {
     ...mapGetters({
       products: "products",
       links: "links",
-      externalLinks: "externalLinks"
+      externalLinks: "externalLinks",
+      icons: "icons"
     }),
     engine() {
       return this.products.find(x => x.id === "engine");
@@ -169,12 +169,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
   .usecases {
-    margin-bottom: calc(var(--margin) * 2) !important;
+    margin-bottom: calc(#{$margin} * 2) !important;
   }
 }
 </style>

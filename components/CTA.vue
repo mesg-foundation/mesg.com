@@ -1,13 +1,18 @@
 <template>
-  <section id="cta">
+  <section class="cta">
     <Container>
-      <Card purple p2>
+      <Card class="card-cta" p2>
         <div flex row align-center space-between mobile-column>
-          <div class="content" flex column>
+          <div class="icon" v-if="icon">
+            <span flex align-center>
+              <i :class="icon"></i>
+            </span>
+          </div>
+          <div class="content">
             <h2>{{ title }}</h2>
             <p v-if="description" mt1>{{ description }}</p>
           </div>
-          <nav flex column third>
+          <nav flex column quarter>
             <Button
               white
               v-for="(link, i) in links"
@@ -21,7 +26,6 @@
         </div>
       </Card>
     </Container>
-    <div class="background"></div>
   </section>
 </template>
 
@@ -29,7 +33,7 @@
 import { mapGetters } from "vuex";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Container,
@@ -42,6 +46,9 @@ export default {
       required: true
     },
     description: {
+      type: String
+    },
+    icon: {
       type: String
     },
     links: {
@@ -57,39 +64,71 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2,
-p {
-  color: var(--white);
-}
-
-#cta {
+@import "~/assets/_variables";
+.cta {
   position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    background: $grey-light;
+    transform: translateY(30%) skewY(-8deg);
+    z-index: -1;
+  }
+  .card {
+    background-image: linear-gradient(to right, $primary, $purple);
+    span {
+      min-width: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      max-height: 80px;
+      border-radius: 3px;
+      background-color: $purple;
+      i {
+        text-align: center;
+        font-size: 40px;
+        color: $primary-light;
+      }
+    }
+    h2 {
+      color: $white;
+    }
+    p {
+      opacity: 0.85;
+      color: $white;
+    }
+    nav {
+      min-width: 220px;
+    }
+  }
 }
 
-#cta::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 100px);
-  background: var(--light-background);
-  transform: translateY(30%) skewY(-8deg);
-  z-index: -1;
-}
-
-@media only screen and (min-width: $huge-breakpoint) {
-  #cta::before {
-    transform: translateY(30%) skewY(-5deg);
+@media only screen and (min-width: $huge-breakpoint +1) {
+  .cta:before {
+    transform: none;
+    top: 60px;
   }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  #cta::before {
+  .cta:before {
     height: calc(100% + 80px);
+  }
+  .container {
+    padding-bottom: 0;
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
+  .icon {
+    width: 100%;
+    span {
+      width: 100%;
+      margin-bottom: calc(#{$margin} * 2);
+    }
+  }
   .content {
-    margin-bottom: calc(var(--margin) * 2);
+    margin-bottom: calc(#{$margin} * 2);
   }
 }
 </style>

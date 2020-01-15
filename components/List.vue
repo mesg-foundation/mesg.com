@@ -1,6 +1,6 @@
 <template>
-  <ul mb2>
-    <li mb1 v-for="(item, i) in items" :key="i">
+  <ul>
+    <li mb1 v-for="(item, i) in items" :key="i" flex row align-center>
       <img mr1 v-if="item.src" :src="item.src" :alt="item.title" />
       {{ item.title }}
     </li>
@@ -21,11 +21,16 @@ export default {
 <style lang="scss" scoped>
 ul {
   list-style: none;
-}
-
-li img {
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
+  margin-left: 0;
+  li {
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+    img {
+      height: 50px;
+      width: 50px;
+      max-width: 50px;
+    }
+  }
 }
 </style>

@@ -10,14 +10,14 @@
       half
       mb2
     >
-      <Card bordered thin>
+      <Card bordered thin flex row align-center>
         <div flex row align-center>
           <div class="preview" flex align-center justify-center>
             <img :src="item.img" :alt="item.title" />
           </div>
           <div class="content" flex align-center>
-            <h4>{{ item.title }}</h4>
-            <i class="fas fa-download icon"></i>
+            <span>{{ item.title }}</span>
+            <i class="fal fa-file-download"></i>
           </div>
         </div>
       </Card>
@@ -27,7 +27,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 export default {
   components: {
     Card
@@ -50,47 +50,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .card {
-  max-width: 100%;
   height: 100px;
   max-height: 100%;
-}
-
-img {
-  max-width: 40px;
-  max-height: 60px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-}
-
-.icon {
-  text-align: right;
-  margin-right: var(--margin);
-}
-
-.content {
-  padding: var(--margin);
-  padding-left: 0;
-  width: 100%;
-}
-
-.preview {
-  width: 140px;
-  height: 100px;
-  overflow: hidden;
-  background-color: var(--light-purple);
-}
-
-@media only screen and (max-width: $mobile-breakpoint) {
+  padding: 0;
   .preview {
-    margin-bottom: 0;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    background-color: $lavender-light;
+    margin-right: 0;
+    img {
+      max-width: 40px;
+      max-height: 60px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    }
   }
   .content {
-    padding-left: var(--margin);
-  }
-  a {
-    margin-bottom: calc(var(--margin) * 2) !important;
+    padding: calc(#{$margin} * 2);
+    span {
+      font-weight: bold;
+      color: $text-color;
+      margin-right: $margin;
+    }
+    i {
+      height: 18px;
+      max-width: 17px;
+      text-align: right;
+    }
   }
 }
+
 @media only screen and (max-width: $mobile-only) {
   i {
     display: none;

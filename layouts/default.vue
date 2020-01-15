@@ -1,40 +1,23 @@
 <template>
   <div>
-    <Menu class="menu-bar"/>
-    <nuxt/>
-    <Footer/>
-    <a
-      class="producthunt"
-      href="https://www.producthunt.com/posts/mesg-orchestrator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mesg-orchestrator"
-      target="_blank"
-    >
-      <img
-        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=168204&theme=light"
-        alt="MESG Orchestrator - The decentralized way to orchestrate MESG Services | Product Hunt Embed"
-        style="width: 250px; height: 54px;"
-        width="250px"
-        height="54px"
-      />
-    </a>
+    <Menu :logo="require('~/assets/MESG-logo-horizontal-purple.svg')" :items="menu" is-nuxt />
+    <nuxt />
+    <Footer />
   </div>
 </template>
 
 
 <script>
-import Menu from "~/components/Menu";
+import Menu from "@mesg-components/menu";
 import Footer from "~/components/Footer";
+import { mapGetters } from "vuex";
 export default {
   components: {
     Menu,
     Footer
-  }
+  },
+  computed: mapGetters({
+    menu: "menu"
+  })
 };
 </script>
-
-<style scoped>
-.producthunt {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-</style>

@@ -1,12 +1,12 @@
 <template>
   <div>
     <Header
-      :picture="require('~/assets/marketplace/marketplace.svg')"
+      :image="require('~/assets/marketplace/marketplace.svg')"
       :title="title"
       :description="description"
     >
       <div>
-        <Button :href="externalLinks.marketplace" target="_blank" primary>MESG Marketplace</Button>
+        <Button :href="externalLinks.marketplace" target="_blank" primary mt2>MESG Marketplace</Button>
       </div>
     </Header>
 
@@ -29,9 +29,13 @@
         <p
           mb2
         >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
-        <Button secondary mb2 href="/documents/decentralized-network-of-services.pdf" download icon="fas fa-download">
-          Whitepaper
-        </Button>
+        <Button
+          secondary
+          mb2
+          href="/documents/decentralized-network-of-services.pdf"
+          download
+          icon="fal fa-file-download"
+        >Whitepaper</Button>
       </Container>
       <div class="outer-background">
         <Container>
@@ -81,13 +85,14 @@
             >Have questions or not sure where to start? Head over to Discord to chat with the team, or browse the forum.</p>
           </div>
           <div half>
-            <ListSN :list="['discord', 'forum']" />
+            <ListSN :list="[icons.discord, icons.forum]" />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-store"
       title="Marketplace"
       description="MESG Marketplace beta is out now. Earn tokens when your services are used or save time by purchasing access to services."
       :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplace }]"
@@ -99,7 +104,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";
@@ -129,7 +134,8 @@ export default {
     ...mapGetters({
       products: "products",
       links: "links",
-      externalLinks: "externalLinks"
+      externalLinks: "externalLinks",
+      icons: "icons"
     }),
     marketplace() {
       return this.products.find(x => x.id === "marketplace");
@@ -139,12 +145,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
   .usecases {
-    margin-bottom: calc(var(--margin) * 2) !important;
+    margin-bottom: calc(#{$margin} * 2) !important;
   }
 }
 </style>

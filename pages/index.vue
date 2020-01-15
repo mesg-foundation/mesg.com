@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header mb3 :picture="require('~/assets/home.svg')" :title="title" :description="description">
+    <Header :image="require('~/assets/home.svg')" :title="title" :description="description">
       <div>
-        <Button :href="externalLinks.getStarted" target="_blank" primary>Get started</Button>
+        <Button :to="links.getstarted" primary mt2>Get started</Button>
       </div>
     </Header>
 
@@ -21,60 +21,46 @@
 
     <section id="presentation">
       <Container flex column class="intro text-center">
-        <h2 mb1>Products</h2>
-        <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
+        <h2 mb1>Technology</h2>
+        <p>Together, the MESG Engine, Services, Processes, and Token form an ultra-efficient, open economy of application development and hosting.</p>
       </Container>
     </section>
 
-    <section id="products" mb3 class="outer-background">
+    <section id="technology" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
-          <Card
-            v-for="product in products"
-            :key="product.id"
-            :id="product.id"
-            p2
-            mb2
-            flex
-            column
-            half
-          >
-            <div>
-              <img class="product" mb1 :src="product.img" :alt="product.title" />
-            </div>
-            <h3 mb1>{{ product.title }}</h3>
-            <p mb2 v-html="product.description" />
-            <span spacer />
-            <List :items="product.features.secondary" />
-            <Button outline :to="links[product.id]">{{ product.action }}</Button>
+          <Card flex row mobile-column>
+            <nuxt-link
+              v-for="product in products"
+              :key="product.id"
+              :id="product.id"
+              :to="links[product.id]"
+              class="technology-card"
+              flex
+              column
+              align-center
+              p2
+            >
+              <div>
+                <img mb2 :src="product.img" :alt="product.title" />
+              </div>
+              <span class="label text-center">{{ product.label }}</span>
+              <h3 mb1>{{ product.title }}</h3>
+              <i class="fal fa-long-arrow-alt-right"></i>
+            </nuxt-link>
           </Card>
         </div>
-        <Card p2 id="token">
-          <div flex row mobile-column align-center>
-            <div flex mobile-column class="content">
-              <div flex column quarter class="token">
-                <img src="~/assets/token/MESG-token.svg" alt="MESG Token" />
-              </div>
-              <div flex column>
-                <h3 mb1>Build services, earn tokens</h3>
-                <p
-                  class="token-desc"
-                >Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
-              </div>
-            </div>
-            <div flex column third>
-              <Button outline :to="links.token">Discover the MESG Token</Button>
-            </div>
-          </div>
-        </Card>
       </Container>
     </section>
 
-    <section id="use-cases" mb3>
+    <section id="showcase" mb3>
       <Container>
-        <h2 class="text-center" mb2>Use Cases</h2>
-        <div flex row wrap>
-          <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
+        <div flex column align-center>
+          <h2 class="text-center" mb2>Built with MESG</h2>
+          <div flex row mobile-column mb2>
+            <UseCase v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
+          </div>
+          <Button secondary :to="links.showcase">See the showcase</Button>
         </div>
       </Container>
     </section>
@@ -87,17 +73,12 @@
 
     <section id="blog" mb3>
       <Container>
-        <div flex row mobile-column-reverse align-center>
-          <div half>
-            <h2 mb1>Blog</h2>
-            <p
-              mb1
-            >Stay up to date with the MESG Foundation on our blog. Check out in-depth features about what we are building and why we are building it.</p>
-            <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+        <div flex column align-center>
+          <h2 mb2>Blog</h2>
+          <div flex row mobile-column mb2>
+            <Article v-for="article in articles" :key="article.id" :article="article" />
           </div>
-          <div half p1>
-            <img src="~/assets/blog.svg" alt="Blog" />
-          </div>
+          <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
         </div>
       </Container>
     </section>
@@ -121,16 +102,19 @@
             <p
               mb2
             >MESG is open-source and is community-driven. Join us in building the bridges between legacy and emerging technologies.</p>
-            <ListSN :list="['twitter', 'github', 'telegram', 'forum', 'discord', 'reddit']" />
+            <ListSN
+              :list="[icons.twitter,icons.github,icons.telegram,icons.forum,icons.discord,icons.reddit]"
+            />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-book"
       title="Get started"
       description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Get started' , href: externalLinks.getStarted }]"
+      :links="[{ title: 'Get started' , to: links.getstarted }]"
       mb1
     />
   </div>
@@ -139,16 +123,17 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import TextWithIcon from "~/components/TextWithIcon";
-import Card from "~/components/Card";
+import Card from "@mesg-components/card";
 import List from "~/components/List";
 import CardNewsletter from "~/components/CardNewsletter";
 import ListSN from "~/components/ListSN";
 import CTA from "~/components/CTA";
+import Article from "~/components/Article";
 import page from "./page";
 
 export default {
@@ -162,8 +147,10 @@ export default {
     List,
     CardNewsletter,
     ListSN,
-    CTA
+    CTA,
+    Article
   },
+  fetch: ({ store }) => store.dispatch("articles/fetchAll"),
   mixins: [
     page({
       title: "The builders’ open economy",
@@ -177,7 +164,9 @@ export default {
       home: "home",
       links: "links",
       externalLinks: "externalLinks",
-      allusecases: "usecases"
+      allusecases: "usecases",
+      icons: "icons",
+      articles: "articles/all"
     }),
     usecases() {
       return this.allusecases.slice(0, 3);
@@ -187,38 +176,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#products .card img.product {
-  height: 160px;
-  width: 160px;
-  max-width: 100%;
-}
-
-#token img {
-  width: 100px;
-  height: 100px;
-}
-
-@media only screen and (max-width: $tablet-breakpoint) {
-  .token {
-    margin-right: var(--margin);
+@import "~/assets/_variables";
+#technology {
+  .card {
+    padding: 0;
+  }
+  .technology-card {
+    transition: 0.1s ease-in;
+    margin-right: 0;
+    border-right: dotted 1px $lavender-light;
+    &:hover {
+      transform: scale(1.01);
+      background-color: transparentize($primary-light, 0.85);
+    }
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      height: 140px;
+      width: 140px;
+      max-width: 100%;
+    }
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: $purple;
+    }
+    .label {
+      text-transform: uppercase;
+      margin-bottom: calc(#{$margin} / 2) !important;
+    }
   }
 }
+
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
-  #token {
-    margin-top: calc(var(--margin) * 2);
+  .technology-card {
+    border-right: none;
+    border-bottom: dotted 1px $lavender-light;
+    &:last-child {
+      border-bottom: none;
+    }
   }
-  #token .content {
-    margin-bottom: calc(var(--margin) * 2);
-  }
-  .token {
-    margin-right: 0;
-    margin-bottom: var(--margin);
-  }
-  .community {
-    margin-top: calc(var(--margin) * 3);
+  #more-infos {
+    .community {
+      margin-top: calc(#{$margin} * 3);
+    }
   }
 }
 </style>

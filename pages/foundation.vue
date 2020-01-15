@@ -1,8 +1,10 @@
 <template>
   <div>
-    <Header :picture="require('~/assets/team.svg')" :title="title" :description="description">
-      <div>
-        <Button :href="externalLinks.contact" target="_blank" primary>Get in touch</Button>
+    <Header :image="require('~/assets/team.svg')" :title="title" :description="description">
+      <div mt2>
+        <TypeFormPopup :id="forms.contactForm" class="form">
+          <Button primary>Get in touch</Button>
+        </TypeFormPopup>
       </div>
     </Header>
 
@@ -110,27 +112,32 @@
             >Join us and the global community of builders on our mission to bridge the gaps between legacy and emerging technologies.</p>
           </div>
           <div half>
-            <ListSN :list="['twitter', 'discord', 'telegram', 'forum']" />
+            <ListSN :list="[icons.twitter, icons.discord, icons.telegram, icons.forum]" />
           </div>
         </div>
       </Container>
     </section>
 
     <CTA
+      icon="fal fa-envelope-open-text"
       title="Aligned with our purpose?"
       description="Reach out! We love helping the community find new ways to build powerful solutions."
-      :links="[{ title: 'Get in touch' , href: externalLinks.contact }]"
       mb1
-    />
+    >
+      <TypeFormPopup :id="forms.contactForm" class="form">
+        <Button white>Get in touch</Button>
+      </TypeFormPopup>
+    </CTA>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "~/components/Header";
+import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
+import TypeFormPopup from "@mesg-components/type-form-popup";
 import Document from "~/components/Document";
 import Member from "~/components/Member";
 import Partners from "~/components/Partners";
@@ -138,7 +145,6 @@ import News from "~/components/News";
 import Titletext3 from "~/components/Titletext3";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
-import GetStarted from "~/components/GetStarted";
 import page from "./page";
 
 export default {
@@ -148,13 +154,13 @@ export default {
     Video,
     Member,
     Button,
+    TypeFormPopup,
     Document,
     Partners,
     News,
     Titletext3,
     CTA,
-    ListSN,
-    GetStarted
+    ListSN
   },
   mixins: [
     page({
@@ -167,12 +173,15 @@ export default {
     team: "team",
     links: "links",
     externalLinks: "externalLinks",
-    articles: "articles"
+    articles: "articles",
+    icons: "icons",
+    forms: "forms"
   })
 };
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/_variables";
 .mesg-presentation {
   width: 66%;
 }
@@ -180,29 +189,33 @@ export default {
 @media only screen and (max-width: $tablet-breakpoint) {
   #documents {
     margin-bottom: 0 !important;
-  }
-  #documents .container {
-    padding-bottom: 0;
+    .container {
+      padding-bottom: 0;
+    }
   }
 }
 @media only screen and (max-width: $mobile-breakpoint) {
   .mesg-presentation {
     width: 100%;
   }
-  #presentation .container {
-    padding-bottom: 0;
+  #presentation {
+    .container {
+      padding-bottom: 0;
+    }
   }
-  #team .title {
-    padding-bottom: 0;
-  }
-  .founders {
-    margin-bottom: calc(var(--margin) * 2);
+  #team {
+    .title {
+      padding-bottom: 0;
+    }
+    .founders {
+      margin-bottom: calc(#{$margin} * 2);
+    }
   }
   #documents {
     margin-bottom: 0 !important;
-  }
-  #documents .container {
-    padding-bottom: calc(var(--margin) * 2);
+    .container {
+      padding-bottom: calc(#{$margin} * 2);
+    }
   }
 }
 </style>
