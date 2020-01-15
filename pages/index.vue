@@ -21,50 +21,35 @@
 
     <section id="presentation">
       <Container flex column class="intro text-center">
-        <h2 mb1>Products</h2>
-        <p>Together, the Marketplace and SDK form an open economy of versatile, intercompatible application components.</p>
+        <h2 mb1>Technology</h2>
+        <p>Together, the MESG Engine, Services, Processes, and Token form an ultra-efficient, open economy of application development and hosting.</p>
       </Container>
     </section>
 
-    <section id="products" mb3 class="outer-background">
+    <section id="technology" mb3 class="outer-background">
       <Container>
         <div flex row space-between wrap>
-          <Card
-            v-for="product in products"
-            :key="product.id"
-            :id="product.id"
-            p2
-            mb2
-            flex
-            column
-            half
-          >
-            <div>
-              <img mb1 :src="product.img" :alt="product.title" />
-            </div>
-            <h3 mb1>{{ product.title }}</h3>
-            <p mb2 v-html="product.description" />
-            <span spacer />
-            <List :items="product.features.secondary" mb2 />
-            <Button outline :to="links[product.id]">{{ product.action }}</Button>
+          <Card flex row mobile-column>
+            <nuxt-link
+              v-for="product in products"
+              :key="product.id"
+              :id="product.id"
+              :to="links[product.id]"
+              class="technology-card"
+              flex
+              column
+              align-center
+              p2
+            >
+              <div>
+                <img mb2 :src="product.img" :alt="product.title" />
+              </div>
+              <span class="label text-center">{{ product.label }}</span>
+              <h3 mb1>{{ product.title }}</h3>
+              <i class="fal fa-long-arrow-alt-right"></i>
+            </nuxt-link>
           </Card>
         </div>
-        <Card p2 id="token">
-          <div flex row mobile-column align-center>
-            <div flex mobile-column class="content">
-              <div flex column quarter class="token">
-                <img src="~/assets/token/MESG-token.svg" alt="MESG Token" />
-              </div>
-              <div flex column>
-                <h3 mb1>Build services, earn tokens</h3>
-                <p>Earn MESG Tokens by sharing components in the decentralized MESG Marketplace.</p>
-              </div>
-            </div>
-            <div flex column third>
-              <Button outline :to="links.token">Discover the MESG Token</Button>
-            </div>
-          </div>
-        </Card>
       </Container>
     </section>
 
@@ -192,40 +177,47 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
-#products {
-  img {
-    height: 160px;
-    width: 160px;
-    max-width: 100%;
+#technology {
+  .card {
+    padding: 0;
   }
-}
-
-#token {
-  img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width: $tablet-breakpoint) {
-  #token {
-    .token {
-      margin-right: $margin;
+  .technology-card {
+    transition: 0.1s ease-in;
+    margin-right: 0;
+    border-right: dotted 1px $lavender-light;
+    &:hover {
+      transform: scale(1.01);
+      background-color: transparentize($primary-light, 0.85);
+    }
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      height: 140px;
+      width: 140px;
+      max-width: 100%;
+    }
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: $purple;
+    }
+    .label {
+      text-transform: uppercase;
+      margin-bottom: calc(#{$margin} / 2) !important;
     }
   }
 }
+
 @media only screen and (max-width: $mobile-breakpoint) {
   .intro {
     padding-bottom: 0;
   }
-  #token {
-    margin-top: calc(#{$margin} * 2);
-    .content {
-      margin-bottom: calc(#{$margin} * 2);
-      .token {
-        margin-right: 0;
-        margin-bottom: $margin;
-      }
+  .technology-card {
+    border-right: none;
+    border-bottom: dotted 1px $lavender-light;
+    &:last-child {
+      border-bottom: none;
     }
   }
   #more-infos {
