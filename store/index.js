@@ -37,7 +37,7 @@ export const getters = {
         id: "marketplace",
         label: "Build and reuse",
         img: require("~/assets/marketplace/marketplace.svg"),
-        title: "Service",
+        title: "Services",
         description:
           "Create or reuse intercompatible application components to save time in development. Builders can earn tokens when their services are reused through the MESG Marketplace.",
         features: {
