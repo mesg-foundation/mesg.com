@@ -197,15 +197,6 @@ export default {
       width: 140px;
       max-width: 100%;
     }
-    span {
-      font-size: 12px;
-      font-weight: bold;
-      color: $purple;
-    }
-    .label {
-      text-transform: uppercase;
-      margin-bottom: calc(#{$margin} / 2) !important;
-    }
   }
 }
 

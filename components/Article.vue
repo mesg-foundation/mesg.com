@@ -3,7 +3,7 @@
     <img :src="article.feature_image" :alt="article.title" mb1 />
     <div>
       <div class="tag-date" flex row align-center>
-        <span class="tag">{{ article.primary_tag.name }}</span>
+        <span class="label">{{ article.primary_tag.name }}</span>
         <span class="date">{{ article.published_at | formatDate }}</span>
       </div>
       <h4>{{ article.title }}</h4>
@@ -53,9 +53,8 @@ a {
       font-size: 12px;
       font-weight: bold;
     }
-    .tag {
-      color: $purple;
-      text-transform: uppercase;
+    .label {
+      margin-bottom: 0 !important;
     }
     .date {
       text-align: right;
