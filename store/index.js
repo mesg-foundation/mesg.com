@@ -968,13 +968,13 @@ export const getters = {
   getstarted(_, { links, externalLinks, tutorials }) {
     return [
       {
-        tag: "Install",
-        title: "Engine",
-        description: "The Engine is a message broker and common event channel built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the Engine, open a terminal and enter in <code>npm install -g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
+        label: "Install the Engine",
+        title: "SDK",
+        description: "The SDK includes tools like the Engine, built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the SDK, open a terminal and enter in <code>npm install -g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
         resources: [
           {
             category: "fal fa-question",
-            color: "orange",
+            color: "purple",
             title: "Learn more",
             to: links.engine,
             info: "SDK",
@@ -991,16 +991,16 @@ export const getters = {
         ]
       },
       {
-        tag: "Build",
-        title: "Service",
+        label: "Build and reuse",
+        title: "Services",
         description: "Services are discrete units of functionality that are used to bridge to external technologies or complete a specific function. They can be remotely accessed, and independently acted upon and updated.<br/><br/>Start building a new service by running: <code>mesg-cli service:init</code> or reuse existing services from the Marketplace.",
         resources: [
           {
             category: "fal fa-question",
-            color: "orange",
+            color: "purple",
             title: "Learn more",
             to: links.marketplace,
-            info: "Marketplace",
+            info: "Services",
             icon: "fal fa-long-arrow-alt-right"
           },
           {
@@ -1013,7 +1013,7 @@ export const getters = {
           },
           {
             category: "fal fa-store",
-            color: "purple",
+            color: "orange",
             title: "Browse the marketplace",
             link: externalLinks.marketplace,
             info: "Resource",
@@ -1030,16 +1030,16 @@ export const getters = {
         ]
       },
       {
-        tag: "Create",
+        label: "Orchestrate services",
         title: "Process",
         description: "A process is a step-by-step description of business logic that combines the events and tasks of services to form applications.<br/><br/>All interaction between services is managed by the Engine, enabling easy scalability. Start creating a process by running: <code>mesg-cli process:create</code>",
         resources: [
           {
             category: "fal fa-question",
-            color: "orange",
+            color: "purple",
             title: "Learn more",
             to: links.orchestrator,
-            info: "Orchestrator",
+            info: "Process",
             icon: "fal fa-long-arrow-alt-right"
           },
           {
@@ -1208,9 +1208,9 @@ export const getters = {
       text: 'Technology',
       to: '#',
       subMenu: [
-        { text: 'Orchestrator', to: links.orchestrator },
         { text: 'SDK', to: links.engine },
-        { text: 'Marketplace', to: links.marketplace },
+        { text: 'Services', to: links.marketplace },
+        { text: 'Process', to: links.orchestrator },
         { text: 'Enterprise', to: links.enterprise }
       ]
     },
