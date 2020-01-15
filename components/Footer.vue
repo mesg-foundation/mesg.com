@@ -18,9 +18,9 @@
           <ul flex row mobile-column>
             <li flex column quarter>
               <a href="#" class="category" mb1>Technology</a>
-              <nuxt-link :to="links.orchestrator">MESG Orchestrator</nuxt-link>
-              <nuxt-link :to="links.engine">MESG SDK</nuxt-link>
-              <nuxt-link :to="links.marketplace">MESG Marketplace</nuxt-link>
+              <nuxt-link :to="links.engine">SDK</nuxt-link>
+              <nuxt-link :to="links.marketplace">Service</nuxt-link>
+              <nuxt-link :to="links.orchestrator">Process</nuxt-link>
               <nuxt-link :to="links.enterprise">Enterprise</nuxt-link>
               <nuxt-link :to="links.showcase">Showcase</nuxt-link>
             </li>
