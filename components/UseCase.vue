@@ -64,15 +64,6 @@ a {
     min-height: 10%;
     max-height: 80px;
   }
-  span {
-    font-size: 12px;
-    font-weight: bold;
-    color: $purple;
-  }
-  .label {
-    text-transform: uppercase;
-    margin-bottom: calc(#{$margin} / 2) !important;
-  }
   .tag-icon {
     width: calc(100% - #{$margin} * 2);
     position: absolute;

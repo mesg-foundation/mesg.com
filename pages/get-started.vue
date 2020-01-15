@@ -236,17 +236,6 @@ export default {
     &:last-child {
       margin-bottom: 0;
     }
-    .getstarted-content {
-      span {
-        font-size: 12px;
-        font-weight: bold;
-        color: $purple;
-      }
-      .label {
-        text-transform: uppercase;
-        margin-bottom: calc(#{$margin} / 2) !important;
-      }
-    }
     .separator {
       position: absolute;
       left: 50%;

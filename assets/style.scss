@@ -13,6 +13,14 @@ code {
   border-radius: 3px;
 }
 
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: $purple;
+  text-transform: uppercase;
+  margin-bottom: calc(#{$margin} / 2) !important;
+}
+
 .infos {
   font-size: 14px;
 }
