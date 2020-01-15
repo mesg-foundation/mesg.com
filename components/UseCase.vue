@@ -4,12 +4,12 @@
       <div mb2 flex row space-between class="logos">
         <img v-for="(logo, i) in usecase.logos" :key="i" :src="logo" />
       </div>
-      <p class="category" mb1>{{ usecase.category }}</p>
+      <span flex class="label">{{ usecase.label }}</span>
       <h4 mb1>{{ usecase.title }}</h4>
       <p mb2>{{ usecase.description}}</p>
-      <div flex row space-between align-center class="label-icon">
-        <div v-if="usecase.label">
-          <TagLabel :type="usecase.label.type">{{ usecase.label.title }}</TagLabel>
+      <div flex row space-between align-center class="tag-icon">
+        <div v-if="usecase.tag">
+          <TagLabel :type="usecase.tag.type">{{ usecase.tag.title }}</TagLabel>
         </div>
         <i class="fal fa-long-arrow-alt-right"></i>
       </div>
@@ -64,15 +64,16 @@ a {
     min-height: 10%;
     max-height: 80px;
   }
-  .category {
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $primary;
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: $purple;
   }
-  .label-icon {
+  .label {
+    text-transform: uppercase;
+    margin-bottom: calc(#{$margin} / 2) !important;
+  }
+  .tag-icon {
     width: calc(100% - #{$margin} * 2);
     position: absolute;
     bottom: $margin;

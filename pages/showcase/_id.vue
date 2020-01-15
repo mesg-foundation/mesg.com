@@ -1,8 +1,8 @@
 <template>
   <div>
     <Header :image="usecase.headerimage" :title="title" :description="description">
-      <template v-slot:top v-if="usecase.label">
-        <TagLabel :type="usecase.label.type" mb1>{{ usecase.label.title }}</TagLabel>
+      <template v-slot:top v-if="usecase.tag">
+        <TagLabel :type="usecase.tag.type" mb1>{{ usecase.tag.title }}</TagLabel>
       </template>
       <div>
         <Button :href="usecase.cta" target="_blank" primary mt2>Discover the project</Button>

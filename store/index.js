@@ -638,9 +638,9 @@ export const getters = {
     return [
       {
         id: "plasma-exit-challenge",
-        label: {
+        tag: {
           title: "MESG Partner",
-          type: "purple"
+          type: "orange"
         },
         to: `${links.showcase}/plasma-exit-challenge`,
         logos: [
@@ -649,7 +649,7 @@ export const getters = {
         ],
         headerimage: require("~/assets/showcase/plasma-guard.svg"),
         title: "Plasma Guard",
-        category: "OmiseGO - Ethereum",
+        label: "OmiseGO - Ethereum",
         description: "Ensure that your funds in the Plasma framework are secure and automatically exit, or challenge any invalid exit or byzantine event.",
         technology: "OmiseGO - Plasma - Ethereum",
         paragraphe: "Invalid user exits and plasma operator errors pose a serious risk of loss to all plasma users, unless the chain can be consistently monitored.",
@@ -682,7 +682,7 @@ export const getters = {
       },
       {
         id: "send-messages-from-a-satellite",
-        label: {
+        tag: {
           title: "Community",
           type: "blue"
         },
@@ -692,7 +692,7 @@ export const getters = {
           require("~/assets/showcase/blockstream.svg")
         ],
         headerimage: require("~/assets/showcase/satellite.svg"),
-        category: "OpenNode - Blockstream",
+        label: "OpenNode - Blockstream",
         title: "Send messages from a satellite",
         description: "A showcase of MESG’s sheer versatility: send messages from outer space using the MESG Token, the Lightning Network, a satellite, and a web-based UI.",
         technology: "OpenNode - MESG Token - Blockstream",
@@ -719,7 +719,7 @@ export const getters = {
       },
       {
         id: "enhance-zapier-workflows",
-        label: {
+        tag: {
           title: "Community",
           type: "blue"
         },
@@ -729,7 +729,7 @@ export const getters = {
           require("~/assets/showcase/mesg.svg")
         ],
         headerimage: require("~/assets/showcase/zapier-workflow.svg"),
-        category: "Zapier - MESG",
+        label: "Zapier - MESG",
         title: "Enhance Zapier workflows",
         description: "Centralized workflow builders are easy to use, but have a limited set of feature integrations. Expand Zapier’s workflows to include blockchains, custom software or IoT device integration.",
         technology: "Zapier - MESG - Slack",
@@ -762,7 +762,7 @@ export const getters = {
           require("~/assets/showcase/grafana.svg")
         ],
         headerimage: require("~/assets/showcase/monitor.svg"),
-        category: "ERC20 - Grafana",
+        label: "ERC20 - Grafana",
         title: "Monitor ERC-20 transactions",
         description: "There’s immense power in data. New analytics tools allow for the creation of massive efficiencies, avenues of income, or new businesses altogether.",
         technology: "ERC-20 - InfluxDB - Grafana",
@@ -802,7 +802,7 @@ export const getters = {
           require("~/assets/showcase/sendgrid.svg")
         ],
         headerimage: require("~/assets/showcase/payments.svg"),
-        category: "Ethereum - SendGrid",
+        label: "Ethereum - SendGrid",
         title: "Replace subscriptions with on-demand payments",
         description: "Innovations allowing for new monetization avenues could be the start the transition away from one-size-fits-all subscription plans.",
         technology: "Ethereum - MESG - SendGrid",
@@ -844,7 +844,7 @@ export const getters = {
           require("~/assets/showcase/ethereum.svg")
         ],
         headerimage: require("~/assets/showcase/crypto.svg"),
-        category: "Stripe - ERC20",
+        label: "Stripe - ERC20",
         title: "Directly buy crypto with fiat",
         description: "Connect a payment processor to any blockchain to finally accept fiat for your tokens, or to improve your user experience.",
         technology: "Stripe - ERC20 - SendGrid",
