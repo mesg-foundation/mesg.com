@@ -39,8 +39,8 @@
       <div class="outer-background">
         <Container>
           <Card v-for="(getstarted, i) in getstarted" :key="i" flex row mobile-column p2>
-            <div flex column half class="getstarted-content" pr1>
-              <span class="label">{{ getstarted.label}}</span>
+            <div half class="getstarted-content" pr1>
+              <span flex class="label">{{ getstarted.label}}</span>
               <h3 mb1>{{ getstarted.title}}</h3>
               <p v-html="getstarted.description"></p>
             </div>
@@ -237,7 +237,6 @@ export default {
       margin-bottom: 0;
     }
     .getstarted-content {
-      height: fit-content;
       span {
         font-size: 12px;
         font-weight: bold;
