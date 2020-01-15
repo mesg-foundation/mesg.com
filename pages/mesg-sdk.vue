@@ -5,6 +5,9 @@
       :title="title"
       :description="description"
     >
+      <template v-slot:top>
+        <span flex class="label">{{ engine.label }}</span>
+      </template>
       <div>
         <Button :to="links.getstarted" primary mt2>Get started</Button>
       </div>
@@ -149,9 +152,9 @@ export default {
   },
   mixins: [
     page({
-      title: "MESG SDK",
+      title: "SDK",
       description:
-        "An open event channel and CLI for building and running modular applications. Control the flow of data and level of security between your whole stack of connected systems."
+        "An open event channel, Engine, and CLI for building and running modular applications. Control the flow of data and level of security between your whole stack of connected systems."
     })
   ],
   computed: {

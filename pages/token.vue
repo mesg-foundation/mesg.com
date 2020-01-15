@@ -1,6 +1,9 @@
 <template>
   <div>
     <Header :image="require('~/assets/token/token.svg')" :title="title" :description="description">
+      <template v-slot:top>
+        <span flex class="label">{{ token.label }}</span>
+      </template>
       <div>
         <p class="sub-text" mb1 mt2>
           <strong>Buy and trade on:</strong>
@@ -189,9 +192,9 @@ export default {
   },
   mixins: [
     page({
-      title: "MESG Token",
+      title: "Token",
       description:
-        "Buy and sell access to services in the new economy of app development. The MESG Token is available now."
+        "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace."
     })
   ],
   computed: {

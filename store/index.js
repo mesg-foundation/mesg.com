@@ -7,14 +7,14 @@ export const getters = {
         img: require("~/assets/engine/engine.svg"),
         title: "SDK",
         description:
-          "Connect services to any other device or application. Then, control the flow of data and the level of security between your whole stack of connected technologies.",
+          "An open event channel, Engine, and CLI for building and running modular applications. Control the flow of data and level of security between your whole stack of connected systems.",
         features: {
           primary: [
             {
               src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
             },
             {
-              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "MESG Marketplace"
+              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "Services"
             },
             {
               src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The SDK’s tools are, and will always be, free to use on a centralized computer.</br></br>However, when building decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token"
@@ -39,12 +39,12 @@ export const getters = {
         img: require("~/assets/marketplace/marketplace.svg"),
         title: "Services",
         description:
-          "Create or reuse intercompatible application components to save time in development. Builders can earn tokens when their services are reused through the MESG Marketplace.",
+          "Reuse existing services to save time building applications, or earn royalties from the new services you create.",
         features: {
           primary: [
             { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/guide/marketplace/", action: "Create a service" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "MESG SDK" },
-            { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Marketplace", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" },
+            { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Services", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
@@ -64,7 +64,7 @@ export const getters = {
         label: "Orchestrate services",
         img: require("~/assets/orchestrator.svg"),
         title: "Process",
-        description: "Orchestrate applications by connecting the events and tasks from any service with a Process. Forget the complexities while utilizing powerful technologies like blockchains or AI.",
+        description: "Orchestrate decentralized services with a process to build highly scalable, interoperable and maintainable applications.",
         features: {
           primary: [
             {
@@ -1164,7 +1164,7 @@ export const getters = {
     return {
       documentation: "https://docs.mesg.com/",
       process: "https://docs.mesg.com/guide/process/",
-      marketplace: "https://marketplace.mesg.com/",
+      marketplace: "http://explorer.testnet.mesg.com/services",
       service: "https://docs.mesg.com/guide/service/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",

@@ -1,7 +1,12 @@
 <template>
   <div>
     <Header :image="require('~/assets/orchestrator.svg')" :title="title" :description="description">
-      <Button :to="links.getstarted" primary mt2>Start building</Button>
+      <template v-slot:top>
+        <span flex class="label">{{ orchestrator.label }}</span>
+      </template>
+      <div>
+        <Button :to="links.getstarted" primary mt2>Start building</Button>
+      </div>
     </Header>
 
     <section id="features" mb3>
@@ -92,9 +97,9 @@ export default {
   },
   mixins: [
     page({
-      title: "MESG Orchestrator",
+      title: "Process",
       description:
-        "Build feature-based applications through the orchestration of MESG services."
+        "Orchestrate decentralized services with a process to build highly scalable, interoperable and maintainable applications."
     })
   ],
   computed: {

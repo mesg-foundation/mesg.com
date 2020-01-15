@@ -5,6 +5,9 @@
       :title="title"
       :description="description"
     >
+      <template v-slot:top>
+        <span flex class="label">{{ marketplace.label }}</span>
+      </template>
       <div>
         <Button :href="externalLinks.marketplace" target="_blank" primary mt2>MESG Marketplace</Button>
       </div>
@@ -125,9 +128,9 @@ export default {
   },
   mixins: [
     page({
-      title: "MESG Marketplace",
+      title: "Services",
       description:
-        "The new economy for buying and selling access to modular app components. Easily implement new application features, or earn royalties from the services you create."
+        "Reuse existing services to save time building applications, or earn royalties from the new services you create."
     })
   ],
   computed: {
