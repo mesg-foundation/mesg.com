@@ -1205,7 +1205,7 @@ export const getters = {
       to: '#',
       subMenu: [
         { text: 'SDK', to: links.engine },
-        { text: 'Service', to: links.marketplace },
+        { text: 'Services', to: links.marketplace },
         { text: 'Process', to: links.orchestrator },
         { text: 'Enterprise', to: links.enterprise }
       ]
