@@ -1204,9 +1204,9 @@ export const getters = {
       text: 'Technology',
       to: '#',
       subMenu: [
-        { text: 'Orchestrator', to: links.orchestrator },
         { text: 'SDK', to: links.engine },
-        { text: 'Marketplace', to: links.marketplace },
+        { text: 'Services', to: links.marketplace },
+        { text: 'Process', to: links.orchestrator },
         { text: 'Enterprise', to: links.enterprise }
       ]
     },
