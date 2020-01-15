@@ -97,12 +97,17 @@ export default {
         "Build feature-based applications through the orchestration of MESG services."
     })
   ],
-  computed: mapGetters({
-    links: "links",
-    externalLinks: "externalLinks",
-    orchestrator: "orchestrator",
-    icons: "icons"
-  })
+  computed: {
+    ...mapGetters({
+      products: "products",
+      links: "links",
+      externalLinks: "externalLinks",
+      icons: "icons"
+    }),
+    orchestrator() {
+      return this.products.find(x => x.id === "orchestrator");
+    }
+  }
 };
 </script>
 

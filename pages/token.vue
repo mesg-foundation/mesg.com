@@ -196,13 +196,16 @@ export default {
   ],
   computed: {
     ...mapGetters({
-      token: "token",
+      products: "products",
       links: "links",
       externalLinks: "externalLinks",
       articles: "articles",
       exchanges: "exchanges",
       icons: "icons"
-    })
+    }),
+    token() {
+      return this.products.find(x => x.id === "token");
+    }
   }
 };
 </script>
