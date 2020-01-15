@@ -40,7 +40,7 @@
         <Container>
           <Card v-for="(getstarted, i) in getstarted" :key="i" flex row mobile-column p2>
             <div half class="getstarted-content" pr1>
-              <TagLabel type="purple" mb1>{{ getstarted.tag}}</TagLabel>
+              <span flex class="label">{{ getstarted.label}}</span>
               <h3 mb1>{{ getstarted.title}}</h3>
               <p v-html="getstarted.description"></p>
             </div>
@@ -176,7 +176,6 @@ import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";
-import TagLabel from "@mesg-components/tag-label";
 import ListSN from "~/components/ListSN";
 import page from "./page";
 
@@ -187,7 +186,6 @@ export default {
     Button,
     CTA,
     Card,
-    TagLabel,
     ListSN
   },
   mixins: [
@@ -237,6 +235,17 @@ export default {
     margin-bottom: calc(#{$margin} * 2);
     &:last-child {
       margin-bottom: 0;
+    }
+    .getstarted-content {
+      span {
+        font-size: 12px;
+        font-weight: bold;
+        color: $purple;
+      }
+      .label {
+        text-transform: uppercase;
+        margin-bottom: calc(#{$margin} / 2) !important;
+      }
     }
     .separator {
       position: absolute;
