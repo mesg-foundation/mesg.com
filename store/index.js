@@ -3,9 +3,9 @@ export const getters = {
     return [
       {
         id: "engine",
-        label: "1 - Install",
+        label: "Install the Engine",
         img: require("~/assets/engine/engine.svg"),
-        title: "Engine",
+        title: "SDK",
         description:
           "Connect services to any other device or application. Then, control the flow of data and the level of security between your whole stack of connected technologies.",
         features: {
@@ -35,7 +35,7 @@ export const getters = {
       },
       {
         id: "marketplace",
-        label: "2 - Build",
+        label: "Build and reuse",
         img: require("~/assets/marketplace/marketplace.svg"),
         title: "Service",
         description:
@@ -61,7 +61,7 @@ export const getters = {
       },
       {
         id: "orchestrator",
-        label: "3 - Create",
+        label: "Orchestrate services",
         img: require("~/assets/orchestrator.svg"),
         title: "Process",
         description: "Orchestrate applications by connecting the events and tasks from any service with a Process. Forget the complexities while utilizing powerful technologies like blockchains or AI.",
@@ -82,7 +82,7 @@ export const getters = {
       },
       {
         id: "token",
-        label: "4 - Fuel",
+        label: "Fuel the ecosystem",
         img: require("~/assets/token/token.svg"),
         title: "Token",
         description: "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace.",

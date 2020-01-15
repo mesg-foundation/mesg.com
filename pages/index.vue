@@ -44,7 +44,7 @@
               <div>
                 <img mb2 :src="product.img" :alt="product.title" />
               </div>
-              <span class="label">{{ product.label }}</span>
+              <span class="label text-center">{{ product.label }}</span>
               <h3 mb1>{{ product.title }}</h3>
               <i class="fal fa-long-arrow-alt-right"></i>
             </nuxt-link>
