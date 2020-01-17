@@ -3,7 +3,7 @@
     <img :src="article.feature_image" :alt="article.title" mb1 />
     <div>
       <div class="tag-date" flex row align-center>
-        <span class="label">{{ article.primary_tag.name }}</span>
+        <span v-if="article.primary_tag" class="label">{{ article.primary_tag.name }}</span>
         <span class="date">{{ article.published_at | formatDate }}</span>
       </div>
       <h4>{{ article.title }}</h4>
