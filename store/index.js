@@ -637,6 +637,44 @@ export const getters = {
   usecases(_, { links }) {
     return [
       {
+        id: "expand-dao-functionalities",
+        tag: {
+          title: "MESG Partner",
+          type: "orange"
+        },
+        to: `${links.showcase}/expand-dao-functionalities`,
+        logos: [
+          require("~/assets/showcase/aragon.svg"),
+          require("~/assets/showcase/webhook.svg")
+        ],
+        headerimage: require("~/assets/showcase/aragon-webhook.svg"),
+        title: "Expand DAO functionalities",
+        label: "Aragon - Webhook",
+        description: "Easily connect the events from any Aragon decentralized autonomous organization (DAO) to web services like Zapier, Email, SMS, Slack, Telegram, Twitter or webhooks.",
+        technology: "Aragon Project - Zapier - Webhook",
+        paragraphe: "Connect Aragon Project’s Ethereum smart contracts to webhooks, Zapier and more.",
+        image: require("~/assets/showcase/aragon-zapier-webhook.svg"),
+        challenges: "Ethereum smart contracts have a usability problem. It’s a challenge to connect to centralized technologies which are known to enhance user experience and boost adoption.",
+        goals: "To build an Aragon application that allows users of any Aragon decentralized autonomous organization to boost UX by connecting to a suite of web services through a UI.",
+        benefits: [
+          "Connect any Aragon DAO to external web services within the native dashboard.",
+          "Automatically react to smart contract events in real time."
+        ],
+        opportunities: [
+          "Users can use subscription-based services, such as Sendgrid, without paying for a subscription first.",
+          "Enhance DAOs, or other smart contract applications, with event-driven actions to provide users with excellent user experiences.",
+          "A public website allowing anyone to connect any event from an Aragon DAO to a list of available connectors."
+        ],
+        video: "https://www.youtube.com/embed/Mji0ee1l4z8",
+        information: "Want a deeper look at how MESG can be used to connect to smart contracts? Head on over to the following resources for updates on this integration.",
+        resources: [
+          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration/" },
+          { title: "Github", to: "https://github.com/mesg-foundation/aragon" },
+          { title: "Aragon forum", to: "https://forum.aragon.org/t/mesg-integration-with-aragon-daos-milestone-1/1814/4" }
+        ],
+        cta: "https://github.com/mesg-foundation/aragon"
+      },
+      {
         id: "plasma-exit-challenge",
         tag: {
           title: "MESG Partner",
