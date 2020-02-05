@@ -651,9 +651,9 @@ export const getters = {
         title: "Expand DAO functionalities",
         label: "Aragon - Webhook",
         description: "Easily connect the events from any Aragon decentralized autonomous organization (DAO) to web services like Zapier, Email, SMS, Slack, Telegram, Twitter or webhooks.",
-        technology: "Aragon Project - Zapier - Webhook",
+        technology: "Aragon Project - MESG - Webhook",
         paragraphe: "Connect Aragon Project’s Ethereum smart contracts to webhooks, Zapier and more.",
-        image: require("~/assets/showcase/aragon-zapier-webhook.svg"),
+        image: require("~/assets/showcase/aragon-mesg-webhook.svg"),
         challenges: "Ethereum smart contracts have a usability problem. It’s a challenge to connect to centralized technologies which are known to enhance user experience and boost adoption.",
         goals: "To build an Aragon application that allows users of any Aragon decentralized autonomous organization to boost UX by connecting to a suite of web services through a UI.",
         benefits: [
