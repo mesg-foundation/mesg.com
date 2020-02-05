@@ -8,7 +8,7 @@
     id="header"
   >
     <div>
-      <Button :to="links.home" primary>MESG Home</Button>
+      <Button :to="links.home" primary mt2>MESG Home</Button>
     </div>
   </Header>
 </template>
