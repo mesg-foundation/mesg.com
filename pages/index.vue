@@ -19,6 +19,31 @@
       </Container>
     </section>
 
+    <section id="alert" mb3>
+      <Container>
+        <Card class="alert-card" p1>
+          <div flex row align-center space-between mobile-column>
+            <div class="alert-icon">
+              <span flex align-center>
+                <i class="fal fa-coins"></i>
+              </span>
+            </div>
+            <div class="content">
+              <p>Learn how the MESG economy works</p>
+            </div>
+            <nav flex column quarter>
+              <Button
+                white
+                href="https://blog.mesg.com/token-utility-in-the-mesg-economy/"
+                target="_blank"
+                class="track-button"
+              >Discover</Button>
+            </nav>
+          </div>
+        </Card>
+      </Container>
+    </section>
+
     <section id="presentation">
       <Container flex column class="intro text-center">
         <h2 mb1>Technology</h2>
@@ -177,6 +202,35 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/_variables";
+#alert {
+  .alert-card {
+    background-color: $primary;
+    box-shadow: none;
+    .alert-icon {
+      max-width: 50px;
+      margin-right: $margin;
+      span {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+        background-color: $purple;
+        border-radius: 100%;
+        i {
+          color: $white;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
+    p {
+      color: $white;
+    }
+  }
+}
+
 #technology {
   .card {
     padding: 0;
@@ -201,6 +255,16 @@ export default {
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
+  #alert {
+    .alert-icon {
+      margin-bottom: $margin;
+      margin-right: 0 !important;
+    }
+    p {
+      text-align: center;
+      margin-bottom: calc(#{$margin} * 2);
+    }
+  }
   .intro {
     padding-bottom: 0;
   }
