@@ -36,6 +36,7 @@
                 white
                 href="https://blog.mesg.com/token-utility-in-the-mesg-economy/"
                 target="_blank"
+                class="track-button"
               >Discover</Button>
             </nav>
           </div>
