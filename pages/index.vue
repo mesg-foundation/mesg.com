@@ -32,7 +32,11 @@
               <p>Learn how the MESG economy works</p>
             </div>
             <nav flex column quarter>
-              <Button white href="/" target="_blank">Discover</Button>
+              <Button
+                white
+                href="https://blog.mesg.com/token-utility-in-the-mesg-economy/"
+                target="_blank"
+              >Discover</Button>
             </nav>
           </div>
         </Card>
