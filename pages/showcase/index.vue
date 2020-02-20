@@ -48,7 +48,7 @@
           <div flex row mobile-column mb2>
             <Article v-for="article in articles" :key="article.id" :article="article" />
           </div>
-          <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+          <Button secondary :href="externalLinks.blogShowcase" target="_blank">Read our blog</Button>
         </div>
       </Container>
     </section>

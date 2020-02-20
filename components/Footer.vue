@@ -38,7 +38,7 @@
               <nuxt-link :to="links.token">Token</nuxt-link>
               <nuxt-link :to="links.roadmap">Roadmap</nuxt-link>
               <nuxt-link :to="links.faq">Help Center</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank">Blog</a>
+              <a :href="externalLinks.blogFooter" target="_blank">Blog</a>
               <a :href="externalLinks.press" target="_blank">Press & Media</a>
             </li>
             <li flex column quarter>
