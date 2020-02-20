@@ -343,7 +343,7 @@ export const getters = {
           ]
         }, {
           title: "Algorithmic Token Distribution",
-          link: "https://atd.mesg.com",
+          link: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=roadmap_link&utm_campaign=atd_home",
           list: [
             "List MESG Token on a second exchange",
             "Dashboard with information to check the distribution"
@@ -1209,7 +1209,7 @@ export const getters = {
       marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
       marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
       service: "https://docs.mesg.com/guide/service/",
-      atd: "https://atd.mesg.com/",
+      atdToken: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=token_link&utm_campaign=atd_home",
       github: "https://github.com/mesg-foundation/",
       blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
       blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
