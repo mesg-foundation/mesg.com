@@ -925,7 +925,7 @@ export const getters = {
         category: "Development",
         list: [
           "Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
-          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>Forum</a>",
+          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development?utm_source=mesg.com&utm_medium=community_link&utm_campaign=forum_development' target='_blank' class='link'>Forum</a>",
           "Build apps using MESG",
           "..."
         ]
@@ -995,7 +995,7 @@ export const getters = {
         category: "Support",
         list: [
           "Answer community questions",
-          "Contribute on the <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
+          "Contribute on the <a href='https://forum.mesg.com/c/development?utm_source=mesg.com&utm_medium=community_link&utm_campaign=forum_development' target='_blank' class='link'>forum</a>",
           "Suggest best practices",
           "..."
         ]
@@ -1139,7 +1139,7 @@ export const getters = {
         description: "Community Chat",
       },
       forum: {
-        to: externalLinks.forum,
+        to: externalLinks.forumSocial,
         icon: "fas fa-comments",
         color: "forum",
         description: "Help & Guidance",
@@ -1202,33 +1202,35 @@ export const getters = {
     return {
       documentation: "https://docs.mesg.com/",
       process: "https://docs.mesg.com/guide/process/",
+      service: "https://docs.mesg.com/guide/service/",
+      getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
       marketplaceCTAHead: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=cta_head&utm_campaign=explorer_services",
       marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=cta_bottom&utm_campaign=explorer_services",
       marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
       marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
       marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
       marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
-      service: "https://docs.mesg.com/guide/service/",
-      atdToken: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=token_link&utm_campaign=atd_home",
-      github: "https://github.com/mesg-foundation/",
       blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
       blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
       blogSocial: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=blog_home",
       blogShowcase: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=blog_home",
-      forum: "https://forum.mesg.com/",
+      tutorialsGetStarted: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorials_home",
+      tutorialsMenu: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=tutorials_home",
+      tutorialsFooter: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=tutorials_home",
+      forumFooter: "https://forum.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=forum_home",
+      forumSocial: "https://forum.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=forum_home",
+      atdToken: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=token_link&utm_campaign=atd_home",
+      github: "https://github.com/mesg-foundation/",
       discord: "https://discordapp.com/invite/5tVTHJC",
       twitter: "https://twitter.com/mesgfoundation",
       telegram: "https://t.me/mesg_community",
       linkedin: "https://www.linkedin.com/company/mesg",
       facebook: "https://www.facebook.com/mesgfoundation",
       reddit: "https://www.reddit.com/r/MESG/",
-      getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
-      press: "https://handbook.mesg.com/assets/",
-      tutorialsGetStarted: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorials_home",
-      tutorialsMenu: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=tutorials_home",
-      tutorialsFooter: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=tutorials_home"
+      press: "https://handbook.mesg.com/assets/"
+
     }
   },
 

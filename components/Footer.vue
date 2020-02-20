@@ -44,7 +44,7 @@
             <li flex column quarter>
               <a href="#" class="category" mb1>Community</a>
               <nuxt-link :to="links.contributions">Contributions Hub</nuxt-link>
-              <a :href="externalLinks.forum" target="_blank">Forum</a>
+              <a :href="externalLinks.forumFooter" target="_blank">Forum</a>
               <a :href="externalLinks.discord" target="_blank">Discord</a>
             </li>
           </ul>
