@@ -935,7 +935,7 @@ export const getters = {
         category: "Dev UX",
         list: [
           "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
-          "Create <a href='https://blog.mesg.com/tag/tutorials/' target='_blank' class='link'>tutorials</a>",
+          "Create <a href='https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=tutorials_home' target='_blank' class='link'>tutorials</a>",
           "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
         ]
