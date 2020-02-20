@@ -1177,23 +1177,23 @@ export const getters = {
     return {
       emailService: {
         title: "Email service",
-        to: "https://blog.mesg.com/send-emails-with-sendgrid/"
+        to: "https://blog.mesg.com/send-emails-with-sendgrid/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_email_service"
       },
       erc20Service: {
         title: "ERC-20 service",
-        to: "https://blog.mesg.com/listen-for-transfers-of-an-ethereum-erc20-token/"
+        to: "https://blog.mesg.com/listen-for-transfers-of-an-ethereum-erc20-token/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_erc20_service"
       },
       erc20Notifier: {
         title: "ERC-20 notifier",
-        to: "https://blog.mesg.com/receive-email-when-there-is-an-erc20-transfer/"
+        to: "https://blog.mesg.com/receive-email-when-there-is-an-erc20-transfer/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_erc20_notifier"
       },
       networkEngine: {
         title: "Create a network with multiple Engines",
-        to: "https://blog.mesg.com/tutorial-create-a-network-with-multiple-engines/"
+        to: "https://blog.mesg.com/tutorial-create-a-network-with-multiple-engines/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_multiple_engines"
       },
       processEmailerc20transfer: {
         title: "Create a process to receive an email when an ERC-20 transfer occurs",
-        to: "https://blog.mesg.com/create-a-process-to-receive-an-email-when-an-erc20-transfer-occurs/"
+        to: "https://blog.mesg.com/create-a-process-to-receive-an-email-when-an-erc20-transfer-occurs/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_process_email"
       }
     }
   },
@@ -1226,9 +1226,9 @@ export const getters = {
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/",
-      tutorials: "https://blog.mesg.com/tag/tutorials/",
-      tutorialsMenu: "https://blog.mesg.com/tag/tutorials/",
-      tutorialsFooter: "https://blog.mesg.com/tag/tutorials/"
+      tutorialsGetStarted: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorials_home",
+      tutorialsMenu: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=tutorials_home",
+      tutorialsFooter: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=tutorials_home"
     }
   },
 
@@ -1269,7 +1269,7 @@ export const getters = {
         { text: 'Get started', to: externalLinks.getStarted },
         { text: 'Marketplace', to: externalLinks.marketplaceMenu },
         { text: 'Documentation', to: externalLinks.documentation },
-        { text: 'Tutorials', to: externalLinks.tutorials },
+        { text: 'Tutorials', to: externalLinks.tutorialsMenu },
         { text: 'Github', to: externalLinks.github }
       ]
     },

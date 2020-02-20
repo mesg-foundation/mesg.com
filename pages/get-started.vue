@@ -102,7 +102,7 @@
           <div flex column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Tutorials</h3>
-              <a :href="externalLinks.tutorials" target="_blank" class="link">See all</a>
+              <a :href="externalLinks.tutorialsGetStarted" target="_blank" class="link">See all</a>
             </div>
             <p
               mb1
