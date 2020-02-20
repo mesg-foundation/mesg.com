@@ -70,9 +70,9 @@ export default {
     }),
     icons() {
       return [
-        { href: this.externalLinks.blog, icon: "fab fa-medium" },
+        { href: this.externalLinks.blogFooter, icon: "fab fa-medium" },
         { href: this.externalLinks.github, icon: "fab fa-github" },
-        { href: this.externalLinks.forum, icon: "fas fa-comments" },
+        { href: this.externalLinks.forumFooter, icon: "fas fa-comments" },
         { href: this.externalLinks.discord, icon: "fab fa-discord" },
         { href: this.externalLinks.twitter, icon: "fab fa-twitter" },
         { href: this.externalLinks.telegram, icon: "fab fa-telegram-plane" },
