@@ -668,7 +668,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/Mji0ee1l4z8",
         information: "Want a deeper look at how MESG can be used to connect to smart contracts? Head on over to the following resources for updates on this integration.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=aragon_usecase" },
           { title: "Github", to: "https://github.com/mesg-foundation/aragon" },
           { title: "Aragon forum", to: "https://forum.aragon.org/t/mesg-integration-with-aragon-daos-milestone-1/1814/4" }
         ],
@@ -712,7 +712,7 @@ export const getters = {
           { src: require("~/assets/showcase/cryptokitties.svg"), to: "https://www.cryptokitties.co/" }
         ],
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/plasma-is-not-secure/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/plasma-is-not-secure/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=plasma_usecase" },
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
           { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
         ],
@@ -750,7 +750,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/PNoWKxU6WSk",
         information: "Want a deeper look at how MESG can be used to send messages from space? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/use-case-send-messages-from-space/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/use-case-send-messages-from-space/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=space_usecase" },
           { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
         ],
         cta: "https://github.com/RyanMilb/spaceforce-mesg-app"
@@ -787,7 +787,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/RVMg9VBhhUI",
         information: "Want a more in-depth look at how MESG and Zapier can be used together? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/use-case-connecting-zapier-mesg/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/use-case-connecting-zapier-mesg/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=zapier_usecase" },
           { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
         ],
         cta: "https://github.com/JBarna/MESG-Z"
@@ -826,9 +826,9 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/how-to-monitor-erc-20-transactions/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/how-to-monitor-erc-20-transactions/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=monitor_erc20_usecase" },
           { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
-          { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
+          { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=monitor_erc20_usecase" }
         ],
         cta: "https://github.com/antho1404/application-erc20-analytics"
       },
@@ -867,9 +867,9 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/could-this-cause-the-death-of-the-subscription-plan/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/could-this-cause-the-death-of-the-subscription-plan/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=payments_usecase" },
           { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
-          { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
+          { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=payments_usecase" },
           { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
         ],
         cta: "https://github.com/antho1404/pegasys-hackathon"
@@ -909,7 +909,7 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/directly-buy-crypto-with-fiat/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/directly-buy-crypto-with-fiat/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=buy_crypto_usecase" },
           { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
           { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
         ],
