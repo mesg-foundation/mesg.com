@@ -2,7 +2,7 @@
   <div>
     <Header :image="require('~/assets/getstarted.svg')" :title="title" :description="description">
       <div>
-        <Button :href="externalLinks.getStarted" primary target="_blank" mt2>Quick start</Button>
+        <Button :href="externalLinks.quickStartCTAHead" primary target="_blank" mt2>Quick start</Button>
       </div>
     </Header>
 
@@ -163,7 +163,7 @@
       icon="fal fa-book"
       title="Get started"
       description="Don’t know where to begin? Get going with the quickstart guide on our documentation."
-      :links="[{ title: 'Quick start' , href: externalLinks.getStarted }]"
+      :links="[{ title: 'Quick start' , href: externalLinks.quickStartCTABottom }]"
       mb1
     />
   </div>
