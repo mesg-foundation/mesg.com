@@ -27,7 +27,7 @@
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
               <a :href="externalLinks.getStarted" target="_blank">Get started</a>
-              <a :href="externalLinks.marketplace" target="_blank">Marketplace</a>
+              <a :href="externalLinks.marketplaceFooter" target="_blank">Marketplace</a>
               <a :href="externalLinks.documentation" target="_blank">Documentation</a>
               <a :href="externalLinks.tutorials" target="_blank">Tutorials</a>
               <a :href="externalLinks.github" target="_blank">Github</a>

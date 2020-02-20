@@ -35,7 +35,11 @@
             <p
               mb2
             >Find new services to implement in your applications. Any service from the Marketplace featuring any technology or language and can be added to any process or application.</p>
-            <Button secondary :href="externalLinks.marketplace" target="_blank">MESG Marketplace</Button>
+            <Button
+              secondary
+              :href="externalLinks.marketplaceShowcase"
+              target="_blank"
+            >MESG Marketplace</Button>
           </div>
         </div>
       </Container>

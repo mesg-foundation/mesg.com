@@ -100,7 +100,7 @@ export const getters = {
           ]
         },
         faq: [
-          { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ class=link target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access to services saves developers time and provides new ways to earn from coding." },
+          { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=token_link&utm_campaign=explorer_services class=link target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access to services saves developers time and provides new ways to earn from coding." },
           { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications, enabling decentralized execution. Plus, it will secure the network through a mandatory staking system." },
           { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to a percentage of the previous day’s total volume. This means large payouts are distributed gradually for all, plus daily sales are limited to promote a stable release of MESG Tokens into the market." },
           { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG class=link target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/spot/mesg_usdt class=link target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg class=link target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
@@ -335,7 +335,7 @@ export const getters = {
         quarter: "Q2",
         goals: [{
           title: "MESG Marketplace on Ethereum",
-          link: "https://marketplace.mesg.com",
+          link: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=roadmap_link&utm_campaign=explorer_services",
           list: [
             "Sell MESG Services on the MESG Marketplace",
             "Buy MESG Services to integrate into applications",
@@ -421,7 +421,7 @@ export const getters = {
       href: "#general",
       contents: [{
         title: "What is MESG?",
-        description: "MESG is an application/workflow development platform made of a decentralized network of intercompatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users sell or purchase intercompatible services in the open <a href='https://marketplace.mesg.com/' class=link target='_blank'>MESG Marketplace</a>, allowing developers to save significant time and/or generate income from their work."
+        description: "MESG is an application/workflow development platform made of a decentralized network of intercompatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users sell or purchase intercompatible services in the open <a href='http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=faq_link&utm_campaign=explorer_services' class=link target='_blank'>MESG Marketplace</a>, allowing developers to save significant time and/or generate income from their work."
       }],
     },
     {
@@ -1053,7 +1053,7 @@ export const getters = {
             category: "fal fa-store",
             color: "orange",
             title: "Browse the marketplace",
-            link: externalLinks.marketplace,
+            link: externalLinks.marketplaceGetStarted,
             info: "Resource",
             icon: "fal fa-external-link-alt"
           },
@@ -1202,7 +1202,12 @@ export const getters = {
     return {
       documentation: "https://docs.mesg.com/",
       process: "https://docs.mesg.com/guide/process/",
-      marketplace: "http://explorer.testnet.mesg.com/services",
+      marketplaceCTAHead: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=cta_head_link&utm_campaign=explorer_services",
+      marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=cta_bottom_link&utm_campaign=explorer_services",
+      marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
+      marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
+      marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
+      marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
       service: "https://docs.mesg.com/guide/service/",
       atd: "https://atd.mesg.com/",
       github: "https://github.com/mesg-foundation/",
@@ -1260,7 +1265,7 @@ export const getters = {
       to: '#',
       subMenu: [
         { text: 'Get started', to: externalLinks.getStarted },
-        { text: 'Marketplace', to: externalLinks.marketplace },
+        { text: 'Marketplace', to: externalLinks.marketplaceMenu },
         { text: 'Documentation', to: externalLinks.documentation },
         { text: 'Tutorials', to: externalLinks.tutorials },
         { text: 'Github', to: externalLinks.github }
