@@ -9,7 +9,12 @@
         <span flex class="label">{{ marketplace.label }}</span>
       </template>
       <div>
-        <Button :href="externalLinks.marketplace" target="_blank" primary mt2>MESG Marketplace</Button>
+        <Button
+          :href="externalLinks.marketplaceCTAHead"
+          target="_blank"
+          primary
+          mt2
+        >MESG Marketplace</Button>
       </div>
     </Header>
 
@@ -98,7 +103,7 @@
       icon="fal fa-store"
       title="Marketplace"
       description="MESG Marketplace beta is out now. Earn tokens when your services are used or save time by purchasing access to services."
-      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplace }]"
+      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplaceCTABottom }]"
       mb1
     />
   </div>

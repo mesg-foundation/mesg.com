@@ -34,7 +34,7 @@
             <nav flex column quarter>
               <Button
                 white
-                href="https://blog.mesg.com/token-utility-in-the-mesg-economy/"
+                href="https://blog.mesg.com/token-utility-in-the-mesg-economy/?utm_source=mesg.com&utm_medium=home_cta&utm_campaign=mesg_economy"
                 target="_blank"
                 class="track-button"
               >Discover</Button>
@@ -103,7 +103,7 @@
           <div flex row mobile-column mb2>
             <Article v-for="article in articles" :key="article.id" :article="article" />
           </div>
-          <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+          <Button secondary :href="externalLinks.blogHome" target="_blank">Read our blog</Button>
         </div>
       </Container>
     </section>

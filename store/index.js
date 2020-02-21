@@ -11,7 +11,7 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/", action: "Documentation"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=sdk_link&utm_campaign=doc_home", action: "Documentation"
             },
             {
               src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "Services"
@@ -42,7 +42,7 @@ export const getters = {
           "Reuse existing services to save time building applications, or earn royalties from the new services you create.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/guide/marketplace/", action: "Create a service" },
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=service_link&utm_campaign=doc_service", action: "Create a service" },
             { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" },
             { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Services", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
           ],
@@ -100,7 +100,7 @@ export const getters = {
           ]
         },
         faq: [
-          { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=https://marketplace.mesg.com/ class=link target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access to services saves developers time and provides new ways to earn from coding." },
+          { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=token_link&utm_campaign=explorer_services class=link target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access to services saves developers time and provides new ways to earn from coding." },
           { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications, enabling decentralized execution. Plus, it will secure the network through a mandatory staking system." },
           { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to a percentage of the previous day’s total volume. This means large payouts are distributed gradually for all, plus daily sales are limited to promote a stable release of MESG Tokens into the market." },
           { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG class=link target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/spot/mesg_usdt class=link target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg class=link target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
@@ -335,7 +335,7 @@ export const getters = {
         quarter: "Q2",
         goals: [{
           title: "MESG Marketplace on Ethereum",
-          link: "https://marketplace.mesg.com",
+          link: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=roadmap_link&utm_campaign=explorer_services",
           list: [
             "Sell MESG Services on the MESG Marketplace",
             "Buy MESG Services to integrate into applications",
@@ -343,7 +343,7 @@ export const getters = {
           ]
         }, {
           title: "Algorithmic Token Distribution",
-          link: "https://atd.mesg.com",
+          link: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=roadmap_link&utm_campaign=atd_home",
           list: [
             "List MESG Token on a second exchange",
             "Dashboard with information to check the distribution"
@@ -421,7 +421,7 @@ export const getters = {
       href: "#general",
       contents: [{
         title: "What is MESG?",
-        description: "MESG is an application/workflow development platform made of a decentralized network of intercompatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users sell or purchase intercompatible services in the open <a href='https://marketplace.mesg.com/' class=link target='_blank'>MESG Marketplace</a>, allowing developers to save significant time and/or generate income from their work."
+        description: "MESG is an application/workflow development platform made of a decentralized network of intercompatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users sell or purchase intercompatible services in the open <a href='http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=faq_link&utm_campaign=explorer_services' class=link target='_blank'>MESG Marketplace</a>, allowing developers to save significant time and/or generate income from their work."
       }],
     },
     {
@@ -469,7 +469,7 @@ export const getters = {
       href: "#community",
       contents: [{
         title: "Is MESG open source?",
-        description: "Yes. Our software is not patented, but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone from the community can help improve features or <a href='https://docs.mesg.com/' class=link target='_blank'>the documentation</a> or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
+        description: "Yes. Our software is not patented, but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone from the community can help improve features or <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=faq_link&utm_campaign=doc_home' class=link target='_blank'>the documentation</a> or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
       },
       {
         title: "Who can benefit from MESG?",
@@ -668,7 +668,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/Mji0ee1l4z8",
         information: "Want a deeper look at how MESG can be used to connect to smart contracts? Head on over to the following resources for updates on this integration.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=aragon_usecase" },
           { title: "Github", to: "https://github.com/mesg-foundation/aragon" },
           { title: "Aragon forum", to: "https://forum.aragon.org/t/mesg-integration-with-aragon-daos-milestone-1/1814/4" }
         ],
@@ -712,7 +712,7 @@ export const getters = {
           { src: require("~/assets/showcase/cryptokitties.svg"), to: "https://www.cryptokitties.co/" }
         ],
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/plasma-is-not-secure/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/plasma-is-not-secure/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=plasma_usecase" },
           { title: "Application", to: "https://github.com/mesg-foundation/application-plasma-exit" },
           { title: "Watcher", to: "https://github.com/mesg-foundation/service-plasma-omisego-watcher" }
         ],
@@ -750,7 +750,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/PNoWKxU6WSk",
         information: "Want a deeper look at how MESG can be used to send messages from space? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/use-case-send-messages-from-space/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/use-case-send-messages-from-space/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=space_usecase" },
           { title: "Github", to: "https://github.com/RyanMilb/spaceforce-mesg-app" },
         ],
         cta: "https://github.com/RyanMilb/spaceforce-mesg-app"
@@ -787,7 +787,7 @@ export const getters = {
         video: "https://www.youtube.com/embed/RVMg9VBhhUI",
         information: "Want a more in-depth look at how MESG and Zapier can be used together? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/use-case-connecting-zapier-mesg/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/use-case-connecting-zapier-mesg/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=zapier_usecase" },
           { title: "Github", to: "https://github.com/JBarna/MESG-Z" },
         ],
         cta: "https://github.com/JBarna/MESG-Z"
@@ -826,9 +826,9 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can be used to monitor blockchain transactions? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/how-to-monitor-erc-20-transactions/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/how-to-monitor-erc-20-transactions/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=monitor_erc20_usecase" },
           { title: "Github", to: "https://github.com/antho1404/application-erc20-analytics" },
-          { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209" }
+          { title: "Forum post", to: "https://forum.mesg.com/t/analytics-tool-for-erc20-transfers/209?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=monitor_erc20_usecase" }
         ],
         cta: "https://github.com/antho1404/application-erc20-analytics"
       },
@@ -867,9 +867,9 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can help redefine businesses with on-demand payments? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/could-this-cause-the-death-of-the-subscription-plan/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/could-this-cause-the-death-of-the-subscription-plan/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=payments_usecase" },
           { title: "Github", to: "https://github.com/antho1404/pegasys-hackathon" },
-          { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223" },
+          { title: "Forum post", to: "https://forum.mesg.com/t/monetizing-api-through-blockchain/223?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=payments_usecase" },
           { title: "Hackathon post", to: "https://devpost.com/software/pegasys-hackathon" }
         ],
         cta: "https://github.com/antho1404/pegasys-hackathon"
@@ -909,7 +909,7 @@ export const getters = {
         ],
         information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/directly-buy-crypto-with-fiat/" },
+          { title: "Read the full article", to: "https://blog.mesg.com/directly-buy-crypto-with-fiat/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=buy_crypto_usecase" },
           { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
           { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
         ],
@@ -925,7 +925,7 @@ export const getters = {
         category: "Development",
         list: [
           "Improve the Engine <a href='https://github.com/mesg-foundation/engine/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>(1)</a> & <a href='https://github.com/orgs/mesg-foundation/projects/' target='_blank' class='link'>(2)</a>",
-          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>Forum</a>",
+          "Feedback on <a href='https://github.com/mesg-foundation/engine/pulls' target='_blank' class='link'>PRs</a> & <a href='https://forum.mesg.com/c/development?utm_source=mesg.com&utm_medium=community_link&utm_campaign=forum_development' target='_blank' class='link'>Forum</a>",
           "Build apps using MESG",
           "..."
         ]
@@ -934,8 +934,8 @@ export const getters = {
         icon: "fal fa-layer-plus",
         category: "Dev UX",
         list: [
-          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
-          "Create <a href='https://blog.mesg.com/tag/tutorials/' target='_blank' class='link'>tutorials</a>",
+          "Improve the <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=doc_home' target='_blank' class='link'>documentation</a>",
+          "Create <a href='https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=tutorials_home' target='_blank' class='link'>tutorials</a>",
           "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
         ]
@@ -946,7 +946,7 @@ export const getters = {
         list: [
           "Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
           "Create informative diagrams",
-          "Improve the <a href='https://docs.mesg.com/' target='_blank' class='link'>documentation</a>",
+          "Improve the <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=doc_home' target='_blank' class='link'>documentation</a>",
           "..."
         ]
       },
@@ -995,7 +995,7 @@ export const getters = {
         category: "Support",
         list: [
           "Answer community questions",
-          "Contribute on the <a href='https://forum.mesg.com/c/development' target='_blank' class='link'>forum</a>",
+          "Contribute on the <a href='https://forum.mesg.com/c/development?utm_source=mesg.com&utm_medium=community_link&utm_campaign=forum_development' target='_blank' class='link'>forum</a>",
           "Suggest best practices",
           "..."
         ]
@@ -1022,7 +1022,7 @@ export const getters = {
             category: "fal fa-book",
             color: "blue",
             title: "Installation",
-            link: externalLinks.getStarted,
+            link: externalLinks.quickStartGetStarted,
             info: "Documentation",
             icon: "fal fa-external-link-alt"
           }
@@ -1045,7 +1045,7 @@ export const getters = {
             category: "fal fa-book",
             color: "blue",
             title: "Create a service",
-            link: externalLinks.service,
+            link: externalLinks.serviceGetStarted,
             info: "Documentation",
             icon: "fal fa-external-link-alt"
           },
@@ -1053,7 +1053,7 @@ export const getters = {
             category: "fal fa-store",
             color: "orange",
             title: "Browse the marketplace",
-            link: externalLinks.marketplace,
+            link: externalLinks.marketplaceGetStarted,
             info: "Resource",
             icon: "fal fa-external-link-alt"
           },
@@ -1084,7 +1084,7 @@ export const getters = {
             category: "fal fa-book",
             color: "blue",
             title: "Create a process",
-            link: externalLinks.process,
+            link: externalLinks.processGetStarted,
             info: "Documentation",
             icon: "fal fa-external-link-alt"
           },
@@ -1139,7 +1139,7 @@ export const getters = {
         description: "Community Chat",
       },
       forum: {
-        to: externalLinks.forum,
+        to: externalLinks.forumSocial,
         icon: "fas fa-comments",
         color: "forum",
         description: "Help & Guidance",
@@ -1157,7 +1157,7 @@ export const getters = {
         description: "General news",
       },
       blog: {
-        to: externalLinks.blog,
+        to: externalLinks.blogSocial,
         icon: "fab fa-medium",
         color: "blog",
         description: "Check out the news",
@@ -1177,48 +1177,65 @@ export const getters = {
     return {
       emailService: {
         title: "Email service",
-        to: "https://blog.mesg.com/send-emails-with-sendgrid/"
+        to: "https://blog.mesg.com/send-emails-with-sendgrid/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_email_service"
       },
       erc20Service: {
         title: "ERC-20 service",
-        to: "https://blog.mesg.com/listen-for-transfers-of-an-ethereum-erc20-token/"
+        to: "https://blog.mesg.com/listen-for-transfers-of-an-ethereum-erc20-token/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_erc20_service"
       },
       erc20Notifier: {
         title: "ERC-20 notifier",
-        to: "https://blog.mesg.com/receive-email-when-there-is-an-erc20-transfer/"
+        to: "https://blog.mesg.com/receive-email-when-there-is-an-erc20-transfer/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_erc20_notifier"
       },
       networkEngine: {
         title: "Create a network with multiple Engines",
-        to: "https://blog.mesg.com/tutorial-create-a-network-with-multiple-engines/"
+        to: "https://blog.mesg.com/tutorial-create-a-network-with-multiple-engines/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_multiple_engines"
       },
       processEmailerc20transfer: {
         title: "Create a process to receive an email when an ERC-20 transfer occurs",
-        to: "https://blog.mesg.com/create-a-process-to-receive-an-email-when-an-erc20-transfer-occurs/"
+        to: "https://blog.mesg.com/create-a-process-to-receive-an-email-when-an-erc20-transfer-occurs/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorial_process_email"
       }
     }
   },
 
   externalLinks() {
     return {
-      documentation: "https://docs.mesg.com/",
-      process: "https://docs.mesg.com/guide/process/",
-      marketplace: "http://explorer.testnet.mesg.com/services",
-      service: "https://docs.mesg.com/guide/service/",
-      atd: "https://atd.mesg.com/",
+      documentationMenu: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_home",
+      documentationFooter: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_home",
+      processGetStarted: "https://docs.mesg.com/guide/process/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_process",
+      serviceGetStarted: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_service",
+      quickStartGetStarted: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_quick_start",
+      quickStartMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_quick_start",
+      quickStartFooter: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_quick_start",
+      quickStartCTAHead: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_head&utm_campaign=doc_quick_start",
+      quickStartCTABottom: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_bottom&utm_campaign=doc_quick_start",
+      marketplaceCTAHead: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=service_cta_head&utm_campaign=explorer_services",
+      marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=service_cta_bottom&utm_campaign=explorer_services",
+      marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
+      marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
+      marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
+      marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
+      blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
+      blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
+      blogSocial: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=blog_home",
+      blogShowcase: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=blog_home",
+      tutorialsGetStarted: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorials_home",
+      tutorialsMenu: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=tutorials_home",
+      tutorialsFooter: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=tutorials_home",
+      forumFooter: "https://forum.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=forum_home",
+      forumSocial: "https://forum.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=forum_home",
+      atdToken: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=token_link&utm_campaign=atd_home",
       github: "https://github.com/mesg-foundation/",
-      blog: "https://blog.mesg.com",
-      forum: "https://forum.mesg.com/",
       discord: "https://discordapp.com/invite/5tVTHJC",
       twitter: "https://twitter.com/mesgfoundation",
       telegram: "https://t.me/mesg_community",
       linkedin: "https://www.linkedin.com/company/mesg",
       facebook: "https://www.facebook.com/mesgfoundation",
       reddit: "https://www.reddit.com/r/MESG/",
-      getStarted: "https://docs.mesg.com/guide/quick-start-guide.html",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
-      press: "https://handbook.mesg.com/assets/",
-      tutorials: "https://blog.mesg.com/tag/tutorials/"
+      press: "https://handbook.mesg.com/assets/"
+
     }
   },
 
@@ -1256,10 +1273,10 @@ export const getters = {
       text: 'Developers',
       to: '#',
       subMenu: [
-        { text: 'Get started', to: externalLinks.getStarted },
-        { text: 'Marketplace', to: externalLinks.marketplace },
-        { text: 'Documentation', to: externalLinks.documentation },
-        { text: 'Tutorials', to: externalLinks.tutorials },
+        { text: 'Get started', to: externalLinks.quickStartMenu },
+        { text: 'Marketplace', to: externalLinks.marketplaceMenu },
+        { text: 'Documentation', to: externalLinks.documentationMenu },
+        { text: 'Tutorials', to: externalLinks.tutorialsMenu },
         { text: 'Github', to: externalLinks.github }
       ]
     },
