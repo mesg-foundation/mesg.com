@@ -1,8 +1,8 @@
 <template>
-  <a href="/" target="_blank">
+  <a href="https://mesg-ecosystem.devpost.com/" target="_blank">
     <div class="banner" flex row justify-center align-center>
       <div class="banner-content" flex row justify-center align-center>
-        <p>Participate in the MESG Ecosystem Hackathon from March 1st to April 30th on Devpost. Win up to $9,000 in prizes!</p>
+        <p>Participate in the MESG Ecosystem Hackathon from March 1st to April 26th on Devpost. Win up to $9,000 in prizes!</p>
         <i class="fal fa-external-link-alt"></i>
       </div>
     </div>
