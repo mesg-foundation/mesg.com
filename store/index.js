@@ -665,10 +665,10 @@ export const getters = {
           "Enhance DAOs, or other smart contract applications, with event-driven actions to provide users with excellent user experiences.",
           "A public website allowing anyone to connect any event from an Aragon DAO to a list of available connectors."
         ],
-        video: "https://www.youtube.com/embed/Mji0ee1l4z8",
+        video: "https://www.youtube.com/embed/MctlHrLSm70",
         information: "Want a deeper look at how MESG can be used to connect to smart contracts? Head on over to the following resources for updates on this integration.",
         resources: [
-          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=aragon_usecase" },
+          { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration-milestone-2/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=aragon_usecase" },
           { title: "Github", to: "https://github.com/mesg-foundation/aragon" },
           { title: "Aragon forum", to: "https://forum.aragon.org/t/mesg-integration-with-aragon-daos-milestone-1/1814/4" }
         ],
