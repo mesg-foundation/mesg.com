@@ -657,16 +657,17 @@ export const getters = {
         challenges: "Ethereum smart contracts have a usability problem. It’s a challenge to connect to centralized technologies which are known to enhance user experience and boost adoption.",
         goals: "To build an Aragon application that allows users of any Aragon decentralized autonomous organization to boost UX by connecting to a suite of web services through a UI.",
         benefits: [
-          "Connect any Aragon DAO to external web services within the native dashboard.",
+          "Connect any Aragon DAO to external web services within the native dashboard using the MESG Application.",
           "Automatically react to smart contract events in real time."
         ],
         opportunities: [
           "Users can use subscription-based services, such as Sendgrid, without paying for a subscription first.",
-          "Enhance DAOs, or other smart contract applications, with event-driven actions to provide users with excellent user experiences.",
-          "A public website allowing anyone to connect any event from an Aragon DAO to a list of available connectors."
+          "Notifications: Get notified when actions occur on your DAO instead of needing to actively check.",
+          "Set and forget: Be reactive instead of active on DAO decisions. Either be lazy or avoid thinking about it when you don’t need to.",
+          "A public website allowing anyone to connect any event from an Aragon DAO to a list of available connectors, connecting your DAO to the outside world."
         ],
         video: "https://www.youtube.com/embed/MctlHrLSm70",
-        information: "Want a deeper look at how MESG can be used to connect to smart contracts? Head on over to the following resources for updates on this integration.",
+        information: "Want a deeper look at how MESG can be used to leverage actions from smart contracts? Head on over to the following resources for updates on this integration.",
         resources: [
           { title: "Read the full article", to: "https://blog.mesg.com/aragon-dao-integration-milestone-2/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=aragon_usecase" },
           { title: "Github", to: "https://github.com/mesg-foundation/aragon" },
