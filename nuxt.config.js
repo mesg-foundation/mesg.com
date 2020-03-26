@@ -88,6 +88,7 @@ module.exports = {
   generate: {
     routes: [
       ...[
+        'expand-dao-functionalities',
         'plasma-exit-challenge',
         'send-messages-from-a-satellite',
         'enhance-zapier-workflows',
