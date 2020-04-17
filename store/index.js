@@ -208,54 +208,44 @@ export const getters = {
 
   team() {
     return {
-      members: {
-        founders: [
-          {
-            src: require("~/assets/team/Anthony.jpg"),
-            title: "Anthony Estebe",
-            description: "CEO, Co-founder",
-            linkedin: "https://www.linkedin.com/in/anthony-estebe-aab18831/"
-          },
-          {
-            src: require("~/assets/team/Nicolas.jpg"),
-            title: "Nicolas Mahe",
-            description: "CTO, Co-founder",
-            linkedin: "https://www.linkedin.com/in/nicolas-mahe/"
-          },
-          {
-            src: require("~/assets/team/Alexis.jpg"),
-            title: "Alexis Sirkia",
-            description: "Co-founder",
-            linkedin: "https://www.linkedin.com/in/sirkia/"
-          }
-        ],
-        other: [
-          {
-            src: require("~/assets/team/Will.jpg"),
-            title: "Will Morgan",
-            description: "Brand Manager",
-            linkedin: "https://www.linkedin.com/in/will-morgan-02a18326/"
-          },
-          {
-            src: require("~/assets/team/Emmanuel.jpg"),
-            title: "Emmanuel Drouin",
-            description: "UI / UX Designer",
-            linkedin: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/"
-          },
-          {
-            src: require("~/assets/team/Hubert.jpg"),
-            title: "Hubert Krauze",
-            description: "Core Developer",
-            linkedin: "https://www.linkedin.com/in/hubert-krauze-67a6389b/"
-          },
-          {
-            src: require("~/assets/team/Benz.jpg"),
-            title: "Thotsaphon Ruthamnong",
-            description: "Developer",
-            linkedin: "https://www.linkedin.com/in/thotsaphon-ruthamnong-a5889b111/"
-          }
-        ]
-      },
+      members: [
+        {
+          src: require("~/assets/team/Anthony.jpg"),
+          title: "Anthony Estebe",
+          description: "CEO, Co-founder",
+          linkedin: "https://www.linkedin.com/in/anthony-estebe-aab18831/"
+        },
+        {
+          src: require("~/assets/team/Nicolas.jpg"),
+          title: "Nicolas Mahe",
+          description: "CTO, Co-founder",
+          linkedin: "https://www.linkedin.com/in/nicolas-mahe/"
+        },
+        {
+          src: require("~/assets/team/Alexis.jpg"),
+          title: "Alexis Sirkia",
+          description: "Co-founder",
+          linkedin: "https://www.linkedin.com/in/sirkia/"
+        },
+        {
+          src: require("~/assets/team/Will.jpg"),
+          title: "Will Morgan",
+          description: "Brand Manager",
+          linkedin: "https://www.linkedin.com/in/will-morgan-02a18326/"
+        },
+        {
+          src: require("~/assets/team/Emmanuel.jpg"),
+          title: "Emmanuel Drouin",
+          description: "UI / UX Designer",
+          linkedin: "https://www.linkedin.com/in/emmanuel-drouin-2951937a/"
+        },
+        {
+          src: require("~/assets/team/Benz.jpg"),
+          title: "Thotsaphon Ruthamnong",
+          description: "Developer",
+          linkedin: "https://www.linkedin.com/in/thotsaphon-ruthamnong-a5889b111/"
+        }
+      ]
     }
   },
 
