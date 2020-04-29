@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Banner />
     <Menu
       :logo="require('~/assets/MESG-logo-horizontal-purple.svg')"
       :items="menu"
@@ -30,8 +29,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.menu {
-  position: relative;
-}
-</style>
