@@ -1,5 +1,13 @@
 <template>
-  <a :href="article.url" :id="article.id" target="_blank" flex column quarter mb1>
+  <a
+    :href="`${article.url}?utm_source=mesg.com&utm_medium=home_showcase_articles&utm_campaign=blog_articles`"
+    :id="article.id"
+    target="_blank"
+    flex
+    column
+    quarter
+    mb1
+  >
     <img :src="article.feature_image" :alt="article.title" mb1 />
     <div>
       <div class="tag-date" flex row align-center>

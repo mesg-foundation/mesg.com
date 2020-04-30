@@ -35,7 +35,11 @@
             <p
               mb2
             >Find new services to implement in your applications. Any service from the Marketplace featuring any technology or language and can be added to any process or application.</p>
-            <Button secondary :href="externalLinks.marketplace" target="_blank">MESG Marketplace</Button>
+            <Button
+              secondary
+              :href="externalLinks.marketplaceShowcase"
+              target="_blank"
+            >MESG Marketplace</Button>
           </div>
         </div>
       </Container>
@@ -48,7 +52,7 @@
           <div flex row mobile-column mb2>
             <Article v-for="article in articles" :key="article.id" :article="article" />
           </div>
-          <Button secondary :href="externalLinks.blog" target="_blank">Read our blog</Button>
+          <Button secondary :href="externalLinks.blogShowcase" target="_blank">Read our blog</Button>
         </div>
       </Container>
     </section>

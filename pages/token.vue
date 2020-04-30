@@ -62,7 +62,7 @@
           :src="require('~/assets/token/token-distribution.svg')"
           title="Token distribution"
           action="ATD website"
-          :href="externalLinks.atd"
+          :href="externalLinks.atdToken"
         >
           <template v-slot:right>
             <h4 mb2>Total token supply 250MM</h4>

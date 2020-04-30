@@ -26,10 +26,10 @@
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
-              <a :href="externalLinks.getStarted" target="_blank">Get started</a>
-              <a :href="externalLinks.marketplace" target="_blank">Marketplace</a>
-              <a :href="externalLinks.documentation" target="_blank">Documentation</a>
-              <a :href="externalLinks.tutorials" target="_blank">Tutorials</a>
+              <a :href="externalLinks.quickStartFooter" target="_blank">Get started</a>
+              <a :href="externalLinks.marketplaceFooter" target="_blank">Marketplace</a>
+              <a :href="externalLinks.documentationFooter" target="_blank">Documentation</a>
+              <a :href="externalLinks.tutorialsFooter" target="_blank">Tutorials</a>
               <a :href="externalLinks.github" target="_blank">Github</a>
             </li>
             <li flex column quarter>
@@ -38,13 +38,13 @@
               <nuxt-link :to="links.token">Token</nuxt-link>
               <nuxt-link :to="links.roadmap">Roadmap</nuxt-link>
               <nuxt-link :to="links.faq">Help Center</nuxt-link>
-              <a :href="externalLinks.blog" target="_blank">Blog</a>
+              <a :href="externalLinks.blogFooter" target="_blank">Blog</a>
               <a :href="externalLinks.press" target="_blank">Press & Media</a>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Community</a>
               <nuxt-link :to="links.contributions">Contributions Hub</nuxt-link>
-              <a :href="externalLinks.forum" target="_blank">Forum</a>
+              <a :href="externalLinks.forumFooter" target="_blank">Forum</a>
               <a :href="externalLinks.discord" target="_blank">Discord</a>
             </li>
           </ul>
@@ -70,9 +70,9 @@ export default {
     }),
     icons() {
       return [
-        { href: this.externalLinks.blog, icon: "fab fa-medium" },
+        { href: this.externalLinks.blogFooter, icon: "fab fa-medium" },
         { href: this.externalLinks.github, icon: "fab fa-github" },
-        { href: this.externalLinks.forum, icon: "fas fa-comments" },
+        { href: this.externalLinks.forumFooter, icon: "fas fa-comments" },
         { href: this.externalLinks.discord, icon: "fab fa-discord" },
         { href: this.externalLinks.twitter, icon: "fab fa-twitter" },
         { href: this.externalLinks.telegram, icon: "fab fa-telegram-plane" },

@@ -2,7 +2,7 @@
   <div>
     <Header :image="require('~/assets/getstarted.svg')" :title="title" :description="description">
       <div>
-        <Button :href="externalLinks.getStarted" primary target="_blank" mt2>Quick start</Button>
+        <Button :href="externalLinks.quickStartCTAHead" primary target="_blank" mt2>Quick start</Button>
       </div>
     </Header>
 
@@ -102,7 +102,7 @@
           <div flex column half>
             <div class="title-link" flex row space-between align-center mb1>
               <h3>Tutorials</h3>
-              <a :href="externalLinks.tutorials" target="_blank" class="link">See all</a>
+              <a :href="externalLinks.tutorialsGetStarted" target="_blank" class="link">See all</a>
             </div>
             <p
               mb1
@@ -163,7 +163,7 @@
       icon="fal fa-book"
       title="Get started"
       description="Don’t know where to begin? Get going with the quickstart guide on our documentation."
-      :links="[{ title: 'Quick start' , href: externalLinks.getStarted }]"
+      :links="[{ title: 'Quick start' , href: externalLinks.quickStartCTABottom }]"
       mb1
     />
   </div>
