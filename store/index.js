@@ -1196,6 +1196,7 @@ export const getters = {
       processGetStarted: "https://docs.mesg.com/guide/process/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_process",
       serviceGetStarted: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_service",
       quickStartGetStarted: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_quick_start",
+      quickStartCTAMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_cta&utm_campaign=doc_quick_start",
       quickStartMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_quick_start",
       quickStartFooter: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_quick_start",
       quickStartCTAHead: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_head&utm_campaign=doc_quick_start",
@@ -1274,7 +1275,7 @@ export const getters = {
     { text: 'Showcase', to: links.showcase },
     { text: 'Contributions', to: links.contributions },
     { text: 'Token', to: links.token },
-    { text: 'Get started', to: links.getstarted, type: 'button' }
+    { text: 'Get started', to: externalLinks.quickStartCTAMenu, type: 'button' }
     ]
   }
 }
