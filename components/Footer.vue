@@ -25,15 +25,13 @@
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
-              <a :href="externalLinks.documentationFooter" target="_blank">Documentation</a>
-              <a :href="externalLinks.tutorialsFooter" target="_blank">Tutorials</a>
               <a :href="externalLinks.github" target="_blank">Github</a>
               <nuxt-link :to="links.showcase">Showcase</nuxt-link>
+              <a :href="externalLinks.roadmap" target="_blank">Roadmap</a>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>About us</a>
               <nuxt-link :to="links.foundation">Foundation</nuxt-link>
-              <a :href="externalLinks.roadmap" target="_blank">Roadmap</a>
               <nuxt-link :to="links.faq">Help Center</nuxt-link>
               <a :href="externalLinks.blogFooter" target="_blank">Blog</a>
               <a :href="externalLinks.press" target="_blank">Press & Media</a>

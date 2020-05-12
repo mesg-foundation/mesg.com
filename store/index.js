@@ -1260,18 +1260,8 @@ export const getters = {
         { text: 'Liteflow', to: externalLinks.liteflowMenu }
       ]
     },
-    {
-      text: 'Developers',
-      to: '#',
-      subMenu: [
-        { text: 'Documentation', to: externalLinks.documentationMenu },
-        { text: 'Tutorials', to: externalLinks.tutorialsMenu },
-        { text: 'Github', to: externalLinks.github }
-      ]
-    },
     { text: 'Showcase', to: links.showcase },
-    { text: 'Contributions', to: links.contributions },
-    { text: 'Get started', to: externalLinks.quickStartCTAMenu, type: 'button' }
+    { text: 'Github', to: externalLinks.github }
     ]
   }
 }
