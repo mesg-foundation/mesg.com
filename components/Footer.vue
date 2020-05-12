@@ -17,26 +17,23 @@
           </div>
           <ul flex row mobile-column>
             <li flex column quarter>
-              <a href="#" class="category" mb1>Technology</a>
+              <a href="#" class="category" mb1>Products</a>
               <nuxt-link :to="links.engine">SDK</nuxt-link>
               <nuxt-link :to="links.marketplace">Services</nuxt-link>
               <nuxt-link :to="links.orchestrator">Process</nuxt-link>
-              <nuxt-link :to="links.enterprise">Enterprise</nuxt-link>
-              <nuxt-link :to="links.showcase">Showcase</nuxt-link>
+              <a :href="externalLinks.liteflowFooter" target="_blank">Liteflow</a>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>
-              <a :href="externalLinks.quickStartFooter" target="_blank">Get started</a>
-              <a :href="externalLinks.marketplaceFooter" target="_blank">Marketplace</a>
               <a :href="externalLinks.documentationFooter" target="_blank">Documentation</a>
               <a :href="externalLinks.tutorialsFooter" target="_blank">Tutorials</a>
               <a :href="externalLinks.github" target="_blank">Github</a>
+              <nuxt-link :to="links.showcase">Showcase</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>About us</a>
               <nuxt-link :to="links.foundation">Foundation</nuxt-link>
-              <nuxt-link :to="links.token">Token</nuxt-link>
-              <nuxt-link :to="links.roadmap">Roadmap</nuxt-link>
+              <a :href="externalLinks.roadmap" target="_blank">Roadmap</a>
               <nuxt-link :to="links.faq">Help Center</nuxt-link>
               <a :href="externalLinks.blogFooter" target="_blank">Blog</a>
               <a :href="externalLinks.press" target="_blank">Press & Media</a>
