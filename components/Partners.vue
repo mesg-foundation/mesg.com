@@ -23,7 +23,7 @@
         </a>
       </li>
       <li>
-        <a href="https://www.yellow.com/" target="_blank">
+        <a href="https://www.incubator.yellow.com/incubator" target="_blank">
           <img src="~/assets/partners/yellow.svg" alt="Yellow logo" />
         </a>
       </li>

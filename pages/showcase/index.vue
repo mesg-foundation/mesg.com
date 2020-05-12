@@ -12,9 +12,6 @@
         <div flex row wrap mb2 class="usecases">
           <UseCase mb2 v-for="usecase in usecases" :key="usecase.id" :usecase="usecase" />
         </div>
-        <TypeFormPopup :id="forms.contactForm" class="form">
-          <Button primary>Submit my project</Button>
-        </TypeFormPopup>
       </Container>
     </section>
 
