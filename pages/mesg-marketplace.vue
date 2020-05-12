@@ -9,12 +9,7 @@
         <span flex class="label">{{ marketplace.label }}</span>
       </template>
       <div>
-        <Button
-          :href="externalLinks.marketplaceCTAHead"
-          target="_blank"
-          primary
-          mt2
-        >MESG Marketplace</Button>
+        <Button :to="links.getstarted" primary mt2>Get started</Button>
       </div>
     </Header>
 
