@@ -22,7 +22,7 @@
     <section id="presentation">
       <Container flex column class="intro text-center">
         <h2 mb1>Technology</h2>
-        <p>Together, the MESG Engine, Services, Processes, and Token form an ultra-efficient, open economy of application development and hosting.</p>
+        <p>Together, the MESG Engine, Services, Processes form an ultra-efficient, open network of application development and hosting.</p>
       </Container>
     </section>
 
