@@ -109,7 +109,7 @@ export const getters = {
     ]
   },
 
-  home() {
+  home(_, { links, externalLinks }) {
     return {
       features: {
         primary: [
@@ -120,6 +120,12 @@ export const getters = {
           { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
         ]
       },
+      entrypoints: [
+        { id: "sdk", label: "Install the Engine", img: require("~/assets/engine/engine.svg"), title: "SDK", to: links.engine },
+        { id: "services", label: "Build and reuse", img: require("~/assets/marketplace/marketplace.svg"), title: "Services", to: links.marketplace },
+        { id: "process", label: "Orchestrate services", img: require("~/assets/orchestrator.svg"), title: "Process", to: links.orchestrator },
+        { id: "liteflow", label: "Build and ship faster", img: require("~/assets/orchestrator.svg"), title: "Liteflow", href: externalLinks.liteflow }
+      ]
     }
   },
 
@@ -1225,8 +1231,8 @@ export const getters = {
       reddit: "https://www.reddit.com/r/MESG/",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
-      press: "https://handbook.mesg.com/assets/"
-
+      press: "https://handbook.mesg.com/assets/",
+      liteflow: "https://liteflow.com/"
     }
   },
 

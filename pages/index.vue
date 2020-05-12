@@ -30,24 +30,41 @@
       <Container>
         <div flex row space-between wrap>
           <Card flex row mobile-column>
-            <nuxt-link
-              v-for="product in products"
-              :key="product.id"
-              :id="product.id"
-              :to="links[product.id]"
-              class="technology-card"
-              flex
-              column
-              align-center
-              p2
-            >
-              <div>
-                <img mb2 :src="product.img" :alt="product.title" />
-              </div>
-              <span class="label text-center">{{ product.label }}</span>
-              <h3 mb1>{{ product.title }}</h3>
-              <i class="fal fa-long-arrow-alt-right"></i>
-            </nuxt-link>
+            <div v-for="(entrypoints, i) in home.entrypoints" :key="i" class="technology-card">
+              <nuxt-link
+                :id="entrypoints.id"
+                :to="entrypoints.to"
+                flex
+                column
+                align-center
+                p2
+                v-if="entrypoints.to"
+              >
+                <div>
+                  <img mb2 :src="entrypoints.img" :alt="entrypoints.title" />
+                </div>
+                <span class="label text-center">{{ entrypoints.label }}</span>
+                <h3 mb1>{{ entrypoints.title }}</h3>
+                <i class="fal fa-long-arrow-alt-right"></i>
+              </nuxt-link>
+              <a
+                :id="entrypoints.id"
+                :href="entrypoints.href"
+                flex
+                column
+                align-center
+                p2
+                v-else
+                target="_blank"
+              >
+                <div>
+                  <img mb2 :src="entrypoints.img" :alt="entrypoints.title" />
+                </div>
+                <span class="label text-center">{{ entrypoints.label }}</span>
+                <h3 mb1>{{ entrypoints.title }}</h3>
+                <i class="fal fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
           </Card>
         </div>
       </Container>
@@ -218,9 +235,6 @@ export default {
       transform: scale(1.01);
       background-color: transparentize($primary-light, 0.85);
     }
-    &:last-child {
-      border-right: none;
-    }
     img {
       height: 140px;
       width: 140px;
@@ -244,7 +258,7 @@ export default {
     padding-bottom: 0;
   }
   .technology-card {
-    border-right: none;
+    border-right: none !important;
     border-bottom: dotted 1px $lavender-light;
     &:last-child {
       border-bottom: none;
