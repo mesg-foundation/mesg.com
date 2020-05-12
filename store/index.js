@@ -1191,19 +1191,14 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentationMenu: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_home",
-      documentationFooter: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_home",
       processGetStarted: "https://docs.mesg.com/guide/process/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_process",
       serviceGetStarted: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_service",
       quickStartGetStarted: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_quick_start",
-      quickStartCTAMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_cta&utm_campaign=doc_quick_start",
-      quickStartFooter: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_quick_start",
       quickStartCTAHead: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_head&utm_campaign=doc_quick_start",
       quickStartCTABottom: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_bottom&utm_campaign=doc_quick_start",
       marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=service_cta_bottom&utm_campaign=explorer_services",
       marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
       marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
-      marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
       blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
       blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
       blogSocial: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=blog_home",
