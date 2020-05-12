@@ -1,5 +1,5 @@
 export const getters = {
-  products(_, { links }) {
+  products(_, { links, externalLinks }) {
     return [
       {
         id: "engine",
@@ -11,7 +11,7 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=sdk_link&utm_campaign=doc_home", action: "Documentation"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
             },
             {
               src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "Services"
@@ -42,7 +42,7 @@ export const getters = {
           "Reuse existing services to save time building applications, or earn royalties from the new services you create.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=services_link&utm_campaign=doc_home", action: "Documentation" },
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: externalLinks.github, action: "Github" },
             { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" },
             { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Services", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
           ],
@@ -465,7 +465,7 @@ export const getters = {
       href: "#community",
       contents: [{
         title: "Is MESG open source?",
-        description: "Yes. Our software is not patented, but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone from the community can help improve features or <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=faq_link&utm_campaign=doc_home' class=link target='_blank'>the documentation</a> or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
+        description: "Yes. Our software is not patented, but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone from the community can help improve features or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
       },
       {
         title: "Who can benefit from MESG?",
@@ -931,7 +931,6 @@ export const getters = {
         icon: "fal fa-layer-plus",
         category: "Dev UX",
         list: [
-          "Improve the <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=doc_home' target='_blank' class='link'>documentation</a>",
           "Create <a href='https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=tutorials_home' target='_blank' class='link'>tutorials</a>",
           "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
@@ -943,7 +942,6 @@ export const getters = {
         list: [
           "Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
           "Create informative diagrams",
-          "Improve the <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=doc_home' target='_blank' class='link'>documentation</a>",
           "..."
         ]
       },
