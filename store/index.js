@@ -1256,9 +1256,8 @@ export const getters = {
       ]
     },
     { text: 'Showcase', to: links.showcase },
-    { text: 'Github', to: externalLinks.github }
+    { text: 'Github', href: externalLinks.github }
     ]
   }
 }
-
 
