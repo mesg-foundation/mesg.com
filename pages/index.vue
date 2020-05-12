@@ -24,31 +24,6 @@
       </Container>
     </section>
 
-    <section id="alert" mb3>
-      <Container>
-        <Card class="alert-card" p1>
-          <div flex row align-center space-between mobile-column>
-            <div class="alert-icon">
-              <span flex align-center>
-                <i class="fal fa-coins"></i>
-              </span>
-            </div>
-            <div class="content">
-              <p>Learn how the MESG economy works</p>
-            </div>
-            <nav flex column quarter>
-              <Button
-                white
-                href="https://blog.mesg.com/token-utility-in-the-mesg-economy/?utm_source=mesg.com&utm_medium=home_cta&utm_campaign=mesg_economy"
-                target="_blank"
-                class="track-button"
-              >Discover</Button>
-            </nav>
-          </div>
-        </Card>
-      </Container>
-    </section>
-
     <section id="presentation">
       <Container flex column class="intro text-center">
         <h2 mb1>Technology</h2>

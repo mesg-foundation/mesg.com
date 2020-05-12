@@ -9,17 +9,14 @@
     <Container class="bottom" p2>
       <p class="infos">
         By submitting this form you agree to receive email updates. Find out how we process
-        <a
-          href
-          class="link"
-          target="_blank"
-        >your data</a>.
+        <nuxt-link :to="links.policy" class="link">your data</nuxt-link>.
       </p>
     </Container>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Container from "~/components/Container";
 import Newsletter from "~/components/Newsletter";
 export default {
@@ -34,7 +31,10 @@ export default {
     description: {
       type: String
     }
-  }
+  },
+  computed: mapGetters({
+    links: "links"
+  })
 };
 </script>
 
