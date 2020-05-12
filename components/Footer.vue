@@ -7,7 +7,7 @@
             <nuxt-link :to="links.home" mb1>
               <img src="~/assets/MESG-logo-horizontal-purple.svg" alt="MESG" />
             </nuxt-link>
-            <p class="copyright" mb2>© 2019 MESG Foundation</p>
+            <p class="copyright" mb2>© 2020 MESG Foundation</p>
             <nuxt-link :to="links.policy" class="policy" mb2>Privacy & Cookie Policy</nuxt-link>
             <div flex space-between wrap>
               <a v-for="(icon, i) in icons" :key="i" :href="icon.href" target="_blank" class="icon">
