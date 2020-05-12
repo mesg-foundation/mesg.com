@@ -5,7 +5,12 @@
         <span flex class="label">{{ orchestrator.label }}</span>
       </template>
       <div>
-        <Button :to="links.getstarted" primary mt2>Start building</Button>
+        <Button
+          :href="externalLinks.liteflowCTAHead"
+          target="_blank"
+          primary
+          mt2
+        >Build now with Liteflow</Button>
       </div>
     </Header>
 
@@ -61,13 +66,11 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Build faster with MESG Orchestrator"
-      description="Start creating feature-rich software today with a simple process file."
+      title="The Liteflow Framework"
+      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
-    >
-      <Button :to="links.getstarted" target="_blank" white>Start building</Button>
-    </CTA>
+    />
   </div>
 </template>
 

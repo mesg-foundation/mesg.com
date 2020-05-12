@@ -10,11 +10,11 @@
       </template>
       <div>
         <Button
-          :href="externalLinks.marketplaceCTAHead"
+          :href="externalLinks.liteflowCTAHead"
           target="_blank"
           primary
           mt2
-        >MESG Marketplace</Button>
+        >Build now with Liteflow</Button>
       </div>
     </Header>
 
@@ -100,10 +100,9 @@
     </section>
 
     <CTA
-      icon="fal fa-store"
-      title="Marketplace"
-      description="MESG Marketplace beta is out now. Earn tokens when your services are used or save time by purchasing access to services."
-      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplaceCTABottom }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
