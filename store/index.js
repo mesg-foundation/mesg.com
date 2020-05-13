@@ -1217,7 +1217,8 @@ export const getters = {
       liteflowCTABottom: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_bottom&utm_campaign=mesg_to_liteflow",
       liteflowMenu: "https://liteflow.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=mesg_to_liteflow",
       liteflowFooter: "https://liteflow.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=mesg_to_liteflow",
-      roadmap: "https://github.com/orgs/mesg-foundation/projects/25"
+      roadmap: "https://github.com/orgs/mesg-foundation/projects/25",
+      tokenUtility: "https://blog.mesg.com/token-utility-in-the-mesg-economy/?utm_source=mesg.com&utm_medium=token_page_cta&utm_campaign=token_utility"
     }
   },
 
