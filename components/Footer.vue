@@ -17,11 +17,11 @@
           </div>
           <ul flex row mobile-column>
             <li flex column quarter>
-              <a href="#" class="category" mb1>Products</a>
+              <a href="#" class="category" mb1>Technology</a>
               <nuxt-link :to="links.engine">SDK</nuxt-link>
               <nuxt-link :to="links.marketplace">Services</nuxt-link>
               <nuxt-link :to="links.orchestrator">Process</nuxt-link>
-              <a :href="externalLinks.liteflowFooter" target="_blank">Liteflow</a>
+              <nuxt-link :to="links.token">Token</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>

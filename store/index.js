@@ -1242,13 +1242,13 @@ export const getters = {
 
   menu(_, { links, externalLinks }) {
     return [{
-      text: 'Products',
+      text: 'Technology',
       to: '#',
       subMenu: [
         { text: 'SDK', to: links.engine },
         { text: 'Services', to: links.marketplace },
         { text: 'Process', to: links.orchestrator },
-        { text: 'Liteflow', to: externalLinks.liteflowMenu }
+        { text: 'Token', to: links.token }
       ]
     },
     { text: 'Showcase', to: links.showcase },
