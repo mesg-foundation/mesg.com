@@ -1189,21 +1189,14 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentationMenu: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_home",
-      documentationFooter: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_home",
       processGetStarted: "https://docs.mesg.com/guide/process/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_process",
       serviceGetStarted: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_service",
       quickStartGetStarted: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_quick_start",
-      quickStartCTAMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_cta&utm_campaign=doc_quick_start",
-      quickStartMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_quick_start",
-      quickStartFooter: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_quick_start",
       quickStartCTAHead: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_head&utm_campaign=doc_quick_start",
       quickStartCTABottom: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_bottom&utm_campaign=doc_quick_start",
       marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=service_cta_bottom&utm_campaign=explorer_services",
       marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
       marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
-      marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
-      marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
       blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
       blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
       blogSocial: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=blog_home",
@@ -1223,7 +1216,10 @@ export const getters = {
       reddit: "https://www.reddit.com/r/MESG/",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
-      press: "https://handbook.mesg.com/assets/"
+      press: "https://handbook.mesg.com/assets/",
+      liteflowMenu: "https://liteflow.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=mesg_to_liteflow",
+      liteflowFooter: "https://liteflow.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=mesg_to_liteflow",
+      roadmap: "https://github.com/orgs/mesg-foundation/projects/25"
     }
   },
 
@@ -1248,32 +1244,18 @@ export const getters = {
 
   menu(_, { links, externalLinks }) {
     return [{
-      text: 'Technology',
+      text: 'Products',
       to: '#',
       subMenu: [
         { text: 'SDK', to: links.engine },
         { text: 'Services', to: links.marketplace },
         { text: 'Process', to: links.orchestrator },
-        { text: 'Enterprise', to: links.enterprise }
-      ]
-    },
-    {
-      text: 'Developers',
-      to: '#',
-      subMenu: [
-        { text: 'Get started', to: externalLinks.quickStartMenu },
-        { text: 'Marketplace', to: externalLinks.marketplaceMenu },
-        { text: 'Documentation', to: externalLinks.documentationMenu },
-        { text: 'Tutorials', to: externalLinks.tutorialsMenu },
-        { text: 'Github', to: externalLinks.github }
+        { text: 'Liteflow', to: externalLinks.liteflowMenu }
       ]
     },
     { text: 'Showcase', to: links.showcase },
-    { text: 'Contributions', to: links.contributions },
-    { text: 'Token', to: links.token },
-    { text: 'Get started', to: externalLinks.quickStartCTAMenu, type: 'button' }
+    { text: 'Github', to: externalLinks.github }
     ]
   }
 }
-
 
