@@ -1224,7 +1224,6 @@ export const getters = {
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/"
-
     }
   },
 
