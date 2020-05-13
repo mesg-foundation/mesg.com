@@ -15,30 +15,9 @@
       </Container>
     </section>
 
-    <section id="separator">
+    <section>
       <Container flex column align-center>
         <hr mb3 />
-      </Container>
-    </section>
-
-    <section id="marketplace" class="outer-background" mb3>
-      <Container>
-        <div flex row mobile-column align-center>
-          <div half p1>
-            <img src="~/assets/marketplace/marketplace.svg" alt="MESG Marketplace" />
-          </div>
-          <div half>
-            <h2 mb1>Get inspired</h2>
-            <p
-              mb2
-            >Find new services to implement in your applications. Any service from the Marketplace featuring any technology or language and can be added to any process or application.</p>
-            <Button
-              secondary
-              :href="externalLinks.marketplaceShowcase"
-              target="_blank"
-            >MESG Marketplace</Button>
-          </div>
-        </div>
       </Container>
     </section>
 
@@ -142,9 +121,6 @@ export default {
   }
   .community {
     margin-top: calc(#{$margin} * 3);
-  }
-  #separator .container {
-    padding-bottom: 0;
   }
 }
 
