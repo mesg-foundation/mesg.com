@@ -1213,6 +1213,8 @@ export const getters = {
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/",
+      liteflowCTAHead: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_header&utm_campaign=mesg_to_liteflow",
+      liteflowCTABottom: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_bottom&utm_campaign=mesg_to_liteflow",
       liteflowMenu: "https://liteflow.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=mesg_to_liteflow",
       liteflowFooter: "https://liteflow.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=mesg_to_liteflow",
       roadmap: "https://github.com/orgs/mesg-foundation/projects/25"

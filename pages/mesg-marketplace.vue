@@ -9,7 +9,12 @@
         <span flex class="label">{{ marketplace.label }}</span>
       </template>
       <div>
-        <Button :to="links.getstarted" primary mt2>Get started</Button>
+        <Button
+          :href="externalLinks.liteflowCTAHead"
+          target="_blank"
+          primary
+          mt2
+        >Build now with Liteflow</Button>
       </div>
     </Header>
 
@@ -95,10 +100,9 @@
     </section>
 
     <CTA
-      icon="fal fa-store"
-      title="Marketplace"
-      description="MESG Marketplace beta is out now. Save time by sharing and reusing services."
-      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplaceCTABottom }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>

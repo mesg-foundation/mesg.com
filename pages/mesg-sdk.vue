@@ -9,7 +9,12 @@
         <span flex class="label">{{ engine.label }}</span>
       </template>
       <div>
-        <Button :to="links.getstarted" primary mt2>Get started</Button>
+        <Button
+          :href="externalLinks.liteflowCTAHead"
+          target="_blank"
+          primary
+          mt2
+        >Build now with Liteflow</Button>
       </div>
     </Header>
 
@@ -119,10 +124,9 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Get started"
-      description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Get started' , to: links.getstarted }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
