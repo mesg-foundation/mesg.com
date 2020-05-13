@@ -31,7 +31,7 @@
       </Container>
     </section>
 
-    <section id="technology" mb3 class="outer-background">
+    <section id="technology" class="outer-background" mb3>
       <Container>
         <div flex row space-between wrap>
           <Card flex row mobile-column>
@@ -55,6 +55,30 @@
             </nuxt-link>
           </Card>
         </div>
+      </Container>
+    </section>
+
+    <section id="liteflow" mb3>
+      <Container>
+        <div flex row mobile-column-reverse align-center>
+          <div>
+            <span flex class="label">Built on MESG</span>
+            <h2 mb1>The Liteflow Framework</h2>
+            <p
+              mb2
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor lorem sit amet lacus aliquam, a posuere nibh luctus.</p>
+            <Button :href="externalLinks.liteflowHome" target="_blank" primary>Discover Liteflow</Button>
+          </div>
+          <div class="img-bg" flex row half align-center>
+            <img src="~/assets/liteflow-x2.png" alt="Liteflow Website" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
       </Container>
     </section>
 
@@ -233,6 +257,22 @@ export default {
   }
 }
 
+#liteflow {
+  .img-bg {
+    position: relative;
+    height: 490px;
+    background-color: #ffeee6;
+    border-radius: 6px;
+  }
+  img {
+    position: relative;
+    left: calc(#{$margin} * 2);
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
 @media only screen and (max-width: $mobile-breakpoint) {
   #alert {
     .alert-icon {
@@ -252,6 +292,17 @@ export default {
     border-bottom: dotted 1px $lavender-light;
     &:last-child {
       border-bottom: none;
+    }
+  }
+  #liteflow {
+    .img-bg {
+      margin-top: $margin;
+      margin-bottom: calc(#{$margin} * 3) !important;
+      padding: $margin;
+      height: 300px;
+    }
+    img {
+      left: 0;
     }
   }
   #more-infos {

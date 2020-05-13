@@ -842,6 +842,7 @@ export const getters = {
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
       press: "https://handbook.mesg.com/assets/",
       liteflowCTAHead: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_header&utm_campaign=mesg_to_liteflow",
+      liteflowHome: "http://liteflow.com/?utm_source=mesg.com&utm_medium=home_section&utm_campaign=mesg_to_liteflow",
       liteflowCTABottom: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_bottom&utm_campaign=mesg_to_liteflow",
       roadmap: "https://github.com/orgs/mesg-foundation/projects/25",
       tokenUtility: "https://blog.mesg.com/token-utility-in-the-mesg-economy/?utm_source=mesg.com&utm_medium=token_page_cta&utm_campaign=token_utility"
