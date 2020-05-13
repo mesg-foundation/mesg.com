@@ -97,7 +97,7 @@
     <CTA
       icon="fal fa-store"
       title="Marketplace"
-      description="MESG Marketplace beta is out now. Earn tokens when your services are used or save time by purchasing access to services."
+      description="MESG Marketplace beta is out now. Save time by sharing and reusing services."
       :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplaceCTABottom }]"
       mb1
     />

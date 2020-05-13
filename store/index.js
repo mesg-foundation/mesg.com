@@ -1,5 +1,5 @@
 export const getters = {
-  products(_, { links }) {
+  products(_, { links, externalLinks }) {
     return [
       {
         id: "engine",
@@ -11,7 +11,7 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=sdk_link&utm_campaign=doc_home", action: "Documentation"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
             },
             {
               src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "Services"
@@ -455,7 +455,7 @@ export const getters = {
       href: "#community",
       contents: [{
         title: "Is MESG open source?",
-        description: "Yes. Our software is not patented, but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone from the community can help improve features or <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=faq_link&utm_campaign=doc_home' class=link target='_blank'>the documentation</a> or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
+        description: "Yes. Our software is not patented, but rather is protected by an open-source software license. This means there are no secrets: it’s free to view the source code and anyone from the community can help improve features or fix bugs in our software.<br/><br/>A collaborative element is inherent to open source software, meaning that any developer can help build any part of MESG itself. We encourage everyone to get involved and help build MESG into the foremost solution connecting blockchains to traditional technologies."
       },
       {
         title: "Who can benefit from MESG?",
@@ -921,7 +921,6 @@ export const getters = {
         icon: "fal fa-layer-plus",
         category: "Dev UX",
         list: [
-          "Improve the <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=doc_home' target='_blank' class='link'>documentation</a>",
           "Create <a href='https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=tutorials_home' target='_blank' class='link'>tutorials</a>",
           "Improve the <a href='https://github.com/mesg-foundation/cli/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen' target='_blank' class='link'>CLI</a>",
           "..."
@@ -933,7 +932,6 @@ export const getters = {
         list: [
           "Write <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>articles</a> about MESG",
           "Create informative diagrams",
-          "Improve the <a href='https://docs.mesg.com/?utm_source=mesg.com&utm_medium=community_link&utm_campaign=doc_home' target='_blank' class='link'>documentation</a>",
           "..."
         ]
       },
@@ -1187,21 +1185,14 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentationMenu: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_home",
-      documentationFooter: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_home",
       processGetStarted: "https://docs.mesg.com/guide/process/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_process",
       serviceGetStarted: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_service",
       quickStartGetStarted: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_quick_start",
-      quickStartCTAMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_cta&utm_campaign=doc_quick_start",
-      quickStartMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_quick_start",
-      quickStartFooter: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_quick_start",
       quickStartCTAHead: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_head&utm_campaign=doc_quick_start",
       quickStartCTABottom: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_bottom&utm_campaign=doc_quick_start",
       marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=service_cta_bottom&utm_campaign=explorer_services",
       marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
       marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
-      marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
-      marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
       blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
       blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
       blogSocial: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=blog_home",
@@ -1221,8 +1212,10 @@ export const getters = {
       reddit: "https://www.reddit.com/r/MESG/",
       contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
-      press: "https://handbook.mesg.com/assets/"
-
+      press: "https://handbook.mesg.com/assets/",
+      liteflowMenu: "https://liteflow.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=mesg_to_liteflow",
+      liteflowFooter: "https://liteflow.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=mesg_to_liteflow",
+      roadmap: "https://github.com/orgs/mesg-foundation/projects/25"
     }
   },
 
@@ -1247,32 +1240,18 @@ export const getters = {
 
   menu(_, { links, externalLinks }) {
     return [{
-      text: 'Technology',
+      text: 'Products',
       to: '#',
       subMenu: [
         { text: 'SDK', to: links.engine },
         { text: 'Services', to: links.marketplace },
         { text: 'Process', to: links.orchestrator },
-        { text: 'Enterprise', to: links.enterprise }
-      ]
-    },
-    {
-      text: 'Developers',
-      to: '#',
-      subMenu: [
-        { text: 'Get started', to: externalLinks.quickStartMenu },
-        { text: 'Marketplace', to: externalLinks.marketplaceMenu },
-        { text: 'Documentation', to: externalLinks.documentationMenu },
-        { text: 'Tutorials', to: externalLinks.tutorialsMenu },
-        { text: 'Github', to: externalLinks.github }
+        { text: 'Liteflow', to: externalLinks.liteflowMenu }
       ]
     },
     { text: 'Showcase', to: links.showcase },
-    { text: 'Contributions', to: links.contributions },
-    { text: 'Token', to: links.token },
-    { text: 'Get started', to: externalLinks.quickStartCTAMenu, type: 'button' }
+    { text: 'Github', to: externalLinks.github }
     ]
   }
 }
-
 
