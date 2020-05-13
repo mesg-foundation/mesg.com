@@ -84,8 +84,6 @@
       <Partners />
     </section>
 
-    <News :articles="articles" mb3 />
-
     <section>
       <Container flex column align-center>
         <hr mb3 />
