@@ -11,23 +11,23 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any process.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into a process.</br></br>Implement to hard-to-reach technologies without managing the complexities.", href: externalLinks.github, action: "Github"
             },
             {
               src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared on the integrated decentralized registry.", to: links.marketplace, action: "Services"
             }
           ],
           secondary: [
-            { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "An efficient way to manage hard-to-reach technologies like blockchains or IoT devices is to build modular apps simply react to real-world events. Your apps remain lightweight, reactive and easy to maintain." },
-            { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine, a tool in the SDK, manages the interaction between all services and applications." },
-            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services, apps and devices on your behalf, resulting in a development and maintenance process that’s far less time consuming." }
+            { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building modular apps that automatically react to real-world events is an efficient way to manage hard-to-reach technologies like blockchains or IoT devices. Applications remain lightweight, reactive and easy to maintain." },
+            { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine manages the interactions between services and applications automatically." },
+            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services and processes on your behalf, so you can spend far less time developing and maintaining your applications." }
           ]
         },
         usecase: [
-          { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language", description: "Language differences between products and teams can cause major setbacks. Services featuring any programming language or data format can be managed using the MESG SDK." },
-          { src: require("~/assets/engine/fast-feature.svg"), title: "Fast integration", description: "Most apps are complex and highly interconnected, making updates challenging and inefficient. The MESG SDK lets you add, remove or update features without affecting other components." },
-          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous processes", description: "Events on difficult-to-reach technologies can be combined into powerful processes. React to Ethereum transactions. Deploy and manage sidechains. The possibilities are endless." },
-          { src: require("~/assets/engine/scalable-apps.svg"), title: "Easy scalability", description: "Servers and local networks have limited bandwidth and maintaining your own servers is costly. Our tools are decentralized, so applications can function autonomously, in a trustless way." }
+          { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language", description: "Language and organizational differences between teams cause major setbacks. The MESG SDK manages interaction between services regardless of languages or data formats, so you don't have to." },
+          { src: require("~/assets/engine/fast-feature.svg"), title: "Fast integration", description: "Most applications today are complex and highly interconnected, making updates challenging and inefficient. With the MESG SDK, add, remove or update features without affecting other components." },
+          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous processes", description: "Events on simple or complex technologies can be easily leveraged within powerful processes. Process a payment. Send a notification. React to blockchain transactions. The possibilities are endless." },
+          { src: require("~/assets/engine/scalable-apps.svg"), title: "Easy scalability", description: "By default, servers and local networks have limited bandwidth. Plus, maintaining servers can be costly. Our tools are decentralized, so applications can scale autonomously in a trustless way." }
         ],
       },
       {
@@ -36,23 +36,23 @@ export const getters = {
         img: require("~/assets/marketplace/marketplace.svg"),
         title: "Services",
         description:
-          "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime this service is used.",
+          "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime your service is used by others.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the decentralized registry are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: externalLinks.github, action: "Github" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "Execution of these services are decentralized and open for anyone to participate.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Compatible by default", description: "All services in the decentralized registry are automatically compatible with each other thanks to the open-source tools in the MESG SDK.<br/><br/>No more installing libraries or learning new data formats before you begin.", href: externalLinks.github, action: "Github" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "Decentralized service executions are open to all who want to contribute.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" }
           ],
           secondary: [
-            { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
-            { src: require("~/assets/enterprise/connect-systems.svg"), title: "Rewarded contribution", description: "All services listed on the decentralized registry receives new execution tokens each time they are used within any other users' applications." },
-            { src: require("~/assets/enterprise/custom-built.svg"), title: "Economy of development", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
+            { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "It's time consuming to forge new connections to devices, blockchains and APIs. Reuse more of your applications so you can stop repeating yourself." },
+            { src: require("~/assets/enterprise/connect-systems.svg"), title: "Rewarded contributions", description: "Each time services listed on the decentralized registry are used within other users' applications, new execution tokens are sent to the original creator." },
+            { src: require("~/assets/enterprise/custom-built.svg"), title: "Development economy", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
           ]
         },
         usecase: [
-          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own registry", description: "Add a decentralized registry to any existing solution. The SDK enables interoperability between all systems and features, so it’s a perfect solution to build and manage your own registry within your product." },
-          { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, while others are best decentralized. So, MESG gives builders complete control over centralization, even offering decentralized executions between decentralized networks." },
-          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous processes", description: "Services from the decentralized registry can be easily combined into powerful processes and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. The possibilities are endless." },
-          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open economy", description: "The registry is completely open, decentralized, and self-regulating, so no single entity has control over participants or submissions, including MESG itself. Anyone can add their services and have full ownership of it." }
+          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Save time integrating features", description: "Reusing components from the decentralized registry saves significant time in building new applications. The SDK ensures seamless interoperability between services, so you don't have to worry about managing service interaction." },
+          { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "Some processes are best kept centralized, while others are better decentralized. MESG gives builders complete control over their level of centralization. You can even enable decentralized executions between decentralized networks." },
+          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous processes", description: "Any services from the decentralized registry can be easily combined into reactive autonomous processes. React when a new user signs up, a new Ethereum transaction is processed, or a new file is uploaded. The possibilities are endless." },
+          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Self-regulating economy", description: "The registry is completely open, decentralized, and self-regulating, so no single entity has control over participants or submissions, including MESG itself. Anyone can add their services and have full ownership over it." }
         ],
       },
       {
@@ -64,15 +64,15 @@ export const getters = {
         features: {
           primary: [
             {
-              title: "Describe your feature", description: "Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed through a config file."
+              title: "Describe your feature", description: "Orchestrate your applications simply by connecting the events and tasks from any service.</br></br>Implement complex technologies without managing the complexities.</br></br>Any new services, or existing services from the decentralized registry can be used to create features.</br></br>Currently, services are managed through a config. file."
             }
           ],
           secondary: [
             {
-              src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file that automatically manages the relationships between your services through events and tasks."
+              src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file and have the relationships between your services through events and tasks automatically managed."
             },
-            { src: require("~/assets/engine/workflows.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features." },
-            { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization easy. Distribute or scale any service, feature or app through a decentralized network of executions." }
+            { src: require("~/assets/engine/workflows.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features for you." },
+            { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization super easy. Distribute or scale any service or application through a decentralized network of executions." }
           ]
         }
       },
@@ -81,12 +81,12 @@ export const getters = {
         label: "Fuel the ecosystem",
         img: require("~/assets/token/token.svg"),
         title: "Token",
-        description: "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace.",
+        description: "Delegate application processing and validation to network participants with the native token. Or receive tokens by sharing components in the decentralized service registry.",
         features: {
           primary: [
-            { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications and get rewarded for your participation." },
-            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants need to deposit a stake to commit to availability and good behavior. Then, participants are rewarded for validating executions." },
-            { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Use and reuse services", description: "Services are shared on a decentralized registry and are run by anyone, rewarding the runner of the service and the initial developer of the service." }
+            { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications, and get rewarded for your participation." },
+            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants are required to deposit a stake, committing to availability and good behavior. Then, participants are rewarded for validating executions." },
+            { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Use and reuse services", description: "When services are shared on the decentralized registry and ran by others, rewards are sent to the runner and the initial developer of the service." }
           ]
         }
       }
@@ -97,9 +97,9 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/marketplace/open-marketplace.svg'), title: "Decentralized registry", description: "Store interoperable services that can be reused and processed by anyone. Every service on this registry is compatible with each other." },
-          { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
-          { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
+          { src: require('~/assets/marketplace/open-marketplace.svg'), title: "Decentralized registry", description: "Stored interoperable services can be reused and processed by anyone. Every service on the registry is compatible with every other." },
+          { src: require("~/assets/engine/development-hours.svg"), title: "Build efficiently", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
+          { src: require("~/assets/token/decentralize-executions.svg"), title: "Maintain control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
         ]
       },
     }
@@ -198,7 +198,7 @@ export const getters = {
       href: "#transactions",
       contents: [{
         title: "How much does MESG cost?",
-        description: "MESG is free to use. Anyone can use the MESG technology to create their own network and monetize this network if they want too with the way they want. The tool is payment agnostic, and you control the creation and distribution of your tokens the way you want.<br/><br/>Keep in mind that to provide a good incentive for runners in the network, the participant should have something to lose to guarantee their good behavior, so free networks might not be fully secured."
+        description: "MESG is free to use. Anyone can use the MESG technology to create their own network and monetize this network if they want too with the way they want. The tool is payment agnostic, and you control the creation and distribution of your tokens however you want.<br/><br/>Keep in mind that to provide proper incentives for runners in the network, the participant should have something to lose to guarantee their good behavior, so free networks may not be fully secured."
       },
       {
         title: "How can I earn tokens with MESG?",
@@ -246,11 +246,11 @@ export const getters = {
       href: "#development",
       contents: [{
         title: "How much time can I save by using MESG?",
-        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically through processes.<br/><br/>These significant time savings can increase even more than if the desired service has already been built."
+        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically through the Engine, directed by processes.<br/><br/>These significant time savings can increase even more than if the desired service has already been built."
       },
       {
         title: "Do I need to be a developer to use MESG?",
-        description: "With MESG’s currently-available functionalities, yes. Development skills are required to build services, and to combine services into processes.<br/><br/>Processes are accessible to non-developers as long as all the services are already built on the decentralized registry but still require technical thinking."
+        description: "Yes. Development skills are required to build services, and to combine services into processes.<br/><br/>Processes are accessible to non-developers as long as all the services are already built on the decentralized registry but still require technical thinking."
       }]
     }]
   },
@@ -261,7 +261,7 @@ export const getters = {
       text: "Personal information",
       href: "#personal-information",
       title: "Collection of personal information",
-      description: "We receive and store any information you knowingly provide to us when you fill any online forms on the Website. You can choose not to provide us with certain information, but then you may not be able to take advantage of some of the Website's features. Users who are uncertain about what information is mandatory are welcome to contact us."
+      description: "We receive and store any information you knowingly provide to us when you fill any online forms on the Website. You may choose not to provide us with certain information, but then you may not be able to take advantage of some of the Website's features. Users who are uncertain about what information is mandatory are welcome to contact us."
     },
     {
       key: "non-personal-information",
@@ -489,7 +489,7 @@ export const getters = {
         paragraphe: "Connect multiple cryptocurrencies with other technologies to securely send a message from space.",
         image: require("~/assets/showcase/opennode-blockstream.svg"),
         challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC-20 token payment.",
-        goals: "To build a business with a MESG App which accepts MESG Tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
+        goals: "To build a business with a MESG App which accepts tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
         benefits: [
           "Integrate multiple cryptocurrencies within a single application.",
           "Automatically react to blockchain transactions in real time."
