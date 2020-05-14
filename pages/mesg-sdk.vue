@@ -36,7 +36,7 @@
         <h2 mb1>Effortless interoperability</h2>
         <p
           mb2
-        >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
+        >The SDK is built for constructing and managing components within modular applications. Add features to any app without the headache.</p>
         <Button
           secondary
           mb2
@@ -125,8 +125,8 @@
 
     <CTA
       title="The Liteflow Framework"
-      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
-      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
+      description="Take a lighter approach with a Framework build on top of MESG. Build and ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
