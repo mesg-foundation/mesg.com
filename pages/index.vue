@@ -141,8 +141,8 @@
 
     <CTA
       title="The Liteflow Framework"
-      description="Take a lighter approach with a Framework built atop MESG. Build and deploy feature-rich applications with just a few lines of code."
-      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
