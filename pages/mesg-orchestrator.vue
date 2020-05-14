@@ -41,7 +41,7 @@
             <div half>
               <Titletext3
                 title="Describe your feature"
-                text="Orchestrate your applications by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and Turing-complete programming languages."
+                text="Orchestrate your applications by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file."
               />
             </div>
           </div>

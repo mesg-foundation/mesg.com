@@ -64,7 +64,7 @@ export const getters = {
         features: {
           primary: [
             {
-              title: "Describe your feature", description: "Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed through a config file, and soon, other formats will become available like a UI and turing- complete programming languages."
+              title: "Describe your feature", description: "Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed through a config file."
             }
           ],
           secondary: [
@@ -72,7 +72,7 @@ export const getters = {
               src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file that automatically manages the relationships between your services through events and tasks."
             },
             { src: require("~/assets/engine/workflows.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features." },
-            { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization easy. Distribute or scale any service, feature or app on the upcoming decentralized network." }
+            { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization easy. Distribute or scale any service, feature or app through a decentralized network of executions." }
           ]
         }
       },
