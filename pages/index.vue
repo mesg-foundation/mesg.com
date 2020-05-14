@@ -183,7 +183,7 @@ export default {
     page({
       title: "The builders’ open economy",
       description:
-        "A decentralized event-driven task-orchestration system based on an open market of services and executions."
+        "A decentralized event-driven task-orchestration system based on a decentralized registry of services."
     })
   ],
   computed: {

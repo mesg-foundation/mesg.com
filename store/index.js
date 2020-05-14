@@ -14,7 +14,7 @@ export const getters = {
               src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
             },
             {
-              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "Services"
+              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared on the integrated decentralized registry.", to: links.marketplace, action: "Services"
             }
           ],
           secondary: [
@@ -36,23 +36,23 @@ export const getters = {
         img: require("~/assets/marketplace/marketplace.svg"),
         title: "Services",
         description:
-          "Reuse existing services to save time building applications, or earn royalties from the new services you create.",
+          "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime this service is used.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=services_link&utm_campaign=doc_home", action: "Documentation" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the decentralized registry are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=services_link&utm_campaign=doc_home", action: "Documentation" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "Execution of these services are decentralized and open for anyone to participate.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" }
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
-            { src: require("~/assets/marketplace/earn-sleep.svg"), title: "Earn while you sleep", description: "All services listed on the Marketplace will earn MESG Tokens each time they are used within any other users' applications." },
+            { src: require("~/assets/marketplace/earn-sleep.svg"), title: "Rewarded contribution", description: "All services listed on the decentralized registry receives new execution tokens each time they are used within any other users' applications." },
             { src: require("~/assets/marketplace/economy-development.svg"), title: "Economy of development", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
           ]
         },
         usecase: [
-          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. The SDK enables interoperability between all systems and features, so it’s a perfect solution to build and manage your own marketplace within your product." },
+          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own registry", description: "Add a decentralized registry to any existing solution. The SDK enables interoperability between all systems and features, so it’s a perfect solution to build and manage your own registry within your product." },
           { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, while others are best decentralized. So, MESG gives builders complete control over centralization, even offering decentralized executions between decentralized networks." },
-          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous workflows", description: "Services from the Marketplace can be easily combined into powerful workflows and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. The possibilities are endless." },
-          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open economy", description: "The Marketplace is completely open, decentralized and self-regulating, so no single entity has control over participants or submissions, including MESG itself. The more services are used, the more tokens are earned." }
+          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous workflows", description: "Services from the decentralized registry can be easily combined into powerful processes and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. The possibilities are endless." },
+          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open economy", description: "The registry is completely open, decentralized, and self-regulating, so no single entity has control over participants or submissions, including MESG itself. Anyone can add their services and have full ownership of it." }
         ],
       },
       {
@@ -85,8 +85,8 @@ export const getters = {
         features: {
           primary: [
             { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications and get rewarded for your participation." },
-            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants stake MESG Tokens to commit to availability and good behavior. Then, participants are rewarded for validating executions." },
-            { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "Access to app components, called services, are bought and sold using MESG Tokens. Services can be used within any app, no complex coding required." }
+            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants need to deposit a stake to commit to availability and good behavior. Then, participants are rewarded for validating executions." },
+            { src: require("~/assets/token/buy-sell.svg"), title: "Use and reuse services", description: "Services are shared on a decentralized registry and are run by anyone, rewarding the runner of the service and the initial developer of the service." }
           ]
         }
       }
@@ -97,7 +97,7 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy built for each iteration of your product lifecycle." },
+          { src: require('~/assets/marketplace/earn-sleep.svg'), title: "Decentralized registry", description: "Store interoperable services that can be reused and processed by anyone. Every service on this registry is compatible with each other." },
           { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
           { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
         ]
@@ -172,7 +172,7 @@ export const getters = {
       href: "#general",
       contents: [{
         title: "What is MESG?",
-        description: "MESG is an application/workflow development platform made of a decentralized network of intercompatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users sell or purchase intercompatible services in the open MESG Marketplace, allowing developers to save significant time and/or generate income from their work."
+        description: "MESG is an application/workflow development platform made of a decentralized network of inter-compatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users share inter-compatible services on a decentralized registry, allowing developers to save significant time and/or get rewarded from their work."
       }],
     },
     {
@@ -198,11 +198,11 @@ export const getters = {
       href: "#transactions",
       contents: [{
         title: "How much does MESG cost?",
-        description: "Anyone can use MESG for free to build applications on a local computer. However, not all functionalities will always be free.<br/><br/>If developers want to use MESG’s decentralized network to run and execute their applications, they must first pay MESG Tokens to other network participants to run and secure their applications. The MESG Foundation will not take a cut from transactions between users<br/><br/>Developers and participants can also earn tokens by using MESG depending on their desired level of involvement. Developers who build services or help execute, validate events and tasks in applications will earn MESG Tokens for their participation."
+        description: "MESG is free to use. Anyone can use the MESG technology to create their own network and monetize this network if they want too with the way they want. The tool is payment agnostic, and you control the creation and distribution of your tokens the way you want.<br/><br/>Keep in mind that to provide a good incentive for runners in the network, the participant should have something to lose to guarantee their good behavior, so free networks might not be fully secured."
       },
       {
         title: "How can I earn tokens with MESG?",
-        description: "A self-regulating economy is a major part of MESG. Firstly, each time a new service is built, it can be shared and reused. The creators of services are free to choose the price in MESG Tokens that participants will pay to use the service. As part of this, service builders also decide how much each participant (emitters, validators and executors) is paid for their help.<br/><br/>Secondly, participants who commit to running their computers to support data processing in the Network are paid for their participation. The number of tokens each of these participants earns is determined by the Service’s creator, so participants can choose which processes will be most lucrative for them."
+        description: "A self-regulating economy is a major part of MESG. Firstly, each time a new service is built, it can be shared and reused. The creators of services are free to choose the number of tokens required that participants deposit to use the service. As part of this, service builders also decide how much each participant (emitters, validators, and executors) receives for their help.<br/><br/>Secondly, participants who commit to running their computers to support data processing in the Network are rewarded for their participation. The number of tokens each of these participants earn is determined by the Service’s creator."
       }]
     },
     {
@@ -250,7 +250,7 @@ export const getters = {
       },
       {
         title: "Do I need to be a developer to use MESG?",
-        description: "With MESG’s currently-available functionalities, yes. Development skills are required to build services, and to combine services into applications.<br/><br/>However, soon workflows will debut, allowing anyone to write a simple config file (no more than 20 lines of text), listing the desired services, events and tasks to be executed.<br/><br/>As long as the desired services have been previously built and are available on the Marketplace, the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> software will read the config file and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
+        description: "With MESG’s currently-available functionalities, yes. Development skills are required to build services, and to combine services into applications.<br/><br/>However, soon workflows will debut, allowing anyone to write a simple config file (no more than 20 lines of text), listing the desired services, events and tasks to be executed.<br/><br/>As long as the desired services have been previously built and are available on the registry, the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> software will read the config file and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
       }]
     }]
   },

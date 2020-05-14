@@ -13,7 +13,7 @@
         <h2 mb1>About the Foundation</h2>
         <p
           mb2
-        >The SDK and Marketplace are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
+        >MESG tools are developed by a global team of passionate developers for The MESG Foundation, a non-profit organization.</p>
         <div class="mesg-presentation">
           <Video :src="externalLinks.video"></Video>
         </div>

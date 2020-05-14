@@ -33,10 +33,10 @@
 
     <section id="presentation" mb3>
       <Container class="intro text-center">
-        <h2 mb1>A decentralized network of services</h2>
+        <h2 mb1>A decentralized registry of services</h2>
         <p
           mb2
-        >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
+        >Our decentralized registry of services and executions is a key part of our vision to create a decentralized network of services.</p>
         <Button
           secondary
           mb2
@@ -134,7 +134,7 @@ export default {
     page({
       title: "Services",
       description:
-        "Reuse existing services to save time building applications, or receive tokens from the new services you create."
+        "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime it is used."
     })
   ],
   computed: {
