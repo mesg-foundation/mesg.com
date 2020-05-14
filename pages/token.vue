@@ -10,7 +10,7 @@
           target="_blank"
           primary
           mt2
-        >Discover the Token utility</Button>
+        >Discover the token's utility</Button>
       </div>
     </Header>
 
