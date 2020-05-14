@@ -66,7 +66,7 @@
             <h2 mb1>The Liteflow Framework</h2>
             <p
               mb2
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor lorem sit amet lacus aliquam, a posuere nibh luctus.</p>
+            >MESG partner Liteflow helps developers build and ship faster by removing what's unnecessary. Build applications with just a few lines of code, then deploy and forget with a single command.</p>
             <Button :href="externalLinks.liteflowHome" target="_blank" primary>Discover Liteflow</Button>
           </div>
           <div class="img-bg" flex row half align-center>
@@ -141,7 +141,7 @@
 
     <CTA
       title="The Liteflow Framework"
-      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
+      description="Take a lighter approach to development with a Framework build on top of MESG. Build and deploy feature-rich applications with just a few lines of code."
       :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
