@@ -7,7 +7,7 @@
           target="_blank"
           primary
           mt2
-        >Build now with Liteflow</Button>
+        >Start building with Liteflow</Button>
       </div>
     </Header>
 
