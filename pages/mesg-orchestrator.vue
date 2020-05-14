@@ -10,7 +10,7 @@
           target="_blank"
           primary
           mt2
-        >Build now with Liteflow</Button>
+        >Build with Liteflow</Button>
       </div>
     </Header>
 
@@ -41,7 +41,7 @@
             <div half>
               <Titletext3
                 title="Describe your feature"
-                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and Turing-complete programming languages."
+                text="Orchestrate your applications by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and Turing-complete programming languages."
               />
             </div>
           </div>
@@ -67,8 +67,8 @@
 
     <CTA
       title="The Liteflow Framework"
-      description="Take a lighter approach with this Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
-      :links="[{ title: 'Build now for free' , href: externalLinks.liteflowCTABottom }]"
+      description="Take a lighter approach with a Framework build on top of MESG. Build secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
