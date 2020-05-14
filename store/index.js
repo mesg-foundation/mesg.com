@@ -80,7 +80,7 @@ export const getters = {
         id: "token",
         label: "Fuel the ecosystem",
         img: require("~/assets/token/token.svg"),
-        title: "Token",
+        title: "Economy",
         description: "Delegate application processing and validation to network participants with the native token. Or receive tokens by sharing components in the decentralized service registry.",
         features: {
           primary: [
