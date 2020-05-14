@@ -18,7 +18,7 @@ export const getters = {
             }
           ],
           secondary: [
-            { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building modular apps that automatically react to real-world events is an efficient way to manage hard-to-reach technologies like blockchains or IoT devices. Applications remain lightweight, reactive and easy to maintain." },
+            { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building modular apps that automatically react to real-world events is an efficient way to manage hard-to-reach technologies. Applications remain lightweight, reactive and easy to maintain." },
             { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine manages the interactions between services and applications automatically." },
             { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services and processes on your behalf, so you can spend far less time developing and maintaining your applications." }
           ]
