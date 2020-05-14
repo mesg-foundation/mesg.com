@@ -11,7 +11,7 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any process.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
             },
             {
               src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared on the integrated decentralized registry.", to: links.marketplace, action: "Services"
@@ -26,7 +26,7 @@ export const getters = {
         usecase: [
           { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language", description: "Language differences between products and teams can cause major setbacks. Services featuring any programming language or data format can be managed using the MESG SDK." },
           { src: require("~/assets/engine/fast-feature.svg"), title: "Fast integration", description: "Most apps are complex and highly interconnected, making updates challenging and inefficient. The MESG SDK lets you add, remove or update features without affecting other components." },
-          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous workflows", description: "Events on difficult-to-reach technologies can be combined into powerful workflows. React to Ethereum transactions. Deploy and manage sidechains. The possibilities are endless." },
+          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous processes", description: "Events on difficult-to-reach technologies can be combined into powerful processes. React to Ethereum transactions. Deploy and manage sidechains. The possibilities are endless." },
           { src: require("~/assets/engine/scalable-apps.svg"), title: "Easy scalability", description: "Servers and local networks have limited bandwidth and maintaining your own servers is costly. Our tools are decentralized, so applications can function autonomously, in a trustless way." }
         ],
       },
@@ -51,7 +51,7 @@ export const getters = {
         usecase: [
           { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own registry", description: "Add a decentralized registry to any existing solution. The SDK enables interoperability between all systems and features, so it’s a perfect solution to build and manage your own registry within your product." },
           { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, while others are best decentralized. So, MESG gives builders complete control over centralization, even offering decentralized executions between decentralized networks." },
-          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous workflows", description: "Services from the decentralized registry can be easily combined into powerful processes and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. The possibilities are endless." },
+          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous processes", description: "Services from the decentralized registry can be easily combined into powerful processes and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. The possibilities are endless." },
           { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open economy", description: "The registry is completely open, decentralized, and self-regulating, so no single entity has control over participants or submissions, including MESG itself. Anyone can add their services and have full ownership of it." }
         ],
       },
@@ -172,7 +172,7 @@ export const getters = {
       href: "#general",
       contents: [{
         title: "What is MESG?",
-        description: "MESG is an application/workflow development platform made of a decentralized network of inter-compatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users share inter-compatible services on a decentralized registry, allowing developers to save significant time and/or get rewarded from their work."
+        description: "MESG is an application development platform made of a decentralized network of inter-compatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users share inter-compatible services on a decentralized registry, allowing developers to save significant time and/or get rewarded from their work."
       }],
     },
     {
@@ -246,11 +246,11 @@ export const getters = {
       href: "#development",
       contents: [{
         title: "How much time can I save by using MESG?",
-        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically.<br/><br/>These significant time savings can increase even more than if the desired service has already been built, or when workflows are built to automate DevOps."
+        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically through processes.<br/><br/>These significant time savings can increase even more than if the desired service has already been built."
       },
       {
         title: "Do I need to be a developer to use MESG?",
-        description: "With MESG’s currently-available functionalities, yes. Development skills are required to build services, and to combine services into applications.<br/><br/>However, soon workflows will debut, allowing anyone to write a simple config file (no more than 20 lines of text), listing the desired services, events and tasks to be executed.<br/><br/>As long as the desired services have been previously built and are available on the registry, the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> software will read the config file and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
+        description: "With MESG’s currently-available functionalities, yes. Development skills are required to build services, and to combine services into processes.<br/><br/>Processes are accessible to non-developers as long as all the services are already built on the decentralized registry but still require technical thinking."
       }]
     }]
   },
