@@ -44,8 +44,8 @@ export const getters = {
           ],
           secondary: [
             { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
-            { src: require("~/assets/marketplace/earn-sleep.svg"), title: "Earn while you sleep", description: "All services listed on the Marketplace will earn MESG Tokens each time they are used within any other users' applications." },
-            { src: require("~/assets/marketplace/economy-development.svg"), title: "Economy of development", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
+            { src: require("~/assets/enterprise/connect-systems.svg"), title: "Earn while you sleep", description: "All services listed on the Marketplace will earn MESG Tokens each time they are used within any other users' applications." },
+            { src: require("~/assets/enterprise/custom-built.svg"), title: "Economy of development", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
           ]
         },
         usecase: [
@@ -71,7 +71,7 @@ export const getters = {
             {
               src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file that automatically manages the relationships between your services through events and tasks."
             },
-            { src: require("~/assets/engine/event-driven.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features." },
+            { src: require("~/assets/engine/workflows.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features." },
             { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization easy. Distribute or scale any service, feature or app on the upcoming decentralized network." }
           ]
         }
@@ -86,7 +86,7 @@ export const getters = {
           primary: [
             { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications and get rewarded for your participation." },
             { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants stake MESG Tokens to commit to availability and good behavior. Then, participants are rewarded for validating executions." },
-            { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "Access to app components, called services, are bought and sold using MESG Tokens. Services can be used within any app, no complex coding required." }
+            { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Buy and sell services", description: "Access to app components, called services, are bought and sold using MESG Tokens. Services can be used within any app, no complex coding required." }
           ]
         }
       }
@@ -97,7 +97,7 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy built for each iteration of your product lifecycle." },
+          { src: require('~/assets/marketplace/open-marketplace.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy built for each iteration of your product lifecycle." },
           { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
           { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
         ]
