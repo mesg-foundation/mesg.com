@@ -97,9 +97,9 @@ export const getters = {
     return {
       features: {
         primary: [
-          { src: require('~/assets/marketplace/open-marketplace.svg'), title: "Decentralized registry", description: "Stored interoperable services can be reused and processed by anyone. Every service on the registry is compatible with every other." },
+          { src: require('~/assets/marketplace/open-marketplace.svg'), title: "Decentralized registry", description: "Interoperable services on the registry can be reused or processed by anyone. Each service is compatible with all other services." },
           { src: require("~/assets/engine/development-hours.svg"), title: "Build efficiently", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
-          { src: require("~/assets/token/decentralize-executions.svg"), title: "Maintain control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
+          { src: require("~/assets/token/decentralize-executions.svg"), title: "Maintain control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructure." }
         ]
       },
     }
