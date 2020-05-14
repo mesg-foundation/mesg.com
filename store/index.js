@@ -39,7 +39,7 @@ export const getters = {
           "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime this service is used.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the decentralized registry are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=services_link&utm_campaign=doc_home", action: "Documentation" },
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the decentralized registry are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: externalLinks.github, action: "Github" },
             { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "Execution of these services are decentralized and open for anyone to participate.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" }
           ],
           secondary: [
