@@ -115,7 +115,7 @@ export default {
   },
   mixins: [
     page({
-      title: "Token",
+      title: "Economy",
       description:
         "Securely delegate application processing, task executions, and validations to network participants using the native token."
     })
