@@ -70,7 +70,7 @@
     <CTA
       icon="fal fa-coins"
       title="Token Utility in the MESG Ecosystem"
-      description="Explore the native token, how it works in the builders' open economy and what it can mean for you"
+      description="Explore the native token, how it works in the builders' open economy and what it can mean for you."
       :links="[{ title: 'Read the article' , href: externalLinks.tokenUtility }]"
       mb1
     />
