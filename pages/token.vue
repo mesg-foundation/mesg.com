@@ -60,7 +60,7 @@
             <h3 mb1>Community</h3>
             <p
               mb2
-            >Join the community of builders and traders in our Telegram group, or head over to Discord to chat with the team.</p>
+            >Join the community of builders in our Telegram group, or head over to Discord to chat with the team.</p>
             <ListSN :list="[icons.telegram, icons.discord]" />
           </div>
         </div>
@@ -70,7 +70,7 @@
     <CTA
       icon="fal fa-coins"
       title="Token Utility in the MESG Ecosystem"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor lorem sit amet lacus aliquam, a posuere nibh luctus."
+      description="Explore the native token, how it works in the builders' open economy and what it can mean for you"
       :links="[{ title: 'Read the article' , href: externalLinks.tokenUtility }]"
       mb1
     />
@@ -117,7 +117,7 @@ export default {
     page({
       title: "Token",
       description:
-        "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace."
+        "Securely delegate application processing, task executions, and validations to network participants using the native token."
     })
   ],
   computed: {
