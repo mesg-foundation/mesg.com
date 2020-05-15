@@ -21,7 +21,7 @@
               <nuxt-link :to="links.engine">SDK</nuxt-link>
               <nuxt-link :to="links.marketplace">Services</nuxt-link>
               <nuxt-link :to="links.orchestrator">Process</nuxt-link>
-              <nuxt-link :to="links.token">Token</nuxt-link>
+              <nuxt-link :to="links.token">Economy</nuxt-link>
             </li>
             <li flex column quarter>
               <a href="#" class="category" mb1>Developers</a>

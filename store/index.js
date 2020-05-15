@@ -873,7 +873,7 @@ export const getters = {
         { text: 'SDK', to: links.engine },
         { text: 'Services', to: links.marketplace },
         { text: 'Process', to: links.orchestrator },
-        { text: 'Token', to: links.token }
+        { text: 'Economy', to: links.token }
       ]
     },
     { text: 'Showcase', to: links.showcase },
