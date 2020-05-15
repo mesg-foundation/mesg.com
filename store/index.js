@@ -246,7 +246,7 @@ export const getters = {
       href: "#development",
       contents: [{
         title: "How much time can I save by using MESG?",
-        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically through the Engine, directed by processes.<br/><br/>These significant time savings can increase even more than if the desired service has already been built."
+        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/engine' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically through the Engine, directed by processes.<br/><br/>These significant time savings can increase even more than if the desired service has already been built."
       },
       {
         title: "Do I need to be a developer to use MESG?",
@@ -852,10 +852,10 @@ export const getters = {
   links() {
     return {
       home: "/",
-      orchestrator: "/mesg-orchestrator",
-      engine: "/mesg-sdk",
-      marketplace: "/mesg-marketplace",
-      token: "/token",
+      orchestrator: "/process",
+      engine: "/sdk",
+      marketplace: "/services",
+      token: "/economy",
       foundation: "/foundation",
       showcase: "/showcase",
       contributions: "/contributions",
