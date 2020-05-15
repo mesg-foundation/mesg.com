@@ -8,9 +8,6 @@
       <template v-slot:top>
         <span flex class="label">{{ engine.label }}</span>
       </template>
-      <div>
-        <Button :to="links.getstarted" primary mt2>Get started</Button>
-      </div>
     </Header>
 
     <section id="features" mb3>
@@ -31,7 +28,7 @@
         <h2 mb1>Effortless interoperability</h2>
         <p
           mb2
-        >The SDK is built for constructing and managing components within modular applications. Add nearly any feature to any app without the headache.</p>
+        >The SDK is built for constructing and managing components within modular applications. Add features to any app without the headache.</p>
         <Button
           secondary
           mb2
@@ -119,10 +116,9 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Get started"
-      description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Get started' , to: links.getstarted }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>

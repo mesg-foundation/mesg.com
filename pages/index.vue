@@ -1,10 +1,6 @@
 <template>
   <div>
-    <Header :image="require('~/assets/home.svg')" :title="title" :description="description">
-      <div>
-        <Button :to="links.getstarted" primary mt2>Get started</Button>
-      </div>
-    </Header>
+    <Header :image="require('~/assets/home.svg')" :title="title" :description="description"></Header>
 
     <section id="features" mb3>
       <Container flex row space-between wrap>
@@ -26,7 +22,7 @@
       </Container>
     </section>
 
-    <section id="technology" mb3 class="outer-background">
+    <section id="technology" class="outer-background" mb3>
       <Container>
         <div flex row space-between wrap>
           <Card flex row mobile-column>
@@ -50,6 +46,30 @@
             </nuxt-link>
           </Card>
         </div>
+      </Container>
+    </section>
+
+    <section id="liteflow" mb3>
+      <Container>
+        <div flex row mobile-column-reverse align-center>
+          <div>
+            <span flex class="label">Built on MESG</span>
+            <h2 mb1>The Liteflow Framework</h2>
+            <p
+              mb2
+            >MESG partner Liteflow helps developers build and ship faster by removing what's unnecessary. Build applications with just a few lines of code, then deploy and forget with a single command.</p>
+            <Button :href="externalLinks.liteflowHome" target="_blank" primary>Discover Liteflow</Button>
+          </div>
+          <div class="img-bg" flex row half align-center>
+            <img src="~/assets/liteflow-x2.png" alt="Liteflow Website" />
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
       </Container>
     </section>
 
@@ -111,10 +131,9 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Get started"
-      description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Get started' , to: links.getstarted }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
@@ -155,7 +174,7 @@ export default {
     page({
       title: "The builders’ open economy",
       description:
-        "A decentralized event-driven task-orchestration system based on an open market of services and executions."
+        "A decentralized event-driven task-orchestration system based on a decentralized registry of services."
     })
   ],
   computed: {
@@ -229,6 +248,22 @@ export default {
   }
 }
 
+#liteflow {
+  .img-bg {
+    position: relative;
+    height: 490px;
+    background-color: #ffeee6;
+    border-radius: 6px;
+  }
+  img {
+    position: relative;
+    left: calc(#{$margin} * 2);
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
 @media only screen and (max-width: $mobile-breakpoint) {
   #alert {
     .alert-icon {
@@ -248,6 +283,17 @@ export default {
     border-bottom: dotted 1px $lavender-light;
     &:last-child {
       border-bottom: none;
+    }
+  }
+  #liteflow {
+    .img-bg {
+      margin-top: $margin;
+      margin-bottom: calc(#{$margin} * 3) !important;
+      padding: $margin;
+      height: 300px;
+    }
+    img {
+      left: 0;
     }
   }
   #more-infos {

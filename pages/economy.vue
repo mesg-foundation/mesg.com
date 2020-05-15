@@ -5,21 +5,12 @@
         <span flex class="label">{{ token.label }}</span>
       </template>
       <div>
-        <p class="sub-text" mb1 mt2>
-          <strong>Buy and trade on:</strong>
-        </p>
-        <div flex row wrap>
-          <a
-            v-for="exchange in exchanges"
-            :key="exchange.id"
-            :href="exchange.to"
-            class="logo"
-            target="_blank"
-            third
-          >
-            <img :src="exchange.src" :alt="exchange.id" />
-          </a>
-        </div>
+        <Button
+          :href="externalLinks.tokenUtility"
+          target="_blank"
+          primary
+          mt2
+        >Learn more about the economy</Button>
       </div>
     </Header>
 
@@ -36,46 +27,9 @@
       </Container>
     </section>
 
-    <section id="atd">
-      <Container>
-        <h2 class="text-center" mb1>Algorithmic Token Distribution</h2>
-        <p
-          mb2
-          class="text-center"
-        >Built to promote stability and transparency, the Algorithmic Token Distribution (ATD) is the MESG Foundation’s commitment to limiting token releases to only a fraction of the previous day’s volume.</p>
-        <div flex row space-between wrap>
-          <TextWithIcon
-            half
-            v-for="(feature, i) in token.features.secondary"
-            :key="i"
-            :src="feature.src"
-            :title="feature.title"
-            :text="feature.description"
-          />
-        </div>
-      </Container>
-    </section>
-
-    <section id="distribution" class="outer-background" mb3>
-      <Container>
-        <Feature
-          :src="require('~/assets/token/token-distribution.svg')"
-          title="Token distribution"
-          action="ATD website"
-          :href="externalLinks.atdToken"
-        >
-          <template v-slot:right>
-            <h4 mb2>Total token supply 250MM</h4>
-            <ColoredList
-              :items="[
-              { color: '#2e1359', title: 'Sale Distribution 62.5%'},
-              { color: '#7e44d8', title: 'Partners & Bounties 5%'},
-              { color: '#c2a3ff', title: 'Team and Founders 12.5%'},
-              { color: '#dfcdf7', title: 'Reserve 20%'}
-            ]"
-            />
-          </template>
-        </Feature>
+    <section>
+      <Container flex column align-center>
+        <hr mb3 />
       </Container>
     </section>
 
@@ -83,32 +37,10 @@
       <Container>
         <h2 class="text-center" mb2>MESG documents</h2>
         <div flex row space-between wrap>
-          <Document :list="['whitepaper', 'implementation', 'twopager', 'business']" />
+          <Document :list="['whitepaper', 'implementation']" />
         </div>
       </Container>
     </section>
-
-    <section id="faq" mb3>
-      <Container>
-        <h2 class="text-center" mb2>Frequently Asked Questions</h2>
-        <div flex row space-between wrap>
-          <Titletext4
-            half
-            v-for="(faq, i) in token.faq"
-            :key="i"
-            :title="faq.title"
-            :text="faq.description"
-            mb2
-          />
-        </div>
-      </Container>
-    </section>
-
-    <section id="partners" mb3>
-      <Partners />
-    </section>
-
-    <News :articles="articles" mb3 />
 
     <section>
       <Container flex column align-center>
@@ -128,31 +60,20 @@
             <h3 mb1>Community</h3>
             <p
               mb2
-            >Join the community of builders and traders in our Telegram group, or head over to Discord to chat with the team.</p>
+            >Join the community of builders in our Telegram group, or head over to Discord to chat with the team.</p>
             <ListSN :list="[icons.telegram, icons.discord]" />
           </div>
         </div>
       </Container>
     </section>
 
-    <section id="cta" mb1>
-      <Container>
-        <Card p2>
-          <h2 class="text-center" mb2>Buy and Trade</h2>
-          <div flex row mobile-column>
-            <Button
-              white
-              v-for="exchange in exchanges"
-              :key="exchange.id"
-              :href="exchange.to"
-              target="_blank"
-            >
-              <img :src="exchange.src" :alt="exchange.id" />
-            </Button>
-          </div>
-        </Card>
-      </Container>
-    </section>
+    <CTA
+      icon="fal fa-coins"
+      title="Token Utility in the MESG Ecosystem"
+      description="Explore the native token, how it works in the builders' open economy and what it can mean for you."
+      :links="[{ title: 'Read the article' , href: externalLinks.tokenUtility }]"
+      mb1
+    />
   </div>
 </template>
 
@@ -162,6 +83,7 @@ import { mapGetters } from "vuex";
 import Header from "@mesg-components/header";
 import Button from "@mesg-components/button";
 import Container from "~/components/Container";
+import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";
 import Titletext4 from "~/components/Titletext4";
 import News from "~/components/News";
@@ -178,6 +100,7 @@ export default {
   components: {
     Header,
     Container,
+    CTA,
     Button,
     Card,
     Titletext4,
@@ -192,9 +115,9 @@ export default {
   },
   mixins: [
     page({
-      title: "Token",
+      title: "Economy",
       description:
-        "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace."
+        "Securely delegate application processing, task executions, and validations to network participants using the native token."
     })
   ],
   computed: {

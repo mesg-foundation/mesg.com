@@ -4,9 +4,6 @@
       <template v-slot:top>
         <span flex class="label">{{ orchestrator.label }}</span>
       </template>
-      <div>
-        <Button :to="links.getstarted" primary mt2>Start building</Button>
-      </div>
     </Header>
 
     <section id="features" mb3>
@@ -36,7 +33,7 @@
             <div half>
               <Titletext3
                 title="Describe your feature"
-                text="Orchestrate your application by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file, and soon, other formats will become available like a UI and Turing-complete programming languages."
+                text="Orchestrate your applications by connecting the events and tasks from any service with a process.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services can be used to create features, or users can write new services using any language.</br></br>Currently, services can be orchestrated by writing a process file."
               />
             </div>
           </div>
@@ -61,13 +58,11 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Build faster with MESG Orchestrator"
-      description="Start creating feature-rich software today with a simple process file."
+      title="The Liteflow Framework"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
-    >
-      <Button :to="links.getstarted" target="_blank" white>Start building</Button>
-    </CTA>
+    />
   </div>
 </template>
 

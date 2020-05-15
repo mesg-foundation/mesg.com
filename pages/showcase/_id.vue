@@ -116,10 +116,9 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Get started"
-      description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Start building' , to: links.getstarted }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>

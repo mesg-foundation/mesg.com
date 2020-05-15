@@ -8,6 +8,9 @@
               <i :class="icon"></i>
             </span>
           </div>
+          <div class="icon-liteflow" v-else flex align-center>
+            <span>L</span>
+          </div>
           <div class="content">
             <h2>{{ title }}</h2>
             <p v-if="description" mt1>{{ description }}</p>
@@ -78,17 +81,33 @@ export default {
   }
   .card {
     background-image: linear-gradient(to right, $primary, $purple);
-    span {
+    .icon {
+      span {
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: 80px;
+        border-radius: 3px;
+        background-color: $purple;
+        i {
+          text-align: center;
+          font-size: 40px;
+          color: $primary-light;
+        }
+      }
+    }
+    .icon-liteflow {
       min-width: 80px;
       max-width: 80px;
       min-height: 80px;
       max-height: 80px;
       border-radius: 3px;
-      background-color: $purple;
-      i {
+      background-color: #8fabff;
+      span {
         text-align: center;
-        font-size: 40px;
-        color: $primary-light;
+        font-weight: 700;
+        font-size: 50px;
+        color: $white;
       }
     }
     h2 {

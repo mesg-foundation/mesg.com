@@ -11,26 +11,23 @@ export const getters = {
         features: {
           primary: [
             {
-              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into any app or workflow.</br></br>Implement to hard-to-reach technologies without managing their complexities.", href: externalLinks.github, action: "Github"
+              src: require('~/assets/engine/tech.svg'), title: "Use complex tech easily", description: "Any blockchain, API, machine learning system, P2P network or IoT device can be integrated into a process.</br></br>Implement to hard-to-reach technologies without managing the complexities.", href: externalLinks.github, action: "Github"
             },
             {
-              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared from the community in the Marketplace.", to: links.marketplace, action: "Services"
-            },
-            {
-              src: require("~/assets/engine/token-engine.svg"), title: "MESG Token + SDK", description: "The SDK’s tools are, and will always be, free to use on a centralized computer.</br></br>However, when building decentralized apps, MESG Tokens are required to reward network participants who manage and secure executions.", to: links.token, action: "MESG Token"
+              src: require("~/assets/engine/development.svg"), title: "Save development hours", description: "A fundamental principle at MESG is DRY: Don’t Repeat Yourself.</br></br>The tools in the SDK make it easy to reuse any services, whether they are custom-built or shared on the integrated decentralized registry.", to: links.marketplace, action: "Services"
             }
           ],
           secondary: [
-            { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "An efficient way to manage hard-to-reach technologies like blockchains or IoT devices is to build modular apps simply react to real-world events. Your apps remain lightweight, reactive and easy to maintain." },
-            { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine, a tool in the SDK, manages the interaction between all services and applications." },
-            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services, apps and devices on your behalf, resulting in a development and maintenance process that’s far less time consuming." }
+            { src: require("~/assets/engine/event-driven.svg"), title: "Event-driven architecture", description: "Building modular apps that automatically react to real-world events is an efficient way to manage hard-to-reach technologies. Applications remain lightweight, reactive and easy to maintain." },
+            { src: require("~/assets/engine/divergent-tech.svg"), title: "Connect divergent tech", description: "MESG services can connect to nearly anything, including APIs, decentralized networks or standalone applications. Then the Engine manages the interactions between services and applications automatically." },
+            { src: require("~/assets/engine/development-hours.svg"), title: "Optimize development hours", description: "The tools in the SDK manage communication between all services and processes on your behalf, so you can spend far less time developing and maintaining your applications." }
           ]
         },
         usecase: [
-          { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language", description: "Language differences between products and teams can cause major setbacks. Services featuring any programming language or data format can be managed using the MESG SDK." },
-          { src: require("~/assets/engine/fast-feature.svg"), title: "Fast integration", description: "Most apps are complex and highly interconnected, making updates challenging and inefficient. The MESG SDK lets you add, remove or update features without affecting other components." },
-          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous workflows", description: "Events on difficult-to-reach technologies can be combined into powerful workflows. React to Ethereum transactions. Deploy and manage sidechains. The possibilities are endless." },
-          { src: require("~/assets/engine/scalable-apps.svg"), title: "Easy scalability", description: "Servers and local networks have limited bandwidth and maintaining your own servers is costly. Our tools are decentralized, so applications can function autonomously, in a trustless way." }
+          { src: require("~/assets/engine/multi-language.svg"), title: "Multi-language", description: "Language and organizational differences between teams cause major setbacks. The MESG SDK manages interaction between services regardless of languages or data formats, so you don't have to." },
+          { src: require("~/assets/engine/fast-feature.svg"), title: "Fast integration", description: "Most applications today are complex and highly interconnected, making updates challenging and inefficient. With the MESG SDK, add, remove or update features without affecting other components." },
+          { src: require("~/assets/engine/workflows.svg"), title: "Autonomous processes", description: "Events on simple or complex technologies can be easily leveraged within powerful processes. Process a payment. Send a notification. React to blockchain transactions. The possibilities are endless." },
+          { src: require("~/assets/engine/scalable-apps.svg"), title: "Easy scalability", description: "By default, servers and local networks have limited bandwidth. Plus, maintaining servers can be costly. Our tools are decentralized, so applications can scale autonomously in a trustless way." }
         ],
       },
       {
@@ -39,24 +36,23 @@ export const getters = {
         img: require("~/assets/marketplace/marketplace.svg"),
         title: "Services",
         description:
-          "Reuse existing services to save time building applications, or earn royalties from the new services you create.",
+          "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime your service is used by others.",
         features: {
           primary: [
-            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Automatic compatibility", description: "The open-source tools in the MESG SDK ensure that all services from the Marketplace are automatically compatible with each other.<br/><br/>This means, no more installing libraries or learning data formats before you begin.", href: externalLinks.github, action: "Github" },
-            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "All services and apps in the Marketplace will soon be decentralized.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" },
-            { src: require('~/assets/marketplace/token-marketplace.svg'), title: "MESG Token + Services", description: "The MESG Token can be used to purchase access to services in the Marketplace.</br></br>Once decentralized, the Token will also be used to secure and power the network.", to: links.token, action: "MESG Token" }
+            { src: require('~/assets/marketplace/marketplace-engine.svg'), title: "Compatible by default", description: "All services in the decentralized registry are automatically compatible with each other thanks to the open-source tools in the MESG SDK.<br/><br/>No more installing libraries or learning new data formats before you begin.", href: externalLinks.github, action: "Github" },
+            { src: require('~/assets/marketplace/decentralized.svg'), title: "Decentralized executions", description: "Decentralized service executions are open to all who want to contribute.<br/><br/>When executions are not dependent on a single server or machine, apps become unstoppable, distributed and always available.", to: links.engine, action: "SDK" }
           ],
           secondary: [
-            { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "Connecting to devices, blockchains and APIs is time consuming. Reuse more of your applications so you can stop repeating yourself." },
-            { src: require("~/assets/marketplace/earn-sleep.svg"), title: "Earn while you sleep", description: "All services listed on the Marketplace will earn MESG Tokens each time they are used within any other users' applications." },
-            { src: require("~/assets/marketplace/economy-development.svg"), title: "Economy of development", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
+            { src: require("~/assets/marketplace/reuse-work.svg"), title: "Reuse your work", description: "It's time consuming to forge new connections to devices, blockchains and APIs. Reuse more of your applications so you can stop repeating yourself." },
+            { src: require("~/assets/enterprise/connect-systems.svg"), title: "Rewarded contributions", description: "Each time services listed on the decentralized registry are used within other users' applications, new execution tokens are sent to the original creator." },
+            { src: require("~/assets/enterprise/custom-built.svg"), title: "Development economy", description: "Earn tokens by building and hosting applications, or by validating executions for others in the decentralized network." }
           ]
         },
         usecase: [
-          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Build your own marketplace", description: "Add a decentralized marketplace to any existing solution. The SDK enables interoperability between all systems and features, so it’s a perfect solution to build and manage your own marketplace within your product." },
-          { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "We know that some data and processes are best kept centralized, while others are best decentralized. So, MESG gives builders complete control over centralization, even offering decentralized executions between decentralized networks." },
-          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous workflows", description: "Services from the Marketplace can be easily combined into powerful workflows and apps. React to Ethereum transactions being processed. Deploy and manage sidechains. The possibilities are endless." },
-          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Open economy", description: "The Marketplace is completely open, decentralized and self-regulating, so no single entity has control over participants or submissions, including MESG itself. The more services are used, the more tokens are earned." }
+          { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Save time integrating features", description: "Reusing components from the decentralized registry saves significant time in building new applications. The SDK ensures seamless interoperability between services, so you don't have to worry about managing service interaction." },
+          { src: require("~/assets/marketplace/decentralized-apps.svg"), title: "Hybrid decentralized apps", description: "Some processes are best kept centralized, while others are better decentralized. MESG gives builders complete control over their level of centralization. You can even enable decentralized executions between decentralized networks." },
+          { src: require("~/assets/marketplace/workflows.svg"), title: "Autonomous processes", description: "Any services from the decentralized registry can be easily combined into reactive autonomous processes. React when a new user signs up, a new Ethereum transaction is processed, or a new file is uploaded. The possibilities are endless." },
+          { src: require("~/assets/marketplace/open-marketplace.svg"), title: "Self-regulating economy", description: "The registry is completely open, decentralized, and self-regulating, so no single entity has control over participants or submissions, including MESG itself. Anyone can add their services and have full ownership over it." }
         ],
       },
       {
@@ -68,15 +64,15 @@ export const getters = {
         features: {
           primary: [
             {
-              title: "Describe your feature", description: "Orchestrate your application by connecting the events and tasks from any service.</br></br>Implement complex technologies like blockchains and AI without managing the complexities.</br></br>Any existing services from the Marketplace can be used to create features, or users can write new services using any language.</br></br>Currently, services are managed through a config file, and soon, other formats will become available like a UI and turing- complete programming languages."
+              title: "Describe your feature", description: "Orchestrate your applications simply by connecting the events and tasks from any service.</br></br>Implement complex technologies without managing the complexities.</br></br>Any new services, or existing services from the decentralized registry can be used to create features.</br></br>Currently, services are managed through a config. file."
             }
           ],
           secondary: [
             {
-              src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file that automatically manages the relationships between your services through events and tasks."
+              src: require("~/assets/marketplace/reuse-work.svg"), title: "Feature-based", description: "Create any feature with a configuration file and have the relationships between your services through events and tasks automatically managed."
             },
-            { src: require("~/assets/engine/event-driven.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features." },
-            { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization easy. Distribute or scale any service, feature or app on the upcoming decentralized network." }
+            { src: require("~/assets/engine/workflows.svg"), title: "Keep it simple", description: "Focus only on the critical parts of your applications and let Orchestrator manage all of the features for you." },
+            { src: require("~/assets/engine/scalable-apps.svg"), title: "Decentralization-ready", description: "Service-based apps make scaling, distribution and decentralization super easy. Distribute or scale any service or application through a decentralized network of executions." }
           ]
         }
       },
@@ -84,27 +80,15 @@ export const getters = {
         id: "token",
         label: "Fuel the ecosystem",
         img: require("~/assets/token/token.svg"),
-        title: "Token",
-        description: "Delegate application processing and validation to network participants using the MESG Token. Then, earn tokens by sharing components in the decentralized MESG Marketplace.",
+        title: "Economy",
+        description: "Delegate application processing and validation to network participants with the native token. Or receive tokens by sharing components in the decentralized service registry.",
         features: {
           primary: [
-            { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications and get rewarded for your participation." },
-            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants stake MESG Tokens to commit to availability and good behavior. Then, participants are rewarded for validating executions." },
-            { src: require("~/assets/token/buy-sell.svg"), title: "Buy and sell services", description: "Access to app components, called services, are bought and sold using MESG Tokens. Services can be used within any app, no complex coding required." }
-          ],
-          secondary: [
-            { src: require("~/assets/token/algorithm.svg"), title: "Algorithmic release", description: "Daily allotments are calculated from a percentage of the previous day’s trading volume, tying tokens released to actual demand." },
-            { src: require("~/assets/token/transparency.svg"), title: "Transparency", description: "Release metrics are being published daily to promote transparency between the MESG Foundation and the community." },
-            { src: require("~/assets/token/initial-supply.svg"), title: "Initial supply", description: "0.1% of the total token supply was released on the first day of exchange listings to initiate the supply." },
-            { src: require("~/assets/token/supply-distribution.svg"), title: "Supply distribution", description: "The total supply will be released slowly over time in daily allotments." }
+            { src: require('~/assets/token/decentralize-executions.svg'), title: "Decentralize executions", description: "Become a part of the decentralized network by executing transactions for other applications, and get rewarded for your participation." },
+            { src: require("~/assets/token/secure-network.svg"), title: "Secure the network", description: "All participants are required to deposit a stake, committing to availability and good behavior. Then, participants are rewarded for validating executions." },
+            { src: require("~/assets/marketplace/build-marketplace.svg"), title: "Use and reuse services", description: "When services are shared on the decentralized registry and ran by others, rewards are sent to the runner and the initial developer of the service." }
           ]
-        },
-        faq: [
-          { title: "How do you use the MESG Token?", description: "Today, the MESG Token can be used in the <a href=http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=token_link&utm_campaign=explorer_services class=link target=_blank>Marketplace</a> to buy and sell access to application components. Purchasing access to services saves developers time and provides new ways to earn from coding." },
-          { title: "What’s the future of the MESG Token?", description: "Soon the MESG Token will used in the decentralized network to reward participants who execute, emit, or validate tasks for other users’ applications, enabling decentralized execution. Plus, it will secure the network through a mandatory staking system." },
-          { title: "How does the ATD promote stability?", description: "The Algorithmic Token Distribution (ATD) limits daily Token releases to a percentage of the previous day’s total volume. This means large payouts are distributed gradually for all, plus daily sales are limited to promote a stable release of MESG Tokens into the market." },
-          { title: "Where can I buy MESG Tokens?", description: "The MESG Token is available to purchase on <a href=https://www.digifinex.com/en-ww/trade/USDT/MESG class=link target=_blank>DigiFinex</a>, <a href=https://www.bitforex.com/en/spot/mesg_usdt class=link target=_blank>BitForex</a> and <a href=https://idex.market/eth/mesg class=link target=_blank>IDEX</a>. Also, now MyEtherWallet supports MESG Tokens natively for ease of trading." }
-        ]
+        }
       }
     ]
   },
@@ -113,96 +97,11 @@ export const getters = {
     return {
       features: {
         primary: [
-          {
-            src: require('~/assets/marketplace/earn-sleep.svg'), title: "Open Market", description: "Exchange value freely with the community through a self-regulating, open-source economy built for each iteration of your product lifecycle."
-          },
-          { src: require("~/assets/engine/development-hours.svg"), title: "Efficiency", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
-          { src: require("~/assets/token/decentralize-executions.svg"), title: "Control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructures." }
+          { src: require('~/assets/marketplace/open-marketplace.svg'), title: "Decentralized registry", description: "Interoperable services on the registry can be reused or processed by anyone. Each service is compatible with all other services." },
+          { src: require("~/assets/engine/development-hours.svg"), title: "Build efficiently", description: "Don’t repeat yourself. Reuse and orchestrate centralized and decentralized features through a highly-scalable infrastructure." },
+          { src: require("~/assets/token/decentralize-executions.svg"), title: "Maintain control", description: "Build software running on any combination of trustless networks, trusted cloud providers, or even your own private infrastructure." }
         ]
       },
-    }
-  },
-
-  enterprise() {
-    return {
-      features: {
-        primary: [
-          { src: require('~/assets/enterprise/connect-systems.svg'), title: "Connect systems", description: "Build and share APIs and connections to blockchains to save time in development or boost revenues." },
-          { src: require("~/assets/enterprise/automate-tasks.svg"), title: "Automate tasks", description: "Create reactive applications and workflows that can execute and function entirely within a decentralized cloud." },
-          { src: require("~/assets/enterprise/process-data.svg"), title: "Process data", description: "By listening for events, data can be gathered and processed more efficiently than ever before. Manage more without the headache." }
-        ],
-        secondary: [
-          { src: require("~/assets/enterprise/engineering-support.svg"), title: "Engineering support", description: "Receive priority technical support from a team of engineers dedicated to your project, day or night." },
-          { src: require("~/assets/enterprise/architecture-advisory.svg"), title: "Architecture advisory", description: "Our advisors are committed to creating optimum efficiency between all of your connected systems." },
-          { src: require("~/assets/enterprise/custom-built.svg"), title: "Custom-built solutions", description: "Don’t want to built it yourself? Let us build apps for you, enhancing legacy software with blockchains, IoT devices and more." },
-          { src: require("~/assets/enterprise/community-support.svg"), title: "Community support", description: "MESG has a strong community and economy built to support development. Share app components or get support on the forum." }
-        ]
-      },
-      faq: [
-        { title: "Are apps dependent on MESG to run?", description: "No, MESG is free and open-source, so your apps will remain accessible and available to you regardless of the MESG Foundation’s status." },
-        { title: "How does MESG manage intellectual property?", description: "We keep intellectual property secure through client agreements, plus, services and apps can be kept private, running on your own private network and nowhere else." },
-        { title: "Who owns the apps that MESG builds for me?", description: "When our team of engineers assist clients in building apps, the full ownership remains in the client’s hands. We also provide service rental options to fit your needs." },
-        { title: "MESG is free, so why purchase advisory services?", description: "Apps can be built for free and will remain free, but great architectures are hard to come by. We save time throughout the life of the app by building strong, efficient architectures." }
-      ],
-      packages: [
-        {
-          title: "Create your package",
-          text: "Custom Pricing",
-          items: [
-            {
-              valid: true, description: "Access to the Marketplace"
-            },
-            {
-              valid: true, description: "Advisory services on your architecture"
-            },
-            {
-              valid: true, description: "Access to the SDK"
-            },
-            {
-              valid: true, description: "Priority support from a dedicated team of engineers"
-            },
-            {
-              valid: true, description: "Community support"
-            },
-            {
-              valid: true, description: "Creation of services"
-            },
-            {
-              valid: true, description: "Direct support from the MESG team"
-            }
-          ]
-        }
-      ]
-    }
-  },
-
-  partners() {
-    return {
-      primary: [
-        {
-          src: require("~/assets/partners/yellow.svg"),
-          title: "Yellow Capital",
-          description: "Yellow is building the future of Blockchain with seed investments, mentorship, advisory (STOs, token economics, legal, banking, marketing, fundraising and listing) and software solutions. Yellow also enriches the Blockchain community through physical hubs, live events, and original news and entertainment.",
-          to: "https://www.yellow.com/",
-          action: "yellow.com"
-        }
-      ],
-      secondary: [
-        {
-          src: require("~/assets/partners/beachhead.svg"),
-          title: "BeachHead",
-          description: "BeachHead is a decentralized platform based on both Ethereum and Ripple blockchains where players can participate in trading of assets with real world value within a virtual reality social platform that also includes an annex gaming environment.",
-          to: "https://beachhead.com/",
-          action: "beachhead.com"
-        },
-        {
-          src: require("~/assets/partners/omisego.svg"),
-          title: "OmiseGO",
-          description: "OmiseGO enables businesses and individuals to securely offer and access a wide range of financial services, and invest, exchange and spend digital assets anytime, anywhere.",
-          to: "https://omisego.co/",
-          action: "omisego.co"
-        }
-      ]
     }
   },
 
@@ -249,47 +148,6 @@ export const getters = {
     }
   },
 
-  discover(_, { links }) {
-    return {
-      showcase: {
-        title: "Showcase",
-        description: "Not sure what to start building on MESG? Discover some inspiration here.",
-        action: "Showcase",
-        to: links.showcase
-      },
-      foundation: {
-        title: "MESG Foundation",
-        description: "MESG is being developed for the MESG Foundation, a nonprofit organization.",
-        action: "MESG Foundation",
-        to: links.foundation
-      },
-      marketplace: {
-        title: "MESG Marketplace",
-        description: "Speed up application development and earn tokens from sharing your code.",
-        action: "MESG Marketplace",
-        to: links.marketplace
-      },
-      engine: {
-        title: "MESG SDK",
-        description: "Create feature-rich applications without needing to manage dependencies.",
-        action: "MESG SDK",
-        to: links.engine
-      },
-      token: {
-        title: "MESG Token",
-        description: "Powering the new economy of efficient, streamlined application development.",
-        action: "MESG Token",
-        to: links.token
-      },
-      enterprise: {
-        title: "Enterprise solutions",
-        description: "Build applications confidently with advisory, technical and design support.",
-        action: "Solutions",
-        to: links.enterprise
-      }
-    }
-  },
-
   documents() {
     return {
       whitepaper: {
@@ -307,103 +165,6 @@ export const getters = {
     }
   },
 
-  roadmap() {
-    return [{
-      year: 2019,
-      quarters: [{
-        quarter: "Q1",
-        goals: [{
-          title: "MESG Token ERC-20",
-          link: "https://etherscan.io/address/0x420167d87d35c3a249b32ef6225872fbd9ab85d2",
-          list: [
-            "MESG Token release with a total supply of 250MM",
-            "Start the Algorithmic Token Distribution",
-            "List MESG Token on the first exchange"
-          ]
-        }]
-      }, {
-        quarter: "Q2",
-        goals: [{
-          title: "MESG Marketplace on Ethereum",
-          link: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=roadmap_link&utm_campaign=explorer_services",
-          list: [
-            "Sell MESG Services on the MESG Marketplace",
-            "Buy MESG Services to integrate into applications",
-            "Marketplace to buy and sell access to MESG Services"
-          ]
-        }, {
-          title: "Algorithmic Token Distribution",
-          link: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=roadmap_link&utm_campaign=atd_home",
-          list: [
-            "List MESG Token on a second exchange",
-            "Dashboard with information to check the distribution"
-          ]
-        }]
-      }, {
-        quarter: "Q3",
-        goals: [{
-          title: "MESG Orchestrator",
-          list: [
-            "Create applications based on the MESG Orchestrator",
-            "Connect MESG Services together to build rich applications",
-            "Drastically reduce applications' codebase"
-          ]
-        }, {
-          title: "Decentralized executions",
-          list: [
-            "MESG Marketplace on the native network",
-            "Decentralized execution of services"
-          ]
-        }, {
-          title: "Testnet",
-          list: [
-            "Native MESG Token",
-            "Proof of Stake consensus"
-          ]
-        }]
-      }, {
-        quarter: "Q4",
-        goals: [{
-          title: "MESG user interface",
-          list: [
-            "Visualize your executions",
-            "Manage your MESG Wallet",
-            "Synchronize the Decentralized Network of Services"
-          ]
-        }, {
-          title: "Exchange listing",
-          list: [
-            "Tier-2 exchange"
-          ]
-        }]
-      }]
-    }, {
-      year: 2020,
-      quarters: [{
-        quarter: "Q1",
-        goals: [{
-          title: "Mainnet",
-          list: [
-            "Audited source code",
-            "MESG Economy stabilized",
-          ]
-        }]
-      }, {
-        quarter: "XX",
-        goals: [{
-          title: "Iterate over and over",
-          list: [
-            "Feature updates based on the community feedback",
-            "More and more partners",
-            "New exchanges",
-            "Improve performance",
-            "..."
-          ]
-        }]
-      }]
-    }]
-  },
-
   questions() {
     return [{
       key: "general",
@@ -411,7 +172,7 @@ export const getters = {
       href: "#general",
       contents: [{
         title: "What is MESG?",
-        description: "MESG is an application/workflow development platform made of a decentralized network of intercompatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users sell or purchase intercompatible services in the open MESG Marketplace, allowing developers to save significant time and/or generate income from their work."
+        description: "MESG is an application development platform made of a decentralized network of inter-compatible services. Any API, blockchain or decentralized network can be connected to services.<br/><br/>Interoperability between all services are managed by the MESG Engine regardless of languages or data formats. Users share inter-compatible services on a decentralized registry, allowing developers to save significant time and/or get rewarded from their work."
       }],
     },
     {
@@ -437,11 +198,11 @@ export const getters = {
       href: "#transactions",
       contents: [{
         title: "How much does MESG cost?",
-        description: "Anyone can use MESG for free to build applications on a local computer. However, not all functionalities will always be free.<br/><br/>If developers want to use MESG’s decentralized network to run and execute their applications, they must first pay MESG Tokens to other network participants to run and secure their applications. The MESG Foundation will not take a cut from transactions between users<br/><br/>Developers and participants can also earn tokens by using MESG depending on their desired level of involvement. Developers who build services or help execute, validate events and tasks in applications will earn MESG Tokens for their participation."
+        description: "MESG is free to use. Anyone can use the MESG technology to create their own network and monetize this network if they want too with the way they want. The tool is payment agnostic, and you control the creation and distribution of your tokens however you want.<br/><br/>Keep in mind that to provide proper incentives for runners in the network, the participant should have something to lose to guarantee their good behavior, so free networks may not be fully secured."
       },
       {
         title: "How can I earn tokens with MESG?",
-        description: "A self-regulating economy is a major part of MESG. Firstly, each time a new service is built, it can be shared and reused. The creators of services are free to choose the price in MESG Tokens that participants will pay to use the service. As part of this, service builders also decide how much each participant (emitters, validators and executors) is paid for their help.<br/><br/>Secondly, participants who commit to running their computers to support data processing in the Network are paid for their participation. The number of tokens each of these participants earns is determined by the Service’s creator, so participants can choose which processes will be most lucrative for them."
+        description: "A self-regulating economy is a major part of MESG. Firstly, each time a new service is built, it can be shared and reused. The creators of services are free to choose the number of tokens required that participants deposit to use the service. As part of this, service builders also decide how much each participant (emitters, validators, and executors) receives for their help.<br/><br/>Secondly, participants who commit to running their computers to support data processing in the Network are rewarded for their participation. The number of tokens each of these participants earn is determined by the Service’s creator."
       }]
     },
     {
@@ -485,11 +246,11 @@ export const getters = {
       href: "#development",
       contents: [{
         title: "How much time can I save by using MESG?",
-        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically.<br/><br/>These significant time savings can increase even more than if the desired service has already been built, or when workflows are built to automate DevOps."
+        description: "Sharing and reusing code translates into significant time savings for developers.<br/><br/>Services built on MESG are reusable, so when reused, work is saved each time henceforth. Additionally, since the tools in the <a href='/engine' class=link target='_blank'>MESG SDK</a> handle communications between services, the portion of time spent getting the two services to connect and cooperate with each other is done automatically through the Engine, directed by processes.<br/><br/>These significant time savings can increase even more than if the desired service has already been built."
       },
       {
         title: "Do I need to be a developer to use MESG?",
-        description: "With MESG’s currently-available functionalities, yes. Development skills are required to build services, and to combine services into applications.<br/><br/>However, soon workflows will debut, allowing anyone to write a simple config file (no more than 20 lines of text), listing the desired services, events and tasks to be executed.<br/><br/>As long as the desired services have been previously built and are available on the Marketplace, the <a href='/mesg-sdk' class=link target='_blank'>MESG SDK</a> software will read the config file and assemble the entire application on your behalf. This will allow anyone to build the back end of applications, with no coding skills required.<br/><br/>While MESG itself will remain focused on the protocol and developer tool level, any developer is welcome to build a user interface to aid in the easy creation of applications on MESG, similar to what is seen in products like Zapier."
+        description: "Yes. Development skills are required to build services, and to combine services into processes.<br/><br/>Processes are accessible to non-developers as long as all the services are already built on the decentralized registry but still require technical thinking."
       }]
     }]
   },
@@ -500,7 +261,7 @@ export const getters = {
       text: "Personal information",
       href: "#personal-information",
       title: "Collection of personal information",
-      description: "We receive and store any information you knowingly provide to us when you fill any online forms on the Website. You can choose not to provide us with certain information, but then you may not be able to take advantage of some of the Website's features. Users who are uncertain about what information is mandatory are welcome to contact us."
+      description: "We receive and store any information you knowingly provide to us when you fill any online forms on the Website. You may choose not to provide us with certain information, but then you may not be able to take advantage of some of the Website's features. Users who are uncertain about what information is mandatory are welcome to contact us."
     },
     {
       key: "non-personal-information",
@@ -728,7 +489,7 @@ export const getters = {
         paragraphe: "Connect multiple cryptocurrencies with other technologies to securely send a message from space.",
         image: require("~/assets/showcase/opennode-blockstream.svg"),
         challenges: "Creating a single app which executes a Bitcoin-based transaction via the Lightning Network in exchange for a separate ERC-20 token payment.",
-        goals: "To build a business with a MESG App which accepts MESG Tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
+        goals: "To build a business with a MESG App which accepts tokens in exchange for actions completed, and to allow multiple cryptocurrencies to interact within a single application.",
         benefits: [
           "Integrate multiple cryptocurrencies within a single application.",
           "Automatically react to blockchain transactions in real time."
@@ -960,16 +721,6 @@ export const getters = {
         ]
       },
       {
-        icon: "fal fa-coins",
-        category: "Token",
-        list: [
-          "Update info on exchanges",
-          "Submit <a href='https://handbook.mesg.com/assets/#brand-assets' target='_blank' class='link'>logo</a> on apps",
-          "List on a DEX (Kyber, Bancor...)",
-          "..."
-        ]
-      },
-      {
         icon: "fal fa-handshake-alt",
         category: "Partnerships",
         list: [
@@ -989,120 +740,6 @@ export const getters = {
           "..."
         ]
       }
-    ]
-  },
-
-  getstarted(_, { links, externalLinks, tutorials }) {
-    return [
-      {
-        label: "Install the Engine",
-        title: "SDK",
-        description: "The SDK includes tools like the Engine, built to manage processes and forward events and tasks between all services, regardless of the technology or language.<br/><br/>To install the SDK, open a terminal and enter in <code>npm install -g @mesg/cli</code>. Then, run the Engine with <code>mesg-cli daemon:start</code>",
-        resources: [
-          {
-            category: "fal fa-question",
-            color: "purple",
-            title: "Learn more",
-            to: links.engine,
-            info: "SDK",
-            icon: "fal fa-long-arrow-alt-right"
-          },
-          {
-            category: "fal fa-book",
-            color: "blue",
-            title: "Installation",
-            link: externalLinks.quickStartGetStarted,
-            info: "Documentation",
-            icon: "fal fa-external-link-alt"
-          }
-        ]
-      },
-      {
-        label: "Build and reuse",
-        title: "Services",
-        description: "Services are discrete units of functionality that are used to bridge to external technologies or complete a specific function. They can be remotely accessed, and independently acted upon and updated.<br/><br/>Start building a new service by running: <code>mesg-cli service:init</code> or reuse existing services from the Marketplace.",
-        resources: [
-          {
-            category: "fal fa-question",
-            color: "purple",
-            title: "Learn more",
-            to: links.marketplace,
-            info: "Services",
-            icon: "fal fa-long-arrow-alt-right"
-          },
-          {
-            category: "fal fa-book",
-            color: "blue",
-            title: "Create a service",
-            link: externalLinks.serviceGetStarted,
-            info: "Documentation",
-            icon: "fal fa-external-link-alt"
-          },
-          {
-            category: "fal fa-store",
-            color: "orange",
-            title: "Browse the marketplace",
-            link: externalLinks.marketplaceGetStarted,
-            info: "Resource",
-            icon: "fal fa-external-link-alt"
-          },
-          {
-            category: "fal fa-laptop-code",
-            color: "green",
-            title: tutorials.emailService.title,
-            link: tutorials.emailService.to,
-            info: "Tutorial",
-            icon: "fal fa-external-link-alt"
-          }
-        ]
-      },
-      {
-        label: "Orchestrate services",
-        title: "Process",
-        description: "A process is a step-by-step description of business logic that combines the events and tasks of services to form applications.<br/><br/>All interaction between services is managed by the Engine, enabling easy scalability. Start creating a process by running: <code>mesg-cli process:create</code>",
-        resources: [
-          {
-            category: "fal fa-question",
-            color: "purple",
-            title: "Learn more",
-            to: links.orchestrator,
-            info: "Process",
-            icon: "fal fa-long-arrow-alt-right"
-          },
-          {
-            category: "fal fa-book",
-            color: "blue",
-            title: "Create a process",
-            link: externalLinks.processGetStarted,
-            info: "Documentation",
-            icon: "fal fa-external-link-alt"
-          },
-          {
-            category: "fal fa-laptop-code",
-            color: "green",
-            title: tutorials.erc20Notifier.title,
-            link: tutorials.erc20Notifier.to,
-            info: "Tutorial",
-            icon: "fal fa-external-link-alt"
-          }
-        ]
-      }
-    ]
-  },
-
-  exchanges() {
-    return [
-      { id: "Digifinex", src: require("~/assets/exchanges/digifinex.svg"), to: "https://www.digifinex.com/en-ww/trade/USDT/MESG" },
-      { id: "BitForex", src: require("~/assets/exchanges/bitforex.svg"), to: "https://www.bitforex.com/en/spot/mesg_usdt" },
-      { id: "Idex", src: require("~/assets/exchanges/idex.svg"), to: "https://idex.market/eth/mesg" }
-    ]
-  },
-
-  articles() {
-    return [
-      { id: "yahoo", title: "New Token Release Methods Signal the Death of the ICO", img: require("~/assets/press/yahoo.svg"), to: "https://finance.yahoo.com/news/token-release-methods-signal-death-030000717.html" },
-      { id: "forbes", title: "Blockchain Or Bust: Businesses Need To Seek A Middle Ground", img: require("~/assets/press/forbes.svg"), to: "https://www.forbes.com/sites/darrynpollock/2019/01/18/blockchain-or-bust-businesses-need-to-seek-a-middle-ground/#291e609c3984" },
-      { id: "chipin", title: "Three Ways to Reduce the Cost of Blockchain Implementation in Your Business", img: require("~/assets/press/chipin.svg"), to: "https://www.chipin.com/reduce-cost-blockchain-implementation-business/" }
     ]
   },
 
@@ -1189,31 +826,12 @@ export const getters = {
 
   externalLinks() {
     return {
-      documentationMenu: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_home",
-      documentationFooter: "https://docs.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_home",
-      processGetStarted: "https://docs.mesg.com/guide/process/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_process",
-      serviceGetStarted: "https://docs.mesg.com/guide/service/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_service",
-      quickStartGetStarted: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=doc_quick_start",
-      quickStartCTAMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_cta&utm_campaign=doc_quick_start",
-      quickStartMenu: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=doc_quick_start",
-      quickStartFooter: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=doc_quick_start",
-      quickStartCTAHead: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_head&utm_campaign=doc_quick_start",
-      quickStartCTABottom: "https://docs.mesg.com/guide/quick-start-guide.html?utm_source=mesg.com&utm_medium=getstarted_cta_bottom&utm_campaign=doc_quick_start",
-      marketplaceCTABottom: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=service_cta_bottom&utm_campaign=explorer_services",
-      marketplaceGetStarted: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=explorer_services",
-      marketplaceShowcase: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=explorer_services",
-      marketplaceFooter: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=explorer_services",
-      marketplaceMenu: "http://explorer.testnet.mesg.com/services?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=explorer_services",
       blogHome: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=home_link&utm_campaign=blog_home",
       blogFooter: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=blog_home",
       blogSocial: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=blog_home",
       blogShowcase: "https://blog.mesg.com/?utm_source=mesg.com&utm_medium=showcase_link&utm_campaign=blog_home",
-      tutorialsGetStarted: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=getstarted_link&utm_campaign=tutorials_home",
-      tutorialsMenu: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=menu_link&utm_campaign=tutorials_home",
-      tutorialsFooter: "https://blog.mesg.com/tag/tutorials/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=tutorials_home",
       forumFooter: "https://forum.mesg.com/?utm_source=mesg.com&utm_medium=footer_link&utm_campaign=forum_home",
       forumSocial: "https://forum.mesg.com/?utm_source=mesg.com&utm_medium=social_link&utm_campaign=forum_home",
-      atdToken: "https://atd.mesg.com/?utm_source=mesg.com&utm_medium=token_link&utm_campaign=atd_home",
       github: "https://github.com/mesg-foundation/",
       discord: "https://discordapp.com/invite/5tVTHJC",
       twitter: "https://twitter.com/mesgfoundation",
@@ -1221,29 +839,29 @@ export const getters = {
       linkedin: "https://www.linkedin.com/company/mesg",
       facebook: "https://www.facebook.com/mesgfoundation",
       reddit: "https://www.reddit.com/r/MESG/",
-      contact: "https://docs.google.com/forms/d/e/1FAIpQLSdUymFdlMjaqcjr2ruRvxPQi1CbDp7a9cS-_3wxNvmg3UaR9Q/viewform",
       video: "https://www.youtube.com/embed/VjPG51iE_fk",
-      press: "https://handbook.mesg.com/assets/"
-
+      press: "https://handbook.mesg.com/assets/",
+      liteflowCTAHead: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_header&utm_campaign=mesg_to_liteflow",
+      liteflowHome: "http://liteflow.com/?utm_source=mesg.com&utm_medium=home_section&utm_campaign=mesg_to_liteflow",
+      liteflowCTABottom: "http://liteflow.com/?utm_source=mesg.com&utm_medium=cta_bottom&utm_campaign=mesg_to_liteflow",
+      roadmap: "https://github.com/orgs/mesg-foundation/projects/25",
+      tokenUtility: "https://blog.mesg.com/token-utility-in-the-mesg-economy/?utm_source=mesg.com&utm_medium=token_page_cta&utm_campaign=token_utility"
     }
   },
 
   links() {
     return {
       home: "/",
-      enterprise: "/enterprise",
-      orchestrator: "/mesg-orchestrator",
-      engine: "/mesg-sdk",
-      marketplace: "/mesg-marketplace",
-      token: "/token",
+      orchestrator: "/process",
+      engine: "/sdk",
+      marketplace: "/services",
+      token: "/economy",
       foundation: "/foundation",
       showcase: "/showcase",
       contributions: "/contributions",
       faq: "/faq",
-      roadmap: "/roadmap",
       usecase: "/usecase",
       policy: "/privacy-cookie-policy",
-      getstarted: "/get-started"
     }
   },
 
@@ -1255,26 +873,12 @@ export const getters = {
         { text: 'SDK', to: links.engine },
         { text: 'Services', to: links.marketplace },
         { text: 'Process', to: links.orchestrator },
-        { text: 'Enterprise', to: links.enterprise }
-      ]
-    },
-    {
-      text: 'Developers',
-      to: '#',
-      subMenu: [
-        { text: 'Get started', to: externalLinks.quickStartMenu },
-        { text: 'Marketplace', to: externalLinks.marketplaceMenu },
-        { text: 'Documentation', to: externalLinks.documentationMenu },
-        { text: 'Tutorials', to: externalLinks.tutorialsMenu },
-        { text: 'Github', to: externalLinks.github }
+        { text: 'Economy', to: links.token }
       ]
     },
     { text: 'Showcase', to: links.showcase },
-    { text: 'Contributions', to: links.contributions },
-    { text: 'Token', to: links.token },
-    { text: 'Get started', to: externalLinks.quickStartCTAMenu, type: 'button' }
+    { text: 'Github', to: externalLinks.github }
     ]
   }
 }
-
 

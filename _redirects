@@ -2,7 +2,10 @@ https://mesg.tech/* https://mesg.com/:splat 301!
 https://www.mesg.tech/* https://mesg.com/:splat 301!
 https://mesg.netlify.com/* https://mesg.com/:splat 301!
 
-/engine /mesg-sdk 301!
 /marketplace /mesg-marketplace 301!
+/mesg-marketplace /services 301!
+/mesg-sdk /sdk 301!
+/mesg-orchestrator /process 301!
+/token /economy 301!
 
 * /404.html 404

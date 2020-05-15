@@ -1,10 +1,6 @@
 <template>
   <div>
-    <Header :image="require('~/assets/showcase.svg')" :title="title" :description="description">
-      <div>
-        <Button :to="links.getstarted" primary mt2>Start building</Button>
-      </div>
-    </Header>
+    <Header :image="require('~/assets/showcase.svg')" :title="title" :description="description"></Header>
 
     <section id="use cases" mb3>
       <Container flex column align-center>
@@ -15,30 +11,9 @@
       </Container>
     </section>
 
-    <section id="separator">
+    <section>
       <Container flex column align-center>
         <hr mb3 />
-      </Container>
-    </section>
-
-    <section id="marketplace" class="outer-background" mb3>
-      <Container>
-        <div flex row mobile-column align-center>
-          <div half p1>
-            <img src="~/assets/marketplace/marketplace.svg" alt="MESG Marketplace" />
-          </div>
-          <div half>
-            <h2 mb1>Get inspired</h2>
-            <p
-              mb2
-            >Find new services to implement in your applications. Any service from the Marketplace featuring any technology or language and can be added to any process or application.</p>
-            <Button
-              secondary
-              :href="externalLinks.marketplaceShowcase"
-              target="_blank"
-            >MESG Marketplace</Button>
-          </div>
-        </div>
       </Container>
     </section>
 
@@ -80,10 +55,9 @@
     </section>
 
     <CTA
-      icon="fal fa-book"
-      title="Get started"
-      description="MESG is free to start and only takes moments to install. Build more with less effort."
-      :links="[{ title: 'Start building' , to: links.getstarted }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
@@ -142,9 +116,6 @@ export default {
   }
   .community {
     margin-top: calc(#{$margin} * 3);
-  }
-  #separator .container {
-    padding-bottom: 0;
   }
 }
 

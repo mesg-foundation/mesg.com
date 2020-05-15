@@ -8,9 +8,6 @@
       <template v-slot:top>
         <span flex class="label">{{ marketplace.label }}</span>
       </template>
-      <div>
-        <Button :to="links.getstarted" primary mt2>Get started</Button>
-      </div>
     </Header>
 
     <section id="features" mb3>
@@ -28,10 +25,10 @@
 
     <section id="presentation" mb3>
       <Container class="intro text-center">
-        <h2 mb1>A decentralized network of services</h2>
+        <h2 mb1>A decentralized registry of services</h2>
         <p
           mb2
-        >Our marketplace of app components and executions is a key part of our vision to create a decentralized network of services.</p>
+        >Our decentralized registry of services and executions is a key part of our vision to create a decentralized network of services.</p>
         <Button
           secondary
           mb2
@@ -95,10 +92,9 @@
     </section>
 
     <CTA
-      icon="fal fa-store"
-      title="Marketplace"
-      description="MESG Marketplace beta is out now. Save time by sharing and reusing services."
-      :links="[{ title: 'MESG Marketplace' , href: externalLinks.marketplaceCTABottom }]"
+      title="The Liteflow Framework"
+      description="Take a lighter approach with a Framework built atop MESG. Build & ship secure, feature-rich applications with just a few lines of code."
+      :links="[{ title: 'Build for free' , href: externalLinks.liteflowCTABottom }]"
       mb1
     />
   </div>
@@ -130,7 +126,7 @@ export default {
     page({
       title: "Services",
       description:
-        "Reuse existing services to save time building applications, or earn royalties from the new services you create."
+        "Reuse existing services to save time building applications. Publish on a decentralized registry to get rewarded anytime it is used."
     })
   ],
   computed: {
