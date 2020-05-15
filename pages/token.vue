@@ -10,7 +10,7 @@
           target="_blank"
           primary
           mt2
-        >Discover the token's utility</Button>
+        >Learn more about the economy</Button>
       </div>
     </Header>
 
