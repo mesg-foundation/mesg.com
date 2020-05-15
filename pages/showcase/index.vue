@@ -1,15 +1,6 @@
 <template>
   <div>
-    <Header :image="require('~/assets/showcase.svg')" :title="title" :description="description">
-      <div>
-        <Button
-          :href="externalLinks.liteflowCTAHead"
-          target="_blank"
-          primary
-          mt2
-        >Start building with Liteflow</Button>
-      </div>
-    </Header>
+    <Header :image="require('~/assets/showcase.svg')" :title="title" :description="description"></Header>
 
     <section id="use cases" mb3>
       <Container flex column align-center>

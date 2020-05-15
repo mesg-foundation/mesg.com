@@ -4,14 +4,6 @@
       <template v-slot:top>
         <span flex class="label">{{ orchestrator.label }}</span>
       </template>
-      <div>
-        <Button
-          :href="externalLinks.liteflowCTAHead"
-          target="_blank"
-          primary
-          mt2
-        >Start building with Liteflow</Button>
-      </div>
     </Header>
 
     <section id="features" mb3>

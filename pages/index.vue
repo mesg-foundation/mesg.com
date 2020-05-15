@@ -1,15 +1,6 @@
 <template>
   <div>
-    <Header :image="require('~/assets/home.svg')" :title="title" :description="description">
-      <div>
-        <Button
-          :href="externalLinks.liteflowCTAHead"
-          target="_blank"
-          primary
-          mt2
-        >Start building with Liteflow</Button>
-      </div>
-    </Header>
+    <Header :image="require('~/assets/home.svg')" :title="title" :description="description"></Header>
 
     <section id="features" mb3>
       <Container flex row space-between wrap>
