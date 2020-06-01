@@ -662,8 +662,7 @@ export const getters = {
         information: "Want a more in-depth look at how MESG can help connect tokens to payment processors? Head on over to our blog for the full story or take a look at our other resources.",
         resources: [
           { title: "Read the full article", to: "https://blog.mesg.com/directly-buy-crypto-with-fiat/?utm_source=mesg.com&utm_medium=usecase_link&utm_campaign=buy_crypto_usecase" },
-          { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" },
-          { title: "Demo live", to: "http://stripe-erc20.demo.mesg.com:8080/" }
+          { title: "Github", to: "https://github.com/mesg-foundation/application-stripe-to-erc20" }
         ],
         cta: "https://github.com/mesg-foundation/application-stripe-to-erc20"
       }
