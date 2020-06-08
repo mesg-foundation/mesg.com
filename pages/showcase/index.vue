@@ -69,7 +69,6 @@ import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import UseCase from "~/components/UseCase";
 import Button from "@mesg-components/button";
-import TypeFormPopup from "@mesg-components/type-form-popup";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
 import CardNewsletter from "~/components/CardNewsletter";
@@ -82,7 +81,6 @@ export default {
     Container,
     UseCase,
     Button,
-    TypeFormPopup,
     CTA,
     ListSN,
     CardNewsletter,

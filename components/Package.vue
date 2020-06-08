@@ -18,12 +18,7 @@
       <hr mb2 />
     </div>
     <div class="text-center btn-action">
-      <TypeFormPopup v-if="featured" :id="forms.contactForm" class="form">
-        <Button white>Get in touch</Button>
-      </TypeFormPopup>
-      <TypeFormPopup v-else :id="forms.contactForm" class="form">
-        <Button primary>Get in touch</Button>
-      </TypeFormPopup>
+      <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" white>Get in touch</Button>
     </div>
   </Card>
 </template>
@@ -31,12 +26,10 @@
 <script>
 import { mapGetters } from "vuex";
 import Card from "@mesg-components/card";
-import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 export default {
   components: {
     Card,
-    TypeFormPopup,
     Button
   },
   props: {

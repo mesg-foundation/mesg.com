@@ -2,9 +2,7 @@
   <div>
     <Header :image="require('~/assets/team.svg')" :title="title" :description="description">
       <div mt2>
-        <TypeFormPopup :id="forms.contactForm" class="form">
-          <Button primary>Get in touch</Button>
-        </TypeFormPopup>
+        <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" primary>Get in touch</Button>
       </div>
     </Header>
 
@@ -112,9 +110,7 @@
       description="Reach out! We love helping the community find new ways to build powerful solutions."
       mb1
     >
-      <TypeFormPopup :id="forms.contactForm" class="form">
-        <Button white>Get in touch</Button>
-      </TypeFormPopup>
+      <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" white>Get in touch</Button>
     </CTA>
   </div>
 </template>
@@ -125,7 +121,6 @@ import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Video from "~/components/Video";
 import Button from "@mesg-components/button";
-import TypeFormPopup from "@mesg-components/type-form-popup";
 import Document from "~/components/Document";
 import Member from "~/components/Member";
 import Partners from "~/components/Partners";
@@ -142,7 +137,6 @@ export default {
     Video,
     Member,
     Button,
-    TypeFormPopup,
     Document,
     Partners,
     News,

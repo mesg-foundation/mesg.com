@@ -48,9 +48,7 @@
         </Card>
         <p class="sub-text text-center edit">
           Content not showing up as expected?
-          <TypeFormPopup :id="forms.editContribution" class="form link">
-            <a>Let us know</a>
-          </TypeFormPopup>
+          <a href="https://forms.gle/8u67SkTNqUsm3uw7A">Let us know</a>
         </p>
       </template>
     </Header>
@@ -99,9 +97,7 @@
       description="Have a quality contribution? Awesome! Send it our way, and you could be eligible for a reward. MESG thrives on community support and collaborations."
       mb1
     >
-      <TypeFormPopup :id="forms.addContribution" class="form">
-        <Button white>Add a contribution</Button>
-      </TypeFormPopup>
+      <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" white>Add a contribution</Button>
     </CTA>
   </div>
 </template>
@@ -112,7 +108,6 @@ import Header from "@mesg-components/header";
 import CTA from "~/components/CTA";
 import Card from "@mesg-components/card";
 import Tweetbtn from "@mesg-components/social-network";
-import TypeFormPopup from "@mesg-components/type-form-popup";
 import EmbedCard from "@mesg-components/embed-card";
 import Titletext4 from "~/components/Titletext4";
 import Container from "~/components/Container";
@@ -126,7 +121,6 @@ export default {
     CTA,
     Card,
     Tweetbtn,
-    TypeFormPopup,
     EmbedCard,
     Titletext4,
     Container,

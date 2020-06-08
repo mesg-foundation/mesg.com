@@ -6,9 +6,7 @@
       :description="description"
     >
       <div mt2>
-        <TypeFormPopup :id="forms.addContribution" class="form">
-          <Button primary>Add a contribution</Button>
-        </TypeFormPopup>
+        <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" primary>Add a contribution</Button>
       </div>
     </Header>
 
@@ -116,9 +114,7 @@
         </Card>
         <p class="infos edit text-center" mb3>
           Content not showing up as expected?
-          <TypeFormPopup :id="forms.editContribution" class="form link">
-            <a>Let us know</a>
-          </TypeFormPopup>
+          <a href="https://forms.gle/8u67SkTNqUsm3uw7A">Let us know</a>
         </p>
 
         <div id="contribute" flex row space-between wrap mb2>
@@ -139,9 +135,7 @@
             />
           </div>
         </div>
-        <TypeFormPopup :id="forms.addContribution" class="form popup">
-          <Button primary>Add a contribution</Button>
-        </TypeFormPopup>
+        <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" primary>Add a contribution</Button>
       </Container>
     </section>
 
@@ -237,9 +231,7 @@
       description="Have a quality contribution? Awesome! Send it our way, and you could be eligible for a reward. MESG thrives on community support and collaborations."
       mb1
     >
-      <TypeFormPopup :id="forms.addContribution" class="form">
-        <Button white>Add a contribution</Button>
-      </TypeFormPopup>
+      <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" white>Add a contribution</Button>
     </CTA>
   </div>
 </template>
@@ -251,7 +243,6 @@ import Container from "~/components/Container";
 import Card from "@mesg-components/card";
 import EmbedCard from "@mesg-components/embed-card";
 import Tweetbtn from "@mesg-components/social-network";
-import TypeFormPopup from "@mesg-components/type-form-popup";
 import Button from "@mesg-components/button";
 import Tag from "@mesg-components/tag-label";
 import Table from "@mesg-components/table";
@@ -267,7 +258,6 @@ export default {
     Card,
     EmbedCard,
     Tweetbtn,
-    TypeFormPopup,
     Button,
     Table,
     Tag,

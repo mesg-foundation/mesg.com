@@ -62,9 +62,7 @@
       description="If you didn’t find the answer you were looking for, reach out to us! The MESG team is here to help."
       mb1
     >
-      <TypeFormPopup :id="forms.contactForm" class="form">
-        <Button white>Get in touch</Button>
-      </TypeFormPopup>
+      <Button href="https://forms.gle/8u67SkTNqUsm3uw7A" white>Get in touch</Button>
     </CTA>
   </div>
 </template>
@@ -74,7 +72,6 @@ import { mapGetters } from "vuex";
 import Header from "@mesg-components/header";
 import Container from "~/components/Container";
 import Button from "@mesg-components/button";
-import TypeFormPopup from "@mesg-components/type-form-popup";
 import SideMenu from "@mesg-components/side-menu";
 import CTA from "~/components/CTA";
 import ListSN from "~/components/ListSN";
@@ -85,7 +82,6 @@ export default {
     Header,
     Container,
     Button,
-    TypeFormPopup,
     SideMenu,
     CTA,
     ListSN
