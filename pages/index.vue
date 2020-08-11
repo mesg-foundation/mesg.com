@@ -53,8 +53,8 @@
       <Container>
         <div flex row mobile-column-reverse align-center>
           <div>
-            <span flex class="label">Built on MESG</span>
-            <h2 mb1>The Liteflow Framework</h2>
+            <span flex class="label">Partner</span>
+            <h2 mb1>Liteflow</h2>
             <p
               mb2
             >MESG partner Liteflow helps developers build and ship faster by removing what's unnecessary. Build applications with just a few lines of code, then deploy and forget with a single command.</p>
