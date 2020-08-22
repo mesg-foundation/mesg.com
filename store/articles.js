@@ -22,11 +22,12 @@ export const mutations = {
 
 export const actions = {
   fetchAll: async ({ commit }) => {
-    const posts = await api.posts.browse({
-      limit: 4,
-      include: 'tags'
-    })
-    commit('updateArticles', posts)
-    return posts
+    // const posts = await api.posts.browse({
+    //   limit: 4,
+    //   include: 'tags'
+    // })
+    // commit('updateArticles', posts)
+    // return posts
+    return []
   }
 }
