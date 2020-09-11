@@ -35,7 +35,7 @@
     "codemirror": "^5.48.4",
     "firebase": "^7.2.1",
     "moment": "^2.24.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "nuxt": "^2.6.3",
     "vue-codemirror": "^4.0.6",
     "vue-embed-gist": "^1.0.2",
