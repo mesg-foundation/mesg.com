@@ -855,7 +855,6 @@ export const getters = {
       engine: "/sdk",
       marketplace: "/services",
       token: "/economy",
-      foundation: "/foundation",
       showcase: "/showcase",
       contributions: "/contributions",
       faq: "/faq",
