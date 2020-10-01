@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{536:function(e,n,t){"use strict";t.r(n);var o={asyncData:function(e){(0,e.error)({statusCode:404,message:"Usecase not found"})}},c=t(3),component=Object(c.a)(o,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,null,null);n.default=component.exports}}]);
